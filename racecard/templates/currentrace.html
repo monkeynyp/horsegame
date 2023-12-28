@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-<h1>Hello World!</h1>
-<p>Welcome to my first Django project!</p>
+<h2> Current Race </h2>
+<table>
+    {% for i, r in current_race.iterrows %} 
+        <tr>
+            <td>{{ r.HorseName }}</td> <td> {{ r.Jockey }} </td><td> {{ r.Draw }} </td>
+        </tr>
+    {% endfor %} 
+</table>
 
 </body>
 </html>
