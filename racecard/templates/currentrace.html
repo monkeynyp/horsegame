@@ -1,14 +1,46 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h2> Current Race </h2>
-<table>
-    {% for i, r in current_race.iterrows %} 
-        <tr>
-            <td>{{ r.HorseName }}</td> <td> {{ r.Jockey }} </td><td> {{ r.Draw }} </td>
-        </tr>
-    {% endfor %} 
-</table>
+{% extends "master.html" %} {% block title %} My Tennis Club - List of all
+members {% endblock %} {% block content %}
 
-</body>
-</html>
+  <div class="w3-container">
+    <h2>Circular Buttons</h2>
+        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=1">1</a>
+        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=2">2</a>
+        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=3">3</a>
+        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=4">4</a>
+        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=5">5</a>
+        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=6">6</a>
+        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=7">7</a>
+        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=8">8</a>
+      {% if current_race.iloc.2.8 > 8 %}
+        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=9">9</a>
+        {% if current_race.iloc.2.8 > 9 %}
+          <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=10">10</a>
+          {% if current_race.iloc.2.8 > 10 %}
+          <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=11">11</a>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+  </div>
+
+<div class="w3-row">
+  <div class="w3-col s8 w3-padding-top-48">
+    <table class="w3-table-all w3-card-4">
+      <th>Horse Name</th>
+      <th>Jockey</th>
+      <th>Draw</th>
+      <th>Probability</th>
+      {% for i, r in current_race.iterrows %}
+      <tr>
+        <td>{{ r.HorseName }}</td>
+        <td>{{ r.Jockey }}</td>
+        <td>{{ r.Draw }}</td>
+        <td>0.5</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <div class="w3-col s6 w3-padding-top-48">
+        This is my forecast
+    </div>
+</div>
+{% endblock %}
