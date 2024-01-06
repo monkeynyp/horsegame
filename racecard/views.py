@@ -11,9 +11,17 @@ def racecard(request):
      if id is None:
           id = 1
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
+     pred_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
+     prediction = pd.read_csv(pred_path)
+     prediction = prediction.sort_values("Score", ascending = False)
      template = loader.get_template("currentrace.html")
-     return HttpResponse(template.render({"current_race":current_race},request))
+     # create the context dictionary
+     context = {
+          'current_race': current_race,
+          'prediction': prediction
+     }
+     return HttpResponse(template.render(context,request))
 
 def about(request):
      template = loader.get_template("about.html")
