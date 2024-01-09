@@ -33,6 +33,9 @@ msgstr "騎師"
 msgid "Draw"
 msgstr "賽道"
 
+#: racecard/templates/currentrace.html:31
+msgid "Place"
+msgstr "位置"
 #: racecard/templates/master.html:32
 msgid "Home"
 msgstr "主頁"
@@ -40,6 +43,10 @@ msgstr "主頁"
 #: racecard/templates/master.html:33
 msgid "HorseRace"
 msgstr "賽馬"
+
+#: racecard/templates/master.html:33
+msgid "Support Monkey"
+msgstr "支持Monkey的工作"
 
 #: racecard/templates/master.html:34
 msgid "Contact"

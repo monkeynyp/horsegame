@@ -1,23 +1,22 @@
-{% extends "master.html" %} {% block title %} My Tennis Club - List of all
-members {% endblock %} {% block content %}
+{% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning {% endblock %} {% block content %}
 {% load i18n %}
 
   <div class="w3-container">
     <h2>{% trans "Current Race" %}</h2>
-        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=1">1</a>
-        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=2">2</a>
-        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=3">3</a>
-        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=4">4</a>
-        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=5">5</a>
-        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=6">6</a>
-        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=7">7</a>
-        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=8">8</a>
+        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
+        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
+        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=3">3</a>
+        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=4">4</a>
+        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=5">5</a>
+        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=6">6</a>
+        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=7">7</a>
+        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=8">8</a>
         {% if current_race.iloc.2.8 > 8 %}
-        <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=9">9</a>
+        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=9">9</a>
         {% if current_race.iloc.2.8 > 9 %}
-          <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=10">10</a>
+          <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=10">10</a>
           {% if current_race.iloc.2.8 > 10 %}
-          <a class="w3-button w3-xlarge w3-circle w3-black" href="/racecard/?id=11">11</a>
+          <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=11">11</a>
           {% endif %}
         {% endif %}
       {% endif %}
@@ -57,9 +56,9 @@ members {% endblock %} {% block content %}
       </footer>
       </div>
       -->
-    <div class="w3-card-4" style="width:50%">
+    <div class="w3-card-4 w3-margin" style="width:50%" >
       <header class="w3-container w3-green" >
-        <h2>Naive Place <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
+        <h2>Naive {% trans "Place" %} <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
           Accuracy 42%
           </span></h2>
       </header>
