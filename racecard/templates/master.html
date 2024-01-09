@@ -1,28 +1,45 @@
 {% load static %}
+{% load i18n %}
 <!DOCTYPE html>
-<html>
+<html lang="{% get_current_language as LANGUAGE_CODE %}">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<html>
 <head>
   <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
 <!-- Navigation (Stays on Top) -->
-<!-- Navigation (Sits on top) -->
+
 <div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide">
-  <a href="/about" class="w3-bar-item w3-button"><b>Monkey Forecast</b></a>
-  
+  <a href="/about" class="w3-bar-item w3-button"><b>NYP Forecast</b></a>
+  <div>
+        <div>
+            <form action="{% url 'set_language' %}" method="post" class="d-inline">
+                {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.get_full_path }}" />
+                <select name="language" id="id_language" onchange="this.form.submit()">
+                    {% get_available_languages as LANGUAGES %}
+                    {% for lang_code, lang_name in LANGUAGES %}
+                        <option value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}selected{% endif %}>
+                            {{ lang_name }}
+                        </option>
+                    {% endfor %}
+                </select>
+            </form>
+        </div>
+
   <!-- Right-sided navbar links. Hide them on small screens -->
   <div class="w3-right w3-hide-small">
-  <a href="/about" class="w3-bar-item w3-button">About</a>
-  <a href="/racecard?1" class="w3-bar-item w3-button">Horse Race</a>
-  <a href="/contact" class="w3-bar-item w3-button">Contact</a>
+  <a href="/about" class="w3-bar-item w3-button">{% trans "Home" %}</a>
+  <a href="/racecard?1" class="w3-bar-item w3-button">{% trans "HorseRace" %}</a>
+  <a href="/contact" class="w3-bar-item w3-button">{% trans "Contact" %}</a>
   </div>
 </div>
- 
+
     {% block content %}
     {% endblock %}
 <!-- End Content -->
-
+<p class="w3-center w3-xlarge w3-padding-32">
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="thinkingmonkey" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+</p>
 </body>
 </html>

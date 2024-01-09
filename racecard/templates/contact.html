@@ -1,20 +1,30 @@
 {% extends "master.html" %} {% block title %} My Tennis Club - List of all
 members {% endblock %} 
-
+{% load i18n %}
+{% load static %}
 {% block content %}
-<!-- Contact Section -->
-<div id="contact" class="w3-container w3-padding-top-32">
 
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
-    <p>Lets get in touch and talk about your next project</p>
-    
-    <form action="/action_page.php" target="_blank">
-    <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-    <input class="w3-input w3-section w3-border" type="text" placeholder="Email" required name="Email">
-    <input class="w3-input w3-section w3-border" type="text" placeholder="Subject" required name="Subject">
-    <input class="w3-input w3-section w3-border" type="text" placeholder="Comment" required name="Comment">
-    <button class="w3-button w3-black w3-section" type="submit">
-    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-    </button>
-    </form>
-    {% endblock %} 
+    <!-- About -->
+    <div id="about" class="w3-padding-top-64">
+        <div class="w3-row">
+            <div class="w3-half w3-padding-large w3-hide-small">
+                <img
+                    src="{% static 'HorseMachineLearningSquare.jpeg' %}"
+                    class="w3-round w3-image w3-opacity-min"
+                    alt="Table"
+                    style="width: 100%"
+                />
+            </div>
+
+            <div class="w3-half w3-padding-large">
+                <h1 class="w3-center">About Monkey Forecast</h1>
+                <br />
+                <h5 class="w3-center">Passionate in Machine Learning</h5>
+                <p class="w3-large">
+                    Monkey is a data scientist who believes that facts and science are the best ways to make decisions and forecasts. That’s why it created this website and used horse racing data to predict the results. Although many people say that horse racing is unpredictable and random, Monkey would like to see what kind of accuracy can be achieved by applying machine learning.
+                </p>
+                
+            </div>
+        </div>
+    </div>
+{% endblock %}

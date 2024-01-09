@@ -1,0 +1,22 @@
+{% extends "master.html" %} {% block title %} My Tennis Club - List of all
+members {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+
+<div class="w3-container">
+    <h2>Ops</h2>
+    <p>Wrap any of the w3-card classes around the image to display it as a card:</p>
+    <div class="w3-card" style="width:50%">
+      <img src= "{% static 'monkey404.jpeg' %}" alt="Person" style="width:100%">
+      <div class="w3-container">
+        <h4><b>Simon</b></h4>
+        <p>The boss of all bosses</p>
+      </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

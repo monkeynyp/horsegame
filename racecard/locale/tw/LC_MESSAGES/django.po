@@ -1,0 +1,3372 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-09 02:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: racecard/templates/currentrace.html:6
+msgid "Current Race"
+msgstr "最近賽事"
+
+#: racecard/templates/currentrace.html:29
+msgid "Horse Name"
+msgstr "賽馬"
+
+#: racecard/templates/currentrace.html:30
+msgid "Jockey"
+msgstr "騎師"
+
+#: racecard/templates/currentrace.html:31
+msgid "Draw"
+msgstr "賽道"
+
+#: racecard/templates/master.html:32
+msgid "Home"
+msgstr "主頁"
+
+#: racecard/templates/master.html:33
+msgid "HorseRace"
+msgstr "賽馬"
+
+#: racecard/templates/master.html:34
+msgid "Contact"
+msgstr "聯絡"
+
+#: racecard/views.py:36
+msgid "Louis is very good!"
+msgstr "魏垚彬很利害！"
+
+#: Horse Name
+msgid "HELLO BEAUTY"
+msgstr "你好妙容"
+
+msgid "HELIOS EXPRESS"
+msgstr "驕陽明駒"
+
+msgid "SEASONS WIT"
+msgstr "四季醒"
+
+msgid "HOWDEEPISYOURLOVE"
+msgstr "嫡愛心"
+
+msgid "INVINCIBLE SAGE"
+msgstr "賢者無敵"
+
+msgid "HELENE FEELING"
+msgstr "喜蓮勇感"
+
+msgid "CHILL CHIBI"
+msgstr "超超比"
+
+msgid "GALAXY PATCH"
+msgstr "錶之銀河"
+
+msgid "ELLIPTICAL"
+msgstr "意力迪迪"
+
+msgid "ENSUED"
+msgstr "安騁"
+
+msgid "LUCKY ENCOUNTER"
+msgstr "幸運遇見"
+
+msgid "REWARD SMILE"
+msgstr "明心知遇"
+
+msgid "BRAVEHEARTS"
+msgstr "愛心神駒"
+
+msgid "GUMMY GUMMY"
+msgstr "晶晶日上"
+
+msgid "MOMENTS IN TIME"
+msgstr "智取神駒"
+
+msgid "DREAM WINNER"
+msgstr "實現夢想"
+
+msgid "UNBELIEVABLE"
+msgstr "難以置信"
+
+msgid "BEAUTY CRESCENT"
+msgstr "同樣美麗"
+
+msgid "CHANCHENG GLORY"
+msgstr "禪勝輝煌"
+
+msgid "CHIU CHOW SPIRIT"
+msgstr "潮州精神"
+
+msgid "SUPERB CAPITALIST"
+msgstr "八駿巨昇"
+
+msgid "AWESOME FLUKE"
+msgstr "非惟僥倖"
+
+msgid "GREAT STATE"
+msgstr "德薩斯"
+
+msgid "SPEED DRAGON"
+msgstr "勁速威龍"
+
+msgid "TRUE GENIUS"
+msgstr "奪金精靈"
+
+msgid "CAPITAL DELIGHT"
+msgstr "喜至寶"
+
+msgid "I AM THE BOSS"
+msgstr "自己話事"
+
+msgid "SILVER KING"
+msgstr "銀皇興標"
+
+msgid "FASHION LEGEND"
+msgstr "川河型駒"
+
+msgid "KA YING GENERATION"
+msgstr "嘉應傳承"
+
+msgid "MAGNIAC"
+msgstr "怡勁力"
+
+msgid "CELESTIAL COLOURS"
+msgstr "寰宇豐采"
+
+msgid "ENTERPRISE ATTACK"
+msgstr "風生水起"
+
+msgid "JOYFUL HUNTER"
+msgstr "歡樂至寶"
+
+msgid "SIMPLE HEDGE"
+msgstr "精算謀略"
+
+msgid "YOUNG CHAMPION"
+msgstr "競駿輝煌"
+
+msgid "CALIFORNIA DEEPLY"
+msgstr "加州得力"
+
+msgid "GOLDEN ARTIE"
+msgstr "金佰令"
+
+msgid "HUGE WAVE"
+msgstr "大浪圖田"
+
+msgid "VIVA GRACIOUSNESS"
+msgstr "爆笑"
+
+msgid "CALIFORNIA VOCE"
+msgstr "加州偟者"
+
+msgid "DEVILDOM"
+msgstr "摩界"
+
+msgid "ENIGMA"
+msgstr "恩尼格"
+
+msgid "GOLDENFIELD"
+msgstr "奪寶神駒"
+
+msgid "PACKING BOLE"
+msgstr "包裝伯樂"
+
+msgid "ACCOLADE START"
+msgstr "賞豐泰"
+
+msgid "LEAN HERO"
+msgstr "中華英雄"
+
+msgid "STELLAR EXPRESS"
+msgstr "星際快車"
+
+msgid "PERFUSE"
+msgstr "增勁"
+
+msgid "SELF IMPROVEMENT"
+msgstr "自強不息"
+
+msgid "SUMMIT IMPACT"
+msgstr "紫荊動力"
+
+msgid "THE STORM"
+msgstr "星運遨翔"
+
+msgid "AORAKI SUMMIT"
+msgstr "紫荊綻放"
+
+msgid "ARMORED WAR EAGLE"
+msgstr "穿甲戰鷹"
+
+msgid "FAST SERVE"
+msgstr "武千帥"
+
+msgid "GREEN N WHITE"
+msgstr "堅又威"
+
+msgid "HAKKA RADIANCE"
+msgstr "客家之光"
+
+msgid "HEALTHY HEALTHY"
+msgstr "添開心"
+
+msgid "MODULECONSTRUCTION"
+msgstr "營造組裝"
+
+msgid "NORTHERN BEACHES"
+msgstr "爵登"
+
+msgid "THE HEIR"
+msgstr "星運少爵"
+
+msgid "BEAUTY WAVES"
+msgstr "美麗第一"
+
+msgid "COLOURFUL EMPEROR"
+msgstr "顏色大皇"
+
+msgid "KAHOLO ANGEL"
+msgstr "鈦易搵"
+
+msgid "KYEEMA"
+msgstr "佳意馬"
+
+msgid "RAGING BLIZZARD"
+msgstr "精算暴雪"
+
+msgid "STELLAR GRANDE"
+msgstr "志敏將星"
+
+msgid "SUNNY DARLING"
+msgstr "陽光寶貝"
+
+msgid "CALIFORNIA TOUCH"
+msgstr "加州德至"
+
+msgid "GAMEPLAYER ELITE"
+msgstr "電玩精英"
+
+msgid "GRACIOUS EXPRESS"
+msgstr "駿奕快車"
+
+msgid "I KEEP WINNING"
+msgstr "長勝金駒"
+
+
+msgid "LEEDOX"
+msgstr "良田福星"
+
+msgid "SOLEIL FIGHTER"
+msgstr "太陽勇士"
+
+msgid "VICTORY MOMENTS"
+msgstr "凱旋時光"
+
+msgid "ATOMIC ENERGY"
+msgstr "浪茄仔"
+
+msgid "BEAUTY MISSILE"
+msgstr "特別美麗"
+
+msgid "EIGHTEEN CARAT"
+msgstr "十八掌門"
+
+msgid "FALLON"
+msgstr "快路"
+
+msgid "GIDDY UP"
+msgstr "跑得好快"
+
+msgid "GLORIOUS TALENT"
+msgstr "本領高超"
+
+msgid "ILLUMINOUS"
+msgstr "明亮天下"
+
+msgid "LADY'S CHOICE"
+msgstr "愛馬善"
+
+msgid "MA COMET"
+msgstr "極光彗星"
+
+msgid "MANRAY HONOUR"
+msgstr "利嘉輝"
+
+msgid "SILVER UP"
+msgstr "銀騰"
+
+msgid "SUNSTRIDER"
+msgstr "金陽飛駒"
+
+msgid "SUPER LOVE DRAGON"
+msgstr "愛意龍"
+
+msgid "TIMES TABLE"
+msgstr "九因歌"
+
+msgid "TRADITION"
+msgstr "傳承者"
+
+msgid "AESTHETICISM"
+msgstr "唯美主義"
+
+msgid "BRIGHT INHERITANCE"
+msgstr "光明傳承"
+
+msgid "DENFIELD"
+msgstr "勇威神駒"
+
+msgid "HONG KONG HALL"
+msgstr "福國寶"
+
+msgid "KA YING SUPERB"
+msgstr "嘉應巨昇"
+
+msgid "MIDORI BURLY"
+msgstr "綠色好運"
+
+msgid "PRAWNS ELEVEN"
+msgstr "多利彩駒"
+
+msgid "RIGHTEOUS ARION"
+msgstr "正氣青驅"
+
+msgid "RUN RAN RUN"
+msgstr "挺秀騰飛"
+
+msgid "SING DRAGON"
+msgstr "昇瀧駒"
+
+msgid "U S S CONSTITUTION"
+msgstr "碧海藍天"
+
+msgid "YOUTHFUL SPIRITS"
+msgstr "年少多好"
+
+msgid "ABSOLUTE SUNSHINE"
+msgstr "太陽之子"
+
+msgid "CHAIN OF GOLD"
+msgstr "爭金奪冠"
+
+msgid "CHARITY VISION"
+msgstr "齊益善"
+
+msgid "CONTI CONTI"
+msgstr "康帝"
+
+msgid "DAWN SESSION"
+msgstr "明駒"
+
+msgid "D STAR"
+msgstr "健康之星"
+
+msgid "ENFOLDED"
+msgstr "安擁"
+
+msgid "EXCEL WONGCHOY"
+msgstr "超旺財"
+
+msgid "FLAMINGO TRILLION"
+msgstr "港林福將"
+
+msgid "FLOOF"
+msgstr "歡樂老撾"
+
+msgid "GLORIOUS JOURNEY"
+msgstr "本領非凡"
+
+msgid "GOOD LUCK WIN"
+msgstr "寶成智星"
+
+msgid "J241"
+msgstr "J241"
+
+msgid "LOST CHILD"
+msgstr "滿歡笑"
+
+msgid "MAGNIFICENT NINE"
+msgstr "鐵金剛"
+
+msgid "NOT A FEW"
+msgstr "牽旺寶寶"
+
+msgid "ORIENTAL TYCOON"
+msgstr "英雄本色"
+
+msgid "ROBOT MASTER"
+msgstr "機械大師"
+
+msgid "SATIRICAL FAN"
+msgstr "好好紛"
+
+msgid "SEA AIR LEGEND"
+msgstr "承夆冠駒"
+
+msgid "SMART CITY"
+msgstr "君智盛"
+
+msgid "SOLAR UP"
+msgstr "太陽昇"
+
+msgid "STAR MAC"
+msgstr "久久為尊"
+
+msgid "STREET CONQUEROR"
+msgstr "炯炯有神"
+
+msgid "SURUGA BAY"
+msgstr "駿河灣"
+
+msgid "WATCH BUDDY"
+msgstr "錶壇精英"
+
+msgid "BONUS PAL"
+msgstr "天生夠響"
+
+msgid "ENDEARED"
+msgstr "安泰"
+
+msgid "GOLDEN DARCI"
+msgstr "金駿星"
+
+msgid "HAPPY UNITED"
+msgstr "萬眾開心"
+
+msgid "I CAN"
+msgstr "我做到"
+
+msgid "KYRUS DRAGON"
+msgstr "家樂龍駒"
+
+msgid "MAJESTIC SPEED"
+msgstr "上駿奔騰"
+
+msgid "MONTA FRUTTA"
+msgstr "花果猴王"
+msgid "SHOW RESPECT"
+msgstr "展宏圖"
+
+msgid "SPORTS LEGEND"
+msgstr "川河動駒"
+
+msgid "SUGAR BALL"
+msgstr "糖不甩"
+
+msgid "WINDICATOR FAMILY"
+msgstr "威威父子"
+
+msgid "FOREVER CHARM"
+msgstr "帥帥今朝"
+
+msgid "KA YING POWER"
+msgstr "嘉應威風"
+
+msgid "ONLY U"
+msgstr "銳一"
+
+msgid "SOLAR GOGO"
+msgstr "太陽高高"
+
+msgid "SWIFT ASCEND"
+msgstr "駿步騰飛"
+
+msgid "AMAZING DUCK"
+msgstr "君達得"
+
+msgid "AMAZING RUN"
+msgstr "奔妙星"
+
+msgid "FAST BUCK"
+msgstr "快錢"
+
+msgid "FORTUNE WARRIOR"
+msgstr "運來勇士"
+
+msgid "HOLY LAKE"
+msgstr "好勁力"
+
+msgid "JOLLY COMPANION"
+msgstr "良駒好友"
+
+msgid "KIMBERLEY"
+msgstr "嘉寶神駒"
+
+msgid "RAGNARR"
+msgstr "快樂奇兵"
+
+msgid "RED ACLAIM"
+msgstr "紅運掌聲"
+
+msgid "SPEED SWORD"
+msgstr "劍山鋒"
+
+msgid "THE GREAT MASTER"
+msgstr "一代宗師"
+
+msgid "CHARITY BINGO"
+msgstr "勝益善"
+
+msgid "FOOLISH HEART"
+msgstr "機緣醉夢"
+
+msgid "KA YING CHEER"
+msgstr "嘉應喝彩"
+
+msgid "SUPERB KID"
+msgstr "巴閉仔"
+
+msgid "BEAUTY INFINITY"
+msgstr "無限美麗"
+
+msgid "JOY COMING"
+msgstr "迎樂"
+
+msgid "SIMPLY MAVERICK"
+msgstr "極速奇兵"
+
+msgid "SUPER GOLDI"
+msgstr "誠好運"
+
+msgid "YOUTH POWER"
+msgstr "青春力量"
+
+msgid "AMAZING ACE"
+msgstr "精妙星"
+
+msgid "E UNIVERSE"
+msgstr "電子宇宙"
+
+msgid "FAST VICTORY"
+msgstr "快快盈"
+
+msgid "GREENWICH"
+msgstr "綠族光芒"
+
+msgid "MISTER DAPPER"
+msgstr "英駿飛駒"
+
+msgid "NOBLE PURSUIT"
+msgstr "大千氣象"
+
+msgid "RED ELEGANCE"
+msgstr "紅逸舍"
+
+msgid "STAR CLUB"
+msgstr "福星"
+
+msgid "ALWAYS FLUKE"
+msgstr "果然僥倖"
+
+msgid "FIGHTING MACHINE"
+msgstr "堅闖"
+
+msgid "MULTISUPER"
+msgstr "萬事快"
+
+msgid "RED HARE KING"
+msgstr "赤兔猴王"
+
+msgid "WINNING DATA"
+msgstr "大數據"
+
+msgid "GALVANIC"
+msgstr "加非凡"
+
+msgid "HARRY'S HERO"
+msgstr "極速之子"
+
+msgid "SOLID SHALAA"
+msgstr "實力哥"
+
+msgid "DOUBLE WIN"
+msgstr "雙贏"
+
+msgid "DRAGON STAR"
+msgstr "皇仁福星"
+
+msgid "HAPPY FOR ALL"
+msgstr "四喜鳥"
+
+msgid "JOYFUL FRIENDSHIP"
+msgstr "友誼喜悅"
+
+msgid "JOY OF SPRING"
+msgstr "春風萬里"
+
+msgid "MEEPMEEP"
+msgstr "大利好運"
+
+msgid "TRIUMPHANT WARRIOR"
+msgstr "城中勇士"
+
+msgid "AMAZING FUN"
+msgstr "最好玩"
+
+msgid "AMAZINGTEAMWORK"
+msgstr "齊上班"
+
+msgid "BROTHER CHENG"
+msgstr "鄭大哥"
+
+msgid "BULLISH WARRIOR"
+msgstr "牛精勇士"
+
+msgid "CHARITY FOR ALL"
+msgstr "皆益善"
+
+msgid "CHARITY GAIN"
+msgstr "盈益善"
+
+msgid "CHEERFUL WORLD"
+msgstr "滿好世界"
+
+msgid "CIRCUIT BLAZING"
+msgstr "綫路通明"
+
+msgid "CIRCUIT ELEVEN"
+msgstr "電路十一"
+
+msgid "CIRCUIT FIERY"
+msgstr "綫路萬里"
+
+msgid "CIRCUIT VICTORY"
+msgstr "綫路光驊"
+
+msgid "COPARTNER PRANCE"
+msgstr "合夥奔馳"
+
+msgid "DASH AVENUE"
+msgstr "榮闖大道"
+
+msgid "DEEP PURSUIT"
+msgstr "大千無雙"
+
+msgid "FAST AS ROCKET"
+msgstr "快趣神舟"
+
+msgid "FIGHT TIME"
+msgstr "凱旋幸運"
+
+msgid "FORMULA ACE"
+msgstr "勝在有方"
+
+msgid "FURTHER FORWARD"
+msgstr "快首快腳"
+
+msgid "FURY AND GOLD"
+msgstr "神煞金剛"
+
+msgid "GLORIOUS EXPERT"
+msgstr "專家"
+
+msgid "GLORY CLOUD"
+msgstr "飛雲"
+
+msgid "GOLDEN ONE"
+msgstr "金首令"
+
+msgid "GREAT ACHIEVER"
+msgstr "共創成果"
+
+msgid "JOYFUL SUPREME"
+msgstr "開心歡欣"
+
+msgid "KINGLY DEMEANOR"
+msgstr "竣誠駒"
+
+msgid "KING OBERON"
+msgstr "勝多多"
+
+msgid "LESS IS MORE"
+msgstr "小小吾駒"
+
+msgid "LE ZEBRE"
+msgstr "都靈先鋒"
+
+msgid "LUCKY FIONN"
+msgstr "幸運芙蓉"
+
+msgid "ME TIME"
+msgstr "大將"
+
+msgid "MILES OF STAR"
+msgstr "萬里繁星"
+
+msgid "MISTER FOX"
+msgstr "九尾狐"
+
+msgid "OMAKASE"
+msgstr "廚師發辦"
+
+msgid "PACKING BRILLIANT"
+msgstr "包裝英明"
+
+msgid "PACKING PROSPECT"
+msgstr "包裝希望"
+
+msgid "PACKING WISHER"
+msgstr "包裝至善"
+
+msgid "PATCH OF KINGDOM"
+msgstr "手機錶皇"
+
+msgid "PATCH OF THETA"
+msgstr "手機錶霸"
+
+msgid "PHILOS"
+msgstr "會展二號"
+
+msgid "PING HAI COMET"
+msgstr "平海之星"
+
+msgid "PINGWU SPARKLE"
+msgstr "平湖福星"
+
+msgid "PROSPEROUS SMILE"
+msgstr "盈笑"
+
+msgid "ROMANTIC FANTASY"
+msgstr "夢照發"
+
+msgid "ROMANTIC HERO"
+msgstr "浪漫梟雄"
+
+msgid "RUNNING BOY"
+msgstr "好戰小子"
+
+msgid "SAVVY ELEGANCE"
+msgstr "尚寶"
+
+msgid "SECOND TO NONE"
+msgstr "獨步天下"
+
+msgid "SO TREASURE"
+msgstr "儀琪之寶"
+
+msgid "SPONGE BABE"
+msgstr "海綿寶寶"
+
+msgid "SUPER BONUS"
+msgstr "獎金大少"
+
+msgid "SUPER UNICORN"
+msgstr "勁好運"
+
+msgid "THE KHAN"
+msgstr "星運皇爵"
+
+msgid "TIGER AND GOLD"
+msgstr "神虎金剛"
+
+msgid "TOP PEAK"
+msgstr "翹峯"
+
+msgid "TOURBILLON FLOW"
+msgstr "飛輪熱流"
+
+msgid "UNISON"
+msgstr "聯歡兒"
+
+msgid "VERBIER"
+msgstr "朗日雪峰"
+
+msgid "VOYAGE SAMURAI"
+msgstr "遨遊武士"
+
+msgid "YEE CHEONG SPIRIT"
+msgstr "怡昌精神"
+
+msgid "DELAGO PATROL"
+msgstr "殿鋒"
+
+msgid "GOLDEN RISE"
+msgstr "金匯昇昇"
+
+msgid "ISLAND GOLDEN"
+msgstr "鼓浪飛凡"
+
+msgid "MR MAESTRO"
+msgstr "全能指揮"
+
+msgid "ROARING BEBE"
+msgstr "威武寶寶"
+
+msgid "SPECIAL HEDGE"
+msgstr "精算特殊"
+
+msgid "TATTENHAM"
+msgstr "馬有運"
+
+msgid "THE FINAL WORD"
+msgstr "福至"
+
+msgid "VOLCANIC SPARK"
+msgstr "風火恆雲"
+msgid "BRAVE WITNESS"
+msgstr "勇晉當銳"
+
+msgid "CERVIN"
+msgstr "馬特峰"
+
+msgid "CHILLI BABA"
+msgstr "烈火駿馬"
+
+msgid "COSMO NAVIGATOR"
+msgstr "宇宙動力"
+
+msgid "EVER VICTORIOUS"
+msgstr "望風披靡"
+
+msgid "FALCON COURT"
+msgstr "隼閣"
+
+msgid "GLORY B"
+msgstr "光輝所願"
+
+msgid "GOLDEN LUCK"
+msgstr "金運來"
+
+msgid "MANAGEMENT HEART"
+msgstr "管之心"
+
+msgid "ROBOT FIGHTER"
+msgstr "機械鬥士"
+
+msgid "SERANGOON"
+msgstr "八駿笑昇"
+
+msgid "SPEEDY CHARIOT"
+msgstr "神速馬車"
+
+msgid "SPICY GOLD"
+msgstr "椒椒醒"
+
+msgid "STRATHBARRY"
+msgstr "龍城金將"
+
+msgid "STURDY RUBY"
+msgstr "紅海勁"
+
+msgid "BEAUTY DESTINY"
+msgstr "美麗緣分"
+
+msgid "CHATEAU"
+msgstr "豪堡"
+
+msgid "DEVAS TWELVE"
+msgstr "十二神將"
+
+msgid "FLASH POINT"
+msgstr "識途好馬"
+
+msgid "HIGH RISE POWER"
+msgstr "高明力量"
+
+msgid "JOYFUL PROSPERITY"
+msgstr "富喜來"
+
+msgid "LAPRAS"
+msgstr "背背龍"
+
+msgid "MAYHEM"
+msgstr "皇者烽火"
+
+msgid "PATCH OF TIME"
+msgstr "手錶之星"
+
+msgid "SEA SAPPHIRE"
+msgstr "海藍寶"
+
+msgid "SIR HURRICANE"
+msgstr "暴風神"
+
+msgid "SMART FIGHTER"
+msgstr "你知我得"
+
+msgid "SPEEDY SMARTIE"
+msgstr "伶俐驫駒"
+
+msgid "SUNNY SHINES"
+msgstr "陽光燦爛"
+
+msgid "SUPER FAST DRAGON"
+msgstr "快如龍"
+
+msgid "V LOVE YOU"
+msgstr "夏日傾情"
+
+msgid "AROMATICA"
+msgstr "香飄萬里"
+
+msgid "BELLE HEART"
+msgstr "正本芳心"
+
+msgid "FANCY STAR"
+msgstr "歡笑福星"
+
+msgid "GANGNAM STAR"
+msgstr "江南盛"
+
+msgid "HAPPY FEELING"
+msgstr "欣感"
+
+msgid "HELLS BELLS"
+msgstr "光芒廻嚮"
+
+msgid "JOYFUL LIFE"
+msgstr "欣樂人生"
+
+msgid "LOYAL BO BO"
+msgstr "忠誠寶寶"
+
+msgid "MR ALADDIN"
+msgstr "同寶寶"
+
+msgid "SIGHT VICTORY"
+msgstr "贏眼光"
+
+msgid "SUNLIGHT POWER"
+msgstr "陽光勇士"
+
+msgid "CLUB SODA"
+msgstr "健者"
+
+msgid "GO HERO"
+msgstr "高氣派"
+
+msgid "HIGH PERCENTAGE"
+msgstr "高份數"
+
+msgid "MERCHANT PRINCE"
+msgstr "勇冠皇子"
+
+msgid "MULTIDARLING"
+msgstr "萬事靚"
+
+msgid "NORTHERN BEAST"
+msgstr "北海盜"
+
+msgid "PATCH OF WATCH"
+msgstr "錶之多多"
+
+msgid "RED MAVERICK"
+msgstr "雄昇勇士"
+
+msgid "STERLING WONGCHOY"
+msgstr "至旺財"
+
+msgid "HAYDAY"
+msgstr "千杯敬典"
+
+msgid "ISLAND BRIGHT"
+msgstr "鼓浪晴天"
+
+msgid "KING INVINCIBLE"
+msgstr "勁無敵"
+
+msgid "MASSIVE TALENT"
+msgstr "大英才"
+
+msgid "NISHIKADO"
+msgstr "大千世界"
+
+msgid "PO ON WAY"
+msgstr "寶安威"
+
+msgid "SHINKANSEN"
+msgstr "新幹線"
+
+msgid "SPEEDY FORTUNE"
+msgstr "連連勝利"
+
+msgid "STRONGEST BOY"
+msgstr "武林至尊"
+
+msgid "UNIVERSAL PURSUIT"
+msgstr "大千陽明"
+
+msgid "URBAN TRIUMPH"
+msgstr "全城帶勝"
+
+msgid "WOODFIRE CHAMP"
+msgstr "木火龍駒"
+
+msgid "CAMINO"
+msgstr "尋寶勇士"
+
+msgid "SHARPEN BRIGHT"
+msgstr "一支箭"
+
+msgid "STRATHPEFFER"
+msgstr "龍城強將"
+
+msgid "GOLDEN CHAMPION"
+msgstr "金狀元"
+
+msgid "LUCKY PLANET"
+msgstr "幸運星球"
+
+msgid "BEAU GOSSE"
+msgstr "俏郎中"
+
+msgid "CHAMPION INSTINCT"
+msgstr "快狠準"
+
+msgid "CHEER FOR SOUTH"
+msgstr "南區旺"
+
+msgid "HO HO STAR"
+msgstr "可愛新星"
+
+msgid "HORSE OF GOOD LUCK"
+msgstr "馬上發達"
+
+msgid "JOY FOR YOU"
+msgstr "好友喜"
+
+msgid "MORE RICE"
+msgstr "加飯"
+
+msgid "MR GOOD VIBES"
+msgstr "駿先生"
+
+msgid "SUPER CONTENTED"
+msgstr "滿多福"
+
+msgid "AFFIRM"
+msgstr "綠族威"
+
+msgid "CYBER PATCH"
+msgstr "錶之雲端"
+
+msgid "GALLANT GOODY"
+msgstr "威武良駒"
+
+msgid "LITTLE FAIRY"
+msgstr "小神仙"
+
+msgid "NINJA DERBY"
+msgstr "瀧澤飛駒"
+
+msgid "SPICY SO SMART"
+msgstr "辣得駕勢"
+
+msgid "SUPER ELITE"
+msgstr "飛躍精英"
+
+msgid "CRYSTAL POWERFUL"
+msgstr "妙玲瓏"
+
+msgid "LEAN MASTER"
+msgstr "精益大師"
+
+msgid "ALWAYS AWESOME"
+msgstr "悠悠我心"
+
+msgid "DAILY TROPHY"
+msgstr "日日獎"
+
+msgid "PLENTIFUL"
+msgstr "同滿滿"
+
+msgid "TURTLE AGAIN"
+msgstr "滿載歸來"
+
+msgid "COURIER MAGIC"
+msgstr "魔法速遞"
+
+msgid "DIAMOND DIAMOND"
+msgstr "閃耀將神"
+
+msgid "MULAN"
+msgstr "勝出風采"
+
+msgid "STARSHIP EIGHTY"
+msgstr "活力多多"
+
+msgid "TACTICAL COMMAND"
+msgstr "智勝攻略"
+
+msgid "BAYVIEW STAR"
+msgstr "百威星"
+
+msgid "GO GO GO"
+msgstr "上市魅力"
+
+msgid "GOOD VIEW GLORY"
+msgstr "佳景臨門"
+
+msgid "HAPPY HUNK"
+msgstr "開心漢子"
+
+msgid "REGENCY HAPPY STAR"
+msgstr "帝豪歡星"
+
+msgid "LEATHER MASTER"
+msgstr "皮具大師"
+
+msgid "MAGIC TRAVELLER"
+msgstr "神行百變"
+
+msgid "PRESTIGE MOOCHI"
+msgstr "威望"
+
+msgid "RATTAN WORLD"
+msgstr "世界籐王"
+
+msgid "GOLD STERLING"
+msgstr "金津銀星"
+
+msgid "GREAT DAYS"
+msgstr "超勁日子"
+
+msgid "AMAZING TRAVIS"
+msgstr "奮鬥傳奇"
+
+msgid "HAPPIHOOD"
+msgstr "最佳拍檔"
+
+msgid "MASTER OF ALL"
+msgstr "勇冠群英"
+
+msgid "TRAVEL GUIDE"
+msgstr "旅遊小子"
+
+msgid "BROTHER PEARL"
+msgstr "珍珠哥"
+
+msgid "DEVIL AND GOLD"
+msgstr "神魔金剛"
+msgid "LUCKY SWEYNESSE"
+msgstr "金鑽貴人"
+
+msgid "BEAUTY ETERNAL"
+msgstr "永遠美麗"
+
+msgid "VICTOR THE WINNER"
+msgstr "維港智能"
+
+msgid "STRAIGHT ARRON"
+msgstr "直線力山"
+
+msgid "ENCOUNTERED"
+msgstr "安遇"
+
+msgid "VOYAGE BUBBLE"
+msgstr "遨遊氣泡"
+
+msgid "TAJ DRAGON"
+msgstr "神虎龍駒"
+
+msgid "SWORD POINT"
+msgstr "知足常樂"
+
+msgid "RED LION"
+msgstr "紅運帝王"
+
+msgid "ADIOS"
+msgstr "順勢而飛"
+
+msgid "WHIZZ KID"
+msgstr "狀元及第"
+
+msgid "PACKING TREADMILL"
+msgstr "包裝必勝"
+
+msgid "SUPER SUNNY SING"
+msgstr "新力高升"
+
+msgid "SON PAK FU"
+msgstr "小霸王"
+
+msgid "FLAMING RABBIT"
+msgstr "九五赤兔"
+
+msgid "DROMBEG BANNER"
+msgstr "飛鷹翱翔"
+
+msgid "BEAUTY CHARGE"
+msgstr "美麗奔馳"
+
+msgid "HAPPY TOGETHER"
+msgstr "越駿歡欣"
+
+msgid "HAVA NAGEELA"
+msgstr "爽快"
+
+msgid "KEEFY"
+msgstr "瑪瑙"
+
+msgid "MAJESTIC KNIGHT"
+msgstr "電氣騎士"
+
+msgid "ATULLIBIGEAL"
+msgstr "增有"
+
+msgid "NORDIC DRAGON"
+msgstr "雪勇神駒"
+
+msgid "DANCING CODE"
+msgstr "舞林密碼"
+
+msgid "FIND MY LOVE"
+msgstr "紅愛舍"
+
+msgid "LA CITY BLANCHE"
+msgstr "當年情"
+
+msgid "THE BEST PEACH"
+msgstr "桃花雲"
+
+msgid "YOUTHFUL DEAL"
+msgstr "年少有威"
+
+msgid "ASTROLOGER"
+msgstr "星耀王者"
+
+msgid "BUNDLE OF CHARM"
+msgstr "魅力寶駒"
+
+msgid "ALACRITY"
+msgstr "敏捷神駒"
+
+msgid "WONDER KIT"
+msgstr "傑出漢子"
+
+msgid "GALAXY WITNESS"
+msgstr "喜旺駒"
+
+msgid "EASON"
+msgstr "伊臣"
+
+msgid "SUPREME LUCKY"
+msgstr "旺旺神駒"
+
+msgid "WINNING ICEY"
+msgstr "紫雲冰"
+
+msgid "GLOBAL HARMONY"
+msgstr "朗朗乾坤"
+
+msgid "SUPERB BOY"
+msgstr "巴閉哥"
+
+msgid "CAMPIONE"
+msgstr "時時滿意"
+
+msgid "HUMBLE STAR"
+msgstr "財才"
+
+msgid "MIGHTY STRIDE"
+msgstr "步大威猛"
+
+msgid "MUGEN"
+msgstr "綠族無限"
+
+msgid "GOKO WIN"
+msgstr "超霸勝"
+
+msgid "YELLOWFIN"
+msgstr "黃腳鱲"
+
+msgid "BON'S A PEARLA"
+msgstr "一代天嬌"
+
+msgid "CHING"
+msgstr "晴王"
+
+msgid "GALLANT WAKING"
+msgstr "威武覺醒"
+
+msgid "TAMRA BLITZ"
+msgstr "宜春火力"
+
+msgid "TOMODACHI KOKOROE"
+msgstr "好友心得"
+
+msgid "WOODFIRE BRO"
+msgstr "木火兄弟"
+
+msgid "ATOMIC FORCE"
+msgstr "巴薩諾瓦"
+
+msgid "BLUE MARLIN"
+msgstr "馬林"
+
+msgid "LIGHTNING WARRIOR"
+msgstr "雷電鬥士"
+
+msgid "OUTGATE"
+msgstr "亞機拉"
+
+msgid "SWEET ENCOUNTER"
+msgstr "魅力知遇"
+
+msgid "ADEFILL"
+msgstr "魅影獵飛"
+
+msgid "AMAZING VICTORY"
+msgstr "縱橫天下"
+
+msgid "BRAVE STAR"
+msgstr "勇敢巨星"
+
+msgid "TURIN MASCOT"
+msgstr "都靈福星"
+
+msgid "VIVA CHALEUR"
+msgstr "爆熱"
+
+msgid "MAJESTIC COLOUR"
+msgstr "彩虹千里"
+
+msgid "O'LINER"
+msgstr "縱橫萬里"
+
+msgid "PACKING HURRICANE"
+msgstr "包裝旋風"
+
+msgid "ROMANTIC LAOS"
+msgstr "浪漫老撾"
+
+msgid "BRAVE DREAMS"
+msgstr "勇敢夢想"
+
+msgid "HEROIC MASTER"
+msgstr "英雄豪邁"
+
+msgid "PERFECT TEAM"
+msgstr "精彩動力"
+
+msgid "SILVER SONIC"
+msgstr "銀亮光速"
+
+msgid "TOURBILLON PRINCE"
+msgstr "飛輪步"
+
+msgid "BEAUTYVERSE"
+msgstr "美麗宇宙"
+
+msgid "COTTON FINGERS"
+msgstr "新風俠"
+
+msgid "FLAGSHIP WARRIOR"
+msgstr "旗幟鬥士"
+
+msgid "SNAFFLES"
+msgstr "禾道福星"
+
+msgid "ALL IS GOOD"
+msgstr "能文能武"
+
+msgid "I GIVE"
+msgstr "我為您"
+
+msgid "QUANTUM PATCH"
+msgstr "錶之量子"
+
+msgid "SINBA"
+msgstr "開心寶貝"
+
+msgid "EXCELLENT FIGHTER"
+msgstr "你知我拼"
+
+msgid "FUN TOGETHER"
+msgstr "時尚歡欣"
+
+msgid "LESLIE"
+msgstr "風繼續吹"
+
+msgid "LUCKY EIGHT"
+msgstr "運高八斗"
+
+msgid "UNIVERSAL HORIZON"
+msgstr "陽明天空"
+
+msgid "CALL ME DANDY"
+msgstr "龍之心"
+
+msgid "MASTER OF FORTUNE"
+msgstr "發財大師"
+
+msgid "A AMERIC TE SPECSO"
+msgstr "有財有勢"
+
+msgid "IVY LEAGUE"
+msgstr "大學生"
+
+msgid "KARMA"
+msgstr "話你知"
+
+msgid "ROMANTIC CHARM"
+msgstr "浪漫風采"
+
+msgid "ALLGREEKTOME"
+msgstr "雅典武士"
+
+msgid "NOTORIOUS KING"
+msgstr "騰勝霸駒"
+
+msgid "PRINCE OF PORTY"
+msgstr "還看今朝"
+
+msgid "PULSAR STRIDER"
+msgstr "步履如風"
+
+msgid "SAKEWIN"
+msgstr "識贏"
+
+msgid "STAR CONTACT"
+msgstr "久久為攻"
+
+msgid "SWAN BAY"
+msgstr "博才"
+
+msgid "WINGS OF WAR"
+msgstr "撼天鐵翼"
+msgid "ACT OF FAITH"
+msgstr "凌厲"
+
+msgid "BILLIONAIRE SECRET"
+msgstr "發財秘笈"
+
+msgid "CHEVAL VALIANT"
+msgstr "不可擋"
+
+msgid "HOSS"
+msgstr "勝神威"
+
+msgid "JUMBO FORTUNE"
+msgstr "連連歡呼"
+
+msgid "MARK THE MOMENT"
+msgstr "八心八箭"
+
+msgid "NICCONI COUNTY"
+msgstr "常常有餘"
+
+msgid "SIXTH GENERATION"
+msgstr "陸知"
+
+msgid "SUGAR SUGAR"
+msgstr "鈁糖武士"
+
+msgid "SWEET BRIAR"
+msgstr "瑰麗人生"
+
+msgid "THESIS"
+msgstr "論文"
+
+msgid "YOUNG BRILLIANT"
+msgstr "競駿光輝"
+
+msgid "EIGHTY LIGHT YEARS"
+msgstr "光年八十"
+
+msgid "FRANTANCK"
+msgstr "手到再來"
+
+msgid "EIGHTEEN PALMS"
+msgstr "十八掌"
+
+msgid "GOLDEN TITLE"
+msgstr "金榜題名"
+
+msgid "HAPPY DAY"
+msgstr "仁仁之寶"
+
+msgid "NORDIC STAR"
+msgstr "雪山神駒"
+
+msgid "WAKA WAKA"
+msgstr "型仔美滿"
+
+msgid "FLYING MOJITO"
+msgstr "勤德威力"
+
+msgid "GOLDEN SAMURAI"
+msgstr "金鎗武士"
+
+msgid "JUNE PLANET"
+msgstr "駿行星"
+
+msgid "MIGHTY ARMOUR"
+msgstr "聖鑽神駒"
+
+msgid "ONE FOR ALL"
+msgstr "心想事成"
+
+msgid "ACE VICTORY"
+msgstr "高進明駒"
+
+msgid "BIG RED"
+msgstr "好如意"
+
+msgid "CAPITAL LEGEND"
+msgstr "川河首駒"
+
+msgid "LAUGH TALE"
+msgstr "哈哈大笑"
+
+msgid "MASTER STROKE"
+msgstr "神來之筆"
+
+msgid "M UNICORN"
+msgstr "獨角獸"
+
+msgid "SAVVY CHIC"
+msgstr "駿寶"
+
+msgid "BABY CRYSTAL"
+msgstr "水晶酒杯"
+
+msgid "EURO ROCKS"
+msgstr "歐洲傳奇"
+
+msgid "LOVERO"
+msgstr "開心勇駒"
+
+msgid "MIDORI BEAUTY"
+msgstr "綠色有料"
+
+msgid "SCOTCH TYCOON"
+msgstr "精選威"
+
+msgid "TOGEPI"
+msgstr "小刺蛋"
+
+msgid "UNPRESUMING"
+msgstr "色種笑"
+
+msgid "WIDE BLUE YONDER"
+msgstr "天外飛天"
+
+msgid "BEER PALACE"
+msgstr "今朝更好"
+
+msgid "COMING PATCH"
+msgstr "錶之將來"
+
+msgid "DARING PURSUIT"
+msgstr "大千眼界"
+
+msgid "HAPPY FAT CAT"
+msgstr "天足貓"
+
+msgid "JUMBO LEGEND"
+msgstr "銀進"
+
+msgid "SAMARKAND"
+msgstr "建測羣英"
+
+msgid "WONDERFUL UNICORN"
+msgstr "百發百中"
+
+msgid "HOLY POWER"
+msgstr "超威力"
+
+msgid "ROUND THE EARTH"
+msgstr "周遊列國"
+
+msgid "SUPER HIGHWAY"
+msgstr "揚揚大道"
+
+msgid "TOP TOP TEA"
+msgstr "盛世名駒"
+
+msgid "BEATO"
+msgstr "時時稱心"
+
+msgid "HAPPY TRIO"
+msgstr "樂加福"
+
+msgid "FORERUNNER"
+msgstr "博愛先鋒"
+
+msgid "NICHOLSON RETURNS"
+msgstr "翔龍再現"
+
+msgid "YOUNG LIFE FOREVER"
+msgstr "祥華孝寬"
+
+msgid "HAPPY GOLF"
+msgstr "開心高球"
+
+msgid "OWNERS' PRAISE"
+msgstr "馬主雄風"
+
+msgid "SUPER BABY"
+msgstr "超勁寶寶"
+
+msgid "UP AND UP"
+msgstr "滿月"
+
+msgid "CELTIC TIMES"
+msgstr "佳福駒"
+
+msgid "CIRCUIT TEN"
+msgstr "電路十號"
+
+msgid "GOODBAN BANBANBANG"
+msgstr "火雲神劍"
+
+msgid "KA YING WARRIOR"
+msgstr "嘉應勇士"
+
+msgid "KING ECCELLENTE"
+msgstr "皇帝英明"
+
+msgid "OUR LUCKY GLORY"
+msgstr "多利神駒"
+
+msgid "PERFETTO"
+msgstr "一絕"
+
+msgid "PRIME MORTAR"
+msgstr "砂漿金剛"
+
+msgid "PRINCE ALEX"
+msgstr "大力猴王"
+
+msgid "TRAVEL GOLF"
+msgstr "旅遊高球"
+
+msgid "DIAMOND FLARE"
+msgstr "鑽飾璀璨"
+
+msgid "GOLDEN BULL"
+msgstr "金鼓齊昇"
+
+msgid "LUCKY BANNER"
+msgstr "歡喜福星"
+
+msgid "LUCKY ETERNITY"
+msgstr "幸運雄威"
+
+msgid "ALL ARE MINE"
+msgstr "開心三多"
+
+msgid "GORGEOUS VITALITY"
+msgstr "華麗活力"
+
+msgid "LIFE IS GOOD"
+msgstr "心花放"
+
+msgid "SATIRICAL GLORY"
+msgstr "鐵三角"
+
+msgid "SHINING FORTUNE"
+msgstr "明駿福星"
+
+msgid "WINNING HEART"
+msgstr "三代同心"
+
+msgid "WINNING STEPS"
+msgstr "逐步贏"
+
+msgid "DIVINE SHINING"
+msgstr "神舟皓祥"
+
+msgid "GOLD TACK"
+msgstr "金德義"
+
+msgid "MASTER TORNADO"
+msgstr "馬梟雄"
+
+msgid "RUNNING AHEAD"
+msgstr "領頭先駒"
+
+msgid "TALENTS SUPREMO"
+msgstr "精英至尊"
+
+msgid "SEE U AGAIN"
+msgstr "想見你"
+
+msgid "SMILING COLLECTOR"
+msgstr "聚風雲"
+
+msgid "SUPER WISE DRAGON"
+msgstr "智勝龍"
+
+msgid "SURE JOYFUL"
+msgstr "得意佳作"
+
+msgid "CHEONG FAT"
+msgstr "長發"
+
+msgid "HAPPY SOUL"
+msgstr "健康心靈"
+
+msgid "PANDA LEGEND"
+msgstr "熊噹噹"
+
+msgid "RIVER VIEWS"
+msgstr "星河小子"
+
+msgid "CASA COSMO"
+msgstr "領航宇宙"
+
+msgid "DIAMOND SOARS"
+msgstr "鑽飾翱翔"
+
+msgid "PRIDE OF EIGHT"
+msgstr "八威小子"
+
+msgid "SAME TO YOU"
+msgstr "有你有我"
+
+msgid "TO INFINITY"
+msgstr "極速滿貫"
+msgid "CIRCUIT NINE"
+msgstr "電路九號"
+
+msgid "COMPASSION SUPER"
+msgstr "善傳香江"
+
+msgid "FLYING SILVER"
+msgstr "躡景追飛"
+
+msgid "FOREVER FOLKS"
+msgstr "年年友福"
+
+msgid "JUBILATION"
+msgstr "慶萬家"
+
+msgid "NOBLE WIN"
+msgstr "魅力一心"
+
+msgid "PODIUM"
+msgstr "焦點"
+
+msgid "ATOMIC BEAUTY"
+msgstr "美麗歡聲"
+
+msgid "CAN'T GO WONG"
+msgstr "獎星"
+
+msgid "FORTUNE PRESIDENT"
+msgstr "中華叻叻"
+
+msgid "VANTASTIC CHOICE"
+msgstr "勝利神駒"
+
+msgid "PRINCE CHISWICK"
+msgstr "超好運"
+
+msgid "KEEN UNITY"
+msgstr "勝利同盟"
+
+msgid "MR FUN"
+msgstr "好玩奇兵"
+
+msgid "YEABOI"
+msgstr "星雲浩騰"
+
+msgid "BULB PRINCE"
+msgstr "燈胆王子"
+
+msgid "COOL BLUE"
+msgstr "型到爆"
+
+msgid "DAN ATTACK"
+msgstr "花好月盈"
+
+msgid "SPLENDID STAR"
+msgstr "揚威四方"
+
+msgid "SUPER EAGLE"
+msgstr "宏才"
+
+msgid "MACH TEN"
+msgstr "得意醒"
+
+msgid "MIRACLES"
+msgstr "創奇蹟"
+
+msgid "RELIABLE PROFIT"
+msgstr "堅有利"
+
+msgid "SPEEDSTAR"
+msgstr "極速之星"
+
+msgid "JAZZ CLUB"
+msgstr "智勁駒"
+
+msgid "JOY IN JOY"
+msgstr "喜中喜"
+
+msgid "SOARING PENGSHAN"
+msgstr "飛躍坪山"
+
+msgid "SUPERB MOVE"
+msgstr "着着領先"
+
+msgid "TIMESTORM"
+msgstr "日新月著"
+
+msgid "FLAMING EAGLE"
+msgstr "闖一"
+
+msgid "NOBLE ONE"
+msgstr "魅力一丁"
+
+msgid "NORDIC COMBINED"
+msgstr "領航神駒"
+
+msgid "YOUNG HORIZON"
+msgstr "競駿天下"
+
+msgid "ACE TALENT"
+msgstr "天分高"
+
+msgid "CHOICERUS"
+msgstr "龍的風采"
+
+msgid "DRAGON DELIGHT"
+msgstr "喜勝威龍"
+
+msgid "HAPPY HORSE"
+msgstr "開心馬"
+
+msgid "NICE BIRDIE"
+msgstr "樂捉鳥"
+
+msgid "PLENTY PLENTY"
+msgstr "福恩多多"
+
+msgid "BEAT HOLLOW"
+msgstr "洪運派彩"
+
+msgid "DARCI LEGEND"
+msgstr "傳奇大師"
+
+msgid "FASTPASS"
+msgstr "小鳥"
+
+msgid "HERO ICON"
+msgstr "喜駿風采"
+
+msgid "M M NEBULA"
+msgstr "美滿星雲"
+
+msgid "UNITED ENDEAVORS"
+msgstr "勇進齊心"
+
+msgid "HUGE WIN"
+msgstr "曉贏"
+
+msgid "SPANGLE FORTUNE"
+msgstr "閃耀威龍"
+
+msgid "COLOURFUL BARON"
+msgstr "豐盛多彩"
+
+msgid "GET THE MONIES"
+msgstr "超醒神"
+
+msgid "HAPPY HERO"
+msgstr "國大合"
+
+msgid "MASTER OF LUCK"
+msgstr "馬上旺"
+
+msgid "PERFECT PEACH"
+msgstr "桃花多"
+
+msgid "YOO YOO KNIGHT"
+msgstr "優悠俠"
+
+msgid "CASA LEGEND"
+msgstr "領航傳祺"
+
+msgid "CHARMANDER"
+msgstr "喜報圍家"
+
+msgid "DASHING GLORY"
+msgstr "喜喜利高"
+
+msgid "FINGERS CROSSED"
+msgstr "順利取勝"
+
+msgid "PRECISION GOAL"
+msgstr "天時明駒"
+
+msgid "ALL IS READY"
+msgstr "東風壹號"
+
+msgid "GENERAL ACE"
+msgstr "上浦精選"
+
+msgid "MEDIC ELITE"
+msgstr "無敵精英"
+
+msgid "MODEST GENTLEMAN"
+msgstr "謙謙君子"
+
+msgid "MULTIWIN"
+msgstr "萬事正"
+
+msgid "ONE HEART ONE"
+msgstr "團結一心"
+
+msgid "BRILLIANT PIONEER"
+msgstr "光明先驅"
+
+msgid "DOUBLE SHOW"
+msgstr "飛躍凱旋"
+
+msgid "EAGLE RUN"
+msgstr "鷹勇猴王"
+
+msgid "EASY TWO"
+msgstr "錢途光明"
+
+msgid "SUPER JOY"
+msgstr "最多歡笑"
+
+msgid "DIAMOND WINNER"
+msgstr "鑽石福將"
+
+msgid "VIVA A LA"
+msgstr "怪獸豪俠"
+
+msgid "SIX BEST FRIENDS"
+msgstr "星叻無敵"
+
+msgid "SHENZHOU TWELVE"
+msgstr "神舟十二"
+
+msgid "MIGHTY STAR"
+msgstr "威力星"
+
+msgid "JOYFUL CHAMPION"
+msgstr "喜悅一生"
+
+msgid "SUPER HORNET"
+msgstr "超級黃蜂"
+
+msgid "GOLDEN FAIRY"
+msgstr "皇金風速"
+
+msgid "SMART BEAUTY"
+msgstr "美麗多盈"
+
+msgid "COMPULSORY"
+msgstr "金牌實力"
+
+msgid "PERFECT ROCK"
+msgstr "石師傅"
+
+msgid "JUST GREAT TWO"
+msgstr "飛馬好威"
+
+msgid "ROMANTIC WARRIOR"
+msgstr "浪漫勇士"
+
+msgid "CALIFORNIA SPANGLE"
+msgstr "加州星球"
+
+msgid "COURIER WONDER"
+msgstr "速遞奇兵"
+
+msgid "MONEY CATCHER"
+msgstr "發財先鋒"
+
+msgid "STOLTZ"
+msgstr "勝不驕"
+
+msgid "SENOR TOBA"
+msgstr "多巴先生"
+
+msgid "RUNNING GLORY"
+msgstr "健康快駒"
+
+msgid "THE GOLDEN SCENERY"
+msgstr "中華盛景"
+
+msgid "LUCKY WITH YOU"
+msgstr "幸運有您"
+
+msgid "SAUVESTRE"
+msgstr "美好世界"
+
+msgid "CHAMPION DRAGON"
+msgstr "龍船狀元"
+
+msgid "FANTASTIC TREASURE"
+msgstr "佳運財"
+
+msgid "FLYING ACE"
+msgstr "威力奔騰"
+
+msgid "FIVE G PATCH"
+msgstr "錶之五知"
+
+msgid "NIMBLE NIMBUS"
+msgstr "觔斗雲"
+
+msgid "NERVOUS WITNESS"
+msgstr "緊張大師"
+
+msgid "WE ARE HERO"
+msgstr "英雄豪傑"
+
+msgid "MAJESTIC STAR"
+msgstr "上駿之星"
+
+msgid "RISING FROM ASHES"
+msgstr "自力更生"
+
+msgid "SPIRITED EXPRESS"
+msgstr "駿馬快車"
+
+msgid "BOURBONAIRE"
+msgstr "笑哥兒"
+
+msgid "CARROLL STREET"
+msgstr "當家精神"
+
+msgid "MR ASCENDENCY"
+msgstr "一先生"
+
+msgid "HAMERON"
+msgstr "博望坡"
+
+msgid "BEAUTY LIVE"
+msgstr "美麗在線"
+
+msgid "NEARLY FINE"
+msgstr "寶賢得得"
+
+msgid "FLYING HIGH"
+msgstr "萬里飛至"
+
+msgid "IMA SINGLE MAN"
+msgstr "樂滿貫"
+
+msgid "ROCKET SPADE"
+msgstr "黑桃火箭"
+
+msgid "PLEASANT ENDEAVOR"
+msgstr "怡心聲"
+
+msgid "GOLD GOLD BABY"
+msgstr "純金酒杯"
+
+msgid "POWER KOEPP"
+msgstr "電源之駒"
+
+msgid "LIGHTNING BOLT"
+msgstr "閃電"
+
+msgid "WINNING DRAGON"
+msgstr "又龍串鳳"
+
+msgid "ARMOUR EAGLE"
+msgstr "穿甲鷹"
+
+msgid "COPARTNER AMBITION"
+msgstr "合夥雄心"
+
+msgid "SUPER FORTUNE"
+msgstr "連連有盈"
+
+msgid "SUPER WIN DRAGON"
+msgstr "勝意龍"
+
+msgid "FIERY DIAMOND"
+msgstr "火鑽"
+
+msgid "LUCKY ARCHANGEL"
+msgstr "幸運旅程"
+
+msgid "NEVER TOO SOON"
+msgstr "快搏"
+
+msgid "NOT USUAL STAR"
+msgstr "非凡之星"
+
+msgid "WINNER METHOD"
+msgstr "知道再勝"
+
+msgid "ESCAPE ROUTE"
+msgstr "波爾多"
+
+msgid "SECRET VISION"
+msgstr "信心之選"
+
+msgid "EXCELLENT PEERS"
+msgstr "越駿知己"
+
+msgid "KA YING SPIRIT"
+msgstr "嘉應精神"
+
+msgid "TORONADO PHANTOM"
+msgstr "旋風飛影"
+
+msgid "HYPER DRAGON BALL"
+msgstr "超級龍珠"
+
+msgid "MASSIVE ACTION"
+msgstr "大紅袍"
+
+msgid "ACE ONE"
+msgstr "祥勝霸駒"
+
+msgid "BEAUTY GLORY"
+msgstr "美麗邂逅"
+
+msgid "PINS PRINCE"
+msgstr "翩翩君子"
+
+msgid "INTREPID WINNER"
+msgstr "多多勇駒"
+
+msgid "ALL BEAUTY"
+msgstr "美麗滿滿"
+
+msgid "CALIFORNIA CIBLE"
+msgstr "加州一寶"
+
+msgid "GOLDEN EMPIRE"
+msgstr "金發盛世"
+
+msgid "JOLLY RULER"
+msgstr "旌鷹"
+
+msgid "ORIENTAL SMOKE"
+msgstr "東方飛影"
+
+msgid "POWERFUL WINGS"
+msgstr "隱形翅膀"
+
+msgid "RUN RUN COOL"
+msgstr "日日型"
+
+msgid "SOLID IMPACT"
+msgstr "實力派"
+
+msgid "SUMMIT CHEERS"
+msgstr "攻頂"
+
+msgid "GOOD BUDDY"
+msgstr "好拍檔"
+
+msgid "MAGIC PHOENIX"
+msgstr "其藝先鋒"
+
+msgid "ZOOM BOOM"
+msgstr "飛漲"
+
+msgid "S J TOURBILLON"
+msgstr "三江飛輪"
+
+msgid "SOLAR PARTNER"
+msgstr "太陽拍檔"
+
+msgid "CAPTAIN WIN"
+msgstr "旭日昇"
+
+msgid "E LEGEND"
+msgstr "電子傳奇"
+
+msgid "GALLANT HERO"
+msgstr "威武勇駒"
+
+msgid "STORM LEGEND"
+msgstr "川河冠駒"
+
+msgid "RATTAN KINGDOM"
+msgstr "亞洲籐王"
+
+msgid "COMET SPLENDIDO"
+msgstr "燊榮之星"
+
+msgid "SETANTA"
+msgstr "駟跑得"
+
+msgid "VIVA HUNTER"
+msgstr "怪獸奇兵"
+
+msgid "CIRCUIT MIGHTY"
+msgstr "綫路神驊"
+
+msgid "FLYING DRAGON"
+msgstr "龍騰飛翔"
+
+msgid "HAPPY DAILY"
+msgstr "天天得樂"
+
+msgid "KOKUSHI MUSOU"
+msgstr "國士無雙"
+
+msgid "HARMONY FIRE"
+msgstr "天火同人"
+
+msgid "SKY FOREVER"
+msgstr "天行健"
+
+msgid "DARCI JOY"
+msgstr "得勝多"
+
+msgid "DREAM PURSUER"
+msgstr "逐夢年代"
+
+msgid "EVERYONE'S VICTORY"
+msgstr "大眾勝利"
+
+msgid "FUN N GLORY"
+msgstr "超悅明駒"
+
+msgid "MEGA BONUS"
+msgstr "有鴻利"
+
+msgid "PHOENIX LIGHT"
+msgstr "大才"
+
+msgid "AMAZING TEENS"
+msgstr "華卓晴"
+
+msgid "CIRCUIT BOOMING"
+msgstr "綫路盈喜"
+
+msgid "EASY SNIP"
+msgstr "多多配合"
+
+msgid "ERNEST FEELING"
+msgstr "真感"
+
+msgid "EXUBERANT"
+msgstr "財駿"
+
+msgid "SIGHT HERO"
+msgstr "勇眼光"
+
+msgid "VICTORY SCHOLARS"
+msgstr "勝利才子"
+
+msgid "ARIEL"
+msgstr "艾莉奧"
+
+msgid "COLOURFUL PRINCE"
+msgstr "顏色王子"
+
+msgid "PEGASUS GENERAL"
+msgstr "飛馬將軍"
+
+msgid "SNOWALOT"
+msgstr "錢多多"
+
+msgid "LUCKY GOLD"
+msgstr "金發銀發"
+
+msgid "PARTY WARRIOR"
+msgstr "勇創派對"
+
+msgid "SERGEANT PEPPER"
+msgstr "胡椒軍曹"
+
+msgid "WONDER YEARS"
+msgstr "奇妙年華"
+
+msgid "AWESOME TREASURE"
+msgstr "佳運發"
+
+msgid "IMPERIAL MAGEE"
+msgstr "名門望族"
+
+msgid "MISSION BRAVO"
+msgstr "妙算歡騰"
+
+msgid "SUPER AXIOM"
+msgstr "輗多福"
+
+msgid "SUPER TEN"
+msgstr "勁力十足"
+
+msgid "ALL RICHES"
+msgstr "大勢至富"
+
+msgid "BLISSFUL STAR"
+msgstr "世澤歆星"
+
+msgid "KASA PAPA"
+msgstr "架勢奇爸"
+
+msgid "REACH GOAL"
+msgstr "一舖到位"
+
+msgid "ROYAL PRIDE"
+msgstr "皇者驕傲"
+
+msgid "SUPER HONG KONG"
+msgstr "香港精神"
+
+msgid "E BROTHER"
+msgstr "電子兄弟"
+
+msgid "MR VALIANT"
+msgstr "必先生"
+
+msgid "SAVVY DELIGHT"
+msgstr "奇寶"
+
+msgid "ENNEA FORTUNE"
+msgstr "九運"
+
+msgid "FREE FOAL"
+msgstr "逍遙駒"
+
+msgid "G ONE EXCELLENT"
+msgstr "育成精彩"
+
+msgid "KILLER INSTINCT"
+msgstr "鋒芒勁露"
+
+msgid "LOOKING COOL"
+msgstr "路路爽"
+
+msgid "REGENT GLORY"
+msgstr "寶麗生輝"
+
+msgid "TELECOM SPEED"
+msgstr "電訊飛車"
+
+msgid "TURIN WARRIOR"
+msgstr "都靈勇士"
+
+msgid "FOREVER GLORIOUS"
+msgstr "龍船快"
+
+msgid "KOWLOON EAST STAR"
+msgstr "龍東傳承"
+
+msgid "WIN WIN FIGHTER"
+msgstr "威威鬥士"
+
+msgid "LYRICAL MOTION"
+msgstr "風中勁松"
+
+msgid "MANAGEMENT FOLKS"
+msgstr "管之友"
+
+msgid "GO GO SIXTEEN"
+msgstr "縱橫十六"
+
+msgid "READY PLAYER ONE"
+msgstr "喜快"
+
+msgid "HEARTY WISH"
+msgstr "誠心所願"
+
+msgid "NATURAL GOLD"
+msgstr "自來金"
+
+msgid "COMMANDING MISSILE"
+msgstr "威力飛彈"
+
+msgid "DAZZLING FELLOW"
+msgstr "飛來勁"
+
+msgid "THE GOOD DEAL"
+msgstr "投資有利"
+
+msgid "VALHALLA"
+msgstr "九秒九"
+
+msgid "G LINER"
+msgstr "縱橫大進"
+
+msgid "KING OF THE COURT"
+msgstr "場長勝"
+
+msgid "CIRCUIT SEVEN"
+msgstr "電路七號"
+
+msgid "CORDYCEPS ONE"
+msgstr "蟲草之凰"
+
+msgid "GLUCK RACER"
+msgstr "好運寶馬"
+
+msgid "CHIU CHOW BROTHER"
+msgstr "潮州大兄"
+
+msgid "CLASSIC ARCHI"
+msgstr "神舟飛駒"
+
+msgid "MY INTELLIGENT"
+msgstr "精明勇駿"
+
+msgid "PALACE PAL"
+msgstr "大登殿"
+
+msgid "PROSECCO"
+msgstr "勝利之皇"
+
+msgid "SUNNY BABY"
+msgstr "樂天派"
+
+msgid "WIND SPEEDER"
+msgstr "前風"
+
+msgid "CIRCUIT ELITE"
+msgstr "綫路菁英"
+
+msgid "ASIAN ONE"
+msgstr "亞洲力量"
+
+msgid "BOOM ALLIANCE"
+msgstr "紅粉豐彩"
+
+msgid "H Z TOURBILLON"
+msgstr "杭州飛輪"
+
+msgid "AUGUST MOON"
+msgstr "月球"
+
+msgid "SWEET DIAMOND"
+msgstr "鑽石寶寶"
+
+msgid "BAEBAE TSOI"
+msgstr "賽得意"
+
+msgid "ISLAND SURPRISE"
+msgstr "鼓浪精綵"
+
+msgid "GOODMANSHIP"
+msgstr "友誼至佳"
+
+msgid "VAMOS"
+msgstr "特攻"
+
+msgid "CHARMING STEED"
+msgstr "飛騰騅"
+
+msgid "ANGELS HUNTER"
+msgstr "天使獵人"
+
+msgid "FIGHTING STAR"
+msgstr "奮鬥雄才"
+
+msgid "DRAGON KINGDOM"
+msgstr "皇龍帝國"
+
+msgid "GENERAL WINNER"
+msgstr "喜愛善"
+
+msgid "LOYAL AMBITION"
+msgstr "赤子雄心"
+
+msgid "CALL ME TEDDY"
+msgstr "牛皇頭"
+
+msgid "FOXHUNTER WAY"
+msgstr "獵狐者威"
+
+msgid "HANG'S CHOICE"
+msgstr "恆駿之寶"
+
+msgid "CIRCUIT SPLENDOR"
+msgstr "綫路光明"
+
+msgid "CHIRON"
+msgstr "麒麟"
+
+msgid "MISTER ARM"
+msgstr "謎語"
+
+msgid "TSUEN WAN GLORY"
+msgstr "荃程路通"
+
+msgid "WELLINGTON"
+msgstr "福逸"
+
+msgid "RUSSIAN EMPEROR"
+msgstr "將王"
+
+msgid "SIGHT SUCCESS"
+msgstr "好眼光"
+
+msgid "BEAUTY JOY"
+msgstr "美麗同享"
+
+msgid "HEALTHY HAPPY"
+msgstr "健康愉快"
+
+msgid "TELECOM FIGHTERS"
+msgstr "電訊巴打"
+
+msgid "KURPANY"
+msgstr "精靈勇士"
+
+msgid "TOURBILLON DIAMOND"
+msgstr "飛輪閃耀"
+
+msgid "GOOD LUCK FRIEND"
+msgstr "寶成智勝"
+
+msgid "CHANCHENG PRINCE"
+msgstr "禪勝寶駒"
+
+msgid "REWARDING TOGETHER"
+msgstr "駿馬風采"
+
+msgid "ALL FOR ST PAUL'S"
+msgstr "保羅承傳"
+
+msgid "MEANINGFUL STAR"
+msgstr "百勝名駒"
+
+msgid "APACHE PASS"
+msgstr "好好心得"
+
+msgid "BERLIN TANGO"
+msgstr "柏林探戈"
+
+msgid "COMPUTER PATCH"
+msgstr "錶之智能"
+
+msgid "C P BRAVE"
+msgstr "常拼常勇"
+
+msgid "EVERYONE'S DELIGHT"
+msgstr "大眾開心"
+
+msgid "HARMONY N BLESSED"
+msgstr "人和家興"
+
+msgid "SPLENDID LIVING"
+msgstr "精彩生活"
+
+msgid "TRUE LEGEND"
+msgstr "幸運傳奇"
+
+msgid "NATURAL STORM"
+msgstr "自然力量"
+
+msgid "GRATEFUL HEART"
+msgstr "平常心"
+
+msgid "LOOKING GREAT"
+msgstr "路路醒"
+
+msgid "ZONE D"
+msgstr "二雋"
+
+msgid "SMOKEY BEAR"
+msgstr "泉龍駒"
+
+msgid "MAJESTIC VICTORY"
+msgstr "天寅合一"
+
+msgid "LOYAL BABY"
+msgstr "忠誠駒"
+
+msgid "BEAUTY FIT"
+msgstr "一定美麗"
+
+msgid "UNTOLD RICHES"
+msgstr "發財好市"
+
+msgid "SMILING TIME"
+msgstr "悅風雲"
+
+msgid "BEAUTY CHAMP"
+msgstr "美麗喝采"
+
+msgid "LET'S DO IT"
+msgstr "威之星"
+
+msgid "MALDIVES"
+msgstr "馬爾代夫"
+
+msgid "MARADO"
+msgstr "鹿鼎記"
+
+msgid "READY TO WIN"
+msgstr "以戰得勝"
+
+msgid "SEIZING THE MOMENT"
+msgstr "志勝時機"
+
+msgid "YOU'REMYEVERYTHING"
+msgstr "讓愛高飛"
+
+msgid "PARTERRE"
+msgstr "拍馬難追"
+
+msgid "METRO WARRIOR"
+msgstr "精彩勇士"
+
+msgid "COMPASSION SPIRIT"
+msgstr "善傳萬里"
+
+msgid "GALLANT CROWN"
+msgstr "冠寶駒"
+
+msgid "RED MAJESTY"
+msgstr "赤馬雄風"
+
+msgid "WAR OF COURAGE"
+msgstr "無敵勇士"
+
+msgid "DURHAM STAR"
+msgstr "對衡之星"
+
+msgid "KILINDINI"
+msgstr "金哥兒"
+
+msgid "SPARKLING DOLPHIN"
+msgstr "海豚星"
+
+msgid "SUPER COMMANDER"
+msgstr "令才"
+
+msgid "MASTER HERO"
+msgstr "將俠"
+
+msgid "YOUNG VICTORY"
+msgstr "競駿翩翩"
+
+msgid "EXCELLENT DADDY"
+msgstr "逆市奇爸"
+
+msgid "GOLDEN LINK"
+msgstr "金莊令"
+
+msgid "CONCERTO"
+msgstr "協奏曲"
+
+msgid "LUCKY QUALITY"
+msgstr "戰鬥英雄"
+
+msgid "DIVINE ERA"
+msgstr "神舟時代"
+
+msgid "VALIANT ELEGANCE"
+msgstr "八心之威"
+
+msgid "ACA POWER"
+msgstr "澳華威威"
+
+msgid "LEGION OF MERIT"
+msgstr "赤火驍龍"
+
+msgid "SMART FOLKS"
+msgstr "友盈友福"
+
+msgid "SO AWESOME"
+msgstr "進優自在"
+
+msgid "AMAZING BOY"
+msgstr "勁叻仔"
+
+msgid "DRAGON PRIDE"
+msgstr "傲龍駒"
+
+msgid "DUBLIN STAR"
+msgstr "都柏名駒"
+
+msgid "STRIVE FOR GLORY"
+msgstr "佳尊三"
+
+msgid "YEE CHEONG WARRIOR"
+msgstr "怡昌勇士"
+
+msgid "STORMTROUPER"
+msgstr "友心友型"
+
+msgid "COLONEL"
+msgstr "上校"
+
+msgid "ALLOY KING"
+msgstr "合金皇"
+
+msgid "MAXIMIZE HEART"
+msgstr "大紅心"
+
+msgid "BIG TWO"
+msgstr "贏盡天下"
+
+msgid "AI ONE"
+msgstr "博愛之光"
+
+msgid "FIRE BALL"
+msgstr "紅鬃烈馬"
+
+msgid "APEX TOP"
+msgstr "創高峰"
+
+msgid "MULTIMORE"
+msgstr "萬事有"
+
+msgid "SOARING TOWER"
+msgstr "騰飛塔"
+
+msgid "SUN OF MAKFI"
+msgstr "日就月將"
+
+msgid "SUPERB DADDY"
+msgstr "爸巴閉"
+
+msgid "HAPPY JAI JAI"
+msgstr "又享耆成"
+
+msgid "FORTUNE TRIPLE"
+msgstr "生生福運"
+
+msgid "ARTHUR'S KINGDOM"
+msgstr "符號"
+
+msgid "MILLENNIUM FALCON"
+msgstr "星際精英"
+
+msgid "DAY DAY RICH"
+msgstr "天天智庫"
+
+msgid "GREEN LASER"
+msgstr "綠登"
+
+msgid "FORTUNE MASTER"
+msgstr "富存大師"
+
+msgid "NOIR RIDER"
+msgstr "蒲俠超得"
+
+msgid "STAR OF GLORY"
+msgstr "摘星光輝"
+
+msgid "GOLDEN SIXTY"
+msgstr "金鎗六十"
+
+msgid "SUPER WEALTHY"
+msgstr "聚才"
+
+msgid "DUKE WAI"
+msgstr "韋小寶"
+
+msgid "PING HAI GALAXY"
+msgstr "平海歡星"
+
+msgid "BUTTERFIELD"
+msgstr "勇猛神駒"
+
+msgid "XPONENTIAL"
+msgstr "量化歡騰"
+
+msgid "COLUMBUS COUNTY"
+msgstr "時時有餘"
+
+msgid "PRIME MINISTER"
+msgstr "總理"
+
+msgid "SUPER WINNER"
+msgstr "紅旺"
+
+msgid "SPARKLING KNIGHT"
+msgstr "閃電烈馬"
+
+msgid "SO WE JOY"
+msgstr "無心睡眠"
+
+msgid "PRECISE EXPRESS"
+msgstr "精準快車"
+
+msgid "WOOD ON FIRE"
+msgstr "木火同明"
+
+msgid "MAGIC SUPREME"
+msgstr "駿皇星"
+
+msgid "TOTAL POWER"
+msgstr "勁駒"
+
+msgid "INVINCIBLE MISSILE"
+msgstr "聰明導彈"
+
+msgid "HIGH RISE SOLDIER"
+msgstr "高明駿將"
+
+msgid "OVERSUBSCRIBED"
+msgstr "超額認購"
+
+msgid "HERO STAR"
+msgstr "喜駿之星"
+
+msgid "MELBOURNE HALL"
+msgstr "福滿寶"
+
+msgid "KYRUS UNICORN"
+msgstr "家樂飛駒"
+
+msgid "HARMONY N HOME"
+msgstr "人和家盛"
+
+msgid "HERCULES"
+msgstr "晉神"
+
+msgid "COPARTNER ERA"
+msgstr "合夥年代"
+
+msgid "HAPPY TANGO"
+msgstr "中華威威"
+
+msgid "EIGHT TRIGRAMS"
+msgstr "八卦"
+
+msgid "HAPPILY FRIENDS"
+msgstr "歡樂好友"
+
+msgid "EXPLOSIVE WITNESS"
+msgstr "帖木兒"
+
+msgid "BEAR SLAM"
+msgstr "滿冠熊"
+
+msgid "PAKISTAN FRIEND"
+msgstr "巴基之友"
+
+msgid "RIGHTEOUS DOCTRINE"
+msgstr "大道至正"
+
+msgid "KASI FARASI"
+msgstr "一舖縱橫"
+
+msgid "SMART LEADER"
+msgstr "醒目勇駒"
+
+msgid "FEARLESS FIRE"
+msgstr "成才"
+
+msgid "RIGHT HONOURABLE"
+msgstr "贏科超影"
+
+msgid "VINCY"
+msgstr "全才"
+
+msgid "FAITHFUL TRINITY"
+msgstr "鵲橋飛渡"
+
+msgid "WUNDERBAR"
+msgstr "氣勢"
+
+msgid "TURIN STARSPANGLED"
+msgstr "都靈星球"
+
+msgid "FORTUNE SUPERSTAR"
+msgstr "發財鴻星"
+
+msgid "STAR LINE"
+msgstr "久久為金"
+
+msgid "FORTUNE WHISKEY"
+msgstr "運來伍寶"
+
+msgid "KA YING RISING"
+msgstr "嘉應高昇"
+
+msgid "GORGEOUS WIN"
+msgstr "華麗再勝"
+
+msgid "KA YING VICTORY"
+msgstr "嘉應獎昇"
+
+msgid "STELLAR SWIFT"
+msgstr "紫荊歡呼"
+
+msgid "CITY THUNDER"
+msgstr "衝上雲霄"
+
+msgid "ROMANTIC NOVELIST"
+msgstr "博學多財"
+
+msgid "SUPERSONIC"
+msgstr "超音速"
+
+msgid "WAH MAY WAI WAI"
+msgstr "華美之威"
+
+msgid "APOLAR FIGHTER"
+msgstr "無極勇將"
+
+msgid "MY FLYING ANGEL"
+msgstr "美神來"
+msgid "PRINCIPLED"
+msgstr "時時有道"
+msgid "RICH HORSE"
+msgstr "富貴駒"
+msgid "TALENTS AMBITION"
+msgstr "精英雄心"
+msgid "STORM RIDER"
+msgstr "風雲武士"
+msgid "CHAMPION METHOD"
+msgstr "知道長勝"
+msgid "GOLDEN LONG"
+msgstr "郎善好施"
+msgid "JAMES TAK"
+msgstr "占士德"
+msgid "FUN ELITE"
+msgstr "中環精英"
+msgid "MUST GO"
+msgstr "德心知遇"
+msgid "SUPER LEGENDS"
+msgstr "非凡達"
+msgid "THE ABSOLUTE"
+msgstr "定數"
+msgid "JUDY'S GREAT"
+msgstr "荷花之星"
+msgid "GALLANT VALOUR"
+msgstr "耀寶駒"
+msgid "RUBYLOT"
+msgstr "球星"
+msgid "SKY HEART"
+msgstr "仁心星"
+msgid "TELECOM DRAGON"
+msgstr "電訊龍駒"
+msgid "TOP SCORER"
+msgstr "金榜之星"
+msgid "RUN RUN TIMING"
+msgstr "時間寶"
+msgid "ACE POWER"
+msgstr "祥勝力駒"
+msgid "AEROINVINCIBLE"
+msgstr "友瑩仁"
+msgid "AMAZING AWARD"
+msgstr "奮鬥輝煌"
+msgid "AURORA LADY"
+msgstr "晨曦儷人"
+msgid "AUTUMN DELIGHT"
+msgstr "喜勝駿駒"
+msgid "BALLISTIC WIN"
+msgstr "極速贏"
+msgid "BLAZING WIND"
+msgstr "熾烈神駒"
+msgid "BLESSING"
+msgstr "祝福"
+msgid "BOWSER"
+msgstr "酷霸王"
+msgid "BRAVO WARRIOR"
+msgstr "彪形猛將"
+msgid "CALIFORNIA ICON"
+msgstr "加州代表"
+msgid "CALL ME GLORIOUS"
+msgstr "龍之輝"
+msgid "CHATEAU LE PECHE"
+msgstr "永勝金駒"
+msgid "CHATEAUNEUF"
+msgstr "飲杯"
+msgid "C P ONE"
+msgstr "常拼常德"
+msgid "CRAZY TREASURE"
+msgstr "新強福盈"
+msgid "CURRAHEE"
+msgstr "時時如意"
+msgid "DANIWIN"
+msgstr "丹力寶"
+msgid "DIVANO"
+msgstr "開心寶寶"
+msgid "DRACO"
+msgstr "快樂老撾"
+msgid "ENJOY GOLF"
+msgstr "快樂高球"
+msgid "EVER SMART"
+msgstr "有心意"
+msgid "FAIRY HORSE"
+msgstr "夢幻駿駒"
+msgid "FAMILY FORTUNE"
+msgstr "富裕君子"
+msgid "FIREFOOT"
+msgstr "風起雲湧"
+msgid "FLYING ROMANTIC"
+msgstr "威力勇驥"
+msgid "FOREMOST TEDDY"
+msgstr "領創動力"
+msgid "FORTUNE COOKIES"
+msgstr "富存曲奇"
+msgid "FORTUNE RACER"
+msgstr "富存寶馬"
+msgid "FOXHUNTER KING"
+msgstr "獵狐者勁"
+msgid "FULL CREDIT"
+msgstr "同祥和順"
+msgid "FUNG"
+msgstr "鋒王"
+msgid "GALE SAGA"
+msgstr "旋風傳奇"
+msgid "GALLANT LUCKY"
+msgstr "威武威威"
+msgid "GAMEPLAYER WARRIOR"
+msgstr "電玩勇士"
+msgid "GENEVA"
+msgstr "增強"
+msgid "GIANT LEAP"
+msgstr "日馳千里"
+msgid "GIMME FIVE"
+msgstr "五福星"
+msgid "GLORY ELITE"
+msgstr "輝煌精英"
+msgid "GOLD JEWELLERY"
+msgstr "首飾金牌"
+msgid "GOOD GOOD"
+msgstr "小飛俠"
+msgid "GOOD HAPPY HEART"
+msgstr "好開心"
+msgid "GREAT SPIRIT"
+msgstr "好精神"
+msgid "GUMMY BEAR"
+msgstr "金甘"
+msgid "HANDSOME BOMB"
+msgstr "帥炸"
+msgid "HAPPY AGAIN"
+msgstr "越駿開心"
+msgid "HAPPY HOLIDAY"
+msgstr "假日福星"
+msgid "HEALTHY POWER"
+msgstr "健康力量"
+msgid "HERO WARRIOR"
+msgstr "英雄戰士"
+msgid "HICKORY VICTORY"
+msgstr "皇者之寶"
+msgid "INNOTECH STAR"
+msgstr "創科之星"
+msgid "INVINCIBLE LUCKY"
+msgstr "旺旺快駒"
+msgid "ISLAND BUDDY"
+msgstr "鼓浪好友"
+msgid "IVICTORIAM"
+msgstr "利衍天下"
+msgid "KING MILES"
+msgstr "安康萬里"
+msgid "LE MAILLOT JAUNE"
+msgstr "烈火寶馬"
+msgid "LIFELINE EXPRESS"
+msgstr "健康快車"
+msgid "LINK"
+msgstr "連捷"
+msgid "LO PAN SPIRIT"
+msgstr "魯班精神"
+msgid "LUCKY CHARM"
+msgstr "多多彩彩"
+msgid "LUCKY CHEVALIERS"
+msgstr "機符巧俠"
+msgid "LUCKY SYMPHONY"
+msgstr "英雄戰歌"
+msgid "LUCKY TOUCH"
+msgstr "勝意"
+msgid "MANYTHANKS FOREVER"
+msgstr "常常感恩"
+msgid "MARIO"
+msgstr "馬利奧"
+msgid "MASTER MASTERMIND"
+msgstr "智智多寶"
+msgid "MATSU VICTOR"
+msgstr "江南勇士"
+msgid "MIGHTY STRENGTH"
+msgstr "勁大威猛"
+msgid "MILES AWAY"
+msgstr "千里如飛"
+msgid "MISSION VOICE"
+msgstr "妙算高歌"
+msgid "MIU FA FA"
+msgstr "妙芳華"
+msgid "MOLLY'S WITNESS"
+msgstr "超級精英"
+msgid "MR ENERGIA"
+msgstr "勁先生"
+msgid "NEVER PETER OUT"
+msgstr "天威"
+msgid "NORWEGIAN WOOD"
+msgstr "挪威森林"
+msgid "ON THE LASH"
+msgstr "齊歡最樂"
+msgid "PARENTS' LOVE"
+msgstr "勝萬金"
+msgid "PERFECTO MOMENTS"
+msgstr "勁爽"
+msgid "POCHETTINO"
+msgstr "八正道"
+msgid "RACINGRACE"
+msgstr "日頌月讚"
+msgid "RAGING RAPIDS"
+msgstr "精算激流"
+msgid "RAINBOW DELIGHT"
+msgstr "彩虹歡欣"
+msgid "RISE COMPANIONS"
+msgstr "結伴同行"
+msgid "ROBOT KNIGHT"
+msgstr "機械騎士"
+msgid "RUBY SAILING"
+msgstr "紅海風帆"
+msgid "SHANGHAI STYLE"
+msgstr "有派頭"
+msgid "SHINE BRIGHT"
+msgstr "發光發亮"
+msgid "SILVER DESTINY"
+msgstr "水龍頭"
+msgid "SILVER SPURS"
+msgstr "銀刺勇士"
+msgid "SKY PROPHET"
+msgstr "漣心星"
+msgid "SKY SONG"
+msgstr "賢心星"
+msgid "SKY TRUST"
+msgstr "信心星"
+msgid "SOARING BRONCO"
+msgstr "神駒馬靈"
+msgid "SPICY KNUCKLES"
+msgstr "辣得凌厲"
+msgid "SPICY SPANGLE"
+msgstr "辣得金"
+msgid "STARMEN"
+msgstr "無敵星"
+msgid "STORM WINNER"
+msgstr "風雷暴"
+msgid "SUNDAY'S SERENADE"
+msgstr "卓越蒨鋒"
+msgid "SUNNY DA BEST"
+msgstr "新力好"
+msgid "SUPER BEN"
+msgstr "肯搏"
+msgid "SUPERB WITNESS"
+msgstr "精選大師"
+msgid "SUPER CHARIZZARD"
+msgstr "超勁火力"
+msgid "SUPER GLORY"
+msgstr "真好運"
+msgid "SUPER JOY N FUN"
+msgstr "時尚風趣"
+msgid "SUPER SIXTY"
+msgstr "超強六十"
+msgid "SUPER TAICHI"
+msgstr "己多福"
+msgid "TAKE ACTION"
+msgstr "先到先得"
+msgid "TEAM HAPPY"
+msgstr "添喜運"
+msgid "TELECOM BULLET"
+msgstr "電訊子彈"
+msgid "UNIVERSAL BLAZE"
+msgstr "陽明閃耀"
+msgid "VULCANUS"
+msgstr "星火燎原"
+msgid "WINDCHEATER"
+msgstr "譽友翔駒"
+msgid "WINNING GOLD"
+msgstr "金勝名駒"
+msgid "WINNING MONEY"
+msgstr "紅錢到"
+msgid "WINNING STREAK"
+msgstr "多多勝"
+msgid "WINNING TURN"
+msgstr "自由奔騰"
+msgid "WIN SPEED"
+msgstr "超風速"
+msgid "X FACTOR"
+msgstr "大彩池"
+msgid "YEE CHEONG RAIDER"
+msgstr "怡昌奇兵"
+msgid "YODA'S CHOICE"
+msgstr "精明選擇"
+msgid "YOHOHO"
+msgstr "著迷"
+msgid "CALIFORNIATOTALITY"
+msgstr "加州動員"
+msgid "CHATER GOLD"
+msgstr "金獅勝將"
+msgid "FLYING PHANTOM"
+msgstr "旋風飛颺"
+msgid "FRUITY WARRIOR"
+msgstr "果然得"
+msgid "GRAND CONQUEROR"
+msgstr "志敏飛凡"
+msgid "GUSTY FIGHTER"
+msgstr "驍勇善戰"
+msgid "HAPPYDEARHAPPYDEER"
+msgstr "一鹿歡騰"
+msgid "PANDA"
+msgstr "黑白"
+msgid "COUNTRY DANCER"
+msgstr "鄉村樂韻"
+msgid "WINNING SEVEN"
+msgstr "凱旋七福"
+msgid "NEW POWER"
+msgstr "新力"
+msgid "THE CONCENTRATION"
+msgstr "全神貫注"
+msgid "HINOKAMI KAGURA"
+msgstr "火神神樂"
+msgid "E TALENT"
+msgstr "電子達人"
+msgid "BOOMBAYAH"
+msgstr "驍勇者"
+msgid "LADY BILLIE"
+msgstr "同得寶"
+msgid "SONIC BOOM"
+msgstr "快馬加鞭"
+msgid "E GLORY"
+msgstr "電子精彩"
+msgid "CALIFORNIA BANNER"
+msgstr "加州星皓"
+msgid "CALIFORNIA MOXIE"
+msgstr "加州活力"
+msgid "CALIFORNIA STAR"
+msgstr "加州星馳"
+msgid "CALIFORNIA SUN"
+msgstr "加州陽光"
+msgid "ENSHINE"
+msgstr "安熠"
+msgid "GO GENERAL"
+msgstr "高將軍"
+
+msgid "MEANINGFUL DRAGON"
+msgstr "百勝威龍"
+
+msgid "SANTORINI"
+msgstr "聖托里尼"
+
+msgid "SKYEY BLUE"
+msgstr "雙天寳馬"
+
+msgid "SUPER TREASURE"
+msgstr "裕達寶駒"
+
+msgid "THUNDER BLINK"
+msgstr "同得威"
+
+
+
+
+
+
+
+
+#: Jockey Names
+msgid "Z Purton"
+msgstr "潘頓"
+
+msgid "K Teetan"
+msgstr "田泰安"
+
+msgid "H Bowman"
+msgstr "布文"
+
+msgid "Y L Chung"
+msgstr "鍾易禮"
+
+msgid "C Y Ho"
+msgstr "何澤堯"
+
+msgid "A Atzeni"
+msgstr "艾兆禮"
+
+msgid "L Hewitson"
+msgstr "希威森"
+
+msgid "A Badel"
+msgstr "巴度"
+
+msgid "L Ferraris"
+msgstr "霍宏聲"
+
+msgid "C L Chau"
+msgstr "周俊樂"
+
+msgid "B Avdulla"
+msgstr "艾道拿"
+
+msgid "K De Melo"
+msgstr "董明朗"
+
+msgid "K C Leung"
+msgstr "梁家俊"
+
+msgid "H Bentley"
+msgstr "班德禮"
+
+msgid "M Chadwick"
+msgstr "蔡明紹"
+
+msgid "M L Yeung"
+msgstr "楊明綸"
+
+msgid "A Hamelin"
+msgstr "賀銘年"
+
+msgid "E C W Wong"
+msgstr "黃智弘"
+
+msgid "M F Poon"
+msgstr "潘明輝"
+
+msgid "K H Chan"
+msgstr "陳嘉熙"
+
+msgid "H T Mo"
+msgstr "巫顯東"
+
+msgid "J McDonald"
+msgstr "麥道朗"
+
+msgid "R Moore"
+msgstr "莫雅"
+
+msgid "M Barzalona"
+msgstr "巴米高"
+
+msgid "R King"
+msgstr "金美琪"
+
+msgid "M Guyon"
+msgstr "紀仁安"
+
+msgid "L Currie"
+msgstr "嘉里"
+
+msgid "T Marquand"
+msgstr "馬昆"
+
+msgid "D Lane"
+msgstr "連達文"
+
+msgid "H Doyle"
+msgstr "杜苑欣"
+
+msgid "J Moreira"
+msgstr "莫雷拉"
+
+msgid "W Buick"
+msgstr "布宜學"
+
+msgid "Y Kawada"
+msgstr "川田將雅"
+
+msgid "B Murzabayev"
+msgstr "毛振鵬"
+
+msgid "J Hart"
+msgstr "夏俊昇"
+
+msgid "Y Kitamura"
+msgstr "北村友一"
+
+msgid "C Demuro"
+msgstr "杜滿樂"
+
+msgid "C Soumillon"
+msgstr "蘇銘倫"
