@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-9h)=u=$e*fqnu3#l+3_i9h8iz$125pm01h)r8s@um3r#yqx(&7"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['lxngai5002.pythonanywhere.com','127.0.0.1','nyp.pythonanywhere.com']
 
@@ -131,3 +131,10 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+# Redirect to home URL after login
+LOGIN_REDIRECT_URL = '/'
+
+# Set the URL to redirect to if login is required
+LOGIN_URL = 'login'

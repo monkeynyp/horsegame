@@ -1,7 +1,8 @@
 {% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning {% endblock %} {% block content %}
 {% load i18n %}
-
-  <div class="w3-container">
+Total Race = {{current_race.iloc.2.8}}
+<div class="w3-container w3-card-4 w3-padding-64 w3-section w3-margin-top"></div>
+  <div>
     <h2>{% trans "Current Race" %}</h2>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
@@ -11,11 +12,11 @@
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=6">6</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=7">7</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=8">8</a>
-        {% if current_race.iloc.2.8 > 8 %}
+        {% if current_race.iloc.2.5 > 8 %}
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=9">9</a>
-        {% if current_race.iloc.2.8 > 9 %}
+        {% if current_race.iloc.2.5 > 9 %}
           <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=10">10</a>
-          {% if current_race.iloc.2.8 > 10 %}
+          {% if current_race.iloc.2.5 > 10 %}
           <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=11">11</a>
           {% endif %}
         {% endif %}
@@ -25,11 +26,13 @@
 <div class="w3-row">
   <div class="w3-col s6 w3-padding-top-48 ">
     <table class="w3-table-all w3-card-4">
+      <th>No</th>
       <th>{% trans "Horse Name" %}</th>
       <th>{% trans "Jockey" %}</th>
       <th>{% trans "Draw" %}</th>
       {% for i, r in current_race.iterrows %}
       <tr>
+        <td>{{ forloop.counter }}</td>
         <td>{% trans r.HorseName %}</td>
         <td>{% trans r.Jockey  %}</td>
         <td>{{ r.Draw }}</td>
@@ -75,5 +78,6 @@
       </footer>
       
       </div>
+</div>
 </div>
 {% endblock %}

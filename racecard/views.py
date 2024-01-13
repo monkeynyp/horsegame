@@ -1,10 +1,12 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render,redirect
 from django.template import loader
 import pandas as pd
 import os
 from django.conf import settings
 from django.utils.translation import gettext as _
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
+from django.contrib.auth import login, logout
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def racecard(request):
@@ -19,7 +21,7 @@ def racecard(request):
      prediction = prediction.sort_values("Score", ascending = False)
      win_pred = pd.read_csv(win_pred_path)
      win_pred = win_pred.sort_values("Score", ascending = False)
-     template = loader.get_template("currentrace.html")
+
      # create the context dictionary
      context = {
           'current_race': current_race,
@@ -32,6 +34,43 @@ def racecard(request):
 def about(request):
     return render(request, 'home.html')
 
+@login_required
 def contact(request):
-     text = _("Louis is very good!")
-     return render(request, 'contact.html', {'text': text})
+     return render(request, 'contact.html')
+
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect('contact')  # replace with the actual URL
+    else:
+        form = UserCreationForm()
+    return render(request, 'registration/register.html', {'form': form})
+
+def user_login(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            user = form.get_user()
+            login(request, user)
+            return redirect('contact')  # replace with the actual URL
+    else:
+        form = AuthenticationForm()
+    return render(request, 'registration/login.html', {'form': form})
+
+def user_logout(request):
+    logout(request)
+    return redirect('login')  # replace with the actual URL
+
+def register(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            login(request, user)
+            return redirect('contact')  # replace with the actual URL
+    else:
+        form = UserCreationForm()
+    return render(request, 'registration/registration_form.html', {'form': form})

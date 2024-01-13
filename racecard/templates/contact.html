@@ -3,40 +3,34 @@ members {% endblock %}
 {% load i18n %}
 {% load static %}
 {% block content %}
+<style>
+    /* Add your custom styles here if needed */
+    body {
+        font-family: "Arial", sans-serif;
+    }
 
-    <!-- About -->
-    <div id="about" class="w3-padding-top-64">
-        <div class="w3-row">
-            <div class="w3-half w3-padding-large w3-hide-small">
-                <img
-                    src="{% static 'HorseMachineLearningSquare.jpeg' %}"
-                    class="w3-round w3-image w3-opacity-min"
-                    alt="Table"
-                    style="width: 100%"
-                />
-            </div>
+    .container {
+        margin-top: 50px;
+    }
+</style>
+   
+<div class="w3-container w3-card-4 w3-light-grey w3-section w3-padding-64" style="max-width: 600px; margin:auto;">
+    <h2>Contact Me</h2>
+    <p>If you have any questions or need to contact me, please send an email to <a href="mailto:thinking.monkey@gmail.com">thinking.monkey@gmail.com</a>.</p>
 
-            <div class="w3-half w3-padding-large">
-                <h1 class="w3-center">About Monkey Forecast</h1>
-                <br />
-                <h5 class="w3-center">Passionate in Machine Learning</h5>
-                <p class="w3-large">
-                    Monkey is a data scientist who believes that facts and science are the best ways to make decisions and forecasts. That’s why it created this website and used horse racing data to predict the results. Although many people say that horse racing is unpredictable and random, Monkey would like to see what kind of accuracy can be achieved by applying machine learning.
-                </p>
-                <img
-                src="{% static 'OIG.jpeg' %}"
-                class="w3-round w3-image w3-opacity-min"
-                alt="Table"
-                style="width: 100%"
-            />
-            <img
-            src="{% static 'HorseHeadBanner2.jpeg' %}"
-            class="w3-round w3-image w3-opacity-min"
-            alt="Table"
-            style="width: 100%"
-        />
-                
-            </div>
-        </div>
-    </div>
+    <form action="#" method="post" class="w3-container">
+        <!-- Add any additional form fields if needed -->
+        {% csrf_token %}
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" class="w3-input w3-border" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" class="w3-input w3-border" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="4" class="w3-input w3-border" required></textarea>
+
+        <button type="submit" class="w3-button w3-green w3-margin-top">Send Message</button>
+    </form>
+</div>
 {% endblock %}

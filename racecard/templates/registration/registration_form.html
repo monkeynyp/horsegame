@@ -1,0 +1,24 @@
+<!-- myapp/templates/registration/registration_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <!-- Link to the W3.CSS stylesheet -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="w3-container w3-half">
+    <h2>User Registration</h2>
+    <form method="post" action="{% url 'register' %}" class="w3-container">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="w3-button w3-blue">Register</button>
+    </form>
+    <p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
+</div>
+
+</body>
+</html>
