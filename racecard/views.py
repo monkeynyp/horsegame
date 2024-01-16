@@ -8,6 +8,8 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 
+
+
 # Create your views here.
 def racecard(request):
      id = request.GET.get('id')
@@ -74,3 +76,4 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'registration/registration_form.html', {'form': form})
+

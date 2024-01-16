@@ -13,18 +13,29 @@
   <a href="/about" class="w3-bar-item w3-button"><b>NYP Forecast</b></a>
     
         <div>
-            <form action="{% url 'set_language' %}" method="post" class="d-inline">
+            <form action="{% url 'set_language' %}" method="post" class="language-form">
                 {% csrf_token %}
                 <input name="next" type="hidden" value="{{ request.get_full_path }}" />
-                <select name="language" id="id_language" onchange="this.form.submit()" class="w3-select w3-quarter">
-                    {% get_available_languages as LANGUAGES %}
-                    {% for lang_code, lang_name in LANGUAGES %}
-                        <option value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}selected{% endif %}>
-                            {{ lang_name }}
-                        </option>
-                    {% endfor %}
-                </select>
+            
+                {% get_available_languages as LANGUAGES %}
+                {% for lang_code, lang_name in LANGUAGES %}
+                    <label>
+                        <input type="radio" name="language" value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}checked{% endif %} onclick="changeLanguage(this)">
+                        {{ lang_name }}
+                    </label>
+                {% endfor %}
             </form>
+            
+            <script>
+                function changeLanguage(radioBtn) {
+                    // Get the form element
+                    var form = radioBtn.form;
+            
+                    // Submit the form when a radio button is clicked
+                    form.submit();
+                }
+            </script>
+            
         </div>
     
   <!-- Right-sided navbar links. Hide them on small screens -->

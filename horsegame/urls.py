@@ -22,7 +22,7 @@ from django.views.i18n import set_language
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('', include('racecard.urls')),
-   # path('i18n/', include('django.conf.urls.i18n')),
+    path('i18n/', include('django.conf.urls.i18n')),
     path('i18n/', set_language, name='set_language'),
 
 ]
