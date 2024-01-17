@@ -28,7 +28,8 @@ def racecard(request):
      context = {
           'current_race': current_race,
           'prediction': prediction,
-          'win_pred': win_pred
+          'win_pred': win_pred,
+          'race_id' : id
      }
      #return HttpResponse(template.render(context,request))
      return render(request, 'currentrace.html', context)
