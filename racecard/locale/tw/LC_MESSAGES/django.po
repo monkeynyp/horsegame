@@ -3256,6 +3256,9 @@ msgstr "裕達寶駒"
 msgid "THUNDER BLINK"
 msgstr "同得威"
 
+msgid "ARMOUR WAR EAGLE"
+msgstr "穿甲戰鷹"
+
 
 
 
