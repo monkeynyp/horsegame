@@ -59,9 +59,9 @@
       </footer>
       </div>
       -->
-    <div class="w3-card-4 w3-margin" style="width:50%" >
+    <div class="w3-card-4 w3-margin" style="width:40%" >
       <header class="w3-container w3-green" >
-        <h2>Naive {% trans "Place" %} <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
+        <h2>Naive Bayes <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
           Race {{race_id}}
           </span></h2>
       </header>
@@ -78,6 +78,31 @@
       </footer>
       
       </div>
+
+      <div class="w3-card-4 w3-margin" style="width:40%" >
+        <header class="w3-container w3-blue" >
+          <h2>Log Regression <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
+            Race {{race_id}}
+            </span></h2>
+        </header>
+        
+        <div class="w3-container">
+          <p>{% trans log_pred.iloc.0.1 %} &nbsp {{log_pred.iloc.0.2|floatformat:3}}</p>
+          <p>{% trans log_pred.iloc.1.1 %} &nbsp {{log_pred.iloc.1.2|floatformat:3}}</p>
+          <p>{% trans log_pred.iloc.2.1 %} &nbsp {{log_pred.iloc.2.2|floatformat:3}}</p>
+          <p>{% trans log_pred.iloc.3.1 %} &nbsp {{log_pred.iloc.3.2|floatformat:3}}</p>
+        </div>
+        
+        <footer class="w3-container w3-blue">
+          <h5>nyp.pythonanywhere.com</h5>
+        </footer>
+        
+        </div>
+  
+
+      
+
+
 </div>
 </div>
 {% endblock %}

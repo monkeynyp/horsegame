@@ -17,18 +17,18 @@ def racecard(request):
           id = 1
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      pred_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_place"+str(id)+".csv")
-     win_pred_path =os.path.join(settings.BASE_DIR, "racecard/data/predict_race_win"+str(id)+".csv")
+     win_pred_path =os.path.join(settings.BASE_DIR, "racecard/data/predict_race_place_log"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
      prediction = pd.read_csv(pred_path)
      prediction = prediction.sort_values("Score", ascending = False)
-     win_pred = pd.read_csv(win_pred_path)
-     win_pred = win_pred.sort_values("Score", ascending = False)
+     log_pred = pd.read_csv(win_pred_path)
+     log_pred = log_pred.sort_values("Score", ascending = False)
 
      # create the context dictionary
      context = {
           'current_race': current_race,
           'prediction': prediction,
-          'win_pred': win_pred,
+          'log_pred': log_pred,
           'race_id' : id
      }
      #return HttpResponse(template.render(context,request))
