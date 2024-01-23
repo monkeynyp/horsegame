@@ -1,8 +1,8 @@
 {% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning {% endblock %} {% block content %}
 {% load i18n %}
-
-<div class="w3-container w3-card-4 w3-padding-64  w3-margin-top"></div>
-  <div>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-container w3-padding-64"></div>
+<div class="w3-margin ">
     <h2>{% trans "Current Race" %}</h2>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
@@ -22,14 +22,18 @@
           {% endif %}
         {% endif %}
   </div>
- 
 <div class="w3-row">
-  <div class="w3-col s6 w3-padding-top-48 ">
-    <table class="w3-table-all w3-card-4">
-      <th>No</th>
-      <th>{% trans "Horse Name" %}</th>
-      <th>{% trans "Jockey" %}</th>
-      <th>{% trans "Draw" %}</th>
+  <div class="w3-col w3-padding-top-32 w3-half">
+    
+    <table class="w3-table-all w3-card-4 w3-margin">
+      <thead>
+      <tr class="w3-light-blue">
+        <th>No</th>
+        <th>{% trans "Horse Name" %}</th>
+        <th>{% trans "Jockey" %}</th>
+        <th>{% trans "Draw" %}</th>
+      </tr>
+      </thead>
       {% for i, r in current_race.iterrows %}
       <tr>
         <td>{{ forloop.counter }}</td>
@@ -40,69 +44,43 @@
       {% endfor %}
     </table>
   </div>
-  <div class="w3-col s6 w3-padding-top-48">
-   <!-- About
-    <div class="w3-card-4" style="width:50%">
-      <header class="w3-container w3-blue" >
-        <h2>Naive Bayes Win <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
-          Accuracy 42%
-          </span></h2>
-      </header>
-      <div class="w3-container">
-        <p>{{win_pred.iloc.0.1}} &nbsp {{win_pred.iloc.0.2|floatformat:2}}</p>
-        <p>{{win_pred.iloc.1.1}} &nbsp {{win_pred.iloc.1.2|floatformat:2}}</p>
 
-      </div>
-      
-      <footer class="w3-container w3-blue">
-        <h5>Footer</h5>
-      </footer>
-      </div>
-      -->
-    <div class="w3-card-4 w3-margin" style="width:40%" >
-      <header class="w3-container w3-green" >
-        <h2>Naive Bayes <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
-          Race {{race_id}}
-          </span></h2>
-      </header>
-      
-      <div class="w3-container">
-        <p>{% trans prediction.iloc.0.1 %} &nbsp {{prediction.iloc.0.2|floatformat:2}}</p>
-        <p>{% trans prediction.iloc.1.1 %} &nbsp {{prediction.iloc.1.2|floatformat:2}}</p>
-        <p>{% trans prediction.iloc.2.1 %} &nbsp {{prediction.iloc.2.2|floatformat:2}}</p>
-        <p>{% trans prediction.iloc.3.1 %} &nbsp {{prediction.iloc.3.2|floatformat:2}}</p>
-      </div>
-      
-      <footer class="w3-container w3-green">
-        <h5>nyp.pythonanywhere.com</h5>
-      </footer>
-      
-      </div>
-
-      <div class="w3-card-4 w3-margin" style="width:40%" >
-        <header class="w3-container w3-blue" >
-          <h2>Log Regression <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
-            Race {{race_id}}
-            </span></h2>
-        </header>
-        
-        <div class="w3-container">
-          <p>{% trans log_pred.iloc.0.1 %} &nbsp {{log_pred.iloc.0.2|floatformat:3}}</p>
-          <p>{% trans log_pred.iloc.1.1 %} &nbsp {{log_pred.iloc.1.2|floatformat:3}}</p>
-          <p>{% trans log_pred.iloc.2.1 %} &nbsp {{log_pred.iloc.2.2|floatformat:3}}</p>
-          <p>{% trans log_pred.iloc.3.1 %} &nbsp {{log_pred.iloc.3.2|floatformat:3}}</p>
+  <div class="w3-col w3-padding-top-32 w3-half" >
+      <div class='w3-row'>
+        <div class="w3-col w3-card-4 w3-margin w3-third" style="width: 33%">
+          <header class="w3-container w3-green" >
+            <h2>Naive Bayes <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
+              Race {{race_id}}
+              </span></h2>
+          </header>
+          <div class="w3-container">
+            <p>{% trans prediction.iloc.0.1 %} &nbsp {{prediction.iloc.0.2|floatformat:2}}</p>
+            <p>{% trans prediction.iloc.1.1 %} &nbsp {{prediction.iloc.1.2|floatformat:2}}</p>
+            <p>{% trans prediction.iloc.2.1 %} &nbsp {{prediction.iloc.2.2|floatformat:2}}</p>
+            <p>{% trans prediction.iloc.3.1 %} &nbsp {{prediction.iloc.3.2|floatformat:2}}</p>
+          </div>
+          <footer class="w3-container w3-green">
+            <h5>nyp.pythonanywhere.com</h5>
+          </footer>
         </div>
-        
-        <footer class="w3-container w3-blue">
-          <h5>nyp.pythonanywhere.com</h5>
-        </footer>
-        
-        </div>
-  
-
-      
-
-
-</div>
+    
+        <div class="w3-col w3-card-4 w3-third w3-margin" style="width: 33%">
+            <header class="w3-container w3-blue" >
+              <h2>Log Reg <span class="w3-tag w3-xlarge w3-padding w3-red" style="transform:rotate(-5deg)">
+              Race {{race_id}}
+              </span></h2>
+            </header>
+          <div class="w3-container">
+            <p>{% trans log_pred.iloc.0.1 %} &nbsp {{log_pred.iloc.0.2|floatformat:3}}</p>
+            <p>{% trans log_pred.iloc.1.1 %} &nbsp {{log_pred.iloc.1.2|floatformat:3}}</p>
+            <p>{% trans log_pred.iloc.2.1 %} &nbsp {{log_pred.iloc.2.2|floatformat:3}}</p>
+            <p>{% trans log_pred.iloc.3.1 %} &nbsp {{log_pred.iloc.3.2|floatformat:3}}</p>
+          </div>
+          <footer class="w3-container w3-blue">
+            <h5>nyp.pythonanywhere.com</h5>
+          </footer>
+      </div>
+    </div>
+  </div>
 </div>
 {% endblock %}

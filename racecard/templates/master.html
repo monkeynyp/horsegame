@@ -11,8 +11,7 @@
 
 <div class="w3-top w3-bar w3-white w3-padding w3-card w3-wide">
   <a href="/about" class="w3-bar-item w3-button"><b>NYP Forecast</b></a>
-    
-        <div>
+        <div class="w3-padding-small">
             <form action="{% url 'set_language' %}" method="post" class="language-form">
                 {% csrf_token %}
                 <input name="next" type="hidden" value="{{ request.get_full_path }}" />
