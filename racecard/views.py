@@ -34,6 +34,19 @@ def racecard(request):
      #return HttpResponse(template.render(context,request))
      return render(request, 'currentrace.html', context)
 
+def lottory(request):
+    last_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/marksix_hist_curr.csv")
+    pred_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/mksixprediction.csv")
+    last_marksix = pd.read_csv(last_marksixpath,nrows=10)
+    pred_marksix = pd.read_csv(pred_marksixpath)
+
+    context = {
+        'last_marksix': last_marksix,
+        'pred_marksix': pred_marksix
+    }
+    return render(request, 'lottory.html', context)
+
+
 def about(request):
     return render(request, 'home.html')
 
@@ -77,4 +90,24 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'registration/registration_form.html', {'form': form})
+
+from .models import UserTips
+
+def submit_tips(request):
+    if request.method == 'POST':
+        selected_horses = request.POST.getlist('selected_horses')
+
+        # Assuming you have a user identifier, replace 'user_id' with the actual field name
+        user_id = "joeytang"  # Replace with the actual user ID
+        race_date="2024-01-24"
+        race_no = 1
+        for horse_name in selected_horses:
+            UserTips.objects.create(username=user_id, race_date=race_date, race_no=race_no, horse_name=horse_name, hit=0)
+
+        # Redirect to a success page or wherever needed
+        return redirect('404.html')
+
+    # Handle GET requests or other logic for rendering the form initially
+    # ...
+
 

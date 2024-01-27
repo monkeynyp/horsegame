@@ -1,6 +1,22 @@
 {% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning {% endblock %} {% block content %}
 {% load i18n %}
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+{% load static %}
+{% load custom_filters %}
+<script>
+  function updateSelection(checkbox) {
+      var selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
+
+      if (selectedCheckboxes.length > 3) {
+          checkbox.checked = false; // Uncheck the current checkbox if more than 3 are selected
+      }
+
+      // Disable unchecked checkboxes if 3 are selected
+      var uncheckedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:not(:checked)');
+      uncheckedCheckboxes.forEach(function (uncheckedCheckbox) {
+          uncheckedCheckbox.disabled = selectedCheckboxes.length >= 3;
+      });
+  }
+</script>
 <div class="w3-container w3-padding-64"></div>
 <div class="w3-margin ">
     <h2>{% trans "Current Race" %}</h2>
@@ -22,8 +38,46 @@
           {% endif %}
         {% endif %}
   </div>
+
+  <!-- Add Tips by users-->
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green">Add Your Tips</button>
+<!-- The Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-center"><br>
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+      <img src="{% static 'Helpfultips.png' %}" alt="Avatar" style="width:10%" class="w3-circle">
+      <h2>Race {{race_id}} Tips</h2>
+    </div>
+
+    <form method="post" action="{% url 'submit_tips' %}" class="w3-container w3-margin-left">
+      {% csrf_token %}
+      
+      <h2>Select up to 3 horses:</h2>
+  
+      {% for i, r in current_race.iterrows %}
+          <label>
+            <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}. {{ r.HorseName }}"
+                   {% if r.HorseName in selected_horses %} checked {% endif %}
+                   onclick="updateSelection(this)">
+            {{ forloop.counter }}. {% trans r.HorseName %}
+        </label><br>
+      {% endfor %}
+  
+      <br>
+      <button type="submit">Submit</button>
+  </form>
+  
+  
+    <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+      <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-red">Cancel</button>
+      <span class="w3-right w3-padding w3-hide-small">Forgot <a href="#">password?</a></span>
+    </div>
+  </div>
+</div>
+
 <div class="w3-row">
-  <div class="w3-col w3-padding-top-32 w3-half">
+  <div class="w3-col w3-padding-top-32 w3-half w3-responsive">
     
     <table class="w3-table-all w3-card-4 w3-margin">
       <thead>
@@ -45,7 +99,7 @@
     </table>
   </div>
 
-  <div class="w3-col w3-padding-top-32 w3-half" >
+  <div class="w3-col w3-padding-top-32 w3-half w3-responsive" >
       <div class='w3-row'>
         <div class="w3-col w3-card-4 w3-margin w3-third" style="width: 33%">
           <header class="w3-container w3-green" >

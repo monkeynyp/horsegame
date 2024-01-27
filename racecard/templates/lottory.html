@@ -1,0 +1,81 @@
+{% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning {% endblock %} {% block content %}
+{% load i18n %}
+{% load static %}
+
+<div class="w3-container w3-padding-64">
+<div class="w3-row">
+  <div class="w3-col w3-padding-top-32  w3-responsive" style="width:65%">
+    <style>
+        .mySlides {display:none;}
+        </style>
+       
+        
+        <h2 class="w3-center">{% trans "Number Trend Line" %}</h2>
+        
+        <div class="w3-content w3-display-container">
+          <img class="mySlides" src="{% static 'No1Chart.png' %}" style="width:100%">
+          <img class="mySlides" src="{% static 'No2Chart.png' %}" style="width:100%">
+          <img class="mySlides" src="{% static 'No3Chart.png' %}" style="width:100%">
+          <img class="mySlides" src="{% static 'No4Chart.png' %}" style="width:100%">
+          <img class="mySlides" src="{% static 'No5Chart.png' %}" style="width:100%">
+          <img class="mySlides" src="{% static 'No6Chart.png' %}" style="width:100%">
+          <img class="mySlides" src="{% static 'No1Chart.png' %}" style="width:100%">
+        
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+    <table class="w3-table-all w3-card-4 w3-margin">
+      <thead>
+      <tr class="w3-light-blue">
+        <th>No 1</th>
+        <th>No 2 </th>
+        <th>No 3</th>
+        <th>No 4</th>
+        <th>No 5</th>
+        <th>No 6</th>
+        <th>Special</th>
+      </tr>
+      </thead>
+      {% for i, r in pred_marksix.iterrows %}
+      <tr>
+        <td>{{ r.No1 }}</td>
+        <td>{{ r.No2 }}</td>
+        <td>{{ r.No3 }}</td>
+        <td>{{ r.No4 }}</td>
+        <td>{{ r.No5 }}</td>
+        <td>{{ r.No6 }}</td>
+        <td>{{ r.Special }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+
+ <div class="w3-panel w3-leftbar w3-light-grey">
+        <p class="w3-xlarge w3-serif">
+        <i>"Make it as simple as possible, but not simpler."</i></p>
+        <p>Albert Einstein</p>
+</div>
+    
+   
+</div>
+{% endblock %}
