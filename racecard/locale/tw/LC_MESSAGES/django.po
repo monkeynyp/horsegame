@@ -20,6 +20,13 @@ msgstr ""
 msgid "Monkey is a data scientist who believes that facts and science are the best ways to make decisions and forecasts. That’s why it created this website and used horse racing data to predict the results. Although many people say that horse racing is unpredictable and random, Monkey would like to see what kind of accuracy can be achieved by applying machine learning."
 msgstr "猴子是一位數據科學家，相信事實和科學是做決策和預測的最佳途徑。這就是為什麼它創建了這個網站，並使用賽馬數據來預測結果的原因。儘管許多人說賽馬是不可預測和隨機的，但猴子想要看看應用機器學習可以達到什麼樣的準確度。"
 
+msgid "Many people claim that MarkSix lottery numbers are entirely random, making it extremely challenging to predict the next one. However, I hold a different belief. I assume that each of the numbers, from No1 to Special No, follows a certain trend. In this section, I leverage the number trends observed in the last four events and employ advanced technology such as Pattern Matching with Correlation. By referencing more than 1000 past MarkSix events, I aim to predict the next number in the sequence. Additionally, I've generated a graph to visually illustrate these patterns. With this approach, I hope to offer a more informed alternative to random guessing. Best of luck to everyone."
+msgstr "很多人認為六合彩的號碼是純粹隨機的，因此很難預測下一個數字。 然而，我的觀點不同。 我假設每個數字，從No1到特別號，都遵循一定的趨勢。 在這一部分中，我利用過去四個事件中觀察到的數位趨勢，並運用先進的技術，如相關性模式匹配。 透過參考過去1000多個六合彩事件，我試著預測接下來的數字。 此外，我產生了一張圖表，以直觀展示這些模式。 透過這種方法，我希望提供一個相對於隨機猜測更明智的選擇。 祝大家好運！"
+
+
+msgid "About Monkey Forecast"
+msgstr "關於猴子預測"
+
 #: racecard/templates/currentrace.html:6
 msgid "Current Race"
 msgstr "最近賽事"
