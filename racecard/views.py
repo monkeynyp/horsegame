@@ -35,8 +35,12 @@ def racecard(request):
      return render(request, 'currentrace.html', context)
 
 def lottory(request):
-    last_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/marksix_hist_curr.csv")
-    pred_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/mksixprediction.csv")
+    id = request.GET.get('id')
+    if id is None:
+        id = 'hk'
+    
+    last_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/marksix_hist_curr_"+id+".csv")
+    pred_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/mksixprediction_"+id+".csv")
     last_marksix = pd.read_csv(last_marksixpath,nrows=10)
     pred_marksix = pd.read_csv(pred_marksixpath)
 

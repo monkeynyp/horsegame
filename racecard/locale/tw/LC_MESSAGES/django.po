@@ -27,6 +27,9 @@ msgstr "很多人認為六合彩的號碼是純粹隨機的，因此很難預測
 msgid "About Monkey Forecast"
 msgstr "關於猴子預測"
 
+msgid "Mark Six"
+msgstr "六合彩"
+
 #: racecard/templates/currentrace.html:6
 msgid "Current Race"
 msgstr "最近賽事"
