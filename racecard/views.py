@@ -39,9 +39,16 @@ def lottory(request):
     if id is None:
         id = 'hk'
     
-    last_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/marksix_hist_curr_"+id+".csv")
-    pred_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/mksixprediction_"+id+".csv")
+    last_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/lotto_hist_"+id+".csv")
+    pred_marksixpath = os.path.join(settings.BASE_DIR, "racecard/data/lottoprediction_"+id+".csv")
     last_marksix = pd.read_csv(last_marksixpath,nrows=10)
+    if id == 'hk':
+        last_marksix.rename(columns ={'Winning Number 1':'1', 'Extra Number ':'7'})
+    elif id == 'sg':
+        last_marksix.rename(columns ={'Winning Number 1':'1','Additional Number ':'7'})
+
+    print(last_marksix)
+
     pred_marksix = pd.read_csv(pred_marksixpath)
 
     context = {
