@@ -119,7 +119,10 @@
                     Race {{race_id}}</span></h4>
                   </header>
                       {% for user_tips in user_data.records %}
-                              <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %}</p>
+                              <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} {% if user_tips.hit == 1 %}
+                                <span class="w3-badge w3-red">P</span>
+                              {% endif %}
+                              </p>
                               <!-- Add more details as needed -->
                       {% endfor %}
                       <footer class="w3-container {{color}}">
