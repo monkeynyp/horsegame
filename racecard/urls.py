@@ -7,6 +7,7 @@ from .views import register, user_login, user_logout
 urlpatterns = [
     path('', views.about, name='about'),
     path('racecard/', views.racecard, name='racecard'),
+    path('blog/', views.recent_article, name='recent_article'),
     path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
     path('register/', register, name='register'),

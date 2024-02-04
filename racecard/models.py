@@ -16,8 +16,8 @@ class UserScores(models.Model):
     total_records = models.IntegerField(default=0)
     total_hits = models.IntegerField(default=0)
 
-    def update_scores(self):
-        # Update the score based on UserTips records
-        self.total_records = UserTips.objects.filter(username=self.user).count()
-        self.total_hits = UserTips.objects.filter(username=self.user, hit=1).count()
-        self.save()
+class Article(models.Model):
+    title = models.CharField(max_length=200)
+    content = models.TextField()
+    pub_date = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)

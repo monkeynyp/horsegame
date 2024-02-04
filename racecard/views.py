@@ -6,20 +6,18 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
-from .models import UserTips,UserScores
+from .models import UserTips,UserScores,Article
 from django.db.models import Max, F
 
 
 
-# Create your views here.
+## Horse Raching Features Create your views here.
 def racecard(request):
      id = request.GET.get('id')
      if id is None:
           id = 1
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
-
-
 
      #Retrive the most recent record
      latest_tips_by_user = (
@@ -51,9 +49,30 @@ def racecard(request):
 
      return render(request, 'currentrace.html', context)
 
+def submit_tips(request):
+    if request.method == 'POST':
+        selected_horses = request.POST.getlist('selected_horses')
+
+        # Assuming you have a user identifier, replace 'user_id' with the actual field name
+        user_id = "joeytang"  # Replace with the actual user ID
+        race_date="2024-01-24"
+        race_no = 1
+        for horse_name in selected_horses:
+            UserTips.objects.create(username=user_id, race_date=race_date, race_no=race_no, horse_name=horse_name, hit=0)
+        # Redirect to a success page or wherever needed
+        return redirect('404.html')
+
+
+## Article Section ###
 def about(request):
     return render(request, 'home.html')
 
+def recent_article(request):
+    recent_article = Article.objects.latest('pub_date')
+    return render(request, 'blog/recent_article.html', {'article': recent_article})
+
+
+## Login and Administration Session
 @login_required
 def contact(request):
      return render(request, 'contact.html')
@@ -95,23 +114,5 @@ def register(request):
         form = UserCreationForm()
     return render(request, 'registration/registration_form.html', {'form': form})
 
-from .models import UserTips
-
-def submit_tips(request):
-    if request.method == 'POST':
-        selected_horses = request.POST.getlist('selected_horses')
-
-        # Assuming you have a user identifier, replace 'user_id' with the actual field name
-        user_id = "joeytang"  # Replace with the actual user ID
-        race_date="2024-01-24"
-        race_no = 1
-        for horse_name in selected_horses:
-            UserTips.objects.create(username=user_id, race_date=race_date, race_no=race_no, horse_name=horse_name, hit=0)
-
-        # Redirect to a success page or wherever needed
-        return redirect('404.html')
-
-    # Handle GET requests or other logic for rendering the form initially
-    # ...
 
 
