@@ -1,5 +1,4 @@
 from django.shortcuts import render,redirect
-from django.template import loader
 import pandas as pd
 import os
 from django.conf import settings
@@ -7,6 +6,8 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
+from .models import UserTips,UserScores
+from django.db.models import Max, F
 
 
 
@@ -16,22 +17,38 @@ def racecard(request):
      if id is None:
           id = 1
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
-     pred_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_place"+str(id)+".csv")
-     win_pred_path =os.path.join(settings.BASE_DIR, "racecard/data/predict_race_place_log"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
-     prediction = pd.read_csv(pred_path)
-     prediction = prediction.sort_values("Score", ascending = False)
-     log_pred = pd.read_csv(win_pred_path)
-     log_pred = log_pred.sort_values("Score", ascending = False)
 
-     # create the context dictionary
-     context = {
-          'current_race': current_race,
-          'prediction': prediction,
-          'log_pred': log_pred,
-          'race_id' : id
-     }
-     #return HttpResponse(template.render(context,request))
+
+
+     #Retrive the most recent record
+     latest_tips_by_user = (
+        UserTips.objects.filter(race_no=id)
+        .values('user')
+        .annotate(latest_race_date=Max('race_date'))
+        )
+    # Organize the data by username and fetch all relevant records for each user
+     complete_tips_by_user = []
+     for user_tips in latest_tips_by_user:
+        user_records = UserTips.objects.filter(
+            user_id=user_tips['user'],
+            race_date=user_tips['latest_race_date'],
+            race_no=id
+        )
+        complete_tips_by_user.append({'user': user_records[0].user, 'records': user_records})
+
+    # Get the user scores and calculate the percentage of hits
+        user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(
+        percentage=F('total_hits') / F('total_records') * 100
+        )
+
+        context = {
+            'current_race': current_race,
+            'race_id' : id,
+            'complete_tips_by_user': complete_tips_by_user,
+            'user_scores': user_scores # Add the user scores to the context
+        }
+
      return render(request, 'currentrace.html', context)
 
 def about(request):
