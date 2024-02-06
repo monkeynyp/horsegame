@@ -7,7 +7,8 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from .models import UserTips,UserScores,Article
-from django.db.models import Max, F
+from django.db.models import Max, F,ExpressionWrapper,fields
+
 
 
 
@@ -37,8 +38,8 @@ def racecard(request):
 
     # Get the user scores and calculate the percentage of hits
         user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(
-        percentage=F('total_hits') / F('total_records') * 100
-        )
+            percentage= F('total_hits') * 100.0 / F('total_records')  
+        ).order_by('-percentage')
 
         context = {
             'current_race': current_race,
@@ -68,8 +69,15 @@ def about(request):
     return render(request, 'home.html')
 
 def recent_article(request):
-    recent_article = Article.objects.latest('pub_date')
-    return render(request, 'blog/recent_article.html', {'article': recent_article})
+    recent_articles = Article.objects.order_by('-pub_date')[:2]
+        # Fetch articles from 3 to 13
+    other_articles = Article.objects.order_by('-pub_date')[2:13]
+    context = {
+        'recent_articles': recent_articles,
+        'other_articles': other_articles,
+    }
+
+    return render(request, 'blog/articles.html', context)
 
 
 ## Login and Administration Session

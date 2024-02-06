@@ -62,8 +62,8 @@ msgid "Contact"
 msgstr "聯絡"
 
 #: racecard/views.py:36
-msgid "Louis is very good!"
-msgstr "魏垚彬很利害！"
+msgid "Prediction Accracy"
+msgstr "預測龍虎版"
 
 #: Horse Name
 msgid "HELLO BEAUTY"

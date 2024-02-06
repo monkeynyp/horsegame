@@ -41,18 +41,21 @@ class Command(BaseCommand):
             ).update(hit=1)
 
 
-# Get the UserTips data grouped by user, with the total records and total hits
-user_tips_data = UserTips.objects.values('user').annotate(
-    total_records=Count('id'),
-    total_hits=Sum('hit')
-)
+        # Get the UserTips data grouped by user, with the total records and total hits
+        user_tips_data = UserTips.objects.values('user').annotate(
+            total_records=Count('id'),
+            total_hits=Sum('hit')
+            )
 
-# Loop through the user tips data and update the user scores
-for user_tip in user_tips_data:
-# Get or create the user score for the user
-    user_score, created = UserScores.objects.get_or_create(user_id=user_tip['user'])
-    # Update the user score with the total records and total hits
-    user_score.total_records = user_tip['total_records']
-    user_score.total_hits = user_tip['total_hits']
-    # Save the user score
-    user_score.save()
+        # Loop through the user tips data and update the user scores
+        for user_tip in user_tips_data:
+            # Get or create the user score for the user
+            user_score, created = UserScores.objects.get_or_create(user_id=user_tip['user'])
+            # Update the user score with the total records and total hits
+            user_score.total_records = user_tip['total_records']
+            user_score.total_hits = user_tip['total_hits']
+            print("Hello")
+            print(user_score.total_records)
+            print(user_score.total_hits)
+            # Save the user score
+            user_score.save()
