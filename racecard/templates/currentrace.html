@@ -1,7 +1,7 @@
 {% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning {% endblock %} {% block content %}
 {% load i18n %}
 {% load static %}
-{% load custom_filters %}
+
 <script>
   function updateSelection(checkbox) {
       var selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
@@ -18,24 +18,10 @@
   }
 </script>
 
-<script>
-  // Get the current date and time
-  var currentDatetime = new Date("{{ current_datetime }}");
-  
-  // Define the start and end date and time for the period
-  var startDate = new Date("2024-02-08T00:00:00");
-  var endDate = new Date("2024-02-09T00:00:00");
-  
-  // Disable the button if the current date and time fall within the specified period
-  if (currentDatetime >= startDate && currentDatetime < endDate) {
-      myButton=document.getElementById("addTips");
-      myButton.disabled = true;
-      myButton.classList.add("disabled-button");
-  }
-  </script>
+
 <div class="w3-container w3-padding-64"></div>
 <div class="w3-margin ">
-    <h2>{% trans "Current Race"  %} {{ current_race.iloc.2.1}}</h2>
+    <h2>{% trans "Current Race"  %} {{ current_race.iloc.2.1}} {{ currentDatetime }}</h2>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=3">3</a>
@@ -115,7 +101,7 @@
        <!-- Add Tips by users-->
 
 
-       <button id='addTips' onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-ripple w3-black" >+</button>&nbsp <- {% trans "Add Your Tips" %}
+       <button id='myButton' onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-ripple w3-black" >+</button>&nbsp <- {% trans "Add Your Tips" %}
       
        <div id="id01" class="w3-modal">
       
@@ -145,6 +131,26 @@
         </div>
       </div>
     </div>
-  
+
+
+
+    <!-- JavaScript code -->
+    <script>
+      // Get the current date and time
+      var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
+      
+      // Define the start and end date and time for the period
+      var startDate = new Date("2024-02-07T18:30:00");
+      var endDate = new Date("2024-02-09T00:00:00");
+    
+      // Disable the button if the current date and time fall within the specified period
+      if (currentDatetime >= startDate && currentDatetime < endDate) {
+          //alert("Disabled");
+          var myButton = document.getElementById("myButton");
+          myButton.disabled = true;
+          myButton.classList.add("disabled-button");
+          document.getElementById("myButton").innerHTML = "X"; // Change the text
+      }
+      </script>
 
 {% endblock %}

@@ -7,8 +7,8 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from .models import UserTips,UserScores,Article
-from django.db.models import Max, F,ExpressionWrapper,fields
-
+from django.db.models import Max, F
+from django.utils import timezone
 
 
 
@@ -17,6 +17,7 @@ def racecard(request):
      id = request.GET.get('id')
      if id is None:
           id = 1
+     current_datetime = timezone.now()
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
 
@@ -43,6 +44,7 @@ def racecard(request):
 
         context = {
             'current_race': current_race,
+            'current_datetime':current_datetime,
             'race_id' : id,
             'complete_tips_by_user': complete_tips_by_user,
             'user_scores': user_scores # Add the user scores to the context
