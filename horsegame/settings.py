@@ -117,7 +117,7 @@ LANGUAGES = [
 LOCALE_PATHS = [
     os.path.join(BASE_DIR, 'locale'),  # Change this path accordingly
 ]
-TIME_ZONE = "UTC"
+TIME_ZONE = "Asia/Hong_Kong"
 
 USE_I18N = True
 
