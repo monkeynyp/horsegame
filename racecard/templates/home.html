@@ -1,5 +1,12 @@
-{% extends "master.html" %} {% block title %} Monkey Forecast Using Machine
-Learning {% endblock %} {% load i18n %} {% load static %} {% block content %}
+{% extends "master.html" %} 
+{% block title %} Monkey Forecast Using Machine
+Learning
+
+{% endblock %} 
+{% load i18n %} 
+{% load static %} 
+
+{% block content %}
 
 <!-- About -->
 <div id="about" class="w3-padding-top-64">
@@ -17,15 +24,7 @@ Learning {% endblock %} {% load i18n %} {% load static %} {% block content %}
       <h1 class="w3-center">{% trans "About Monkey Forecast" %}</h1>
       <br />
       <h5 class="w3-center">Passionate in Machine Learning</h5>
-      <p class="w3-large">
-        {% trans 'Monkey is a data scientist who believes that facts and science
-        are the best ways to make decisions and forecasts. That’s why it created
-        this website and to do different kind of Machine Learning Prediction and
-        verify the accracy. One of the data set I got is the horse racing data
-        from Hong Kong. Although many people say that horse racing is
-        unpredictable and random, I would like to get start with this data and
-        see what kind of accuracy can be achieved by applying machine learning.'
-        %}
+      <p class="w3-large">{% trans 'Monkey is a data scientist who believes that facts and science are the best ways to make decisions and forecasts. Thats why it created this website and to do different kind of Machine Learning Prediction and verify the accracy. One of the data set I got is the horse racing data from Hong Kong. Although many people say that horse racing is unpredictable and random, I would like to get start with this data and see what kind of accuracy can be achieved by applying machine learning.' %}
       </p>
     </div>
   </div>
