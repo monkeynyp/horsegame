@@ -15,5 +15,6 @@ urlpatterns = [
     path('register/', register, name='register'),
     path('logout/', user_logout, name='logout'),
     path('submittips/',views.submit_tips, name='submit_tips'),
+    path('member/', views.member, name='member'),
     ]
 

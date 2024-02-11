@@ -1,24 +1,68 @@
-<!-- myapp/templates/registration/registration_form.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Registration</title>
-    <!-- Link to the W3.CSS stylesheet -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<body>
+{% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning {% endblock %} 
+{% block content %}
+{% load i18n %}
+<style>
+    body {
+        font-family: "Arial", sans-serif;
+    }
 
-<div class="w3-container w3-half">
-    <h2>User Registration</h2>
-    <form method="post" action="{% url 'register' %}" class="w3-container">
+    .login-container {
+        max-width: 400px;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .login-form {
+        padding: 16px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-form label, .login-form input {
+        width: 100%;
+        margin-bottom: 16px;
+        display: block;
+    }
+
+    .login-form button {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .login-form button:hover {
+        background-color: #45a049;
+    }
+</style>
+<div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top">
+    <form method="post" action="{% url 'register' %}" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" style="max-width: 600px;">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="w3-button w3-blue">Register</button>
+        <h2 class="w3-center">User Registration</h2>
+        <div class="w3-section">
+            <label class="w3-input w3-label w3-margin-bottom" for="id_username">Username</label>
+            {{ form.username }}
+        </div>
+        <div class="w3-section">
+            <label class="w3-input w3-label w3-margin-bottom" for="id_email">Email</label>
+            {{ form.email }}
+        </div>
+        <div class="w3-section">
+            <label class="w3-input w3-label w3-margin-bottom" for="id_password1">Password</label>
+            {{ form.password1 }}
+        </div>
+        <div class="w3-section">
+            <label class="w3-input w3-label w3-margin-bottom" for="id_password2">Confirm Password</label>
+            {{ form.password2 }}
+        </div>
+        <div class="w3-section">
+            <button type="submit" class="w3-button w3-block w3-blue w3-section w3-padding">Register</button>
+        </div>
     </form>
-    <p>Already have an account? <a href="{% url 'login' %}">Login here</a>.</p>
 </div>
 
-</body>
-</html>
+
+{% endblock %}

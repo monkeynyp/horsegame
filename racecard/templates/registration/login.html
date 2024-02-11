@@ -39,21 +39,27 @@
     }
 </style>
 
-<div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top">
+<div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top" style="max-width: 400px;">
     <h2 class="w3-center">Login</h2>
     <form method="post" class="w3-container login-form">
-        <div class = "w3-section"></div>
-        {% csrf_token %}
-            <label for="id_username">Username:</label>
-            <input type="text" name="username" id="id_username" required>
-
-            <label for="id_password">Password:</label>
-            <input type="password" name="password" id="id_password" required>
-
-            <button type="submit" class="w3-button w3-green">Login</button>
+        <div class="w3-section">
+            {% csrf_token %}
+            <label class="w3-input w3-label w3-margin-bottom" for="id_username">Username:</label>
+            <input class="w3-input w3-border" type="text" name="username" id="id_username" required>
+        </div>
+        <div class="w3-section">
+            <label class="w3-input w3-label w3-margin-bottom" for="id_password">Password:</label>
+            <input class="w3-input w3-border" type="password" name="password" id="id_password" required>
+        </div>
+        <div class="w3-section">
+            <button type="submit" class="w3-button w3-block w3-green w3-section w3-padding">Login</button>
         </div>
     </form>
+    <div class="w3-section">
+        <!-- Add a button for new user registration -->
+        <a href="{% url 'register' %}" class="w3-button w3-block w3-blue w3-section w3-padding">Register</a>
     </div>
+</div>
 </div>
 
 {% endblock %}

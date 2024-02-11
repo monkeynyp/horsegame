@@ -3,6 +3,13 @@
 <!DOCTYPE html>
 <html lang="{% get_current_language as LANGUAGE_CODE %}">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.language-selector {
+    display: inline-block; /* Ensures it stays in the same line */
+    margin-left: 30px; /* Adjust as needed for spacing */
+  }
+  </style>
 <head>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7661729705418588"
     crossorigin="anonymous"></script>
@@ -12,46 +19,47 @@
 <!-- Navigation (Stays on Top) -->
 
 <div class="w3-top w3-bar w3-white w3-padding-small w3-card w3-wide">
-  <a href="/about" class="w3-bar-item w3-button"><b>Monkey Forecast</b></a>
-        <div class = 'w3-padding-small'>
-            <form action="{% url 'set_language' %}" method="post" class="language-form">
-                {% csrf_token %}
-                <input name="next" type="hidden" value="{{ request.get_full_path }}" />
-            
-                {% get_available_languages as LANGUAGES %}
-                {% for lang_code, lang_name in LANGUAGES %}
-                    <label>
-                        <input type="radio" name="language" value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}checked{% endif %} onclick="changeLanguage(this)">
-                        {{ lang_name }}
-                    </label>
-                {% endfor %}
-            </form>
-            
-            <script>
-                function changeLanguage(radioBtn) {
-                    // Get the form element
-                    var form = radioBtn.form;
-            
-                    // Submit the form when a radio button is clicked
-                    form.submit();
-                }
-            </script>
-            
-        </div>
-    
-  <!-- Right-sided navbar links. Hide them on small screens -->
-  <div class="w3-right w3-hide-small">
-  <a href="/about" class="w3-bar-item w3-button">{% trans "Home" %}</a>
-  <a href="/racecard?1" class="w3-bar-item w3-button">{% trans "HorseRace" %}</a>
-  <a href="/blog" class="w3-bar-item w3-button">{% trans "Blog" %}</a>
-  <a href="/contact" class="w3-bar-item w3-button">{% trans "Contact" %}</a>
-  {% if user.is_authenticated %}
-     <a href="{% url 'logout' %}" class="w3-bar-item w3-button w3-green">Logout</a>&nbsp Welcome,<br>&nbsp {{ user.username }}!
- {% else %}
-    <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-green">Login</a>
- {% endif %}
+    <!-- Site Title with Language Selector -->
+    <div class="w3-bar-item">
+      <a href="/about" class="w3-button"><b>Monkey Forecast</b></a>
+  
+      <!-- Language Selection -->
+      <div class="language-selector">
+        <form action="{% url 'set_language' %}" method="post" class="language-form">
+          {% csrf_token %}
+          <input name="next" type="hidden" value="{{ request.get_full_path }}" />
+          {% get_available_languages as LANGUAGES %}
+          {% for lang_code, lang_name in LANGUAGES %}
+            <label>
+              <input type="radio" name="language" value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}checked{% endif %} onclick="changeLanguage(this)">
+              {{ lang_name }}
+            </label>
+          {% endfor %}
+        </form>   
+        <script>
+          function changeLanguage(radioBtn) {
+            // Get the form element
+            var form = radioBtn.form;
+            // Submit the form when a radio button is clicked
+            form.submit();
+          }
+        </script>  
+      </div>
+    </div>
+  
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small w3-padding-small">
+      <a href="/about" class="w3-bar-item w3-button">{% trans "Home" %}</a>
+      <a href="/racecard?1" class="w3-bar-item w3-button">{% trans "HorseRace" %}</a>
+      <a href="/blog" class="w3-bar-item w3-button">{% trans "Blog" %}</a>
+      <a href="/contact" class="w3-bar-item w3-button">{% trans "Contact" %}</a>
+      {% if user.is_authenticated %}
+         <a href="{% url 'logout' %}" class="w3-bar-item w3-button w3-green">Logout</a><br><span class="w3-tag w3-small w3-round w3-border w3-border-white w3-right">{{ user.username }}</span> 
+      {% else %}
+         <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-green">Login</a>
+      {% endif %}
+    </div>
   </div>
-</div>
 
     {% block content %}
     {% endblock %}

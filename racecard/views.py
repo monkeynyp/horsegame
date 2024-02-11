@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+from django.http import HttpResponse
 import pandas as pd
 import os
 from django.conf import settings
@@ -9,6 +10,7 @@ from django.contrib.auth.decorators import login_required
 from .models import UserTips,UserScores,Article
 from django.db.models import Max, F
 from django.utils import timezone
+from .forms import CustomUserCreationForm
 
 
 
@@ -20,8 +22,8 @@ def racecard(request):
      current_datetime = timezone.now()
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
-
-     #Retrive the most recent record
+     print(current_race)
+     #Retrive the most recent record of user tips
      latest_tips_by_user = (
         UserTips.objects.filter(race_no=id)
         .values('user')
@@ -49,21 +51,24 @@ def racecard(request):
             'complete_tips_by_user': complete_tips_by_user,
             'user_scores': user_scores # Add the user scores to the context
         }
-
+       
      return render(request, 'currentrace.html', context)
 
 def submit_tips(request):
     if request.method == 'POST':
         selected_horses = request.POST.getlist('selected_horses')
-
+        print(selected_horses)
         # Assuming you have a user identifier, replace 'user_id' with the actual field name
-        user_id = "joeytang"  # Replace with the actual user ID
-        race_date="2024-01-24"
-        race_no = 1
-        for horse_name in selected_horses:
-            UserTips.objects.create(username=user_id, race_date=race_date, race_no=race_no, horse_name=horse_name, hit=0)
+        user_id = request.user  # Replace with the actual user ID
+        race_date=request.POST['race_date'].replace('/','-')
+        race_no = request.POST['race_no']
+        for horse_select in selected_horses:
+            split_values = horse_select.split(".")
+            horse_no=split_values[0]
+            horse_name=split_values[1]
+            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no, horse_no=horse_no,horse_name=horse_name, hit=0)
         # Redirect to a success page or wherever needed
-        return redirect('404.html')
+    return redirect('../racecard/?id='+race_no)
 
 
 ## Article Section ###
@@ -89,14 +94,14 @@ def contact(request):
 
 def register(request):
     if request.method == 'POST':
-        form = UserCreationForm(request.POST)
+        form = CustomUserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
             login(request, user)
             return redirect('contact')  # replace with the actual URL
     else:
-        form = UserCreationForm()
-    return render(request, 'registration/register.html', {'form': form})
+        form = CustomUserCreationForm()
+    return render(request, 'registration/registration_form.html', {'form': form})
 
 def user_login(request):
     if request.method == 'POST':
@@ -104,15 +109,16 @@ def user_login(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            return redirect('contact')  # replace with the actual URL
+            return redirect('racecard')  # replace with the actual URL
     else:
         form = AuthenticationForm()
     return render(request, 'registration/login.html', {'form': form})
+    
 
 def user_logout(request):
     logout(request)
     return redirect('login')  # replace with the actual URL
-
+'''
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
@@ -123,6 +129,8 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'registration/registration_form.html', {'form': form})
-
-
+'''
+@login_required
+def member(request):
+     return render(request, 'member.html')
 
