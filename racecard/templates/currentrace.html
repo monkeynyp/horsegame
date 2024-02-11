@@ -109,15 +109,16 @@
 
         <div id="id01" class="w3-modal">
           <div class="w3-modal-content">
-              <div class="w3-center w3-xlarge"><i class="fa fa-spinner fa-spin fa-lg fa-fw" aria-hidden="true"></i>
-            Race {{race_id}} Tips {{ current_race.iloc.2.1}}
-          </div>
+              <div class="w3-center w3-xlarge w3-blue"><i class="fa fa-spinner fa-spin fa-lg fa-fw" aria-hidden="true"></i>
+                <span onclick="closeAddTipsFormModal()" class="w3-button w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+                   Race {{race_id}} Tips {{ current_race.iloc.2.1}}
+              </div>
   
           <form method="post" action="{% url 'submit_tips' %}" class="w3-container w3-margin-left">
             {% csrf_token %}
             <input type="hidden" name="race_no" value="{{ race_id }}">
             <input type="hidden" name="race_date" value="{{current_race.iloc.2.1}}"> <!-- Update with the desired date -->
-            <h4>Select up to 3 horses:</h4>
+            <h4>{% trans 'Select up to 3 horses' %}:</h4>
             {% for i, r in current_race.iterrows %}
                 <label>
                     <input type="checkbox" name="selected_horses" value="{{ forloop.counter}}.{{ r.HorseName }}"
@@ -127,7 +128,8 @@
                 </label><br>
             {% endfor %}
             <br>
-            <button type="submit">Submit</button>
+            <button type="submit">{% trans 'Submit' %}</button>
+            <br>
         </form>
 
         </div>
@@ -138,21 +140,25 @@
                 <span onclick="closeLoginFormModal()" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
             </div>
             <div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top" style="max-width: 400px;">
-                <h2 class="w3-center">Login</h2>
+                <h2 class="w3-center">{% trans 'Login' %}</h2>
                 <form method="post" action="{% url 'login' %}" class="w3-container login-form">
                     <div class="w3-section">
                         {% csrf_token %}
-                        <label class="w3-input w3-label w3-margin-bottom" for="id_username">Username:</label>
+                        <label class="w3-input w3-label w3-margin-bottom" for="id_username">{% trans 'Username' %}:</label>
                         <input class="w3-input w3-border" type="text" name="username" id="id_username" required>
                     </div>
                     <div class="w3-section">
-                        <label class="w3-input w3-label w3-margin-bottom" for="id_password">Password:</label>
+                        <label class="w3-input w3-label w3-margin-bottom" for="id_password">{% trans 'Password' %}:</label>
                         <input class="w3-input w3-border" type="password" name="password" id="id_password" required>
                     </div>
                     <div class="w3-section">
-                        <button type="submit" class="w3-button w3-block w3-green w3-section w3-padding">Login</button>
+                        <button type="submit" class="w3-button w3-block w3-green w3-section w3-padding">{% trans 'Login' %}</button>
                     </div>
                 </form>
+                <div class="w3-section">
+                  <!-- Add a button for new user registration -->
+                  <a href="{% url 'register' %}" class="w3-button w3-block w3-blue w3-section w3-padding">{% trans 'Register' %}</a>
+              </div>
             </div>
         </div>
     </div>
@@ -199,7 +205,7 @@
     
         // Function to close the add tips form modal
         function closeAddTipsFormModal() {
-            document.getElementById("id02").style.display = "none";
+            document.getElementById("id01").style.display = "none";
         }
     </script>
 

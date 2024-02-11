@@ -20,11 +20,44 @@ msgstr ""
 msgid "Monkey is a data scientist who believes that facts and science are the best ways to make decisions and forecasts. That’s why it created this website and to do different kind of Machine Learning Prediction and verify the accracy. One of the data set I got is the horse racing data from Hong Kong. Although many people say that horse racing is unpredictable and random, I  would like to get start with this data and see what kind of accuracy can be achieved by applying machine learning."
 msgstr "猴子是一個資料科學家，他相信事實和科學是做決定和預測的最好方法。這就是為什麼它創建了這個網站，並做不同種類的機器學習預測，並驗證準確性。我得到的一個資料集是香港的賽馬資料。雖然很多人說賽馬是不可預測和隨機的，但我想從這個資料開始，看看應用機器學習可以達到什麼樣的準確度。"
 
+msgid "This password is too short. It must contain at least 8 characters."
+msgstr "此密碼太短，必須至少包含8個字符。"
+
 msgid "About Monkey Forecast"
 msgstr "關於猴子預測"
 
-msgid "Mark Six"
-msgstr "六合彩"
+msgid "Add Your Tips"
+msgstr "加入你的心水"
+
+msgid "Login"
+msgstr "登入"
+
+msgid "Logout"
+msgstr "登出"
+
+msgid "Register"
+msgstr "注冊"
+
+msgid "Username"
+msgstr "帳戶"
+
+msgid "Password"
+msgstr "密碼"
+
+msgid "Email"
+msgstr "電郵"
+
+msgid "Confirm Password"
+msgstr "確認密碼"
+
+msgid "User Registration"
+msgstr "帳號注冊"
+
+msgid "Submit"
+msgstr "遞交"
+
+msgid "Select up to 3 horses"
+msgstr "請選三匹馬"
 
 #: racecard/templates/currentrace.html:6
 msgid "Current Race"
@@ -3400,5 +3433,5 @@ msgstr "六合彩"
 msgid "Special"
 msgstr "特別號碼"
 
-msgid "Number Trend Line"
-msgstr "數字走勢"
+msgid "B Thompson"
+msgstr "湯普新"

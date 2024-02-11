@@ -22,13 +22,14 @@ def racecard(request):
      current_datetime = timezone.now()
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
-     print(current_race)
+     curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
      #Retrive the most recent record of user tips
      latest_tips_by_user = (
-        UserTips.objects.filter(race_no=id)
+        UserTips.objects.filter(race_no=id, race_date=curr_race_date)
         .values('user')
         .annotate(latest_race_date=Max('race_date'))
-        )
+    )
+     print(latest_tips_by_user)
     # Organize the data by username and fetch all relevant records for each user
      complete_tips_by_user = []
      for user_tips in latest_tips_by_user:
@@ -98,7 +99,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('contact')  # replace with the actual URL
+            return redirect('racecard')  # replace with the actual URL
     else:
         form = CustomUserCreationForm()
     return render(request, 'registration/registration_form.html', {'form': form})

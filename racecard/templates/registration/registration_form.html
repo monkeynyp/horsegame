@@ -39,29 +39,38 @@
     }
 </style>
 <div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top">
-    <form method="post" action="{% url 'register' %}" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" style="max-width: 600px;">
-        {% csrf_token %}
-        <h2 class="w3-center">User Registration</h2>
-        <div class="w3-section">
-            <label class="w3-input w3-label w3-margin-bottom" for="id_username">Username</label>
-            {{ form.username }}
-        </div>
-        <div class="w3-section">
-            <label class="w3-input w3-label w3-margin-bottom" for="id_email">Email</label>
-            {{ form.email }}
-        </div>
-        <div class="w3-section">
-            <label class="w3-input w3-label w3-margin-bottom" for="id_password1">Password</label>
-            {{ form.password1 }}
-        </div>
-        <div class="w3-section">
-            <label class="w3-input w3-label w3-margin-bottom" for="id_password2">Confirm Password</label>
-            {{ form.password2 }}
-        </div>
-        <div class="w3-section">
-            <button type="submit" class="w3-button w3-block w3-blue w3-section w3-padding">Register</button>
-        </div>
-    </form>
+   <form method="post" action="{% url 'register' %}" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin" style="max-width: 600px;">
+    {% csrf_token %}
+    <h2 class="w3-center">{% trans 'User Registration' %}</h2>
+    {{ form.errors }} <!-- Display form-level errors -->
+    <div class="w3-section">
+        <label class="w3-input w3-label w3-margin-bottom" for="id_username">{% trans 'Username' %}</label>
+        {{ form.username }}
+    </div>
+    <div class="w3-section">
+        <label class="w3-input w3-label w3-margin-bottom" for="id_email">{% trans 'Email' %}</label>
+        {{ form.email }}
+    </div>
+    <div class="w3-section">
+        <label class="w3-input w3-label w3-margin-bottom" for="id_password1">{% trans 'Password' %}</label>
+        {{ form.password1 }}
+        <!-- Display password1 field errors -->
+        {% for error in form.password1.errors %}
+            <span class="error">{% trans error %}</span>
+        {% endfor %}
+    </div>
+    <div class="w3-section">
+        <label class="w3-input w3-label w3-margin-bottom" for="id_password2">{% trans 'Confirm Password' %}</label>
+        {{ form.password2 }}
+        <!-- Display password2 field errors -->
+        {% for error in form.password2.errors %}
+            <span class="error">{% trans error %}</span>
+        {% endfor %}
+    </div>
+    <div class="w3-section">
+        <button type="submit" class="w3-button w3-block w3-blue w3-section w3-padding">{% trans 'Register' %}</button>
+    </div>
+</form>
 </div>
 
 
