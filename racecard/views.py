@@ -88,7 +88,7 @@ def recent_article(request):
 
 
 ## Login and Administration Session
-@login_required
+#@login_required
 def contact(request):
      return render(request, 'contact.html')
 
@@ -130,7 +130,7 @@ def register(request):
         form = UserCreationForm()
     return render(request, 'registration/registration_form.html', {'form': form})
 '''
-@login_required
+#login_required
 def member(request):
      return render(request, 'member.html')
 
