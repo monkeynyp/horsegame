@@ -21,7 +21,7 @@
 
 <div class="w3-container w3-padding-32"></div>
 <div class="w3-margin ">
-    <h2>{% trans "Current Race"  %} {{ current_race.iloc.2.1}} {{ currentDatetime }}</h2>
+    <h2>{% trans "Current Race"  %} {{ current_race.iloc.2.1}} {{ currentDatetime }} {{current_datetime}}</h2>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=3">3</a>
@@ -170,14 +170,13 @@
     <script>
       // Get the current date and time
       var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
-      
       // Define the start and end date and time for the period
-      var startDate = new Date("2024-02-09T18:30:00");
-      var endDate = new Date("2024-02-010T00:00:00");
-    
+      var startDate = new Date("2024-02-12T11:15:00");
+      var endDate = new Date("2024-02-12T23:59:59");
+      
       // Disable the button if the current date and time fall within the specified period
       if (currentDatetime >= startDate && currentDatetime < endDate) {
-          //alert("Disabled");
+    
           var myButton = document.getElementById("myButton");
           myButton.disabled = true;
           myButton.classList.add("disabled-button");
