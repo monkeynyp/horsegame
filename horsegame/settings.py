@@ -144,8 +144,8 @@ LOGIN_URL = 'login'
 
 # Reset password features
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.mail.pythonanywhere.com'
+EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587  # Use 587 for TLS/STARTTLS
-EMAIL_HOST_USER = 'nyp'
-EMAIL_HOST_PASSWORD = 'GTlsFY#PY1'
+EMAIL_HOST_USER = 'thinking.monkey@gmail.com'
+EMAIL_HOST_PASSWORD = 'GTlsFY#GO1'
 EMAIL_USE_TLS = True  # Enable TLS/STARTTLS encryption
