@@ -141,3 +141,11 @@ LOGIN_REDIRECT_URL = '/'
 
 # Set the URL to redirect to if login is required
 LOGIN_URL = 'login'
+
+# Reset password features
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mail.pythonanywhere.com'
+EMAIL_PORT = 587  # Use 587 for TLS/STARTTLS
+EMAIL_HOST_USER = 'nyp'
+EMAIL_HOST_PASSWORD = 'GTlsFY#PY1'
+EMAIL_USE_TLS = True  # Enable TLS/STARTTLS encryption
