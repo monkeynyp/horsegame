@@ -32,6 +32,12 @@ msgstr "加入你的心水"
 msgid "Login"
 msgstr "登入"
 
+msgid "Forgot Password?"
+msgstr "重設密碼"
+
+msgid "Not Open Yet"
+msgstr "暫停開放"
+
 msgid "Logout"
 msgstr "登出"
 
