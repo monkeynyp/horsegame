@@ -76,9 +76,9 @@ def about(request):
     return render(request, 'home.html')
 
 def recent_article(request):
-    recent_articles = Article.objects.order_by('-pub_date')[:2]
+    recent_articles = Article.objects.order_by('-pub_date')[:1]
         # Fetch articles from 3 to 13
-    other_articles = Article.objects.order_by('-pub_date')[2:13]
+    other_articles = Article.objects.order_by('-pub_date')[1:10]
     context = {
         'recent_articles': recent_articles,
         'other_articles': other_articles,
