@@ -76,9 +76,13 @@ def about(request):
     return render(request, 'home.html')
 
 def recent_article(request):
-    recent_articles = Article.objects.order_by('-pub_date')[:1]
+    id = request.GET.get('id')
+    if id is None:
+          id = 1
+    id=int(id)
+    recent_articles = Article.objects.order_by('-pub_date')[id-1:id]
         # Fetch articles from 3 to 13
-    other_articles = Article.objects.order_by('-pub_date')[1:10]
+    other_articles = Article.objects.order_by('-pub_date')[id:id+10]
     context = {
         'recent_articles': recent_articles,
         'other_articles': other_articles,
