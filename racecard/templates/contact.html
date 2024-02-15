@@ -3,34 +3,19 @@ members {% endblock %}
 {% load i18n %}
 {% load static %}
 {% block content %}
-<style>
-    /* Add your custom styles here if needed */
-    body {
-        font-family: "Arial", sans-serif;
-    }
 
-    .container {
-        margin-top: 50px;
-    }
 </style>
    
 <div class="w3-container w3-card-4 w3-light-grey w3-section w3-padding-64" style="max-width: 600px; margin:auto;">
     <h2>Contact Me</h2>
-    <p>If you have any questions or need to contact me, please send an email to <a href="mailto:thinking.monkey@gmail.com">thinking.monkey@gmail.com</a>.</p>
-
-    <form action="#" method="post" class="w3-container">
-        <!-- Add any additional form fields if needed -->
-        {% csrf_token %}
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" class="w3-input w3-border" required>
-
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" class="w3-input w3-border" required>
-
-        <label for="message">Your Message</label>
-        <textarea id="message" name="message" rows="4" class="w3-input w3-border" required></textarea>
-
-        <button type="submit" class="w3-button w3-green w3-margin-top">Send Message</button>
-    </form>
+    <p>If you have any questions or need to contact me</p>
+    <p> 
+    <a href="mailto:thinking.monkey@gmail.com"><i class="fa fa-lg fa-envelope" aria-hidden="true">&nbsp thinking.monkey@gmail.com</i></a>
+    </p>
+    <p>
+    <a href="https://www.facebook.com/monk.forecast" target="_blank"><i class="fa fa-lg fa-facebook-square" aria-hidden="true">&nbsp Monkeyforecast</i>
+    </a>
+    </p>
+</div>
 </div>
 {% endblock %}

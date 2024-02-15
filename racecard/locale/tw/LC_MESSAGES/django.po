@@ -32,6 +32,15 @@ msgstr "加入你的心水"
 msgid "Login"
 msgstr "登入"
 
+msgid "Welcome to Monkey Forecast"
+msgstr "歡迎"
+
+msgid "Previous"
+msgstr "上一篇"
+
+msgid "Next"
+msgstr "下一篇"
+
 msgid "Forgot Password?"
 msgstr "重設密碼"
 
