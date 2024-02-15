@@ -21,11 +21,13 @@ class Command(BaseCommand):
         race_date = options['race_date']
         csv_path = os.path.join(settings.BASE_DIR, "racecard/data/race_hist_update.csv")
         csv_data = pd.read_csv(csv_path)
-        print(csv_data)
+        print(csv_data[['HorseName','Place']])
         # Filter the CSV data for places 1, 2, or 3
-        filtered_data = csv_data[(csv_data['Place'] == 1) | (csv_data['Place'] == 2) | (csv_data['Place'] == 3)]
-     
+        filtered_data = csv_data[(csv_data['Place'] == '1') | (csv_data['Place'] == '2') | (csv_data['Place'] == '3')]
+        print("filter123")
+        print(filtered_data[["RaceDate","RaceNo","HorseName","RaceNo","Place"]])
         filtered_data = filtered_data[(filtered_data["RaceDate"]==race_date)]
+        print("filterDate")
         print(filtered_data[["RaceDate","RaceNo","HorseName","RaceNo","Place"]])
         # Iterate through the filtered data and update UserTips records
         for index, row in filtered_data.iterrows():
