@@ -40,9 +40,14 @@ def racecard(request):
         complete_tips_by_user.append({'user': user_records[0].user, 'records': user_records})
 
     # Get the user scores and calculate the percentage of hits
-        user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(
-            percentage= F('total_hits') * 100.0 / F('total_records')  
+        
+        user_scores = UserScores.objects.annotate(
+                    percentage= F('total_hits') * 100.0 / F('total_records')  
         ).order_by('-percentage')
+
+        #user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(
+        #    percentage= F('total_hits') * 100.0 / F('total_records')  
+        #).order_by('-percentage')
 
         context = {
             'current_race': current_race,
@@ -122,18 +127,7 @@ def user_login(request):
 def user_logout(request):
     logout(request)
     return redirect('login')  # replace with the actual URL
-'''
-def register(request):
-    if request.method == 'POST':
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            login(request, user)
-            return redirect('contact')  # replace with the actual URL
-    else:
-        form = UserCreationForm()
-    return render(request, 'registration/registration_form.html', {'form': form})
-'''
+
 #login_required
 def member(request):
      return render(request, 'member.html')
