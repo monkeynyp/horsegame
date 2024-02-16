@@ -20,7 +20,7 @@ class Command(BaseCommand):
         num_races = options['num_races']
         race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
 
-        alg_methods = ['LogRegress','NaiveBayes','SVC']
+        alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest']
         for alg in alg_methods:
             user_id = User.objects.get(username=alg)
             for counter in range(1,num_races+1):
@@ -30,6 +30,8 @@ class Command(BaseCommand):
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_nav"+str(counter)+".csv")
                 elif alg == 'SVC':
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_svc"+str(counter)+".csv")
+                elif alg == 'RanForest':
+                    csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran"+str(counter)+".csv")
                 
                 df = pd.read_csv(csv_path)
             
