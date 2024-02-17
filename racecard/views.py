@@ -48,13 +48,14 @@ def racecard(request):
         #user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(
         #    percentage= F('total_hits') * 100.0 / F('total_records')  
         #).order_by('-percentage')
-
+        recent_articles = Article.objects.order_by('-pub_date')[:2]
         context = {
             'current_race': current_race,
             'current_datetime':current_datetime,
             'race_id' : id,
             'complete_tips_by_user': complete_tips_by_user,
-            'user_scores': user_scores # Add the user scores to the context
+            'user_scores': user_scores, # Add the user scores to the context
+            'recent_articles': recent_articles,
         }
        
      return render(request, 'currentrace.html', context)
