@@ -32,7 +32,7 @@ class Command(BaseCommand):
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_svc"+str(counter)+".csv")
                 elif alg == 'RanForest':
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran"+str(counter)+".csv")
-                elif alg == 'RanForest':
+                elif alg == 'NeuroNet':
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu"+str(counter)+".csv")
                 df = pd.read_csv(csv_path)
             
