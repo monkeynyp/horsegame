@@ -86,11 +86,11 @@
 
         <div class="w3-row-padding">
         {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->
-          {% cycle 'w3-blue' 'w3-green' 'w3-yellow' as color silent %}
-              <div class="w3-col w3-card-4 w3-third w3-margin" style="width: 33%">
+          {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' as color silent %}
+              <div class="w3-col w3-card-4 w3-third w3-margin" style="width: 30%">
                 <header class="w3-container {{color}}" >
-                  <h4>{{ user_data.user }}<span class="w3-tag w3-large w3-padding w3-red" style="transform:rotate(-5deg)">
-                    Race {{race_id}}</span></h4>
+                  <h5>{{ user_data.user }}&nbsp<span class="w3-tag w3-small w3-padding w3-red" style="transform:rotate(-5deg)">
+                    Race {{race_id}}</span></h5>
                   </header>
                       {% for user_tips in user_data.records %}
                               <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} {% if user_tips.hit == 1 %}
@@ -100,7 +100,7 @@
                               <!-- Add more details as needed -->
                       {% endfor %}
                       <footer class="w3-container {{color}}">
-                        <h5>{% trans "Place" %}</h5>
+                        <h7>{% trans "Place" %}</h7>
                       </footer>
               </div>
           {% endfor %}
