@@ -94,7 +94,7 @@
                   </header>
                       {% for user_tips in user_data.records %}
                               <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} {% if user_tips.hit == 1 %}
-                                <span class="w3-badge w3-red">P</span>
+                                <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
                               {% endif %}
                               </p>
                               <!-- Add more details as needed -->
@@ -109,8 +109,9 @@
         <h4>{% trans "Prediction Accracy" %}</h4>
         {% for score in user_scores %}
           {% cycle 'w3-blue' 'w3-green' 'w3-yellow' as color silent %}
+          {{ score.user}}: {% trans 'Profit:' %} $ {{ score.profit | floatformat:0 }}
           <div class="w3-light-grey">
-          <div class=" {{ color }}" style="height:30px; width:{{ score.percentage }}%">&nbsp {{ score.user}}: <span class="w3-tag w3-large w3-red w3-round w3-border-white" style="transform:rotate(-5deg)">{{ score.percentage | floatformat:0 }}%</span></div>
+          <div class=" {{ color }}" style="height:30px; width:{{ score.percentage }}%">&nbsp  <span class="w3-tag w3-large w3-red w3-round w3-border-white" style="transform:rotate(-5deg)">{{ score.percentage | floatformat:0 }}% </span></div>
           </div><br>
         {% endfor %}
      

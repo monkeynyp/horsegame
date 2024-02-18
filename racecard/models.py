@@ -10,11 +10,13 @@ class UserTips(models.Model):
     horse_no = models.IntegerField()
     horse_name = models.CharField(max_length=50)
     hit = models.IntegerField()
+    dividend = models.FloatField(default=0)
 
 class UserScores(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='score')
     total_records = models.IntegerField(default=0)
     total_hits = models.IntegerField(default=0)
+    total_dividend = models.FloatField(default=0)
 
 class Article(models.Model):
     LANGUAGE_CHOICES = [

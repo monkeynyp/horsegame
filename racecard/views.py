@@ -42,7 +42,8 @@ def racecard(request):
     # Get the user scores and calculate the percentage of hits
         
         user_scores = UserScores.objects.annotate(
-                    percentage= F('total_hits') * 100.0 / F('total_records')  
+                    percentage= F('total_hits') * 100.0 / F('total_records'),
+                    profit =  F('total_dividend') - F('total_records')*10
         ).order_by('-percentage')
 
         #user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(

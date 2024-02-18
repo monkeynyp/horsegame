@@ -35,19 +35,21 @@ class Command(BaseCommand):
             race_date = datetime.strptime(row['RaceDate'], '%Y/%m/%d').date()
             race_no = row['RaceNo']
             horse_name = row['HorseName']
+            dividend = row['Dividend']
             
             # Update UserTips records
             UserTips.objects.filter(
                 horse_name=horse_name,
                 race_date=race_date,
                 race_no=race_no,  
-            ).update(hit=1)
+            ).update(hit=1,dividend=dividend)
 
 
         # Get the UserTips data grouped by user, with the total records and total hits
         user_tips_data = UserTips.objects.values('user').annotate(
             total_records=Count('id'),
-            total_hits=Sum('hit')
+            total_hits=Sum('hit'),
+            total_dividend = Sum('dividend')
             )
 
         # Loop through the user tips data and update the user scores
@@ -57,6 +59,7 @@ class Command(BaseCommand):
             # Update the user score with the total records and total hits
             user_score.total_records = user_tip['total_records']
             user_score.total_hits = user_tip['total_hits']
+            user_score.total_dividend=user_tip['total_dividend']
             print("Hello")
             print(user_score.total_records)
             print(user_score.total_hits)
