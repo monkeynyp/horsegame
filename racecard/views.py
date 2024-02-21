@@ -10,7 +10,8 @@ from .models import UserTips,UserScores,Article
 from django.db.models import Max, F
 from django.utils import timezone
 from .forms import CustomUserCreationForm
-
+from django.core.mail import send_mail
+from django.contrib.auth.models import User, Group
 
 
 ## Horse Raching Features Create your views here.
@@ -79,8 +80,41 @@ def submit_tips(request):
 
 
 ## Article Section ###
-def about(request):
-    return render(request, 'home.html')
+def newsletter(request):
+    id = request.GET.get('id')
+    if id is None:
+          id = 1
+    id=int(id)
+    recent_articles = Article.objects.order_by('-pub_date')[id-1:id]
+        # Fetch articles from 3 to 13
+    email_list_group = Group.objects.get(name='MailList Memeber')
+    print(email_list_group)
+    emails = User.objects.filter(groups=email_list_group).values_list('email', flat=True)
+    print(emails)
+    context = {
+        'recent_articles': recent_articles,
+        'emails': emails
+    }
+    return render(request, 'blog/newsletter.html', context)
+def privacy(request):
+    return render(request, 'privacy.html')
+
+def disclaimer(request):
+    return render(request, 'disclaimer.html')
+
+def send_article_email(request):
+    if request.method == 'POST':
+        article_id = request.POST.get('article_id')
+        article = Article.objects.get(pk=article_id)
+        recipients = request.POST.getlist('recipients')
+        subject = article.title
+        message = article.content
+        send_mail(subject, message, settings.EMAIL_HOST_USER, recipients)
+        return redirect('newsletter')
+        # Redirect or show a success message
+    else:
+        # Handle GET request
+        pass
 
 def recent_article(request):
     id = request.GET.get('id')

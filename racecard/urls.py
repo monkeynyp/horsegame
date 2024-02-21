@@ -8,12 +8,16 @@ urlpatterns = [
     path('', views.recent_article, name='recent_article'),
     path('racecard/', views.racecard, name='racecard'),
     path('blog/', views.recent_article, name='recent_article'),
-    path('about/', views.about, name='about'),
+    path('newsletter/', views.newsletter, name='newsletter'),
+    path('send_article_email/', views.send_article_email, name='send_article_email'),
     path('contact/', views.contact, name='contact'),
     path('register/', register, name='register'),
     path('login/', user_login, name='login'),
     path('register/', register, name='register'),
     path('logout/', user_logout, name='logout'),
+    path('privacy/', views.privacy, name='privacy'),
+    path('disclaimer/', views.disclaimer, name='disclaimer'),
+
     # Password reset URLs
     path('password-reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),
     path('password-reset/done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),

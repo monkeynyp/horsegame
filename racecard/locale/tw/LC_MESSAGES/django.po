@@ -74,6 +74,13 @@ msgstr "遞交"
 msgid "Select up to 3 horses"
 msgstr "請選三匹馬"
 
+msgid "Privacy Policy"
+msgstr "私隱條款"
+
+msgid "Disclaimer"
+msgstr "免責聲明"
+
+
 #: racecard/templates/currentrace.html:6
 msgid "Current Race"
 msgstr "最近賽事"
