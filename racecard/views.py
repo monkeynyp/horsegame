@@ -87,7 +87,7 @@ def newsletter(request):
     id=int(id)
     recent_articles = Article.objects.order_by('-pub_date')[id-1:id]
         # Fetch articles from 3 to 13
-    email_list_group = Group.objects.get(name='MailList Memeber')
+    email_list_group = Group.objects.get(name='MailList')
     print(email_list_group)
     emails = User.objects.filter(groups=email_list_group).values_list('email', flat=True)
     print(emails)
