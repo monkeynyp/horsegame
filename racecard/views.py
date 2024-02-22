@@ -12,6 +12,7 @@ from django.utils import timezone
 from .forms import CustomUserCreationForm
 from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
+from django.template.loader import render_to_string
 
 
 ## Horse Raching Features Create your views here.
@@ -96,6 +97,7 @@ def newsletter(request):
         'emails': emails
     }
     return render(request, 'blog/newsletter.html', context)
+
 def privacy(request):
     return render(request, 'privacy.html')
 
@@ -108,8 +110,12 @@ def send_article_email(request):
         article = Article.objects.get(pk=article_id)
         recipients = request.POST.getlist('recipients')
         subject = article.title
-        message = article.content
-        send_mail(subject, message, settings.EMAIL_HOST_USER, recipients)
+        context = {
+            'subject': subject,
+            'message': article.content,
+        }
+        message = render_to_string('blog/newsletter_email.html', context)
+        send_mail(subject, message, settings.EMAIL_HOST_USER, recipients, html_message=message)
         return redirect('newsletter')
         # Redirect or show a success message
     else:
