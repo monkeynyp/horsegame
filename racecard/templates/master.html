@@ -10,7 +10,21 @@
     margin-left: 30px; /* Adjust as needed for spacing */
   }
 </style>
-
+<style>
+  /* Style for the cookie consent banner */
+  .cookie-consent {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      color: #333;
+      padding: 10px 20px;
+      text-align: center;
+      z-index: 999;
+  }
+</style>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7661729705418588"
@@ -67,6 +81,33 @@
     {% endblock %}
 <!-- End Content -->
 <footer class="w3-container w3-white">
+  <div class="cookie-consent" id="cookieConsent">
+    <p>{% trans 'This website uses cookies to ensure you get the best experience on our website' %}.</p>
+    <p>{% trans '此網站使用Cookie使你有更好的瀏覽體驗' %}.</p>
+    <span class="w3-bar w3-center"><a href='/privacy'>{% trans 'Privacy Policy' %}</a> &nbsp &nbsp <a href='/disclaimer'>{% trans 'Disclaimer' %}</a></span>
+    <button class="w3-button w3-blue" onclick="acceptCookies()">{% trans 'Got it' %}!</button>
+</div>
+
+<script>
+    // Check if the user has already accepted cookies
+    if (getCookie('cookieConsent') !== 'accepted') {
+        document.getElementById('cookieConsent').style.display = 'block';
+    }
+
+    // Function to set the cookie consent
+    function acceptCookies() {
+        document.cookie = 'cookieConsent=accepted; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/';
+        document.getElementById('cookieConsent').style.display = 'none';
+    }
+
+    // Function to get a cookie value
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+</script>
+
 
     <h5>{% trans "Support Monkey" %}</h5>
     <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="thinkingmonkey" data-color="#FFDD00" data-emoji="" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>

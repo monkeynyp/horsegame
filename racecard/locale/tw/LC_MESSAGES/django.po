@@ -80,6 +80,11 @@ msgstr "私隱條款"
 msgid "Disclaimer"
 msgstr "免責聲明"
 
+msgid "Got it"
+msgstr "知道了"
+
+msgid "This website uses cookies to ensure you get the best experience on our website"
+msgstr "此網站使用Cookie使你有更好的瀏覽體驗"
 
 #: racecard/templates/currentrace.html:6
 msgid "Current Race"
