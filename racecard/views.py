@@ -110,12 +110,15 @@ def send_article_email(request):
         article = Article.objects.get(pk=article_id)
         recipients = request.POST.getlist('recipients')
         subject = article.title
-        context = {
-            'subject': subject,
-            'message': article.content,
-        }
-        message = render_to_string('blog/newsletter_email.html', context)
-        send_mail(subject, message, settings.EMAIL_HOST_USER, recipients, html_message=message)
+
+        for recipient in recipients:
+            context = {
+                'subject': subject,
+                'message': article.content,
+            }
+            message = render_to_string('blog/newsletter_email.html', context)
+            send_mail(subject, message, settings.EMAIL_HOST_USER, [recipient], html_message=message)
+        
         return redirect('newsletter')
         # Redirect or show a success message
     else:
