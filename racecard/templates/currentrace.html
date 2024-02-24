@@ -87,20 +87,27 @@
         <div class="w3-row-padding">
         {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->
           {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' as color silent %}
-              <div class="w3-col w3-card-4 w3-third w3-margin" style="width: 30%">
+              <div class="w3-col w3-card-4 w3-third w3-margin" style="width: 28%">
                 <header class="w3-container {{color}}" >
-                  <h5>{{ user_data.user }}&nbsp<span class="w3-tag w3-small w3-padding w3-red" style="transform:rotate(-5deg)">
-                    Race {{race_id}}</span></h5>
+                  <h6>{{ user_data.user }}</h6>
                   </header>
                       {% for user_tips in user_data.records %}
                               <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} {% if user_tips.hit == 1 %}
-                                <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
+                                <span class="w3-badge w3-red">${{user_tips.dividend}}</span>
                               {% endif %}
                               </p>
                               <!-- Add more details as needed -->
                       {% endfor %}
                       <footer class="w3-container {{color}}">
-                        <h7>{% trans "Place" %}</h7>
+                        <span class="w3-tag w3-small w3-padding w3-red" style="transform:rotate(-5deg)">
+                          <h7>
+                            {% trans 'Acc' %}: 
+                            {% for score in user_scores %}
+                                {% if score.user == user_data.user %}
+                                    {{ score.percentage | floatformat:0 }}%
+                                {% endif %}
+                            {% endfor %}
+                        </h7> </span>
                       </footer>
               </div>
           {% endfor %}

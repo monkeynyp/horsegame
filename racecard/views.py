@@ -13,7 +13,7 @@ from .forms import CustomUserCreationForm
 from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
-
+from django.db.models import F, Sum, ExpressionWrapper, FloatField,Count
 
 ## Horse Raching Features Create your views here.
 def racecard(request):
@@ -30,8 +30,16 @@ def racecard(request):
         .values('user')
         .annotate(latest_race_date=Max('race_date'))
     )
+     print( "### Latest Tips by User")
      print(latest_tips_by_user)
     # Organize the data by username and fetch all relevant records for each user
+    
+    # Get the user scores and calculate the percentage of hits
+     user_scores = UserScores.objects.annotate(
+        percentage= F('total_hits') * 100.0 / F('total_records'),
+            profit =  F('total_dividend') - F('total_records')*10
+            ).order_by('-percentage')
+    
      complete_tips_by_user = []
      for user_tips in latest_tips_by_user:
         user_records = UserTips.objects.filter(
@@ -39,14 +47,8 @@ def racecard(request):
             race_date=user_tips['latest_race_date'],
             race_no=id
         )
+   
         complete_tips_by_user.append({'user': user_records[0].user, 'records': user_records})
-
-    # Get the user scores and calculate the percentage of hits
-        
-        user_scores = UserScores.objects.annotate(
-                    percentage= F('total_hits') * 100.0 / F('total_records'),
-                    profit =  F('total_dividend') - F('total_records')*10
-        ).order_by('-percentage')
 
         #user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(
         #    percentage= F('total_hits') * 100.0 / F('total_records')  
