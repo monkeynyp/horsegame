@@ -53,7 +53,8 @@ def racecard(request):
         #user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(
         #    percentage= F('total_hits') * 100.0 / F('total_records')  
         #).order_by('-percentage')
-        recent_articles = Article.objects.order_by('-pub_date')[:2]
+        selected_language = translation.get_language()  # Default to Chinese if language is not provided
+        recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:3]
         context = {
             'current_race': current_race,
             'current_datetime':current_datetime,
