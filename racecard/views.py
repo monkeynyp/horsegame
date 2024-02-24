@@ -13,7 +13,7 @@ from .forms import CustomUserCreationForm
 from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
-from django.db.models import F, Sum, ExpressionWrapper, FloatField,Count
+from django.utils import translation
 
 ## Horse Raching Features Create your views here.
 def racecard(request):
@@ -132,9 +132,14 @@ def recent_article(request):
     if id is None:
           id = 1
     id=int(id)
-    recent_articles = Article.objects.order_by('-pub_date')[id-1:id]
+
+    selected_language = translation.get_language()  # Default to Chinese if language is not provided
+    recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[id-1:id]
+    other_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[id:id+10]
+    print("## Selected Language:", selected_language)
+    #recent_articles = Article.objects.order_by('-pub_date')[id-1:id]
         # Fetch articles from 3 to 13
-    other_articles = Article.objects.order_by('-pub_date')[id:id+10]
+    #other_articles = Article.objects.order_by('-pub_date')[id:id+10]
     context = {
         'recent_articles': recent_articles,
         'other_articles': other_articles,
