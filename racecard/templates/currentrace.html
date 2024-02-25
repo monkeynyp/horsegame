@@ -18,7 +18,6 @@
   }
 </script>
 
-
 <div class="w3-container w3-padding-32"></div>
 <div class="w3-margin ">
     <h2>{% trans "Current Race"  %} {{ current_race.iloc.2.1}} </h2>
@@ -87,7 +86,7 @@
         <div class="w3-row-padding">
         {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->
           {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' as color silent %}
-              <div class="w3-col w3-card-4 w3-third w3-margin" style="width: 28%">
+              <div class="w3-col w3-card-4 w3-third w3-margin l3 m6 s6">
                 <header class="w3-container {{color}}" >
                   <h6>{{ user_data.user }}</h6>
                   </header>
