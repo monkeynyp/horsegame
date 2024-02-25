@@ -110,8 +110,8 @@ LANGUAGE_CODE = "tw"
 
 
 LANGUAGES = [
-    ('tw', _('中文')),
-    ('en', _('English')),  
+    ('tw', _('中')),
+    ('en', _('En')),  
 ]
 
 LOCALE_PATHS = [

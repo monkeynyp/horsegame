@@ -7,7 +7,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from .models import UserTips,UserScores,Article
-from django.db.models import Max, F
+from django.db.models import Max, F, Count, Sum
 from django.utils import timezone
 from .forms import CustomUserCreationForm
 from django.core.mail import send_mail
@@ -28,12 +28,21 @@ def racecard(request):
      latest_tips_by_user = (
         UserTips.objects.filter(race_no=id, race_date=curr_race_date)
         .values('user')
-        .annotate(latest_race_date=Max('race_date'))
-    )
+        .annotate(latest_race_date=Max('race_date'),
+                  total_hit=Count('hit'),
+                  total_dividend = Sum('dividend')
+    ))
      print( "### Latest Tips by User")
      print(latest_tips_by_user)
     # Organize the data by username and fetch all relevant records for each user
-    
+     last_perf_by_user = (
+        UserTips.objects.filter(race_date=curr_race_date)
+        .select_related('user')
+        .values('user__username')
+        .annotate(
+                  hit_pst = Sum('hit')*100.0/Count('hit'),
+                  total_dividend = Sum('dividend')-Count('hit')*10
+    ))
     # Get the user scores and calculate the percentage of hits
      user_scores = UserScores.objects.annotate(
         percentage= F('total_hits') * 100.0 / F('total_records'),
@@ -55,6 +64,8 @@ def racecard(request):
         #).order_by('-percentage')
         selected_language = translation.get_language()  # Default to Chinese if language is not provided
         recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:3]
+        print("###Last Peforamnce")
+        print(last_perf_by_user)
         context = {
             'current_race': current_race,
             'current_datetime':current_datetime,
@@ -62,6 +73,7 @@ def racecard(request):
             'complete_tips_by_user': complete_tips_by_user,
             'user_scores': user_scores, # Add the user scores to the context
             'recent_articles': recent_articles,
+            'last_perf_by_user' : last_perf_by_user
         }
        
      return render(request, 'currentrace.html', context)
