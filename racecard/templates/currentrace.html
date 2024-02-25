@@ -92,16 +92,14 @@
                   </header>
                       {% for user_tips in user_data.records %}
                               <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} {% if user_tips.hit == 1 %}
-                                <span class="w3-badge w3-red">${{user_tips.dividend}} {{user_tips.total_hit}}</span>
+                                <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
                               {% endif %}
                               </p>
                               <!-- Add more details as needed -->
                       {% endfor %}
-                      <footer class="w3-container {{color}}">
-                        <span class="w3-tag w3-small w3-red w3-padding-small w3-left-align" style="transform:rotate(-5deg)">
-                          <h7>
-                            {% trans 'Acc' %}: 
-                            <br>
+                      <footer class="w3-container {{color}} w3-left-align">
+                        <span class="w3-small">
+                          <p class="w3-left-align">
                             {% trans 'Current' %}:
                             {% for last_perf in last_perf_by_user %}
                               {% if last_perf.user__username  == user_data.user.username %}
@@ -115,8 +113,8 @@
                                     {{ score.percentage | floatformat:0 }}%
                                 {% endif %}
                             {% endfor %}
-                            
-                        </h7> </span>
+                          </p> 
+                      </span>
                       </footer>
               </div>
           {% endfor %}
