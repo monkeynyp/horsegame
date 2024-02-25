@@ -7,7 +7,7 @@
 <style>
 .language-selector {
     display: inline-block; /* Ensures it stays in the same line */
-    margin-left: 10px; /* Adjust as needed for spacing */
+    margin-left: 5px; /* Adjust as needed for spacing */
   }
 </style>
 <style>
@@ -62,7 +62,7 @@
               <input type="radio" name="language" value="{{ lang_code }}" {% if lang_code == LANGUAGE_CODE %}checked{% endif %} onclick="changeLanguage(this)">
               {{ lang_name }}
             </label>
-         
+         <br>
           {% endfor %}
         </form>   
         <script>
@@ -87,7 +87,7 @@
       {% else %}
          <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-green w3-hide-small">{% trans 'Login' %}</a>
       {% endif %}
-      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()"><span class="w3-xlarge">&#9776;</span></a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-large w3-hide-medium" onclick="myFunction()"><span class="w3-xlarge">&#9776;</span></a>
     </div>
 
     <div id = "mobile" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">

@@ -86,7 +86,7 @@
         <div class="w3-row-padding">
         {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->
           {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' as color silent %}
-              <div class="w3-col w3-card-4 w3-third w3-margin l3 m5 s4 w3-left-align">
+              <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
                 <header class="w3-container {{color}}" >
                   <h6>{{ user_data.user  }}</h6>
                   </header>
