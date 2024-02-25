@@ -32,8 +32,7 @@ def racecard(request):
                   total_hit=Count('hit'),
                   total_dividend = Sum('dividend')
     ))
-     print( "### Latest Tips by User")
-     print(latest_tips_by_user)
+
     # Organize the data by username and fetch all relevant records for each user
      last_perf_by_user = (
         UserTips.objects.filter(race_date=curr_race_date)
@@ -64,8 +63,7 @@ def racecard(request):
         #).order_by('-percentage')
         selected_language = translation.get_language()  # Default to Chinese if language is not provided
         recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:3]
-        print("###Last Peforamnce")
-        print(last_perf_by_user)
+  
         context = {
             'current_race': current_race,
             'current_datetime':current_datetime,
