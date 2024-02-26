@@ -99,7 +99,8 @@ def newsletter(request):
     if id is None:
           id = 1
     id=int(id)
-    recent_articles = Article.objects.order_by('-pub_date')[id-1:id]
+    selected_language = translation.get_language()  # Default to Chinese if language is not provided
+    recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:1]
         # Fetch articles from 3 to 13
     email_list_group = Group.objects.get(name='MailList')
     print(email_list_group)
