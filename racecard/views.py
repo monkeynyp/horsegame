@@ -94,6 +94,7 @@ def submit_tips(request):
 
 
 ## Article Section ###
+@login_required
 def newsletter(request):
     id = request.GET.get('id')
     if id is None:
