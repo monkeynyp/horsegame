@@ -7,7 +7,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from .models import UserTips,UserScores,Article
-from django.db.models import Max, F, Count, Sum
+from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
 from .forms import CustomUserCreationForm
 from django.core.mail import send_mail
@@ -24,15 +24,21 @@ def racecard(request):
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
+     total_race = current_race['Total'].iloc[0]
+     print("Total Race", total_race)
      #Retrive the most recent record of user tips
      latest_tips_by_user = (
-        UserTips.objects.filter(race_no=id, race_date=curr_race_date)
-        .values('user')
-        .annotate(latest_race_date=Max('race_date'),
-                  total_hit=Count('hit'),
-                  total_dividend = Sum('dividend')
-    ))
-
+        UserTips.objects.all()  # Remove filter by user
+            .values('user')
+            .annotate(
+                total_hit=Sum('hit'),
+                total_record=Count('hit')-int(total_race)*3,
+                hit_ratio=ExpressionWrapper(F('total_hit')*100/F('total_record'), output_field=FloatField())
+        )
+        .order_by('-hit_ratio')  # Sort in descending order of hit ratio
+    )
+     print("##Lasterst Tips by User") 
+     print(latest_tips_by_user)
     # Organize the data by username and fetch all relevant records for each user
      last_perf_by_user = (
         UserTips.objects.filter(race_date=curr_race_date)
@@ -50,13 +56,15 @@ def racecard(request):
     
      complete_tips_by_user = []
      for user_tips in latest_tips_by_user:
+        print(user_tips, curr_race_date, id)
         user_records = UserTips.objects.filter(
             user_id=user_tips['user'],
-            race_date=user_tips['latest_race_date'],
+            race_date=curr_race_date,
             race_no=id
         )
-   
-        complete_tips_by_user.append({'user': user_records[0].user, 'records': user_records})
+        print(user_records)
+        if user_records:
+            complete_tips_by_user.append({'user': user_records[0].user, 'records': user_records})
 
         #user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(
         #    percentage= F('total_hits') * 100.0 / F('total_records')  
@@ -66,6 +74,7 @@ def racecard(request):
   
         context = {
             'current_race': current_race,
+            'total_race': total_race,
             'current_datetime':current_datetime,
             'race_id' : id,
             'complete_tips_by_user': complete_tips_by_user,
