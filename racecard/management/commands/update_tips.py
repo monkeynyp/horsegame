@@ -20,7 +20,7 @@ class Command(BaseCommand):
         num_races = options['num_races']
         race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
 
-        alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg']
+        alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB']
         for alg in alg_methods:
             user_id = User.objects.get(username=alg)
             for counter in range(1,num_races+1):
@@ -38,6 +38,8 @@ class Command(BaseCommand):
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran2"+str(counter)+".csv")
                 elif alg == 'NeuroReg':
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu2"+str(counter)+".csv")
+                elif alg == 'GradientB':
+                    csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_gra"+str(counter)+".csv")
                 
                 df = pd.read_csv(csv_path)
             
