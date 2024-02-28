@@ -20,19 +20,26 @@ class Command(BaseCommand):
         num_races = options['num_races']
         race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
 
-        alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB']
+        #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB']
+        alg_methods = ['ForestReg','LogRegress']
+        class_flag=0
         for alg in alg_methods:
             user_id = User.objects.get(username=alg)
             for counter in range(1,num_races+1):
                 if alg =="LogRegress":
+                    class_flag=1
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_log"+str(counter)+".csv")
                 elif alg == 'NaiveBayes':
+                    class_flag=1
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_nav"+str(counter)+".csv")
                 elif alg == 'SVC':
+                    class_flag=1
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_svc"+str(counter)+".csv")
                 elif alg == 'RanForest':
+                    class_flag=1
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran"+str(counter)+".csv")
                 elif alg == 'NeuroNet':
+                    class_flag=1
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu"+str(counter)+".csv")
                 elif alg == 'ForestReg':
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran2"+str(counter)+".csv")
@@ -42,17 +49,19 @@ class Command(BaseCommand):
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_gra"+str(counter)+".csv")
                 
                 df = pd.read_csv(csv_path)
-            
-                df.sort_values(by='Score',ascending=False, inplace=True)
+                if class_flag == 1:
+                    df.sort_values(by='Score',ascending=False, inplace=True)
                 print(df)
+                
                 result_df = df.head(3)
+
                 for i,row in result_df.iterrows():
                     # Your logic to update the database with race_date and race_no
                     UserTips.objects.update_or_create(
                         user = user_id,
                         race_date = race_date,
                         race_no = counter,
-                        horse_no = i+1,
+                        horse_no = row[ 'Unnamed: 0']+1,
                         horse_name = row['HorseName'],
                         hit = 0
                         )
