@@ -25,6 +25,7 @@ def racecard(request):
      current_race = pd.read_csv(csv_path)
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
      total_race = current_race['Total'].iloc[0]
+     
      print("Total Race", total_race)
      #Retrive the most recent record of user tips
      latest_tips_by_user = (
