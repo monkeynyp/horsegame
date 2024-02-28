@@ -19,31 +19,32 @@ class Command(BaseCommand):
     #    num_races = options['num_races']
         #race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
         race_date = options['race_date']
-        horse_name1=input("HorseName1:")
-        dividend1 = input("Dividend1:")
-        horse_name2=input("HorseName2:")
-        dividend2 = input("Dividend2:")
-        horse_name3=input("HorseName3:")
-        dividend3 = input("Dividend3:")
+        horse1=input("HorseNo1:")
+        dividend1=input("Dividend1:")
+        horse2=input("HorseN02:")
+        dividend2=input("Dividend2:")
+        horse3=input("HorseNo3:")
+        dividend3=input("Dividend3:")
+
         race_no = input("race_no")
         # Update UserTips records
         UserTips.objects.filter(
-            horse_name=horse_name1,
+            horse_no=horse1,
             race_date=race_date,
             race_no=race_no,  
-        ).update(hit=1,dividend=dividend1)
+        ).update(hit=1, dividend=dividend1)
 
         UserTips.objects.filter(
-            horse_name=horse_name2,
+            horse_no=horse2,
             race_date=race_date,
             race_no=race_no,  
-        ).update(hit=1,dividend=dividend2)
+        ).update(hit=1, dividend=dividend2)
 
         UserTips.objects.filter(
-            horse_name=horse_name3,
+            horse_no=horse3,
             race_date=race_date,
             race_no=race_no,  
-        ).update(hit=1,dividend=dividend3)
+        ).update(hit=1, dividend=dividend3)
 
 
 
