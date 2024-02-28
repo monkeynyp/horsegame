@@ -33,7 +33,7 @@ def racecard(request):
             .values('user')
             .annotate(
                 total_hit=Sum('hit'),
-                total_record=Count('hit')-int(total_race)*3,
+                total_record=Count('hit'),
                 hit_ratio=ExpressionWrapper(F('total_hit')*100/F('total_record'), output_field=FloatField())
         )
         .order_by('-hit_ratio')  # Sort in descending order of hit ratio
