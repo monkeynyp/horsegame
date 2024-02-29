@@ -89,6 +89,11 @@
               <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
                 <header class="w3-container {{color}}" >
                   <h6>{{ user_data.user  }}
+                    {% if user_data.groups_name == "MailList" %}
+                         <i class="fa-solid fa-person fa-xl "></i>
+                    {% else %}
+                        <i class="fa-solid fa-robot"></i>
+                    {% endif %}
                     {% if forloop.counter == 1 %}
                         <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by fa-xl" style="color: #FFD43B; --fa-rotate-angle: 15deg;""></i></span>
                     {% elif forloop.counter == 2 %}

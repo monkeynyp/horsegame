@@ -30,7 +30,7 @@ def racecard(request):
      #Retrive the most recent record of user tips
      latest_tips_by_user = (
         UserTips.objects.all()  # Remove filter by user
-            .values('user')
+            .values('user', 'user__groups__name')
             .annotate(
                 total_hit=Sum('hit'),
                 total_record=Count('hit'),
@@ -57,19 +57,17 @@ def racecard(request):
     
      complete_tips_by_user = []
      for user_tips in latest_tips_by_user:
-        print(user_tips, curr_race_date, id)
         user_records = UserTips.objects.filter(
             user_id=user_tips['user'],
             race_date=curr_race_date,
             race_no=id
         )
-        print(user_records)
+      
         if user_records:
-            complete_tips_by_user.append({'user': user_records[0].user, 'records': user_records})
+            complete_tips_by_user.append({'user': user_records[0].user, 'groups_name': user_tips['user__groups__name'], 'records': user_records})
 
-        #user_scores = UserScores.objects.filter(user__in=latest_tips_by_user.values('user')).annotate(
-        #    percentage= F('total_hits') * 100.0 / F('total_records')  
-        #).order_by('-percentage')
+        print("### This is the complete List by User")
+        print(complete_tips_by_user)
         selected_language = translation.get_language()  # Default to Chinese if language is not provided
         recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:3]
   
