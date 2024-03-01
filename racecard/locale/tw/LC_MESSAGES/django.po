@@ -3337,6 +3337,8 @@ msgstr "同得威"
 msgid "ARMOUR WAR EAGLE"
 msgstr "穿甲戰鷹"
 
+msgid "MASSIVE SOVEREIGN"
+msgstr "大至尊"
 
 #################Jockey Session ##########
 
@@ -3345,6 +3347,9 @@ msgstr "穿甲戰鷹"
 
 
 #: Jockey Names
+msgid "B Shinn"
+msgstr "薛恩"
+
 msgid "Z Purton"
 msgstr "潘頓"
 
