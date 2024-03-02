@@ -27,19 +27,17 @@ def racecard(request):
      total_race = current_race['Total'].iloc[0]
      
      print("Total Race", total_race)
-     #Retrive the most recent record of user tips
-     latest_tips_by_user = (
-        UserTips.objects.all()  # Remove filter by user
+
+     last_tips_by_user = (
+        UserScores.objects.all()  # Remove filter by user
             .values('user', 'user__groups__name')
             .annotate(
-                total_hit=Sum('hit'),
-                total_record=Count('hit'),
-                hit_ratio=ExpressionWrapper(F('total_hit')*100/F('total_record'), output_field=FloatField())
+                hit_ratio=ExpressionWrapper(F('total_hits')*100/F('total_records'), output_field=FloatField())
         )
         .order_by('-hit_ratio')  # Sort in descending order of hit ratio
     )
-     print("##Lasterst Tips by User") 
-     print(latest_tips_by_user)
+     print("##Last Tips by User") 
+     print(last_tips_by_user)
     # Organize the data by username and fetch all relevant records for each user
      last_perf_by_user = (
         UserTips.objects.filter(race_date=curr_race_date)
@@ -52,11 +50,11 @@ def racecard(request):
     # Get the user scores and calculate the percentage of hits
      user_scores = UserScores.objects.annotate(
         percentage= F('total_hits') * 100.0 / F('total_records'),
-            profit =  F('total_dividend') - F('total_records')*10
+            profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
             ).order_by('-percentage')
     
      complete_tips_by_user = []
-     for user_tips in latest_tips_by_user:
+     for user_tips in last_tips_by_user:
         user_records = UserTips.objects.filter(
             user_id=user_tips['user'],
             race_date=curr_race_date,
@@ -66,8 +64,6 @@ def racecard(request):
         if user_records:
             complete_tips_by_user.append({'user': user_records[0].user, 'groups_name': user_tips['user__groups__name'], 'records': user_records})
 
-        print("### This is the complete List by User")
-        print(complete_tips_by_user)
         selected_language = translation.get_language()  # Default to Chinese if language is not provided
         recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:3]
   
