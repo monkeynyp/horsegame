@@ -88,12 +88,18 @@ def submit_tips(request):
         user_id = request.user  # Replace with the actual user ID
         race_date=request.POST['race_date'].replace('/','-')
         race_no = request.POST['race_no']
+
+        if not UserScores.objects.filter(user=user_id).exists():
+            # If not, create a new UserScores record with default values
+            UserScores.objects.create(user=user_id, total_records=0, total_hits=0, total_dividend=0)
+       
         for horse_select in selected_horses:
             split_values = horse_select.split(".")
             horse_no=split_values[0]
             horse_name=split_values[1]
             UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no, horse_no=horse_no,horse_name=horse_name, hit=0)
         # Redirect to a success page or wherever needed
+        
     return redirect('../racecard/?id='+race_no)
 
 
