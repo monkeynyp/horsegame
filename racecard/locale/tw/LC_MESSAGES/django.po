@@ -39,7 +39,7 @@ msgid "Previous"
 msgstr "上一篇"
 
 msgid "Profit"
-msgstr "利潤"
+msgstr "回報"
 
 msgid "Next"
 msgstr "下一篇"
