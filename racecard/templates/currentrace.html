@@ -118,7 +118,8 @@
                             {% trans 'Current' %}:
                             {% for last_perf in last_perf_by_user %}
                               {% if last_perf.user__username  == user_data.user.username %}
-                                {{ last_perf.hit_pst | floatformat:0 }}%
+                                <span class ="w3-tooltip">{{ last_perf.hit_pst | floatformat:0 }}% 
+                                <span class="w3-text">(<em>💰${{ last_perf.total_dividend | floatformat:0 }}</em>)</span></span>
                               {% endif %}
                             {% endfor %}
                             <br>
