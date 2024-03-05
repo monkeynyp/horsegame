@@ -138,7 +138,7 @@ msgstr "聯絡"
 
 #: racecard/views.py:36
 msgid "Prediction Accracy"
-msgstr "預測龍虎版"
+msgstr "預測龍虎榜"
 
 #: Horse Name
 msgid "HELLO BEAUTY"
