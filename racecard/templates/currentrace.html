@@ -141,7 +141,7 @@
           {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' as color silent %}
           {{ score.user}}: {% trans 'Profit' %}:💰{{ score.profit_percentage | floatformat:0 }}%
           <div class="w3-light-grey">
-          <div class=" {{ color }}" style="height:30px; width:{{ score.percentage }}%">&nbsp  <span class="w3-tag w3-red w3-tooltip" style="transform:rotate(-5deg)">{{ score.percentage | floatformat:0 }}% <span class="w3-text"></span></span></div>
+          <div class=" {{ color }}" style="height:30px; width:{{ score.percentage }}%">&nbsp  <span class="w3-tag w3-red w3-tooltip" style="transform:rotate(-5deg)">{{ score.percentage | floatformat:0 }}% <span class="w3-text">(<em>{{score.total_records}} {% trans 'Horses' %}</em>)</span></span></div>
           </div><br>
         {% endfor %}
      

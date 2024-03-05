@@ -32,6 +32,9 @@ msgstr "加入你的心水"
 msgid "Login"
 msgstr "登入"
 
+msgid "Horses"
+msgstr "馬匹"
+
 msgid "This Site is For Machine Learning application in Real Life"
 msgstr "本網站是為了測試Machine Learning的實際用途"
 
