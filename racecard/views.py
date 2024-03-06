@@ -28,8 +28,7 @@ def racecard(request):
      
      horse_tips_qty = UserTips.objects.filter(race_date=curr_race_date, race_no=id).values('horse_name').annotate(num_tips=Count('id'), )
 
-     print("## Horse Tips Qty", horse_tips_qty)
-
+    ## For Tips Sorting based on Overall Performance ##
      last_tips_by_user = (
         UserScores.objects.all()  # Remove filter by user
             .values('user', 'user__groups__name')
@@ -40,6 +39,32 @@ def racecard(request):
     )
      print("##Last Tips by User") 
      print(last_tips_by_user)
+    ## For Tips Sorting based on Current Peformance ##
+     
+     # Your existing query
+     curr_tips_by_user = (
+        UserTips.objects.filter(race_date=curr_race_date)  # Current Tips Only
+            .values('user', 'user__groups__name')
+            .annotate(
+            hit_pst=Sum('hit') * 100.0 / Count('hit'),
+            total_dividend=Sum('dividend') - Count('hit') * 10,
+        )
+        .order_by('-hit_pst')  # Sort in descending order of hit ratio
+    )   
+
+    # Calculate the total sum of 'Hit' in 'curr_tips_by_user' with handling for None values
+     sum_pst = 0
+     for tip in curr_tips_by_user:
+         sum_pst = sum_pst+tip['hit_pst']
+    
+     if sum_pst == 0.0:
+         sort_query = last_tips_by_user
+     else:
+         sort_query = curr_tips_by_user
+         print("## Sort_query ##", sort_query)
+
+     
+
     # Organize the data by username and fetch all relevant records for each user
      last_perf_by_user = (
         UserTips.objects.filter(race_date=curr_race_date)
@@ -56,7 +81,7 @@ def racecard(request):
             ).order_by('-percentage')
     
      complete_tips_by_user = []
-     for user_tips in last_tips_by_user:
+     for user_tips in sort_query:
         user_records = UserTips.objects.filter(
             user_id=user_tips['user'],
             race_date=curr_race_date,

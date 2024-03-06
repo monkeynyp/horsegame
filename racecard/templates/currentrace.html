@@ -1,6 +1,10 @@
-{% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning {% endblock %} {% block content %}
+{% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning  and Users {% endblock %} 
+
 {% load i18n %}
 {% load static %}
+
+{% block content %}
+
 
 <script>
   function updateSelection(checkbox) {
@@ -131,7 +135,7 @@
                             {% trans 'Current' %}:
                             {% for last_perf in last_perf_by_user %}
                               {% if last_perf.user__username  == user_data.user.username %}
-                                <span class ="w3-tooltip">{{ last_perf.hit_pst | floatformat:0 }}% 
+                                <span class ="w3-tooltip w3-red">{{ last_perf.hit_pst | floatformat:0 }}% 
                                 <span class="w3-text">(<em>💰${{ last_perf.total_dividend | floatformat:0 }}</em>)</span></span>
                               {% endif %}
                             {% endfor %}
