@@ -92,6 +92,9 @@ msgstr "知道了"
 msgid "Acc"
 msgstr "準確度"
 
+msgid "Vote"
+msgstr "熱度"
+
 msgid "Total"
 msgstr "累積"
 

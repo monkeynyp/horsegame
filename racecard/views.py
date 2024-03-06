@@ -26,7 +26,9 @@ def racecard(request):
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
      total_race = current_race['Total'].iloc[0]
      
-     print("Total Race", total_race)
+     horse_tips_qty = UserTips.objects.filter(race_date=curr_race_date, race_no=id).values('horse_name').annotate(num_tips=Count('id'), )
+
+     print("## Horse Tips Qty", horse_tips_qty)
 
      last_tips_by_user = (
         UserScores.objects.all()  # Remove filter by user
@@ -75,7 +77,8 @@ def racecard(request):
             'complete_tips_by_user': complete_tips_by_user,
             'user_scores': user_scores, # Add the user scores to the context
             'recent_articles': recent_articles,
-            'last_perf_by_user' : last_perf_by_user
+            'last_perf_by_user' : last_perf_by_user,
+            'horse_tips_qty' : horse_tips_qty
         }
        
      return render(request, 'currentrace.html', context)
