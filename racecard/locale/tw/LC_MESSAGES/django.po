@@ -3356,8 +3356,6 @@ msgstr "綠族豐收"
 
 
 
-
-
 #: Jockey Names
 msgid "B Shinn"
 msgstr "薛恩"

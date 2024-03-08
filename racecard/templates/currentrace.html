@@ -103,6 +103,8 @@
 </div>
 </div>
     
+
+<!-- This Part shows the User Tips rank by the most updated Current Race Performance -->
   <div class="w3-col w3-padding-top-32 l6 s12" >
 
         <div class="w3-row-padding">
@@ -152,15 +154,23 @@
               </div>
           {% endfor %}
       </div>
-      <div class="w3-card-4 w3-row-padding w3-margin">
-        <h4>{% trans "Prediction Accracy" %}</h4>
+
+
+      <!-- This Part is for User's Historical Scores and Peformance -->
+      <div class="w3-margin">
+      <h4>{% trans "Prediction Accracy" %}</h4></div>
+      <div class="w3-card-4 w3-row-padding w3-margin w3-container w3-scrollable" style="max-height: 600px; overflow: auto;">
         {% for score in user_scores %}
-          {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' as color silent %}
-          {{ score.user}}: {% trans 'Profit' %}:💰{{ score.profit_percentage | floatformat:0 }}%
-          <div class="w3-light-grey">
-          <div class=" {{ color }}" style="height:30px; width:{{ score.percentage }}%">&nbsp  <span class="w3-tag w3-red w3-tooltip" style="transform:rotate(-5deg)">{{ score.percentage | floatformat:0 }}% <span class="w3-text">(<em>{{score.total_records}} {% trans 'Horses' %}</em>)</span></span></div>
-          </div><br>
+            {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' as color silent %}
+            <div style="max-width: 800px;"> <!-- Adjust max-width as needed -->
+                {{ score.user}}: {% trans 'Profit' %}:💰{{ score.profit_percentage | floatformat:0 }}%
+                <div class="w3-light-grey">
+                    <div class="{{ color }}" style="height:25px; width:{{ score.percentage }}%">&nbsp  <span class="w3-tag w3-red w3-tooltip" style="transform:rotate(-5deg)">{{ score.percentage | floatformat:0 }}% <span class="w3-text">(<em>{{score.total_records}} {% trans 'Horses' %}</em>)</span></span></div>
+                </div>
+            </div>
+            <br>
         {% endfor %}
+    </div>
      
 
        <!-- Add Tips by users-->

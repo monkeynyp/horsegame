@@ -30,18 +30,16 @@ def racecard(request):
 
     ## For Tips Sorting based on Overall Performance ##
      last_tips_by_user = (
-        UserScores.objects.all()  # Remove filter by user
+        UserScores.objects.all()  
             .values('user', 'user__groups__name')
             .annotate(
                 hit_ratio=ExpressionWrapper(F('total_hits')*100/F('total_records'), output_field=FloatField())
         )
         .order_by('-hit_ratio')  # Sort in descending order of hit ratio
     )
-     print("##Last Tips by User") 
-     print(last_tips_by_user)
-    ## For Tips Sorting based on Current Peformance ##
+
+    ## For Tips Sorting based on Current Peformance. If the Current Performance is zero, Last Performace will be used for sorting ##
      
-     # Your existing query
      curr_tips_by_user = (
         UserTips.objects.filter(race_date=curr_race_date)  # Current Tips Only
             .values('user', 'user__groups__name')
@@ -92,7 +90,7 @@ def racecard(request):
             complete_tips_by_user.append({'user': user_records[0].user, 'groups_name': user_tips['user__groups__name'], 'records': user_records})
 
         selected_language = translation.get_language()  # Default to Chinese if language is not provided
-        recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:3]
+        recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:5]
   
         context = {
             'current_race': current_race,
@@ -121,6 +119,11 @@ def submit_tips(request):
             # If not, create a new UserScores record with default values
             UserScores.objects.create(user=user_id, total_records=0, total_hits=0, total_dividend=0)
        
+        # Check if records exist for the same user_id, race_date, and race_no
+        existing_records = UserTips.objects.filter(user=user_id, race_date=race_date, race_no=race_no)
+        if existing_records.exists():
+            existing_records.delete()
+        
         for horse_select in selected_horses:
             split_values = horse_select.split(".")
             horse_no=split_values[0]
