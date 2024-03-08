@@ -1,13 +1,15 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance
-0,2024/03/06,1,JAZZ CLUB,M Chadwick,135,1149,7,9,Class 5,1650
-1,2024/03/06,2,STORMTROUPER,Z Purton,135,1100,11,9,Class 5,1650
-2,2024/03/06,3,MEDIC ELITE,H Bowman,133,1112,5,9,Class 5,1650
-3,2024/03/06,4,BIG TWO,H Bentley,131,1149,1,9,Class 5,1650
-4,2024/03/06,5,COURIER MAGIC,B Thompson,131,1062,3,9,Class 5,1650
-5,2024/03/06,6,MASTER OF LUCK,B Avdulla,128,1133,12,9,Class 5,1650
-6,2024/03/06,7,REGENCY HAPPY STAR,A Badel,127,1047,4,9,Class 5,1650
-7,2024/03/06,8,CHARMING STEED,A Hamelin,126,1071,8,9,Class 5,1650
-8,2024/03/06,9,BAYVIEW STAR,C L Chau,123,1261,9,9,Class 5,1650
-9,2024/03/06,10,BRILLIANT PIONEER,L Ferraris,122,1034,2,9,Class 5,1650
-10,2024/03/06,11,HANG'S CHOICE,K De Melo,120,1099,10,9,Class 5,1650
-11,2024/03/06,12,MISTER ARM,H T Mo,115,1040,6,9,Class 5,1650
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course
+0,2024/03/10,1,THE GREAT MASTER,Y L Chung,135,1133,14,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+1,2024/03/10,2,FUN ELITE,H Bowman,134,1157,4,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+2,2024/03/10,3,METRO WARRIOR,E C W Wong,133,1206,1,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+3,2024/03/10,4,PANDA,Z Purton,131,1075,11,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+4,2024/03/10,5,BOWSER,A Hamelin,128,1182,7,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+5,2024/03/10,6,CHEERFUL WORLD,L Ferraris,127,1125,13,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+6,2024/03/10,7,DEEP PURSUIT,H Bentley,127,1056,6,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+7,2024/03/10,8,PROSPEROUS SMILE,A Badel,127,1064,8,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+8,2024/03/10,9,CERVIN,K H Chan,125,1048,5,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+9,2024/03/10,10,LUCKY SYMPHONY,A Atzeni,125,1155,9,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+10,2024/03/10,11,MARIO,B Avdulla,125,1161,3,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+11,2024/03/10,12,FANCY STAR,M L Yeung,123,1092,10,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+12,2024/03/10,13,HELLS BELLS,B Thompson,123,1177,12,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"
+13,2024/03/10,14,PROSECCO,K Teetan,115,1154,2,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course"

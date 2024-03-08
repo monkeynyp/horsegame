@@ -1,10 +1,13 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance
-0,2024/03/06,1,GALLANT WAKING,H Bowman,135,1113,7,9,Class 3,1650
-1,2024/03/06,2,WINNING DRAGON,B Avdulla,135,1075,9,9,Class 3,1650
-2,2024/03/06,3,ROCKET SPADE,L Ferraris,134,1139,3,9,Class 3,1650
-3,2024/03/06,4,QUANTUM PATCH,Z Purton,130,1149,6,9,Class 3,1650
-4,2024/03/06,5,STAR CONTACT,C L Chau,124,1216,5,9,Class 3,1650
-5,2024/03/06,6,LUCKY EIGHT,H Bentley,123,1165,8,9,Class 3,1650
-6,2024/03/06,7,RED HARE KING,M Chadwick,122,1095,4,9,Class 3,1650
-7,2024/03/06,8,ALL BEAUTY,K C Leung,120,1188,2,9,Class 3,1650
-8,2024/03/06,9,CHARITY BINGO,A Badel,119,1052,1,9,Class 3,1650
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course
+0,2024/03/10,1,STAR CLUB,Z Purton,133,1040,4,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+1,2024/03/10,2,PHOENIX LIGHT,Y L Chung,130,1075,9,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+2,2024/03/10,3,FORERUNNER,A Atzeni,129,1034,1,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+3,2024/03/10,4,GAMEPLAYER WARRIOR,H Bentley,127,1040,2,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+4,2024/03/10,5,GIMME FIVE,H Bowman,127,1105,5,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+5,2024/03/10,6,GLORY ELITE,L Ferraris,127,1192,3,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+6,2024/03/10,7,KING MILES,C L Chau,127,1171,12,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+7,2024/03/10,8,LIFELINE EXPRESS,B Avdulla,127,1116,10,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+8,2024/03/10,9,MASSIVE TALENT,M Chadwick,127,1132,7,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+9,2024/03/10,10,PACKING PROSPECT,J McDonald,127,1084,8,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+10,2024/03/10,11,VERBIER,B Thompson,127,1256,11,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"
+11,2024/03/10,12,COMPASSION SUPER,M L Yeung,120,1259,6,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course"

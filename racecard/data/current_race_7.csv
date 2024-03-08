@@ -1,10 +1,11 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance
-0,2024/03/06,1,WATCH BUDDY,H Bentley,134,1127,9,9,Class 3,1200
-1,2024/03/06,2,CELESTIAL COLOURS,H Bowman,133,1156,7,9,Class 3,1200
-2,2024/03/06,3,GOLDEN EMPIRE,Z Purton,131,1085,3,9,Class 3,1200
-3,2024/03/06,4,KAHOLO ANGEL,E C W Wong,126,1132,1,9,Class 3,1200
-4,2024/03/06,5,CALIFORNIA DEEPLY,L Ferraris,125,1086,2,9,Class 3,1200
-5,2024/03/06,6,GOLDEN TITLE,Y L Chung,122,1166,5,9,Class 3,1200
-6,2024/03/06,7,GOOD LUCK WIN,A Badel,122,1103,6,9,Class 3,1200
-7,2024/03/06,8,HAPPY TRIO,B Thompson,122,1074,8,9,Class 3,1200
-8,2024/03/06,9,GOLDEN LONG,M Chadwick,120,1079,4,9,Class 3,1200
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course
+0,2024/03/10,1,LUCKY SWEYNESSE,J McDonald,126,1204,8,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"
+1,2024/03/10,2,CALIFORNIA SPANGLE,B Avdulla,126,1210,3,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"
+2,2024/03/10,3,BEAUTY ETERNAL,Z Purton,126,1222,6,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"
+3,2024/03/10,4,BEAUTY JOY,K C Leung,126,1034,10,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"
+4,2024/03/10,5,LUCKY WITH YOU,A Atzeni,126,1223,5,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"
+5,2024/03/10,6,HEALTHY HAPPY,A Badel,126,1173,7,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"
+6,2024/03/10,7,TAJ DRAGON,H Bowman,126,1035,1,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"
+7,2024/03/10,8,SON PAK FU,C L Chau,126,1218,4,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"
+8,2024/03/10,9,RED LION,A Hamelin,126,1135,2,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"
+9,2024/03/10,10,GALAXY PATCH,K Teetan,126,1151,9,10,Group One,1400,Sha Tin:,"TURF - ""C"" Course"

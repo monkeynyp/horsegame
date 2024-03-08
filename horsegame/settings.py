@@ -51,6 +51,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'racecard.middleware.LanguageMiddleware',
 ]
 
 ROOT_URLCONF = "horsegame.urls"

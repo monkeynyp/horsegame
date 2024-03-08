@@ -123,7 +123,7 @@
                     {% endif %}</h6>
                   </header>
                       {% for user_tips in user_data.records %}
-                              <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} {% if user_tips.hit == 1 %}
+                              <p><span class="w3-badge">{{ user_tips.horse_no }}</span><span class="w3-small">&nbsp {% trans user_tips.horse_name %} {% if user_tips.hit == 1 %}</span>
                                 <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
                               {% endif %}
                               </p>
@@ -234,8 +234,8 @@
       // Get the current date and time
       var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
       // Define the start and end date and time for the period
-      var startDate = new Date("2024-03-06T18:30:00");
-      var endDate = new Date("2024-04-25T23:59:59");
+      var startDate = new Date("2024-03-10T12:50:00");
+      var endDate = new Date("2024-05-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period
       if (currentDatetime >= startDate && currentDatetime < endDate) {

@@ -1,10 +1,15 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance
-0,2024/03/06,1,HARMONY N BLESSED,K C Leung,135,1196,2,9,Class 3,1200
-1,2024/03/06,2,ATOMIC FORCE,H Bentley,129,1147,5,9,Class 3,1200
-2,2024/03/06,3,LIGHTNING BOLT,H Bowman,127,1172,4,9,Class 3,1200
-3,2024/03/06,4,LUCKY ARCHANGEL,C L Chau,127,1170,1,9,Class 3,1200
-4,2024/03/06,5,COLOURFUL EMPEROR,Y L Chung,122,1037,7,9,Class 3,1200
-5,2024/03/06,6,ACT OF FAITH,B Avdulla,120,1068,8,9,Class 3,1200
-6,2024/03/06,7,BEAUTY GLORY,Z Purton,120,1165,6,9,Class 3,1200
-7,2024/03/06,8,MEGA BONUS,A Badel,118,1251,9,9,Class 3,1200
-8,2024/03/06,9,ROMANTIC NOVELIST,M Chadwick,118,1076,3,9,Class 3,1200
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course
+0,2024/03/10,1,SEIZING THE MOMENT,J McDonald,135,1080,10,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+1,2024/03/10,2,STAR LINE,H Bowman,134,1192,3,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+2,2024/03/10,3,DREAM PURSUER,M Chadwick,132,1223,9,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+3,2024/03/10,4,AMAZING RUN,Z Purton,131,1272,12,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+4,2024/03/10,5,AEROINVINCIBLE,A Atzeni,127,1074,1,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+5,2024/03/10,6,ALL RICHES,H Bentley,127,1181,8,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+6,2024/03/10,7,C P ONE,K De Melo,127,1259,7,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+7,2024/03/10,8,FAIRY HORSE,B Thompson,127,1108,4,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+8,2024/03/10,9,SILVER DESTINY,K Teetan,126,1155,2,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+9,2024/03/10,10,KINGLY DEMEANOR,B Avdulla,125,1184,14,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+10,2024/03/10,11,GOLDEN SAMURAI,A Badel,133,1198,13,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+11,2024/03/10,12,AMAZINGTEAMWORK,L Ferraris,122,1242,5,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+12,2024/03/10,13,PATCH OF WATCH,Y L Chung,119,1160,6,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
+13,2024/03/10,14,WOODFIRE CHAMP,M L Yeung,117,1004,11,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course"
