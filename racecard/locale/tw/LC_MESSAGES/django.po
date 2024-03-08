@@ -3349,6 +3349,9 @@ msgstr "穿甲戰鷹"
 msgid "MASSIVE SOVEREIGN"
 msgstr "大至尊"
 
+msgid "HASTEN DELIGHT"
+msgstr "綠族豐收"
+
 #################Jockey Session ##########
 
 
