@@ -35,8 +35,8 @@ msgstr "登入"
 msgid "Horses"
 msgstr "馬匹"
 
-msgid "This Site is For Machine Learning application in Real Life"
-msgstr "本網站是為了測試Machine Learning的實際用途"
+msgid "Real Data, Scientific Models, Real Results"
+msgstr "真實的數據，科學的模型，真實的結果"
 
 msgid "Previous"
 msgstr "上一篇"

@@ -9,7 +9,8 @@ and is wrapped around the whole page content, except for the footer in this exam
 <div class="w3-content" style="max-width:1400px">
     <!-- Header -->
     <header class="w3-padding-64 w3-center w3-padding-32"> 
-      <h1>{% trans 'This Site is For Machine Learning application in Real Life' %}</h1>
+      <br>
+      <h1>{% trans 'Real Data, Scientific Models, Real Results' %}</h1>
     </header>
     <!-- Grid -->
     <div class="w3-row">
@@ -41,7 +42,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       {% if id %}
       <div class="w3-container w3-padding-16" style="text-align: center;">
         {% if id|add:"-1" > 0 %}
-            <a href="?id={{ id|add:'-1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">Previous</button></a>
+            <a href="?id={{ id|add:'-1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">{% trans 'Previous' %}</button></a>
         {% else %}
             <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">{% trans 'Previous' %}</button></a>
         {% endif %}
