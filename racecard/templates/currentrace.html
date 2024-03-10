@@ -106,11 +106,15 @@
 
 <!-- This Part shows the User Tips rank by the most updated Current Race Performance -->
   <div class="w3-col w3-padding-top-32 l6 s12" >
-
+        <div class="w3-margin">
+        <a href="/view_by_member" class="w3-button w3-black">{% trans 'View By User' %}</a>
+        </div>
         <div class="w3-row-padding">
+        
         {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->
           {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' 'w3-lime' 'w3-amber' as color silent %}
               <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+                
                 <header class="w3-container {{color}}" >
                   <h6>{{ user_data.user  }}
                     {% if forloop.counter == 1 %}

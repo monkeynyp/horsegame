@@ -1,0 +1,71 @@
+{% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning  and Users {% endblock %} 
+
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+<br><br><br><br>
+<div class="w3-margin">
+    <a href="/racecard/" class="w3-button w3-black">{% trans 'View By Race' %}</a>
+</div>
+<div class="w3-row-padding w3-margin">
+    {% for user_data in complete_tips_by_user %}
+      <!-- Loop over the zipped data -->
+      {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' 'w3-lime' 'w3-amber' as color silent %}
+      <div class="w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+        <header class="w3-container {{color}}">
+          <h6>{{ user_data.user }}
+            {% if forloop.counter == 1 %}
+              <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 15deg;"></i></span>
+            {% elif forloop.counter == 2 %}
+              <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #f6f5f1e9; --fa-rotate-angle: 15deg;"></i></span>
+            {% endif %}
+          </h6>
+        </header>
+        {% for race_no, records in user_data.records_by_race_no.items %}
+          <div>
+            <h5>{% trans 'Race' %} {{ race_no }}</h5>
+            <div class="w3-row-padding">
+              {% for record in records %}
+                <div class="w3-col s4"> <span class="w3-badge">{{ record.horse_no }}</span>&nbsp {% trans record.horse_name %}{% if record.hit == 1 %}
+                    <span class="w3-badge w3-red w3-small">${{record.dividend}}</span> {% endif %}</div>
+              {% endfor %}
+            </div>
+          </div>
+        {% endfor %}
+        <footer class="w3-container {{color}} w3-left-align">
+          <span class="w3-small">
+            <p class="w3-left-align">
+              {% trans 'Current' %}:
+              {% for last_perf in last_perf_by_user %}
+                {% if last_perf.user__username  == user_data.user.username %}
+                  <span class ="w3-tooltip w3-red">{{ last_perf.hit_pst | floatformat:0 }}% 
+                  <span class="w3-text">(<em>💰${{ last_perf.total_dividend | floatformat:0 }}</em>)</span></span>
+                {% endif %}
+              {% endfor %}
+              <br>
+              {% trans 'Total' %}:
+              {% for score in user_scores %}
+                {% if score.user == user_data.user %}
+                  {{ score.percentage | floatformat:0 }}%
+                {% endif %}
+              {% endfor %}
+              <span class = "w3-right">
+                {% if user_data.groups_name == "MailList" %}
+                  <i class="fa-solid fa-person fa-xl "></i>
+                {% else %}
+                  <i class="fa-solid fa-robot"></i>
+                {% endif %}
+              </span>
+            </p> 
+          </span>
+        </footer>
+      </div>
+    {% endfor %}
+  </div>
+  
+
+
+
+
+{% endblock %}

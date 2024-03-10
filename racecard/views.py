@@ -61,7 +61,8 @@ def racecard(request):
          sort_query = curr_tips_by_user
          print("## Sort_query ##", sort_query)
 
-     
+     request.session['curr_tips_by_user'] = list(curr_tips_by_user)
+     request.session['curr_race_date'] = curr_race_date
 
     # Organize the data by username and fetch all relevant records for each user
      last_perf_by_user = (
@@ -72,12 +73,15 @@ def racecard(request):
                   hit_pst = Sum('hit')*100.0/Count('hit'),
                   total_dividend = Sum('dividend')-Count('hit')*10
     ))
+     request.session['last_perf_by_user'] = list(last_perf_by_user)
     # Get the user scores and calculate the percentage of hits
      user_scores = UserScores.objects.annotate(
         percentage= F('total_hits') * 100.0 / F('total_records'),
             profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
             ).order_by('-percentage')
     
+     #request.session['user_scores'] = list(user_scores)
+
      complete_tips_by_user = []
      for user_tips in sort_query:
         user_records = UserTips.objects.filter(
@@ -91,7 +95,8 @@ def racecard(request):
 
         selected_language = translation.get_language()  # Default to Chinese if language is not provided
         recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:5]
-  
+
+
         context = {
             'current_race': current_race,
             'total_race': total_race,
@@ -132,6 +137,48 @@ def submit_tips(request):
         # Redirect to a success page or wherever needed
         
     return redirect('../racecard/?id='+race_no)
+
+def view_by_member(request):
+    curr_tips_by_user = request.session.get('curr_tips_by_user',[])
+    curr_race_date = request.session.get('curr_race_date')
+    last_perf_by_user = request.session.get('last_perf_by_user',[])
+    user_scores = request.session.get('user_scores',[])
+
+    print(curr_tips_by_user)
+    print(curr_race_date)
+
+    complete_tips_by_user = []
+    for user_tips in curr_tips_by_user:
+        user_records = UserTips.objects.filter(
+            user_id=user_tips['user'],
+            race_date=curr_race_date,
+        )
+    
+        if user_records:
+            records_by_race_no = {}
+            for record in user_records:
+                race_no = record.race_no
+                if race_no not in records_by_race_no:
+                    records_by_race_no[race_no] = []
+                records_by_race_no[race_no].append(record)
+            
+            complete_tips_by_user.append({
+                'user': user_records[0].user, 
+                'groups_name': user_tips['user__groups__name'], 
+                'records_by_race_no': records_by_race_no
+            })
+    user_scores = UserScores.objects.annotate(
+        percentage= F('total_hits') * 100.0 / F('total_records'),
+            profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
+            ).order_by('-percentage')
+    print("Last Pref:", user_scores)
+    context = {
+            'complete_tips_by_user': complete_tips_by_user,
+            'last_perf_by_user' : last_perf_by_user,
+            'user_scores': user_scores
+    }
+    return render(request, 'view_by_member.html', context)
+    
 
 
 ## Article Section ###

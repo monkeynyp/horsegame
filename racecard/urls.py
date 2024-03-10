@@ -7,6 +7,7 @@ from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('', views.recent_article, name='recent_article'),
     path('racecard/', views.racecard, name='racecard'),
+    path('view_by_member/', views.view_by_member, name='view_by_member'),
     path('blog/', views.recent_article, name='recent_article'),
     path('newsletter/', views.newsletter, name='newsletter'),
     path('send_article_email/', views.send_article_email, name='send_article_email'),

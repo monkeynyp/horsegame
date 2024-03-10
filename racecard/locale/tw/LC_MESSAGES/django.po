@@ -41,6 +41,15 @@ msgstr "真實的數據，科學的模型，真實的結果"
 msgid "Previous"
 msgstr "上一篇"
 
+msgid "View By Race"
+msgstr "根據賽事查看"
+
+msgid "View By User"
+msgstr "根據用戶查看"
+
+msgid "Race"
+msgstr "場次"
+
 msgid "Profit"
 msgstr "回報"
 
