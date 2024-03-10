@@ -50,6 +50,9 @@ msgstr "根據用戶查看"
 msgid "Tips Summary View"
 msgstr "用戶貼士總覽"
 
+msgid "Select User"
+msgstr "選擇用戶"
+
 msgid "Race"
 msgstr "場次"
 

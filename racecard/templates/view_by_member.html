@@ -12,12 +12,13 @@
 
 <div class="w3-row-padding w3-margin">
   <div class="w3-quarter">
-    <div class="w3-bar w3-border w3-card w3-round w3-margin-top" style="width: 160px;">
+    <div class="w3-bar w3-border w3-card w3-round w3-margin-top">
+      <h6 class="w3-padding w3-light-blue">{% trans 'Select User' %}:</h6>
       {% for user_data in complete_tips_by_user %}
         <p><button class="w3-bar-item w3-button tablink {% if forloop.counter == 1 %} w3-red {% endif %}" onclick="openTab(event, '{{ user_data.user }}')">{{ user_data.user }}</button></p>
       {% endfor %}
     </div>
-  </div>
+</div>
 
   <div id="userTabs" class="w3-threequarter">
     {% for user_data in complete_tips_by_user %}
