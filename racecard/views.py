@@ -88,7 +88,7 @@ def racecard(request):
             user_id=user_tips['user'],
             race_date=curr_race_date,
             race_no=id
-        )
+        ).order_by('race_no')
       
         if user_records:
             complete_tips_by_user.append({'user': user_records[0].user, 'groups_name': user_tips['user__groups__name'], 'records': user_records})
