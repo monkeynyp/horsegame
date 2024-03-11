@@ -41,11 +41,11 @@ msgstr "真實的數據，科學的模型，真實的結果"
 msgid "Previous"
 msgstr "上一篇"
 
-msgid "View By Race"
-msgstr "根據賽事查看"
+msgid "Back to View By Race"
+msgstr "回到賽事查看"
 
-msgid "View By User"
-msgstr "根據用戶查看"
+msgid "Click to Tips Summary"
+msgstr "點擊查看全部貼士"
 
 msgid "Tips Summary View"
 msgstr "用戶貼士總覽"
