@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 from racecard.models import UserTips,UserScores  # Replace 'YourModel' with the actual model name
-
+from django.contrib.auth.models import User
 import pandas as pd
 
 
@@ -32,8 +32,9 @@ class Command(BaseCommand):
         max_total_records = max_total_records_query[0] if max_total_records_query else None
         print("Max record:",max_total_records)
 
+        user_to_exclude = User.objects.get(username='WePower')
 
-        user_tips_data = UserTips.objects.values('user').annotate(
+        user_tips_data = UserTips.objects.exclude(user=user_to_exclude).values('user').annotate(
             latest_race_dates=Subquery(
                 UserTips.objects.filter(user=OuterRef('user')).order_by('-race_date').values('race_date')[:5]
                 ),
