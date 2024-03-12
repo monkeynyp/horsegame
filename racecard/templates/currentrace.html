@@ -150,6 +150,8 @@
                             <span class = "w3-right">
                             {% if user_data.groups_name == "MailList" %}
                               <i class="fa-solid fa-person fa-xl "></i>
+                            {% elif user_data.user.username == 'WePower' %}
+                                <i class="fa-solid fa-users-gear fa-xl"></i>
                             {% else %}
                               <i class="fa-solid fa-robot"></i>
                             {% endif %} </span>
