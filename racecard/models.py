@@ -30,6 +30,8 @@ class UserScores(models.Model):
     total_records = models.IntegerField(default=0)
     total_hits = models.IntegerField(default=0)
     total_dividend = models.FloatField(default=0)
+    hit_weight = models.FloatField(default=0)
+    div_weight = models.FloatField(default=0)
 
 class Article(models.Model):
     LANGUAGE_CHOICES = [

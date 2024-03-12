@@ -18,6 +18,7 @@ class Command(BaseCommand):
         # Access command line arguments
     #    num_races = options['num_races']
         #race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
+        race_no = input("race_no")
         race_date = options['race_date']
         horse1=input("HorseNo1:")
         dividend1=input("Dividend1:")
@@ -26,7 +27,7 @@ class Command(BaseCommand):
         horse3=input("HorseNo3:")
         dividend3=input("Dividend3:")
 
-        race_no = input("race_no")
+        
         # Update UserTips records
         UserTips.objects.filter(
             horse_no=horse1,

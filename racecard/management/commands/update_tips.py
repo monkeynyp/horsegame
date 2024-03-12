@@ -1,9 +1,10 @@
 from django.core.management.base import BaseCommand
-from racecard.models import UserTips,User  # Replace 'YourModel' with the actual model name
+from racecard.models import UserTips,User, UserScores  # Replace 'YourModel' with the actual model name
 from datetime import datetime
 import pandas as pd
 import os
 from django.conf import settings
+from django.db.models import Sum, F
 
 class Command(BaseCommand):
     help = 'Update data from CSV files to SQLite database'
@@ -69,3 +70,32 @@ class Command(BaseCommand):
                         )
                 print(result_df)
         self.stdout.write(self.style.SUCCESS('Data updated successfully.'))
+
+       
+
+        # Get the hit_weight for each user from UserScores
+        user_scores = UserScores.objects.filter(user=F('user__pk')).values('user').annotate(
+            hit_weight=Sum('hit_weight')
+        )
+
+        # Initialize a dictionary to store the top 3 horses for each race
+        top_horses_by_race = {}
+
+        # Iterate over race numbers 1 to 10
+        for race_no in range(1, 11):
+            # Get the UserTips records for the specified race_no
+            user_tips = UserTips.objects.filter(race_no=race_no)
+
+            # Calculate the total hit_weight for each horse in this race
+            horse_hit_weight = user_tips.values('horse_name').annotate(
+                total_hit_weight=Sum('user__score__hit_weight')
+            ).order_by('-total_hit_weight')[:3]
+
+            # Store the top 3 horses for this race in the dictionary
+            top_horses_by_race[race_no] = horse_hit_weight
+
+        # Print the top 3 horses for each race
+        for race_no, horses in top_horses_by_race.items():
+            print(f"Race {race_no}:")
+            for rank, horse in enumerate(horses, start=1):
+                print(f"  Rank {rank}: {horse['horse_name']} - {horse['total_hit_weight']}")

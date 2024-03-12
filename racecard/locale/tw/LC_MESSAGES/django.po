@@ -36,7 +36,7 @@ msgid "Horses"
 msgstr "馬匹"
 
 msgid "Real Data, Scientific Models, Real Results"
-msgstr "真實的數據，科學的模型，真實的結果"
+msgstr "真實的數據，科學的模型，透明的結果"
 
 msgid "Previous"
 msgstr "上一篇"

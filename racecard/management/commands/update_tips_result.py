@@ -4,10 +4,15 @@ from datetime import datetime
 import pandas as pd
 import os
 from django.conf import settings
-from django.db.models import Count, Sum
+from django.db.models import Sum, Count, F, ExpressionWrapper, FloatField, Window, Max, Subquery, OuterRef
+from django.db.models.functions import Lag, RowNumber
+from datetime import timedelta
+
 
 class Command(BaseCommand):
     help = 'Update data from CSV files to SQLite database'
+
+ 
 
     def add_arguments(self, parser):
         # Add command line arguments
@@ -15,9 +20,7 @@ class Command(BaseCommand):
         parser.add_argument('race_date', type=str, help='Race date in YYYY/MM/DD format')
     
     def handle(self, *args, **options):
-        # Access command line arguments
-    #    num_races = options['num_races']
-        #race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
+
         race_date = options['race_date']
         csv_path = os.path.join(settings.BASE_DIR, "racecard/data/race_hist_update.csv")
         csv_data = pd.read_csv(csv_path)
@@ -46,12 +49,37 @@ class Command(BaseCommand):
 
 
         # Get the UserTips data grouped by user, with the total records and total hits
+# Calculate the hit_weight for each user
+
+ 
+
+# Subquery to get the maximum total records
+        max_total_records_query = UserScores.objects.all().annotate(
+            max_total_records=Max('total_records')
+        ).values_list('max_total_records', flat=True)
+
+        max_total_records = max_total_records_query[0] if max_total_records_query else None
+        print("Max record:",max_total_records)
+
+
         user_tips_data = UserTips.objects.values('user').annotate(
+            latest_race_dates=Subquery(
+                UserTips.objects.filter(user=OuterRef('user')).order_by('-race_date').values('race_date')[:3]
+                ),
+                recent_hits=Sum('hit'),
+                recent_total=Count('id'),
+                recent_dividend=Sum('dividend')
+            ).annotate(
             total_records=Count('id'),
             total_hits=Sum('hit'),
-            total_dividend = Sum('dividend')
+            total_dividend=Sum('dividend'),
+            hit_weight=ExpressionWrapper(
+                0.3 * F('total_hits') / F('total_records')
+                + 0.5 * F('recent_hits')/ F('recent_total')
+                + 0.2 * F('total_records') /max_total_records,
+                output_field=FloatField()
             )
-
+        )
         # Loop through the user tips data and update the user scores
         for user_tip in user_tips_data:
             # Get or create the user score for the user
@@ -60,7 +88,8 @@ class Command(BaseCommand):
             user_score.total_records = user_tip['total_records']
             user_score.total_hits = user_tip['total_hits']
             user_score.total_dividend=user_tip['total_dividend']
-            print("Hello")
+            user_score.hit_weight = user_tip['hit_weight']
+            print(user_score.hit_weight)
             print(user_score.total_records)
             print(user_score.total_hits)
             # Save the user score

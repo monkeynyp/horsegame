@@ -5,7 +5,7 @@ from django.conf import settings
 from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, user_passes_test
 from .models import UserTips,UserScores,Article
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
@@ -182,7 +182,13 @@ def view_by_member(request):
 
 
 ## Article Section ###
+
+def is_specific_user(user):
+    # Check if the user is the specific user you want to allow access
+    return user.username == 'louisngai'
+
 @login_required
+@user_passes_test(is_specific_user)
 def newsletter(request):
     id = request.GET.get('id')
     if id is None:
@@ -200,6 +206,7 @@ def newsletter(request):
         'emails': emails
     }
     return render(request, 'blog/newsletter.html', context)
+
 
 def privacy(request):
     return render(request, 'privacy.html')
