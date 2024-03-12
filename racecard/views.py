@@ -14,6 +14,8 @@ from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
 from django.utils import translation
+from django.http import JsonResponse
+from django.shortcuts import get_object_or_404
 
 ## Horse Raching Features Create your views here.
 def racecard(request):
@@ -255,6 +257,20 @@ def recent_article(request):
 
     return render(request, 'blog/articles.html', context)
 
+def like_article(request, article_id):
+    article = get_object_or_404(Article, pk=article_id)
+    if 'liked_articles' not in request.session:
+        request.session['liked_articles'] = []
+
+    liked_articles = set(request.session['liked_articles'])
+
+    if article_id not in liked_articles:
+        article.likes += 1
+        article.save()
+        liked_articles.add(article_id)
+        request.session['liked_articles'] = list(liked_articles)
+
+    return JsonResponse({'likes': article.likes})
 
 ## Login and Administration Session
 #@login_required

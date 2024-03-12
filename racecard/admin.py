@@ -1,5 +1,7 @@
 from django.contrib import admin
-from .models import UserTips, UserScores, Article
+from django.contrib.auth.admin import UserAdmin
+
+from .models import UserTips, UserScores, Article, User
 # Register your models here.
 class UserTipsAdmin(admin.ModelAdmin):
     list_display = ("user","race_date","race_no","horse_no","horse_name","hit")
@@ -9,6 +11,17 @@ class UserScoresAdmin(admin.ModelAdmin):
 
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ("title","pub_date","user")
+
+class CustomUserAdmin(UserAdmin):
+    list_display = ('username', 'email','get_groups')
+
+    def get_groups(self, obj):
+        return ', '.join([group.name for group in obj.groups.all()])
+
+    get_groups.short_description = 'Groups'
+
+admin.site.unregister(User)
+admin.site.register(User, CustomUserAdmin)
 
 
 admin.site.register(UserTips, UserTipsAdmin)

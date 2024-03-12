@@ -32,8 +32,8 @@ and is wrapped around the whole page content, except for the footer in this exam
                   <p>{{ article.content | linebreaks  }}</p>
                     <div class="w3-row">
                         <div class="w3-col m8 s12">
-                            <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE »</b></button></p>
-                        </div>
+                          <p><button class="w3-button w3-padding-large w3-blue w3-border w3-round" onclick="likeArticle({{ article.id }})"><i class="fa-solid fa-thumbs-up fa-lg"></i><span id="likesCount" class="w3-text w3-padding">{{ article.likes }}</span></button> </p>
+                      </div>
                     </div>
             </div>
         </div>
@@ -82,5 +82,21 @@ and is wrapped around the whole page content, except for the footer in this exam
       </div>
       <hr> 
     <!-- Footer -->
-   
+    <script>
+      function likeArticle(articleId) {
+          fetch(`/like_article/${articleId}/`, {
+              method: 'POST',
+              credentials: 'same-origin',
+              headers: {
+                  'X-CSRFToken': '{{ csrf_token }}',
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({})
+          })
+          .then(response => response.json())
+          .then(data => {
+              document.getElementById('likesCount').innerText = data.likes;
+          });
+      }
+      </script>
 {% endblock %}    
