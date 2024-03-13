@@ -49,8 +49,15 @@ class Command(BaseCommand):
                 0.2 * F('total_hits') / F('total_records')
                 + 0.6 * F('recent_hits')/ F('recent_total')
                 + 0.2 * F('total_records') /max_total_records,
+                output_field=FloatField()),
+
+            div_weight=ExpressionWrapper(
+                0.2 * F('total_dividend') / (F('total_records')*10)
+                + 0.6 * F('recent_dividend')/ (F('recent_total')*10)
+                + 0.2 * F('total_records') /max_total_records,
                 output_field=FloatField()
             )
+
         )
         # Loop through the user tips data and update the user scores
         for user_tip in user_tips_data:
@@ -61,6 +68,7 @@ class Command(BaseCommand):
             user_score.total_hits = user_tip['total_hits']
             user_score.total_dividend=user_tip['total_dividend']
             user_score.hit_weight = user_tip['hit_weight']
+            user_score.div_weight = user_tip['div_weight']
             print(user_score.hit_weight)
             print(user_score.total_records)
             print(user_score.total_hits)

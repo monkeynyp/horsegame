@@ -1,0 +1,14 @@
+
+{% extends "master.html" %} {% block title %} Monkey's Privacy Statement {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
+{% for post in feed_data %}
+    <div class="post">
+        <p>{{ post.message }}</p>
+        <p>{{ post.created_time }}</p>
+        <!-- Add more fields as needed -->
+    </div>
+{% endfor %}
+
+{% endblock %}

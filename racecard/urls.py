@@ -18,6 +18,7 @@ urlpatterns = [
     path('logout/', user_logout, name='logout'),
     path('privacy/', views.privacy, name='privacy'),
     path('disclaimer/', views.disclaimer, name='disclaimer'),
+    path('facebookfeed/', views.facebook_feed, name='facebook_feed'),
     path('like_article/<int:article_id>/', views.like_article, name='like_article'),
 
     # Password reset URLs

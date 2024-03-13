@@ -22,14 +22,17 @@ class Command(BaseCommand):
         race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
        
         user_id = User.objects.get(username="WePower")
+        user_id2 = User.objects.get(username="WeMoney")
         # Get the hit_weight for each user from UserScores
         user_scores = UserScores.objects.filter(user=F('user__pk')).values('user').annotate(
-            hit_weight=Sum('hit_weight')
+            hit_weight=Sum('hit_weight'),
+            div_weight=Sum('div_weight')
         )
 
         print(user_scores)
         # Initialize a dictionary to store the top 3 horses for each race
-        top_horses_by_race = {}
+        top_horses_by_hit = {}
+        top_horses_by_div = {}
 
         # Iterate over race numbers 1 to 10
         for race_no in range(1, num_races+1):
@@ -42,11 +45,18 @@ class Command(BaseCommand):
             ).order_by('-total_hit_weight')[:3]
 
             # Store the top 3 horses for this race in the dictionary
-            top_horses_by_race[race_no] = horse_hit_weight
+            top_horses_by_hit[race_no] = horse_hit_weight
 
-        print(top_horses_by_race)
+            horse_div_weight = user_tips.values('horse_no','horse_name').annotate(
+                total_div_weight=Sum('user__score__div_weight'),
+            ).order_by('-total_div_weight')[:3]
+
+            # Store the top 3 horses for this race in the dictionary
+            top_horses_by_div[race_no] = horse_div_weight
+
+     
         # Print the top 3 horses for each race
-        for race_no, horses in top_horses_by_race.items():
+        for race_no, horses in top_horses_by_hit.items():
             print(f"Race {race_no}:")
             for rank, horse in enumerate(horses, start=1):
                 print(f"  Rank {rank}: {horse['horse_name']} - {horse['total_hit_weight']}")
@@ -59,5 +69,19 @@ class Command(BaseCommand):
                     horse_name = horse['horse_name'],
                     hit = 0
                     )
+        for race_no, horses in top_horses_by_div.items():
+            print(f"Race {race_no}:")
+            for rank, horse in enumerate(horses, start=1):
+                print(f"  Rank {rank}: {horse['horse_name']} - {horse['total_div_weight']}")
+                    # Your logic to update the database with race_date and race_no
+                UserTips.objects.update_or_create(
+                    user = user_id2,
+                    race_date = race_date,
+                    race_no = race_no,
+                    horse_no = horse['horse_no'],
+                    horse_name = horse['horse_name'],
+                    hit = 0
+                    )
+        
     
         self.stdout.write(self.style.SUCCESS('Data updated successfully.'))

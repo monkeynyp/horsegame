@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 import pandas as pd
 import os
+import requests
 from django.conf import settings
 from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
@@ -271,6 +272,19 @@ def like_article(request, article_id):
         request.session['liked_articles'] = list(liked_articles)
 
     return JsonResponse({'likes': article.likes})
+
+
+def facebook_feed(request):
+    access_token = 'EAAP8Mp3FsJsBO0i0h3KM36my69KFmblxKJsSOtnrKX15qF2GMp4En3S8TNCOuC8PhroobVRo2gkD99w8JmNEArXidvvNmFuF23rBPnH2zFUOtYiZAAVYptnI25D4Ll97WNFIeYIugDtAVI7TwOMQhzko91VY4qf83m7HnKlgciSC0g0GZANpE34b30MfkCYR2Wh1DhpTHZA0RZBZBhTIm2huSeezMPHXDM5IoxDhrLfallYI4ploISZB90r1KF7AZDZD'
+    api_url = f'https://graph.facebook.com/v12.0/250396646015/feed?access_token={access_token}'
+
+    response = requests.get(api_url)
+    data = response.json()
+    print ("Facebook Data",data)
+
+    feed_data = data.get('data', [])
+
+    return render(request, 'facebookfeed.html', {'feed_data': feed_data})
 
 ## Login and Administration Session
 #@login_required
