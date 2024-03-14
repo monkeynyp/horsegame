@@ -29,7 +29,13 @@ def racecard(request):
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
      total_race = current_race['Total'].iloc[0]
      
-     horse_tips_qty = UserTips.objects.filter(race_date=curr_race_date, race_no=id).values('horse_name').annotate(num_tips=Count('id'), )
+     horse_tips_qty = (
+        UserTips.objects
+        .filter(race_date=curr_race_date, race_no=id)
+        .values('horse_name', 'user__groups__name')
+        .annotate(num_tips=Count('id'))
+    )
+     print("Horse Tips Qtr: ", horse_tips_qty)
 
     ## For Tips Sorting based on Overall Performance ##
      last_tips_by_user = (
