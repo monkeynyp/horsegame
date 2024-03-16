@@ -115,7 +115,7 @@
 <!-- This Part shows the User Tips rank by the most updated Current Race Performance -->
   <div class="w3-col w3-padding-top-32 l6 s12" >
         <div class="w3-margin">
-        <a href="/view_by_member" class="w3-button w3-black"><i class="fa-solid fa-circle-arrow-right fa-xl"></i>&nbsp {% trans 'Click to Tips Summary' %}</a>
+        <a href="/view_by_member" class="w3-button w3-black"><i class="fa-solid fa-circle-arrow-right fa-xl"></i>&nbsp {% trans 'Click to Tips Summary' %}</a><br><br>
         &nbsp &nbsp <i class="fa-solid fa-person fa-xl"></i>&nbsp  {% trans 'Human'%} &nbsp 
         {% for item in tips_qty_by_type %}
             {% if item.user__groups__name == 'MailList' %}
