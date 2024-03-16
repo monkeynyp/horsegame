@@ -159,6 +159,10 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+
+msgid "AFFORDABLE"
+msgstr "亞福得寶"
+
 msgid "HELLO BEAUTY"
 msgstr "你好妙容"
 
