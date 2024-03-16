@@ -35,7 +35,14 @@ def racecard(request):
         .values('horse_name', 'user__groups__name')
         .annotate(num_tips=Count('id'))
     )
-     print("Horse Tips Qtr: ", horse_tips_qty)
+     
+     tips_qty_by_type = (
+        UserTips.objects
+        .filter(race_date=curr_race_date, race_no=id)
+        .values('user__groups__name')
+        .annotate(num_users=Count('user', distinct=True))
+    )
+     print("Horse Tips Qtr: ", tips_qty_by_type)
 
     ## For Tips Sorting based on Overall Performance ##
      last_tips_by_user = (
@@ -115,7 +122,8 @@ def racecard(request):
             'user_scores': user_scores, # Add the user scores to the context
             'recent_articles': recent_articles,
             'last_perf_by_user' : last_perf_by_user,
-            'horse_tips_qty' : horse_tips_qty
+            'horse_tips_qty' : horse_tips_qty,
+            'tips_qty_by_type': tips_qty_by_type
         }
        
      return render(request, 'currentrace.html', context)

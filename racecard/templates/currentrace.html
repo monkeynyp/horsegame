@@ -116,7 +116,22 @@
   <div class="w3-col w3-padding-top-32 l6 s12" >
         <div class="w3-margin">
         <a href="/view_by_member" class="w3-button w3-black"><i class="fa-solid fa-circle-arrow-right fa-xl"></i>&nbsp {% trans 'Click to Tips Summary' %}</a>
-        </div>
+        &nbsp &nbsp <i class="fa-solid fa-person fa-xl"></i>&nbsp  {% trans 'Human'%} &nbsp 
+        {% for item in tips_qty_by_type %}
+            {% if item.user__groups__name == 'MailList' %}
+                    <span class="w3-badge w3-green"> {{ item.num_users }} </span>
+            {% endif %}
+        {% endfor %}
+              
+                     |&nbsp
+          <i class="fa-solid fa-robot fa-xl"></i>&nbsp {% trans 'Robot'%} &nbsp; 
+          {% for item in tips_qty_by_type %}
+          {% if item.user__groups__name != 'MailList' %}
+          <span class="w3-badge w3-blue"> {{ item.num_users }}</span>
+          {% endif %}
+          {% endfor %}
+        
+      </div>
         <div class="w3-row-padding">
         
         {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->

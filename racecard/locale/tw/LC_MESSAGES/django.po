@@ -154,6 +154,12 @@ msgstr "支持Monkey的工作"
 msgid "Contact"
 msgstr "聯絡"
 
+msgid "Human"
+msgstr "人類"
+
+msgid "Robot"
+msgstr "電腦模型"
+
 #: racecard/views.py:36
 msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
