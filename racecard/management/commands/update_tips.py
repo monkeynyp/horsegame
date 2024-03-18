@@ -21,7 +21,8 @@ class Command(BaseCommand):
         num_races = options['num_races']
         race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
 
-        alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
+        #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
+        alg_methods = ['LogRegress','NaiveBayes','RanForest','NeuroNet','ForestReg','NeuroReg']
         #alg_methods = ['ForestReg','NeuroReg','GradientB']
         class_flag=0
         for alg in alg_methods:

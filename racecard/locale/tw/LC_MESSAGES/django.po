@@ -44,8 +44,11 @@ msgstr "上一篇"
 msgid "Back to View By Race"
 msgstr "回到賽事查看"
 
-msgid "Click to Tips Summary"
-msgstr "點擊查看全部貼士"
+msgid "Tips Summary"
+msgstr "查看全部貼士"
+
+msgid "Horses Battle Chart"
+msgstr "馬匹對戰圖"
 
 msgid "Tips Summary View"
 msgstr "用戶貼士總覽"
@@ -115,6 +118,8 @@ msgstr "累積"
 
 msgid "Current"
 msgstr "即場"
+
+
 
 msgid "This website uses cookies to ensure you get the best experience on our website"
 msgstr "此網站使用Cookie使你有更好的瀏覽體驗"

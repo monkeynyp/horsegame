@@ -79,7 +79,9 @@ def racecard(request):
 
      request.session['curr_tips_by_user'] = list(curr_tips_by_user)
      request.session['curr_race_date'] = curr_race_date
+     request.session['total_race']= int(total_race)
 
+     print("total rAce", total_race)
     # Organize the data by username and fetch all relevant records for each user
      last_perf_by_user = (
         UserTips.objects.filter(race_date=curr_race_date)
@@ -196,7 +198,19 @@ def view_by_member(request):
     }
     return render(request, 'view_by_member.html', context)
     
-
+def match_chart(request):
+     id = request.GET.get('id')
+     print("ID1:##",id)
+     if id is None:
+          id = 1
+     total_race = request.session.get("total_race")
+     print("ID:##",id)
+     context = {
+            'race_id' : id,
+            'total_race':total_race
+        }
+     return render(request, 'match_chart.html', context)
+    
 
 ## Article Section ###
 

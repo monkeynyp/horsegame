@@ -20,7 +20,7 @@ urlpatterns = [
     path('disclaimer/', views.disclaimer, name='disclaimer'),
     path('facebookfeed/', views.facebook_feed, name='facebook_feed'),
     path('like_article/<int:article_id>/', views.like_article, name='like_article'),
-
+    path('match_chart/', views.match_chart, name='match_chart'),
     # Password reset URLs
     path('password-reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),
     path('password-reset/done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),
