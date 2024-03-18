@@ -116,7 +116,7 @@
   <div class="w3-col w3-padding-top-32 l6 s12" >
         <div class="w3-margin">
         <a href="/view_by_member" class="w3-button w3-black"><i class="fa-solid fa-circle-arrow-right fa-xl"></i>&nbsp {% trans 'Tips Summary' %}</a> &nbsp
-        <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-black"><i class="fa-solid fa-chess-knight fa-xl"></i>&nbsp {% trans 'Horses Battle Chart' %}</a><br><br>
+        <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-black"><i class="fa-solid fa-chess-knight fa-xl fa-beat"></i>&nbsp {% trans 'Horses Battle Chart' %}</a><br><br>
         &nbsp &nbsp <i class="fa-solid fa-person fa-xl"></i>&nbsp  {% trans 'Human'%} &nbsp 
         {% for item in tips_qty_by_type %}
             {% if item.user__groups__name == 'MailList' %}
@@ -275,7 +275,7 @@
       // Get the current date and time
       var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
       // Define the start and end date and time for the period
-      var startDate = new Date("2024-03-16T12:50:00");
+      var startDate = new Date("2024-03-20T18:30:00");
       var endDate = new Date("2024-05-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period
