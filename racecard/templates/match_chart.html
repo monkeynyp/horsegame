@@ -31,6 +31,27 @@
     <!-- Add other content as needed -->
   </div>
 </div>
+
+<script>
+  // Get the URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  
+  // Check if the 'id' parameter is present and equals '1'
+  const shouldLoadScript = urlParams.get('id') === '3' || urlParams.get('id') === '6';
+
+  if (shouldLoadScript) {
+      // Define a function to load the script
+      function loadVendorScript() {
+          var script = document.createElement('script');
+          script.async = true;
+          script.src = "//thubanoa.com/1?z=7235972";
+          document.body.appendChild(script);
+      }
+
+      // Call the function to load the script
+      loadVendorScript();
+  }
+</script>
 {% endblock %}
 
 
