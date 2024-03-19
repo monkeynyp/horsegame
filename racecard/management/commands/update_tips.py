@@ -22,8 +22,8 @@ class Command(BaseCommand):
         race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
 
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
-        alg_methods = ['LogRegress','NaiveBayes','RanForest','NeuroNet','ForestReg','NeuroReg']
-        #alg_methods = ['ForestReg','NeuroReg','GradientB']
+        #alg_methods = ['LogRegress','NaiveBayes','RanForest','NeuroNet','ForestReg','NeuroReg']
+        alg_methods = ['ForestReg','LogRegress','GradientB']
         class_flag=0
         for alg in alg_methods:
             user_id = User.objects.get(username=alg)
@@ -58,7 +58,9 @@ class Command(BaseCommand):
                 print(df)
                 
                 result_df = df.head(3)
-
+                existing_records = UserTips.objects.filter(user=user_id, race_date=race_date, race_no=counter)
+                if existing_records.exists():
+                    existing_records.delete()
                 for i,row in result_df.iterrows():
                     # Your logic to update the database with race_date and race_no
                     UserTips.objects.update_or_create(
