@@ -23,7 +23,7 @@ class Command(BaseCommand):
 
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
         #alg_methods = ['LogRegress','NaiveBayes','RanForest','NeuroNet','ForestReg','NeuroReg']
-        alg_methods = ['LogRegress','NeuroNet']
+        alg_methods = ['LogRegress','NeuroNet','RanForest','NeuroReg']
         class_flag=0
         for alg in alg_methods:
             user_id = User.objects.get(username=alg)
