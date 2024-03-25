@@ -171,6 +171,12 @@ msgstr "預測龍虎榜"
 
 #: Horse Name
 
+msgid "HELENE WARRIOR"
+msgstr "喜蓮勇略"
+
+msgid "KING GLORIOSO"
+msgstr "皇帝英豪"
+
 msgid "AFFORDABLE"
 msgstr "亞福得寶"
 
