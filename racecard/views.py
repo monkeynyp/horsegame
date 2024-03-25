@@ -17,6 +17,9 @@ from django.template.loader import render_to_string
 from django.utils import translation
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
+from .get_results import get_results
+from django.contrib import messages
+
 
 ## Horse Raching Features Create your views here.
 def racecard(request):
@@ -238,7 +241,25 @@ def newsletter(request):
     }
     return render(request, 'blog/newsletter.html', context)
 
+@login_required
+@user_passes_test(is_specific_user)
+def data_update_console(request):
+    id = request.GET.get('id')
+    if id is None:
+          id = 1
+    context = { 
+                'race_id' : id,
+    }
+    return render(request, 'data_update_console.html', context)
 
+def update_race_result(request):
+    id = request.GET.get('id')
+    if id is None:
+        id = 1
+    output = get_results(id)  # Call the function get_results
+    messages.success(request, 'Update Success!')
+    return redirect('../data_update_console')  # replace with the actual URL
+    
 def privacy(request):
     return render(request, 'privacy.html')
 

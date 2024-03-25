@@ -21,6 +21,8 @@ urlpatterns = [
     path('facebookfeed/', views.facebook_feed, name='facebook_feed'),
     path('like_article/<int:article_id>/', views.like_article, name='like_article'),
     path('match_chart/', views.match_chart, name='match_chart'),
+    path('data_update_console/', views.data_update_console, name='data_update_console'),
+    path('update_race_result/', views.update_race_result, name='update_race_result'),
     # Password reset URLs
     path('password-reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),
     path('password-reset/done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),

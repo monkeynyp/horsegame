@@ -1,0 +1,36 @@
+{% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning  and Users {% endblock %} 
+
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+
+<div class="w3-container w3-padding-32"></div>
+<div class="w3-margin ">
+    <h2>Update Current Race Result</h2>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '1' %} w3-red{% else %}w3-black{% endif %}" href="/update_race_result/?id=1">Update Race 1</a>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '2' %} w3-red{% else %}w3-black{% endif %}" href="/update_race_result/?id=2">Update Race 2</a>
+        <a class="w3-margin w3-button w3-xlarge {% if request.GET.id == '3' %} w3-red{% else %} w3-black{% endif %}" href="/update_race_result/?id=3">Update Race 3</a>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '4' %} w3-red{% else %} w3-black{% endif %}" href="/update_race_result/?id=4">Update Race 4</a>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '5' %} w3-red{% else %} w3-black{% endif %}" href="/update_race_result/?id=5">Update Race 5</a>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '6' %} w3-red{% else %} w3-black{% endif %}" href="/update_race_result/?id=6">Update Race 6</a>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '7' %} w3-red{% else %} w3-black{% endif %}" href="/update_race_result/?id=7">Update Race 7</a>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '8' %} w3-red{% else %} w3-black{% endif %}" href="/update_race_result/?id=8">Update Race 8</a>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '9' %} w3-red{% else %} w3-black{% endif %}" href="/update_race_result/?id=9">Update Race 9</a>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '10' %} w3-red{% else %} w3-black{% endif %}" href="/update_race_result/?id=10">Update Race 10</a>
+        <a class="w3-margin w3-button w3-xlarge  {% if request.GET.id == '11' %} w3-red{% else %} w3-black{% endif %}" href="/update_race_result/?id=11">Update Race 11</a>
+
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <h2>Update the Horse Fight Chart</h2>
+        
+        
+    
+  </div>
+
+  {% endblock %}

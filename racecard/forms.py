@@ -8,3 +8,7 @@ class CustomUserCreationForm(UserCreationForm):
     class Meta:
         model = User
         fields = ('username', 'email', 'password1', 'password2')
+        
+class HorseChartForm(forms.Form):
+    no_of_race = forms.IntegerField(label='No of Race')
+    race_date = forms.DateField(label='Race Date')
