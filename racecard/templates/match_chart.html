@@ -27,7 +27,7 @@
   {% endif %}
   <div class="w3-card w3-margin w3-padding-64">
       <!-- Display desktop image -->
-      <img class="w3-image" src="{% static 'horse_relationship' %}{{ race_id }}.png" alt="Lights">
+      <img class="w3-image" src="{{ MEDIA_URL }}horse_relationship{{ race_id }}.png" alt="Lights">
     <!-- Add other content as needed -->
   </div>
 </div>

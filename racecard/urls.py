@@ -3,6 +3,8 @@ from . import views
 from django.views.generic import RedirectView
 from .views import register, user_login, user_logout
 from django.contrib.auth import views as auth_views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('', views.recent_article, name='recent_article'),
@@ -31,4 +33,5 @@ urlpatterns = [
     path('submittips/',views.submit_tips, name='submit_tips'),
     path('member/', views.member, name='member'),
     ]
-
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
