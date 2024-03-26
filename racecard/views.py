@@ -100,7 +100,7 @@ def racecard(request):
         percentage= F('total_hits') * 100.0 / F('total_records'),
         confidence = F('hit_weight')* 100.0,
             profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
-            ).order_by('-confidence')
+            ).order_by('-percentage')
     
      #request.session['user_scores'] = list(user_scores)
 
