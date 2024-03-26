@@ -197,7 +197,7 @@
             <div style="max-width: 800px;"> <!-- Adjust max-width as needed -->
                 {{ score.user}}: {% trans 'Profit' %}:💰{{ score.profit_percentage | floatformat:0 }}%
                 <div class="w3-light-grey">
-                    <div class="{{ color }}" style="height:35px; width:{{ score.confidence }}%">&nbsp  <span class="w3-tag w3-red w3-tooltip" style="transform:rotate(-5deg)"><i class="fa-regular fa-thumbs-up"></i>&nbsp{{score.confidence | floatformat:0 }}% <br><i class="fa-regular fa-circle-check"></i>&nbsp {{ score.percentage | floatformat:0 }}% <span class="w3-text">(<em>{{score.total_records}} {% trans 'Horses' %}</em>)</span></span></div>
+                    <div class="{{ color }}" style="height:35px; width:{{ score.percentage }}%">&nbsp  <span class="w3-tag w3-red w3-tooltip" style="transform:rotate(-5deg)"><i class="fa-regular fa-thumbs-up"></i>&nbsp{{score.confidence | floatformat:0 }}% <br><i class="fa-regular fa-circle-check"></i>&nbsp {{ score.percentage | floatformat:0 }}% <span class="w3-text">(<em>{{score.total_records}} {% trans 'Horses' %}</em>)</span></span></div>
                 </div>
             </div>
             <br>
