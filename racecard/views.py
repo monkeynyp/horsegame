@@ -98,8 +98,9 @@ def racecard(request):
     # Get the user scores and calculate the percentage of hits
      user_scores = UserScores.objects.annotate(
         percentage= F('total_hits') * 100.0 / F('total_records'),
+        confidence = F('hit_weight')* 100.0,
             profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
-            ).order_by('-percentage')
+            ).order_by('-confidence')
     
      #request.session['user_scores'] = list(user_scores)
 
