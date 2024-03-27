@@ -27,11 +27,11 @@
   {% endif %}
   <div class="w3-card w3-margin w3-padding-64">
       <!-- Display desktop image -->
-      <img class="w3-image" src="{{ MEDIA_URL }}horse_relationship{{ race_id }}.png" alt="Lights">
+      <img class="w3-image" src="{% static 'horse_relationship' %}{{ race_id }}.png" alt="Lights">
     <!-- Add other content as needed -->
   </div>
 </div>
-<div class="w3-center">
+<div class="w3-center"> 
   <button class="w3-button w3-sand w3-round w3-ripple w3-large" ><a href="https://glaultoa.com/4/7158508"><i class="fa-solid fa-heart" style="color: #f01000;"></i>{% trans "Support Monkey" %}</h5></a>
 </button>
 </div>
