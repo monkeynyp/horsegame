@@ -64,7 +64,7 @@ class Command(BaseCommand):
 
         user_tips_data = UserTips.objects.values('user').annotate(
             latest_race_dates=Subquery(
-                UserTips.objects.filter(user=OuterRef('user')).order_by('-race_date').values('race_date')[:5]
+                UserTips.objects.filter(user=OuterRef('user')).order_by('-race_date').values('race_date')[:10]
                 ),
                 recent_hits=Sum('hit'),
                 recent_total=Count('id'),
@@ -76,7 +76,7 @@ class Command(BaseCommand):
             hit_weight=ExpressionWrapper(
                 0.2 * F('total_hits') / F('total_records')
                 + 0.6 * F('recent_hits')/ F('recent_total')
-                + 0.2 * F('total_records') /max_total_records,
+                + 0.2 * F('recent_total') /300,
                 output_field=FloatField()
             )
         )

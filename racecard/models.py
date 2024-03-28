@@ -32,6 +32,7 @@ class UserScores(models.Model):
     total_dividend = models.FloatField(default=0)
     hit_weight = models.FloatField(default=0)
     div_weight = models.FloatField(default=0)
+    stars = models.CharField(max_length=25, null=True)
 
 class Article(models.Model):
     LANGUAGE_CHOICES = [
