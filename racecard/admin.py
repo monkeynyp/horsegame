@@ -1,9 +1,12 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from .models import UserTips, UserScores, Article, User
+from .models import UserTips, UserScores, Article, User,UserTips_my
 # Register your models here.
 class UserTipsAdmin(admin.ModelAdmin):
+    list_display = ("user","race_date","race_no","horse_no","horse_name","hit")
+
+class UserTips_myAdmin(admin.ModelAdmin):
     list_display = ("user","race_date","race_no","horse_no","horse_name","hit")
 
 class UserScoresAdmin(admin.ModelAdmin):
@@ -26,4 +29,5 @@ admin.site.register(User, CustomUserAdmin)
 
 admin.site.register(UserTips, UserTipsAdmin)
 admin.site.register(UserScores, UserScoresAdmin)
+admin.site.register(UserTips_my, UserTips_myAdmin)
 admin.site.register(Article, ArticleAdmin)

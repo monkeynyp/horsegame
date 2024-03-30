@@ -177,6 +177,17 @@ msgstr "預測龍虎榜"
 
 #: Horse Name
 
+
+msgid "THE PERFECT MATCH"
+msgstr "至合拍"
+
+msgid "LUCY IN THE SKY"
+msgstr "鑽石星空"
+
+msgid "STORMING DRAGON"
+msgstr "勇霸龍"
+
+
 msgid "HELENE WARRIOR"
 msgstr "喜蓮勇略"
 

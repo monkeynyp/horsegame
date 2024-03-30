@@ -7,7 +7,7 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import UserTips,UserScores,Article
+from .models import UserTips,UserScores,Article,UserTips_my
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
 from .forms import CustomUserCreationForm
@@ -19,6 +19,7 @@ from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 from .get_results import get_results
 from django.contrib import messages
+import datetime
 
 
 ## Horse Raching Features Create your views here.
@@ -214,6 +215,120 @@ def match_chart(request):
             'total_race':total_race
         }
      return render(request, 'match_chart.html', context)
+
+
+def racecard_my(request):
+     id = request.GET.get('id')
+     if id is None:
+          id = 1
+     current_datetime = timezone.now()
+     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/my_curr_race.csv")
+     current_race = pd.read_csv(csv_path)
+    
+    # Get Current Race Data
+     curr_race_data = current_race[current_race['race_no'] == int(id)]
+     current_race['race_date'] = current_race['race_date'].astype(str)
+ 
+     first_row = current_race.iloc[0]
+     race_date = first_row["race_date"]
+     curr_race_date = datetime.datetime.strptime(race_date, "%Y%m%d").strftime("%Y-%m-%d")
+     #total_race = current_race['Total'].iloc[0]
+     
+    #  horse_tips_qty = (
+    #     UserTips.objects
+    #     .filter(race_date=curr_race_date, race_no=id)
+    #     .values('horse_name', 'user__groups__name')
+    #     .annotate(num_tips=Count('id'))
+    # )
+     
+    #  tips_qty_by_type = (
+    #     UserTips.objects
+    #     .filter(race_date=curr_race_date, race_no=id)
+    #     .values('user__groups__name')
+    #     .annotate(num_users=Count('user', distinct=True))
+    # )
+    #  print("Horse Tips Qtr: ", tips_qty_by_type)
+
+    ## For Tips Sorting based on Overall Performance ##
+    #  last_tips_by_user = (
+    #     UserScores.objects.all()  
+    #         .values('user', 'user__groups__name')
+    #         .annotate(
+    #             hit_ratio=ExpressionWrapper(F('total_hits')*100/F('total_records'), output_field=FloatField())
+    #     )
+    #     .order_by('-hit_ratio')  # Sort in descending order of hit ratio
+    # )
+
+    # ## For Tips Sorting based on Current Peformance. If the Current Performance is zero, Last Performace will be used for sorting ##
+     
+     curr_tips_by_user = (
+         UserTips_my.objects.filter(race_date=curr_race_date)  # Current Tips Only
+            .values('user', 'user__groups__name')
+            .annotate(
+             hit_pst=Sum('hit') * 100.0 / Count('hit'),
+             total_dividend=Sum('dividend') - Count('hit') * 10,
+         )
+         .order_by('-hit_pst')  # Sort in descending order of hit ratio
+     )   
+     print("##curr_tips",curr_tips_by_user)
+    # Calculate the total sum of 'Hit' in 'curr_tips_by_user' with handling for None values
+    # sum_pst = 0
+    #  for tip in curr_tips_by_user:
+    #       sum_pst = sum_pst+tip['hit_pst']
+    
+    #  if sum_pst == 0.0:
+    #       sort_query = last_tips_by_user
+    #   else:      
+     sort_query = curr_tips_by_user
+     print("## Sort_query ##", sort_query)
+
+    #  request.session['curr_tips_by_user'] = list(curr_tips_by_user)
+    #  request.session['curr_race_date'] = curr_race_date
+    #  request.session['total_race']= int(total_race)
+
+
+    # # Organize the data by username and fetch all relevant records for each user
+    #  last_perf_by_user = (
+    #     UserTips.objects.filter(race_date=curr_race_date)
+    #     .select_related('user')
+    #     .values('user__username')
+    #     .annotate(
+    #               hit_pst = Sum('hit')*100.0/Count('hit'),
+    #               total_dividend = Sum('dividend')-Count('hit')*10
+    # ))
+    #  request.session['last_perf_by_user'] = list(last_perf_by_user)
+    # # Get the user scores and calculate the percentage of hits
+    #  user_scores = UserScores.objects.annotate(
+    #     percentage= F('total_hits') * 100.0 / F('total_records'),
+    #     confidence = F('hit_weight')* 100.0,
+    #         profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
+    #         ).order_by('-percentage')
+    
+    #  #request.session['user_scores'] = list(user_scores)
+
+     complete_tips_by_user = []
+     for user_tips in sort_query:
+         print("user_tips",user_tips)
+         user_records = UserTips_my.objects.filter(
+             user_id=user_tips['user'],
+             race_date=curr_race_date,
+             race_no=id
+         ).order_by('race_no')
+         print("user_records:", user_records)
+      
+         if user_records:
+             complete_tips_by_user.append({'user': user_records[0].user, 'groups_name': user_tips['user__groups__name'], 'records': user_records})
+
+    #     selected_language = translation.get_language()  # Default to Chinese if language is not provided
+    #     recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:5]
+     print("Complete Tips",complete_tips_by_user)
+    
+     context = {
+            'current_race': curr_race_data,
+            'complete_tips_by_user': complete_tips_by_user
+        }
+       
+     return render(request, 'currentrace_my.html', context)
     
 
 ## Article Section ###

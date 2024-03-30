@@ -9,6 +9,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', views.recent_article, name='recent_article'),
     path('racecard/', views.racecard, name='racecard'),
+        #Malaysia Pages
+    path('racecard_my/', views.racecard_my, name='racecard_my'),
     path('view_by_member/', views.view_by_member, name='view_by_member'),
     path('blog/', views.recent_article, name='recent_article'),
     path('newsletter/', views.newsletter, name='newsletter'),
@@ -25,6 +27,10 @@ urlpatterns = [
     path('match_chart/', views.match_chart, name='match_chart'),
     path('data_update_console/', views.data_update_console, name='data_update_console'),
     path('update_race_result/', views.update_race_result, name='update_race_result'),
+
+
+
+
     # Password reset URLs
     path('password-reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),
     path('password-reset/done/', auth_views.PasswordResetDoneView.as_view(), name='password_reset_done'),

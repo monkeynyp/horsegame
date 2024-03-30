@@ -11,22 +11,27 @@ class UserTips(models.Model):
     horse_name = models.CharField(max_length=50)
     hit = models.IntegerField()
     dividend = models.FloatField(default=0)
-    @property
-    def last_hit_rate(self):
-        return UserTips.objects.filter(user=self.user, race_date=self.race_date, hit=1).count() / \
-               UserTips.objects.filter(user=self.user, race_date=self.race_date).count()
 
-    @property
-    def last_profit(self):
-        total_hit = UserTips.objects.filter(user=self.user, race_date=self.race_date, hit=1).count()
-        total_dividend = UserTips.objects.filter(user=self.user, race_date=self.race_date).aggregate(total_dividend=Sum('dividend'))['total_dividend'] or 0
-        if total_hit > 0:
-            return total_dividend / total_hit * 10
-        else:
-            return 0
+class UserTips_my(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Link to the User model
+    race_date = models.DateField()
+    race_no = models.IntegerField()
+    horse_no = models.IntegerField()
+    horse_name = models.CharField(max_length=50)
+    hit = models.IntegerField()
+    dividend = models.FloatField(default=0)
         
 class UserScores(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='score')
+    total_records = models.IntegerField(default=0)
+    total_hits = models.IntegerField(default=0)
+    total_dividend = models.FloatField(default=0)
+    hit_weight = models.FloatField(default=0)
+    div_weight = models.FloatField(default=0)
+    stars = models.CharField(max_length=25, null=True)
+
+class UserScores_my(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='score_my')
     total_records = models.IntegerField(default=0)
     total_hits = models.IntegerField(default=0)
     total_dividend = models.FloatField(default=0)
