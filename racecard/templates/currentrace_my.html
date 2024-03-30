@@ -24,7 +24,7 @@
 
 <div class="w3-container w3-padding-32"></div>
 <div class="w3-margin ">
-    <h2>{% trans "Current Race"  %} </h2>
+    <h2><img src="{% static 'MYFlag.png' %}" alt="Malaysia" style="width:4%"> {% trans "Current Race"  %} (Beta) </h2>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=1">1</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=2">2</a>
         <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=3">3</a>
@@ -54,7 +54,7 @@
         <td>{% trans r.horse_name %} </td>
         <td class="w3-hide-small">{% trans r.jockey %}</td>
         <td>
-            test
+            ---
       </td>
         <td class="w3-hide-small">{{ r.bar }}</td>
       </tr>
@@ -64,8 +64,8 @@
   </div>
   <div class="w3-col w3-padding-top-32 l6 s12" >
     <div class="w3-margin">
-    <a href="/view_by_member" class="w3-button w3-black"><i class="fa-solid fa-circle-arrow-right fa-xl"></i>&nbsp {% trans 'Tips Summary' %}</a> &nbsp
-    <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-black"><i class="fa-solid fa-chess-knight fa-xl fa-beat"></i>&nbsp {% trans 'Horses Battle Chart' %}</a><span class="w3-tag w3-red w3-tooltip" style="transform:rotate(-15deg)">New</span><br><br>
+  
+    
     &nbsp &nbsp <i class="fa-solid fa-person fa-xl"></i>&nbsp  {% trans 'Human'%} &nbsp 
     {% for item in tips_qty_by_type %}
         {% if item.user__groups__name == 'MailList' %}

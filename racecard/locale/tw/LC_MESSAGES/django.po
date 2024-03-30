@@ -154,8 +154,11 @@ msgid "Home"
 msgstr "主頁"
 
 #: racecard/templates/master.html:33
-msgid "HorseRace"
-msgstr "賽馬"
+msgid "HK🇭🇰Race"
+msgstr "香港🇭🇰賽馬"
+
+msgid "MY🇲🇾Race"
+msgstr "馬來🇲🇾賽馬"
 
 #: racecard/templates/master.html:33
 msgid "Support Monkey"
