@@ -1,15 +1,15 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course
-0,2024/04/07,1,GO HERO,L Ferraris,135,1020,8,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-1,2024/04/07,2,YEE CHEONG WARRIOR,Z Purton,135,1086,6,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-2,2024/04/07,3,CHIU CHOW BROTHER,H Bowman,133,1063,12,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-3,2024/04/07,4,MEDIC ELITE,H Bentley,133,1099,2,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-4,2024/04/07,5,URBAN TRIUMPH,K C Leung,133,1183,10,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-5,2024/04/07,6,MORE RICE,L Hewitson,131,1204,1,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-6,2024/04/07,7,MASTER OF ALL,M L Yeung,127,1064,5,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-7,2024/04/07,8,DRAGON DELIGHT,B Thompson,126,1095,11,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-8,2024/04/07,9,EAGLE RUN,Y L Chung,117,1157,7,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-9,2024/04/07,10,EASY TWO,M F Poon,117,1059,4,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-10,2024/04/07,11,STAR OF GLORY,A Atzeni,117,1072,13,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-11,2024/04/07,12,FORTUNE MASTER,A Hamelin,115,1095,9,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-12,2024/04/07,13,GENERAL WINNER,K Teetan,115,1298,3,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
-13,2024/04/07,14,DEVIL AND GOLD,M Chadwick,115,1095,14,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course"
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
+0,2024/04/07,1,GO HERO,L Ferraris,135,1020,8,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+1,2024/04/07,2,YEE CHEONG WARRIOR,Z Purton,135,1086,6,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+2,2024/04/07,3,CHIU CHOW BROTHER,H Bowman,133,1063,12,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+3,2024/04/07,4,MEDIC ELITE,H Bentley,133,1099,2,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+4,2024/04/07,5,URBAN TRIUMPH,K C Leung,133,1183,10,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+5,2024/04/07,6,MORE RICE,L Hewitson,131,1204,1,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+6,2024/04/07,7,MASTER OF ALL,M L Yeung,127,1064,5,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+7,2024/04/07,8,DRAGON DELIGHT,B Thompson,126,1095,11,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+8,2024/04/07,9,EAGLE RUN,Y L Chung,117,1157,7,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+9,2024/04/07,10,EASY TWO,M F Poon,117,1059,4,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+10,2024/04/07,11,STAR OF GLORY,A Atzeni,117,1072,13,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+11,2024/04/07,12,FORTUNE MASTER,A Badel,115,1095,9,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+12,2024/04/07,13,GENERAL WINNER,K Teetan,115,1298,3,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+13,2024/04/07,14,DEVIL AND GOLD,M Chadwick,115,1095,14,10,Class 5,1400,Sha Tin:,"TURF - ""B+2"" Course",Good

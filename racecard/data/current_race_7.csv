@@ -1,12 +1,12 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course
-0,2024/04/07,1,LUCKY SWEYNESSE,H Bowman,128,1205,7,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-1,2024/04/07,2,LUCKY WITH YOU,A Atzeni,123,1219,3,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-2,2024/04/07,3,HOWDEEPISYOURLOVE,B Avdulla,123,1190,10,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-3,2024/04/07,4,DUKE WAI,M Chadwick,123,1136,4,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-4,2024/04/07,5,FLYING ACE,Z Purton,123,1221,11,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-5,2024/04/07,6,ADIOS,K De Melo,123,1172,5,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-6,2024/04/07,7,WHIZZ KID,H Bentley,123,1177,6,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-7,2024/04/07,8,INVINCIBLE SAGE,A Badel,123,1102,8,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-8,2024/04/07,9,PACKING TREADMILL,L Hewitson,123,1175,2,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-9,2024/04/07,10,NERVOUS WITNESS,L Ferraris,123,1244,9,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
-10,2024/04/07,11,TOMODACHI KOKOROE,K Teetan,123,1183,1,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course"
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
+0,2024/04/07,1,LUCKY SWEYNESSE,H Bowman,128,1205,7,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+1,2024/04/07,2,LUCKY WITH YOU,A Atzeni,123,1219,3,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+2,2024/04/07,3,HOWDEEPISYOURLOVE,B Avdulla,123,1190,10,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+3,2024/04/07,4,DUKE WAI,M Chadwick,123,1136,4,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+4,2024/04/07,5,FLYING ACE,Z Purton,123,1221,11,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+5,2024/04/07,6,ADIOS,K De Melo,123,1172,5,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+6,2024/04/07,7,WHIZZ KID,H Bentley,123,1177,6,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+7,2024/04/07,8,INVINCIBLE SAGE,A Badel,123,1102,8,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+8,2024/04/07,9,PACKING TREADMILL,L Hewitson,123,1175,2,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+9,2024/04/07,10,NERVOUS WITNESS,L Ferraris,123,1244,9,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+10,2024/04/07,11,TOMODACHI KOKOROE,K Teetan,123,1183,1,10,Group Two,1200,Sha Tin:,"TURF - ""B+2"" Course",Good

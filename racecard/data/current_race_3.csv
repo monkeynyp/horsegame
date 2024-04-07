@@ -1,10 +1,10 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course
-0,2024/04/07,1,GOLDEN EMPIRE,H Bowman,131,1076,8,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course"
-1,2024/04/07,2,EIGHTY LIGHT YEARS,Z Purton,128,1261,3,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course"
-2,2024/04/07,3,GRATEFUL HEART,L Hewitson,128,1125,7,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course"
-3,2024/04/07,4,GRACIOUS EXPRESS,H Bentley,125,1140,1,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course"
-4,2024/04/07,5,FASHION LEGEND,B Thompson,124,1034,5,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course"
-5,2024/04/07,6,KA YING VICTORY,B Avdulla,122,1239,4,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course"
-6,2024/04/07,7,PARTERRE,A Atzeni,122,1151,9,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course"
-7,2024/04/07,8,E LEGEND,K De Melo,121,1120,2,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course"
-8,2024/04/07,9,RIGHTEOUS ARION,M Chadwick,120,1185,6,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course"
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
+0,2024/04/07,1,GOLDEN EMPIRE,H Bowman,131,1076,8,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+1,2024/04/07,2,EIGHTY LIGHT YEARS,Z Purton,128,1261,3,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+2,2024/04/07,3,GRATEFUL HEART,L Hewitson,128,1125,7,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+3,2024/04/07,4,GRACIOUS EXPRESS,H Bentley,125,1140,1,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+4,2024/04/07,5,FASHION LEGEND,B Thompson,124,1034,5,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+5,2024/04/07,6,KA YING VICTORY,B Avdulla,122,1239,4,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+6,2024/04/07,7,PARTERRE,A Atzeni,122,1151,9,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+7,2024/04/07,8,E LEGEND,K De Melo,121,1120,2,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+8,2024/04/07,9,RIGHTEOUS ARION,M Chadwick,120,1185,6,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
