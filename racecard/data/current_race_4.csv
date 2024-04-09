@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/04/07,1,BIG RED,B Avdulla,135,1290,8,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-1,2024/04/07,2,SUPER GOLDI,K C Leung,135,1002,14,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-2,2024/04/07,3,ARIEL,A Atzeni,132,1214,13,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-3,2024/04/07,4,AFFIRM,L Hewitson,120,1185,5,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-4,2024/04/07,5,CIRCUIT FIERY,Z Purton,128,1136,12,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-5,2024/04/07,6,MISSION VOICE,L Ferraris,128,1197,10,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-6,2024/04/07,7,THE KHAN,A Badel,125,1099,1,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-7,2024/04/07,8,SMILING COLLECTOR,K Teetan,124,1114,6,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-8,2024/04/07,9,SUPER BONUS,H Bentley,124,1075,11,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-9,2024/04/07,10,CALIFORNIA ICON,Y L Chung,119,1152,7,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-10,2024/04/07,11,CHATEAU,A Hamelin,119,1069,9,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-11,2024/04/07,12,DUBLIN STAR,M Chadwick,119,1277,3,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-12,2024/04/07,13,LADY BILLIE,M F Poon,119,1117,4,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-13,2024/04/07,14,V LOVE YOU,B Thompson,119,1081,2,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+0,2024/04/10,1,COPARTNER PRANCE,Z Purton,135,1111,6,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/04/10,2,FLYING DRAGON,K H Chan,128,1219,11,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/04/10,3,SKY SONG,B Avdulla,127,1133,5,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/04/10,4,WIN SPEED,B Thompson,127,1118,2,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/04/10,5,ROARING BEBE,A Badel,126,1123,4,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/04/10,6,COSMO NAVIGATOR,A Atzeni,125,1166,8,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/04/10,7,SPEEDY SMARTIE,C L Chau,123,1117,7,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/04/10,8,JOYFUL LIFE,K C Leung,121,1106,12,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/04/10,9,SPEEDY CHARIOT,L Hewitson,121,1109,9,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/04/10,10,TATTENHAM,K Teetan,121,1116,10,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/04/10,11,PHILOS,Y L Chung,120,1127,1,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/04/10,12,MY INTELLIGENT,M Chadwick,115,1101,3,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good

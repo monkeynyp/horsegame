@@ -1,16 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/04/07,1,ESCAPE ROUTE,A Badel,135,1074,6,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-1,2024/04/07,2,SOLAR GOGO,K De Melo,134,1155,7,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-2,2024/04/07,3,DARCI JOY,Z Purton,131,1069,9,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-3,2024/04/07,4,SATIRICAL GLORY,H Bowman,127,1201,3,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-4,2024/04/07,5,SHARPEN BRIGHT,K Teetan,126,1007,12,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-5,2024/04/07,6,SPECIAL HEDGE,L Hewitson,125,1069,11,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-6,2024/04/07,7,CHATEAU LE PECHE,M L Yeung,123,1012,4,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-7,2024/04/07,8,"MANAGEMENT FOLKS
-(Scratched)",-,-,-,-,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-8,2024/04/07,9,ME TIME,A Atzeni,123,1052,8,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-9,2024/04/07,10,WINNING STEPS,M F Poon,121,1158,5,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-10,2024/04/07,11,FRUITY WARRIOR,H Bentley,119,1098,2,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-11,2024/04/07,12,SUNNY BABY,M Chadwick,119,1129,13,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-12,2024/04/07,13,FLYING SILVER,Y L Chung,117,1028,10,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
-13,2024/04/07,14,LEGION OF MERIT,B Thompson,115,1248,1,10,Class 4,2000,Sha Tin:,"TURF - ""B+2"" Course",Good
+0,2024/04/10,1,HAPPY GOLF,H Bowman,135,1190,10,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/04/10,2,STREET CONQUEROR,Z Purton,132,1127,11,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/04/10,3,EASY SNIP,C L Chau,130,1209,2,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/04/10,4,HOSS,K Teetan,129,1102,7,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/04/10,5,E UNIVERSE,L Hewitson,128,1035,5,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/04/10,6,DOUBLE BINGO,L Ferraris,127,1082,4,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/04/10,7,REGENT GLORY,H Bentley,124,1047,9,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/04/10,8,SUPER EAGLE,K De Melo,122,1088,8,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/04/10,9,KING OBERON,A Atzeni,120,1070,3,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/04/10,10,HAPPY FEELING,B Thompson,116,1060,1,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/04/10,11,TACTICAL COMMAND,A Badel,115,1072,12,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/04/10,12,WOODFIRE CHAMP,M L Yeung,115,1010,6,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good

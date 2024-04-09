@@ -1,10 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/04/07,1,HASTEN DELIGHT,H Bowman,128,1234,3,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-1,2024/04/07,2,NORTHERN BEACHES,L Hewitson,128,1139,4,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-2,2024/04/07,3,LADY'S CHOICE,Z Purton,125,1124,1,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-3,2024/04/07,4,CALIFORNIA DEEPLY,L Ferraris,123,1081,6,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-4,2024/04/07,5,APOLAR FIGHTER,M F Poon,122,1039,2,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-5,2024/04/07,6,CHAMPION INSTINCT,A Atzeni,122,1164,9,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-6,2024/04/07,7,SEA AIR LEGEND,K Teetan,122,974,5,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-7,2024/04/07,8,ENDEARED,A Badel,121,1026,7,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-8,2024/04/07,9,ROBOT MASTER,B Thompson,120,1153,8,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+0,2024/04/10,1,GLORIOUS JOURNEY,M Chadwick,135,1018,12,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/04/10,2,GOOD LUCK WIN,L Ferraris,134,1107,6,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/04/10,3,WINDICATOR FAMILY,A Badel,131,974,1,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/04/10,4,NOT A FEW,K De Melo,130,1039,11,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/04/10,5,DEVAS TWELVE,Z Purton,128,1098,4,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/04/10,6,WOOD ON FIRE,K Teetan,127,1117,8,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/04/10,7,GALLANT CROWN,K C Leung,126,1074,10,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/04/10,8,STURDY RUBY,H Bowman,126,1107,7,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/04/10,9,SURE JOYFUL,M F Poon,126,1053,9,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/04/10,10,MR ALADDIN,H Bentley,123,1069,5,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/04/10,11,ATOMIC BEAUTY,B Avdulla,121,1207,2,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/04/10,12,KEEN UNITY,M L Yeung,117,1166,3,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
