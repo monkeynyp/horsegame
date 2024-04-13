@@ -179,7 +179,21 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+msgid "LA FORZA"
+msgstr "超力量"
+msgid "RUN YES RUN"
+msgstr "東昇鉞"
+msgid "SUPREME WINNER"
+msgstr "紅旺繽紛"
 
+msgid "TELECOM POWER"
+msgstr "電訊驕陽"
+
+msgid "BULB EMPEROR"
+msgstr "燈胆皇"
+
+msgid "CALL ME SUPREME"
+msgstr "龍之珍"
 
 msgid "THE PERFECT MATCH"
 msgstr "至合拍"

@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/04/10,1,ASTROLOGER,H Bowman,135,1161,8,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/04/10,2,COLOURFUL EMPEROR,Y L Chung,133,1032,3,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/04/10,3,ATOMIC FORCE,C Y Ho,126,1140,9,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/04/10,4,HEALTHY HEALTHY,B Avdulla,125,1147,4,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/04/10,5,O'LINER,L Ferraris,125,1237,7,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/04/10,6,ARMOUR EAGLE,B Thompson,124,1167,6,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/04/10,7,SOLAR PARTNER,M Chadwick,123,1218,5,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/04/10,8,SPORTS LEGEND,Z Purton,123,1167,11,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/04/10,9,SWEET BRIAR,L Hewitson,122,1064,1,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/04/10,10,MAGIC PHOENIX,M L Yeung,120,1182,2,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-10,2024/04/10,11,NEBRASKAN,K Teetan,119,1031,10,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-11,2024/04/10,12,KING ECCELLENTE,H Bentley,116,1144,12,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+0,2024/04/14,1,GOLDEN TITLE,C L Chau,135,1167,10,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/04/14,2,THE ABSOLUTE,L Ferraris,135,1135,12,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/04/14,3,TOP SCORER,Z Purton,131,1246,6,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/04/14,4,JUMBO FORTUNE,H Bentley,130,1273,1,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/04/14,5,CIRCUIT MIGHTY,Y L Chung,129,1032,13,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/04/14,6,CALL ME SUPREME,H Bowman,128,1150,14,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/04/14,7,NEVER PETER OUT,K Teetan,128,1084,4,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/04/14,8,OWNERS' PRAISE,L Hewitson,127,1261,8,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/04/14,9,SKY TRUST,C Y Ho,126,1154,7,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/04/14,10,YEE CHEONG RAIDER,A Atzeni,126,1163,3,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+10,2024/04/14,11,TRAVEL GOLF,M Chadwick,124,1078,2,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+11,2024/04/14,12,ACA POWER,A Badel,122,1015,11,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+12,2024/04/14,13,JOYFUL FRIENDSHIP,M F Poon,118,1133,9,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+13,2024/04/14,14,YOUTH POWER,M L Yeung,118,1025,5,11,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good

@@ -1,15 +1,15 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance
-0,2024/02/12,1,BLUE MARLIN,H Bentley,134,1313,5,11,Class 3,1400
-1,2024/02/12,2,QUANTUM PATCH,K Teetan,131,1134,6,11,Class 3,1400
-2,2024/02/12,3,SUPER WINNER,C L Chau,129,1232,12,11,Class 3,1400
-3,2024/02/12,4,SINBA,Y L Chung,129,1177,13,11,Class 3,1400
-4,2024/02/12,5,LESLIE,K C Leung,128,1152,1,11,Class 3,1400
-5,2024/02/12,6,STORM RIDER,K H Chan,127,1117,10,11,Class 3,1400
-6,2024/02/12,7,KARMA,M L Yeung,126,1209,3,11,Class 3,1400
-7,2024/02/12,8,JOLLY RULER,L Hewitson,124,1177,14,11,Class 3,1400
-8,2024/02/12,9,RUN RUN COOL,L Ferraris,124,1226,2,11,Class 3,1400
-9,2024/02/12,10,E LEGEND,M Chadwick,122,1127,4,11,Class 3,1400
-10,2024/02/12,11,SUPERB KID,K De Melo,122,1032,11,11,Class 3,1400
-11,2024/02/12,12,GIDDY UP,A Hamelin,121,1119,9,11,Class 3,1400
-12,2024/02/12,13,MAGNIFICENT NINE,Z Purton,121,1134,7,11,Class 3,1400
-13,2024/02/12,14,TALENTS AMBITION,A Atzeni,121,1203,8,11,Class 3,1400
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
+0,2024/04/14,1,FRANTANCK,Y L Chung,135,1156,14,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/04/14,2,FLAGSHIP WARRIOR,E C W Wong,129,1048,3,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/04/14,3,HUGE WAVE,L Ferraris,129,1169,13,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/04/14,4,SUMMIT IMPACT,B Thompson,126,1047,2,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/04/14,5,HOLY LAKE,C Y Ho,125,1102,7,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/04/14,6,STAR CONTACT,L Hewitson,125,1212,12,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/04/14,7,BEATO,B Avdulla,124,1116,10,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/04/14,8,LOYAL BO BO,K C Leung,124,1189,11,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/04/14,9,SUNSTRIDER,Z Purton,124,1128,4,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/04/14,10,ACCOLADE START,A Badel,123,1049,6,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+10,2024/04/14,11,BRIGHT INHERITANCE,M Chadwick,123,1125,9,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+11,2024/04/14,12,POWERFUL WINGS,A Hamelin,122,1078,5,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+12,2024/04/14,13,WINNING DATA,K Teetan,121,1169,1,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+13,2024/04/14,14,TALENTS AMBITION,H Bentley,119,1188,8,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
