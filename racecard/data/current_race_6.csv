@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/04/14,1,RUN RUN COOL,H Bentley,133,1212,8,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-1,2024/04/14,2,BOWSER,A Hamelin,132,1170,5,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-2,2024/04/14,3,THE GREAT MASTER,Y L Chung,132,1115,7,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-3,2024/04/14,4,WONDERFUL UNICORN,L Hewitson,131,1044,6,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-4,2024/04/14,5,KA YING WARRIOR,Z Purton,128,1198,14,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-5,2024/04/14,6,METRO WARRIOR,K C Leung,128,1192,13,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-6,2024/04/14,7,BROTHER CHENG,H T Mo,126,1082,11,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-7,2024/04/14,8,CIRCUIT ELEVEN,M F Poon,126,1122,1,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-8,2024/04/14,9,LUCKY SYMPHONY,A Atzeni,126,1173,4,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-9,2024/04/14,10,UNIVERSAL BLAZE,A Badel,126,1085,10,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-10,2024/04/14,11,YODA'S CHOICE,C Y Ho,123,1124,2,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-11,2024/04/14,12,GLORIOUS EXPERT,L Ferraris,122,1103,12,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-12,2024/04/14,13,HELLS BELLS,B Thompson,121,1183,3,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-13,2024/04/14,14,RUBY SAILING,B Avdulla,121,1167,9,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
+0,2024/04/17,1,KA YING CHEER,H Bowman,135,1212,3,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+1,2024/04/17,2,RUN RUN TIMING,E C W Wong,135,1141,2,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+2,2024/04/17,3,CALIFORNIA TOUCH,M Chadwick,134,1244,1,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+3,2024/04/17,4,CHAMPION METHOD,C L Chau,134,1112,12,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+4,2024/04/17,5,IVICTORIAM,A Hamelin,128,1126,7,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+5,2024/04/17,6,SILVER SPURS,C Y Ho,128,1068,6,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+6,2024/04/17,7,SO TREASURE,L Ferraris,128,1182,4,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+7,2024/04/17,8,GLORY B,K De Melo,124,1083,10,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+8,2024/04/17,9,MULTIDARLING,L Hewitson,122,1235,9,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+9,2024/04/17,10,COUNTRY DANCER,Z Purton,121,1103,5,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+10,2024/04/17,11,CHEER FOR SOUTH,Y L Chung,117,1049,8,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+11,2024/04/17,12,MY INTELLIGENT,M L Yeung,116,1105,11,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
