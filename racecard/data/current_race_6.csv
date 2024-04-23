@@ -1,13 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/04/20,1,MUST GO,B Avdulla,135,1165,4,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-1,2024/04/20,2,SOLID SHALAA,K Teetan,135,1158,6,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-2,2024/04/20,3,EVERYONE'S VICTORY,L Hewitson,128,1149,3,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-3,2024/04/20,4,VANTASTIC CHOICE,E C W Wong,127,1058,12,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-4,2024/04/20,5,LUCKY BANNER,A Badel,126,1003,7,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-5,2024/04/20,6,ROBOT KNIGHT,Z Purton,126,1089,5,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-6,2024/04/20,7,SPICY SPANGLE,K C Leung,125,1048,8,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-7,2024/04/20,8,HINOKAMI KAGURA,H Bentley,122,1096,2,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-8,2024/04/20,9,SMART LEADER,K De Melo,118,1150,1,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-9,2024/04/20,10,MIRACLES,Y L Chung,117,1142,10,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-10,2024/04/20,11,VALIANT ELEGANCE,A Hamelin,117,1141,11,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
-11,2024/04/20,12,HAPPY TANGO,H T Mo,115,1245,9,10,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Wet Slow
+0,2024/04/24,1,GOOD LUCK WIN,A Hamelin,134,1099,4,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+1,2024/04/24,2,SNOWALOT,Z Purton,134,1076,5,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+2,2024/04/24,3,VIVA HUNTER,M F Poon,134,1168,11,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+3,2024/04/24,4,PEGASUS GENERAL,Y L Chung,132,1013,1,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+4,2024/04/24,5,FORTUNE COOKIES,K De Melo,130,1047,8,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+5,2024/04/24,6,I CAN,A Atzeni,130,1067,2,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+6,2024/04/24,7,GAMEPLAYER WARRIOR,L Ferraris,128,1036,10,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+7,2024/04/24,8,STORM WINNER,C Y Ho,128,1227,7,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+8,2024/04/24,9,YOUNG VICTORY,C L Chau,126,1057,9,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+9,2024/04/24,10,CAN'T GO WONG,A Badel,124,1154,3,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+10,2024/04/24,11,KINGLY DEMEANOR,B Thompson,122,1170,6,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+11,2024/04/24,12,RELIABLE PROFIT,L Hewitson,120,1105,12,9,Class 4,1650,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding

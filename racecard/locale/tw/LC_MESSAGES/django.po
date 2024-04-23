@@ -179,6 +179,16 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+msgid "MAJESTIC EXPRESS"
+msgstr "英勇快車"
+
+
+msgid "GRAND NOVA"
+msgstr "鴻圖新星"
+
+msgid "SIGHT SUPREME"
+msgstr "超眼光"
+
 msgid "LA FORZA"
 msgstr "超力量"
 msgid "RUN YES RUN"
