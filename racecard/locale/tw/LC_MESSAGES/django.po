@@ -183,8 +183,59 @@ msgid "MAJESTIC EXPRESS"
 msgstr "英勇快車"
 
 
+
 msgid "GRAND NOVA"
 msgstr "鴻圖新星"
+
+msgid "STUNNING PEACH"
+msgstr "桃花開"
+
+msgid "GRAND BOSS"
+msgstr "鴻圖高星"
+
+msgid "BEAUTY ALLIANCE"
+msgstr "一起美麗"
+
+msgid "MAD COOL"
+msgstr "消暑樂祭"
+
+msgid "SUNRISE RONALDO"
+msgstr "旭日朗途"
+
+msgid "BELIEVING"
+msgstr "堅信"
+
+msgid "LITTLE BROSE"
+msgstr "禾道小子"
+
+msgid "TOP GUN"
+msgstr "壯志凌雲"
+msgid "HARMONY GALAXY"
+msgstr "香港神駒"
+
+msgid "OBAMBURUMAI"
+msgstr "大宴重酬"
+msgid "BRAVE EMPEROR"
+msgstr "勇大帝"
+msgid "CHAMPAGNE COLOR"
+msgstr "鑽彩"
+
+msgid "ELTON BAROWS"
+msgstr "傲蹄巴魯"
+
+msgid "DUBAI HONOUR"
+msgstr "譽滿杜拜"
+msgid "HISHI IGUAZU"
+msgstr "滂薄無比"
+msgid "PROGNOSIS"
+msgstr "先見"
+msgid "NORTH BRIDGE"
+msgstr "北橋"
+msgid "GUSTOSISIMO"
+msgstr "得道猴王"
+
+
+
 
 msgid "SIGHT SUPREME"
 msgstr "超眼光"
@@ -3437,6 +3488,24 @@ msgstr "綠族豐收"
 
 
 #: Jockey Names
+#april
+
+msgid "R Sakai"
+msgstr "坂井瑠星"
+msgid "L Morris"
+msgstr "莫萊斯"
+msgid "A Nishimura"
+msgstr "西村淳也"
+msgid "Y Iwata"
+msgstr "岩田康誠"
+
+
+
+
+
+
+
+
 msgid "B Shinn"
 msgstr "薛恩"
 

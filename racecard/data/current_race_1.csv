@@ -1,8 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/04/24,1,BEAUTY WAVES,Z Purton,130,1163,7,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-1,2024/04/24,2,HEROIC MASTER,H Bowman,129,1062,4,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-2,2024/04/24,3,HAPPY UNITED,Y L Chung,127,1112,2,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-3,2024/04/24,4,HARMONY FIRE,E C W Wong,125,1118,6,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-4,2024/04/24,5,SUPER FORTUNE,M F Poon,124,1206,5,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-5,2024/04/24,6,MAJESTIC EXPRESS,B Avdulla,120,1234,1,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-6,2024/04/24,7,YOUTHFUL SPIRITS,L Ferraris,120,1060,3,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+0,2024/04/28,1,ESCAPE ROUTE,B Avdulla,135,1078,14,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+1,2024/04/28,2,ROMANTIC FANTASY,Y L Chung,133,1111,1,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+2,2024/04/28,3,DARCI JOY,J McDonald,131,1071,11,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+3,2024/04/28,4,MISTER DAPPER,A Atzeni,131,1232,8,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+4,2024/04/28,5,JUMBO FORTUNE,B Shinn,129,1276,9,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+5,2024/04/28,6,REACH GOAL,Z Purton,129,1090,2,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+6,2024/04/28,7,SHARPEN BRIGHT,K Teetan,128,1007,7,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+7,2024/04/28,8,WINNING STEPS,M F Poon,128,1155,10,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+8,2024/04/28,9,CHATEAU LE PECHE,M L Yeung,125,1020,13,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+9,2024/04/28,10,SPECIAL HEDGE,C L Chau,125,1066,5,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+10,2024/04/28,11,INVINCIBLE MISSILE,E C W Wong,124,1124,6,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+11,2024/04/28,12,GOLD TACK,A Badel,121,1062,4,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+12,2024/04/28,13,SUNNY BABY,L Hewitson,120,1131,12,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+13,2024/04/28,14,LEGION OF MERIT,B Thompson,117,1239,3,10,Class 4,2000,Sha Tin:,"TURF - ""A"" Course",Good To Yielding

@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/04/24,1,NOBLE ONE,C Y Ho,135,1110,9,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-1,2024/04/24,2,TACTICAL COMMAND,Z Purton,135,1078,7,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-2,2024/04/24,3,BEAU GOSSE,H Bowman,134,1128,4,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-3,2024/04/24,4,MR GOOD VIBES,K Teetan,133,1054,1,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-4,2024/04/24,5,PODIUM,A Badel,133,1042,11,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-5,2024/04/24,6,STORMTROUPER,A Hamelin,133,1088,3,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-6,2024/04/24,7,SWEET DIAMOND,H Bentley,133,1183,5,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-7,2024/04/24,8,WIND SPEEDER,M Chadwick,131,1051,12,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-8,2024/04/24,9,VIVA A LA,M F Poon,127,1111,6,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-9,2024/04/24,10,HERO ICON,A Atzeni,126,1218,2,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-10,2024/04/24,11,MILLENNIUM FALCON,L Hewitson,122,1177,10,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
-11,2024/04/24,12,EASY TWO,Y L Chung,115,1062,8,9,Class 5,1200,Happy Valley:,"TURF - ""C+3"" Course",Good To Yielding
+0,2024/04/28,1,DIVANO,L Hewitson,135,1128,9,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+1,2024/04/28,2,LIFELINE EXPRESS,H Bowman,134,1128,3,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+2,2024/04/28,3,LUCY IN THE SKY,K Teetan,128,1183,8,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+3,2024/04/28,4,GOLDEN DARCI,A Badel,127,1112,11,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+4,2024/04/28,5,GRAND BOSS,Y L Chung,127,1292,14,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+5,2024/04/28,6,HANDSOME BOMB,A Atzeni,127,1056,4,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+6,2024/04/28,7,MIGHTY STRENGTH,M F Poon,127,983,13,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+7,2024/04/28,8,GLORY ELITE,K C Leung,125,1174,5,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+8,2024/04/28,9,HAPPY FOR ALL,J McDonald,125,1112,12,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+9,2024/04/28,10,VERBIER,B Thompson,124,1245,7,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+10,2024/04/28,11,SILVER DESTINY,B Avdulla,122,1161,6,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+11,2024/04/28,12,SPICY GOLD,L Ferraris,121,1198,1,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+12,2024/04/28,13,ISLAND GOLDEN,H Bentley,120,1084,10,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+13,2024/04/28,14,GANGNAM STAR,M Chadwick,116,1089,2,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
