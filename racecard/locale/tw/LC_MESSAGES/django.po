@@ -179,6 +179,31 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+
+#2024-05-01
+msgid "CRAIG'S MASTER"
+msgstr "紀利大師"
+
+msgid "DOUBLE BINGO"
+msgstr "東方寶寶"
+msgid "EMBRACES"
+msgstr "納百川"
+msgid "FLYING WROTE"
+msgstr "東來欣賞"
+msgid "THE AZURE"
+msgstr "追風"
+msgid "CLEAR COURAGE"
+msgstr "八勇士"
+msgid "SWEET SMILE"
+msgstr "pyt銘記知友"
+
+
+
+
+
+
+
+###
 msgid "MAJESTIC EXPRESS"
 msgstr "英勇快車"
 
