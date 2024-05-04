@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_social_share",
     "racecard",
+    'django_comments',
+    'django_comments_xtd',
+    'django.contrib.sites',
+
 ]
 
 MIDDLEWARE = [
