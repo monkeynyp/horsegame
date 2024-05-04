@@ -180,6 +180,21 @@ msgstr "預測龍虎榜"
 
 #: Horse Name
 
+#2024-05-05
+msgid "LORD OF THE ROSE"
+msgstr "玫瑰寶"
+
+msgid "CONCORDE STAR"
+msgstr "歷險大將"
+msgid "BOTTOMUPTOGETHER"
+msgstr "天天同樂"
+msgid "TAIHANG SCENERY"
+msgstr "太行美景"
+msgid "NEBRASKAN"
+msgstr "獵寶勤"
+
+
+
 #2024-05-01
 msgid "CRAIG'S MASTER"
 msgstr "紀利大師"
