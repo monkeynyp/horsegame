@@ -1,11 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/05,1,COLOURFUL BARON,Z Purton,135,1120,8,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-1,2024/05/05,2,SUNNY SHINES,Y L Chung,133,1094,2,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-2,2024/05/05,3,SUPERB DADDY,L Hewitson,131,1097,5,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-3,2024/05/05,4,LEATHER MASTER,B Thompson,129,1126,10,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-4,2024/05/05,5,FASTPASS,M Chadwick,126,993,4,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-5,2024/05/05,6,JOYFUL CHAMPION,K Teetan,125,1145,1,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-6,2024/05/05,7,ARTHUR'S KINGDOM,M F Poon,123,1003,7,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-7,2024/05/05,8,GOLDEN FAIRY,A Badel,123,1040,6,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-8,2024/05/05,9,DIAMOND WINNER,A Hamelin,120,1111,9,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-9,2024/05/05,10,GREEN LASER,M L Yeung,117,1115,3,11,Class 5,2000,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
+0,2024/05/08,1,CHATEAUNEUF,Z Purton,135,1201,11,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/05/08,2,ACE ONE,H Bowman,131,1145,12,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/05/08,3,EVER SMART,H Bentley,129,1142,6,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/05/08,4,FOXHUNTER KING,H T Mo,129,1034,10,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/05/08,5,WIN SPEED,B Thompson,129,1109,2,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/05/08,6,MR VALIANT,B Avdulla,128,1058,4,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/05/08,7,FLYING PHANTOM,A Badel,125,1005,8,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/05/08,8,LEAN MASTER,E C W Wong,125,1075,1,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/05/08,9,SUPER GLORY,A Atzeni,125,1121,9,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/05/08,10,LUCKY QUALITY,Y L Chung,122,1103,5,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/05/08,11,COLONEL,M F Poon,118,1181,3,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/05/08,12,NEW POWER,K Teetan,117,1087,7,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good

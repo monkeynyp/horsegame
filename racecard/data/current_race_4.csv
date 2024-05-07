@@ -1,11 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/05,1,PACKING HURRICANE,E C W Wong,135,993,3,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-1,2024/05/05,2,ILLUMINOUS,K Teetan,128,987,9,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-2,2024/05/05,3,STAR MAC,H Bowman,128,1176,1,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-3,2024/05/05,4,HOLY LAKE,C Y Ho,127,1112,8,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-4,2024/05/05,5,EIGHTEEN CARAT,A Badel,122,1122,2,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-5,2024/05/05,6,SUNSTRIDER,Z Purton,120,1127,6,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-6,2024/05/05,7,ORIENTAL SMOKE,B Thompson,118,1220,4,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-7,2024/05/05,8,AFFORDABLE,L Hewitson,116,1238,5,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-8,2024/05/05,9,BILLIONAIRE SECRET,Y L Chung,116,1028,10,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-9,2024/05/05,10,KIMBERLEY,M F Poon,115,1092,7,11,Class 3,1800,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
+0,2024/05/08,1,DENFIELD,Y L Chung,135,1144,6,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/05/08,2,SPEED SWORD,K C Leung,130,1104,10,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/05/08,3,RACINGRACE,Z Purton,127,1082,9,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/05/08,4,VANTASTIC CHOICE,E C W Wong,127,1073,1,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/05/08,5,ACE POWER,A Atzeni,125,1110,4,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/05/08,6,SO TREASURE,L Ferraris,125,1177,3,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/05/08,7,WOOD ON FIRE,K Teetan,125,1120,2,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/05/08,8,SUPERB WITNESS,M Chadwick,124,1099,12,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/05/08,9,VULCANUS,M F Poon,123,1155,5,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/05/08,10,DAN ATTACK,A Hamelin,120,1145,7,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/05/08,11,VALHALLA,C Y Ho,120,1187,11,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/05/08,12,MULTIDARLING,B Thompson,119,1242,8,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good

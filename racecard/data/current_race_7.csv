@@ -1,15 +1,11 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/05,1,DARING PURSUIT,C Y Ho,133,1239,8,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-1,2024/05/05,2,MIDORI BURLY,L Hewitson,133,1137,9,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-2,2024/05/05,3,BEAUTY GLORY,B Avdulla,132,1160,13,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-3,2024/05/05,4,ARIEL,E C W Wong,130,1217,5,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-4,2024/05/05,5,SUPER LEGENDS,Y L Chung,130,1102,7,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-5,2024/05/05,6,WINDICATOR FAMILY,A Badel,128,966,1,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-6,2024/05/05,7,CALL ME SUPREME,H Bowman,126,1148,14,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-7,2024/05/05,8,STORMING DRAGON,Z Purton,126,1196,4,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-8,2024/05/05,9,MATSU VICTOR,K De Melo,124,1099,12,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-9,2024/05/05,10,SMILING COLLECTOR,K Teetan,124,1143,10,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-10,2024/05/05,11,CIRCUIT BLAZING,A Atzeni,121,1249,11,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-11,2024/05/05,12,TOP PEAK,H Bentley,121,1207,3,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-12,2024/05/05,13,SUPER BONUS,B Thompson,120,1081,2,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-13,2024/05/05,14,TRAVEL GOLF,M Chadwick,120,1085,6,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
+0,2024/05/08,1,HAMERON,H Bowman,135,1031,6,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/05/08,2,RED HARE KING,M Chadwick,125,1073,1,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/05/08,3,ZOOM BOOM,A Atzeni,125,1111,7,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/05/08,4,GIDDY UP,B Avdulla,124,1122,5,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/05/08,5,LOVERO,Y L Chung,124,1114,10,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/05/08,6,LOOKING GREAT,M F Poon,122,1127,4,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/05/08,7,STAR CONTACT,K Teetan,122,1180,8,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/05/08,8,ORIENTAL TYCOON,H Bentley,118,1076,9,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/05/08,9,ACCOLADE START,A Badel,117,1045,3,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/05/08,10,CHAIN OF GOLD,Z Purton,117,1019,2,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good

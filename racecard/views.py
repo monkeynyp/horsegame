@@ -16,10 +16,16 @@ from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
 from django.utils import translation
 from django.http import JsonResponse
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 from .get_results import get_results
 from django.contrib import messages
 import datetime
+
+
+
+#from django_comments.models import Comment
+#from django.contrib.contenttypes.models import ContentType
+
 
 
 ## Horse Raching Features Create your views here.
@@ -486,4 +492,5 @@ def user_logout(request):
 #login_required
 def member(request):
      return render(request, 'member.html')
+
 

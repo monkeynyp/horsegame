@@ -1,0 +1,16 @@
+{% extends "master.html" %} {% block title %} Contact Monkey {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
+{% load comments %}
+
+<h1>Comments</h1>
+    <ul>
+        {% for comment in comments %}
+            <li>{{ comment.comment }}</li>
+        {% endfor %}
+    </ul>
+
+
+
+{% endblock %}
