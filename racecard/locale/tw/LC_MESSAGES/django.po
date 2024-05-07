@@ -181,6 +181,10 @@ msgstr "預測龍虎榜"
 #: Horse Name
 
 #2024-05-05
+msgid "VICTORYTHIRTYTHREE"
+msgstr "生生勝利"
+
+#2024-05-05
 msgid "LORD OF THE ROSE"
 msgstr "玫瑰寶"
 
