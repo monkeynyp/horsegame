@@ -180,7 +180,21 @@ msgstr "預測龍虎榜"
 
 #: Horse Name
 
-#2024-05-05
+#2024-05-11
+msgid "FAST RESPONDER"
+msgstr "會長之寶"
+msgid "VTOY SOLTERO"
+msgstr "整蠱專家"
+msgid "HIGHLAND RAHY"
+msgstr "智勇名駒"
+msgid "ALP'S AFFECTION"
+msgstr "樂威煌"
+msgid "VCIRCUIT MAXIMUS"
+msgstr "電路豪傑"
+msgid "STEPS AHEAD"
+msgstr "遙遙領先"
+
+#2024-05-08
 msgid "VICTORYTHIRTYTHREE"
 msgstr "生生勝利"
 

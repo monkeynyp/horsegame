@@ -1,13 +1,10 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/08,1,CHATEAUNEUF,Z Purton,135,1201,11,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/05/08,2,ACE ONE,H Bowman,131,1145,12,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/05/08,3,EVER SMART,H Bentley,129,1142,6,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/05/08,4,FOXHUNTER KING,H T Mo,129,1034,10,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/05/08,5,WIN SPEED,B Thompson,129,1109,2,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/05/08,6,MR VALIANT,B Avdulla,128,1058,4,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/05/08,7,FLYING PHANTOM,A Badel,125,1005,8,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/05/08,8,LEAN MASTER,E C W Wong,125,1075,1,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/05/08,9,SUPER GLORY,A Atzeni,125,1121,9,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/05/08,10,LUCKY QUALITY,Y L Chung,122,1103,5,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-10,2024/05/08,11,COLONEL,M F Poon,118,1181,3,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-11,2024/05/08,12,NEW POWER,K Teetan,117,1087,7,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+0,2024/05/11,1,ALACRITY,Z Purton,135,1085,3,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+1,2024/05/11,2,APACHE PASS,H Bowman,134,1111,4,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+2,2024/05/11,3,BERLIN TANGO,B Avdulla,134,1034,8,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+3,2024/05/11,4,WOODFIRE BRO,K C Leung,133,1174,9,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+4,2024/05/11,5,M UNICORN,C Y Ho,129,1186,6,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+5,2024/05/11,6,SO WE JOY,A Atzeni,127,1081,7,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+6,2024/05/11,7,SAMARKAND,L Hewitson,126,1158,5,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+7,2024/05/11,8,ROMANTIC CHARM,K Teetan,119,1164,2,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+8,2024/05/11,9,MASSIVE ACTION,H T Mo,118,1207,1,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good

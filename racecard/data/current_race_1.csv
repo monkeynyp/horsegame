@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/08,1,MY INTELLIGENT,Z Purton,135,1107,10,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/05/08,2,YOUTH POWER,M L Yeung,134,1006,8,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/05/08,3,THE CONCENTRATION,K C Leung,133,1043,7,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/05/08,4,WOODFIRE CHAMP,A Atzeni,133,995,6,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/05/08,5,ALLOY KING,H Bentley,132,1124,9,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/05/08,6,HERO STAR,Y L Chung,132,1141,4,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/05/08,7,FIRE BALL,A Hamelin,131,1035,5,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/05/08,8,SAME TO YOU,B Avdulla,131,973,12,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/05/08,9,GENERAL ACE,C Y Ho,129,1056,3,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/05/08,10,DOUBLE SHOW,L Ferraris,127,1237,1,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-10,2024/05/08,11,H Z TOURBILLON,B Thompson,127,1046,2,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
-11,2024/05/08,12,VAMOS,H Bowman,127,1096,11,9,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+0,2024/05/11,1,ALWAYS AWESOME,H Bowman,135,1151,3,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/05/11,2,JOYFUL FRIENDSHIP,M F Poon,135,1136,7,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/05/11,3,NOBLE WIN,B Avdulla,133,1186,1,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/05/11,4,MASTER OF ALL,M L Yeung,132,1050,6,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/05/11,5,RIGHT HONOURABLE,L Ferraris,131,1027,12,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/05/11,6,BEAT HOLLOW,E C W Wong,130,1214,5,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/05/11,7,DAILY TROPHY,C Y Ho,130,1152,11,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/05/11,8,PERFECT PEACH,L Hewitson,130,1078,2,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/05/11,9,MORE RICE,B Thompson,129,1192,13,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/05/11,10,HO HO STAR,K C Leung,128,1088,8,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+10,2024/05/11,11,TSUEN WAN GLORY,M Chadwick,126,1062,4,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+11,2024/05/11,12,HERO ICON,K De Melo,123,1223,14,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+12,2024/05/11,13,GENERAL WINNER,K Teetan,116,1293,10,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
+13,2024/05/11,14,FORTUNE MASTER,A Badel,115,1070,9,10,Class 5,1400,Sha Tin:,"TURF - ""C"" Course",Good
