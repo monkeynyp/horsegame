@@ -1,11 +1,10 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/11,1,BABY CRYSTAL,C Y Ho,135,1227,10,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
-1,2024/05/11,2,FAST RESPONDER,L Hewitson,135,1053,9,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
-2,2024/05/11,3,PLEASANT ENDEAVOR,K C Leung,131,1179,7,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
-3,2024/05/11,4,TOY SOLTERO,B Thompson,131,1217,8,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
-4,2024/05/11,5,FLYING HIGH,M Chadwick,130,1121,5,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
-5,2024/05/11,6,HAPPY UNITED,Z Purton,124,1123,1,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
-6,2024/05/11,7,SUPER LOVE DRAGON,K De Melo,122,1222,6,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
-7,2024/05/11,8,HIGHLAND RAHY,A Atzeni,121,1185,2,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
-8,2024/05/11,9,MAJESTIC EXPRESS,A Hamelin,120,1233,3,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
-9,2024/05/11,10,KA YING VICTORY,A Badel,119,1246,4,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+0,2024/05/15,1,WINNING DRAGON,B Avdulla,135,1062,4,9,Class 3,1800,Happy Valley:,"TURF - ""C"" Course",Good
+1,2024/05/15,2,GALLANT WAKING,C Y Ho,134,1107,5,9,Class 3,1800,Happy Valley:,"TURF - ""C"" Course",Good
+2,2024/05/15,3,NOBLE PURSUIT,H Bowman,128,1182,6,9,Class 3,1800,Happy Valley:,"TURF - ""C"" Course",Good
+3,2024/05/15,4,BRAVEHEARTS,A Badel,127,1099,9,9,Class 3,1800,Happy Valley:,"TURF - ""C"" Course",Good
+4,2024/05/15,5,AWESOME FLUKE,A Atzeni,125,1184,1,9,Class 3,1800,Happy Valley:,"TURF - ""C"" Course",Good
+5,2024/05/15,6,QUANTUM PATCH,K Teetan,125,1138,7,9,Class 3,1800,Happy Valley:,"TURF - ""C"" Course",Good
+6,2024/05/15,7,FLAMINGO TRILLION,K C Leung,124,1228,3,9,Class 3,1800,Happy Valley:,"TURF - ""C"" Course",Good
+7,2024/05/15,8,DEVILDOM,L Hewitson,121,1078,8,9,Class 3,1800,Happy Valley:,"TURF - ""C"" Course",Good
+8,2024/05/15,9,INTREPID WINNER,K De Melo,118,1056,2,9,Class 3,1800,Happy Valley:,"TURF - ""C"" Course",Good

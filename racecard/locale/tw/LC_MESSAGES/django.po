@@ -179,6 +179,9 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+#2024-05-15
+msgid "SIGHT HAPPY"
+msgstr "囍眼光"
 
 #2024-05-11
 msgid "FAST RESPONDER"
@@ -228,7 +231,7 @@ msgstr "追風"
 msgid "CLEAR COURAGE"
 msgstr "八勇士"
 msgid "SWEET SMILE"
-msgstr "pyt銘記知友"
+msgstr "銘記知友"
 
 
 

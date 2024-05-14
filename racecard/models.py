@@ -56,3 +56,17 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
+
+class Marksix_hist(models.Model):
+    Draw = models.CharField(max_length=255)
+    Date = models.DateField()
+    No1 = models.IntegerField()
+    No2 = models.IntegerField()
+    No3 = models.IntegerField()
+    No4 = models.IntegerField()
+    No5 = models.IntegerField()
+    No6 = models.IntegerField()
+    No7 = models.IntegerField()
+
+    def __str__(self):
+        return f"{self.Draw} - {self.Date}"

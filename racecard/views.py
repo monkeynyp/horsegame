@@ -1,13 +1,13 @@
 from django.shortcuts import render,redirect
 import pandas as pd
-import os
+import os,json,math
 import requests
 from django.conf import settings
 from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import UserTips,UserScores,Article,UserTips_my
+from .models import UserTips,UserScores,Article,UserTips_my,Marksix_hist
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
 from .forms import CustomUserCreationForm
@@ -20,6 +20,7 @@ from django.shortcuts import get_object_or_404, render
 from .get_results import get_results
 from django.contrib import messages
 import datetime
+from sklearn.neighbors import KNeighborsRegressor
 
 
 
@@ -494,3 +495,36 @@ def member(request):
      return render(request, 'member.html')
 
 
+def lottory_predict(request):
+     # Retrieve the data from the Marksix_hist model, sorted by Date in descending order
+    data = Marksix_hist.objects.order_by('-Date').values_list('No1', flat=True)[:21]
+
+    # Convert the queryset to a list
+    data_list = list(data)
+
+    # Prepare the features (X) and target (y) for KNN
+    X = [[x] for x in data_list[:-1]]  # Features: all numbers except the last one
+    y = data_list[1:]  # Target: the next number for each feature
+
+    # Create and fit the KNN model
+    knn_model = KNeighborsRegressor(n_neighbors=3)
+    knn_model.fit(X, y)
+
+    # Predict the next number
+    next_number = math.ceil(knn_model.predict([[data_list[-1]]])[0])
+    print("Next_number:",next_number)
+
+    # Prepare data for the chart
+    labels = list(range(1, 21))  # Numbers 1 to 20 for the recent numbers
+    labels.append('Next')  # Label for the next number
+    predicted_numbers = knn_model.predict([[x] for x in range(1, 22)])
+
+    # Pass the results to the template
+    context = {
+        'recent_numbers': data_list[:-1],
+        'next_number': next_number,
+        'labels': json.dumps(labels),
+        'predicted_numbers': json.dumps(predicted_numbers.tolist()),
+    }
+
+    return render(request, 'lottory.html', context)

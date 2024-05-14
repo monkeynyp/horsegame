@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/11,1,LEEDOX,L Hewitson,135,1066,9,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-1,2024/05/11,2,LET'S DO IT,H Bowman,134,1141,14,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-2,2024/05/11,3,WINNING GOLD,K De Melo,133,1035,5,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-3,2024/05/11,4,LUCKY GOLD,C Y Ho,130,1191,11,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-4,2024/05/11,5,GOLDEN RISE,Z Purton,129,1010,8,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-5,2024/05/11,6,CHARITY GAIN,M L Yeung,127,1092,12,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-6,2024/05/11,7,HAPPY DAILY,Y L Chung,127,1070,2,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-7,2024/05/11,8,GIANT LEAP,A Atzeni,125,1104,1,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-8,2024/05/11,9,NEVER PETER OUT,M Chadwick,125,1083,6,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-9,2024/05/11,10,SOARING BRONCO,H Bentley,125,1109,7,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-10,2024/05/11,11,SUPER TAICHI,E C W Wong,125,1129,3,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-11,2024/05/11,12,EXCELLENT DADDY,L Ferraris,123,1278,10,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-12,2024/05/11,13,YEE CHEONG RAIDER,B Thompson,123,1128,13,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
-13,2024/05/11,14,YOUNG HORIZON,K Teetan,120,1151,4,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+0,2024/05/15,1,E UNIVERSE,L Hewitson,135,1035,7,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+1,2024/05/15,2,DOUBLE BINGO,L Ferraris,130,1074,5,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+2,2024/05/15,3,SIGHT SUPREME,Z Purton,128,1078,12,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+3,2024/05/15,4,PRIME MORTAR,Y L Chung,126,1056,11,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+4,2024/05/15,5,MISTER FOX,K De Melo,124,1083,8,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+5,2024/05/15,6,FAIRY HORSE,A Atzeni,123,1114,10,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+6,2024/05/15,7,HERCULES,C L Chau,123,1080,4,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+7,2024/05/15,8,LAPRAS,K Teetan,121,1052,1,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+8,2024/05/15,9,SPICY GOLD,A Badel,120,1202,9,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+9,2024/05/15,10,SUPER EAGLE,M Chadwick,120,1078,3,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+10,2024/05/15,11,HAPPY FEELING,B Thompson,117,1070,6,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+11,2024/05/15,12,HARMONY N HOME,M F Poon,117,1067,2,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good

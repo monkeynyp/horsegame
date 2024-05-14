@@ -1,0 +1,45 @@
+{% extends "master.html" %} {% block title %} Horse Racing Prediction By Machine Learning {% endblock %} {% block content %}
+{% load i18n %}
+{% load static %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+   <h1>Lottery Prediction</h1>
+<canvas id="myChart" width="300" height="300"></canvas>
+
+<script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var labels = JSON.parse('{{ labels|safe }}');
+  var recentNumbers = JSON.parse('{{ recent_numbers|safe }}');
+  var nextNumber = JSON.parse('{{ next_number|safe }}');
+
+  // Add the nextNumber to the recentNumbers array to connect the line
+  recentNumbers.push(nextNumber);
+
+  var chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: labels,
+          datasets: [{
+              label: '號碼',
+              data: recentNumbers,
+              borderColor: 'blue',
+              fill: false,
+              pointBackgroundColor: ['blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue','blue','red']
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          },
+          elements: {
+              point: {
+                  radius: 25,
+                  hoverRadius: 40
+              }
+          }
+      }
+  });
+</script>
+{% endblock %}

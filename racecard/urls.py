@@ -27,6 +27,7 @@ urlpatterns = [
     path('match_chart/', views.match_chart, name='match_chart'),
     path('data_update_console/', views.data_update_console, name='data_update_console'),
     path('update_race_result/', views.update_race_result, name='update_race_result'),
+    path('lottory_predict/', views.lottory_predict, name='lottory_predict'),
 
 
 
