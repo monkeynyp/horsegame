@@ -179,6 +179,43 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+#2024-05-11
+msgid "CAMP FIRE"
+msgstr "天火同心"
+msgid "SUPER INFINITY"
+msgstr "河好運"
+msgid "THE WINNABE"
+msgstr "以戰常勝"
+msgid "THUNDERBOLTAURUS B"
+msgstr "霹靂威龍"
+msgid "DRAGON FOUR SEAS"
+msgstr "騰龍四海"
+msgid "FUN N FUN TOGETHER"
+msgstr "天天耍樂"
+msgid "THAROLD WIN"
+msgstr "哈羅威"
+msgid "SOLID WIN"
+msgstr "一定掂"
+msgid "PERFECT PAIRING"
+msgstr "幸運同行"
+
+msgid "MOJAVE DESERT"
+msgstr "智跑得"
+msgid "WINNING DAY"
+msgstr "好日子"
+msgid "WRITTEN CASA"
+msgstr "領航財子"
+msgid "KEMPES"
+msgstr "囍眼光"
+msgid "YOUNG ACHIEVER"
+msgstr "競駿飛翔"
+msgid "BEAUTY THUNDER"
+msgstr "凝聚美麗"
+
+
+
+
+
 #2024-05-15
 msgid "SIGHT HAPPY"
 msgstr "囍眼光"

@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/15,1,ONE FOR ALL,L Hewitson,135,1224,11,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-1,2024/05/15,2,FORTUNE WARRIOR,Z Purton,133,1121,12,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-2,2024/05/15,3,MA COMET,B Avdulla,133,1130,4,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-3,2024/05/15,4,SUPER COMMANDER,E C W Wong,133,1066,10,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-4,2024/05/15,5,SERGEANT PEPPER,H Bowman,131,1164,7,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-5,2024/05/15,6,SIGHT HAPPY,K Teetan,128,1097,9,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-6,2024/05/15,7,CIRCUIT SEVEN,M F Poon,122,1165,8,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-7,2024/05/15,8,CAMINO,C Y Ho,121,1138,1,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-8,2024/05/15,9,HAPPY HORSE,M Chadwick,121,1102,3,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-9,2024/05/15,10,GORGEOUS VITALITY,A Hamelin,120,1097,2,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-10,2024/05/15,11,JOY IN JOY,A Atzeni,117,1171,6,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
-11,2024/05/15,12,PHILOS,Y L Chung,117,1135,5,9,Class 4,1000,Happy Valley:,"TURF - ""C"" Course",Good
+0,2024/05/19,1,THE ABSOLUTE,L Ferraris,134,1134,8,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+1,2024/05/19,2,RUN RUN COOL,H Bentley,132,1214,10,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+2,2024/05/19,3,ARIEL,E C W Wong,130,1217,6,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+3,2024/05/19,4,VOLCANIC SPARK,B Avdulla,130,1085,3,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+4,2024/05/19,5,WAR OF COURAGE,K H Chan,129,1241,14,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+5,2024/05/19,6,MEEPMEEP,Z Purton,128,1058,1,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+6,2024/05/19,7,AMAZING AWARD,M F Poon,127,1047,12,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+7,2024/05/19,8,STARMEN,A Atzeni,127,1130,7,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+8,2024/05/19,9,GRAND CONQUEROR,A Badel,125,1050,5,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+9,2024/05/19,10,SKY TRUST,H Bowman,125,1165,2,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+10,2024/05/19,11,GREAT ACHIEVER,C L Chau,121,1039,11,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+11,2024/05/19,12,VULCANUS,Y L Chung,121,1157,13,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+12,2024/05/19,13,HOSS,K Teetan,120,1104,4,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
+13,2024/05/19,14,HIGH RISE POWER,L Hewitson,118,1162,9,10,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good
