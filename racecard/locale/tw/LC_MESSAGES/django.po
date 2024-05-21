@@ -179,6 +179,9 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+
+msgid "	MIDORI GLORY"
+msgstr "綠色好威"
 #2024-05-11
 msgid "CAMP FIRE"
 msgstr "天火同心"
