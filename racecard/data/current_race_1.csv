@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/22,1,KEEN UNITY,L Ferraris,135,1161,9,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-1,2024/05/22,2,COLOURFUL BARON,Y L Chung,132,1126,6,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-2,2024/05/22,3,CLASSIC ARCHI,H Bentley,131,1056,2,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-3,2024/05/22,4,GO GO GO,Z Purton,130,1098,1,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-4,2024/05/22,5,HAPPY HERO,L Hewitson,130,1049,4,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-5,2024/05/22,6,NINJA DERBY,M Chadwick,130,1108,10,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-6,2024/05/22,7,SUNNY SHINES,A Atzeni,128,1085,5,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-7,2024/05/22,8,CIRCUIT ELITE,C Y Ho,125,1276,8,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-8,2024/05/22,9,FASTPASS,K C Leung,121,988,3,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-9,2024/05/22,10,ARTHUR'S KINGDOM,K Teetan,118,997,11,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-10,2024/05/22,11,DIAMOND WINNER,A Badel,115,1112,12,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
-11,2024/05/22,12,GREEN LASER,M L Yeung,115,1117,7,9,Class 5,2200,Happy Valley:,"TURF - ""C+3"" Course",Good
+0,2024/05/26,1,THUNDER BLINK,C L Chau,133,1147,5,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/05/26,2,LA FORZA,Z Purton,128,1059,2,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/05/26,3,CALIFORNIA BANNER,Y L Chung,126,1117,8,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/05/26,4,CALIFORNIA MOXIE,B Avdulla,126,1079,6,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/05/26,5,LORD OF THE ROSE,K H Chan,126,1104,9,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/05/26,6,MEANINGFUL DRAGON,C Y Ho,126,1172,11,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/05/26,7,SANTORINI,K Teetan,126,1073,1,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/05/26,8,SMART ZIPANG,K De Melo,126,1025,12,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/05/26,9,CONCORDE STAR,K C Leung,121,1045,4,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/05/26,10,ETALON OR,A Badel,121,1114,14,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/05/26,11,PATCH OF COSMO,L Ferraris,121,1225,10,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/05/26,12,RUN YES RUN,M Chadwick,121,1064,7,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/05/26,13,SUPREME WINNER,B Thompson,121,1048,3,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/05/26,14,WORLD HERO,A Atzeni,121,1142,13,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good

@@ -180,6 +180,31 @@ msgstr "預測龍虎榜"
 
 #: Horse Name
 
+#2024-05-26
+msgid "SMART ZIPANG"
+msgstr "黃金見聞"
+msgid "ETALON OR"
+msgstr "準輝煌"
+msgid "PATCH OF COSMO"
+msgstr "錶之宇宙"
+msgid "WORLD HERO"
+msgstr "環球英雄"
+msgid "MY WISH"
+msgstr "祝願"
+msgid "DRAGON JOY"
+msgstr "皇仁歡星"
+msgid "YUEN LONG ELITE"
+msgstr "元朗精英"
+msgid "REBEL'S ROMANCE"
+msgstr "桀驁之戀"
+msgid "PRESTIGE ALWAYS"
+msgstr "盈妍威楓"
+msgid "SUPREME AGILITY"
+msgstr "奮鬥心"
+
+
+
+
 msgid "MIDORI GLORY"
 msgstr "綠色好威"
 #2024-05-11

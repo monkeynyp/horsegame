@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/22,1,EXUBERANT,C L Chau,135,1193,6,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-1,2024/05/22,2,FLOOF,H T Mo,135,1036,8,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-2,2024/05/22,3,AMAZING ACE,Z Purton,132,1241,5,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-3,2024/05/22,4,EXCEL WONGCHOY,C Y Ho,130,1108,9,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-4,2024/05/22,5,SCOTCH TYCOON,L Ferraris,130,1101,4,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-5,2024/05/22,6,ERNEST FEELING,A Hamelin,128,1248,11,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-6,2024/05/22,7,FLYING WROTE,Y L Chung,127,1108,3,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-7,2024/05/22,8,SWEET SMILE,H Bowman,127,1036,2,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-8,2024/05/22,9,SKY PROPHET,K Teetan,125,1126,12,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-9,2024/05/22,10,LEAN MASTER,H Bentley,124,1073,1,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-10,2024/05/22,11,SPEEDY CHARIOT,A Atzeni,119,1118,7,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-11,2024/05/22,12,SO AWESOME,L Hewitson,118,1134,10,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
+0,2024/05/26,1,BOTTOMUPTOGETHER,Z Purton,135,1057,3,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/05/26,2,MULTISUPER,L Hewitson,135,1170,8,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/05/26,3,METRO WARRIOR,K C Leung,134,1183,10,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/05/26,4,RED ELEGANCE,A Atzeni,132,1123,4,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/05/26,5,AURORA LADY,B Avdulla,127,1166,5,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/05/26,6,CIRCUIT VICTORY,M F Poon,127,1189,12,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/05/26,7,MY WISH,L Ferraris,127,987,13,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/05/26,8,RAGNARR,H Bowman,127,1058,6,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/05/26,9,WINNING MONEY,C Y Ho,126,1192,2,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/05/26,10,FLYING DRAGON,H Bentley,125,1245,7,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/05/26,11,NEVER PETER OUT,C L Chau,123,1078,9,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/05/26,12,PROSECCO,K Teetan,122,1136,11,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/05/26,13,SUPER AXIOM,Y L Chung,121,1259,1,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/05/26,14,MOLLY'S WITNESS,B Thompson,120,1129,14,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good

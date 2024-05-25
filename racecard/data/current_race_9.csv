@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/22,1,BUNDLE OF CHARM,A Badel,135,1185,11,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-1,2024/05/22,2,MAJESTIC KNIGHT,H Bowman,135,1204,9,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-2,2024/05/22,3,KURPANY,E C W Wong,132,1170,10,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-3,2024/05/22,4,TOMODACHI KOKOROE,K Teetan,129,1151,2,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-4,2024/05/22,5,COLOURFUL EMPEROR,Y L Chung,127,1040,12,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-5,2024/05/22,6,SEASONS WIT,K De Melo,127,1119,8,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-6,2024/05/22,7,GUMMY GUMMY,C L Chau,123,1193,6,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-7,2024/05/22,8,SUPERB CAPITALIST,M Chadwick,123,1155,5,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-8,2024/05/22,9,HARMONY N BLESSED,A Atzeni,122,1168,1,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-9,2024/05/22,10,WE ARE HERO,B Thompson,120,1201,3,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-10,2024/05/22,11,NORDIC DRAGON,M F Poon,118,1130,7,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-11,2024/05/22,12,HUMBLE STAR,C Y Ho,117,1155,4,9,Class 2,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
+0,2024/05/26,1,LITTLE BROSE,H Bowman,135,1127,3,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/05/26,2,WINNING ICEY,C Y Ho,135,1188,14,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/05/26,3,SOLID IMPACT,A Badel,132,1045,5,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/05/26,4,TOY SOLTERO,B Thompson,132,1203,7,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/05/26,5,PRESTIGE ALWAYS,K Teetan,128,1087,1,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/05/26,6,PHOENIX LIGHT,A Atzeni,127,1078,12,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/05/26,7,PRAWNS ELEVEN,H Bentley,127,1103,10,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/05/26,8,PULSAR STRIDER,L Hewitson,125,1144,2,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/05/26,9,CALL ME GLORIOUS,Z Purton,121,1224,9,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/05/26,10,CAMPIONE,Y L Chung,120,1154,4,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/05/26,11,HAPPY DAY,K De Melo,120,1244,13,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/05/26,12,NEBRASKAN,M F Poon,120,1038,8,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/05/26,13,BEAUTY MISSILE,A Hamelin,119,1208,11,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/05/26,14,TELECOM POWER,H T Mo,118,1028,6,10,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good

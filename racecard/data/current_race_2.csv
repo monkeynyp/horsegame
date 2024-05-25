@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/22,1,CALIFORNIA CIBLE,Y L Chung,135,1229,1,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-1,2024/05/22,2,DRACO,L Hewitson,128,1177,8,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-2,2024/05/22,3,IVICTORIAM,B Thompson,128,1103,10,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-3,2024/05/22,4,VICTORYTHIRTYTHREE,H Bentley,128,1109,2,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-4,2024/05/22,5,SO TREASURE,L Ferraris,126,1178,9,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-5,2024/05/22,6,TALENTS SUPREMO,K Teetan,123,1100,3,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-6,2024/05/22,7,VALHALLA,C Y Ho,123,1191,11,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-7,2024/05/22,8,MISTER FOX,A Atzeni,122,1062,7,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-8,2024/05/22,9,SHINKANSEN,K De Melo,122,1158,6,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-9,2024/05/22,10,NEW POWER,M L Yeung,121,1089,4,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-10,2024/05/22,11,TRAVEL GOLF,M Chadwick,120,1073,12,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
-11,2024/05/22,12,TATTENHAM,A Hamelin,118,1109,5,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good
+0,2024/05/26,1,LADY BILLIE,M Chadwick,135,1126,12,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/05/26,2,JOYFUL FRIENDSHIP,H Bowman,134,1125,8,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/05/26,3,LOOKING COOL,K Teetan,134,1143,3,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/05/26,4,SUNNY BABY,A Atzeni,134,1137,7,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/05/26,5,AROMATICA,L Hewitson,133,1175,11,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/05/26,6,MEDIC ELITE,A Hamelin,131,1106,6,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/05/26,7,SPLENDID STAR,H Bentley,131,1085,10,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/05/26,8,RIGHT HONOURABLE,B Thompson,129,1014,4,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/05/26,9,SPEEDSTAR,B Avdulla,129,1063,1,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/05/26,10,SMART BEAUTY,Z Purton,127,1102,5,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/05/26,11,SUPERB DADDY,Y L Chung,125,1101,14,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/05/26,12,FOXHUNTER WAY,H T Mo,115,1052,13,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/05/26,13,STAR OF GLORY,M F Poon,115,1072,2,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/05/26,14,BROTHER PEARL,A Badel,115,1044,9,10,Class 5,1600,Sha Tin:,"TURF - ""A"" Course",Good

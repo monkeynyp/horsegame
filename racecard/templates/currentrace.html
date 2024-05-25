@@ -122,7 +122,7 @@
   <div class="w3-col w3-padding-top-32 l6 s12" >
         <div class="w3-margin">
         <a href="/view_by_member" class="w3-button w3-black"><i class="fa-solid fa-circle-arrow-right fa-xl"></i>&nbsp {% trans 'Tips Summary' %}</a> &nbsp
-        <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-black"><i class="fa-solid fa-chess-knight fa-xl fa-beat"></i>&nbsp {% trans 'Horses Battle Chart' %}</a><span class="w3-tag w3-red w3-tooltip" style="transform:rotate(-15deg)">New</span><br><br>
+        <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-black"><i class="fa-solid fa-chess-knight fa-xl fa-beat"></i>&nbsp {% trans 'Horses Battle Chart' %}</a><br><br>
         &nbsp &nbsp <i class="fa-solid fa-person fa-xl"></i>&nbsp  {% trans 'Human'%} &nbsp 
         {% for item in tips_qty_by_type %}
             {% if item.user__groups__name == 'MailList' %}
@@ -142,7 +142,7 @@
         <div class="w3-row-padding">
         
         {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->
-          {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' 'w3-lime' 'w3-amber' as color silent %}
+          {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' 'w3-lime' 'w3-pale-blue' as color silent %}
               <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
                 
                 <header class="w3-container {{color}}" >
@@ -297,7 +297,7 @@
       // Get the current date and time
       var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
       // Define the start and end date and time for the period
-      var startDate = new Date("2024-05-22T18:35:00");
+      var startDate = new Date("2024-05-26T12:40:00");
       var endDate = new Date("2024-12-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period
