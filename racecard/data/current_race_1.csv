@@ -1,15 +1,6 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/05/26,1,THUNDER BLINK,C L Chau,133,1147,5,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-1,2024/05/26,2,LA FORZA,Z Purton,128,1059,2,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-2,2024/05/26,3,CALIFORNIA BANNER,Y L Chung,126,1117,8,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-3,2024/05/26,4,CALIFORNIA MOXIE,B Avdulla,126,1079,6,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-4,2024/05/26,5,LORD OF THE ROSE,K H Chan,126,1104,9,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-5,2024/05/26,6,MEANINGFUL DRAGON,C Y Ho,126,1172,11,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-6,2024/05/26,7,SANTORINI,K Teetan,126,1073,1,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-7,2024/05/26,8,SMART ZIPANG,K De Melo,126,1025,12,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-8,2024/05/26,9,CONCORDE STAR,K C Leung,121,1045,4,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-9,2024/05/26,10,ETALON OR,A Badel,121,1114,14,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-10,2024/05/26,11,PATCH OF COSMO,L Ferraris,121,1225,10,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-11,2024/05/26,12,RUN YES RUN,M Chadwick,121,1064,7,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-12,2024/05/26,13,SUPREME WINNER,B Thompson,121,1048,3,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
-13,2024/05/26,14,WORLD HERO,A Atzeni,121,1142,13,10,Griffin Race,1200,Sha Tin:,"TURF - ""A"" Course",Good
+0,2024/05/29,1,TELECOM FIGHTERS,H Bowman,135,1115,1,8,Class 2,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
+1,2024/05/29,2,BUNDLE OF CHARM,A Badel,133,1182,3,8,Class 2,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
+2,2024/05/29,3,ALL FOR ST PAUL'S,M F Poon,132,1101,2,8,Class 2,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
+3,2024/05/29,4,ADEFILL,K Teetan,119,1147,5,8,Class 2,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
+4,2024/05/29,5,YELLOWFIN,L Hewitson,119,1210,4,8,Class 2,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
