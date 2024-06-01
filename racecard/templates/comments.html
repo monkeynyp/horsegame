@@ -1,16 +1,17 @@
-{% extends "master.html" %} {% block title %} Contact Monkey {% endblock %} 
-{% load i18n %}
-{% load static %}
-{% block content %}
-{% load comments %}
+<!-- blog_post_detail.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
 
-<h1>Comments</h1>
-    <ul>
-        {% for comment in comments %}
-            <li>{{ comment.comment }}</li>
-        {% endfor %}
-    </ul>
-
-
-
-{% endblock %}
+    <!-- Render the comments form -->
+    {% load comments %}
+    <h2>Comments</h2>
+    {% render_comment_list for post %}
+    {% render_comment_form for post %}
+</body>
+</html>

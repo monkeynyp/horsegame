@@ -180,6 +180,21 @@ msgstr "預測龍虎榜"
 
 #: Horse Name
 
+#2024-06-02
+msgid "CONFRINGO"
+msgstr "閃亮老撾"
+msgid "YOUNG SUPERSTAR"
+msgstr "競駿先鋒"
+msgid "THRIVING BROTHERS"
+msgstr "富國兄弟"
+msgid "BRILLIANT EXPRESS"
+msgstr "神馳"
+msgid "TRIPLE BLISS"
+msgstr "三生福佑"
+
+
+
+
 #2024-05-26
 msgid "SMART ZIPANG"
 msgstr "黃金見聞"

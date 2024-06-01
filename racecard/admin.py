@@ -11,7 +11,8 @@ class UserTips_myAdmin(admin.ModelAdmin):
 
 class UserScoresAdmin(admin.ModelAdmin):
     list_display = ("user","total_records","total_hits","total_dividend","hit_weight")
-
+class MyModelAdmin(admin.ModelAdmin):
+    list_display = ("title","pub_date","user")
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ("title","pub_date","user")
 
