@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_social_share",
     "racecard",
-    'django_cryptography',
-    'django_comments',
+   # 'django_cryptography',
+    #'django_comments',
    # 'django_comments_xtd',
-     'django.contrib.sites',
+    # 'django.contrib.sites',
 
 ]
 
