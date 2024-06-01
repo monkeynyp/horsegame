@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django_cryptography.fields import encrypt
+
 
 # Create your models here.
 
@@ -73,9 +73,3 @@ class Marksix_hist(models.Model):
         return f"{self.Draw} - {self.Date}"
 
 
-class MyModel(models.Model):
-    name = models.CharField(max_length=100)
-    secret_info = encrypt(models.CharField(max_length=100))
-
-    def __str__(self):
-        return self.name
