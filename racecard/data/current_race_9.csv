@@ -1,10 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/02,1,VICTOR THE WINNER,K C Leung,135,1087,9,11,Group Three,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-1,2024/06/02,2,INVINCIBLE SAGE,H Bowman,129,1108,2,11,Group Three,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-2,2024/06/02,3,SIGHT SUCCESS,B Avdulla,128,1146,7,11,Group Three,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-3,2024/06/02,4,STOLTZ,C Y Ho,124,1163,5,10,Group Three,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-4,2024/06/02,5,FLYING ACE,A Badel,117,1222,3,10,Group Three,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-5,2024/06/02,6,HOWDEEPISYOURLOVE,A Atzeni,117,1193,1,10,Group Three,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-6,2024/06/02,7,MUGEN,H Bentley,115,1111,4,10,Group Three,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-7,2024/06/02,8,SON PAK FU,M Chadwick,115,1172,8,10,Group Three,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-8,2024/06/02,9,KA YING RISING,K Teetan,115,1094,6,10,Group Three,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
+0,2024/06/08,1,CALIFORNIATOTALITY,B Avdulla,135,1049,7,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/06/08,2,THE ABSOLUTE,H Bentley,135,1129,14,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/06/08,3,ARIEL,E C W Wong,132,1214,3,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/06/08,4,CELTIC TIMES,A Atzeni,130,1231,4,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/06/08,5,TRADITION,Y L Chung,130,1037,13,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/06/08,6,FLYING MOJITO,H Bowman,129,1102,11,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/06/08,7,DARCI JOY,K Teetan,128,1067,5,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/06/08,8,LUCKY TOUCH,Z Purton,127,1115,12,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/06/08,9,SUPER UNICORN,K C Leung,127,1071,6,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/06/08,10,SKYEY BLUE,M F Poon,126,1077,2,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+10,2024/06/08,11,CALL ME SUPREME,M Chadwick,124,1135,10,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+11,2024/06/08,12,MISSION VOICE,L Ferraris,124,1193,8,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+12,2024/06/08,13,SUPER WISE DRAGON,K De Melo,121,1261,1,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+13,2024/06/08,14,SPECIAL HEDGE,L Hewitson,120,1068,9,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good

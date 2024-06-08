@@ -1,15 +1,11 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/02,1,HARMONY N HOME,Y L Chung,135,1070,9,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-1,2024/06/02,2,MAXIMIZE HEART,H Bowman,134,1036,4,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-2,2024/06/02,3,TACTICAL COMMAND,A Badel,134,1072,1,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-3,2024/06/02,4,NOBLE ONE,C Y Ho,133,1114,13,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-4,2024/06/02,5,AROMATICA,H Bentley,132,1173,2,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-5,2024/06/02,6,JAZZ CLUB,B Avdulla,131,1162,14,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-6,2024/06/02,7,THE CONCENTRATION,L Ferraris,131,1047,12,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-7,2024/06/02,8,NOBLE WIN,A Hamelin,132,1183,7,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-8,2024/06/02,9,CHARMANDER,K De Melo,128,1147,8,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-9,2024/06/02,10,CASA LEGEND,A Atzeni,123,1160,10,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-10,2024/06/02,11,CHIRON,K C Leung,120,1148,3,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-11,2024/06/02,12,GENERAL WINNER,K Teetan,117,1300,11,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-12,2024/06/02,13,HAPPIHOOD,M L Yeung,117,1129,6,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-13,2024/06/02,14,DRAGON KINGDOM,B Thompson,116,1149,5,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
+0,2024/06/08,1,WE ARE HERO,H Bowman,135,1208,8,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/06/08,2,BABY CRYSTAL,E C W Wong,134,1233,1,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/06/08,3,FAST RESPONDER,Y L Chung,133,1064,7,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/06/08,4,PLEASANT ENDEAVOR,K C Leung,129,1192,9,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/06/08,5,FLYING HIGH,M Chadwick,126,1124,10,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/06/08,6,BRAVE STAR,A Atzeni,125,1093,3,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/06/08,7,KA YING VICTORY,A Badel,123,1242,6,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/06/08,8,ACE VICTORY,K Teetan,121,1201,4,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/06/08,9,SUPER LOVE DRAGON,K De Melo,120,1214,5,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/06/08,10,VIVA GRACIOUSNESS,C Y Ho,120,1076,2,10,Class 3,1000,Sha Tin:,"TURF - ""C"" Course",Good

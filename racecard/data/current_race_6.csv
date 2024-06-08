@@ -1,12 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/02,1,HASTEN DELIGHT,C Y Ho,135,1246,3,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-1,2024/06/02,2,JAMES TAK,C L Chau,135,1109,7,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-2,2024/06/02,3,ASTROLOGER,K Teetan,134,1166,11,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-3,2024/06/02,4,STELLAR EXPRESS,H Bowman,133,1106,6,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-4,2024/06/02,5,GREAT STATE,K De Melo,132,1095,10,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-5,2024/06/02,6,PRAWNS ELEVEN,H Bentley,127,1096,5,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-6,2024/06/02,7,ACE VICTORY,B Thompson,126,1203,4,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-7,2024/06/02,8,KING GLORIOSO,A Badel,123,1041,8,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-8,2024/06/02,9,YOUNG SUPERSTAR,Y L Chung,123,1118,1,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-9,2024/06/02,10,THRIVING BROTHERS,L Hewitson,122,1049,2,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
-10,2024/06/02,11,BULB EMPEROR,A Atzeni,120,1172,9,11,Class 3,1200,Sha Tin:,"TURF - ""B"" Course",Good To Yielding
+0,2024/06/08,1,BOWSER,A Hamelin,135,1171,3,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/06/08,2,LO PAN SPIRIT,H Bentley,135,1198,6,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/06/08,3,SEA AIR LEGEND,Y L Chung,134,960,12,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/06/08,4,SUPER INFINITY,Z Purton,131,1139,9,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/06/08,5,HAROLD WIN,A Atzeni,129,1121,4,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/06/08,6,THE AZURE,K C Leung,129,1083,8,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/06/08,7,GOLDEN TITLE,E C W Wong,128,1158,7,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/06/08,8,IVICTORIAM,B Thompson,127,1105,11,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/06/08,9,FLYING ROMANTIC,M F Poon,122,1077,1,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/06/08,10,SUPER TAICHI,A Badel,122,1134,10,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+10,2024/06/08,11,GLUCK RACER,K Teetan,119,1126,2,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+11,2024/06/08,12,GANGNAM STAR,M Chadwick,118,1103,5,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
