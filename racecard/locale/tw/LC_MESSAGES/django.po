@@ -180,6 +180,13 @@ msgstr "預測龍虎榜"
 
 #: Horse Name
 
+#2024-06-23
+msgid "YOUNG ARROW"
+msgstr "競駿非凡"
+msgid "MAGIC CONTROL"
+msgstr "魔術控制"
+
+
 #2024-06-02
 msgid "CONFRINGO"
 msgstr "閃亮老撾"

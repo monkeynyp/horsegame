@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/08,1,CHEVAL VALIANT,L Hewitson,133,1117,6,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-1,2024/06/08,2,SUPERSONIC,B Thompson,132,1066,3,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-2,2024/06/08,3,AURORA LADY,B Avdulla,128,1179,1,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-3,2024/06/08,4,BLAZING WIND,Y L Chung,127,1280,12,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-4,2024/06/08,5,COLOURFUL WINNER,M L Yeung,127,1168,14,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-5,2024/06/08,6,DAY DAY VICTORY,H Bentley,127,1145,8,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-6,2024/06/08,7,FAST NETWORK,Z Purton,127,1169,9,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-7,2024/06/08,8,FLYING LUCK,C Y Ho,127,1193,7,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-8,2024/06/08,9,LUCKY MAN,K Teetan,127,1075,13,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-9,2024/06/08,10,GRAND NOVA,H Bowman,125,1057,4,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-10,2024/06/08,11,GLORIOUS EXPERT,A Badel,123,1100,11,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-11,2024/06/08,12,SUPER AXIOM,E C W Wong,121,1268,5,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-12,2024/06/08,13,TALENTS SUPREMO,K C Leung,121,1108,10,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
-13,2024/06/08,14,GUSTY FIGHTER,M Chadwick,120,1074,2,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good
+0,2024/06/12,1,SETANTA,L Ferraris,129,1169,9,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/06/12,2,COMET SPLENDIDO,H Bowman,130,1185,2,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/06/12,3,MISTER DAPPER,M Chadwick,129,1201,11,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/06/12,4,DRAGON STAR,K Teetan,128,1148,1,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/06/12,5,GOLDEN LINK,A Hamelin,127,1077,10,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/06/12,6,THUNDERBOLTAURUS B,K De Melo,127,1048,8,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/06/12,7,COURIER MAGIC,B Thompson,122,1091,4,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/06/12,8,JOYFUL PROSPERITY,A Atzeni,121,1074,6,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/06/12,9,FLYING PHANTOM,K C Leung,119,1000,5,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/06/12,10,CHATER GOLD,H Bentley,118,1014,12,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/06/12,11,INVINCIBLE MISSILE,A Badel,117,1122,3,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/06/12,12,VULCANUS,H T Mo,117,1152,7,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good

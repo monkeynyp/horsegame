@@ -1,14 +1,12 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/08,1,STUNNING PEACH,Z Purton,135,1077,2,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-1,2024/06/08,2,WINNING DRAGON,B Avdulla,135,1048,8,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-2,2024/06/08,3,ALACRITY,A Hamelin,133,1083,6,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-3,2024/06/08,4,SUPREME AGILITY,M F Poon,133,998,5,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-4,2024/06/08,5,FLAMINGO TRILLION,K C Leung,129,1228,7,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-5,2024/06/08,6,UNIVERSAL HORIZON,C Y Ho,129,1121,4,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-6,2024/06/08,7,STAR MAC,H Bowman,127,1163,9,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-7,2024/06/08,8,SAMARKAND,K Teetan,126,1141,1,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-8,2024/06/08,9,BEAUTY LIVE,Y L Chung,125,1120,12,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-9,2024/06/08,10,FLAGSHIP WARRIOR,E C W Wong,125,1034,10,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-10,2024/06/08,11,BRIGHT INHERITANCE,M Chadwick,120,1101,11,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-11,2024/06/08,12,NICHOLSON RETURNS,K De Melo,118,1247,13,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
-12,2024/06/08,13,ESCAPE ROUTE,A Badel,117,1094,3,10,Class 3,1800,Sha Tin:,"TURF - ""C"" Course",Good
+0,2024/06/12,1,HUMBLE STAR,A Badel,135,1164,1,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/06/12,2,MAGIC CONTROL,H Bowman,133,1053,4,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/06/12,3,ATOMIC FORCE,H Bentley,125,1160,9,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/06/12,4,FAST SERVE,L Ferraris,125,1136,10,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/06/12,5,MIDORI GLORY,M F Poon,125,1128,6,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/06/12,6,HARMONY FIRE,E C W Wong,124,1108,5,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/06/12,7,HEROIC MASTER,K Teetan,124,1071,3,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/06/12,8,HAPPY UNITED,C Y Ho,121,1120,11,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/06/12,9,YOUTHFUL SPIRITS,Z Purton,121,1059,2,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/06/12,10,TELECOM SPEED,B Thompson,118,1132,8,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/06/12,11,COLOURFUL PRINCE,Y L Chung,116,1180,7,9,Class 3,1000,Happy Valley:,"TURF - ""B"" Course",Good
