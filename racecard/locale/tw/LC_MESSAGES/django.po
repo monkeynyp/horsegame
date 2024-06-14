@@ -180,7 +180,41 @@ msgstr "預測龍虎榜"
 
 #: Horse Name
 
-#2024-06-23
+#2024-06-15
+msgid "ANGELIC"
+msgstr "天使之聲"
+msgid "KA YING RESILIENCE"
+msgstr "嘉應駿馬"
+msgid "KARATE EXPRESS"
+msgstr "精英勇士"
+msgid "NEW ASIA GREAT"
+msgstr "心之靈"
+msgid "SMILING EMPEROR"
+msgstr "風雲"
+msgid "SOLAR RIVER"
+msgstr "洛河"
+msgid "WISDOM STAR"
+msgstr "智開心"
+msgid "FAMILY JEWEL"
+msgstr "共享富裕"
+msgid "VIEW OF THE WORLD"
+msgstr "觀天下"
+msgid "MIGHTY COMMANDER"
+msgstr "三軍勇將"
+msgid "VICTOR THE RAPID"
+msgstr "維港激流"
+msgid "FANTASTIC FUN"
+msgstr "凡凡有餘"
+msgid "ACROSS DA UNIVERSE"
+msgstr "飛越星空"
+msgid "PRAY FOR MIR"
+msgstr "和平波"
+
+
+
+
+
+#2024-06-13
 msgid "YOUNG ARROW"
 msgstr "競駿非凡"
 msgid "MAGIC CONTROL"
