@@ -18,6 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 #: HomePage
 
+msgid "MarkSix"
+msgstr "六合彩"
 
 msgid "This password is too short. It must contain at least 8 characters."
 msgstr "此密碼太短，必須至少包含8個字符。"
