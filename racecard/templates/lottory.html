@@ -3,9 +3,25 @@
 {% load static %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-   <h1>Lottery Prediction</h1>
-<canvas id="myChart" width="300" height="300"></canvas>
 
+
+   <h1>Lottery Prediction</h1>
+   <div class="w3-container w3-padding-32"></div>
+   <div class="w3-margin ">
+     
+       <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp 六合彩號碼走勢 </h2>
+           <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=1">1號</a>
+           <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=2">2號</a>
+           <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=3">3號</a>
+           <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=4">4號</a>
+           <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=5">5號</a>
+           <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=6">6號</a>
+           <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=7">特碼</a>
+    </div></h2>
+
+<div class="w3-row">
+        <div class="w3-col w3-padding-top-32 l10 s12">
+<canvas id="myChart" width="400" height="150"></canvas>
 <script>
   var ctx = document.getElementById('myChart').getContext('2d');
   var labels = JSON.parse('{{ labels|safe }}');
@@ -20,14 +36,19 @@
       data: {
           labels: labels,
           datasets: [{
-              label: '號碼',
+              label: '過去二十期號碼',
               data: recentNumbers,
               borderColor: 'blue',
-              fill: false,
+              fill: true,
               pointBackgroundColor: ['blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue','blue','red']
           }]
       },
       options: {
+        layout: {
+            padding: {
+                right: 50 // Adjust the value as needed
+            }
+        },
           scales: {
               y: {
                   beginAtZero: true
@@ -35,11 +56,12 @@
           },
           elements: {
               point: {
-                  radius: 25,
-                  hoverRadius: 40
+                  radius: 15,
+                  hoverRadius: 20
               }
           }
       }
   });
 </script>
+</div></div>
 {% endblock %}

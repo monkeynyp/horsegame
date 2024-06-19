@@ -496,12 +496,16 @@ def member(request):
 
 
 def lottory_predict(request):
+    id = request.GET.get('id')
+    ListNo = 'No'+id
+    print(ListNo)
      # Retrieve the data from the Marksix_hist model, sorted by Date in descending order
-    data = Marksix_hist.objects.order_by('-Date').values_list('No1', flat=True)[:21]
+    data = Marksix_hist.objects.order_by('-Date').values_list(ListNo, flat=True)[:21]
 
     # Convert the queryset to a list
     data_list = list(data)
-
+    data_list.reverse()
+    print(data_list)
     # Prepare the features (X) and target (y) for KNN
     X = [[x] for x in data_list[:-1]]  # Features: all numbers except the last one
     y = data_list[1:]  # Target: the next number for each feature
@@ -516,12 +520,12 @@ def lottory_predict(request):
 
     # Prepare data for the chart
     labels = list(range(1, 21))  # Numbers 1 to 20 for the recent numbers
-    labels.append('Next')  # Label for the next number
+    labels.append('下期預測')  # Label for the next number
     predicted_numbers = knn_model.predict([[x] for x in range(1, 22)])
 
     # Pass the results to the template
     context = {
-        'recent_numbers': data_list[:-1],
+        'recent_numbers': data_list,
         'next_number': next_number,
         'labels': json.dumps(labels),
         'predicted_numbers': json.dumps(predicted_numbers.tolist()),
