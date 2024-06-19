@@ -64,4 +64,25 @@
   });
 </script>
 </div></div>
+<script>
+    // Get the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Check if the 'id' parameter is present and equals '2 or 8'
+    const shouldLoadScript = urlParams.get('id') === '2' || urlParams.get('id') === '7';
+  
+    if (shouldLoadScript) {
+        // Define a function to load the script
+        function loadVendorScript() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '//thubanoa.com/1?z=7165331';
+            document.body.appendChild(script);
+        }
+  
+        // Call the function to load the script
+        loadVendorScript();
+    }
+  </script>
+  
 {% endblock %}
