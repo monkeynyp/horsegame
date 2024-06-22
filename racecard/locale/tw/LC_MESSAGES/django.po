@@ -182,6 +182,22 @@ msgstr "預測龍虎榜"
 
 #: Horse Name
 
+#2024-06-23
+msgid "DEAL COMPLETED"
+msgstr "大將鵰神"
+msgid "FOXHUNTER GO"
+msgstr "獵狐者高"
+msgid "JUBILANT WINNER"
+msgstr "快活英雄"
+msgid "POLARIS"
+msgstr "駿馬為伍"
+msgid "NATURAL HIGH"
+msgstr "贏得自然"
+msgid "SILK ROAD GLORY"
+msgstr "絲路之光"
+msgid "YEAH BUDDY"
+msgstr "辰速密碼"
+
 #2024-06-15
 msgid "ANGELIC"
 msgstr "天使之聲"

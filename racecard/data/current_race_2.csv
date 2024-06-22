@@ -1,13 +1,10 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/15,1,COLONEL,L Ferraris,134,1181,3,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-1,2024/06/15,2,HAPPY FEELING,B Thompson,134,1068,6,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-2,2024/06/15,3,TACTICAL COMMAND,A Badel,133,1069,1,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-3,2024/06/15,4,CHEER FOR SOUTH,Y L Chung,132,1055,8,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-4,2024/06/15,5,COMMANDING MISSILE,C L Chau,132,1215,7,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-5,2024/06/15,6,SONIC BOOM,K Teetan,130,1118,5,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-6,2024/06/15,7,TIMESTORM,H Bowman,130,1065,12,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-7,2024/06/15,8,WIND SPEEDER,C Y Ho,128,1055,9,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-8,2024/06/15,9,THE GOOD DEAL,H Bentley,127,1114,11,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-9,2024/06/15,10,HO HO STAR,K C Leung,126,1124,2,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-10,2024/06/15,11,SIX BEST FRIENDS,M F Poon,117,1153,4,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-11,2024/06/15,12,CIRCUIT SPLENDOR,M L Yeung,115,1029,10,11,Class 5,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
+0,2024/06/23,1,BERLIN TANGO,B Avdulla,135,1048,5,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+1,2024/06/23,2,APACHE PASS,H Bowman,130,1110,8,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+2,2024/06/23,3,ALACRITY,C Y Ho,126,1079,6,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+3,2024/06/23,4,PERFECT TEAM,E C W Wong,122,1068,2,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+4,2024/06/23,5,SUPER WIN DRAGON,M Chadwick,122,1150,3,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+5,2024/06/23,6,TOY SOLTERO,B Thompson,122,1204,7,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+6,2024/06/23,7,SO WE JOY,A Atzeni,120,1070,4,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+7,2024/06/23,8,SURUGA BAY,K Teetan,115,1179,1,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good
+8,2024/06/23,9,TALENTS AMBITION,H Bentley,115,1193,9,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good

@@ -1,11 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/15,1,IMA SINGLE MAN,Y L Chung,135,1169,8,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-1,2024/06/15,2,CALL ME GLORIOUS,Z Purton,130,1233,2,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-2,2024/06/15,3,GRACIOUS EXPRESS,B Avdulla,129,1121,9,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-3,2024/06/15,4,GREAT STATE,K De Melo,128,1089,10,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-4,2024/06/15,5,PRESTIGE ALWAYS,K Teetan,127,1101,4,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-5,2024/06/15,6,AORAKI SUMMIT,A Atzeni,125,1139,7,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-6,2024/06/15,7,PULSAR STRIDER,K C Leung,122,1145,5,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-7,2024/06/15,8,MIGHTY COMMANDER,C Y Ho,121,1052,3,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-8,2024/06/15,9,RICH HORSE,A Badel,120,1042,6,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
-9,2024/06/15,10,VICTOR THE RAPID,C L Chau,120,1076,1,11,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good To Yielding
+0,2024/06/23,1,COMING PATCH,A Hamelin,135,1217,5,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/06/23,2,SUNNY DA BEST,A Atzeni,135,1158,1,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/06/23,3,LET'S DO IT,K Teetan,132,1144,6,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/06/23,4,LUCKY GOLD,L Hewitson,131,1202,4,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/06/23,5,MASTER MASTERMIND,H Bowman,129,1084,3,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/06/23,6,TOP PEAK,C L Chau,129,1216,7,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/06/23,7,AUTUMN DELIGHT,C Y Ho,128,1136,10,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/06/23,8,KASA PAPA,L Ferraris,127,1136,9,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/06/23,9,VANTASTIC CHOICE,Y L Chung,127,1083,11,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/06/23,10,BEAUTY ALLIANCE,Z Purton,126,1190,8,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/06/23,11,EVER SMART,K C Leung,124,1131,14,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/06/23,12,JUMBO FORTUNE,M F Poon,124,1300,13,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/06/23,13,SMART FIGHTER,B Avdulla,124,1128,2,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/06/23,14,LUCKY PLANET,M Chadwick,118,1081,12,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
