@@ -28,6 +28,7 @@ urlpatterns = [
     path('data_update_console/', views.data_update_console, name='data_update_console'),
     path('update_race_result/', views.update_race_result, name='update_race_result'),
     path('lottory_predict/', views.lottory_predict, name='lottory_predict'),
+    path('ichi_lotto/', views.ichi_lotto, name='ichi_lotto'),
 
 
 

@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 import pandas as pd
-import os,json,math
+import os,json,math,random
 import requests
 from django.conf import settings
 from django.utils.translation import gettext as _
@@ -534,3 +534,24 @@ def lottory_predict(request):
     }
 
     return render(request, 'lottory.html', context)
+
+
+def ichi_lotto(request):
+    random.seed(86)
+    random_numbers_list = [random.randint(1, 64) for _ in range(49)]
+   
+    # Initialize an empty dictionary to store the indices
+    ichi = {}
+
+     # Iterate through the random numbers and populate the dictionary
+    for index, number in enumerate(random_numbers_list):
+        ichi_counter = 0
+        if number in [1,2,34,11,13,7,50,27,9,14,58,45]:
+            if number not in ichi:
+                ichi[number] = [index+1]
+            else:
+                ichi[number].append(index+1)
+        ichi_counter = ichi_counter+1        
+    
+    return render(request, 'ichi_lotto.html', {'ichi': ichi})
+                                

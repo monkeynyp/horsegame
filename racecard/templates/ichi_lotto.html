@@ -1,0 +1,192 @@
+{% extends "master.html" %} {% block title %} 香港六合彩易卦預測 {% endblock %} {% block content %}
+{% load i18n %}
+{% load static %}
+<div class="w3-container w3-padding-32"></div>
+<div class="w3-margin ">
+  
+<h1>易卦預測六合彩</h1>
+<h2>24/070</h2>
+<div class="w3-row-padding">
+        {% if ichi.1 %}
+        <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+            <header class="w3-container w3-blue w3-padding">
+                <img src="/static/Iching-1.png" alt="qiang"> 乾為天
+            </header>
+            <div class="w3-padding-32 w3-margin-left">
+            {% for value in ichi.1 %}
+            {% with padded_value=value|stringformat:"02d" %}
+                <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+            {% endwith %}
+            {% endfor %}
+            </div>
+            <footer class="w3-container w3-blue w3-left-align">
+                <span class="w3-small">Footer</span>
+            </footer>
+       
+        </div>
+    {% endif %}
+
+{% if ichi.2 %}
+<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+
+  <header class="w3-container w3-green w3-padding" >
+    <img src="/static/Iching-2.png" alt="qiang">坤為地
+ </header>
+ 
+ <div class="w3-padding-32 w3-margin-left">
+ {% for value in ichi.2 %}
+ {% with padded_value=value|stringformat:"02d" %}
+     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+ {% endwith %}
+ {% endfor %}
+ </div>
+ <footer class="w3-container w3-green w3-left-align">
+          <span class="w3-small">
+            Footer
+        </span>
+    </footer>
+</div>
+{% endif %}
+
+{% if ichi.34 %}
+<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+  <header class="w3-container w3-yellow w3-padding" >
+    <img src="/static/Iching-34.png" alt="雷天大壯">雷天大壯
+ </header>
+ <div class="w3-padding-32 w3-margin-left">
+ {% for value in ichi.34 %}
+ {% with padded_value=value|stringformat:"02d" %}
+     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+ {% endwith %}
+ {% endfor %}
+ </div>
+ <footer class="w3-container w3-yellow w3-left-align">
+          <span class="w3-small">
+            Footer
+        </span>
+    </footer>
+</div>
+{% endif %}
+{% if ichi.11 %}
+<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+  <header class="w3-container w3-brown w3-padding" >
+    <img src="/static/Iching-11.png" alt="地天泰">地天泰
+ </header>
+ <div class="w3-padding-32 w3-margin-left">
+ {% for value in ichi.11 %}
+ {% with padded_value=value|stringformat:"02d" %}
+     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+ {% endwith %}
+ {% endfor %}
+ </div>
+ <footer class="w3-container w3-brown w3-left-align">
+          <span class="w3-small">
+            Footer
+        </span>
+    </footer>
+</div>
+{% endif %}
+{% if ichi.13 %}
+<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+  <header class="w3-container w3-indigo w3-padding" >
+    <img src="/static/Iching-13.png" alt="天火同人">天火同人
+ </header>
+ <div class="w3-padding-32 w3-margin-left">
+ {% for value in ichi.13 %}
+ {% with padded_value=value|stringformat:"02d" %}
+     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+ {% endwith %}
+ {% endfor %}
+</div>
+ <footer class="w3-container w3-indigo w3-left-align">
+          <span class="w3-small">
+            Footer
+        </span>
+    </footer>
+</div>
+{% endif %}
+{% if ichi.7 %}
+<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+  <header class="w3-container w3-pale-blue w3-padding" >
+    <img src="/static/Iching-7.png" alt="qiang">地水師
+ </header>
+ <div class="w3-padding-32 w3-margin-left">
+ {% for value in ichi.7 %}
+ {% with padded_value=value|stringformat:"02d" %}
+     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+ {% endwith %}
+ {% endfor %}
+ </div>
+ <footer class="w3-container w3-pale-blue w3-left-align">
+          <span class="w3-small">
+            Footer
+        </span>
+    </footer>
+</div>
+{% endif %}
+
+{% if ichi.50 %}
+<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+  <header class="w3-container w3-pale-blue w3-padding" >
+    <img src="/static/Iching-50.png" alt="qiang">火風鼎
+ </header>
+ <div class="w3-padding-32 w3-margin-left">
+ {% for value in ichi.50 %}
+ {% with padded_value=value|stringformat:"02d" %}
+     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+ {% endwith %}
+ {% endfor %}
+ </div>
+ <footer class="w3-container w3-pale-blue w3-left-align">
+          <span class="w3-small">
+            Footer
+        </span>
+    </footer>
+
+</div>
+{% endif %}
+
+{% if ichi.27 %}
+<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+  <header class="w3-container w3-light-grey w3-padding" >
+    <img src="/static/Iching-27.png" alt="qiang">山雷頤
+ </header>
+ <div class="w3-padding-32 w3-margin-left">
+ {% for value in ichi.27 %}
+ {% with padded_value=value|stringformat:"02d" %}
+     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+ {% endwith %}
+ {% endfor %}
+ </div>
+ <footer class="w3-container w3-light-grey w3-left-align">
+          <span class="w3-small">
+            Footer
+        </span>
+    </footer>
+</div>
+{% endif %}
+
+{% if ichi.9 %}
+<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+  <header class="w3-container w3-pale-red w3-padding" >
+    <img src="/static/Iching-9.png" alt="qiang">風天小畜
+ </header>
+ <div class="w3-padding-32 w3-margin-left">
+ {% for value in ichi.9 %}
+ {% with padded_value=value|stringformat:"02d" %}
+     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+ {% endwith %}
+ {% endfor %}
+ </div>
+ <footer class="w3-container w3-pale-red w3-left-align">
+          <span class="w3-small">
+            Footer
+        </span>
+    </footer>
+</div>
+{% endif %}
+</div>
+</div>
+</body>
+
+{% endblock %}
