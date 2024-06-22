@@ -537,7 +537,12 @@ def lottory_predict(request):
 
 
 def ichi_lotto(request):
-    random.seed(86)
+    user_input = 0
+    if request.method == 'POST':
+        user_input = request.POST.get('number')  # Get the value from the form
+
+    seed_no=70+int(user_input)
+    random.seed(seed_no)
     random_numbers_list = [random.randint(1, 64) for _ in range(49)]
    
     # Initialize an empty dictionary to store the indices

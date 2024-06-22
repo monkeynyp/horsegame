@@ -2,13 +2,7 @@
 {% load i18n %}
 {% load static %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-
-
-   <h1>Lottery Prediction</h1>
-   <div class="w3-container"></div>
-   <div class="w3-margin ">
-     
+   <div class="w3-container">
        <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp K-近鄰演算法 預測六合彩號碼走勢 </h2>
            <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=1">號碼1</a>
            <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=2">號碼2</a>
@@ -21,7 +15,7 @@
 
 <div class="w3-row">
         <div class="w3-col w3-padding-top-32 l10 s12">
-<canvas id="myChart" width="400" height="250"></canvas>
+<canvas id="myChart" width="300" height="200"></canvas>
 <script>
   var ctx = document.getElementById('myChart').getContext('2d');
   var labels = JSON.parse('{{ labels|safe }}');
@@ -36,7 +30,7 @@
       data: {
           labels: labels,
           datasets: [{
-              label: '過去二十一期號碼',
+              label: '過去二十期號碼',
               data: recentNumbers,
               borderColor: 'blue',
               fill: true,
