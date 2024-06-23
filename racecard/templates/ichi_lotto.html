@@ -10,7 +10,7 @@
 <form method="post">
     {% csrf_token %}
     <label for="id_number">加入你幸運號碼🍀:</label>
-    <input type="number" id="id_number" name="number">
+    <input type="number" id="id_number" name="number" value="0">
     <button type="submit">🀄起卦🀄</button>
 </form>
 <br>
@@ -197,5 +197,18 @@
 </div>
 </body>
 
-<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://zovidree.com/tag.min.js',7641087,document.body||document.documentElement)</script>
+<script>
+    const sessionStorage = window.sessionStorage;
+
+    // Check if the script has already run
+    const hasRunScript = sessionStorage.getItem('hasRunScript');
+    if (!hasRunScript) {
+        (function(s,u,z,p){
+            s.src = u;
+            s.setAttribute('data-zone', z);
+            p.appendChild(s);
+        })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7641087, document.body || document.documentElement);
+        sessionStorage.setItem('hasRunScript', 'true');
+    }
+</script>
 {% endblock %}
