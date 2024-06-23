@@ -56,7 +56,7 @@
           <th>{% trans "Horse Name" %}</th>
           <th class="w3-hide-small">{% trans "Jockey" %}</th>
           <th>{% trans 'Vote' %}</th>
-          <th  class="w3-hide-small">{% trans "Draw" %}</th>
+          <th  class="w3-hide-small">卦象</th>
         </tr>
       </thead>
       {% for i, r in current_race.iterrows %}
@@ -84,8 +84,9 @@
           {% endfor %}
           {% endwith %}
       </td>
-        <td class="w3-hide-small">{{ r.Draw }}</td>
-      </tr>
+      <td class="w3-center {% if r.Ichi == 1 or r.Ichi == 2 or r.Ichi == 34 or r.Ichi == 11  or i.Ichi == 13 or i.Ichi == 14 or i.Ichi == 50 %} w3-yellow {% endif %}">
+        <img src="/static/Iching-{{ r.Ichi }}.png" width="20">
+    </td>
       {% endfor %}
     </table>
    
@@ -334,6 +335,20 @@
             document.getElementById("id01").style.display = "none";
         }
     </script>
+<script>
+  const sessionStorage = window.sessionStorage;
+
+  // Check if the script has already run
+  const hasRunScript = sessionStorage.getItem('hasRunScript');
+  if (!hasRunScript) {
+      (function(s,u,z,p){
+          s.src = u;
+          s.setAttribute('data-zone', z);
+          p.appendChild(s);
+      })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7641087, document.body || document.documentElement);
+      sessionStorage.setItem('hasRunScript', 'true');
+  }
+</script>
 
  <script>
   // Get the URL parameters

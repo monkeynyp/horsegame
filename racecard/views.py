@@ -19,14 +19,8 @@ from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render
 from .get_results import get_results
 from django.contrib import messages
-import datetime
+from datetime import datetime
 from sklearn.neighbors import KNeighborsRegressor
-
-
-
-#from django_comments.models import Comment
-#from django.contrib.contenttypes.models import ContentType
-
 
 
 ## Horse Raching Features Create your views here.
@@ -37,7 +31,19 @@ def racecard(request):
      current_datetime = timezone.now()
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
+     
+     print("No of Race",len(current_race))
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
+     dt_obj = datetime.strptime(curr_race_date, "%Y-%m-%d")
+     timestamp = int(dt_obj.timestamp())+int(id)
+     random.seed(timestamp)
+     # Generate random integers between 1 and 64
+     num_rows = len(current_race)
+
+     random_numbers_list = [random.randint(1, 64) for _ in range(num_rows)]
+     # Add the 'Rand' column to the DataFrame
+     current_race['Ichi'] = random_numbers_list
+     print("Current_race:",current_race)
      total_race = current_race['Total'].iloc[0]
      
      horse_tips_qty = (
