@@ -39,10 +39,9 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django_social_share",
     "racecard",
-   # 'django_cryptography',
     #'django_comments',
-   # 'django_comments_xtd',
-    # 'django.contrib.sites',
+    #'django_comments_xtd',
+    #'django.contrib.sites',
 
 ]
 
@@ -56,7 +55,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     'whitenoise.middleware.WhiteNoiseMiddleware',
-    'racecard.middleware.LanguageMiddleware',
+    #'racecard.middleware.LanguageMiddleware',
 ]
 
 ROOT_URLCONF = "horsegame.urls"

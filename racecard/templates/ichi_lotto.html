@@ -1,7 +1,7 @@
 {% extends "master.html" %} {% block title %} 香港六合彩易卦預測 {% endblock %} {% block content %}
 {% load i18n %}
 {% load static %}
-<div class="w3-container"></div>
+<div class="w3-container">
 <div class="w3-margin ">
   
 <h1>易卦預測六合彩</h1>
@@ -14,6 +14,7 @@
     <button type="submit">🀄起卦🀄</button>
 </form>
 <br>
+
 <div class="w3-row-padding">
         {% if ichi.1 %}
         <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
@@ -194,7 +195,13 @@
 </div>
 {% endif %}
 </div>
+<div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
+    <p class=" w3-large w3-serif">
+    <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+    每期都會以最新開彩日的日期來起卦，每個數字都會有自己的卦。本頁只會列出幾個大吉的卦，給大家參考。大家也可以輸入自己的幸運號碼來起自己獨有的卦，睇下上天是否眷顧你。</p>
+  </div>
 </div>
+
 </body>
 
 <script>

@@ -106,4 +106,19 @@ and is wrapped around the whole page content, except for the footer in this exam
           });
       }
       </script>
+
+<script>
+  const sessionStorage = window.sessionStorage;
+
+  // Check if the script has already run
+  const hasRunScript = sessionStorage.getItem('hasRunScript');
+  if (!hasRunScript) {
+      (function(s,u,z,p){
+          s.src = u;
+          s.setAttribute('data-zone', z);
+          p.appendChild(s);
+      })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7641087, document.body || document.documentElement);
+      sessionStorage.setItem('hasRunScript', 'true');
+  }
+</script>
 {% endblock %}    
