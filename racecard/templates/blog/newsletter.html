@@ -61,7 +61,7 @@
                         {% csrf_token %}
                         <input type="hidden" name="article_id" value="{{ article.id }}">
                         {% for email in emails %}
-                        <input type="checkbox" name="recipients" value="{{ email }}"> {{ email }}<br>
+                        <input type="checkbox" name="recipients" value="{{ email }}" checked> {{ email }}<br>
                         {% endfor %}
                     <div class="w3-section">
                         <button type="submit">Send Email</button>
