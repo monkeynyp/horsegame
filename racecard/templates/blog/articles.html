@@ -110,15 +110,19 @@ and is wrapped around the whole page content, except for the footer in this exam
 <script>
   const sessionStorage = window.sessionStorage;
 
-  // Check if the script has already run
-  const hasRunScript = sessionStorage.getItem('hasRunScript');
-  if (!hasRunScript) {
+  // Initialize the click counter
+  let clickCount = parseInt(sessionStorage.getItem('clickCount')) || 0;
+  // Check if the script should run (only after the second click)
+  if (clickCount == 3 || clickCount ==6 || clickCount==12 || clickCount==24) {
       (function(s,u,z,p){
           s.src = u;
           s.setAttribute('data-zone', z);
           p.appendChild(s);
       })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7641087, document.body || document.documentElement);
-      sessionStorage.setItem('hasRunScript', 'true');
   }
+
+  // Increment the click counter
+  clickCount += 1;
+  sessionStorage.setItem('clickCount', clickCount.toString());
 </script>
 {% endblock %}    

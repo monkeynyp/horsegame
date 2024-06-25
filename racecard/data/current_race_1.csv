@@ -1,15 +1,11 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/23,1,BEAUTY MISSILE,Z Purton,135,1189,10,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-1,2024/06/23,2,JUDY'S GREAT,Y L Chung,132,1088,12,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-2,2024/06/23,3,ROBOT MASTER,A Hamelin,130,1160,2,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-3,2024/06/23,4,YOU'REMYEVERYTHING,B Avdulla,129,982,9,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-4,2024/06/23,5,CAMP FIRE,M Chadwick,127,1167,5,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-5,2024/06/23,6,DEAL COMPLETED,H Bentley,127,1267,7,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-6,2024/06/23,7,DRAGON JOY,K Teetan,127,1173,8,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-7,2024/06/23,8,FOXHUNTER GO,C Y Ho,127,1278,4,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-8,2024/06/23,9,JUBILANT WINNER,B Thompson,127,1100,13,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-9,2024/06/23,10,MY WISH,L Ferraris,127,973,6,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-10,2024/06/23,11,YUEN LONG ELITE,M L Yeung,127,1131,1,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-11,2024/06/23,12,SWEET SMILE,H Bowman,126,1029,3,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-12,2024/06/23,13,EXCELLENT DADDY,L Hewitson,119,1279,14,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
-13,2024/06/23,14,SMART LEADER,A Atzeni,117,1140,11,11,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good
+0,2024/06/26,1,ABSOLUTE SUNSHINE,E C W Wong,135,1122,10,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good
+1,2024/06/26,2,KINGLY DEMEANOR,B Avdulla,134,1150,4,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good
+2,2024/06/26,3,RELIABLE PROFIT,L Hewitson,134,1127,3,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good
+3,2024/06/26,4,KEEN UNITY,H Bowman,130,1164,8,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good
+4,2024/06/26,5,GO GO GO,Z Purton,129,1104,9,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good
+5,2024/06/26,6,CLASSIC ARCHI,H Bentley,127,1056,1,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good
+6,2024/06/26,7,LEATHER MASTER,B Thompson,124,1120,6,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good
+7,2024/06/26,8,ARTHUR'S KINGDOM,K Teetan,123,1004,2,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good
+8,2024/06/26,9,FASTPASS,M F Poon,115,1002,5,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good
+9,2024/06/26,10,GREEN LASER,M L Yeung,115,1117,7,9,Class 5,2200,Happy Valley:,"TURF - ""C"" Course",Good

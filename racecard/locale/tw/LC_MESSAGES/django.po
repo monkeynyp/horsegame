@@ -18,8 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 #: HomePage
 
-msgid "MarkSix"
-msgstr "六合彩"
 
 msgid "This password is too short. It must contain at least 8 characters."
 msgstr "此密碼太短，必須至少包含8個字符。"
@@ -140,6 +138,9 @@ msgstr "最近賽事"
 msgid "Horse Name"
 msgstr "賽馬"
 
+msgid "MarkSix"
+msgstr "六合彩"
+
 #: racecard/templates/currentrace.html:30
 msgid "Jockey"
 msgstr "騎師"
@@ -181,6 +182,14 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+
+#2024-06-23
+msgid "ALMIGHTY KICK"
+msgstr "大將鵰神"
+msgid "PACKING HERMOD"
+msgstr "獵狐者高"
+msgid "ELEGANT LIFE"
+msgstr "快活英雄"
 
 #2024-06-23
 msgid "DEAL COMPLETED"

@@ -544,6 +544,7 @@ def lottory_predict(request):
 
 
 def ichi_lotto(request):
+    current_datetime = timezone.now()
     form = NumberForm()  # Initialize the form here
     user_input = 0
     if request.method == 'POST':
@@ -567,7 +568,7 @@ def ichi_lotto(request):
         ichi_counter = ichi_counter+1        
                 # Retrieve all records with Draw='24/071'
     records = Marksix_user_rec.objects.filter(Draw='24/071')
-    return render(request, 'ichi_lotto.html', {'ichi': ichi, 'form':form,'records':records})
+    return render(request, 'ichi_lotto.html', {'ichi': ichi, 'form':form,'records':records,'current_datetime':current_datetime})
 
 def update_lotto_tips(request):
     if request.method == 'POST':

@@ -292,7 +292,7 @@
       // Get the current date and time
       var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
       // Define the start and end date and time for the period
-      var startDate = new Date("2024-06-23T15:55:00");
+      var startDate = new Date("2024-06-26T18:35:00");
       var endDate = new Date("2025-12-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period
@@ -332,16 +332,20 @@
 <script>
   const sessionStorage = window.sessionStorage;
 
-  // Check if the script has already run
-  const hasRunScript = sessionStorage.getItem('hasRunScript');
-  if (!hasRunScript) {
+  // Initialize the click counter
+  let clickCount = parseInt(sessionStorage.getItem('clickCount')) || 0;
+  // Check if the script should run (only after the second click)
+  if (clickCount == 3 || clickCount ==6 || clickCount==12 || clickCount==24) {
       (function(s,u,z,p){
           s.src = u;
           s.setAttribute('data-zone', z);
           p.appendChild(s);
       })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7641087, document.body || document.documentElement);
-      sessionStorage.setItem('hasRunScript', 'true');
   }
+
+  // Increment the click counter
+  clickCount += 1;
+  sessionStorage.setItem('clickCount', clickCount.toString());
 </script>
 
  <script>

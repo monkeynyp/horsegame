@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/23,1,SERANGOON,H Bentley,135,1106,12,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-1,2024/06/23,2,AFFORDABLE,E C W Wong,133,1253,14,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-2,2024/06/23,3,KIMBERLEY,H Bowman,132,1088,11,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-3,2024/06/23,4,GALLANT HERO,B Avdulla,130,1092,7,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-4,2024/06/23,5,VOLCANIC SPARK,M F Poon,130,1077,1,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-5,2024/06/23,6,JOY OF SPRING,C Y Ho,128,996,13,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-6,2024/06/23,7,MISTER DAPPER,M Chadwick,128,1199,2,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-7,2024/06/23,8,STARSHIP EIGHTY,K Teetan,123,1257,8,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-8,2024/06/23,9,GOOD GOOD,A Badel,122,1088,6,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-9,2024/06/23,10,FURY AND GOLD,A Atzeni,120,1128,4,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-10,2024/06/23,11,CIRCUIT NINE,A Hamelin,117,1135,3,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-11,2024/06/23,12,HAPPY HERO,L Hewitson,117,1058,10,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-12,2024/06/23,13,PAKISTAN FRIEND,Y L Chung,117,1062,5,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
-13,2024/06/23,14,RUNNING AHEAD,M L Yeung,117,1057,9,11,Class 4,1800,Sha Tin:,"TURF - ""A"" Course",Good
+0,2024/06/26,1,DENFIELD,H Bowman,135,1146,9,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+1,2024/06/26,2,LEAN MASTER,E C W Wong,132,1070,2,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+2,2024/06/26,3,ONE FOR ALL,L Ferraris,132,1237,6,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+3,2024/06/26,4,RUN RUN COOL,B Avdulla,132,1199,1,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+4,2024/06/26,5,ALMIGHTY KICK,C Y Ho,129,1096,10,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+5,2024/06/26,6,SIGHT HERO,B Thompson,127,1293,4,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+6,2024/06/26,7,JOLLY COMPANION,K Teetan,124,1182,7,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+7,2024/06/26,8,FAIRY HORSE,A Atzeni,122,1106,8,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+8,2024/06/26,9,BRAVO WARRIOR,M L Yeung,119,1048,5,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+9,2024/06/26,10,FLYING PHANTOM,Z Purton,119,993,12,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+10,2024/06/26,11,TATTENHAM,A Badel,119,1128,11,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
+11,2024/06/26,12,DAN ATTACK,A Hamelin,118,1177,3,9,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good
