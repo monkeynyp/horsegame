@@ -201,9 +201,161 @@
     每期都會以最新開彩日的日期來起卦，每個數字都會有自己的卦。本頁只會列出幾個大吉的卦，給大家參考。大家也可以輸入自己的幸運號碼來起自己獨有的卦，睇下上天是否眷顧你。</p>
   </div>
 </div>
+<br><br>
+{% if user.is_authenticated %}
+    <button class="w3-button w3-ripple w3-red" onclick="openModal()">+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Numbers" %} </span>
+{% else %}
+    <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Numbers" %} </span>
+{% endif %}
+<div id="numberModal" class="w3-modal w3-container w3-padding-16">
+    <div class="w3-modal-content w3-card-4 w3-padding-32">
+        <span class="w3-button w3-display-topright" onclick="closeModal()">&times;</span>
+        <h3 class="w3-center">輸入你的心水號</h3><h4>24/071</h4>
+        <form id="lotto-form" class="w3-container" method="post" action="{% url 'update_lotto_tips' %}">
+            {% csrf_token %}
+            <label for="id_No1">No1:</label>
+            {{ form.No1 }}
+            <br>
+            <label for="id_No2">No2:</label>
+            {{ form.No2 }}
+            <br>
+            <label for="id_No2">No3:</label>
+            {{ form.No3 }}
+            <br>
+            <label for="id_No2">No4:</label>
+            {{ form.No4 }}
+            <br>
+            <label for="id_No2">No5:</label>
+            {{ form.No5 }}
+            <br>
+            <label for="id_No2">No6:</label>
+            {{ form.No6 }}
+            <br>
+            <label for="id_No2">特碼:</label>
+            {{ form.No7 }}
+            <br><br>
+            <!-- Repeat for No3 to No7 -->
+            <button class="w3-button w3-blue" type="submit" onclick="submitForm()">保存</button>
+        </form>
+        <div id="successMessage" style="display: none;">
+            Success! Your numbers have been saved.
+        </div>
+    </div>
+</div>
 
+
+<table class="w3-table-all">
+    <thead>
+        <tr calss="w3-blue">
+            <th>用戶</th>
+            <th>No1</th>
+            <th>No2</th>
+            <th>No3</th>
+            <th>No4</th>
+            <th>No5</th>
+            <th>No6</th>
+            <th>特碼</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+        <tr>
+            <td>{{ record.user }}</td>
+            <td>{{ record.No1 }}</td>
+            <td>{{ record.No2 }}</td>
+            <td>{{ record.No3 }}</td>
+            <td>{{ record.No4 }}</td>
+            <td>{{ record.No5 }}</td>
+            <td>{{ record.No6 }}</td>
+            <td>{{ record.No7 }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top">
+        <div class="w3-center">
+            <span onclick="closeLoginFormModal()" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        </div>
+        <div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top" style="max-width: 400px;">
+            <h2 class="w3-center">{% trans 'Login' %}</h2>
+            <form method="post" action="{% url 'login' %}" class="w3-container login-form">
+                <div class="w3-section">
+                    {% csrf_token %}
+                    <label class="w3-input w3-label w3-margin-bottom" for="id_username">{% trans 'Username' %}:</label>
+                    <input class="w3-input w3-border" type="text" name="username" id="id_username" required>
+                </div>
+                <div class="w3-section">
+                    <label class="w3-input w3-label w3-margin-bottom" for="id_password">{% trans 'Password' %}:</label>
+                    <input class="w3-input w3-border" type="password" name="password" id="id_password" required>
+                </div>
+                <div class="w3-section">
+                    <button type="submit" class="w3-button w3-block w3-green w3-section w3-padding">{% trans 'Login' %}</button>
+                </div>
+            </form>
+            <div class="w3-section">
+              <!-- Add a button for new user registration -->
+              <a href="{% url 'register' %}" class="w3-button w3-block w3-blue w3-section w3-padding">{% trans 'Register' %}</a>
+          </div>
+        </div>
+    </div></div>
 </body>
 
+
+<script>
+    function openModal() {
+        document.getElementById('numberModal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('numberModal').style.display = 'none';
+    }
+    function submitForm() {
+    // ... (your existing AJAX code)
+    // After successful response from the server
+    event.preventDefault(); // Prevent the default form submission
+
+    const inputValues = [
+    document.getElementById('id_No1').value,
+    document.getElementById('id_No2').value,
+    document.getElementById('id_No3').value,
+    document.getElementById('id_No4').value,
+    document.getElementById('id_No5').value,
+    document.getElementById('id_No6').value,
+    document.getElementById('id_No7').value
+    // Repeat for No2 to No7
+    // ...
+        ];
+     // Validate range (1 to 49)
+     const isValidRange = inputValues.every(value => {
+        const num = parseInt(value, 10);
+        return !isNaN(num) && num >= 1 && num <= 49;
+    });
+
+    if (!isValidRange) {
+        alert('請輸入 1 and 49 的數字.');
+        return;
+    }
+
+        if (hasDuplicates(inputValues)) {
+            alert('數字不能重複.');
+            return;
+        }
+
+        // If validation passes, submit the form
+        document.getElementById('lotto-form').submit();
+    }
+
+    function hasDuplicates(arr) {
+        const uniqueSet = new Set(arr);
+        return uniqueSet.size !== arr.length;
+        }
+    function closeLoginFormModal() {
+            document.getElementById("id02").style.display = "none";
+        }
+</script>
 <script>
     const sessionStorage = window.sessionStorage;
 
@@ -218,4 +370,5 @@
         sessionStorage.setItem('hasRunScript', 'true');
     }
 </script>
+
 {% endblock %}

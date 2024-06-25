@@ -29,6 +29,7 @@ urlpatterns = [
     path('update_race_result/', views.update_race_result, name='update_race_result'),
     path('lottory_predict/', views.lottory_predict, name='lottory_predict'),
     path('ichi_lotto/', views.ichi_lotto, name='ichi_lotto'),
+    path('update_lotto_tips/', views.update_lotto_tips, name='update_lotto_tips'),
 
 
 

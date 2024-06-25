@@ -10,7 +10,7 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from .models import UserTips,UserScores,Article,UserTips_my,Marksix_hist
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
-from .forms import CustomUserCreationForm
+from .forms import CustomUserCreationForm,NumberForm
 from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
@@ -19,8 +19,9 @@ from django.http import JsonResponse
 from django.shortcuts import get_object_or_404, render
 from .get_results import get_results
 from django.contrib import messages
-from datetime import datetime
+from datetime import datetime, date
 from sklearn.neighbors import KNeighborsRegressor
+from .models import Marksix_user_rec
 
 
 ## Horse Raching Features Create your views here.
@@ -543,6 +544,7 @@ def lottory_predict(request):
 
 
 def ichi_lotto(request):
+    form = NumberForm()  # Initialize the form here
     user_input = 0
     if request.method == 'POST':
         user_input = request.POST.get('number')  # Get the value from the form
@@ -563,6 +565,37 @@ def ichi_lotto(request):
             else:
                 ichi[number].append(index+1)
         ichi_counter = ichi_counter+1        
-    
-    return render(request, 'ichi_lotto.html', {'ichi': ichi})
-                                
+                # Retrieve all records with Draw='24/071'
+    records = Marksix_user_rec.objects.filter(Draw='24/071')
+    return render(request, 'ichi_lotto.html', {'ichi': ichi, 'form':form,'records':records})
+
+def update_lotto_tips(request):
+    if request.method == 'POST':
+        # Process form data and update the model instance
+        # (user, seq, Draw, Date will be updated automatically)
+        form = NumberForm(request.POST)
+        if form.is_valid():
+            print("Update Model")
+            # Validate unique numbers
+            # Save the numbers to the model
+            # ...
+             # Update or create the instance
+            user_rec, created = Marksix_user_rec.objects.update_or_create(
+                user=request.user,
+                seq=1,  # Set the appropriate sequence value
+                Draw='24/071',  # Set the appropriate draw value
+                defaults={
+                    'Date': date.today(),  # Use the submitted date
+                    'No1': form.cleaned_data['No1'],
+                    'No2': form.cleaned_data['No2'],
+                    'No3': form.cleaned_data['No3'],
+                    'No4': form.cleaned_data['No4'],
+                    'No5': form.cleaned_data['No5'],
+                    'No6': form.cleaned_data['No6'],
+                    'No7': form.cleaned_data['No7'],
+                }
+            )
+            # Save the instance to the database
+            user_rec.save()
+    return redirect('../ichi_lotto/')
+          
