@@ -2,12 +2,13 @@ from django.shortcuts import render,redirect
 import pandas as pd
 import os,json,math,random
 import requests
+from django.db import models
 from django.conf import settings
 from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import UserTips,UserScores,Article,UserTips_my,Marksix_hist
+from .models import UserTips,UserScores,Article,UserTips_my,Marksix_hist,Marksix_user_rec
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
 from .forms import CustomUserCreationForm,NumberForm
@@ -21,7 +22,6 @@ from .get_results import get_results
 from django.contrib import messages
 from datetime import datetime, date
 from sklearn.neighbors import KNeighborsRegressor
-from .models import Marksix_user_rec
 
 
 ## Horse Raching Features Create your views here.
@@ -545,12 +545,26 @@ def lottory_predict(request):
 
 def ichi_lotto(request):
     current_datetime = timezone.now()
+    # Assuming you have a model field named 'Draw'
+    largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+
+    # Now 'largest_draw' contains the largest value from the 'Draw' column
+    # (e.g., '24/071')
+
+    # Next, remove the '/' character and convert it to an integer
+    draw_without_slash = largest_draw.replace('/', '')
+    seed_no = int(draw_without_slash)+1
+    draw_string = str(seed_no)
+
+    # Insert the '/' character at the appropriate position
+    next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
+    print("NextDraw:", next_draw)
     form = NumberForm()  # Initialize the form here
     user_input = 0
     if request.method == 'POST':
         user_input = request.POST.get('number')  # Get the value from the form
 
-    seed_no=70+int(user_input)
+    seed_no=+int(user_input)
     random.seed(seed_no)
     random_numbers_list = [random.randint(1, 64) for _ in range(49)]
    
@@ -568,7 +582,7 @@ def ichi_lotto(request):
         ichi_counter = ichi_counter+1        
                 # Retrieve all records with Draw='24/071'
     records = Marksix_user_rec.objects.filter(Draw='24/071')
-    return render(request, 'ichi_lotto.html', {'ichi': ichi, 'form':form,'records':records,'current_datetime':current_datetime})
+    return render(request, 'ichi_lotto.html', {'ichi': ichi, 'form':form,'records':records,'current_datetime':current_datetime,'next_draw':next_draw})
 
 def update_lotto_tips(request):
     if request.method == 'POST':
@@ -576,7 +590,6 @@ def update_lotto_tips(request):
         # (user, seq, Draw, Date will be updated automatically)
         form = NumberForm(request.POST)
         if form.is_valid():
-            print("Update Model")
             # Validate unique numbers
             # Save the numbers to the model
             # ...
