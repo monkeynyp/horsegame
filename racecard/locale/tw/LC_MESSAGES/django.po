@@ -164,8 +164,8 @@ msgid "MY🇲🇾Race"
 msgstr "馬來🇲🇾賽馬"
 
 #: racecard/templates/master.html:33
-msgid "Support Monkey"
-msgstr "支持Monkey"
+msgid "Support MK"
+msgstr "支持MK"
 
 #: racecard/templates/master.html:34
 msgid "Contact"

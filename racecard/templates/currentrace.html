@@ -26,20 +26,20 @@
 <div class="w3-margin ">
   
     <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1}} </h2>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=3">3</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=4">4</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=5">5</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=6">6</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=7">7</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=8">8</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=3">3</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=4">4</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=5">5</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=6">6</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=7">7</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=8">8</a>
         {% if current_race.iloc.2.8 > 8 %}
-          <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=9">9</a>
+          <a class="w3-button w3-large w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=9">9</a>
           {% if current_race.iloc.2.8 > 9 %}
-            <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=10">10</a>
+            <a class="w3-button w3-large w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=10">10</a>
             {% if current_race.iloc.2.8 > 10 %}
-              <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=11">11</a>
+              <a class="w3-button w3-large w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=11">11</a>
             {% endif %}
           {% endif %}
         {% endif %}
@@ -117,9 +117,10 @@
 <!-- This Part shows the User Tips rank by the most updated Current Race Performance -->
   <div class="w3-col w3-padding-top-32 l6 s12" >
         <div class="w3-margin">
-        <a href="/view_by_member" class="w3-button w3-black"><i class="fa-solid fa-circle-arrow-right fa-xl"></i>&nbsp {% trans 'Tips Summary' %}</a> &nbsp
-        <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-black"><i class="fa-solid fa-chess-knight fa-xl"></i>&nbsp {% trans 'Battle Chart' %}</a>&nbsp 
-        <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-black"><i class="fa-solid fa-solid fa-heart fa-xl fa-beat" style="color: #f01000;"></i>&nbsp {% trans 'Support Monkey' %}</a> &nbsp
+        <a href="/view_by_member" class="w3-button w3-black"><i class="fa-solid fa-circle-arrow-right"></i>&nbsp {% trans 'Tips Summary' %}</a> 
+        
+        <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-black"><i class="fa-solid fa-solid fa-heart fa-beat" style="color: #f01000;"></i>&nbsp {% trans 'Support MK' %}</a>
+        <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-black"><i class="fa-solid fa-chess-knight"></i>&nbsp {% trans 'Battle Chart' %}</a>&nbsp 
         <br><br>
         &nbsp &nbsp <i class="fa-solid fa-person fa-xl"></i>&nbsp  {% trans 'Human'%} &nbsp 
         {% for item in tips_qty_by_type %}
@@ -206,24 +207,26 @@
       </div>
 
 
-      <!-- This Part is for User's Historical Scores and Peformance -->
-      <div class="w3-margin">
-      <h4>{% trans "Prediction Accracy" %}</h4></div>
-      <div class="w3-red w3-margin w3-padding"> <i class="fa-regular fa-thumbs-up"></i>&nbsp {% trans 'Confidence' %} &nbsp;&nbsp; <i class="fa-regular fa-circle-check"></i> &nbsp {% trans 'Hit Rate' %}</div>
-      <div class="w3-card-4 w3-row-padding w3-margin w3-container w3-scrollable" style="max-height: 600px; overflow: auto;">
-        {% for score in user_scores %}
-            {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' as color silent %}
-            <div style="max-width: 800px;"> <!-- Adjust max-width as needed -->
-                {{ score.user}}: {% trans 'Profit' %}:💰{{ score.profit_percentage | floatformat:0 }}%
-                <div class="w3-light-grey">
-                    <div class="{{ color }}" style="height:35px; width:{{ score.percentage }}%">&nbsp  <span class="w3-tag w3-red w3-tooltip" style="transform:rotate(-5deg)"><i class="fa-regular fa-thumbs-up"></i>&nbsp{{score.confidence | floatformat:0 }}% <br><i class="fa-regular fa-circle-check"></i>&nbsp {{ score.percentage | floatformat:0 }}% <span class="w3-text">(<em>{{score.total_records}} {% trans 'Horses' %}</em>)</span></span></div>
-                </div>
-            </div>
-            <br>
-        {% endfor %}
-    </div>
-     
 
+     <div class="w3-container w3-padding-16 w3-margin-left">
+    <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
+    <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
+    <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=3">3</a>
+    <a class="w3-button w3-large w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=4">4</a>
+    <a class="w3-button w3-large w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=5">5</a>
+    <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=6">6</a>
+    <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=7">7</a>
+    <a class="w3-button w3-large w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=8">8</a>
+    {% if current_race.iloc.2.8 > 8 %}
+      <a class="w3-button w3-large w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=9">9</a>
+      {% if current_race.iloc.2.8 > 9 %}
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=10">10</a>
+        {% if current_race.iloc.2.8 > 10 %}
+          <a class="w3-button w3-large w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=11">11</a>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+    </div>
        <!-- Add Tips by users-->
 
         <div id="id01" class="w3-modal">

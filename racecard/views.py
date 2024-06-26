@@ -33,7 +33,6 @@ def racecard(request):
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
      
-     print("No of Race",len(current_race))
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
      dt_obj = datetime.strptime(curr_race_date, "%Y-%m-%d")
      timestamp = int(dt_obj.timestamp())+int(id)
@@ -44,7 +43,7 @@ def racecard(request):
      random_numbers_list = [random.randint(1, 64) for _ in range(num_rows)]
      # Add the 'Rand' column to the DataFrame
      current_race['Ichi'] = random_numbers_list
-     print("Current_race:",current_race)
+
      total_race = current_race['Total'].iloc[0]
      
      horse_tips_qty = (
@@ -60,7 +59,7 @@ def racecard(request):
         .values('user__groups__name')
         .annotate(num_users=Count('user', distinct=True))
     )
-     print("Horse Tips Qtr: ", tips_qty_by_type)
+
 
     ## For Tips Sorting based on Overall Performance ##
      last_tips_by_user = (
