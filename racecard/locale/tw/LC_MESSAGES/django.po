@@ -51,10 +51,10 @@ msgid "Back to View By Race"
 msgstr "回到賽事查看"
 
 msgid "Tips Summary"
-msgstr "查看全部貼士"
+msgstr "貼士總覧"
 
-msgid "Horses Battle Chart"
-msgstr "馬匹對戰圖"
+msgid "Battle Chart"
+msgstr "馬匹對戰"
 
 msgid "Tips Summary View"
 msgstr "用戶貼士總覽"
@@ -165,7 +165,7 @@ msgstr "馬來🇲🇾賽馬"
 
 #: racecard/templates/master.html:33
 msgid "Support Monkey"
-msgstr "支持Monkey的工作"
+msgstr "支持Monkey"
 
 #: racecard/templates/master.html:34
 msgid "Contact"

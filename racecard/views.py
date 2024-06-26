@@ -99,7 +99,6 @@ def racecard(request):
      request.session['curr_race_date'] = curr_race_date
      request.session['total_race']= int(total_race)
 
-     print("total rAce", total_race)
     # Organize the data by username and fetch all relevant records for each user
      last_perf_by_user = (
         UserTips.objects.filter(race_date=curr_race_date)
@@ -284,7 +283,7 @@ def racecard_my(request):
          )
          .order_by('-hit_pst')  # Sort in descending order of hit ratio
      )   
-     print("##curr_tips",curr_tips_by_user)
+  
     # Calculate the total sum of 'Hit' in 'curr_tips_by_user' with handling for None values
     # sum_pst = 0
     #  for tip in curr_tips_by_user:
@@ -294,7 +293,7 @@ def racecard_my(request):
     #       sort_query = last_tips_by_user
     #   else:      
      sort_query = curr_tips_by_user
-     print("## Sort_query ##", sort_query)
+
 
     #  request.session['curr_tips_by_user'] = list(curr_tips_by_user)
     #  request.session['curr_race_date'] = curr_race_date
@@ -559,6 +558,7 @@ def ichi_lotto(request):
     # Insert the '/' character at the appropriate position
     next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
     print("NextDraw:", next_draw)
+    request.session['next_draw']= next_draw
     form = NumberForm()  # Initialize the form here
     user_input = 0
     if request.method == 'POST':
@@ -581,7 +581,7 @@ def ichi_lotto(request):
                 ichi[number].append(index+1)
         ichi_counter = ichi_counter+1        
                 # Retrieve all records with Draw='24/071'
-    records = Marksix_user_rec.objects.filter(Draw='24/071')
+    records = Marksix_user_rec.objects.filter(Draw=next_draw)
     return render(request, 'ichi_lotto.html', {'ichi': ichi, 'form':form,'records':records,'current_datetime':current_datetime,'next_draw':next_draw})
 
 def update_lotto_tips(request):
