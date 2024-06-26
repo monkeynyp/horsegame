@@ -210,9 +210,10 @@
 <div id="numberModal" class="w3-modal w3-container w3-padding-16">
     <div class="w3-modal-content w3-card-4 w3-padding-32">
         <span class="w3-button w3-display-topright" onclick="closeModal()">&times;</span>
-        <h3 class="w3-center">輸入你的心水號</h3><h4>24/071</h4>
+        <h3 class="w3-center">輸入你的心水號</h3><h4>期數：&nbsp;{{ next_draw }}</h4>
         <form id="lotto-form" class="w3-container" method="post" action="{% url 'update_lotto_tips' %}">
             {% csrf_token %}
+            <input type="hidden" name="DrawNo" value="{{ next_draw }}">
             <label for="id_No1">No1:</label>
             {{ form.No1 }}
             <br>

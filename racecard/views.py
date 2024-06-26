@@ -591,12 +591,12 @@ def update_lotto_tips(request):
         if form.is_valid():
             # Validate unique numbers
             # Save the numbers to the model
-            # ...
+            draw_no = request.POST.get('DrawNo')
              # Update or create the instance
             user_rec, created = Marksix_user_rec.objects.update_or_create(
                 user=request.user,
                 seq=1,  # Set the appropriate sequence value
-                Draw='24/071',  # Set the appropriate draw value
+                Draw=draw_no,  # Set the appropriate draw value
                 defaults={
                     'Date': date.today(),  # Use the submitted date
                     'No1': form.cleaned_data['No1'],
