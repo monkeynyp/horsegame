@@ -553,7 +553,7 @@ def ichi_lotto(request):
     draw_without_slash = largest_draw.replace('/', '')
     seed_no = int(draw_without_slash)+1
     draw_string = str(seed_no)
-
+    print("SeedNo:", seed_no)
     # Insert the '/' character at the appropriate position
     next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
     print("NextDraw:", next_draw)
@@ -563,7 +563,8 @@ def ichi_lotto(request):
     if request.method == 'POST':
         user_input = request.POST.get('number')  # Get the value from the form
 
-    seed_no=+int(user_input)
+    seed_no=seed_no+int(user_input)
+    print("Final_seedNo", seed_no)
     random.seed(seed_no)
     random_numbers_list = [random.randint(1, 64) for _ in range(49)]
    
