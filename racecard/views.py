@@ -8,7 +8,7 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import UserTips,UserScores,Article,UserTips_my,Marksix_hist,Marksix_user_rec
+from .models import FootballMatch, FootballTeam, UserTips,UserScores,Article,UserTips_my,Marksix_hist,Marksix_user_rec
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
 from .forms import CustomUserCreationForm,NumberForm
@@ -612,3 +612,29 @@ def update_lotto_tips(request):
             user_rec.save()
     return redirect('../ichi_lotto/')
           
+def football_match(request):
+    match_id = request.GET.get('id')
+    # Get football matches for today
+    today_matches = FootballMatch.objects.filter(match_date__date__gte=date.today(),id=match_id)
+
+    # Create a list to store combined match and team data
+   # match_team_data = []
+
+    for match in today_matches:
+        # Fetch team information based on team names
+        team_a_info = FootballTeam.objects.get(team_name=match.team_a)
+        print("Team_A:",team_a_info)
+        team_b_info = FootballTeam.objects.get(team_name=match.team_b)
+        print("Team_B:",team_b_info)
+
+        # Combine match and team data
+        combined_data = {
+            'match': match,
+            'team_a_info': team_a_info,
+            'team_b_info': team_b_info,
+        }
+        #match_team_data.append(combined_data)
+    
+    print("Result:", combined_data)
+    # Render the template with the combined data
+    return render(request, 'footballmatch.html', {'combined_data': combined_data})

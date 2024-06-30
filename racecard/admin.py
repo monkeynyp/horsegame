@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from .models import UserTips, UserScores, Article, User,UserTips_my, Marksix_hist,Marksix_user_rec
+from .models import FootballMatch,FootballTeam,UserTips, UserScores, Article, User,UserTips_my, Marksix_hist,Marksix_user_rec
 # Register your models here.
 class UserTipsAdmin(admin.ModelAdmin):
     list_display = ("user","race_date","race_no","horse_no","horse_name","hit")
@@ -22,6 +22,11 @@ class Marksix_histAdmin(admin.ModelAdmin):
 class Marksix_user_recAdmin(admin.ModelAdmin):
     list_display = ("user","Draw","Date","No1","No2","No3","No4","No5","No6","No7")
 
+class FootballTeamAdmin(admin.ModelAdmin):
+    list_display = ("team_name","attack_score","defence_score","strategy_score","perf_score")
+
+class FootballMatchAdmin(admin.ModelAdmin):
+    list_display = ("match_date","team_a","team_b")
 class CustomUserAdmin(UserAdmin):
     list_display = ('username', 'email','get_groups')
 
@@ -40,3 +45,5 @@ admin.site.register(UserTips_my, UserTips_myAdmin)
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Marksix_hist, Marksix_histAdmin)
 admin.site.register(Marksix_user_rec, Marksix_user_recAdmin)
+admin.site.register(FootballTeam, FootballTeamAdmin)
+admin.site.register(FootballMatch, FootballMatchAdmin)

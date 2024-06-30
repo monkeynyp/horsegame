@@ -1,0 +1,127 @@
+{% extends "master.html" %}
+{% block title %}世界足球比賽AI分析{% endblock %}
+{% block content %}
+{% load i18n %}
+{% load static %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<h1 class="w3-center">Today's Football Matches</h1>
+<table class="w3-table-all">
+    <thead>
+        <tr class="w3-black">
+            <th>Team</th>
+            <th>Scoretype</th>
+            <th>Score</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="4">{{ combined_data.team_a_info }}</td>
+            <td>Attack</td>
+            <td>{{ combined_data.team_a_info.attack_score }}</td>
+            <td>{{ combined_data.team_a_info.attack_desc_cn }}</td>
+        </tr>
+        <tr>
+            <td>Defence</td>
+            <td>{{ combined_data.team_a_info.defence_score }}</td>
+            <td>{{ combined_data.team_a_info.defence_desc_cn }}</td>
+        </tr>
+        <tr>
+            <td>Strategy</td>
+            <td>{{ combined_data.team_a_info.strategy_score }}</td>
+            <td>{{ combined_data.team_a_info.strategy_desc_cn }}</td>
+        </tr>
+        <tr>
+            <td>往績</td>
+            <td>{{ combined_data.team_a_info.perf_score }}</td>
+            <td>{{ combined_data.team_a_info.perf_desc_cn }}</td>
+        </tr>
+        <!-- Repeat for Team B -->
+        <tr>
+            <td rowspan="4">{{ combined_data.team_b_info }}</td>
+            <td>Attack</td>
+            <td>{{ combined_data.team_b_info.attack_score }}</td>
+            <td>{{ combined_data.team_b_info.attack_desc_cn  }}</td>
+        </tr>
+        <tr>
+            <td>Defence</td>
+            <td>{{ combined_data.team_b_info.defence_score }}</td>
+            <td>{{ combined_data.team_b_info.defence_desc_cn }}</td>
+        </tr>
+        <tr>
+            <td>Strategy</td>
+            <td>{{ combined_data.team_b_info.strategy_score }}</td>
+            <td>{{ combined_data.team_b_info.strategy_desc_cn }}</td>
+        </tr>
+        <tr>
+            <td>往績</td>
+            <td>{{ combined_data.team_b_info.perf_score }}</td>
+            <td>{{ combined_data.team_b_info.perf_desc_cn }}</td>
+        </tr>
+        <!-- Repeat for other score types (performance, etc.) -->
+    </tbody>
+</table>
+
+<canvas id="myRadarChart" width="400" height="400"></canvas>
+
+<script>
+    const ctx = document.getElementById('myRadarChart').getContext('2d');
+    const teamAInfo = "{{ combined_data.team_a_info }}";
+    const teamBInfo = "{{ combined_data.team_b_info }}";
+    const teamAScores = [
+        "{{ combined_data.team_a_info.attack_score }}",
+        "{{ combined_data.team_a_info.defence_score }}",
+        "{{ combined_data.team_a_info.strategy_score }}",
+        "{{ combined_data.team_a_info.perf_score }}",
+        // Add other score types dynamically
+    ];
+
+    const teamBScores = [
+        "{{ combined_data.team_b_info.attack_score }}",
+        "{{ combined_data.team_b_info.defence_score }}",
+        "{{ combined_data.team_b_info.strategy_score }}",
+        "{{ combined_data.team_b_info.perf_score }}",
+        // Add other score types dynamically
+    ];
+    const data = {
+        labels: ['Attack', 'Defence', 'Strategy', 'Performance'],
+        datasets: [
+            {
+                label: teamAInfo,
+                data: teamAScores.map(score => parseFloat(score)), // Parse as numeric values
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgb(255, 99, 132)',
+                borderWidth: 2,
+            },
+            {
+                label: teamBInfo,
+                data: teamBScores.map(score => parseFloat(score)), // Parse as numeric values
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgb(54, 162, 235)',
+                borderWidth: 2,
+            },
+        ],
+    };
+
+    const config = {
+        type: 'radar',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Radar Chart for Switzerland vs Italy',
+                },
+            },
+            scales: {
+                r: {
+                    beginAtZero: false, // Ensure the scale starts from 0
+                },
+            },
+        },
+    };
+
+    const myChart = new Chart(ctx, config);
+</script>
+{% endblock %}

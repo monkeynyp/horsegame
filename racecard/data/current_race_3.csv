@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/26,1,COMET SPLENDIDO,Z Purton,135,1183,9,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-1,2024/06/26,2,RED MAJESTY,H Bowman,135,1210,5,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-2,2024/06/26,3,SIXTH GENERATION,C Y Ho,134,1207,8,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-3,2024/06/26,4,CORDYCEPS ONE,Y L Chung,133,1095,11,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-4,2024/06/26,5,GOLDEN LUCK,L Hewitson,129,1112,12,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-5,2024/06/26,6,STORM LEGEND,E C W Wong,129,1048,1,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-6,2024/06/26,7,SURE JOYFUL,M F Poon,128,1062,3,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-7,2024/06/26,8,SUPER BABY,L Ferraris,125,1157,6,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-8,2024/06/26,9,PATCH OF TIME,K Teetan,119,1134,2,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-9,2024/06/26,10,GREAT ACHIEVER,M L Yeung,117,1039,10,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-10,2024/06/26,11,KYRUS UNICORN,A Atzeni,116,1094,4,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
-11,2024/06/26,12,SUPER EAGLE,M Chadwick,115,1097,7,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good
+0,2024/07/01,1,CHILLI BABA,H Bowman,135,1187,12,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+1,2024/07/01,2,GANGNAM STAR,A Badel,134,1112,3,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+2,2024/07/01,3,NOBLE WIN,A Hamelin,134,1183,14,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+3,2024/07/01,4,AROMATICA,H Bentley,132,1168,2,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+4,2024/07/01,5,WINNING SEVEN,L Ferraris,132,1130,13,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+5,2024/07/01,6,ASIAN ONE,A Atzeni,130,1084,1,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+6,2024/07/01,7,YOO YOO KNIGHT,C L Chau,130,1079,6,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+7,2024/07/01,8,SMART FOLKS,M L Yeung,129,1157,7,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+8,2024/07/01,9,RIGHT HONOURABLE,B Thompson,127,1022,9,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+9,2024/07/01,10,CHARMANDER,K De Melo,126,1137,10,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+10,2024/07/01,11,PRECISION GOAL,Z Purton,126,1060,4,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+11,2024/07/01,12,GENERAL ACE,C Y Ho,125,1053,11,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+12,2024/07/01,13,HO HO STAR,K C Leung,125,1103,5,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+13,2024/07/01,14,DRAGON KINGDOM,K Teetan,115,1164,8,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good

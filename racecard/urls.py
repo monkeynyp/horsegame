@@ -30,6 +30,7 @@ urlpatterns = [
     path('lottory_predict/', views.lottory_predict, name='lottory_predict'),
     path('ichi_lotto/', views.ichi_lotto, name='ichi_lotto'),
     path('update_lotto_tips/', views.update_lotto_tips, name='update_lotto_tips'),
+    path('footballmatch/', views.football_match, name='football_match'),
 
 
 

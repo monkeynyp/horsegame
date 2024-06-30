@@ -88,4 +88,33 @@ class Marksix_user_rec(models.Model):
     def __str__(self):
         return f"{self.Draw} - {self.Date}"
 
+class FootballTeam(models.Model):
+    team_name = models.CharField(max_length=100)
+    attack_score = models.DecimalField(max_digits=3, decimal_places=1,default=1.0)
+    defence_score = models.DecimalField(max_digits=3, decimal_places=1, default=1.0)
+    strategy_score = models.DecimalField(max_digits=3, decimal_places=1, default=1.0)
+    perf_score = models.DecimalField(max_digits=3, decimal_places=1, default=1.0)
+    attack_desc_en = models.TextField(blank=True)
+    attack_desc_cn = models.TextField(blank=True)
+    defence_desc_en = models.TextField(blank=True)
+    defence_desc_cn = models.TextField(blank=True)
+    strategy_desc_en = models.TextField(blank=True)
+    strategy_desc_cn = models.TextField(blank=True)
+    perf_desc_en = models.TextField(blank=True)
+    perf_desc_cn = models.TextField(blank=True)
+    team_logos = models.ImageField(upload_to='team_logos/', blank=True)
 
+    def __str__(self):
+        return self.team_name
+
+class FootballMatch(models.Model):
+    match_date = models.DateTimeField()
+    team_a = models.CharField(max_length=100)
+    team_b = models.CharField(max_length=100)
+    match_name = models.CharField(max_length=200)
+    location = models.CharField(max_length=200)
+    team_a_goal = models.IntegerField(default=0)
+    team_b_goal = models.IntegerField(default=0)
+
+    def __str__(self):
+        return f"{self.match_name} ({self.team_a} vs {self.team_b})"

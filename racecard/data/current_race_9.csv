@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/06/26,1,KAHOLO ANGEL,H Bowman,135,1124,3,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-1,2024/06/26,2,HAPPY FAT CAT,E C W Wong,131,1091,5,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-2,2024/06/26,3,A AMERIC TE SPECSO,B Avdulla,130,1094,4,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-3,2024/06/26,4,O'LINER,C Y Ho,127,1232,6,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-4,2024/06/26,5,I AM THE BOSS,A Atzeni,126,1109,11,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-5,2024/06/26,6,EXCELLENT PEERS,L Hewitson,124,1150,9,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-6,2024/06/26,7,CALIFORNIA DEEPLY,Z Purton,123,1082,10,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-7,2024/06/26,8,ELEGANT LIFE,M L Yeung,123,1129,2,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-8,2024/06/26,9,KA YING CHEER,A Badel,122,1226,1,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-9,2024/06/26,10,KYRUS DRAGON,K Teetan,121,1016,7,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-10,2024/06/26,11,KING ECCELLENTE,H Bentley,120,1148,12,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
-11,2024/06/26,12,TELECOM SPEED,B Thompson,120,1149,8,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good
+0,2024/07/01,1,RUN RUN TIMING,H Bentley,135,1151,2,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+1,2024/07/01,2,FIGHTING MACHINE,Z Purton,132,1068,7,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+2,2024/07/01,3,SUPER INFINITY,H Bowman,131,1141,5,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+3,2024/07/01,4,GOLDEN BULL,L Hewitson,129,1158,9,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+4,2024/07/01,5,SMASHING EXPRESS,B Avdulla,129,1067,6,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+5,2024/07/01,6,ALWAYS FLUKE,C Y Ho,128,1074,8,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+6,2024/07/01,7,MIGHTY STRENGTH,A Hamelin,127,984,3,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+7,2024/07/01,8,STARMEN,M L Yeung,127,1125,12,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+8,2024/07/01,9,CIRCUIT MIGHTY,K C Leung,126,1011,4,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+9,2024/07/01,10,FIREFOOT,K De Melo,126,1123,13,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+10,2024/07/01,11,HAPPYDEARHAPPYDEER,Y L Chung,125,1057,1,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+11,2024/07/01,12,CALL ME SUPREME,B Thompson,123,1131,10,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+12,2024/07/01,13,VERBIER,A Badel,121,1239,11,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+13,2024/07/01,14,SPEEDY CHARIOT,A Atzeni,117,1121,14,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
