@@ -167,6 +167,9 @@ msgstr "馬來🇲🇾賽馬"
 msgid "Support MK"
 msgstr "支持MK"
 
+msgid "Support Monkey"
+msgstr "支持 Monkey"
+
 #: racecard/templates/master.html:34
 msgid "Contact"
 msgstr "聯絡"

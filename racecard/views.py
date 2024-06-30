@@ -586,32 +586,39 @@ def ichi_lotto(request):
 
 def update_lotto_tips(request):
     if request.method == 'POST':
-        # Process form data and update the model instance
-        # (user, seq, Draw, Date will be updated automatically)
         form = NumberForm(request.POST)
         if form.is_valid():
-            # Validate unique numbers
-            # Save the numbers to the model
             draw_no = request.POST.get('DrawNo')
-             # Update or create the instance
+            # Sort the numbers in ascending order
+            sorted_numbers = sorted([
+                form.cleaned_data['No1'],
+                form.cleaned_data['No2'],
+                form.cleaned_data['No3'],
+                form.cleaned_data['No4'],
+                form.cleaned_data['No5'],
+                form.cleaned_data['No6'],
+                form.cleaned_data['No7'],
+            ])
+            # Update or create the instance
             user_rec, created = Marksix_user_rec.objects.update_or_create(
                 user=request.user,
                 seq=1,  # Set the appropriate sequence value
                 Draw=draw_no,  # Set the appropriate draw value
                 defaults={
-                    'Date': date.today(),  # Use the submitted date
-                    'No1': form.cleaned_data['No1'],
-                    'No2': form.cleaned_data['No2'],
-                    'No3': form.cleaned_data['No3'],
-                    'No4': form.cleaned_data['No4'],
-                    'No5': form.cleaned_data['No5'],
-                    'No6': form.cleaned_data['No6'],
-                    'No7': form.cleaned_data['No7'],
+                    'Date': date.today(),
+                    'No1': sorted_numbers[0],
+                    'No2': sorted_numbers[1],
+                    'No3': sorted_numbers[2],
+                    'No4': sorted_numbers[3],
+                    'No5': sorted_numbers[4],
+                    'No6': sorted_numbers[5],
+                    'No7': sorted_numbers[6],
                 }
             )
             # Save the instance to the database
             user_rec.save()
     return redirect('../ichi_lotto/')
+
           
 def football_match(request):
     match_id = request.GET.get('id')

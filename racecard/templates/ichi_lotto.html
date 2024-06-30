@@ -232,7 +232,7 @@
             <label for="id_No2">No6:</label>
             {{ form.No6 }}
             <br>
-            <label for="id_No2">特碼:</label>
+            <label for="id_No2">No7:</label>
             {{ form.No7 }}
             <br><br>
             <!-- Repeat for No3 to No7 -->
@@ -255,7 +255,7 @@
             <th>No4</th>
             <th>No5</th>
             <th>No6</th>
-            <th>特碼</th>
+            <th>No7</th>
         </tr>
     </thead>
     <tbody>
@@ -273,7 +273,10 @@
         {% endfor %}
     </tbody>
 </table>
-
+<div class="w3-center">
+    <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
+      </button>
+      </div>
 
 <div id="id02" class="w3-modal">
     <div class="w3-modal-content w3-animate-top">
@@ -307,7 +310,7 @@
     // Get the current date and time
     var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
     // Define the start and end date and time for the period
-    var startDate = new Date("2024-06-29T21:15:00");
+    var startDate = new Date("2024-07-02T21:15:00");
     var endDate = new Date("2025-12-25T23:59:59");
  
     // Disable the button if the current date and time fall within the specified period
