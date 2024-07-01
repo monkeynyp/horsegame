@@ -3936,3 +3936,9 @@ msgstr "土耳其🇹🇷"
 
 msgid "Austria"
 msgstr "奧地利🇦🇹"
+
+msgid "Romania"
+msgstr "羅馬尼亞🇷🇴"
+
+msgid "Nethelands"
+msgstr "荷蘭🇳🇱"
