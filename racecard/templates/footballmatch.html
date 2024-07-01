@@ -7,6 +7,20 @@
 <h1 class="w3-center">歐洲國家盃</h1>
 <h3 class="w3-center">比賽日期：&nbsp;{{ combined_data.match.match_date }}</h3>
 <canvas id="myRadarChart" width="400" height="400"></canvas>
+
+{% with id=combined_data.match.id %}
+
+{% if id %}
+<div class="w3-container w3-padding-16" style="text-align: center;">
+  {% if id|add:"-1" > 0 %}
+      <a href="?id={{ id|add:'-1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">上一場</button></a>
+  {% else %}
+      <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">上一場</button></a>
+  {% endif %}
+  <a href="?id={{ id|add:'1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">下一場 »</button></a>
+</div>
+{% endif %}
+{% endwith %}
 <table class="w3-table-all">
     <thead>
         <tr class="w3-black">
