@@ -3889,3 +3889,50 @@ msgstr "特別號碼"
 
 msgid "B Thompson"
 msgstr "湯普新"
+
+
+
+
+#Football
+
+msgid "England"
+msgstr "英格蘭🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+
+msgid "Slovakia"
+msgstr "斯洛伐克🇸🇰"
+
+msgid "Spain"
+msgstr "西班牙🇪🇸"
+
+msgid "Georgia"
+msgstr "格魯吉亞🇬🇪"
+
+msgid "France"
+msgstr "法國🇫🇷"
+
+msgid "Belgium"
+msgstr "比利時🇧🇪"
+
+msgid "Slovenia"
+msgstr "斯洛文尼亞🇸🇮"
+
+msgid "Portugal"
+msgstr "葡萄牙🇵🇹"
+
+msgid "Switzerland"
+msgstr "瑞士🇨🇭"
+
+msgid "Italy"
+msgstr "意大利🇮🇹"
+
+msgid "Germany"
+msgstr "德國🇩🇪"
+
+msgid "Denmark"
+msgstr "丹麥🇩🇰"
+
+msgid "Turkey"
+msgstr "土耳其🇹🇷"
+
+msgid "Austria"
+msgstr "奧地利🇦🇹"

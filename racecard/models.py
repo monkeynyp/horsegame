@@ -94,14 +94,8 @@ class FootballTeam(models.Model):
     defence_score = models.DecimalField(max_digits=3, decimal_places=1, default=1.0)
     strategy_score = models.DecimalField(max_digits=3, decimal_places=1, default=1.0)
     perf_score = models.DecimalField(max_digits=3, decimal_places=1, default=1.0)
-    attack_desc_en = models.TextField(blank=True)
-    attack_desc_cn = models.TextField(blank=True)
-    defence_desc_en = models.TextField(blank=True)
-    defence_desc_cn = models.TextField(blank=True)
-    strategy_desc_en = models.TextField(blank=True)
-    strategy_desc_cn = models.TextField(blank=True)
-    perf_desc_en = models.TextField(blank=True)
-    perf_desc_cn = models.TextField(blank=True)
+    desc_en = models.TextField(blank=True)
+    desc_cn = models.TextField(blank=True)
     team_logos = models.ImageField(upload_to='team_logos/', blank=True)
 
     def __str__(self):

@@ -4,65 +4,69 @@
 {% load i18n %}
 {% load static %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<h1 class="w3-center">Today's Football Matches</h1>
+<h1 class="w3-center">歐洲國家盃</h1>
+<h3 class="w3-center">比賽日期：&nbsp;{{ combined_data.match.match_date }}</h3>
+<canvas id="myRadarChart" width="400" height="400"></canvas>
 <table class="w3-table-all">
     <thead>
         <tr class="w3-black">
-            <th>Team</th>
-            <th>Scoretype</th>
-            <th>Score</th>
-            <th>Description</th>
+            <th>球隊</th>
+            <th>分析角度</th>
+            <th>分數</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan="4">{{ combined_data.team_a_info }}</td>
-            <td>Attack</td>
+            <td rowspan="4">{% trans combined_data.team_a_info.team_name %}</td>
+            <td>進攻</td>
             <td>{{ combined_data.team_a_info.attack_score }}</td>
-            <td>{{ combined_data.team_a_info.attack_desc_cn }}</td>
         </tr>
         <tr>
-            <td>Defence</td>
+            <td>防守</td>
             <td>{{ combined_data.team_a_info.defence_score }}</td>
-            <td>{{ combined_data.team_a_info.defence_desc_cn }}</td>
         </tr>
         <tr>
-            <td>Strategy</td>
+            <td>策略</td>
             <td>{{ combined_data.team_a_info.strategy_score }}</td>
-            <td>{{ combined_data.team_a_info.strategy_desc_cn }}</td>
         </tr>
         <tr>
-            <td>往績</td>
+            <td>狀態</td>
             <td>{{ combined_data.team_a_info.perf_score }}</td>
-            <td>{{ combined_data.team_a_info.perf_desc_cn }}</td>
         </tr>
         <!-- Repeat for Team B -->
         <tr>
-            <td rowspan="4">{{ combined_data.team_b_info }}</td>
-            <td>Attack</td>
+            <td rowspan="4">{% trans combined_data.team_b_info.team_name %}</td>
+            <td>進攻</td>
             <td>{{ combined_data.team_b_info.attack_score }}</td>
-            <td>{{ combined_data.team_b_info.attack_desc_cn  }}</td>
         </tr>
         <tr>
-            <td>Defence</td>
+            <td>防守</td>
             <td>{{ combined_data.team_b_info.defence_score }}</td>
-            <td>{{ combined_data.team_b_info.defence_desc_cn }}</td>
         </tr>
         <tr>
-            <td>Strategy</td>
+            <td>策略</td>
             <td>{{ combined_data.team_b_info.strategy_score }}</td>
-            <td>{{ combined_data.team_b_info.strategy_desc_cn }}</td>
         </tr>
         <tr>
-            <td>往績</td>
+            <td>狀態</td>
             <td>{{ combined_data.team_b_info.perf_score }}</td>
-            <td>{{ combined_data.team_b_info.perf_desc_cn }}</td>
         </tr>
         <!-- Repeat for other score types (performance, etc.) -->
     </tbody>
 </table>
+{% with id=combined_data.match.id %}
 
-<canvas id="myRadarChart" width="400" height="400"></canvas>
+{% if id %}
+<div class="w3-container w3-padding-16" style="text-align: center;">
+  {% if id|add:"-1" > 0 %}
+      <a href="?id={{ id|add:'-1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">上一場</button></a>
+  {% else %}
+      <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">上一場</button></a>
+  {% endif %}
+  <a href="?id={{ id|add:'1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">下一場 »</button></a>
+</div>
+{% endif %}
+{% endwith %}
 
 <script>
     const ctx = document.getElementById('myRadarChart').getContext('2d');
@@ -84,7 +88,7 @@
         // Add other score types dynamically
     ];
     const data = {
-        labels: ['Attack', 'Defence', 'Strategy', 'Performance'],
+        labels: ['進攻', '防守', '策略', '狀態'],
         datasets: [
             {
                 label: teamAInfo,
@@ -111,7 +115,7 @@
             plugins: {
                 title: {
                     display: true,
-                    text: 'Radar Chart for Switzerland vs Italy',
+                    text: '實力分析圖',
                 },
             },
             scales: {

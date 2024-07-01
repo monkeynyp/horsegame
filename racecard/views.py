@@ -16,7 +16,7 @@ from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
 from django.utils import translation
-from django.http import JsonResponse
+from django.http import JsonResponse,HttpResponse
 from django.shortcuts import get_object_or_404, render
 from .get_results import get_results
 from django.contrib import messages
@@ -621,13 +621,18 @@ def update_lotto_tips(request):
 
           
 def football_match(request):
-    match_id = request.GET.get('id')
+    id = request.GET.get('id')
+    if  id is None:
+        today_matches = FootballMatch.objects.filter(match_date__date__gte=date.today())
+    else:
     # Get football matches for today
-    today_matches = FootballMatch.objects.filter(match_date__date__gte=date.today(),id=match_id)
-
-    # Create a list to store combined match and team data
-   # match_team_data = []
-
+        today_matches = FootballMatch.objects.filter(id=id)
+    
+    if not today_matches:
+        id = 1
+        # Handle the case when no matches are found
+        today_matches = FootballMatch.objects.filter(id=1)
+    
     for match in today_matches:
         # Fetch team information based on team names
         team_a_info = FootballTeam.objects.get(team_name=match.team_a)
@@ -641,8 +646,6 @@ def football_match(request):
             'team_a_info': team_a_info,
             'team_b_info': team_b_info,
         }
-        #match_team_data.append(combined_data)
     
-    print("Result:", combined_data)
     # Render the template with the combined data
-    return render(request, 'footballmatch.html', {'combined_data': combined_data})
+    return render(request, 'footballmatch.html', {'combined_data': combined_data, 'id':id})

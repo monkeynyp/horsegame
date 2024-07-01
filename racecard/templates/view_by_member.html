@@ -88,29 +88,5 @@
   </div>
 </div>
 </div>
-<script>
-  function openTab(evt, userName) {
-    var i, x, tablinks;
-    x = document.getElementsByClassName("user-record");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-    }
-    document.getElementById(userName).style.display = "block";
-    evt.currentTarget.className += " w3-red";
-  }
-
-  // Show the default tab (the first record)
-  document.getElementById("{{ complete_tips_by_user.0.user }}").style.display = "block";
-</script>
-
-  
-  
-
-
-<script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://zovidree.com/tag.min.js',7641087,document.body||document.documentElement)</script>
 
 {% endblock %}
