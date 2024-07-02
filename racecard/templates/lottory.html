@@ -12,7 +12,11 @@
            <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=6">號碼6</a>
            <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=7">特碼</a>
     </div></h2>
-
+    <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
+        <p class=" w3-large w3-serif">
+        <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+        Monkey將過去開出的號碼分為七組，號碼1 就是最小的號碼，如此類推。跟住通過K-近鄰演算法，分析過去五百期的六合彩數字的走勢，預期下期會有大機會開出什麼號碼，最後，用紅色波波展示，就是模型預測的號碼。七幅走勢圖，預測七組號碼。</p>
+      </div>
 <div class="w3-row">
         <div class="w3-col w3-padding-top-32 l10 s12">
 <canvas id="myChart" width="300" height="200"></canvas>

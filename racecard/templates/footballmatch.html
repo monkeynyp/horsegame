@@ -4,7 +4,8 @@
 {% load i18n %}
 {% load static %}
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<h1 class="w3-center">歐洲國家盃</h1>
+<h1 class="w3-center">
+<img src="{% static 'uefa-euro2024.png' %}" style="width:8%"><img><br>歐洲國家盃</h1>
 <h3 class="w3-center">比賽日期：&nbsp;{{ combined_data.match.match_date }}</h3>
 <canvas id="myRadarChart" width="400" height="400"></canvas>
 
