@@ -504,7 +504,19 @@ def lottory_predict(request):
     listNo='No1'
     id = request.GET.get('id')
     listNo = 'No'+id
-    
+    largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+
+    # Now 'largest_draw' contains the largest value from the 'Draw' column
+    # (e.g., '24/071')
+
+    # Next, remove the '/' character and convert it to an integer
+    draw_without_slash = largest_draw.replace('/', '')
+    seed_no = int(draw_without_slash)+1
+    draw_string = str(seed_no)
+    print("SeedNo:", seed_no)
+    # Insert the '/' character at the appropriate position
+    next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
+
      # Retrieve the data from the Marksix_hist model, sorted by Date in descending order
     data = Marksix_hist.objects.order_by('-Date').values_list(listNo, flat=True)[:500]
 
@@ -532,6 +544,7 @@ def lottory_predict(request):
 
     # Pass the results to the template
     context = {
+        'next_draw': next_draw,
         'recent_numbers': data_list[-20:],
         'next_number': next_number,
         'labels': json.dumps(labels),

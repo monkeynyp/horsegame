@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/01,1,PARTERRE,L Hewitson,135,1133,10,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-1,2024/07/01,2,CHAMPION METHOD,Y L Chung,130,1135,4,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-2,2024/07/01,3,TELECOM POWER,K C Leung,130,1028,2,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-3,2024/07/01,4,TELECOM DRAGON,C L Chau,128,1080,13,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-4,2024/07/01,5,FIRST LOVE,M L Yeung,127,1167,7,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-5,2024/07/01,6,HAROLD WIN,A Atzeni,127,1111,1,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-6,2024/07/01,7,LUCKY IMPACT,H Bowman,127,1093,3,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-7,2024/07/01,8,PERFECTO MOMENTS,L Ferraris,127,1125,6,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-8,2024/07/01,9,SIGHT SUPREME,Z Purton,123,1074,11,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-9,2024/07/01,10,MR MAESTRO,K Teetan,122,1155,9,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-10,2024/07/01,11,GIANT LEAP,A Hamelin,121,1110,14,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-11,2024/07/01,12,WINNING HEART,B Avdulla,121,1134,8,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-12,2024/07/01,13,GRAND CONQUEROR,B Thompson,119,1036,5,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
-13,2024/07/01,14,URBAN TRIUMPH,A Badel,116,1185,12,11,Class 4,1200,Sha Tin:,"TURF - ""B"" Course",Good
+0,2024/07/04,1,SNOWALOT,L Hewitson,130,1076,12,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+1,2024/07/04,2,DRAGON STAR,H Bowman,127,1136,5,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+2,2024/07/04,3,D STAR,Y L Chung,126,1061,3,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+3,2024/07/04,4,NORTHERN BEAST,B Avdulla,126,1127,2,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+4,2024/07/04,5,DARCI JOY,M F Poon,124,1069,11,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+5,2024/07/04,6,THE AZURE,K C Leung,124,1079,4,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+6,2024/07/04,7,DOUBLE WIN,C L Chau,123,1107,7,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+7,2024/07/04,8,STURDY RUBY,K Teetan,123,1125,6,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+8,2024/07/04,9,YEE CHEONG RAIDER,B Thompson,123,1139,10,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+9,2024/07/04,10,FOREMOST TEDDY,K H Chan,122,1185,1,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+10,2024/07/04,11,LUCKY BANNER,A Badel,122,1015,8,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good
+11,2024/07/04,12,MATSU VICTOR,C Y Ho,120,1072,9,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good

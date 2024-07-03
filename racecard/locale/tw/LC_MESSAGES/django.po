@@ -185,6 +185,15 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+#2024-07-04
+msgid "NOTTHESILLYONE"
+msgstr "大番薯"
+msgid "GET SET WIN"
+msgstr "金聚星"
+msgid "FORTUNATE SON"
+msgstr "將義"
+
+
 #2024-07-01
 msgid "COLOURFUL WINNER"
 msgstr "多彩多姿"

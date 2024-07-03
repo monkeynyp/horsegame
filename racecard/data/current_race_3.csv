@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/01,1,CHILLI BABA,H Bowman,135,1187,12,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-1,2024/07/01,2,GANGNAM STAR,A Badel,134,1112,3,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-2,2024/07/01,3,NOBLE WIN,A Hamelin,134,1183,14,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-3,2024/07/01,4,AROMATICA,H Bentley,132,1168,2,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-4,2024/07/01,5,WINNING SEVEN,L Ferraris,132,1130,13,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-5,2024/07/01,6,ASIAN ONE,A Atzeni,130,1084,1,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-6,2024/07/01,7,YOO YOO KNIGHT,C L Chau,130,1079,6,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-7,2024/07/01,8,SMART FOLKS,M L Yeung,129,1157,7,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-8,2024/07/01,9,RIGHT HONOURABLE,B Thompson,127,1022,9,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-9,2024/07/01,10,CHARMANDER,K De Melo,126,1137,10,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-10,2024/07/01,11,PRECISION GOAL,Z Purton,126,1060,4,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-11,2024/07/01,12,GENERAL ACE,C Y Ho,125,1053,11,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-12,2024/07/01,13,HO HO STAR,K C Leung,125,1103,5,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
-13,2024/07/01,14,DRAGON KINGDOM,K Teetan,115,1164,8,11,Class 5,1400,Sha Tin:,"TURF - ""B"" Course",Good
+0,2024/07/04,1,COLOURFUL PRINCE,L Ferraris,135,1173,10,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+1,2024/07/04,2,MA COMET,K Teetan,134,1139,3,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+2,2024/07/04,3,INNOTECH STAR,H T Mo,128,1079,12,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+3,2024/07/04,4,NOTTHESILLYONE,B Avdulla,128,1052,8,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+4,2024/07/04,5,GRAND NOVA,H Bowman,127,1059,6,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+5,2024/07/04,6,VICTORYTHIRTYTHREE,H Bentley,126,1109,5,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+6,2024/07/04,7,SPICY SPANGLE,M F Poon,124,1053,7,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+7,2024/07/04,8,SUPER SIXTY,C Y Ho,124,1051,2,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+8,2024/07/04,9,OVERSUBSCRIBED,A Atzeni,123,1192,11,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+9,2024/07/04,10,PARENTS' LOVE,Y L Chung,120,1015,1,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+10,2024/07/04,11,GORGEOUS VITALITY,L Hewitson,118,1109,9,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+11,2024/07/04,12,MODEST GENTLEMAN,A Badel,117,1044,4,9,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good

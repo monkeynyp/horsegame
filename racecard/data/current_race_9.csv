@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/01,1,RUN RUN TIMING,H Bentley,135,1151,2,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-1,2024/07/01,2,FIGHTING MACHINE,Z Purton,132,1068,7,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-2,2024/07/01,3,SUPER INFINITY,H Bowman,131,1141,5,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-3,2024/07/01,4,GOLDEN BULL,L Hewitson,129,1158,9,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-4,2024/07/01,5,SMASHING EXPRESS,B Avdulla,129,1067,6,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-5,2024/07/01,6,ALWAYS FLUKE,C Y Ho,128,1074,8,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-6,2024/07/01,7,MIGHTY STRENGTH,A Hamelin,127,984,3,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-7,2024/07/01,8,STARMEN,M L Yeung,127,1125,12,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-8,2024/07/01,9,CIRCUIT MIGHTY,K C Leung,126,1011,4,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-9,2024/07/01,10,FIREFOOT,K De Melo,126,1123,13,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-10,2024/07/01,11,HAPPYDEARHAPPYDEER,Y L Chung,125,1057,1,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-11,2024/07/01,12,CALL ME SUPREME,B Thompson,123,1131,10,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-12,2024/07/01,13,VERBIER,A Badel,121,1239,11,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
-13,2024/07/01,14,SPEEDY CHARIOT,A Atzeni,117,1121,14,11,Class 4,1400,Sha Tin:,"TURF - ""B"" Course",Good
+0,2024/07/04,1,NORDIC DRAGON,H Bowman,135,1129,11,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+1,2024/07/04,2,WATCH BUDDY,L Ferraris,131,1115,5,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+2,2024/07/04,3,ASTROLOGER,K C Leung,129,1164,2,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+3,2024/07/04,4,CALIFORNIA TOUCH,B Avdulla,128,1266,10,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+4,2024/07/04,5,GOLDEN EMPIRE,L Hewitson,128,1062,8,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+5,2024/07/04,6,LUCKY ARCHANGEL,M F Poon,123,1158,12,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+6,2024/07/04,7,HEALTHY HEALTHY,A Badel,121,1164,1,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+7,2024/07/04,8,MIGHTY COMMANDER,C Y Ho,120,1051,4,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+8,2024/07/04,9,NATURAL HIGH,B Thompson,120,1131,6,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+9,2024/07/04,10,RIGHTEOUS ARION,Y L Chung,120,1178,7,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+10,2024/07/04,11,YOUNG ARROW,H Bentley,119,1118,3,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+11,2024/07/04,12,ARMOUR EAGLE,K Teetan,118,1145,9,9,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good

@@ -4,6 +4,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
    <div class="w3-container">
        <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp K-近鄰演算法 預測六合彩號碼走勢 </h2>
+       <h5>下一期數： &nbsp;{{ next_draw }}</h5>
            <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=1">號碼1</a>
            <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=2">號碼2</a>
            <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=3">號碼3</a>
@@ -19,7 +20,13 @@
       </div>
 <div class="w3-row">
         <div class="w3-col w3-padding-top-32 l10 s12">
+            
 <canvas id="myChart" width="300" height="200"></canvas>
+
+
+
+
+
 <script>
   var ctx = document.getElementById('myChart').getContext('2d');
   var labels = JSON.parse('{{ labels|safe }}');
@@ -34,7 +41,7 @@
       data: {
           labels: labels,
           datasets: [{
-              label: '過去二十期號碼',
+              label: '開出號碼',
               data: recentNumbers,
               borderColor: 'blue',
               fill: true,
@@ -59,8 +66,10 @@
               }
           }
       }
+      
   });
 </script>
+
 </div>
 <div class="w3-center">
     <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
@@ -68,5 +77,7 @@
       </div>
 
 </div>
+
+
   
 {% endblock %}

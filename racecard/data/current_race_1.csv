@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/01,1,METRO WARRIOR,K C Leung,135,1190,4,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-1,2024/07/01,2,CHEVAL VALIANT,L Hewitson,133,1130,7,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-2,2024/07/01,3,FORTUNE WARRIOR,M F Poon,131,1124,3,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-3,2024/07/01,4,SUPERSONIC,B Thompson,130,1057,6,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-4,2024/07/01,5,AMAZING FUN,Z Purton,128,1138,9,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-5,2024/07/01,6,COLOURFUL WINNER,M L Yeung,128,1170,5,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-6,2024/07/01,7,DRAGON AIR FORCE,K Teetan,128,1051,10,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-7,2024/07/01,8,LOVING VIBES,C Y Ho,128,1090,13,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-8,2024/07/01,9,PERFECT GENERAL,A Atzeni,128,1148,2,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-9,2024/07/01,10,SUPER TREASURE,H T Mo,128,1030,1,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-10,2024/07/01,11,VIGOR ELLEEGANT,C L Chau,128,1159,12,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-11,2024/07/01,12,LESS IS MORE,H Bowman,127,1083,11,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-12,2024/07/01,13,SUPER AXIOM,Y L Chung,121,1268,14,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
-13,2024/07/01,14,MERCHANT PRINCE,A Badel,117,1177,8,11,Class 4,1000,Sha Tin:,"TURF - ""B"" Course",Good
+0,2024/07/04,1,LITTLE FAIRY,L Ferraris,135,1107,2,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+1,2024/07/04,2,TATTENHAM,A Badel,135,1130,3,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+2,2024/07/04,3,VULCANUS,K Teetan,135,1151,12,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+3,2024/07/04,4,THE KHAN,B Avdulla,134,1067,1,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+4,2024/07/04,5,BEAU GOSSE,C Y Ho,133,1141,11,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+5,2024/07/04,6,DRAGON PRIDE,C L Chau,133,1100,8,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+6,2024/07/04,7,DRAGON DELIGHT,H Bowman,131,1113,10,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+7,2024/07/04,8,COLOURFUL BARON,A Atzeni,130,1109,9,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+8,2024/07/04,9,PODIUM,K H Chan,127,1044,6,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+9,2024/07/04,10,YEABOI,L Hewitson,124,1133,5,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+10,2024/07/04,11,HAPPIHOOD,M L Yeung,116,1140,4,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+11,2024/07/04,12,HANG'S CHOICE,B Thompson,115,1087,7,9,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
