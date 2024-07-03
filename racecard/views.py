@@ -504,8 +504,9 @@ def lottory_predict(request):
     listNo='No1'
     id = request.GET.get('id')
     listNo = 'No'+id
+    current_datetime = timezone.now()
     largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
-
+    form = NumberForm() 
     # Now 'largest_draw' contains the largest value from the 'Draw' column
     # (e.g., '24/071')
 
@@ -541,14 +542,17 @@ def lottory_predict(request):
     labels.append('下期預測')  # Label for the next number
     predicted_numbers = knn_model.predict([[x] for x in range(1, 22)])
     print("predicted Number",predicted_numbers)
-
+    records = Marksix_user_rec.objects.filter(Draw=next_draw)
     # Pass the results to the template
     context = {
+        'records':records,
         'next_draw': next_draw,
+        'current_datetime': current_datetime,
         'recent_numbers': data_list[-20:],
         'next_number': next_number,
         'labels': json.dumps(labels),
         'predicted_numbers': json.dumps(predicted_numbers.tolist()),
+        'form':form,
     }
 
     return render(request, 'lottory.html', context)

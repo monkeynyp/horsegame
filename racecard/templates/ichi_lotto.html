@@ -203,7 +203,7 @@
 </div>
 <br><br>
 {% if user.is_authenticated %}
-    <button id='myButton' class="w3-button w3-ripple w3-red" onclick="openModal()">+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Numbers" %} </span>
+    <button id='myButton' class="w3-button w3-ripple w3-red" onclick="openModal()">+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp 加入你的心水號 </span>
 {% else %}
     <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Numbers" %} </span>
 {% endif %}
@@ -262,13 +262,13 @@
         {% for record in records %}
         <tr>
             <td>{{ record.user }}</td>
-            <td>{{ record.No1 }}</td>
-            <td>{{ record.No2 }}</td>
-            <td>{{ record.No3 }}</td>
-            <td>{{ record.No4 }}</td>
-            <td>{{ record.No5 }}</td>
-            <td>{{ record.No6 }}</td>
-            <td>{{ record.No7 }}</td>
+            <td><img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No3|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No4|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No5|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No6|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No7|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
         </tr>
         {% endfor %}
     </tbody>
@@ -310,7 +310,7 @@
     // Get the current date and time
     var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
     // Define the start and end date and time for the period
-    var startDate = new Date("2024-07-02T21:15:00");
+    var startDate = new Date("2024-07-07T21:15:00");
     var endDate = new Date("2025-12-25T23:59:59");
  
     // Disable the button if the current date and time fall within the specified period
