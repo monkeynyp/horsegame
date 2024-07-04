@@ -190,6 +190,7 @@ msgid "NOTTHESILLYONE"
 msgstr "大番薯"
 msgid "GET SET WIN"
 msgstr "金聚星"
+
 msgid "FORTUNATE SON"
 msgstr "將義"
 

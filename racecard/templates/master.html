@@ -135,18 +135,14 @@
     <span class="w3-bar w3-center"><a href='/privacy'>{% trans 'Privacy Policy' %}</a> &nbsp &nbsp <a href='/disclaimer'>{% trans 'Disclaimer' %}</a></span>
     <button class="w3-button w3-blue" onclick="acceptCookies()">{% trans 'Got it' %}!</button>
 </div>
-<script>
+<script data-cfasync="false" type="text/javascript">
   const sessionStorage = window.sessionStorage;
 
   // Initialize the click counter
   let clickCount = parseInt(sessionStorage.getItem('clickCount')) || 0;
   // Check if the script should run (only after the second click)
   if (clickCount == 2 || clickCount == 5 || clickCount== 9 || clickCount == 14 || clickCount == 20 || clickCount == 25 || clickCount == 30) {
-      (function(s,u,z,p){
-          s.src = u;
-          s.setAttribute('data-zone', z);
-          p.appendChild(s);
-      })(document.createElement('script'), 'https://zovidree.com/tag.min.js', 7641087, document.body || document.documentElement);
+    (function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://zovidree.com/tag.min.js',7641087,document.body||document.documentElement)
   }
 
   // Increment the click counter
