@@ -28,6 +28,22 @@
 <br><br>
 <div class="w3-center">
     <h3>預測運財號碼 {{ request.GET.id }}：    <a href="https://gleeglis.net/4/7158929"><img src="{% static 'no_' %}{{ next_number|stringformat:'d' }}.gif?CV=L4.07R2a" width="45"></a></h3>
+    {% with id=request.GET.id|default:"1" %}
+    {% if id %}
+        <div class="w3-container w3-padding-16" style="text-align: center;">
+            {% if id|add:"-1" > 0 %}
+                <a href="?id={{ id|add:'-1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom"><<</button></a>
+            {% else %}
+                <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom"><<</button></a>
+            {% endif %}
+            {% if id|add:"1" > 7 %}
+                <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">>></button></a>
+            {% else %}
+                <a href="?id={{ id|add:'1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">>></button></a>
+            {% endif %}
+            </div>
+    {% endif %}
+{% endwith %}
     <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
       </button>
       </div>
