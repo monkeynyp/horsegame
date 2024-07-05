@@ -185,6 +185,23 @@ msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
 
 #: Horse Name
+
+#2024-07-06
+msgid "ALWAYS MY FOLKS"
+msgstr "喆喆友福"
+msgid "CASHISCASH"
+msgstr "志在福星"
+msgid "GOOD PROSPECT"
+msgstr "飛黃"
+msgid "COURIER ALADDIN"
+msgstr "超平凡"
+msgid "LIFE OF STONE"
+msgstr "一石二鳥"
+msgid "MIGHTY STEED"
+msgstr "勁進駒"
+
+
+
 #2024-07-04
 msgid "NOTTHESILLYONE"
 msgstr "大番薯"

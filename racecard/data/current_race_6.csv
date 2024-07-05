@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/04,1,INTREPID WINNER,K De Melo,135,1055,9,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-1,2024/07/04,2,SERANGOON,H Bentley,135,1115,2,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-2,2024/07/04,3,JOY OF SPRING,C Y Ho,134,996,5,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-3,2024/07/04,4,SATIRICAL GLORY,H Bowman,131,1219,12,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-4,2024/07/04,5,FOREVER GLORIOUS,K Teetan,130,1091,8,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-5,2024/07/04,6,PRECISE EXPRESS,A Atzeni,125,1032,1,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-6,2024/07/04,7,PEGASUS GENERAL,Y L Chung,124,1031,7,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-7,2024/07/04,8,SUPER HONG KONG,C L Chau,124,1052,10,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-8,2024/07/04,9,LEGION OF MERIT,B Thompson,122,1251,6,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-9,2024/07/04,10,PALACE PAL,M F Poon,121,993,11,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-10,2024/07/04,11,SPECIAL HEDGE,L Hewitson,120,1077,4,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
-11,2024/07/04,12,ME TIME,A Badel,118,1041,3,9,Class 4,1800,Happy Valley:,"TURF - ""A"" Course",Good
+0,2024/07/06,1,WAH MAY WAI WAI,Y L Chung,135,1076,4,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/07/06,2,COMING PATCH,C Y Ho,133,1199,5,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/07/06,3,LAUGH TALE,K C Leung,132,1195,6,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/07/06,4,ONLY U,C L Chau,132,1104,11,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/07/06,5,LET'S DO IT,H Bowman,129,1137,7,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/07/06,6,LUCKY TOUCH,Z Purton,128,1109,14,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/07/06,7,TRADITION,M F Poon,128,1022,8,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/07/06,8,MEEPMEEP,B Avdulla,126,1051,13,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/07/06,9,PRINCE ALEX,M Chadwick,126,1071,12,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/07/06,10,SUPER UNICORN,K Teetan,124,1084,1,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+10,2024/07/06,11,MISSION VOICE,L Ferraris,123,1187,9,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+11,2024/07/06,12,JOYFUL PROSPERITY,A Atzeni,119,1081,10,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+12,2024/07/06,13,INVINCIBLE MISSILE,A Badel,117,1106,2,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
+13,2024/07/06,14,CHATER GOLD,H Bentley,116,1020,3,10,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good
