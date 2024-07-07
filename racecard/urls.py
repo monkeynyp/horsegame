@@ -16,6 +16,7 @@ urlpatterns = [
     path('newsletter/', views.newsletter, name='newsletter'),
     path('send_article_email/', views.send_article_email, name='send_article_email'),
     path('contact/', views.contact, name='contact'),
+    path('help/', views.help, name='help'),
     path('register/', register, name='register'),
     path('login/', user_login, name='login'),
     path('register/', register, name='register'),

@@ -157,8 +157,8 @@ msgid "Home"
 msgstr "主頁"
 
 #: racecard/templates/master.html:33
-msgid "HK🇭🇰Race"
-msgstr "香港🇭🇰賽馬"
+msgid "Horse Race"
+msgstr "賽馬"
 
 msgid "MY🇲🇾Race"
 msgstr "馬來🇲🇾賽馬"
@@ -183,6 +183,10 @@ msgstr "電腦模型"
 #: racecard/views.py:36
 msgid "Prediction Accracy"
 msgstr "預測龍虎榜"
+
+
+msgid "Help"
+msgstr "幫助"
 
 #: Horse Name
 

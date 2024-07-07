@@ -1,0 +1,49 @@
+{% extends "master.html" %} {% block title %} 常見問題 {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
+<style>
+  /* Add your custom styles here */
+  .faq-question {
+      font-weight: bold;
+      cursor: pointer;
+  }
+  .faq-answer {
+      display: none;
+  }
+</style>
+<div class="w3-container w3-card w3-margin">
+  <h1>常見問題🙋</h1>
+  <div class="faq-question w3-blue" onclick="toggleAnswer(1)"><h5>怎樣使用賽馬預測功能？<i class="fa-solid fa-circle-plus"></i></h5></div>
+  <div class="faq-answer w3-margin-left" id="answer1">Monkey 用電腦程式計算馬匹Place跑出的機會率。Monkey測試了超過十幾個機器學習的模，最終定型了三個模型包括Neuro Networks Regression，Random Forecast 和 Logistic Regression.並且開始追蹤命中率。發佈在我的網站。
+    <p>Monkey都好想知道各位師兄的心水是否比電腦更準確。歡迎大家都我的網站加入你的心水。使用好簡單。</p>
+    https://nyp.pythonanywhere.com/racecard/?1
+    <li>簡單注冊帳號或登入。
+    <li>在每場馬中Click 加入你的心水, 選擇三支Place。
+    <li>遞交。
+    <p>第一場馬之五分鐘前會停止加入貼士。Monkey會追蹤大家貼士的準確度。並會每日賽後更新結果，並發佈積累的命中率。</p>
+  
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bK_yWVwjz48?si=BGkbqIoPR_UBj-Nl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+
+  <div class="faq-question w3-blue" onclick="toggleAnswer(2)"><h5>怎樣使用六合彩走勢圖功能？<i class="fa-solid fa-circle-plus"></i></h5></div>
+  <div class="faq-answer w3-margin-left" id="answer2"><p>Monkey將過去開出的號碼分為七組，號碼1 就是最小的號碼，如此類推。跟住通過K-近鄰演算法，分析過去五百期的六合彩數字的走勢，預期下期會有大機會開出什麼號碼，最後，用紅色波波展示，就是模型預測的號碼。七幅走勢圖，預測七組號碼。我的YouTube Video有詳細介紹 </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FLtJb4WOl2A?si=zfgE4Lf1g6zOktw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+
+
+<script>
+  function toggleAnswer(id) {
+      const answer = document.getElementById(`answer${id}`);
+      answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+<div class="w3-center">
+    <button class="w3-button w3-sand w3-round w3-ripple w3-large" ><a href="https://glaultoa.com/4/7158508"><i class="fa-solid fa-heart" style="color: #f01000;"></i>{% trans "Support Monkey" %}</h5></a>
+  </button>
+</div>
+
+
+{% endblock %}

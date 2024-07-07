@@ -394,6 +394,9 @@ def privacy(request):
 def disclaimer(request):
     return render(request, 'disclaimer.html')
 
+def help(request):
+    return render(request, 'help.html')
+
 def send_article_email(request):
     if request.method == 'POST':
         article_id = request.POST.get('article_id')
