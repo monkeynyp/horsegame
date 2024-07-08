@@ -30,6 +30,7 @@ urlpatterns = [
     path('update_race_result/', views.update_race_result, name='update_race_result'),
     path('lottory_predict/', views.lottory_predict, name='lottory_predict'),
     path('ichi_lotto/', views.ichi_lotto, name='ichi_lotto'),
+    path('lotto_next_stat/', views.lotto_next_stat, name='lotto_next_stat'),
     path('update_lotto_tips/', views.update_lotto_tips, name='update_lotto_tips'),
     path('footballmatch/', views.football_match, name='football_match'),
 

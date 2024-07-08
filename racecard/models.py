@@ -84,6 +84,7 @@ class Marksix_user_rec(models.Model):
     No5 = models.IntegerField()
     No6 = models.IntegerField()
     No7 = models.IntegerField()
+    Hit = models.IntegerField()
 
     def __str__(self):
         return f"{self.Draw} - {self.Date}"

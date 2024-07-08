@@ -1,207 +1,60 @@
-{% extends "master.html" %} {% block title %} 香港六合彩易卦預測 {% endblock %} {% block content %}
+{% extends "master.html" %} {% block title %} Contact Monkey {% endblock %} 
 {% load i18n %}
 {% load static %}
-<div class="w3-container">
-<div class="w3-margin ">
-  
-<h1>易卦預測六合彩</h1>
-<h2>期數： &nbsp;{{ next_draw }}</h2>
-<!-- lotto_form_template.html -->
-<form method="post">
-    {% csrf_token %}
-    <label for="id_number">加入你幸運號碼🍀:</label>
-    <input type="number" id="id_number" name="number" value="0">
-    <button type="submit">🀄起卦🀄</button>
-</form>
-<br>
+{% block content %}
 
-<div class="w3-row-padding">
-        {% if ichi.1 %}
-        <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-            <header class="w3-container w3-blue w3-padding">
-                <img src="/static/Iching-1.png" alt="qiang"> 乾為天
-            </header>
-            <div class="w3-padding-32 w3-margin-left">
-            {% for value in ichi.1 %}
-            {% with padded_value=value|stringformat:"02d" %}
-                <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-            {% endwith %}
-            {% endfor %}
-            </div>
-            <footer class="w3-container w3-blue w3-left-align">
-                <span class="w3-small">Footer</span>
-            </footer>
-       
-        </div>
-    {% endif %}
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+   <div class="w3-container">
+       <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp K-近鄰演算法 預測六合彩號碼走勢 </h2>
+       <h5>下一期數： &nbsp;{{ next_draw }}</h5>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=1">號碼1</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=2">號碼2</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=3">號碼3</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=4">號碼4</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=5">號碼5</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=6">號碼6</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=7">特碼</a>
+    </div></h2>
+    <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
+        <p class=" w3-large w3-serif">
+        <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+        Monkey將過去開出的號碼分為七組，號碼1 就是最小的號碼，如此類推。跟住通過K-近鄰演算法，分析過去五百期的六合彩數字的走勢，預期下期會有大機會開出什麼號碼，最後，用紅色波波展示，就是模型預測的號碼。七幅走勢圖，預測七組號碼。我的YouTube Video有詳細介紹 <a href="https://youtu.be/FLtJb4WOl2A?si=VwqzG_sAqnbTmFtU"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a></p>
+      </div>
+<div class="w3-row">
+        <div class="w3-col w3-padding-top-32 l10 s12">
+            
+<canvas id="myChart" width="300" height="200"></canvas>
 
-{% if ichi.2 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
 
-  <header class="w3-container w3-green w3-padding" >
-    <img src="/static/Iching-2.png" alt="qiang">坤為地
- </header>
- 
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.2 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-green w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
 
-{% if ichi.34 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-yellow w3-padding" >
-    <img src="/static/Iching-34.png" alt="雷天大壯">雷天大壯
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.34 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-yellow w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-{% if ichi.11 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-brown w3-padding" >
-    <img src="/static/Iching-11.png" alt="地天泰">地天泰
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.11 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-brown w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-{% if ichi.13 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-indigo w3-padding" >
-    <img src="/static/Iching-13.png" alt="天火同人">天火同人
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.13 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
-</div>
- <footer class="w3-container w3-indigo w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-{% if ichi.7 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-pale-blue w3-padding" >
-    <img src="/static/Iching-7.png" alt="qiang">地水師
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.7 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-pale-blue w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-
-{% if ichi.50 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-pale-blue w3-padding" >
-    <img src="/static/Iching-50.png" alt="qiang">火風鼎
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.50 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-pale-blue w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-
-</div>
-{% endif %}
-
-{% if ichi.27 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-light-grey w3-padding" >
-    <img src="/static/Iching-27.png" alt="qiang">山雷頤
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.27 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-light-grey w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-
-{% if ichi.9 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-pale-red w3-padding" >
-    <img src="/static/Iching-9.png" alt="qiang">風天小畜
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.9 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-pale-red w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-</div>
-<div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
-    <p class=" w3-large w3-serif">
-    <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
-    每期都會以最新開彩日的日期來起卦，每個數字都會有自己的卦。本頁只會列出幾個大吉的卦，給大家參考。大家也可以輸入自己的幸運號碼來起自己獨有的卦，睇下上天是否眷顧你。</p>
-  </div>
-</div>
 <br><br>
+<ul>
+  {% for num, count in number_pairs %}
+      <li>{{ num }} and {{ count }}</li>
+  {% endfor %}
+</ul>
+<div class="w3-center">
+    <h3>預測運財號碼 {{ request.GET.id }}：    <a href="https://gleeglis.net/4/7158929"><img src="{% static 'no_' %}{{ next_number|stringformat:'d' }}.gif?CV=L4.07R2a" width="45"></a></h3>
+    {% with id=request.GET.id|default:"1" %}
+    {% if id %}
+        <div class="w3-container w3-padding-16" style="text-align: center;">
+            {% if id|add:"-1" > 0 %}
+                <a href="?id={{ id|add:'-1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom"><<</button></a>
+            {% else %}
+                <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom"><<</button></a>
+            {% endif %}
+            {% if id|add:"1" > 7 %}
+                <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">>></button></a>
+            {% else %}
+                <a href="?id={{ id|add:'1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">>></button></a>
+            {% endif %}
+            </div>
+    {% endif %}
+{% endwith %}
+    <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
+      </button>
+      </div>
+
 {% if user.is_authenticated %}
     <button id='myButton' class="w3-button w3-ripple w3-red" onclick="openModal()">+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp 加入你的心水號 </span>
 {% else %}
@@ -273,10 +126,7 @@
         {% endfor %}
     </tbody>
 </table>
-<div class="w3-center">
-    <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
-      </button>
-      </div>
+
 
 <div id="id02" class="w3-modal">
     <div class="w3-modal-content w3-animate-top">
@@ -310,7 +160,7 @@
     // Get the current date and time
     var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
     // Define the start and end date and time for the period
-    var startDate = new Date("2024-07-09T21:15:00");
+    var startDate = new Date("2024-07-07T21:15:00");
     var endDate = new Date("2025-12-25T23:59:59");
  
     // Disable the button if the current date and time fall within the specified period
@@ -375,5 +225,50 @@
             document.getElementById("id02").style.display = "none";
         }
 </script>
+
+<script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var labels = JSON.parse('{{ labels|safe }}');
+  var recentNumbers = JSON.parse('{{ recent_numbers|safe }}');
+  var nextNumber = JSON.parse('{{ next_number|safe }}');
+
+  // Add the nextNumber to the recentNumbers array to connect the line
+  recentNumbers.push(nextNumber);
+
+  var chart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: labels,
+          datasets: [{
+              label: '開出號碼',
+              data: recentNumbers,
+              borderColor: 'blue',
+              fill: true,
+              pointBackgroundColor: ['blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue', 'blue','blue','blue','red']
+          }]
+      },
+      options: {
+        layout: {
+            padding: {
+                right: 50 // Adjust the value as needed
+            }
+        },
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          },
+          elements: {
+              point: {
+                  radius: 10,
+                  hoverRadius: 20
+              }
+          }
+      }
+      
+  });
+</script>
+
+
 
 {% endblock %}

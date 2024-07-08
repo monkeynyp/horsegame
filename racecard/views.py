@@ -639,7 +639,92 @@ def update_lotto_tips(request):
             user_rec.save()
     return redirect('../ichi_lotto/')
 
-          
+def lotto_next_stat(request):
+    listNo='No1'
+    id = request.GET.get('id')
+    if id:
+        listNo = 'No'+id
+    else:
+        id=1
+    current_datetime = timezone.now()
+    largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+    form = NumberForm() 
+    # Now 'largest_draw' contains the largest value from the 'Draw' column
+    # (e.g., '24/071')
+
+    # Next, remove the '/' character and convert it to an integer
+    draw_without_slash = largest_draw.replace('/', '')
+    seed_no = int(draw_without_slash)+1
+    draw_string = str(seed_no)
+    print("SeedNo:", seed_no)
+    # Insert the '/' character at the appropriate position
+    next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
+
+     # Retrieve the data from the Marksix_hist model, sorted by Date in descending order
+    data = Marksix_hist.objects.order_by('-Date').values_list(listNo, flat=True)
+
+    # Convert the queryset to a list
+    data_list = list(data)
+    data_list.reverse()
+    print(data_list)
+    # Prepare the features (X) and target (y) for KNN
+
+    past_pattern=data_list[-3:]
+    #past_pattern = [17,21,8]
+    print("Past_pattern:", past_pattern)
+
+
+    occurrences, next_numbers = find_occurrences_and_next_numbers(data_list, past_pattern,id)
+
+    print("Next_number",next_numbers)
+    # Prepare data for the chart
+
+    number_counts = {}  # Dictionary to store the frequency of each number
+
+    # Count the occurrences of each number
+    for num in next_numbers:
+        number_counts[num] = number_counts.get(num, 0) + 1
+
+    # Create a list of (number, frequency) tuples
+    number_pairs = [(num, count) for num, count in number_counts.items()]
+
+    records = Marksix_user_rec.objects.filter(Draw=next_draw)
+    # Pass the results to the template
+    context = {
+        'past_pattern':past_pattern,
+        'next_draw': next_draw,
+        'current_datetime': current_datetime,
+        'number_pairs':number_pairs,
+    }
+
+    return render(request, 'lotto_next_stat.html', context)
+
+def find_occurrences_and_next_numbers(history, target_sequence,id):
+    occurrences = []
+    next_numbers = []
+    id=int(id)
+    print("In Function:",target_sequence)
+    if id <= 2:
+        shift_pattern = [-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12]
+    elif id == 5 or id == 6:
+        shift_pattern = [-12,-11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3]
+    elif id == 7:
+        shift_pattern = [-20,-19,-18,-17,-16,-15,-14,-13,-12,11,-10,-9,-8,-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+    else:
+        shift_pattern = [-7,-6,-5,-4,-3,-2,-1,0,1,2,3,4,5,6,7,8]
+    for shift in shift_pattern:
+        target=[num + shift for num in target_sequence]
+        print("In Function1:",target)
+
+        for i in range(len(history) - len(target) + 1):
+            if history[i:i + len(target)] == target: #Find the seq mactch
+                occurrences.append(i)
+                print("i:",i)
+                if i < (len(history)-len(target)):
+                    if history[i+len(target)]-shift>0 and history[i+len(target)]-shift<49:
+                        next_numbers.append(history[i + len(target)]-shift)
+    return occurrences, next_numbers   
+  
 def football_match(request):
     id = request.GET.get('id')
     if  id is None:
