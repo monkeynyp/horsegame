@@ -189,7 +189,8 @@ msgid "Help"
 msgstr "幫助"
 
 #: Horse Name
-
+msgid "DO YOUR PART"
+msgstr "做好自己"
 #2024-07-06
 msgid "ALWAYS MY FOLKS"
 msgstr "喆喆友福"
