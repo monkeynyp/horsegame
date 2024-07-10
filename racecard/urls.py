@@ -33,6 +33,8 @@ urlpatterns = [
     path('lotto_next_stat/', views.lotto_next_stat, name='lotto_next_stat'),
     path('update_lotto_tips/', views.update_lotto_tips, name='update_lotto_tips'),
     path('footballmatch/', views.football_match, name='football_match'),
+    path('lotto_must_win/<int:id>/', views.lotto_must_win, name='lotto_must_win'),
+    # Other URL patterns
 
 
 

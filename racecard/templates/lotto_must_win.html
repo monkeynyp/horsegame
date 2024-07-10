@@ -1,0 +1,54 @@
+{% extends "master.html" %} {% block title %} Contact Monkey {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<body class="w3-container">
+
+    
+    <h1 class="w3-center"> 六合彩- 117組必中組合號碼 第{{ page_id }}頁</h1>
+
+    <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
+        <p class=" w3-large w3-serif">
+        <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+       有位台灣的叫Roger的年輕工程師，研究了數學組合， 只要買下特定的 117 組六合彩號碼，那麼無論開獎開出什麼號碼，這些奬券中都至少有一注會中獎。而 117 
+       應該是目前已知最低的能夠保證中獎注數。
+       識國語的朋友可以參考他的YouTube Video有詳細介紹 <a href="https://youtu.be/Hzcn6Ti-oJk?si=xbIW_040rimhPx3n"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a></p>
+      </div>
+    <table class="w3-table-all w3-hoverable w3-centered w3-large">
+        <thead>
+            <tr class="w3-blue">
+                <th>組別</th>
+                <th>No1</th>
+                <th>No2</th>
+                <th>No3</th>
+                <th>No4</th>
+                <th>No5</th>
+                <th>No6</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in page_data %}
+            <tr>
+                <td>{{ row.seq }}</td>
+                <td><img src="{% static 'no_' %}{{ row.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"></td>
+                <td><img src="{% static 'no_' %}{{ row.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"></td>
+                <td><img src="{% static 'no_' %}{{ row.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"></td>
+                <td><img src="{% static 'no_' %}{{ row.No4|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No4"></td>
+                <td><img src="{% static 'no_' %}{{ row.No5|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No5"></td>
+                <td><img src="{% static 'no_' %}{{ row.No6|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No6"></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="w3-center w3-margin-top">
+        {% if prev_page %}
+        <a href="{% url 'lotto_must_win' prev_page %}" class="w3-button w3-blue w3-margin-right">上一頁</a>
+        {% endif %}
+        {% if next_page %}
+        <a href="{% url 'lotto_must_win' next_page %}" class="w3-button w3-blue">下一頁</a>
+        {% endif %}
+    </div>
+
+{% endblock %}

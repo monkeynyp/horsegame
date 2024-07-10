@@ -16,7 +16,7 @@ from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
 from django.utils import translation
-from django.http import JsonResponse,HttpResponse
+from django.http import JsonResponse,HttpResponse, Http404
 from django.shortcuts import get_object_or_404, render
 from .get_results import get_results
 from django.contrib import messages
@@ -724,6 +724,31 @@ def find_occurrences_and_next_numbers(history, target_sequence,id):
                     if history[i+len(target)]-shift>0 and history[i+len(target)]-shift<49:
                         next_numbers.append(history[i + len(target)]-shift)
     return occurrences, next_numbers   
+
+def lotto_must_win(request, id):
+    file_path = 'racecard/data/lotto_must_win117.csv'  # Update this path
+    data = pd.read_csv(file_path)
+
+    # Calculate the start and end indices based on the page ID
+    page_size = 30
+    start_index = (id - 1) * page_size
+    end_index = start_index + page_size
+
+    if start_index >= len(data):
+        raise Http404("Page does not exist")
+
+    page_data = data.iloc[start_index:end_index]
+
+    context = {
+        'page_data': page_data.to_dict(orient='records'),
+        'page_id': id,
+        'prev_page': id - 1 if id > 1 else None,
+        'next_page': id + 1 if end_index < len(data) else None,
+    }
+
+    return render(request, 'lotto_must_win.html', context)
+
+
   
 def football_match(request):
     id = request.GET.get('id')
