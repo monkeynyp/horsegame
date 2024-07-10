@@ -726,7 +726,7 @@ def find_occurrences_and_next_numbers(history, target_sequence,id):
     return occurrences, next_numbers   
 
 def lotto_must_win(request, id):
-    file_path = 'racecard/data/lotto_must_win117.csv'  # Update this path
+    file_path = os.path.join(settings.BASE_DIR, "racecard/data/lotto_must_win117.csv")
     data = pd.read_csv(file_path)
 
     # Calculate the start and end indices based on the page ID
