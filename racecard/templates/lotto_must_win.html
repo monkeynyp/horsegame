@@ -6,7 +6,7 @@
 <body class="w3-container">
 
     
-    <h1 class="w3-center"> 六合彩- 117組必中組合號碼 第{{ page_id }}頁</h1>
+    <h1 class="w3-center"> 六合彩- 117組組合號碼 第{{ page_id }}頁</h1>
 
     <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
         <p class=" w3-large w3-serif">
@@ -25,6 +25,7 @@
                 <th>No4</th>
                 <th>No5</th>
                 <th>No6</th>
+                <th>卦象</th>
             </tr>
         </thead>
         <tbody>
@@ -37,6 +38,9 @@
                 <td><img src="{% static 'no_' %}{{ row.No4|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No4"></td>
                 <td><img src="{% static 'no_' %}{{ row.No5|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No5"></td>
                 <td><img src="{% static 'no_' %}{{ row.No6|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No6"></td>
+                <td class="w3-center {% if row.Ichi == 1 or row.Ichi == 2 or row.Ichi == 34 or row.Ichi == 11  or row.Ichi == 13 or row.Ichi == 14 or row.Ichi == 50 or row.Ichi == 35 or row.Ichi == 9 %} w3-yellow {% endif %}">
+                    <img src="/static/Iching-{{ row.Ichi }}.png" width="20">
+                
             </tr>
             {% endfor %}
         </tbody>

@@ -726,8 +726,22 @@ def find_occurrences_and_next_numbers(history, target_sequence,id):
     return occurrences, next_numbers   
 
 def lotto_must_win(request, id):
+
+    largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+
+    # Next, remove the '/' character and convert it to an integer
+    draw_without_slash = largest_draw.replace('/', '')
+    seed_no = int(draw_without_slash)+1
+    random.seed(seed_no)
     file_path = os.path.join(settings.BASE_DIR, "racecard/data/lotto_must_win117.csv")
     data = pd.read_csv(file_path)
+
+    # Random Number for Ichi
+    # Generate random integers between 1 and 64
+    num_rows = len(data)
+    random_numbers_list = [random.randint(1, 64) for _ in range(num_rows)]
+     # Add the 'Rand' column to the DataFrame
+    data['Ichi'] = random_numbers_list
 
     # Calculate the start and end indices based on the page ID
     page_size = 30
