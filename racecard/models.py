@@ -49,7 +49,7 @@ class Article(models.Model):
 
     title = models.CharField(max_length=50)
     content = models.TextField()
-    image = models.CharField(max_length=50)
+    image = models.ImageField(upload_to='racecard/images/')
     pub_date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     language = models.CharField(max_length=2, choices=LANGUAGE_CHOICES)

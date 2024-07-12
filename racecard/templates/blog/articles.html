@@ -22,10 +22,10 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-container">
             <h3><b>{{ article.title }}</b></h3>
             <div class="w3-row">
-                <div class="w3-col m5">
-                    <img src="{% static article.image %}" alt="Nature" style="width:100%">
+                <div class="w3-col m8">
+                  <img src="{{ article.image.url }}" alt="Nature" class="fallback-image" onerror="this.onerror=null;this.src='{% static article.image  %}';" style="width:100%">
                 </div>
-                <div class="w3-col m5 w3-padding">
+                <div class="w3-col m2 w3-padding">
                     <h5><span class="w3-opacity">{{ article.pub_date }}</span></h5>
                 </div>
             </div>
