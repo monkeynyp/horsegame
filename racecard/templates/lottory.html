@@ -102,6 +102,7 @@
             <th>No5</th>
             <th>No6</th>
             <th>No7</th>
+            <th class="w3-red">命中</th>
         </tr>
     </thead>
     <tbody>
@@ -115,6 +116,7 @@
             <td><img src="{% static 'no_' %}{{ record.No5|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
             <td><img src="{% static 'no_' %}{{ record.No6|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
             <td><img src="{% static 'no_' %}{{ record.No7|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td class="w3-red">{{ record.Hit }}</td>
         </tr>
         {% endfor %}
     </tbody>
