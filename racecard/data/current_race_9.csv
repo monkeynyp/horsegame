@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/10,1,AWESOME FLUKE,A Atzeni,135,1179,3,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/07/10,2,HAMERON,L Ferraris,133,1035,2,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/07/10,3,SUPREME AGILITY,Z Purton,132,1001,5,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/07/10,4,RISING FROM ASHES,A Hamelin,130,1018,8,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/07/10,5,FLAMINGO TRILLION,K C Leung,129,1216,9,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/07/10,6,PERFECT TEAM,C Y Ho,127,1062,1,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/07/10,7,ROMANTIC LAOS,H Bowman,127,1153,7,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/07/10,8,SAMARKAND,C L Chau,127,1152,6,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/07/10,9,IVY LEAGUE,K De Melo,125,1242,12,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/07/10,10,ROMANTIC CHARM,K Teetan,117,1165,10,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-10,2024/07/10,11,ESCAPE ROUTE,M F Poon,116,1065,11,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
-11,2024/07/10,12,G LINER,H Bentley,116,1104,4,9,Class 3,1800,Happy Valley:,"TURF - ""B"" Course",Good
+0,2024/07/14,1,DREAM WINNER,C Y Ho,135,1270,9,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/07/14,2,REWARD SMILE,H Bowman,135,1116,3,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/07/14,3,SOVEREIGN FUND,K De Melo,125,1154,2,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/07/14,4,GOKO WIN,A Atzeni,124,1075,7,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/07/14,5,SILO,H Bentley,124,1133,1,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/07/14,6,PHOENIX LIGHT,E C W Wong,123,1077,5,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/07/14,7,SUPER JOY N FUN,C L Chau,121,1102,11,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/07/14,8,BITS SUPERSTAR,K Teetan,120,1051,14,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/07/14,9,GOR MO TUEN,B Thompson,120,1051,4,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/07/14,10,MONTA FRUTTA,Y L Chung,120,1120,10,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/07/14,11,EXCELLENT FIGHTER,M F Poon,117,1187,6,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/07/14,12,PACKING HERMOD,Z Purton,117,1111,8,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/07/14,13,VIVA GRACIOUSNESS,M Chadwick,116,1084,12,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/07/14,14,YEAH BUDDY,M L Yeung,116,1097,13,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good

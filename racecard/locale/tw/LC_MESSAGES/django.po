@@ -189,6 +189,20 @@ msgid "Help"
 msgstr "幫助"
 
 #: Horse Name
+#2024-07-14
+msgid "LUCKY GENERATIONS"
+msgstr "幸運傳承"
+msgid "PACKING ANGEL"
+msgstr "包裝福星"
+msgid "HAPPY PARK"
+msgstr "開心樂園"
+msgid "BEAUTIFUL WIN"
+msgstr "勝得福"
+msgid "BITS SUPERSTAR"
+msgstr "比特星"
+
+
+
 msgid "DO YOUR PART"
 msgstr "做好自己"
 #2024-07-06

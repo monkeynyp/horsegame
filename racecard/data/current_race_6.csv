@@ -1,11 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/10,1,HELENE FEELING,H Bowman,135,1236,6,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/07/10,2,TOMODACHI KOKOROE,Z Purton,134,1172,4,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/07/10,3,OUTGATE,Y L Chung,131,1049,10,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/07/10,4,ADEFILL,K Teetan,129,1153,9,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/07/10,5,CHILL CHIBI,C L Chau,126,1146,3,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/07/10,6,YELLOWFIN,A Atzeni,126,1202,8,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/07/10,7,BERLIN TANGO,B Avdulla,125,1042,7,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/07/10,8,TURIN MASCOT,C Y Ho,117,1123,5,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/07/10,9,WOODFIRE BRO,M L Yeung,117,1192,1,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/07/10,10,UNIVERSAL HORIZON,M F Poon,116,1124,2,9,Class 2,1650,Happy Valley:,"TURF - ""B"" Course",Good
+0,2024/07/14,1,OWNERS' PRAISE,A Atzeni,135,1263,2,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/07/14,2,THE ABSOLUTE,H Bentley,135,1129,8,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/07/14,3,FORTUNE WHISKEY,H T Mo,133,1076,11,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/07/14,4,FIGHTING MACHINE,Z Purton,132,1064,10,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/07/14,5,HAPPY PARK,L Hewitson,129,1242,7,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/07/14,6,STORM LEGEND,E C W Wong,129,1053,13,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/07/14,7,BRILLIANT EXPRESS,H Bowman,128,1133,1,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/07/14,8,DRAGON FOUR SEAS,M Chadwick,127,1161,14,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/07/14,9,ACE ONE,Y L Chung,126,1152,12,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/07/14,10,IVICTORIAM,B Thompson,125,1091,4,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/07/14,11,THE AZURE,K C Leung,125,1076,9,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/07/14,12,HAPPY DAILY,C Y Ho,123,1071,6,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/07/14,13,AFFIRM,L Ferraris,122,1190,3,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/07/14,14,AMAZING RUN,K Teetan,129,1247,5,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good

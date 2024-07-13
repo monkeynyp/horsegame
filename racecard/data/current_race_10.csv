@@ -1,13 +1,16 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/06,1,IMA SINGLE MAN,Y L Chung,135,1150,4,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-1,2024/07/06,2,EIGHTY LIGHT YEARS,L Ferraris,133,1274,11,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-2,2024/07/06,3,FULL CREDIT,L Hewitson,129,1191,3,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-3,2024/07/06,4,GREAT STATE,K De Melo,126,1087,2,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-4,2024/07/06,5,LO PAN SPIRIT,H Bentley,125,1199,7,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-5,2024/07/06,6,MODULECONSTRUCTION,C Y Ho,125,1169,9,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-6,2024/07/06,7,TORONADO PHANTOM,H Bowman,125,1127,12,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-7,2024/07/06,8,POLARIS,M Chadwick,123,1176,5,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-8,2024/07/06,9,STAR CLUB,Z Purton,123,1039,1,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-9,2024/07/06,10,CAPTAIN WIN,K Teetan,121,1267,8,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-10,2024/07/06,11,VICTOR THE RAPID,C L Chau,120,1083,10,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
-11,2024/07/06,12,YEAH BUDDY,M L Yeung,120,1094,6,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
+0,2024/07/14,1,HOLY LAKE,A Hamelin,135,1098,3,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/07/14,2,TOURBILLON PRINCE,H Bowman,132,1164,11,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/07/14,3,YOUNG ACHIEVER,Z Purton,130,1138,6,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/07/14,4,FALLON,Y L Chung,128,1109,9,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/07/14,5,BEAUTY LIVE,K C Leung,125,1110,5,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/07/14,6,BRIGHT INHERITANCE,H Bentley,124,1090,1,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/07/14,7,PRAY FOR MIR,M Chadwick,123,1070,2,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/07/14,8,THE HEIR,C Y Ho,123,1124,4,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/07/14,9,SATIRICAL FAN,E C W Wong,121,1165,10,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/07/14,10,ARIEL,L Hewitson,118,1214,8,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/07/14,11,PERFECT PAIRING,B Thompson,118,1018,13,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/07/14,12,SMART CITY,M F Poon,118,1115,7,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/07/14,13,"SURUGA BAY
+(Scratched)",-,-,-,-,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/07/14,14,I CAN,A Atzeni,117,1090,12,11,Class 3,1600,Sha Tin:,"TURF - ""A"" Course",Good

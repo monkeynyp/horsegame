@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/10,1,CITY THUNDER,H Bentley,134,1164,8,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/07/10,2,CORDYCEPS ONE,E C W Wong,133,1096,5,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/07/10,3,DURHAM STAR,M Chadwick,133,1176,6,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/07/10,4,SOLAR GOGO,C L Chau,132,1161,2,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/07/10,5,TURIN WARRIOR,K C Leung,130,1108,10,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/07/10,6,ATOMIC BEAUTY,B Avdulla,129,1197,4,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/07/10,7,WINNING STEPS,A Hamelin,129,1168,9,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/07/10,8,SUPER BABY,L Ferraris,124,1149,3,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/07/10,9,GALLANT CROWN,A Atzeni,123,1074,12,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/07/10,10,DIVINE SHINING,C Y Ho,122,1120,11,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-10,2024/07/10,11,BRAVE WITNESS,K Teetan,121,1057,1,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-11,2024/07/10,12,MATSU VICTOR,Z Purton,120,1058,7,9,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+0,2024/07/14,1,INVINCIBLE MISSILE,H Bowman,135,1095,2,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/07/14,2,THE CONCENTRATION,L Ferraris,135,1058,3,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/07/14,3,AROMATICA,H Bentley,132,1178,4,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/07/14,4,CALIFORNIA ICON,B Avdulla,132,1156,8,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/07/14,5,E GLORY,K C Leung,131,1142,6,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/07/14,6,ASIAN ONE,A Atzeni,130,1094,10,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/07/14,7,PERFECT PEACH,Z Purton,130,1074,11,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/07/14,8,MAXIMIZE HEART,Y L Chung,129,1044,13,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/07/14,9,MEDIC ELITE,A Hamelin,128,1087,14,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/07/14,10,SPEEDSTAR,K Teetan,128,1072,1,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/07/14,11,TSUEN WAN GLORY,M Chadwick,125,1108,9,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/07/14,12,DOUBLE SHOW,L Hewitson,124,1233,5,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/07/14,13,SUPERB DADDY,A Badel,117,1112,7,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/07/14,14,CHIRON,B Thompson,115,1138,12,11,Class 5,1400,Sha Tin:,"TURF - ""A"" Course",Good

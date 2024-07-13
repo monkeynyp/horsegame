@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/10,1,HAPPY TANGO,E C W Wong,135,1245,1,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/07/10,2,KING INVINCIBLE,K C Leung,134,1023,8,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/07/10,3,PLENTIFUL,L Ferraris,134,1083,11,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/07/10,4,PHILOS,Y L Chung,133,1130,10,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/07/10,5,GALLANT GOODY,M Chadwick,132,1074,9,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/07/10,6,JAZZ CLUB,H Bentley,129,1162,5,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/07/10,7,NOBLE ONE,C Y Ho,129,1116,7,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/07/10,8,MULTIMORE,Z Purton,123,1217,4,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/07/10,9,PRESTIGE MOOCHI,A Hamelin,122,1081,6,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/07/10,10,GOODMANSHIP,K Teetan,118,1168,2,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-10,2024/07/10,11,AUGUST MOON,B Thompson,117,1145,12,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
-11,2024/07/10,12,EASY TWO,M F Poon,115,1049,3,9,Class 5,1000,Happy Valley:,"TURF - ""B"" Course",Good
+0,2024/07/14,1,CERVIN,M L Yeung,135,1044,13,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/07/14,2,JOYFUL LIFE,K C Leung,135,1131,12,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/07/14,3,LUCKY QUALITY,K H Chan,135,1080,11,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/07/14,4,YOUTH POWER,B Thompson,134,1028,3,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/07/14,5,GOOD VIEW GLORY,A Atzeni,133,1029,4,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/07/14,6,ALLOY KING,H Bentley,130,1105,6,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/07/14,7,CHEER FOR SOUTH,K Teetan,130,1053,10,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/07/14,8,E TALENT,Y L Chung,129,1160,2,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/07/14,9,RATTAN WORLD,K De Melo,129,1063,1,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/07/14,10,SUPER JOY,M Chadwick,129,1070,14,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/07/14,11,SUPER ELITE,H Bowman,127,1080,7,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/07/14,12,REGENCY HAPPY STAR,L Hewitson,122,1060,8,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/07/14,13,DRAGON KINGDOM,H T Mo,115,1173,5,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/07/14,14,CIRCUIT SPLENDOR,A Badel,115,1033,9,11,Class 5,1200,Sha Tin:,"TURF - ""A"" Course",Good

@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/07/10,1,BULB EMPEROR,A Atzeni,135,1177,6,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/07/10,2,NEBRASKAN,Z Purton,134,1029,11,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/07/10,3,PRINCE OF PORTY,H Bowman,133,1159,1,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/07/10,4,LEAN MASTER,H Bentley,132,1077,7,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/07/10,5,CHARITY FOR ALL,B Avdulla,128,1214,8,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/07/10,6,CAMP FIRE,M Chadwick,126,1168,4,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/07/10,7,PERFECTO MOMENTS,L Ferraris,126,1131,12,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/07/10,8,GIMME FIVE,K Teetan,121,1081,10,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/07/10,9,HAPPY HORSE,Y L Chung,121,1106,9,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/07/10,10,FANCY STAR,B Thompson,119,1093,3,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-10,2024/07/10,11,STRIVE FOR GLORY,A Badel,117,1062,2,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
-11,2024/07/10,12,LAPRAS,K De Melo,116,1061,5,9,Class 4,1200,Happy Valley:,"TURF - ""B"" Course",Good
+0,2024/07/14,1,TOP PEAK,C L Chau,135,1202,12,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/07/14,2,STEPS AHEAD,Z Purton,133,1073,6,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/07/14,3,BEAUTIFUL WIN,K De Melo,128,1189,11,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/07/14,4,FAMILY JEWEL,C Y Ho,128,1024,8,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/07/14,5,FOOLISH HEART,K C Leung,128,1131,4,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/07/14,6,CIRCUIT MIGHTY,M Chadwick,127,1011,7,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/07/14,7,SMILING COLLECTOR,H Bentley,127,1132,13,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/07/14,8,MIU FA FA,L Ferraris,126,1091,9,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/07/14,9,WINDICATOR FAMILY,A Badel,126,969,10,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/07/14,10,HOLY POWER,A Atzeni,124,1104,3,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/07/14,11,GREAT SPIRIT,M F Poon,123,1069,1,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/07/14,12,WINNING TURN,A Hamelin,123,1035,2,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+12,2024/07/14,13,LINK,Y L Chung,120,1119,14,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
+13,2024/07/14,14,YOUNG HORIZON,K Teetan,118,1151,5,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good
