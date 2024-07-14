@@ -522,7 +522,7 @@ def lottory_predict(request):
     next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
 
      # Retrieve the data from the Marksix_hist model, sorted by Date in descending order
-    data = Marksix_hist.objects.order_by('-Date').values_list(listNo, flat=True)[:500]
+    data = Marksix_hist.objects.order_by('-Date').values_list(listNo, flat=True)
 
     # Convert the queryset to a list
     data_list = list(data)
