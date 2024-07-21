@@ -5,36 +5,82 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
    <div class="w3-container">
-       <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp K-近鄰演算法 預測六合彩號碼走勢 </h2>
+       <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp 三角形態--號碼走勢 </h2>
        <h5>下一期數： &nbsp;{{ next_draw }}</h5>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=1">號碼1</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=2">號碼2</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=3">號碼3</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=4">號碼4</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=5">號碼5</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=6">號碼6</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/lottory_predict/?id=7">特碼</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=1">號碼1</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=2">號碼2</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=3">號碼3</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=4">號碼4</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=5">號碼5</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=6">號碼6</a>
+           <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=7">特碼</a>
     </div></h2>
     <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
         <p class=" w3-large w3-serif">
         <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
-        Monkey將過去開出的號碼分為七組，號碼1 就是最小的號碼，如此類推。跟住通過K-近鄰演算法，分析過去五百期的六合彩數字的走勢，預期下期會有大機會開出什麼號碼，最後，用紅色波波展示，就是模型預測的號碼。七幅走勢圖，預測七組號碼。我的YouTube Video有詳細介紹 <a href="https://youtu.be/FLtJb4WOl2A?si=VwqzG_sAqnbTmFtU"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a></p>
+        Monkey將過去開出的號碼分為七組，號碼1 就是最小的號碼，如此類推。通過上三期的號碼，例如最小號碼3,9,7的組合和形態，在過去二千多期的六合彩紀錄中，有相同形態的記錄中，下一期通常會開出哪一個號碼，俾大家參考。七幅走勢圖，預測七組號碼。要留意，有時三角形態比較特的，未必有歷史記錄，所以會留空。</i></a></p>
       </div>
 <div class="w3-row">
-        <div class="w3-col w3-padding-top-32 l10 s12">
+        <div class="w3-col w3-padding-top-32 l6 s12">
             
-<canvas id="myChart" width="300" height="200"></canvas>
+            <div style="width: 600px; height: 400px;">
+                <canvas id="myChart"></canvas>
+            </div>
+            
+            <script>
+                // Get the data passed from the view
+                var pastPattern = JSON.parse('{{ past_pattern|safe }}');
+        
+                // Create a line chart using Chart.js
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['前3期', '前2期', '前1期'],
+                        datasets: [{
+                            label: '前三期形態',
+                            data: pastPattern,
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1,
+                            fill: false
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            </script>
 
+</div>
 
+<div class="w3-col l6 s12  w3-padding-top-64">
+{% if number_pairs %}
+<table class="w3-table-all w3-hoverable">
+    <thead>
+        <tr class="w3-light-grey">
+            <th>下期號碼</th>
+            <th>出現次數</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for num, count in number_pairs %}
+            <tr>
+                <td><img src="{% static 'no_' %}{{ num|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                <td>{{ count }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+    {% else %}
+        <p>没有對應的形態！</p>
+    {% endif %}
+</div>
+</div>
 
-<br><br>
-<ul>
-  {% for num, count in number_pairs %}
-      <li>{{ num }} and {{ count }}</li>
-  {% endfor %}
-</ul>
-<div class="w3-center">
-    <h3>預測運財號碼 {{ request.GET.id }}：    <a href="https://gleeglis.net/4/7158929"><img src="{% static 'no_' %}{{ next_number|stringformat:'d' }}.gif?CV=L4.07R2a" width="45"></a></h3>
     {% with id=request.GET.id|default:"1" %}
     {% if id %}
         <div class="w3-container w3-padding-16" style="text-align: center;">
@@ -51,10 +97,12 @@
             </div>
     {% endif %}
 {% endwith %}
+<br>
+<div class="w3-center">
     <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
       </button>
-      </div>
-
+</div>
+<br><br>
 {% if user.is_authenticated %}
     <button id='myButton' class="w3-button w3-ripple w3-red" onclick="openModal()">+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp 加入你的心水號 </span>
 {% else %}
@@ -160,7 +208,7 @@
     // Get the current date and time
     var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
     // Define the start and end date and time for the period
-    var startDate = new Date("2024-07-07T21:15:00");
+    var startDate = new Date("2024-07-23T21:15:00");
     var endDate = new Date("2025-12-25T23:59:59");
  
     // Disable the button if the current date and time fall within the specified period

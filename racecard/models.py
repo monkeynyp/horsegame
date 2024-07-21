@@ -68,6 +68,7 @@ class Marksix_hist(models.Model):
     No5 = models.IntegerField()
     No6 = models.IntegerField()
     No7 = models.IntegerField()
+    NextDraw_date = models.DateField(null=True)
 
     def __str__(self):
         return f"{self.Draw} - {self.Date}"
@@ -113,3 +114,37 @@ class FootballMatch(models.Model):
 
     def __str__(self):
         return f"{self.match_name} ({self.team_a} vs {self.team_b})"
+
+class HorseInfo(models.Model):
+    horse_name = models.CharField(max_length=100)
+    horse_name_cn = models.CharField(max_length=100)
+    band_no = models.CharField(max_length=20, unique=True)
+    rating = models.IntegerField()
+    rate_change = models.IntegerField()
+
+    def __str__(self):
+        return self.horse_name
+
+class Race_hist(models.Model):
+    band_no = models.ForeignKey(HorseInfo, to_field='band_no', on_delete=models.CASCADE)
+    index = models.IntegerField()
+    place = models.IntegerField()
+    date = models.DateField()
+    track = models.CharField(max_length=100)
+    distance = models.IntegerField()
+    good = models.CharField(max_length=100)
+    race_class = models.CharField(max_length=100)
+    draw = models.IntegerField()
+    rating = models.IntegerField()
+    trainer = models.CharField(max_length=100)
+    jockey = models.CharField(max_length=100)
+    lbw = models.CharField(max_length=50)
+    win_odds = models.FloatField()
+    act_wt = models.IntegerField()
+    running_pos = models.CharField(max_length=100)
+    finish_time = models.CharField(max_length=50)
+    declar_horse_wt = models.IntegerField()
+    gear = models.CharField(max_length=50)
+
+    def __str__(self):
+        return f"Race {self.index} at {self.place} on {self.date}"

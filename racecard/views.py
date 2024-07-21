@@ -656,7 +656,7 @@ def lotto_next_stat(request):
     draw_without_slash = largest_draw.replace('/', '')
     seed_no = int(draw_without_slash)+1
     draw_string = str(seed_no)
-    print("SeedNo:", seed_no)
+
     # Insert the '/' character at the appropriate position
     next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
 
