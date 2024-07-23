@@ -23,9 +23,7 @@
 <div class="w3-row">
         <div class="w3-col w3-padding-top-32 l6 s12">
             
-            <div style="width: 600px; height: 400px;">
-                <canvas id="myChart"></canvas>
-            </div>
+            <canvas id="myChart" width="300" height="200"></canvas>
             
             <script>
                 // Get the data passed from the view
@@ -41,17 +39,28 @@
                             label: '前三期形態',
                             data: pastPattern,
                             borderColor: 'rgba(75, 192, 192, 1)',
-                            borderWidth: 1,
+                            borderWidth: 3,
                             fill: false
                         }]
                     },
                     options: {
-                        scales: {
-                            y: {
-                                beginAtZero: true
-                            }
-                        }
-                    }
+        layout: {
+            padding: {
+                right: 5 // Adjust the value as needed
+            }
+        },
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          },
+          elements: {
+              point: {
+                  radius: 10,
+                  hoverRadius: 20
+              }
+          }
+      }
                 });
             </script>
 
