@@ -11,7 +11,7 @@ from django.contrib.auth.decorators import login_required, user_passes_test
 from .models import FootballMatch, FootballTeam, UserTips,UserScores,Article,UserTips_my,Marksix_hist,Marksix_user_rec
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
-from .forms import CustomUserCreationForm,NumberForm
+from .forms import CustomUserCreationForm,NumberForm,LottoForm
 from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
@@ -762,6 +762,56 @@ def lotto_must_win(request, id):
 
     return render(request, 'lotto_must_win.html', context)
 
+def lotto_test(request):
+     user_language = 'tw'  # or
+     translation.activate(user_language)
+
+     request.session[settings.LANGUAGE_COOKIE_NAME] = user_language
+     results = None
+     total_records = 0
+     if request.method == 'POST':
+        form = LottoForm(request.POST)
+        if form.is_valid():
+            option_value = int(form.cleaned_data['option'])
+            numbers = [
+                form.cleaned_data['number1'],
+                form.cleaned_data['number2'],
+                form.cleaned_data['number3'],
+                form.cleaned_data['number4'],
+                form.cleaned_data['number5'],
+                form.cleaned_data['number6'],
+                form.cleaned_data['number7'],
+            ]
+            # Fetch records based on the option_value
+            records = Marksix_hist.objects.all().order_by('-Draw')[:option_value]
+            
+            results = []
+            for record in records:
+                match_count = len(set(numbers[:6]) & {record.No1, record.No2, record.No3, record.No4, record.No5, record.No6})
+                if match_count >= 3:
+                    score = match_count
+                    if record.No7 in numbers:
+                        score += 0.5
+                    results.append({
+                        'Draw': record.Draw,
+                        'Date': record.Date,
+                        'No1': record.No1,
+                        'No2': record.No2,
+                        'No3': record.No3,
+                        'No4': record.No4,
+                        'No5': record.No5,
+                        'No6': record.No6,
+                        'No7': record.No7,
+                        'score': score,
+                    })
+            total_records = len(results)
+     else:
+        form = LottoForm()
+    
+    
+  
+    
+     return render(request, 'lotto_test.html', {'form': form, 'results': results, 'total_records': total_records})
 
   
 def football_match(request):

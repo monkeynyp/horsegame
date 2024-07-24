@@ -34,6 +34,7 @@ urlpatterns = [
     path('update_lotto_tips/', views.update_lotto_tips, name='update_lotto_tips'),
     path('footballmatch/', views.football_match, name='football_match'),
     path('lotto_must_win/<int:id>/', views.lotto_must_win, name='lotto_must_win'),
+    path('lotto_test/', views.lotto_test, name='lotto_test'),
     # Other URL patterns
 
 

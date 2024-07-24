@@ -17,7 +17,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 #: HomePage
+#: forms.py:13
+msgid "Ensure this value is greater than or equal to %(limit_value)s."
+msgstr "確保此值大於或等於 %(limit_value)s。"
 
+#: forms.py:14
+msgid "Ensure this value is less than or equal to %(limit_value)s."
+msgstr "確保此值小於或等於 %(limit_value)s。"
+
+#: forms.py:31
+msgid "All number fields must be filled out."
+msgstr "所有數字欄位必須填寫。"
+
+#: forms.py:33
+msgid "Numbers must be unique."
+msgstr "數字必須唯一"
 
 msgid "This password is too short. It must contain at least 8 characters."
 msgstr "此密碼太短，必須至少包含8個字符。"

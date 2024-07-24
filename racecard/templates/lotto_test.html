@@ -1,0 +1,65 @@
+{% extends "master.html" %} {% block title %} Contact Monkey {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<div class="w3-container w3-padding-16 w3-margin">
+    <h2>檢驗你的六合彩組合</h2>
+    <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
+        <p class=" w3-large w3-serif">
+        <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+        你是否有心水的六合彩數字組合，想知道是否有效。Monkey提供新的功能，你可以幫你查詢過去數字組合的中奬次數同中幾多個字。你可以試下不同的組合，看看可唔可以找到一個超級的組合。祝大家好運👍</i></a></p>
+      </div>
+    <form class="w3-form" method="post" action="{% url 'lotto_test' %}">
+        {% csrf_token %}
+        <div class="w3-section">
+            <label class="w3-label w3-text-teal">過去期數</label>
+            {{ form.option }}
+        </div>
+        <div class="w3-section">
+            <label class="w3-label w3-text-teal">請輸入七個心水號碼 (1-49):</label>
+            {{ form.number1 }} {{ form.number2 }} {{ form.number3 }} {{ form.number4 }} {{ form.number5 }} {{ form.number6 }} {{ form.number7 }}
+        </div>
+        <button class="w3-button w3-teal" type="submit">查詢</button>
+    </form>
+</div>
+{% if results %}
+    <div class="w3-container w3-margin-top">
+        <h3>中奬注數: {{ total_records }}</h3>
+        <table class="w3-table w3-bordered">
+            <thead>
+                <tr>
+                    <th>期數</th>
+                    <th>日期</th>
+                    <th>No1</th>
+                    <th>No2</th>
+                    <th>No3</th>
+                    <th>No4</th>
+                    <th>No5</th>
+                    <th>No6</th>
+                    <th>特碼</th>
+                    <th>中奬</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                    <tr>
+                        <td>{{ result.Draw }}</td>
+                        <td>{{ result.Date }}</td>
+                        <td><img src="{% static 'no_' %}{{ result.No1|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No2|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No3|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No4|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No5|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No6|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No7|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                        <td class="w3-pale-blue">{{ result.score }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endif %}
+
+
+{% endblock %}
