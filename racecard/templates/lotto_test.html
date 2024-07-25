@@ -29,14 +29,14 @@
         <table class="w3-table w3-bordered">
             <thead>
                 <tr>
-                    <th>期數</th>
+                    <th class="w3-hide-small">期數</th>
                     <th>日期</th>
-                    <th>No1</th>
-                    <th>No2</th>
-                    <th>No3</th>
-                    <th>No4</th>
-                    <th>No5</th>
-                    <th>No6</th>
+                    <th>No 1</th>
+                    <th>No 2</th>
+                    <th>No 3</th>
+                    <th>No 4</th>
+                    <th>No 5</th>
+                    <th>No 6</th>
                     <th>特碼</th>
                     <th>中奬</th>
                 </tr>
@@ -44,15 +44,15 @@
             <tbody>
                 {% for result in results %}
                     <tr>
-                        <td>{{ result.Draw }}</td>
-                        <td>{{ result.Date }}</td>
-                        <td><img src="{% static 'no_' %}{{ result.No1|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-                        <td><img src="{% static 'no_' %}{{ result.No2|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-                        <td><img src="{% static 'no_' %}{{ result.No3|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-                        <td><img src="{% static 'no_' %}{{ result.No4|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-                        <td><img src="{% static 'no_' %}{{ result.No5|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-                        <td><img src="{% static 'no_' %}{{ result.No6|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-                        <td><img src="{% static 'no_' %}{{ result.No7|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                        <td class="w3-hide-small">{{ result.Draw }}</td>
+                        <td>{{ result.Date|date:"d/m/y" }}</td>
+                        <td><img src="{% static 'no_' %}{{ result.No1|stringformat:'d' }}.gif?CV=L4.07R2a" style="width: 90%;"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No2|stringformat:'d' }}.gif?CV=L4.07R2a" style="width: 90%;"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No3|stringformat:'d' }}.gif?CV=L4.07R2a" style="width: 90%;"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No4|stringformat:'d' }}.gif?CV=L4.07R2a" style="width: 90%;"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No5|stringformat:'d' }}.gif?CV=L4.07R2a" style="width: 90%;"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No6|stringformat:'d' }}.gif?CV=L4.07R2a" style="width: 90%;"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No7|stringformat:'d' }}.gif?CV=L4.07R2a" style="width: 90%;"></td>
                         <td class="w3-pale-blue">{{ result.score }}</td>
                     </tr>
                 {% endfor %}
