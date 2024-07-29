@@ -39,6 +39,10 @@ msgstr "此密碼太短，必須至少包含8個字符。"
 msgid "Confidence"
 msgstr "信心度"
 
+msgid "TW Lotto"
+msgstr "台灣樂透"
+
+
 msgid "Hit Rate"
 msgstr "命中率"
 
