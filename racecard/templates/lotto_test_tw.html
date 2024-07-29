@@ -1,0 +1,92 @@
+{% extends "master.html" %} {% block title %} Contact Monkey {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<style>
+    .ball {
+        background: 40% / cover no-repeat url("{% static 'ball.svg' %}");
+        border-radius: 40px;
+            display: inline-block;
+            font-size: 18px;  /* Increased font size */
+            font-weight: 700;
+            height: 40px;  /* Increased height */
+            letter-spacing: 1px;
+            line-height: 40px;  /* Match the height for vertical centering */
+            width: 40px;  /* Increased width */
+            text-align: center;
+            vertical-align: middle;
+        }
+    .color-super {
+    background: 40% / cover no-repeat url("{% static 'ball_super.svg' %}");
+    color: #fff;
+   }
+
+</style>
+
+<div class="w3-container w3-padding-16 w3-margin">
+    <h2>檢驗你的<img src="{% static 'lotto649.svg' %}" alt="大樂透" style="width:25%">組合</h2>
+    <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
+        <p class=" w3-large w3-serif">
+        <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+        你是否有心怡的大樂透數字組合，想知道是否有效。Monkey提供新的功能，你可以幫你查詢過去數字組合的中奬次數同中幾多個字。你可以試下不同的組合，看看可唔可以找到一個超級的組合。祝大家好運👍</i></a></p>
+      </div>
+    <form class="w3-form" method="post" action="{% url 'lotto_test_tw' %}">
+        {% csrf_token %}
+        <div class="w3-section">
+            <label class="w3-label w3-text-teal">過去期數</label>
+            {{ form.option }}
+        </div>
+        <div class="w3-section">
+            <label class="w3-label w3-text-teal">請輸入七個心水號碼 (1-49):</label><br>
+            {{ form.number1 }} {{ form.number2 }} {{ form.number3 }} {{ form.number4 }} {{ form.number5 }} {{ form.number6 }} {{ form.number7 }}
+        </div>
+        <button class="w3-button w3-teal" type="submit">查詢</button>
+    </form>
+</div>
+{% if results %}
+    <div class="w3-container w3-margin-top">
+        <h3>中奬注數: {{ total_records }}</h3>
+        <table class="w3-table w3-bordered">
+            <thead>
+                <tr>
+                    <th class="w3-hide-small">期數</th>
+                    <th>日期</th>
+                    <th>No 1</th>
+                    <th>No 2</th>
+                    <th>No 3</th>
+                    <th>No 4</th>
+                    <th>No 5</th>
+                    <th>No 6</th>
+                    <th>特別碼</th>
+                    <th>中奬</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                    <tr>
+                        <td class="w3-hide-small">{{ result.Draw }}</td>
+                        <td>{{ result.Date|date:"d/m/y" }}</td>
+                        <td><span class="ball">{{ result.No1 }}</span></td>
+                        <td><span class="ball">{{ result.No2 }}</span></td>
+                        <td><span class="ball">{{ result.No3 }}</span></td>
+                        <td><span class="ball">{{ result.No4 }}</span></td>
+                        <td><span class="ball">{{ result.No5 }}</span></td>
+                        <td><span class="ball">{{ result.No6 }}</span></td>
+                        <td><span class="ball color-super special-number">{{ result.No7 }}</span></td>
+                        <td class="w3-pale-blue">{{ result.score }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endif %}
+<footer class="w3-container w3-padding-32 w3-center w3-light-grey w3-margin-top">
+    <h4>其他💮大樂透功能</h4>
+    <div class="w3-bar w3-light-grey">
+        <a href="/lottory_predict_tw/?id=1" class="w3-bar-item w3-button">💮樂透走勢</a>
+        <a href="/lotto_test_tw" class="w3-bar-item w3-button">💮組合測試</a>
+    </div>
+</footer>
+
+{% endblock %}

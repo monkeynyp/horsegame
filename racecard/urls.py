@@ -35,6 +35,9 @@ urlpatterns = [
     path('footballmatch/', views.football_match, name='football_match'),
     path('lotto_must_win/<int:id>/', views.lotto_must_win, name='lotto_must_win'),
     path('lotto_test/', views.lotto_test, name='lotto_test'),
+    path('lottory_predict_tw/', views.lottory_predict_tw, name='lottory_predict_tw'),
+    path('lotto_test_tw/', views.lotto_test_tw, name='lotto_test_tw'),
+
     # Other URL patterns
 
 

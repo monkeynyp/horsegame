@@ -8,7 +8,7 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import FootballMatch, FootballTeam, UserTips,UserScores,Article,UserTips_my,Marksix_hist,Marksix_user_rec
+from .models import FootballMatch, FootballTeam, UserTips,UserScores,Article,UserTips_my,Marksix_hist,Marksix_user_rec,TW_lotto_hist
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
 from .forms import CustomUserCreationForm,NumberForm,LottoForm
@@ -560,6 +560,54 @@ def lottory_predict(request):
 
     return render(request, 'lottory.html', context)
 
+def lottory_predict_tw(request):
+    listNo='No1'
+    id = request.GET.get('id')
+    listNo = 'No'+id
+    current_datetime = timezone.now()
+    largest_draw = TW_lotto_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+    next_draw = int(largest_draw)+1
+    form = NumberForm() 
+    # Now 'largest_draw' contains the largest value from the 'Draw' column
+    # (e.g., '24/071')
+
+     # Retrieve the data from the Marksix_hist model, sorted by Date in descending order
+    data = TW_lotto_hist.objects.order_by('-Date').values_list(listNo, flat=True)
+
+    # Convert the queryset to a list
+    data_list = list(data)
+    data_list.reverse()
+    print(data_list)
+    # Prepare the features (X) and target (y) for KNN
+    X = [[x] for x in data_list[:-1]]  # Features: all numbers except the last one
+    y = data_list[1:]  # Target: the next number for each feature
+
+    # Create and fit the KNN model
+    knn_model = KNeighborsRegressor(n_neighbors=3)
+    knn_model.fit(X, y)
+
+    # Predict the next number
+    next_number = math.ceil(knn_model.predict([[data_list[-1]]])[0])
+    print("Next_number:",next_number)
+
+    # Prepare data for the chart
+    labels = list(range(1, 21))  # Numbers 1 to 20 for the recent numbers
+    labels.append('下期預測')  # Label for the next number
+    predicted_numbers = knn_model.predict([[x] for x in range(1, 22)])
+    print("predicted Number",predicted_numbers)
+
+    context = {
+        'next_draw': next_draw,
+        'current_datetime': current_datetime,
+        'recent_numbers': data_list[-20:],
+        'next_number': next_number,
+        'labels': json.dumps(labels),
+        'predicted_numbers': json.dumps(predicted_numbers.tolist()),
+        'form':form,
+    }
+
+    return render(request, 'lottory_tw.html', context)
+
 
 def ichi_lotto(request):
     current_datetime = timezone.now()
@@ -783,7 +831,7 @@ def lotto_test(request):
                 form.cleaned_data['number7'],
             ]
             # Fetch records based on the option_value
-            records = Marksix_hist.objects.all().order_by('-Draw')[:option_value]
+            records = Marksix_hist.objects.all().order_by('-Date')[:option_value]
             
             results = []
             for record in records:
@@ -813,6 +861,56 @@ def lotto_test(request):
     
      return render(request, 'lotto_test.html', {'form': form, 'results': results, 'total_records': total_records})
 
+def lotto_test_tw(request):
+     user_language = 'tw'  # or
+     translation.activate(user_language)
+
+     request.session[settings.LANGUAGE_COOKIE_NAME] = user_language
+     results = None
+     total_records = 0
+     if request.method == 'POST':
+        form = LottoForm(request.POST)
+        if form.is_valid():
+            option_value = int(form.cleaned_data['option'])
+            numbers = [
+                form.cleaned_data['number1'],
+                form.cleaned_data['number2'],
+                form.cleaned_data['number3'],
+                form.cleaned_data['number4'],
+                form.cleaned_data['number5'],
+                form.cleaned_data['number6'],
+                form.cleaned_data['number7'],
+            ]
+            # Fetch records based on the option_value
+            records = TW_lotto_hist.objects.all().order_by('-Date')[:option_value]
+            
+            results = []
+            for record in records:
+                match_count = len(set(numbers[:6]) & {record.No1, record.No2, record.No3, record.No4, record.No5, record.No6})
+                if match_count >= 3:
+                    score = match_count
+                    if record.No7 in numbers:
+                        score += 0.5
+                    results.append({
+                        'Draw': record.Draw,
+                        'Date': record.Date,
+                        'No1': record.No1,
+                        'No2': record.No2,
+                        'No3': record.No3,
+                        'No4': record.No4,
+                        'No5': record.No5,
+                        'No6': record.No6,
+                        'No7': record.No7,
+                        'score': score,
+                    })
+            total_records = len(results)
+     else:
+        form = LottoForm()
+    
+    
+  
+    
+     return render(request, 'lotto_test_tw.html', {'form': form, 'results': results, 'total_records': total_records})
   
 def football_match(request):
     id = request.GET.get('id')
