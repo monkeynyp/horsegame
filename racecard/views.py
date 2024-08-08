@@ -835,7 +835,7 @@ def lotto_test(request):
             
             results = []
             for record in records:
-                match_count = len(set(numbers[:6]) & {record.No1, record.No2, record.No3, record.No4, record.No5, record.No6})
+                match_count = len(set(numbers[:7]) & {record.No1, record.No2, record.No3, record.No4, record.No5, record.No6})
                 if match_count >= 3:
                     score = match_count
                     if record.No7 in numbers:

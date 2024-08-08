@@ -55,13 +55,16 @@ class LottoForm(forms.Form):
         'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
         'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
     })
-    number7 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+    number7 = forms.IntegerField(required=False, min_value=0, max_value=49, error_messages={
         'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
         'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
     })
 
     def clean(self):
         cleaned_data = super().clean()
+        # Set default value for number7 if not provided
+        if cleaned_data.get('number7') is None:
+            cleaned_data['number7'] = 0
         numbers = [
             cleaned_data.get('number1'),
             cleaned_data.get('number2'),
@@ -71,8 +74,12 @@ class LottoForm(forms.Form):
             cleaned_data.get('number6'),
             cleaned_data.get('number7'),
         ]
+
+        # Set default value for number7 if not provided
+   
+
         if any(n is None for n in numbers):
-            raise forms.ValidationError(_("All number fields must be filled out."))
+            raise forms.ValidationError(_("lease provide at least 6 numbers."))
         if len(set(numbers)) != 7:
             raise forms.ValidationError(_("Numbers must be unique."))
         return cleaned_data
