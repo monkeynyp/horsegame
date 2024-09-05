@@ -10,7 +10,7 @@ urlpatterns = [
     path('', views.recent_article, name='recent_article'),
     path('racecard/', views.racecard, name='racecard'),
         #Malaysia Pages
-    path('racecard_my/', views.racecard_my, name='racecard_my'),
+    path('racecard_vip/', views.racecard_vip, name='racecard_vip'),
     path('view_by_member/', views.view_by_member, name='view_by_member'),
     path('blog/', views.recent_article, name='recent_article'),
     path('newsletter/', views.newsletter, name='newsletter'),

@@ -92,7 +92,13 @@
     <!-- Right-sided navbar links. Hide them on small screens-->
     <div class="w3-right  w3-padding-small">
       <a href="/blog" class="w3-bar-item w3-button  w3-hide-small">{% trans "Home" %}</a>
-      <a href="/racecard?1" class="w3-bar-item w3-button w3-hide-small ">🐎{% trans "Horse Race" %}</a>
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-hide-small">🐎{% trans "HorseRacing" %}</button>
+        <div class="w3-dropdown-content w3-bar-block w3-border"  style="position: absolute; overflow: visible; z-index: 100;">
+          <a href="/racecard?1" class="w3-bar-item w3-button w3-hide-small ">🐎{% trans "Horse Race" %}</a>
+          <a href="/racecard_vip?1" class="w3-bar-item w3-button w3-hide-small ">🐎{% trans "HorseVIP" %}</a>
+        </div>
+      </div>
       <div class="w3-dropdown-hover">
         <button class="w3-button w3-hide-small">🎱{% trans "MarkSix" %}</button>
         <div class="w3-dropdown-content w3-bar-block w3-border"  style="position: absolute; overflow: visible; z-index: 100;">
@@ -194,6 +200,7 @@
         const parts = value.split(`; ${name}=`);
         if (parts.length === 2) return parts.pop().split(';').shift();
     }
+
 </script>
 
 
@@ -222,13 +229,25 @@ http://nyp.pythonanywhere.com -->
     src="https://c.statcounter.com/12965469/0/4987ff5e/1/" alt="Web Analytics"
     referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
     <!-- End of Statcounter Code -->
-<br>
+
+<!-- Loading script asynchronously -->
+<script type="text/javascript">
+  (function(a,b,c,d){
+  a='https://tags.tiqcdn.com/utag/sales-louis-ngai/main/prod/utag.js';
+  b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+  a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+  })();
+</script>
+
+    <br>
     <span class="w3-bar w3-center w3-pale-green"><a href='/privacy'>{% trans 'Privacy Policy' %}</a> &nbsp &nbsp <a href='/disclaimer'>{% trans 'Disclaimer' %}</a></span>
 
 
     <p>&copy; 2024 MonkeyForecast. All Rights Reserved.</p>
 
   </footer>
+
+
 
 </body>
 </html>

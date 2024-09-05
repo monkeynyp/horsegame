@@ -7,9 +7,6 @@
 
 
 
-
-
-
 <script>
   function updateSelection(checkbox) {
       var selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
@@ -26,19 +23,26 @@
   }
 </script>
 
-<div class="w3-container w3-padding-32"></div>
+<div class="w3-container"></div>
 <div class="w3-margin ">
-    <h2><img src="{% static 'MYFlag.png' %}" alt="Malaysia" style="width:4%"> {% trans "Current Race"  %} (Beta) </h2>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=1">1</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=2">2</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=3">3</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=4">4</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=5">5</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=6">6</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=7">7</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=8">8</a>
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_my/?id=9">9</a>
- 
+    <h2><img src="{% static 'HKFlag.png' %}" alt="Malaysia" style="width:4%"> {% trans "Current Race"  %} {{ current_race.iloc.2.1}}  </h2>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=1">1</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=2">2</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=3">3</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=4">4</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=5">5</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=6">6</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=7">7</a>
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=8">8</a>
+        {% if current_race.iloc.2.8 > 8 %}
+        <a class="w3-button w3-large w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=9">9</a>
+        {% if current_race.iloc.2.8 > 9 %}
+          <a class="w3-button w3-large w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=10">10</a>
+          {% if current_race.iloc.2.8 > 10 %}
+            <a class="w3-button w3-large w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=11">11</a>
+          {% endif %}
+        {% endif %}
+      {% endif %}
 <div class="w3-row">
   <div class="w3-col w3-padding-top-32 l6 s12">
     
@@ -48,19 +52,17 @@
           <th>No</th>
           <th>{% trans "Horse Name" %}</th>
           <th class="w3-hide-small">{% trans "Jockey" %}</th>
-          <th>{% trans 'Vote' %}</th>
+          <th>{% trans 'Prob' %}</th>
           <th  class="w3-hide-small">{% trans "Draw" %}</th>
         </tr>
       </thead>
       {% for i, r in current_race.iterrows %}
       <tr>
         <td>{{ forloop.counter }}</td>
-        <td>{% trans r.horse_name %} </td>
-        <td class="w3-hide-small">{% trans r.jockey %}</td>
-        <td>
-            ---
-      </td>
-        <td class="w3-hide-small">{{ r.bar }}</td>
+        <td>{% trans r.HorseName %} </td>
+        <td class="w3-hide-small">{% trans r.Jockey %}</td>
+        <td>{{r.Prob|floatformat:1 }} % </td>
+        <td class="w3-hide-small">{{ r.Draw }}</td>
       </tr>
       {% endfor %}
     </table>
@@ -87,7 +89,7 @@
     
   </div>
     <div class="w3-row-padding">
-    
+
     {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->
       {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' 'w3-lime' 'w3-amber' as color silent %}
           <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
@@ -112,7 +114,8 @@
                 {% endfor %}</h6>
               </header>
                   {% for user_tips in user_data.records %}
-                          <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} {% if user_tips.hit == 1 %}
+                          <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} &nbsp; {{ user_tips.ratio}}
+                            {% if user_tips.hit == 1 %}
                             <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
                           {% endif %}
                           </p>
@@ -121,28 +124,31 @@
                   <footer class="w3-container {{color}} w3-left-align">
                     <span class="w3-small">
                       <p class="w3-left-align">
-                        {% trans 'Current' %}:
+                        {% trans 'Current' %}:<br>
+                        {% for curr_perf in curr_perf_by_user %}
+                          {% if curr_perf.user__username  == user_data.user.username %}
+                          {% trans 'Invest' %}:
+                            <span class ="w3-text">${{ curr_perf.curr_invest | floatformat:0 }} </span><br>
+                            {% trans 'Return' %}:
+                            <span class="w3-text">${{ curr_perf.curr_return | floatformat:0 }}</span><br>
+                          {% trans 'Profit' %}:
+                            <span class="w3-text">${{ curr_perf.curr_profit | floatformat:0 }}</span><br>
+                          {% endif %}
+                        {% endfor %}
+                        <hr>
+                        {% trans 'Total' %}:<br>
+                        {% trans 'Hit Rate' %}:
                         {% for last_perf in last_perf_by_user %}
                           {% if last_perf.user__username  == user_data.user.username %}
-                            <span class ="w3-tooltip w3-red">{{ last_perf.hit_pst | floatformat:0 }}% 
-                            <span class="w3-text">(<em>💰${{ last_perf.total_dividend | floatformat:0 }}</em>)</span></span>
+                            <span class ="w3-red">{{ last_perf.hit_pst | floatformat:0 }}% </span><br>
+                          
+                          {% trans 'Profit' %}:
+                            <span class="w3-text">${{ last_perf.total_weighted_dividend | floatformat:0 }}</span>
                           {% endif %}
                         {% endfor %}
                         <br>
-                        {% trans 'Total' %}:
-                        {% for score in user_scores %}
-                            {% if score.user == user_data.user %}
-                                {{ score.percentage | floatformat:0 }}%
-                            {% endif %}
-                        {% endfor %}
-                        <span class = "w3-right">
-                        {% if user_data.groups_name == "MailList" %}
-                          <i class="fa-solid fa-person fa-xl "></i>
-                        {% elif user_data.user.username == 'WePower' %}
-                            <i class="fa-solid fa-users-gear fa-xl"></i>
-                        {% else %}
-                          <i class="fa-solid fa-robot"></i>
-                        {% endif %} </span>
+                  
+                      
                       </p> 
                   </span>
                   </footer>

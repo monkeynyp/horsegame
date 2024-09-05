@@ -2,7 +2,7 @@ from django.core.management.base import BaseCommand
 from racecard.models import UserTips,User, UserScores  # Replace 'YourModel' with the actual model name
 from datetime import datetime
 import pandas as pd
-import os
+import os,math
 from django.conf import settings
 from django.db.models import Sum, F
 
@@ -23,7 +23,8 @@ class Command(BaseCommand):
 
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
         #alg_methods = ['LogRegress','NaiveBayes','RanForest','NeuroNet','ForestReg','NeuroReg']
-        alg_methods = ['LogRegress','RanForest','NeuroReg']
+        #alg_methods = ['LogRegress','RanForest','NeuroReg']
+        alg_methods = ['NeuroReg']
         class_flag=0
         for alg in alg_methods:
             user_id = User.objects.get(username=alg)
@@ -69,9 +70,10 @@ class Command(BaseCommand):
                         race_no = counter,
                         horse_no = row[ 'Unnamed: 0']+1,
                         horse_name = row['HorseName'],
-                        hit = 0
+                        hit = 0,
+                        ratio=round(row['Score'] * 100 / 10) * 10  # Multiply by 100, then round up to the nearest 10
                         )
-                print(result_df)
+                #print(result_df)
         self.stdout.write(self.style.SUCCESS('Data updated successfully.'))
 
        

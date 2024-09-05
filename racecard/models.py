@@ -12,6 +12,7 @@ class UserTips(models.Model):
     horse_name = models.CharField(max_length=50)
     hit = models.IntegerField()
     dividend = models.FloatField(default=0)
+    ratio = models.IntegerField(default=0)
 
 class UserTips_my(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # Link to the User model
