@@ -231,13 +231,37 @@ http://nyp.pythonanywhere.com -->
     <!-- End of Statcounter Code -->
 
 <!-- Loading script asynchronously -->
+
+
 <script type="text/javascript">
-  (function(a,b,c,d){
-  a='https://tags.tiqcdn.com/utag/sales-louis-ngai/main/prod/utag.js';
-  b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
-  a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
-  })();
-</script>
+  var utag_data = {
+    page_type : "General",
+    page_name : "Test Page" // 
+  }
+  </script>
+  <script type="text/javascript">
+    utag.view({
+      tealium_event : "test_page_view",
+      page_name : "Test Page", // Required
+      page_type : "General" // Suggested
+    });
+  </script>
+  
+  <!-- Loading script asynchronously -->
+  <script type="text/javascript">
+      (function(a,b,c,d){
+      a='https://tags.tiqcdn.com/utag/sales-louis-ngai/main/prod/utag.js';
+      b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+      a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+      })();
+  </script>
+  
+<!-- The utag.sync.js script should run as early as possible, preferably
+ in the head of the document. See the Sample HTML for more information -->
+
+ 
+     
+ 
 
     <br>
     <span class="w3-bar w3-center w3-pale-green"><a href='/privacy'>{% trans 'Privacy Policy' %}</a> &nbsp &nbsp <a href='/disclaimer'>{% trans 'Disclaimer' %}</a></span>
