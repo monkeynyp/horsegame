@@ -234,18 +234,14 @@ http://nyp.pythonanywhere.com -->
 
 
 <script type="text/javascript">
-  var utag_data = {
-    page_type : "General",
-    page_name : "Test Page" // 
-  }
-  </script>
-  <script type="text/javascript">
-    utag.view({
-      tealium_event : "test_page_view",
-      page_name : "Test Page", // Required
-      page_type : "General" // Suggested
-    });
-  </script>
+  var pageName = document.title;
+  utag.view({
+    tealium_event : "page_view",
+    page_name : pageName, // Required
+    page_type : "Contents" // Suggested
+  });
+</script>
+
   
   <!-- Loading script asynchronously -->
   <script type="text/javascript">
