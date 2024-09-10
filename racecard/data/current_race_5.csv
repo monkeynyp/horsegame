@@ -1,12 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/08,1,CALIFORNIA DEEPLY,Z Purton,135,1092,9,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-1,2024/09/08,2,YEAH BUDDY,M L Yeung,133,1097,8,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-2,2024/09/08,3,SNOWALOT,B Thompson,130,1098,5,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-3,2024/09/08,4,MY WISH,L Ferraris,129,970,6,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-4,2024/09/08,5,SUPER BONUS,A Atzeni,129,1068,4,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-5,2024/09/08,6,PEARL OF PANG'S,M Chadwick,127,1209,1,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-6,2024/09/08,7,POCHETTINO,A Badel,127,1056,10,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-7,2024/09/08,8,LIFE OF STONE,C L Chau,125,1189,7,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-8,2024/09/08,9,SUNDAY'S SERENADE,K Teetan,124,1019,2,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-9,2024/09/08,10,SUPER LEGENDS,K H Chan,124,1082,3,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-10,2024/09/08,11,STERLING WONGCHOY,H Bentley,118,1039,11,10,Class 4,1200,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+0,2024/09/11,1,MA COMET,K Teetan,134,1121,10,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+1,2024/09/11,2,ACE POWER,M Chadwick,130,1090,7,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+2,2024/09/11,3,SERGEANT PEPPER,E C W Wong,130,1127,6,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+3,2024/09/11,4,FORTUNE WARRIOR,Z Purton,128,1112,12,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+4,2024/09/11,5,LESS IS MORE,A Atzeni,125,1092,4,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+5,2024/09/11,6,YEE CHEONG SPIRIT,K H Chan,125,1264,5,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+6,2024/09/11,7,SWEET DIAMOND,A Badel,124,1174,1,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+7,2024/09/11,8,MR VALIANT,B Avdulla,123,1057,9,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+8,2024/09/11,9,CIRCUIT SEVEN,M F Poon,122,1166,8,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+9,2024/09/11,10,FUNG,L Hewitson,121,1134,3,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+10,2024/09/11,11,SUPER SIXTY,C Y Ho,121,1042,11,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good
+11,2024/09/11,12,HAPPY HORSE,Y L Chung,120,1117,2,8,Class 4,1000,Happy Valley:,"TURF - ""A"" Course",Good

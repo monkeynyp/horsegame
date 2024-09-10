@@ -210,6 +210,10 @@ msgstr "幫助"
 
 #: Horse Name
 
+#2024-09-11
+msgid "PACKING POWER"
+msgstr "包裝猛將"
+
 #2024-09-08
 msgid "FAST NETWORK"
 msgstr "舉步生風"

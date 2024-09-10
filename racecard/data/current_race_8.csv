@@ -1,14 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/08,1,BALLISTIC WIN,B Thompson,135,1193,2,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-1,2024/09/08,2,VIVA GRACIOUSNESS,B Avdulla,135,1077,7,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-2,2024/09/08,3,OWNERS' PRAISE,L Hewitson,134,1253,12,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-3,2024/09/08,4,U S S CONSTITUTION,A Hamelin,133,986,3,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-4,2024/09/08,5,LUCKY GOLD,C L Chau,131,1201,8,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-5,2024/09/08,6,BLAZING WIND,H Bowman,129,1264,5,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-6,2024/09/08,7,FAMILY JEWEL,C Y Ho,129,1039,4,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-7,2024/09/08,8,SOLID WIN,A Atzeni,128,1061,9,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-8,2024/09/08,9,CIRCUIT MIGHTY,K C Leung,127,1020,1,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-9,2024/09/08,10,PRINCE ALEX,M Chadwick,123,1073,6,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-10,2024/09/08,11,GALLANT CROWN,E C W Wong,122,1071,10,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-11,2024/09/08,12,GANGNAM STAR,A Badel,122,1104,13,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
-12,2024/09/08,13,HARMONY N HOME,M F Poon,119,1049,11,10,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good To Yielding
+0,2024/09/11,1,REWARD SMILE,H Bowman,135,1113,11,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+1,2024/09/11,2,SUGAR SUGAR,E C W Wong,132,1098,3,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+2,2024/09/11,3,HAPPY FAT CAT,A Hamelin,130,1091,7,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+3,2024/09/11,4,GOLDEN EMPIRE,C Y Ho,128,1064,12,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+4,2024/09/11,5,NEVER TOO SOON,K De Melo,128,1119,1,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+5,2024/09/11,6,LUCKY ARCHANGEL,M F Poon,125,1151,6,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+6,2024/09/11,7,MEGA BONUS,L Ferraris,124,1255,8,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+7,2024/09/11,8,SUPER JOY N FUN,C L Chau,124,1105,5,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+8,2024/09/11,9,RIGHTEOUS ARION,B Avdulla,123,1164,4,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+9,2024/09/11,10,KA YING CHEER,Z Purton,122,1231,9,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+10,2024/09/11,11,KING ECCELLENTE,H Bentley,119,1108,2,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
+11,2024/09/11,12,ONE FOR ALL,L Hewitson,119,1247,10,8,Class 3,1200,Happy Valley:,"TURF - ""A"" Course",Good
