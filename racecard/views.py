@@ -92,7 +92,7 @@ def racecard(request):
          sort_query = last_tips_by_user
      else:
          sort_query = curr_tips_by_user
-         print("## Sort_query ##", sort_query)
+         #print("## Sort_query ##", sort_query)
 
      request.session['curr_tips_by_user'] = list(curr_tips_by_user)
      request.session['curr_race_date'] = curr_race_date

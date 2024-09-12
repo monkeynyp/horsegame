@@ -153,17 +153,12 @@
                     {% endif %}<br>
                     {% for score in user_scores %}
                     {% if score.user == user_data.user %}
-                      {% if score.stars %}
-                          {% for star in score.stars %}
-                            {% if star == '1' %}
-                              <i class="fa-solid fa-star fa-sm" style="color: #FBB337;"></i>
-                            {% else %}
-                              <i class="fa-solid fa-medal fa-lg" style="color: #FBB337;"></i>
-                            {% endif %}
-                          {% endfor %}
-                      {% else %}
-                          -
-                      {% endif %}
+                    {% if score.stars2 > 0 %}
+                    <i class="fa-solid fa-medal fa-lg" style="color: #FBB337;"></i> x {{score.stars2}} 
+                    {% endif %} &nbsp;
+                      {% if score.stars1 > 0 %}
+                      <i class="fa-solid fa-star fa-sm" style="color: #FBB337;"></i> x {{score.stars1}} 
+                      {% endif %} 
                     {% endif %}
                     {% endfor %}</h6>
                   </header>
