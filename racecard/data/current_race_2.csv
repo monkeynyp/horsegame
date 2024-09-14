@@ -1,9 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/11,1,LIGHTNING BOLT,K H Chan,135,1158,6,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-1,2024/09/11,2,JOY COMING,L Hewitson,134,1146,5,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-2,2024/09/11,3,SCOTCH TYCOON,L Ferraris,131,1091,1,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-3,2024/09/11,4,SIXTH GENERATION,C Y Ho,131,1192,8,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-4,2024/09/11,5,SIGHT HAPPY,H Bowman,126,1076,2,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-5,2024/09/11,6,GLORY B,M Chadwick,121,1078,4,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-6,2024/09/11,7,YODA'S CHOICE,K C Leung,119,1115,7,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-7,2024/09/11,8,COSMO NAVIGATOR,M F Poon,116,1165,3,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+0,2024/09/15,1,GALE SAGA,M F Poon,131,1128,8,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+1,2024/09/15,2,THE CONCENTRATION,L Ferraris,131,1056,5,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+2,2024/09/15,3,CHATEAU LE PECHE,C L Chau,129,1038,7,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+3,2024/09/15,4,MERCHANT PRINCE,B Thompson,129,1162,9,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+4,2024/09/15,5,VERBIER,A Badel,129,1243,1,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+5,2024/09/15,6,DRAGON DELIGHT,E C W Wong,128,1115,4,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+6,2024/09/15,7,EXCELLENT DADDY,L Hewitson,128,1265,6,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+7,2024/09/15,8,THE KHAN,H Bowman,127,1085,10,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+8,2024/09/15,9,SUPER JOY,M Chadwick,125,1081,2,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+9,2024/09/15,10,VULCANUS,K Teetan,125,1123,12,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+10,2024/09/15,11,TSUEN WAN GLORY,K C Leung,121,1097,11,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+11,2024/09/15,12,HO HO STAR,Z Purton,120,1099,3,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good

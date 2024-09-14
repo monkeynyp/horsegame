@@ -209,6 +209,12 @@ msgid "Help"
 msgstr "幫助"
 
 #: Horse Name
+#2024-09-15
+msgid "ETERNAL FORTUNE"
+msgstr "連連幸運"
+
+msgid "SAVVY BRILLIANT"
+msgstr "耀寶"
 
 #2024-09-11
 msgid "PACKING POWER"

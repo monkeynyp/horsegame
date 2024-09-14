@@ -1,9 +1,12 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/11,1,PACKING POWER,Z Purton,135,1135,5,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-1,2024/09/11,2,FLYING WROTE,Y L Chung,132,1082,6,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-2,2024/09/11,3,HAPPY TRIO,K Teetan,131,1053,8,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-3,2024/09/11,4,AURORA LADY,C Y Ho,128,1166,4,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-4,2024/09/11,5,TO INFINITY,B Avdulla,125,1022,1,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-5,2024/09/11,6,RAGNARR,H Bentley,124,1050,2,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-6,2024/09/11,7,COLONEL,B Thompson,116,1173,7,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
-7,2024/09/11,8,FAIRY HORSE,M L Yeung,116,1096,3,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+0,2024/09/15,1,EXUBERANT,B Avdulla,135,1221,1,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+1,2024/09/15,2,MY FLYING ANGEL,K C Leung,133,1066,9,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+2,2024/09/15,3,BULB EMPEROR,M F Poon,132,1189,11,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+3,2024/09/15,4,SUPER INFINITY,Z Purton,130,1126,6,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+4,2024/09/15,5,JUBILANT WINNER,B Thompson,127,1128,8,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+5,2024/09/15,6,SPORTIC WARRIOR,C L Chau,126,1061,10,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+6,2024/09/15,7,ALWAYS FLUKE,C Y Ho,124,1063,7,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+7,2024/09/15,8,OMAKASE,K Teetan,122,1020,2,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+8,2024/09/15,9,KING OBERON,L Hewitson,121,1082,4,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+9,2024/09/15,10,AFFIRM,L Ferraris,119,1195,3,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+10,2024/09/15,11,URBAN TRIUMPH,M Chadwick,117,1188,5,9,Class 4,1200,Sha Tin:,"TURF - ""A+3"" Course",Good

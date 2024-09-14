@@ -1,11 +1,14 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/11,1,KYRUS UNICORN,A Atzeni,135,1082,9,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
-1,2024/09/11,2,NINJA DERBY,M Chadwick,132,1077,4,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
-2,2024/09/11,3,INVINCIBLE MISSILE,A Badel,131,1115,1,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
-3,2024/09/11,4,RUNNING AHEAD,C L Chau,131,1046,10,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
-4,2024/09/11,5,RELIABLE PROFIT,H Bowman,130,1135,5,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
-5,2024/09/11,6,GOLDEN FAIRY,K De Melo,127,1038,3,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
-6,2024/09/11,7,PRECISION GOAL,Z Purton,127,1065,7,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
-7,2024/09/11,8,RIGHT HONOURABLE,B Thompson,124,1006,2,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
-8,2024/09/11,9,KEEN UNITY,H Bentley,123,1170,6,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
-9,2024/09/11,10,YEABOI,M F Poon,120,1108,8,8,Class 5,1650,Happy Valley:,"TURF - ""A"" Course",Good
+0,2024/09/15,1,CIRCUIT BLAZING,H Bentley,133,1275,1,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+1,2024/09/15,2,PERFECT PEACH,L Hewitson,133,1073,4,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+2,2024/09/15,3,ISLAND GOLDEN,K C Leung,132,1076,13,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+3,2024/09/15,4,SO AWESOME,M Chadwick,132,1107,6,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+4,2024/09/15,5,CERVIN,H Bowman,129,1046,2,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+5,2024/09/15,6,LUCKY QUALITY,L Ferraris,127,1097,10,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+6,2024/09/15,7,BEAU GOSSE,C L Chau,126,1137,11,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+7,2024/09/15,8,CALIFORNIA ICON,Y L Chung,126,1152,7,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+8,2024/09/15,9,GO HERO,K Teetan,126,1013,3,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+9,2024/09/15,10,COOL BLUE,C Y Ho,125,1016,9,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+10,2024/09/15,11,MEDIC ELITE,A Hamelin,125,1096,5,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+11,2024/09/15,12,SOARING TOWER,P N Wong,123,1038,8,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+12,2024/09/15,13,CHARMANDER,Z Purton,120,1154,12,9,Class 5,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
