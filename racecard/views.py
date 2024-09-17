@@ -8,7 +8,7 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import FootballMatch, FootballTeam, UserTips,UserScores,Article,UserTips_my,Marksix_hist,Marksix_user_rec,TW_lotto_hist
+from .models import FootballMatch, FootballTeam, UserTips,UserTips_jc,UserScores,Article,Marksix_hist,Marksix_user_rec,TW_lotto_hist
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
 from django.utils import timezone
 from .forms import CustomUserCreationForm,NumberForm,LottoForm
@@ -214,6 +214,16 @@ def view_by_member(request):
             'user_scores': user_scores
     }
     return render(request, 'view_by_member.html', context)
+
+def jockey_king(request):
+     # Query the top 3 jockeys ordered by score in descending order
+    top_jockeys = UserTips_jc.objects.all().order_by('-score')[:3]
+
+    # Pass the top jockeys to the template
+    context = {
+        'top_jockeys': top_jockeys
+    }
+    return render(request, 'jockey_king.html', context)
     
 def match_chart(request):
      id = request.GET.get('id')
@@ -290,7 +300,7 @@ def racecard_vip(request):
       
         if user_records:
             complete_tips_by_user.append({'user': user_records[0].user, 'groups_name': user_tips['user__groups__name'], 'records': user_records})
-     print(complete_tips_by_user)
+     #print(complete_tips_by_user)
      context = {
             'current_race': current_race,
             'total_race': total_race,
@@ -303,6 +313,8 @@ def racecard_vip(request):
        
      return render(request, 'currentrace_vip.html', context)
     
+
+
 
 ## Article Section ###
 

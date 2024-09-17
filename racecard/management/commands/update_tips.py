@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from racecard.models import UserTips,User, UserScores  # Replace 'YourModel' with the actual model name
+from racecard.models import UserTips,User, UserScores, UserTips_jc # Replace 'YourModel' with the actual model name
 from datetime import datetime
 import pandas as pd
 import os,math
@@ -20,7 +20,9 @@ class Command(BaseCommand):
         # Access command line arguments
         num_races = options['num_races']
         race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
-
+        jockey_scores = {}
+        score_map = [12, 6, 4]
+        
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
         #alg_methods = ['LogRegress','NaiveBayes','RanForest','NeuroNet','ForestReg','NeuroReg']
         alg_methods = ['LogRegress','RanForest','NeuroReg']
@@ -48,6 +50,7 @@ class Command(BaseCommand):
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran2"+str(counter)+".csv")
                 elif alg == 'NeuroReg':
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu2"+str(counter)+".csv")
+
                 elif alg == 'GradientB':
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_gra"+str(counter)+".csv")
                 elif alg == 'TimeMonkey':
@@ -73,7 +76,26 @@ class Command(BaseCommand):
                         hit = 0,
                         ratio=round(row['Score'] * 100 / 10) * 10  # Multiply by 100, then round up to the nearest 10
                         )
-                #print(result_df)
+                    if alg == "NeuroReg":
+                        jockey = row['Jockey']
+                        score = score_map[i]
+                        if jockey in jockey_scores:
+                            jockey_scores[jockey] += score
+                        else:
+                            jockey_scores[jockey] = score
+
+
+                        
+            print("JockeyScore: ",jockey_scores)
+            for jockey_name, score in jockey_scores.items():
+            # Create a new record for each jockey in the UserTipsJC model
+                UserTips_jc.objects.update_or_create(
+                    user=user_id,  # Link to the current logged-in user
+                    race_date=race_date,
+                    jockey=jockey_name,
+                    score=score,
+        )
+
         self.stdout.write(self.style.SUCCESS('Data updated successfully.'))
 
        

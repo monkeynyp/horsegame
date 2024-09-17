@@ -14,13 +14,12 @@ class UserTips(models.Model):
     dividend = models.FloatField(default=0)
     ratio = models.IntegerField(default=0)
 
-class UserTips_my(models.Model):
+class UserTips_jc(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # Link to the User model
     race_date = models.DateField()
-    race_no = models.IntegerField()
-    horse_no = models.IntegerField()
-    horse_name = models.CharField(max_length=50)
-    hit = models.IntegerField()
+    jockey = models.CharField(max_length=50)
+    score = models.IntegerField()
+    hit = models.IntegerField(default=0)
     dividend = models.FloatField(default=0)
         
 class UserScores(models.Model):
