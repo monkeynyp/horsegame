@@ -1,11 +1,8 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/18,1,KAHOLO ANGEL,H Bowman,135,1118,4,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/09/18,2,POWER KOEPP,K C Leung,130,1098,1,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/09/18,3,MUST GO,B Avdulla,126,1149,2,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/09/18,4,SOVEREIGN FUND,K De Melo,126,1146,7,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/09/18,5,PARTERRE,L Hewitson,125,1124,3,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/09/18,6,BRAVE STAR,C Y Ho,124,1105,6,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/09/18,7,YOUNG ARROW,K Teetan,124,1113,5,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/09/18,8,HEALTHY HEALTHY,Z Purton,123,1177,9,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/09/18,9,MOJAVE DESERT,L Ferraris,122,1138,10,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/09/18,10,EXCELLENT PEERS,M Chadwick,120,1106,8,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+0,2024/09/22,1,TAJ DRAGON,C Y Ho,135,1048,1,10,Group Three,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+1,2024/09/22,2,FLYING ACE,M F Poon,131,1213,5,10,Group Three,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+2,2024/09/22,3,HEALTHY HAPPY,M Chadwick,129,1133,6,10,Group Three,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+3,2024/09/22,4,PACKING TREADMILL,L Hewitson,122,1164,4,10,Group Three,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+4,2024/09/22,5,THE GOLDEN SCENERY,B Avdulla,121,1063,2,10,Group Three,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+5,2024/09/22,6,CHIU CHOW SPIRIT,A Badel,117,1185,7,10,Group Three,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+6,2024/09/22,7,WONDER KIT,A Atzeni,115,1083,3,10,Group Three,1400,Sha Tin:,"TURF - ""B+2"" Course",Good

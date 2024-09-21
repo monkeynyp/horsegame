@@ -1,15 +1,12 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/15,1,SWEET ENCOUNTER,H Bowman,135,1194,1,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-1,2024/09/15,2,SUNLIGHT POWER,C L Chau,129,1099,9,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-2,2024/09/15,3,STAR MAC,L Ferraris,126,1195,8,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-3,2024/09/15,4,BEAUTY GLORY,Z Purton,125,1146,13,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-4,2024/09/15,5,FORTUNATE SON,B Avdulla,125,1083,12,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-5,2024/09/15,6,LO PAN SPIRIT,H Bentley,123,1194,11,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-6,2024/09/15,7,FUN TOGETHER,L Hewitson,122,1138,7,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-7,2024/09/15,8,MASSIVE ACTION,P N Wong,122,1167,6,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-8,2024/09/15,9,PRAY FOR MIR,M Chadwick,121,1072,2,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-9,2024/09/15,10,THE HEIR,C Y Ho,120,1135,4,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-10,2024/09/15,11,SOLEIL FIGHTER,K C Leung,119,1088,3,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-11,2024/09/15,12,MIGHTY STEED,M L Yeung,117,1023,14,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-12,2024/09/15,13,GREENWICH,A Atzeni,116,1202,10,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-13,2024/09/15,14,SUPER LOVE DRAGON,K Teetan,116,1187,5,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+0,2024/09/22,1,SON PAK FU,E C W Wong,135,1185,7,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+1,2024/09/22,2,COPARTNER PRANCE,Z Purton,133,1111,3,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+2,2024/09/22,3,BUNDLE OF CHARM,A Badel,132,1183,9,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+3,2024/09/22,4,BEAUTY CHARGE,B Avdulla,130,1093,11,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+4,2024/09/22,5,SUPERB CAPITALIST,Y L Chung,130,1147,1,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+5,2024/09/22,6,YOUNG CHAMPION,K Teetan,124,1155,6,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+6,2024/09/22,7,HARMONY N BLESSED,K De Melo,123,1198,5,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+7,2024/09/22,8,SING DRAGON,L Ferraris,119,1171,4,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+8,2024/09/22,9,VICTORY MOMENTS,M Chadwick,117,1130,10,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+9,2024/09/22,10,WATCH BUDDY,P N Wong,117,1122,2,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+10,2024/09/22,11,FULL CREDIT,L Hewitson,116,1175,8,10,Class 2,1200,Sha Tin:,"TURF - ""B+2"" Course",Good

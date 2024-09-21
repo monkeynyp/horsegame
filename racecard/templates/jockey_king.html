@@ -8,7 +8,7 @@
 
   <div class="w3-card-4 w3-margin-top w3-light-grey">
       <div class="w3-container w3-teal">
-          <h3>Leaderboard</h3>
+          <h3>NeuroReg 預測</h3>
       </div>
       
       <ul class="w3-ul">
@@ -16,7 +16,10 @@
               <li class="w3-padding-16">
                   <span class="w3-large">{% trans jockey.jockey %}</span><br>
                   <span>Score: <strong>{{ jockey.score }}</strong></span>
-              </li>
+                  {{ jockey_images[jockey.jockey] }}
+                  <img src="{% static 'test.jpg' %}" alt="{{ jockey.jockey }}" class="w3-image" style="width:50px;height:50px;">
+
+                </li>
           {% empty %}
               <li class="w3-padding-16">No jockeys available.</li>
           {% endfor %}

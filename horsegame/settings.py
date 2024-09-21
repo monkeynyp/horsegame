@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-9h)=u=$e*fqnu3#l+3_i9h8iz$125pm01h)r8s@um3r#yqx(&7"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 SITE_ID = 1
 ALLOWED_HOSTS = ['127.0.0.1','nyp.pythonanywhere.com']
 
@@ -117,7 +117,7 @@ LANGUAGE_CODE = "tw"
 
 
 LANGUAGES = [
-    ('tw', _('中')),
+    ('tw', _('中文')),
     ('en', _('En')),  
 ]
 

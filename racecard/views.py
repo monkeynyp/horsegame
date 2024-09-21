@@ -218,10 +218,28 @@ def view_by_member(request):
 def jockey_king(request):
      # Query the top 3 jockeys ordered by score in descending order
     top_jockeys = UserTips_jc.objects.all().order_by('-score')[:3]
+        # Mapping jockey names to image filenames
+    jockey_images = {
+        "Z Purton": "jockeyPZ.jpg",
+        "M F Poon": "jockeyPMF.jpg",
+        "M Chadwick" : "jockeyCML.jpg",
+        "H Bowman": "jockeyBH.jpg",
+        "C L Chau": "jockeyCJE.jpg",
+        "L Ferraris": "jockeyFEL.jpg",
+        "L Hewitson": "jockeyHEL.jpg",
+        "B Avdulla": "jockeyAVB.jpg",
+        "C Y Ho": "jockeyHCY.jpg",
+        "A Badel": "jockeyBA.jpg",
+        "K Teetan": "jockeyTEK.jpg",
+        "H Bentley": "jockeyBHW.jpg",
 
+
+        # Add the remaining 18 jockey mappings here
+    }
     # Pass the top jockeys to the template
     context = {
-        'top_jockeys': top_jockeys
+        'top_jockeys': top_jockeys,
+        'jockey_images': jockey_images,  # Pass the image mapping to the template
     }
     return render(request, 'jockey_king.html', context)
     

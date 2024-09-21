@@ -212,6 +212,11 @@ msgid "Help"
 msgstr "幫助"
 
 #: Horse Name
+
+#2024-09-22
+msgid "NORTHERN FIRE BALL"
+msgstr "北地烈馬"
+
 #2024-09-15
 msgid "ETERNAL FORTUNE"
 msgstr "連連幸運"
