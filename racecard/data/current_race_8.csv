@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/22,1,CALIFORNIA DEEPLY,Y L Chung,135,1095,7,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-1,2024/09/22,2,FIRST LOVE,Z Purton,135,1173,10,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-2,2024/09/22,3,BALLISTIC WIN,B Thompson,134,1195,3,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-3,2024/09/22,4,ALL RICHES,K C Leung,131,1167,8,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-4,2024/09/22,5,HIGHLAND RAHY,L Hewitson,131,1175,11,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-5,2024/09/22,6,MAJESTIC SPEED,C L Chau,131,1127,2,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-6,2024/09/22,7,MASTER MASTERMIND,H Bowman,127,1103,1,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-7,2024/09/22,8,BEER PALACE,L Ferraris,124,1086,6,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-8,2024/09/22,9,SMASHING EXPRESS,B Avdulla,123,1044,5,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-9,2024/09/22,10,RAGNARR,P N Wong,122,1047,4,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-10,2024/09/22,11,MIU FA FA,M F Poon,121,1095,13,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-11,2024/09/22,12,STRATHPEFFER,M Chadwick,121,1022,12,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-12,2024/09/22,13,FAST AS ROCKET,K De Melo,117,1084,9,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
-13,2024/09/22,14,FORTUNE COOKIES,H T Mo,115,1069,14,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good
+0,2024/09/25,1,YOUTHFUL SPIRITS,Z Purton,134,1048,3,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+1,2024/09/25,2,ATOMIC FORCE,H Bentley,132,1155,4,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+2,2024/09/25,3,MIDORI GLORY,B Avdulla,128,1138,7,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+3,2024/09/25,4,O'LINER,H Bowman,126,1225,1,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+4,2024/09/25,5,RED ELEGANCE,M Chadwick,126,1108,11,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+5,2024/09/25,6,ALLGREEKTOME,E C W Wong,125,1262,6,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+6,2024/09/25,7,HEALTHY HEALTHY,C L Chau,125,1174,10,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+7,2024/09/25,8,HEROIC MASTER,A Atzeni,125,1085,8,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+8,2024/09/25,9,ARMOUR EAGLE,K Teetan,123,1122,12,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+9,2024/09/25,10,BITS SUPERSTAR,M F Poon,123,1070,5,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+10,2024/09/25,11,ETERNAL FORTUNE,L Hewitson,123,1014,9,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+11,2024/09/25,12,SERGEANT PEPPER,A Badel,120,1147,2,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding

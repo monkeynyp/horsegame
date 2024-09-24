@@ -213,6 +213,11 @@ msgstr "幫助"
 
 #: Horse Name
 
+#2024-09-25
+msgid "MY DAY MY WAY"
+msgstr "好節拍"
+
+
 #2024-09-22
 msgid "NORTHERN FIRE BALL"
 msgstr "北地烈馬"

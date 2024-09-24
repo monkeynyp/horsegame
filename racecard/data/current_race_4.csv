@@ -1,14 +1,12 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/22,1,SANTORINI,K Teetan,133,1075,6,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-1,2024/09/22,2,RUN YES RUN,E C W Wong,130,1066,1,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-2,2024/09/22,3,NORTHERN FIRE BALL,Y L Chung,128,1124,8,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-3,2024/09/22,4,PATCH OF COSMO,L Ferraris,128,1235,12,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-4,2024/09/22,5,CALIFORNIA MOXIE,B Avdulla,127,1132,5,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-5,2024/09/22,6,ANGELIC,L Hewitson,126,1053,4,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-6,2024/09/22,7,CASHISCASH,C L Chau,126,1048,3,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-7,2024/09/22,8,ETALON OR,A Badel,126,1132,11,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-8,2024/09/22,9,WORLD HERO,K De Melo,126,1106,9,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-9,2024/09/22,10,CONCORDE STAR,K C Leung,124,1051,10,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-10,2024/09/22,11,SUPREME WINNER,A Hamelin,123,1074,13,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-11,2024/09/22,12,SMART ZIPANG,C Y Ho,121,1038,7,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-12,2024/09/22,13,SKYEY BLUE,M F Poon,120,1037,2,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+0,2024/09/25,1,SMART CITY,K C Leung,134,1087,3,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+1,2024/09/25,2,SNOWALOT,L Hewitson,130,1089,2,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+2,2024/09/25,3,WINNING STEPS,K Teetan,130,1166,11,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+3,2024/09/25,4,TURIN WARRIOR,H Bowman,129,1107,7,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+4,2024/09/25,5,ATOMIC BEAUTY,B Avdulla,128,1180,9,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+5,2024/09/25,6,CAN'T GO WONG,A Badel,127,1127,5,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+6,2024/09/25,7,BEAUTIFUL WIN,C Y Ho,125,1199,4,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+7,2024/09/25,8,FOREMOST TEDDY,Z Purton,122,1196,1,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+8,2024/09/25,9,GALE SAGA,M F Poon,122,1139,8,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+9,2024/09/25,10,SUPER BABY,L Ferraris,122,1153,6,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+10,2024/09/25,11,PRINCE ALEX,H Bentley,120,1079,10,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding

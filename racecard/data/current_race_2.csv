@@ -1,11 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/22,1,GO GO GO,Z Purton,134,1095,1,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
-1,2024/09/22,2,VIVA A LA,P N Wong,132,1121,3,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
-2,2024/09/22,3,HARRY'S HERO,H Bentley,129,1059,8,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
-3,2024/09/22,4,RELIABLE PROFIT,H Bowman,129,1131,10,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
-4,2024/09/22,5,ASIAN ONE,A Atzeni,128,1074,9,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
-5,2024/09/22,6,PRECISION GOAL,C L Chau,127,1070,2,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
-6,2024/09/22,7,COLOURFUL BARON,L Hewitson,126,1116,6,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
-7,2024/09/22,8,MEDIC ELITE,M F Poon,125,1096,7,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
-8,2024/09/22,9,PATCH OF WATCH,B Avdulla,125,1202,4,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
-9,2024/09/22,10,JOYFUL CHAMPION,K Teetan,120,1139,5,10,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Wet Slow
+0,2024/09/25,1,SKY SONG,H Bowman,134,1118,4,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+1,2024/09/25,2,DAN ATTACK,Z Purton,133,1182,7,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+2,2024/09/25,3,HERO WARRIOR,E C W Wong,133,1023,2,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+3,2024/09/25,4,TATTENHAM,M F Poon,133,1125,12,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+4,2024/09/25,5,SUPER EAGLE,K Teetan,132,1093,11,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+5,2024/09/25,6,SPEEDY CHARIOT,B Avdulla,129,1121,1,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+6,2024/09/25,7,GALLANT GOODY,M Chadwick,128,1080,8,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+7,2024/09/25,8,BEAU GOSSE,C L Chau,127,1144,3,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+8,2024/09/25,9,WOODFIRE CHAMP,M L Yeung,126,1024,6,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+9,2024/09/25,10,ALLOY KING,H Bentley,125,1128,5,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+10,2024/09/25,11,CHEER FOR SOUTH,Y L Chung,125,1055,9,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+11,2024/09/25,12,WIND SPEEDER,A Badel,120,1059,10,8,Class 5,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
