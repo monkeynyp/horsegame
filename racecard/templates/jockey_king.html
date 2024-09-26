@@ -1,4 +1,4 @@
-{% extends "master.html" %} {% block title %} Contact Monkey {% endblock %} 
+{% extends "master.html" %} {% block title %} 騎師王預測 {% endblock %} 
 {% load i18n %}
 {% load static %}
 {% block content %}
@@ -18,8 +18,9 @@
           <img src="{% static 'jockey' %}{{jockey_id}}.jpg" alt="{{ jockey.jockey }}" class="w3-circle" style="width:60px;height:60px;">
           {% endwith %}
         
-                  <span class="w3-large">{% trans jockey.jockey %}</span><br>
-                  <span>Score: <strong>{{ jockey.score }}</strong></span>
+                  <span class="w3-large">{% trans jockey.jockey %}</span> &nbsp;&nbsp; <span>{% if jockey.hit > 0  %} <i class="fa-solid fa-crown fa-2xl fa-beat" style="color: #FFD43B;"></i> x ${{jockey.dividend}} {% endif %}</span>
+                 <br> <span>Score: <strong>{{ jockey.score }}</strong></span>
+                  
 
                 </li>
           {% empty %}
