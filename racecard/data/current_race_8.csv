@@ -1,13 +1,11 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/25,1,YOUTHFUL SPIRITS,Z Purton,134,1048,3,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-1,2024/09/25,2,ATOMIC FORCE,H Bentley,132,1155,4,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-2,2024/09/25,3,MIDORI GLORY,B Avdulla,128,1138,7,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-3,2024/09/25,4,O'LINER,H Bowman,126,1225,1,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-4,2024/09/25,5,RED ELEGANCE,M Chadwick,126,1108,11,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-5,2024/09/25,6,ALLGREEKTOME,E C W Wong,125,1262,6,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-6,2024/09/25,7,HEALTHY HEALTHY,C L Chau,125,1174,10,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-7,2024/09/25,8,HEROIC MASTER,A Atzeni,125,1085,8,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-8,2024/09/25,9,ARMOUR EAGLE,K Teetan,123,1122,12,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-9,2024/09/25,10,BITS SUPERSTAR,M F Poon,123,1070,5,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-10,2024/09/25,11,ETERNAL FORTUNE,L Hewitson,123,1014,9,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-11,2024/09/25,12,SERGEANT PEPPER,A Badel,120,1147,2,8,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+0,2024/09/28,1,AWESOME TREASURE,M L Yeung,135,1160,10,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/09/28,2,HAROLD WIN,A Atzeni,130,1117,6,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/09/28,3,LUCKY TOUCH,B Avdulla,128,1112,7,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/09/28,4,EVERYONE'S CLASSIC,Z Purton,127,1283,3,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/09/28,5,BLAZING WIND,H Bowman,126,1269,4,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/09/28,6,KING OBERON,L Hewitson,122,1092,5,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/09/28,7,UNIVERSAL BLAZE,A Badel,122,1091,9,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/09/28,8,GLORIOUS EXPERT,P N Wong,119,1109,1,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/09/28,9,STRATHBARRY,B Thompson,117,1162,2,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/09/28,10,WIN SPEED,K C Leung,117,1103,8,10,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good

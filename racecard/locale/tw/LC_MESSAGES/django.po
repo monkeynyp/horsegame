@@ -213,6 +213,15 @@ msgstr "幫助"
 
 #: Horse Name
 
+#2024-09-28
+msgid "MACANESE MASTER"
+msgstr "銀亮濠俠"
+msgid "EQUATORIAL"
+msgstr "新躍飛"
+msgid "EVERYONE'S CLASSIC"
+msgstr "大眾經典"
+
+
 #2024-09-25
 msgid "MY DAY MY WAY"
 msgstr "好節拍"

@@ -1,12 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/25,1,ROCKET SPADE,H Bowman,135,1157,7,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-1,2024/09/25,2,DURHAM STAR,L Hewitson,129,1167,11,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-2,2024/09/25,3,SURE JOYFUL,M F Poon,128,1073,3,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-3,2024/09/25,4,MATSU VICTOR,C Y Ho,127,1083,1,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-4,2024/09/25,5,BRAVE WITNESS,K Teetan,126,1082,5,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-5,2024/09/25,6,ON THE LASH,C L Chau,125,1262,10,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-6,2024/09/25,7,TRADITION,Y L Chung,125,1010,9,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-7,2024/09/25,8,SUPER UNICORN,Z Purton,123,1087,2,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-8,2024/09/25,9,COURIER MAGIC,A Atzeni,121,1074,8,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-9,2024/09/25,10,GALLANT CROWN,E C W Wong,120,1088,4,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-10,2024/09/25,11,NINJA DERBY,M Chadwick,118,1084,6,8,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+0,2024/09/28,1,JUMBO LEGEND,L Ferraris,135,1099,6,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/09/28,2,NORTHERN BEAST,H Bowman,133,1134,2,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/09/28,3,MY FLYING ANGEL,E C W Wong,130,1075,1,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/09/28,4,ORIENTAL TYCOON,M L Yeung,130,1058,7,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/09/28,5,AMAZING RUN,L Hewitson,128,1246,10,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/09/28,6,HAPPY DAILY,C Y Ho,126,1075,5,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/09/28,7,CIRCUIT MIGHTY,K C Leung,125,1018,3,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/09/28,8,FORERUNNER,Y L Chung,125,1021,12,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/09/28,9,DEAL COMPLETED,H Bentley,123,1268,8,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/09/28,10,HARMONY N HOME,M F Poon,123,1073,11,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+10,2024/09/28,11,GANGNAM STAR,A Badel,120,1111,4,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good
+11,2024/09/28,12,KASA PAPA,M Chadwick,116,1144,9,10,Class 4,1400,Sha Tin:,"TURF - ""C"" Course",Good

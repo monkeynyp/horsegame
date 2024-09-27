@@ -1,11 +1,14 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/22,1,WUNDERBAR,Z Purton,134,1202,2,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-1,2024/09/22,2,CALIFORNIA TOUCH,M Chadwick,127,1264,7,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-2,2024/09/22,3,SUGAR SUGAR,H Bowman,127,1090,1,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-3,2024/09/22,4,YOUNG SUPERSTAR,Y L Chung,126,1143,10,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-4,2024/09/22,5,LUCY IN THE SKY,K Teetan,125,1189,4,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-5,2024/09/22,6,GOLDEN EMPIRE,A Atzeni,123,1069,8,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-6,2024/09/22,7,PRAWNS ELEVEN,H Bentley,123,1080,5,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-7,2024/09/22,8,STORM RIDER,L Hewitson,123,1090,9,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-8,2024/09/22,9,CAPTAIN WIN,C Y Ho,120,1254,6,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
-9,2024/09/22,10,MEGA BONUS,A Hamelin,120,1270,3,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good
+0,2024/09/28,1,WINNING DRAGON,Y L Chung,135,1050,2,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/09/28,2,CHING,L Hewitson,134,1267,8,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/09/28,3,SWEET ENCOUNTER,A Hamelin,134,1198,1,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/09/28,4,FRANTANCK,P N Wong,132,1158,7,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/09/28,5,M UNICORN,H Bowman,130,1187,4,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/09/28,6,VOYAGE SAMURAI,K C Leung,130,1186,11,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/09/28,7,FORTUNATE SON,Z Purton,128,1092,3,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/09/28,8,STAR MAC,L Ferraris,127,1206,10,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/09/28,9,FORTUNE SUPERSTAR,B Avdulla,124,1136,9,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+9,2024/09/28,10,SECOND TO NONE,C Y Ho,122,1123,13,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+10,2024/09/28,11,PRAY FOR MIR,M Chadwick,121,1064,5,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+11,2024/09/28,12,SUPER LOVE DRAGON,A Badel,117,1196,6,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good
+12,2024/09/28,13,VOLCANIC SPARK,A Atzeni,116,1076,12,10,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good

@@ -1,13 +1,10 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/09/25,1,PRIME MORTAR,Y L Chung,134,1037,5,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-1,2024/09/25,2,AURORA LADY,Z Purton,128,1171,10,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-2,2024/09/25,3,MY DAY MY WAY,C L Chau,127,1129,6,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-3,2024/09/25,4,BEAUTY DESTINY,A Atzeni,126,1168,7,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-4,2024/09/25,5,GLORY CLOUD,H Bowman,126,1070,8,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-5,2024/09/25,6,NEW POWER,M L Yeung,126,1099,1,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-6,2024/09/25,7,SPICY GOLD,A Badel,125,1185,3,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-7,2024/09/25,8,MR VALIANT,B Avdulla,123,1061,2,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-8,2024/09/25,9,IVICTORIAM,A Hamelin,119,1095,9,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-9,2024/09/25,10,SHINKANSEN,M Chadwick,118,1165,4,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-10,2024/09/25,11,STRIVE FOR GLORY,K Teetan,118,1097,12,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
-11,2024/09/25,12,HERO STAR,M F Poon,116,1130,11,8,Class 4,1200,Happy Valley:,"TURF - ""C"" Course",Good To Yielding
+0,2024/09/28,1,BOTTOMUPTOGETHER,Z Purton,135,1039,8,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
+1,2024/09/28,2,RUBYLOT,H Bowman,132,1108,2,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
+2,2024/09/28,3,EQUATORIAL,A Atzeni,129,1083,6,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
+3,2024/09/28,4,GREAT STATE,M L Yeung,124,1096,1,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
+4,2024/09/28,5,POLARIS,H Bentley,124,1191,3,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
+5,2024/09/28,6,GOKO WIN,M Chadwick,121,1070,4,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
+6,2024/09/28,7,GALVANIC,L Hewitson,120,1088,7,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
+7,2024/09/28,8,ELEGANT LIFE,A Hamelin,119,1140,5,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
+8,2024/09/28,9,SUPER FORTUNE,M F Poon,119,1190,9,10,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good
