@@ -4,7 +4,16 @@
 {% load static %}
 
 {% block content %}
+<style>
+  .narrow-row {
+      padding: 5px 0;  /* Adjust the padding as needed */
+      margin: 3px 0;   /* Adjust the margin as needed */
+  }
 
+  .narrow-row label {
+      padding: 0;  /* Optional: Adjust label padding */
+  }
+</style>
 <!-- This part ensure the user check box selection is less or equal to 3 -->
 <script>
   let selectionSequence = [];
@@ -191,10 +200,12 @@
                     {% endif %}
                     {% endfor %}</h6>
                   </header>
+                      
                       {% for user_tips in user_data.records %}
+                          
                               <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} {% if user_tips.hit == 1 %}
                                 <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
-                              {% endif %}
+                              {% endif %} 
                               </p>
                               <!-- Add more details as needed -->
                       {% endfor %}
@@ -265,16 +276,16 @@
        <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-animate-zoom" style="max-width: 600px;">
             <!-- Modal Header -->
-            <div class="w3-container w3-blue w3-padding-16 w3-center">
+            <div class="w3-container w3-blue w3-padding-8 w3-center">
                 <span onclick="closeAddTipsFormModal()" class="w3-button w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-                <h2 class="w3-xlarge"><i class="fa fa-trophy w3-margin-right"></i>Race {{ race_id }} Tips</h2>
-                <p>{{ current_race.iloc.2.1 }}</p>
+                <h2 class="w3-xlarge"><i class="fa fa-trophy w3-margin-right"></i>{% trans 'Race' %} {{ race_id }} Tips &nbsp; {{ current_race.iloc.2.1 }}</h2>
+        
             </div>
     
             <!-- Selected Horses Display -->
-            <div class="w3-container w3-padding-16">
+            <div class="w3-container w3-padding-small">
                 <h4 class="w3-text-grey w3-left-align">{% trans 'Selected Horses' %}:</h4>
-                <div id="selected-horses" class="w3-panel w3-border w3-light-grey w3-round" style="min-height: 50px; padding: 8px;"></div>
+                <div id="selected-horses" class="w3-panel w3-border w3-light-grey w3-round" style="min-height: 35px; padding: 4px;"></div>
             </div>
     
             <!-- Form for Horse Selection -->
@@ -285,14 +296,14 @@
                 <input type="hidden" id="selection-sequence" name="selection_sequence" value="">
     
                 <!-- Horse Selection Section -->
-                <h4 class="w3-left-align">{% trans 'Select up to 3 horses' %}:</h4>
-                <div class="w3-container w3-padding-8">
+                <h5 class="w3-left-align">{% trans 'Select up to 3 horses' %}:</h5>
+                <div class="w3-container">
                     {% for i, r in current_race.iterrows %}
-                        <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %}" style="margin-bottom: 1px;">
-                            <label class="w3-container w3-padding-small">
+                        <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %} narrow-row" >
+                            <label class="w3-container narrow-row">
                                 <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}" data-translated="{{ forloop.counter }}.{% trans r.HorseName %}"
                                        {% if r.HorseName in selected_horses %} checked {% endif %}
-                                       onclick="updateSelection(this)">
+                                       onclick="updateSelection(this)" >
                                 {{ forloop.counter }}. {% trans r.HorseName %}
                                 
                             </label>

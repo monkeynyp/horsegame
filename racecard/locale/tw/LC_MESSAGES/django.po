@@ -183,8 +183,12 @@ msgstr "主頁"
 msgid "Horse Race"
 msgstr "賽馬"
 
-msgid "MY🇲🇾Race"
-msgstr "馬來🇲🇾賽馬"
+
+msgid "Top Jockey"
+msgstr "騎師王"
+
+msgid "Score"
+msgstr "得分"
 
 #: racecard/templates/master.html:33
 msgid "Support MK"
