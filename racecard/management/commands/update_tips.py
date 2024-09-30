@@ -25,8 +25,8 @@ class Command(BaseCommand):
         
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
         #alg_methods = ['LogRegress','NaiveBayes','RanForest','NeuroNet','ForestReg','NeuroReg']
-        alg_methods = ['LogRegress','RanForest','NeuroReg']
-        #alg_methods = ['NeuroReg']
+        #alg_methods = ['LogRegress','RanForest','NeuroReg']
+        alg_methods = ['NeuroReg']
         class_flag=0
         for alg in alg_methods:
             user_id = User.objects.get(username=alg)
@@ -65,14 +65,24 @@ class Command(BaseCommand):
                 existing_records = UserTips.objects.filter(user=user_id, race_date=race_date, race_no=counter)
                 if existing_records.exists():
                     existing_records.delete()
+                rank = 0
                 for i,row in result_df.iterrows():
+                    if i == 0:
+                        jockey_score = 12
+                    elif i == 1:
+                        jockey_score = 6
+                    elif i == 2:
+                        jockey_score = 4
                     # Your logic to update the database with race_date and race_no
                     UserTips.objects.update_or_create(
                         user = user_id,
                         race_date = race_date,
                         race_no = counter,
                         horse_no = row[ 'Unnamed: 0']+1,
+                        rank = i+1,
+                        jockey_score = jockey_score,
                         horse_name = row['HorseName'],
+                        jockey = row['Jockey'],
                         hit = 0,
                         ratio=round(row['Score'] * 100 / 10) * 10  # Multiply by 100, then round up to the nearest 10
                         )

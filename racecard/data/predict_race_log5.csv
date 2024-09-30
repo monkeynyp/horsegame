@@ -1,13 +1,157 @@
-,HorseName,Score
-0,MAJESTIC COLOUR,0.06751898398056115
-1,FIGHTING MACHINE,0.24703909573675356
-2,VIVA GRACIOUSNESS,0.009695074097363527
-3,LEEDOX,0.017838071856601117
-4,ACE POWER,0.09310835091374789
-5,CALIFORNIA BANNER,0.08107407648683392
-6,MR ENERGIA,0.08755295087327297
-7,CHAMPION METHOD,0.19259722146853367
-8,FOOLISH HEART,0.07315991663508006
-9,FOXHUNTER KING,0.059894820633307415
-10,TAKE ACTION,0.022611836900339615
-11,AFFIRM,0.04790960041760502
+,HorseName,Jockey,Score
+0,MAJESTIC COLOUR,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.06751898398056115
+1,FIGHTING MACHINE,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.24703909573675356
+2,VIVA GRACIOUSNESS,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.009695074097363527
+3,LEEDOX,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.017838071856601117
+4,ACE POWER,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.09310835091374789
+5,CALIFORNIA BANNER,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.08107407648683392
+6,MR ENERGIA,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.08755295087327297
+7,CHAMPION METHOD,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.19259722146853367
+8,FOOLISH HEART,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.07315991663508006
+9,FOXHUNTER KING,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.059894820633307415
+10,TAKE ACTION,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.022611836900339615
+11,AFFIRM,"0      K C Leung
+1       Z Purton
+2     M Chadwick
+3       A Atzeni
+4      B Avdulla
+5      Y L Chung
+6      H Bentley
+7       H Bowman
+8     B Thompson
+9      M L Yeung
+10       A Badel
+11      M F Poon
+Name: Jockey, dtype: object",0.04790960041760502

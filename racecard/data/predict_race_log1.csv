@@ -1,10 +1,91 @@
-,HorseName,Score
-0,DAILY TROPHY,0.20737865159039207
-1,CIRCUIT BLAZING,0.03512744650103778
-2,SMART LEADER,0.24625314605991522
-3,SPANGLE FORTUNE,0.08233443478397094
-4,HIGH RISE POWER,0.01884143676918483
-5,DIAMOND SOARS,0.11315284322797674
-6,SUPER JOY,0.1943493846896205
-7,VULCANUS,0.02184111164231639
-8,REGENCY HAPPY STAR,0.0807215447355855
+,HorseName,Jockey,Score
+0,DAILY TROPHY,"0      H Bowman
+1     A Hamelin
+2      Z Purton
+3     K C Leung
+4     B Avdulla
+5    E C W Wong
+6    M Chadwick
+7     Y L Chung
+8     M L Yeung
+Name: Jockey, dtype: object",0.20737865159039207
+1,CIRCUIT BLAZING,"0      H Bowman
+1     A Hamelin
+2      Z Purton
+3     K C Leung
+4     B Avdulla
+5    E C W Wong
+6    M Chadwick
+7     Y L Chung
+8     M L Yeung
+Name: Jockey, dtype: object",0.03512744650103778
+2,SMART LEADER,"0      H Bowman
+1     A Hamelin
+2      Z Purton
+3     K C Leung
+4     B Avdulla
+5    E C W Wong
+6    M Chadwick
+7     Y L Chung
+8     M L Yeung
+Name: Jockey, dtype: object",0.24625314605991522
+3,SPANGLE FORTUNE,"0      H Bowman
+1     A Hamelin
+2      Z Purton
+3     K C Leung
+4     B Avdulla
+5    E C W Wong
+6    M Chadwick
+7     Y L Chung
+8     M L Yeung
+Name: Jockey, dtype: object",0.08233443478397094
+4,HIGH RISE POWER,"0      H Bowman
+1     A Hamelin
+2      Z Purton
+3     K C Leung
+4     B Avdulla
+5    E C W Wong
+6    M Chadwick
+7     Y L Chung
+8     M L Yeung
+Name: Jockey, dtype: object",0.01884143676918483
+5,DIAMOND SOARS,"0      H Bowman
+1     A Hamelin
+2      Z Purton
+3     K C Leung
+4     B Avdulla
+5    E C W Wong
+6    M Chadwick
+7     Y L Chung
+8     M L Yeung
+Name: Jockey, dtype: object",0.11315284322797674
+6,SUPER JOY,"0      H Bowman
+1     A Hamelin
+2      Z Purton
+3     K C Leung
+4     B Avdulla
+5    E C W Wong
+6    M Chadwick
+7     Y L Chung
+8     M L Yeung
+Name: Jockey, dtype: object",0.1943493846896205
+7,VULCANUS,"0      H Bowman
+1     A Hamelin
+2      Z Purton
+3     K C Leung
+4     B Avdulla
+5    E C W Wong
+6    M Chadwick
+7     Y L Chung
+8     M L Yeung
+Name: Jockey, dtype: object",0.02184111164231639
+8,REGENCY HAPPY STAR,"0      H Bowman
+1     A Hamelin
+2      Z Purton
+3     K C Leung
+4     B Avdulla
+5    E C W Wong
+6    M Chadwick
+7     Y L Chung
+8     M L Yeung
+Name: Jockey, dtype: object",0.0807215447355855

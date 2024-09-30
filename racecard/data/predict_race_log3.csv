@@ -1,11 +1,111 @@
-,HorseName,Score
-0,MACANESE MASTER,0.0711012873954313
-1,COLOURFUL WINNER,0.22202363996965607
-2,POCHETTINO,0.08418531385454027
-3,SEA AIR LEGEND,0.028338428859612783
-4,SUPER LEGENDS,0.15419465234058422
-5,LIFE OF STONE,0.0301013539532987
-6,YEE CHEONG RAIDER,0.2834896578577081
-7,FUNG,0.01691032395186205
-8,WINNING HEART,0.03287451997702183
-9,URBAN TRIUMPH,0.07678082184028488
+,HorseName,Jockey,Score
+0,MACANESE MASTER,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.0711012873954313
+1,COLOURFUL WINNER,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.22202363996965607
+2,POCHETTINO,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.08418531385454027
+3,SEA AIR LEGEND,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.028338428859612783
+4,SUPER LEGENDS,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.15419465234058422
+5,LIFE OF STONE,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.0301013539532987
+6,YEE CHEONG RAIDER,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.2834896578577081
+7,FUNG,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.01691032395186205
+8,WINNING HEART,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.03287451997702183
+9,URBAN TRIUMPH,"0      M F Poon
+1     M L Yeung
+2       A Badel
+3    E C W Wong
+4      K H Chan
+5     K C Leung
+6        C Y Ho
+7        H T Mo
+8     B Avdulla
+9    M Chadwick
+Name: Jockey, dtype: object",0.07678082184028488

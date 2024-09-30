@@ -1,13 +1,157 @@
-,HorseName,Score
-0,BOWSER,0.08313014680061219
-1,SHANGHAI STYLE,0.0419142223088356
-2,REGENT GLORY,0.19265528675742014
-3,ACA POWER,0.08981788132208703
-4,DAY DAY VICTORY,0.024750334002889982
-5,ROBOT KNIGHT,0.14560508619803525
-6,VALHALLA,0.07337552585617059
-7,FLYING DRAGON,0.06839425698284411
-8,HAPPY TANGO,0.13264219008385852
-9,COSMO NAVIGATOR,0.11154390105472568
-10,JOLLY COMPANION,0.005934971173502997
-11,SONIC BOOM,0.03023619745901803
+,HorseName,Jockey,Score
+0,BOWSER,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.08313014680061219
+1,SHANGHAI STYLE,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.0419142223088356
+2,REGENT GLORY,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.19265528675742014
+3,ACA POWER,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.08981788132208703
+4,DAY DAY VICTORY,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.024750334002889982
+5,ROBOT KNIGHT,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.14560508619803525
+6,VALHALLA,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.07337552585617059
+7,FLYING DRAGON,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.06839425698284411
+8,HAPPY TANGO,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.13264219008385852
+9,COSMO NAVIGATOR,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.11154390105472568
+10,JOLLY COMPANION,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.005934971173502997
+11,SONIC BOOM,"0      B Avdulla
+1       M F Poon
+2       Z Purton
+3        A Badel
+4     L Hewitson
+5         C Y Ho
+6     L Ferraris
+7       A Atzeni
+8     E C W Wong
+9      Y L Chung
+10      P N Wong
+11    M Chadwick
+Name: Jockey, dtype: object",0.03023619745901803

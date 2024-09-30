@@ -1,9 +1,73 @@
-,HorseName,Score
-0,GAMEPLAYER WARRIOR,0.05828643308107466
-1,NICE BIRDIE,0.20046320096207443
-2,INVINCIBLE MISSILE,0.09935356966360144
-3,MERCHANT PRINCE,0.02117428236105403
-4,CHARMANDER,0.34065606413906224
-5,GO HERO,0.03299978410005309
-6,CASA LEGEND,0.22072445475885916
-7,HAPPY HUNK,0.026342210934220848
+,HorseName,Jockey,Score
+0,GAMEPLAYER WARRIOR,"0    L Ferraris
+1      P N Wong
+2       A Badel
+3    B Thompson
+4      Z Purton
+5     Y L Chung
+6      M F Poon
+7    M Chadwick
+Name: Jockey, dtype: object",0.05828643308107466
+1,NICE BIRDIE,"0    L Ferraris
+1      P N Wong
+2       A Badel
+3    B Thompson
+4      Z Purton
+5     Y L Chung
+6      M F Poon
+7    M Chadwick
+Name: Jockey, dtype: object",0.20046320096207443
+2,INVINCIBLE MISSILE,"0    L Ferraris
+1      P N Wong
+2       A Badel
+3    B Thompson
+4      Z Purton
+5     Y L Chung
+6      M F Poon
+7    M Chadwick
+Name: Jockey, dtype: object",0.09935356966360144
+3,MERCHANT PRINCE,"0    L Ferraris
+1      P N Wong
+2       A Badel
+3    B Thompson
+4      Z Purton
+5     Y L Chung
+6      M F Poon
+7    M Chadwick
+Name: Jockey, dtype: object",0.02117428236105403
+4,CHARMANDER,"0    L Ferraris
+1      P N Wong
+2       A Badel
+3    B Thompson
+4      Z Purton
+5     Y L Chung
+6      M F Poon
+7    M Chadwick
+Name: Jockey, dtype: object",0.34065606413906224
+5,GO HERO,"0    L Ferraris
+1      P N Wong
+2       A Badel
+3    B Thompson
+4      Z Purton
+5     Y L Chung
+6      M F Poon
+7    M Chadwick
+Name: Jockey, dtype: object",0.03299978410005309
+6,CASA LEGEND,"0    L Ferraris
+1      P N Wong
+2       A Badel
+3    B Thompson
+4      Z Purton
+5     Y L Chung
+6      M F Poon
+7    M Chadwick
+Name: Jockey, dtype: object",0.22072445475885916
+7,HAPPY HUNK,"0    L Ferraris
+1      P N Wong
+2       A Badel
+3    B Thompson
+4      Z Purton
+5     Y L Chung
+6      M F Poon
+7    M Chadwick
+Name: Jockey, dtype: object",0.026342210934220848

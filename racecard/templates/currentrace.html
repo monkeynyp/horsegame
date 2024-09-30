@@ -5,8 +5,10 @@
 
 {% block content %}
 
-
+<!-- This part ensure the user check box selection is less or equal to 3 -->
 <script>
+  let selectionSequence = [];
+  let selectionSequenceTrans = [];
   function updateSelection(checkbox) {
       var selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
 
@@ -19,7 +21,34 @@
       uncheckedCheckboxes.forEach(function (uncheckedCheckbox) {
           uncheckedCheckbox.disabled = selectedCheckboxes.length >= 3;
       });
-  }
+
+      let horseName = checkbox.value; // Get horse name
+      let horseTransName = checkbox.dataset.translated;
+      if (checkbox.checked) {
+          // Add to sequence if checked
+          selectionSequence.push(horseName);
+          selectionSequenceTrans.push(horseTransName);
+      } else {
+          // Remove from sequence if unchecked
+          let index = selectionSequence.indexOf(horseName);
+          if (index > -1) {
+              selectionSequence.splice(index, 1); // Remove the unchecked horse from sequence
+              selectionSequenceTrans.splice(index, 1); // Remove the unchecked horse from sequence
+          }
+      }
+
+      // Display the updated selection sequence
+      document.getElementById('selected-horses').innerText = selectionSequenceTrans.join(', ');
+
+      // Update the hidden field with the current selection sequence
+      document.getElementById('selection-sequence').value = selectionSequence.join(',');
+      }
+
+      function submitForm() {
+      // Ensure the selection sequence is up-to-date before submitting the form
+      document.getElementById('selection-sequence').value = selectionSequence.join(',');
+      }
+        
 </script>
 
 <div class="w3-container w3-padding-32"></div>
@@ -233,33 +262,51 @@
       </div>
        <!-- Add Tips by users-->
 
-        <div id="id01" class="w3-modal">
-          <div class="w3-modal-content">
-              <div class="w3-center w3-xlarge w3-blue"><i class="fa fa-spinner fa-spin fa-lg fa-fw" aria-hidden="true"></i>
+       <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom" style="max-width: 600px;">
+            <!-- Modal Header -->
+            <div class="w3-container w3-blue w3-padding-16 w3-center">
                 <span onclick="closeAddTipsFormModal()" class="w3-button w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-                   Race {{race_id}} Tips {{ current_race.iloc.2.1}}
-              </div>
-  
-          <form method="post" action="{% url 'submit_tips' %}" class="w3-container w3-margin-left">
-            {% csrf_token %}
-            <input type="hidden" name="race_no" value="{{ race_id }}">
-            <input type="hidden" name="race_date" value="{{current_race.iloc.2.1}}"> <!-- Update with the desired date -->
-            <h4>{% trans 'Select up to 3 horses' %}:</h4>
-            {% for i, r in current_race.iterrows %}
-                <label>
-                    <input type="checkbox" name="selected_horses" value="{{ forloop.counter}}.{{ r.HorseName }}"
-                           {% if r.HorseName in selected_horses %} checked {% endif %}
-                           onclick="updateSelection(this)">
-                    {{ forloop.counter }}. {% trans r.HorseName %}
-                </label><br>
-            {% endfor %}
-            <br>
-            <button type="submit">{% trans 'Submit' %}</button>
-            <br>
-        </form>
-
+                <h2 class="w3-xlarge"><i class="fa fa-trophy w3-margin-right"></i>Race {{ race_id }} Tips</h2>
+                <p>{{ current_race.iloc.2.1 }}</p>
+            </div>
+    
+            <!-- Selected Horses Display -->
+            <div class="w3-container w3-padding-16">
+                <h4 class="w3-text-grey w3-left-align">{% trans 'Selected Horses' %}:</h4>
+                <div id="selected-horses" class="w3-panel w3-border w3-light-grey w3-round" style="min-height: 50px; padding: 8px;"></div>
+            </div>
+    
+            <!-- Form for Horse Selection -->
+            <form method="post" action="{% url 'submit_tips' %}" class="w3-container" onsubmit="submitForm()">
+                {% csrf_token %}
+                <input type="hidden" name="race_no" value="{{ race_id }}">
+                <input type="hidden" name="race_date" value="{{current_race.iloc.2.1}}">
+                <input type="hidden" id="selection-sequence" name="selection_sequence" value="">
+    
+                <!-- Horse Selection Section -->
+                <h4 class="w3-left-align">{% trans 'Select up to 3 horses' %}:</h4>
+                <div class="w3-container w3-padding-8">
+                    {% for i, r in current_race.iterrows %}
+                        <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %}" style="margin-bottom: 1px;">
+                            <label class="w3-container w3-padding-small">
+                                <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}" data-translated="{{ forloop.counter }}.{% trans r.HorseName %}"
+                                       {% if r.HorseName in selected_horses %} checked {% endif %}
+                                       onclick="updateSelection(this)">
+                                {{ forloop.counter }}. {% trans r.HorseName %}
+                                
+                            </label>
+                        </div>
+                    {% endfor %}
+                </div>
+    
+                <!-- Submit Button -->
+                <div class="w3-container w3-padding-16">
+                    <button type="submit" class="w3-button w3-green w3-block w3-round">{% trans 'Submit' %}</button>
+                </div>
+            </form>
         </div>
-      </div>
+    </div>
       <div id="id02" class="w3-modal">
         <div class="w3-modal-content w3-animate-top">
             <div class="w3-center">
@@ -302,7 +349,7 @@
       // Get the current date and time
       var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
       // Define the start and end date and time for the period
-      var startDate = new Date("2024-09-28T13:00:00");
+      var startDate = new Date("2024-10-01T13:00:00");
       var endDate = new Date("2025-12-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period

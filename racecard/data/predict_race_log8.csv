@@ -1,11 +1,111 @@
-,HorseName,Score
-0,AWESOME TREASURE,0.08365974809142858
-1,HAROLD WIN,0.26070214825510774
-2,LUCKY TOUCH,0.07061442306346188
-3,EVERYONE'S CLASSIC,0.20208615031257957
-4,BLAZING WIND,0.07176351034823863
-5,KING OBERON,0.12731026881759702
-6,UNIVERSAL BLAZE,0.02899330194848481
-7,GLORIOUS EXPERT,0.11546593681857294
-8,STRATHBARRY,0.018736932006495538
-9,WIN SPEED,0.020667580338033353
+,HorseName,Jockey,Score
+0,AWESOME TREASURE,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.08365974809142858
+1,HAROLD WIN,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.26070214825510774
+2,LUCKY TOUCH,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.07061442306346188
+3,EVERYONE'S CLASSIC,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.20208615031257957
+4,BLAZING WIND,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.07176351034823863
+5,KING OBERON,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.12731026881759702
+6,UNIVERSAL BLAZE,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.02899330194848481
+7,GLORIOUS EXPERT,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.11546593681857294
+8,STRATHBARRY,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.018736932006495538
+9,WIN SPEED,"0     M L Yeung
+1      A Atzeni
+2     B Avdulla
+3      Z Purton
+4      H Bowman
+5    L Hewitson
+6       A Badel
+7      P N Wong
+8    B Thompson
+9     K C Leung
+Name: Jockey, dtype: object",0.020667580338033353

@@ -8,8 +8,11 @@ class UserTips(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)  # Link to the User model
     race_date = models.DateField()
     race_no = models.IntegerField()
+    rank = models.IntegerField(default=0)
+    jockey_score = models.IntegerField(default=0)
     horse_no = models.IntegerField()
     horse_name = models.CharField(max_length=50)
+    jockey = models.CharField(max_length=25, null=True)
     hit = models.IntegerField()
     dividend = models.FloatField(default=0)
     ratio = models.IntegerField(default=0)

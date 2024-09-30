@@ -1,13 +1,157 @@
-,HorseName,Score
-0,KING MILES,0.19349852049205837
-1,PRESTIGE ALWAYS,0.12757552035294487
-2,SILO,0.0310327584008183
-3,LESLIE,0.08639581334316492
-4,SUPER GOLDI,0.14912917846120666
-5,ORIENTAL SMOKE,0.03926302285037242
-6,NOT USUAL STAR,0.07576626106037088
-7,PRINCE OF PORTY,0.12769471868012125
-8,MIGHTY COMMANDER,0.014406375680560865
-9,PHANTOM CYCLONE,0.030999235522561223
-10,ENDEARED,0.1014600160817615
-11,THRIVING BROTHERS,0.02277857907405883
+,HorseName,Jockey,Score
+0,KING MILES,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.19349852049205837
+1,PRESTIGE ALWAYS,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.12757552035294487
+2,SILO,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.0310327584008183
+3,LESLIE,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.08639581334316492
+4,SUPER GOLDI,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.14912917846120666
+5,ORIENTAL SMOKE,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.03926302285037242
+6,NOT USUAL STAR,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.07576626106037088
+7,PRINCE OF PORTY,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.12769471868012125
+8,MIGHTY COMMANDER,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.014406375680560865
+9,PHANTOM CYCLONE,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.030999235522561223
+10,ENDEARED,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.1014600160817615
+11,THRIVING BROTHERS,"0         C Y Ho
+1       Z Purton
+2      B Avdulla
+3      K C Leung
+4       A Atzeni
+5     B Thompson
+6     L Hewitson
+7      H Bentley
+8      M L Yeung
+9      Y L Chung
+10     A Hamelin
+11       A Badel
+Name: Jockey, dtype: object",0.02277857907405883

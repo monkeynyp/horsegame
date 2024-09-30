@@ -1,14 +1,183 @@
-,HorseName,Score
-0,WINNING DRAGON,0.07863943068134746
-1,CHING,0.0814694252031524
-2,SWEET ENCOUNTER,0.10471441282905287
-3,FRANTANCK,0.041616936694200045
-4,M UNICORN,0.11554244084019315
-5,VOYAGE SAMURAI,0.17182132938147657
-6,FORTUNATE SON,0.14260732244592406
-7,STAR MAC,0.04336551371674815
-8,FORTUNE SUPERSTAR,0.01730864507819485
-9,SECOND TO NONE,0.08967970194030907
-10,PRAY FOR MIR,0.04131578619203439
-11,SUPER LOVE DRAGON,0.013055014646883705
-12,VOLCANIC SPARK,0.05886404035048341
+,HorseName,Jockey,Score
+0,WINNING DRAGON,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.07863943068134746
+1,CHING,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.0814694252031524
+2,SWEET ENCOUNTER,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.10471441282905287
+3,FRANTANCK,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.041616936694200045
+4,M UNICORN,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.11554244084019315
+5,VOYAGE SAMURAI,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.17182132938147657
+6,FORTUNATE SON,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.14260732244592406
+7,STAR MAC,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.04336551371674815
+8,FORTUNE SUPERSTAR,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.01730864507819485
+9,SECOND TO NONE,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.08967970194030907
+10,PRAY FOR MIR,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.04131578619203439
+11,SUPER LOVE DRAGON,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.013055014646883705
+12,VOLCANIC SPARK,"0      Y L Chung
+1     L Hewitson
+2      A Hamelin
+3       P N Wong
+4       H Bowman
+5      K C Leung
+6       Z Purton
+7     L Ferraris
+8      B Avdulla
+9         C Y Ho
+10    M Chadwick
+11       A Badel
+12      A Atzeni
+Name: Jockey, dtype: object",0.05886404035048341

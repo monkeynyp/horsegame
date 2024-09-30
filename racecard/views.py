@@ -149,8 +149,13 @@ def racecard(request):
 
 def submit_tips(request):
     if request.method == 'POST':
-        selected_horses = request.POST.getlist('selected_horses')
-        print(selected_horses)
+        selected_horses = request.POST.get('selection_sequence')
+        selected_horses = selected_horses.split(',') 
+        # Process the horse name and jockey
+        for horse_jockey in selected_horses:
+            horse_name, jockey_name = horse_jockey.split('|')
+        # Now you can work with horse_name and jockey_name separately
+        print(f"Horse: {horse_name}, Jockey: {jockey_name}")
         # Assuming you have a user identifier, replace 'user_id' with the actual field name
         user_id = request.user  # Replace with the actual user ID
         race_date=request.POST['race_date'].replace('/','-')
@@ -164,12 +169,21 @@ def submit_tips(request):
         existing_records = UserTips.objects.filter(user=user_id, race_date=race_date, race_no=race_no)
         if existing_records.exists():
             existing_records.delete()
-        
+        rank =0
         for horse_select in selected_horses:
             split_values = horse_select.split(".")
             horse_no=split_values[0]
-            horse_name=split_values[1]
-            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no, horse_no=horse_no,horse_name=horse_name, hit=0)
+            horse_name=split_values[1].split("|")[0]
+            jockey = split_values[2]
+            rank=rank+1
+            if rank == 1:
+                jockey_score = 12
+            elif rank == 2:
+                jockey_score = 6
+            elif rank == 3:
+                jockey_score = 4
+            
+            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no,rank=rank,jockey_score=jockey_score, horse_no=horse_no,horse_name=horse_name, jockey=jockey, hit=0)
         # Redirect to a success page or wherever needed
         
     return redirect('../racecard/?id='+race_no)
@@ -216,17 +230,29 @@ def view_by_member(request):
     return render(request, 'view_by_member.html', context)
 
 def jockey_king(request):
-     # Query the top 3 jockeys ordered by score in descending order
-     # Get the most recent race_date
-    recent_race_date = UserTips_jc.objects.aggregate(Max('race_date'))['race_date__max']
+    # Step 1: Get the most recent race_date
+    recent_race_date = UserTips.objects.aggregate(Max('race_date'))['race_date__max']
 
-# Retrieve top jockeys for the most recent race_date
-    top_jockeys = UserTips_jc.objects.filter(race_date=recent_race_date).order_by('-score')[:3]
+    # Step 2: Filter UserTips by the most recent race_date
+    recent_tips = UserTips.objects.filter(race_date=recent_race_date)
 
-        # Mapping jockey names to image filenames
-    # Pass the top jockeys to the template
+    # Step 3: Group by 'user' and 'jockey', then accumulate (sum) the jockey_scores
+    jockey_scores = recent_tips.values('user__username', 'jockey') \
+        .annotate(total_jockey_score=Sum('jockey_score')) \
+        .order_by('user__username', '-total_jockey_score')  # Order by user first, then score descending
+    
+    # Step 4: Find the top jockey per user
+    top_jockeys_per_user = {}
+    
+    for jockey_score in jockey_scores:
+        username = jockey_score['user__username']
+        if username not in top_jockeys_per_user:
+            # Add the first (top) jockey for each user
+            top_jockeys_per_user[username] = jockey_score
+
+    # Step 5: Pass the dictionary of top jockeys per user to the template
     context = {
-        'top_jockeys': top_jockeys,
+        'top_jockeys': top_jockeys_per_user,
     }
     return render(request, 'jockey_king.html', context)
     

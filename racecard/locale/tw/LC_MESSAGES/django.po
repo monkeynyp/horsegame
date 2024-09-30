@@ -120,7 +120,7 @@ msgid "Submit"
 msgstr "遞交"
 
 msgid "Select up to 3 horses"
-msgstr "請選三匹馬"
+msgstr "請按名次選三匹馬"
 
 msgid "Privacy Policy"
 msgstr "私隱條款"
@@ -193,6 +193,10 @@ msgstr "支持MK"
 msgid "Support Monkey"
 msgstr "支持 Monkey"
 
+msgid "Selected Horses"
+msgstr "已選馬匹  名次: ① > ② > ③"
+
+
 #: racecard/templates/master.html:34
 msgid "Contact"
 msgstr "聯絡"
@@ -212,6 +216,18 @@ msgid "Help"
 msgstr "幫助"
 
 #: Horse Name
+#2024-10-01
+msgid "BIENVENUE"
+msgstr "天外迎天"
+msgid "CIRCUS REEL"
+msgstr "快步流星"
+msgid "NIGHT PUROSANGUE"
+msgstr "午夜快車"
+msgid "THE PRIME"
+msgstr "質數"
+msgid "THE WAY WE WIN"
+msgstr "不假外求"
+
 
 #2024-09-28
 msgid "MACANESE MASTER"
