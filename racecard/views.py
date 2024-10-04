@@ -257,6 +257,7 @@ def jockey_king(request):
 
     # Step 5: Pass the dictionary of top jockeys per user to the template
     context = {
+        'race_date':recent_race_date,
         'top_jockeys': top_jockeys_per_user,
     }
     return render(request, 'jockey_king.html', context)
@@ -939,20 +940,6 @@ def football_match(request):
     # Render the template with the combined data
     return render(request, 'footballmatch.html', {'combined_data': combined_data, 'id':id})
 
-# View to render the button and manage its behavior
-def click_ads(request):
-    # Check if the button was clicked before
-    print("Triggered",request.session.get('button_clicked') )
-    if request.session.get('button_clicked'):
-        # Change the button's behavior after the first click
-        #return redirect('jockey_king')  # Redirect to external URL
-        return render(request, 'click_ads.html', {'button_action': 'internal'})
-        #return render(request, 'click_ads.html', {'button_action': 'external'})
-    else:
-        # First time, set session variable and redirect to external link
-        request.session['button_clicked'] = True
-        request.session.set_expiry(3600)  # Set session expiry for 1 hour
-        return render(request, 'click_ads.html', {'button_action': 'external'})
 
 # View to handle the internal function call
 def internal_function(request):
