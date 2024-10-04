@@ -230,6 +230,11 @@ def view_by_member(request):
     return render(request, 'view_by_member.html', context)
 
 def jockey_king(request):
+    #if request.session.get('button_clicked')!=True:
+        # Change the button's behavior after the first click
+     #   return redirect('click_ads')  # Redirect to external URL
+    
+    #print('test123',request.session.get('button_clicked'))
     # Step 1: Get the most recent race_date
     recent_race_date = UserTips.objects.aggregate(Max('race_date'))['race_date__max']
 
@@ -457,18 +462,6 @@ def like_article(request, article_id):
 
     return JsonResponse({'likes': article.likes})
 
-
-def facebook_feed(request):
-    access_token = 'EAAP8Mp3FsJsBO0i0h3KM36my69KFmblxKJsSOtnrKX15qF2GMp4En3S8TNCOuC8PhroobVRo2gkD99w8JmNEArXidvvNmFuF23rBPnH2zFUOtYiZAAVYptnI25D4Ll97WNFIeYIugDtAVI7TwOMQhzko91VY4qf83m7HnKlgciSC0g0GZANpE34b30MfkCYR2Wh1DhpTHZA0RZBZBhTIm2huSeezMPHXDM5IoxDhrLfallYI4ploISZB90r1KF7AZDZD'
-    api_url = f'https://graph.facebook.com/v12.0/250396646015/feed?access_token={access_token}'
-
-    response = requests.get(api_url)
-    data = response.json()
-    print ("Facebook Data",data)
-
-    feed_data = data.get('data', [])
-
-    return render(request, 'facebookfeed.html', {'feed_data': feed_data})
 
 ## Login and Administration Session
 #@login_required
@@ -945,3 +938,34 @@ def football_match(request):
     
     # Render the template with the combined data
     return render(request, 'footballmatch.html', {'combined_data': combined_data, 'id':id})
+
+# View to render the button and manage its behavior
+def click_ads(request):
+    # Check if the button was clicked before
+    print("Triggered",request.session.get('button_clicked') )
+    if request.session.get('button_clicked'):
+        # Change the button's behavior after the first click
+        #return redirect('jockey_king')  # Redirect to external URL
+        return render(request, 'click_ads.html', {'button_action': 'internal'})
+        #return render(request, 'click_ads.html', {'button_action': 'external'})
+    else:
+        # First time, set session variable and redirect to external link
+        request.session['button_clicked'] = True
+        request.session.set_expiry(3600)  # Set session expiry for 1 hour
+        return render(request, 'click_ads.html', {'button_action': 'external'})
+
+# View to handle the internal function call
+def internal_function(request):
+    # Perform your internal logic here
+    return HttpResponse("Internal function called!")
+
+# View to handle the first click to the external URL
+def external_redirect(request):
+    # Set session variable after the button is clicked
+    if request.session.get('button_clicked') == None:
+        request.session['button_clicked'] = True
+    # Set session to expire in 1 hour (3600 seconds)
+        request.session.set_expiry(60)
+        return redirect('https://noohapou.com/4/7649284')  # Redirect to external URL
+    else:
+        return redirect('jockey_king')  # Redirect to external URL

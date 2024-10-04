@@ -24,7 +24,7 @@ urlpatterns = [
     path('logout/', user_logout, name='logout'),
     path('privacy/', views.privacy, name='privacy'),
     path('disclaimer/', views.disclaimer, name='disclaimer'),
-    path('facebookfeed/', views.facebook_feed, name='facebook_feed'),
+    path('click_ads/', views.click_ads, name='click_ads'),
     path('like_article/<int:article_id>/', views.like_article, name='like_article'),
     path('match_chart/', views.match_chart, name='match_chart'),
     path('data_update_console/', views.data_update_console, name='data_update_console'),
@@ -38,6 +38,9 @@ urlpatterns = [
     path('lotto_test/', views.lotto_test, name='lotto_test'),
     path('lottory_predict_tw/', views.lottory_predict_tw, name='lottory_predict_tw'),
     path('lotto_test_tw/', views.lotto_test_tw, name='lotto_test_tw'),
+    path('click_ads', views.click_ads, name='click_ads'),
+    path('external_redirect/', views.external_redirect, name='external_redirect'),
+    path('internal_function/', views.internal_function, name='internal_function'),
 
     # Other URL patterns
 
