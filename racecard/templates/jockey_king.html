@@ -46,15 +46,15 @@
       <!-- Loop through top jockeys -->
       {% for username, jockey in top_jockeys.items %}
       <div class="w3-col l4 m4 s6"> <!-- Two-column layout for large and medium screens, single column for small screens -->
-        <div class="w3-card w3-margin w3-padding w3-round w3-light-grey">
+        <div class="w3-card w3-round w3-light-grey">
           <div class="w3-container w3-blue">
             <h5>{{ username }}</h5>
           </div>
           <div class="w3-container w3-padding">
             {% with jockey.jockey|lower|cut:" " as jockey_id %}
-            <p><strong>{% trans 'Top Jockey' %}:</strong> {% trans jockey.jockey %} &nbsp; 
+            <p><strong>{% trans 'Top Jockey' %}:</strong> {% trans jockey.jockey %} &nbsp;  </p> 
               <img src="{% static 'jockey' %}{{jockey_id}}.jpg" alt="{{ jockey.jockey }}" class="w3-circle" style="width:60px;height:60px;">
-            </p> 
+           
             <p><strong>{% trans 'Score' %}:</strong> {{ jockey.total_jockey_score }}</p>
             {% endwith %}
           </div>
