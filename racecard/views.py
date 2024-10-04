@@ -965,7 +965,7 @@ def external_redirect(request):
     if request.session.get('button_clicked') == None:
         request.session['button_clicked'] = True
     # Set session to expire in 1 hour (3600 seconds)
-        request.session.set_expiry(60)
+        request.session.set_expiry(1800)
         return redirect('https://noohapou.com/4/7649284')  # Redirect to external URL
     else:
         return redirect('jockey_king')  # Redirect to external URL
