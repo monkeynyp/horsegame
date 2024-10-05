@@ -220,6 +220,29 @@ msgid "Help"
 msgstr "幫助"
 
 #: Horse Name
+
+#2024-10-06
+msgid "BRILLIANT FIRE"
+msgstr "天火同德"
+msgid "MASTER TRILLION"
+msgstr "八仟財陞"
+msgid "INVINCIBLE DELIGHT"
+msgstr "喜智駒"
+msgid "GOLD MASTER"
+msgstr "金主"
+msgid "QINGYUAN STAR"
+msgstr "清遠之星"
+msgid "MARKWIN"
+msgstr "但求開心"
+msgid "DASHING DRAGON"
+msgstr "長勝威龍"
+msgid "KING PROFIT"
+msgstr "皇者有利"
+msgid "STAR GLOW"
+msgstr "共同輝煌"
+msgid "KING OF DUBAI"
+msgstr "七彩雲珠"
+
 #2024-10-01
 msgid "BIENVENUE"
 msgstr "天外迎天"

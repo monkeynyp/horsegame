@@ -1,12 +1,14 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/10/01,1,TOP SCORER,B Avdulla,135,1273,5,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-1,2024/10/01,2,GENEVA,H Bowman,133,1183,10,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-2,2024/10/01,3,JUDY'S GREAT,Z Purton,133,1080,11,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-3,2024/10/01,4,CHEERFUL WORLD,L Ferraris,132,1148,1,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-4,2024/10/01,5,NIGHT PUROSANGUE,M L Yeung,132,1253,8,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-5,2024/10/01,6,THE PRIME,L Hewitson,132,1120,4,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-6,2024/10/01,7,HAPPY PARK,C Y Ho,131,1235,2,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-7,2024/10/01,8,GOOD PROSPECT,C L Chau,130,1056,9,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-8,2024/10/01,9,CIRCUIT VICTORY,K C Leung,125,1176,3,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-9,2024/10/01,10,SILVER DESTINY,Y L Chung,124,1173,7,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
-10,2024/10/01,11,PATCH OF TIME,K Teetan,120,1142,6,10,Class 4,1200,Sha Tin:,"TURF - ""C+3"" Course",Good
+0,2024/10/06,1,METRO WARRIOR,E C W Wong,135,1203,7,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+1,2024/10/06,2,"ACE VICTORY
+(Scratched)",-,-,-,-,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+2,2024/10/06,3,BRILLIANT FIRE,M Chadwick,129,1167,8,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+3,2024/10/06,4,KA YING POWER,C L Chau,129,1099,2,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+4,2024/10/06,5,MASTER TRILLION,K C Leung,129,1055,6,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+5,2024/10/06,6,DASH AVENUE,L Hewitson,127,1157,1,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+6,2024/10/06,7,ALMIGHTY KICK,C Y Ho,125,1094,5,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+7,2024/10/06,8,INVINCIBLE DELIGHT,A Badel,125,1004,11,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+8,2024/10/06,9,VICTORYTHIRTYTHREE,M F Poon,124,1142,9,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+9,2024/10/06,10,HAPPY HORSE,Y L Chung,121,1103,4,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+10,2024/10/06,11,SPICY SPANGLE,P N Wong,119,1054,3,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+11,2024/10/06,12,GUSTY FIGHTER,K Teetan,118,1066,10,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
