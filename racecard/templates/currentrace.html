@@ -184,11 +184,13 @@
                 
                 <header class="w3-container {{color}}" >
                   <h6>{{ user_data.user  }}
+                    <!-- Dislay Gold Crown and Silver Crown for first and second users-->
                     {% if forloop.counter == 1 %}
                         <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 15deg;""></i></span>
                     {% elif forloop.counter == 2 %}
                     <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #f6f5f1e9; --fa-rotate-angle: 15deg;""></i></span>
                     {% endif %}<br>
+                    <!-- Create Medal for Users-->
                     {% for score in user_scores %}
                     {% if score.user == user_data.user %}
                     {% if score.stars2 > 0 %}
@@ -269,7 +271,11 @@
       <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
           <p class=" w3-large w3-serif">
         <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
-        Monkey每期開賽前，Monkey會更新電腦程式的賽馬位置預測。同時也會開放平台給會員分享心水，希望通過分享，大家可以有準確的投注。我的YouTube Video有詳細介紹 <a href="https://youtu.be/bK_yWVwjz48"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a></p>
+        
+        最近增加了新的功能在賽馬預測，讓各位網友除了位置之外，更可以參考Win，和三重彩等的推薦。可參考我的更新YouTube Video <a href="https://youtu.be/GHNhPTl26Zk"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a><br>
+        Monkey每期開賽前，Monkey會更新電腦程式的賽馬位置預測。同時也會開放平台給會員分享心水，希望通過分享，大家可以有準確的投注。我的YouTube Video有詳細介紹 <a href="https://youtu.be/bK_yWVwjz48"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a>
+     
+      </p>
       </div>
        <!-- Add Tips by users-->
 

@@ -1,91 +1,15 @@
 ,HorseName,Jockey,Score
-0,BOTTOMUPTOGETHER,"0      Z Purton
-1      H Bowman
-2      A Atzeni
-3     M L Yeung
-4     H Bentley
-5    M Chadwick
-6    L Hewitson
-7     A Hamelin
-8      M F Poon
-Name: Jockey, dtype: object",0.2590823293069663
-1,RUBYLOT,"0      Z Purton
-1      H Bowman
-2      A Atzeni
-3     M L Yeung
-4     H Bentley
-5    M Chadwick
-6    L Hewitson
-7     A Hamelin
-8      M F Poon
-Name: Jockey, dtype: object",0.2945220960854872
-2,EQUATORIAL,"0      Z Purton
-1      H Bowman
-2      A Atzeni
-3     M L Yeung
-4     H Bentley
-5    M Chadwick
-6    L Hewitson
-7     A Hamelin
-8      M F Poon
-Name: Jockey, dtype: object",0.04465031223601501
-3,GREAT STATE,"0      Z Purton
-1      H Bowman
-2      A Atzeni
-3     M L Yeung
-4     H Bentley
-5    M Chadwick
-6    L Hewitson
-7     A Hamelin
-8      M F Poon
-Name: Jockey, dtype: object",0.01789704473448486
-4,POLARIS,"0      Z Purton
-1      H Bowman
-2      A Atzeni
-3     M L Yeung
-4     H Bentley
-5    M Chadwick
-6    L Hewitson
-7     A Hamelin
-8      M F Poon
-Name: Jockey, dtype: object",0.12037500297837994
-5,GOKO WIN,"0      Z Purton
-1      H Bowman
-2      A Atzeni
-3     M L Yeung
-4     H Bentley
-5    M Chadwick
-6    L Hewitson
-7     A Hamelin
-8      M F Poon
-Name: Jockey, dtype: object",0.060640895194932334
-6,GALVANIC,"0      Z Purton
-1      H Bowman
-2      A Atzeni
-3     M L Yeung
-4     H Bentley
-5    M Chadwick
-6    L Hewitson
-7     A Hamelin
-8      M F Poon
-Name: Jockey, dtype: object",0.1067023895431255
-7,ELEGANT LIFE,"0      Z Purton
-1      H Bowman
-2      A Atzeni
-3     M L Yeung
-4     H Bentley
-5    M Chadwick
-6    L Hewitson
-7     A Hamelin
-8      M F Poon
-Name: Jockey, dtype: object",0.021919512401548488
-8,SUPER FORTUNE,"0      Z Purton
-1      H Bowman
-2      A Atzeni
-3     M L Yeung
-4     H Bentley
-5    M Chadwick
-6    L Hewitson
-7     A Hamelin
-8      M F Poon
-Name: Jockey, dtype: object",0.07421041751906035
+0,MIDORI GLORY,M F Poon,0.04470009076180013
+1,CARROLL STREET,B Avdulla,0.06436835477215078
+2,FLYING HIGH,L Hewitson,0.10521642784468942
+3,CELESTIAL COLOURS,H Bowman,0.04612194934178449
+4,PLEASANT ENDEAVOR,K C Leung,0.07252004447121699
+5,ALPHA ONE,M Chadwick,0.014593106723789906
+6,FAST NETWORK,Z Purton,0.17200763357811666
+7,DASHING DRAGON,B Thompson,0.016060203159560995
+8,KING PROFIT,M L Yeung,0.028124746588415326
+9,STAR GLOW,C Y Ho,0.06727791276818583
+10,SUMMIT CHEERS,H Bentley,0.029520907533114288
+11,KA YING CHEER,K Teetan,0.12262298324825635
+12,CHEVAL VALIANT,P N Wong,0.12398486290328709
+13,ONE FOR ALL,A Badel,0.09288077630563177

@@ -1,91 +1,12 @@
 ,HorseName,Jockey,Score
-0,DAILY TROPHY,"0      H Bowman
-1     A Hamelin
-2      Z Purton
-3     K C Leung
-4     B Avdulla
-5    E C W Wong
-6    M Chadwick
-7     Y L Chung
-8     M L Yeung
-Name: Jockey, dtype: object",0.20737865159039207
-1,CIRCUIT BLAZING,"0      H Bowman
-1     A Hamelin
-2      Z Purton
-3     K C Leung
-4     B Avdulla
-5    E C W Wong
-6    M Chadwick
-7     Y L Chung
-8     M L Yeung
-Name: Jockey, dtype: object",0.03512744650103778
-2,SMART LEADER,"0      H Bowman
-1     A Hamelin
-2      Z Purton
-3     K C Leung
-4     B Avdulla
-5    E C W Wong
-6    M Chadwick
-7     Y L Chung
-8     M L Yeung
-Name: Jockey, dtype: object",0.24625314605991522
-3,SPANGLE FORTUNE,"0      H Bowman
-1     A Hamelin
-2      Z Purton
-3     K C Leung
-4     B Avdulla
-5    E C W Wong
-6    M Chadwick
-7     Y L Chung
-8     M L Yeung
-Name: Jockey, dtype: object",0.08233443478397094
-4,HIGH RISE POWER,"0      H Bowman
-1     A Hamelin
-2      Z Purton
-3     K C Leung
-4     B Avdulla
-5    E C W Wong
-6    M Chadwick
-7     Y L Chung
-8     M L Yeung
-Name: Jockey, dtype: object",0.01884143676918483
-5,DIAMOND SOARS,"0      H Bowman
-1     A Hamelin
-2      Z Purton
-3     K C Leung
-4     B Avdulla
-5    E C W Wong
-6    M Chadwick
-7     Y L Chung
-8     M L Yeung
-Name: Jockey, dtype: object",0.11315284322797674
-6,SUPER JOY,"0      H Bowman
-1     A Hamelin
-2      Z Purton
-3     K C Leung
-4     B Avdulla
-5    E C W Wong
-6    M Chadwick
-7     Y L Chung
-8     M L Yeung
-Name: Jockey, dtype: object",0.1943493846896205
-7,VULCANUS,"0      H Bowman
-1     A Hamelin
-2      Z Purton
-3     K C Leung
-4     B Avdulla
-5    E C W Wong
-6    M Chadwick
-7     Y L Chung
-8     M L Yeung
-Name: Jockey, dtype: object",0.02184111164231639
-8,REGENCY HAPPY STAR,"0      H Bowman
-1     A Hamelin
-2      Z Purton
-3     K C Leung
-4     B Avdulla
-5    E C W Wong
-6    M Chadwick
-7     Y L Chung
-8     M L Yeung
-Name: Jockey, dtype: object",0.0807215447355855
+0,JOYFUL PROSPERITY,H Bowman,0.33222572572462306
+1,FURY AND GOLD,A Atzeni,0.019368571027765482
+2,CHATEAU LE PECHE,C L Chau,0.07728017397435502
+3,FRUITY WARRIOR,B Avdulla,0.07116139071728848
+4,SUNNY BABY,B Thompson,0.04379881229973945
+5,GOLDEN FAIRY,A Badel,0.048648283845860764
+6,COLOURFUL BARON,L Hewitson,0.13114708750903978
+7,KINGLY DEMEANOR,Y L Chung,0.02997162469315593
+8,SPLENDID STAR,M L Yeung,0.05222774512545298
+9,JOYFUL CHAMPION,K Teetan,0.1504466152818546
+10,LEATHER MASTER,A Hamelin,0.043723969800864425

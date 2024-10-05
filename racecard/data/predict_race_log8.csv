@@ -1,111 +1,14 @@
 ,HorseName,Jockey,Score
-0,AWESOME TREASURE,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.08365974809142858
-1,HAROLD WIN,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.26070214825510774
-2,LUCKY TOUCH,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.07061442306346188
-3,EVERYONE'S CLASSIC,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.20208615031257957
-4,BLAZING WIND,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.07176351034823863
-5,KING OBERON,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.12731026881759702
-6,UNIVERSAL BLAZE,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.02899330194848481
-7,GLORIOUS EXPERT,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.11546593681857294
-8,STRATHBARRY,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.018736932006495538
-9,WIN SPEED,"0     M L Yeung
-1      A Atzeni
-2     B Avdulla
-3      Z Purton
-4      H Bowman
-5    L Hewitson
-6       A Badel
-7      P N Wong
-8    B Thompson
-9     K C Leung
-Name: Jockey, dtype: object",0.020667580338033353
+0,RUN RUN TIMING,H Bentley,0.166997826651854
+1,SUGAR BALL,Z Purton,0.20088011502088177
+2,EXUBERANT,C L Chau,0.09306646413649115
+3,MAJESTIC COLOUR,L Hewitson,0.05606577973495195
+4,SKY TRUST,H Bowman,0.274003430490673
+5,ONLY U,K C Leung,0.023840597341085484
+6,SUPER BEN,B Avdulla,0.026214660090427538
+7,SUNDAY'S SERENADE,K Teetan,0.04884170743152183
+8,MILES AWAY,M Chadwick,0.01981384901200831
+9,TRIPLE BLISS,C Y Ho,0.039972218090615366
+10,LUCKY FIONN,A Atzeni,0.020976431338740505
+11,OMAKASE,Y L Chung,0.015937209924349615
+12,WINNING TURN,P N Wong,0.013389710736399723

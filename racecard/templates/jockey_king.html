@@ -49,6 +49,17 @@
         <div class="w3-card w3-round w3-margin-bottom w3-light-grey">
           <div class="w3-container w3-blue">
             <h5>{{ username }}</h5>
+           <span class="w3-tag w3-red w3-round w3-border w3-border-white"> {% trans 'Reputation' %}</span>
+            {% for score in user_scores %}
+              {% if score.user|stringformat:"s" == username|stringformat:"s" %}
+                    {% if score.stars2 > 0 %}
+                    &nbsp<i class="fa-solid fa-medal fa-lg" style="color: #FBB337;"></i> x {{score.stars2}} 
+                    {% endif %} &nbsp;
+                      {% if score.stars1 > 0 %}
+                      <i class="fa-solid fa-star fa-sm" style="color: #FBB337;"></i> x {{score.stars1}} 
+                      {% endif %} 
+                    {% endif %}
+            {% endfor %}</h6>
           </div>
           <div class="w3-container w3-padding">
             {% with jockey.jockey|lower|cut:" " as jockey_id %}

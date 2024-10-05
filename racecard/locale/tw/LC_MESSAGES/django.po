@@ -219,6 +219,9 @@ msgstr "預測龍虎榜"
 msgid "Help"
 msgstr "幫助"
 
+msgid "Reputation"
+msgstr "聲譽"
+
 #: Horse Name
 
 #2024-10-06

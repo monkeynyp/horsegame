@@ -245,10 +245,15 @@ def jockey_king(request):
     jockey_scores = recent_tips.values('user__username', 'jockey') \
         .annotate(total_jockey_score=Sum('jockey_score')) \
         .order_by('user__username', '-total_jockey_score')  # Order by user first, then score descending
-    
+        # Get the user scores and calculate the percentage of hits
+    user_scores = UserScores.objects.annotate(
+        percentage= F('total_hits') * 100.0 / F('total_records'),
+        confidence = F('hit_weight')* 100.0,
+            profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
+            ).order_by('-percentage')
     # Step 4: Find the top jockey per user
     top_jockeys_per_user = {}
-    
+    print("original:",jockey_scores)
     for jockey_score in jockey_scores:
         username = jockey_score['user__username']
         if username not in top_jockeys_per_user:
@@ -259,6 +264,8 @@ def jockey_king(request):
     context = {
         'race_date':recent_race_date,
         'top_jockeys': top_jockeys_per_user,
+        'user_scores': user_scores
+
     }
     return render(request, 'jockey_king.html', context)
     
