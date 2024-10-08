@@ -1,14 +1,13 @@
 ,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/10/06,1,METRO WARRIOR,E C W Wong,135,1203,7,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-1,2024/10/06,2,"ACE VICTORY
-(Scratched)",-,-,-,-,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-2,2024/10/06,3,BRILLIANT FIRE,M Chadwick,129,1167,8,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-3,2024/10/06,4,KA YING POWER,C L Chau,129,1099,2,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-4,2024/10/06,5,MASTER TRILLION,K C Leung,129,1055,6,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-5,2024/10/06,6,DASH AVENUE,L Hewitson,127,1157,1,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-6,2024/10/06,7,ALMIGHTY KICK,C Y Ho,125,1094,5,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-7,2024/10/06,8,INVINCIBLE DELIGHT,A Badel,125,1004,11,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-8,2024/10/06,9,VICTORYTHIRTYTHREE,M F Poon,124,1142,9,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-9,2024/10/06,10,HAPPY HORSE,Y L Chung,121,1103,4,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-10,2024/10/06,11,SPICY SPANGLE,P N Wong,119,1054,3,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
-11,2024/10/06,12,GUSTY FIGHTER,K Teetan,118,1066,10,10,Class 4,1000,Sha Tin:,"TURF - ""A"" Course",Good
+0,2024/10/09,1,KING ECCELLENTE,H Bowman,135,1126,4,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+1,2024/10/09,2,LYRICAL MOTION,E C W Wong,132,1069,7,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+2,2024/10/09,3,AURORA LADY,Z Purton,128,1168,8,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+3,2024/10/09,4,GOLDEN RISE,B Avdulla,128,1018,10,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+4,2024/10/09,5,UNISON,A Atzeni,127,1147,2,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+5,2024/10/09,6,YEE CHEONG SPIRIT,C Y Ho,126,1233,12,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+6,2024/10/09,7,SWEET DIAMOND,L Hewitson,124,1157,6,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+7,2024/10/09,8,WORLD HERO,K Teetan,124,1107,3,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+8,2024/10/09,9,FORTUNE RACER,Y L Chung,123,1003,5,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+9,2024/10/09,10,SO TREASURE,L Ferraris,121,1170,9,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+10,2024/10/09,11,NEVER PETER OUT,M L Yeung,119,1121,1,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
+11,2024/10/09,12,WOOD ON FIRE,H T Mo,119,1124,11,8,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good
