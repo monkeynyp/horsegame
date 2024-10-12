@@ -223,6 +223,27 @@ msgid "Reputation"
 msgstr "聲譽"
 
 #: Horse Name
+#2024-10-13
+msgid "BABY SATELLITE"
+msgstr "雄彬飛翔"
+msgid "CIRCUIT JOLLY"
+msgstr "綫路盈樂"
+msgid "JUNEAU PRIDE"
+msgstr "至尊高超"
+msgid "KA YING ATTACK"
+msgstr "嘉應奇兵"
+msgid "TOP TIME"
+msgstr "醒目先駒"
+msgid "CANDLELIGHT DINNER"
+msgstr "燭光晚餐"
+msgid "CLASSIC CENTURY"
+msgstr "經典時代"
+msgid "REWARDING TWINKLE"
+msgstr "駿馬之星"
+msgid "SWONDERSTAR"
+msgstr "手到齊來"
+
+
 
 #2024-10-06
 msgid "BRILLIANT FIRE"
