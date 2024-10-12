@@ -240,8 +240,10 @@ msgid "CLASSIC CENTURY"
 msgstr "經典時代"
 msgid "REWARDING TWINKLE"
 msgstr "駿馬之星"
-msgid "SWONDERSTAR"
+msgid "WONDERSTAR"
 msgstr "手到齊來"
+msgid "DRALA"
+msgstr "吉祥寶"
 
 
 
