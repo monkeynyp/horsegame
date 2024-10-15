@@ -1,15 +1,15 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/10/13,1,SON PAK FU,C L Chau,135,1193,14,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-1,2024/10/13,2,BUNDLE OF CHARM,A Badel,132,1183,3,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-2,2024/10/13,3,ATULLIBIGEAL,H Bowman,131,1068,2,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-3,2024/10/13,4,SUPERB CAPITALIST,Y L Chung,131,1143,6,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-4,2024/10/13,5,LUCKY ENCOUNTER,A Atzeni,125,1112,13,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-5,2024/10/13,6,WUNDERBAR,Z Purton,124,1218,1,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-6,2024/10/13,7,CALL ME GLORIOUS,L Hewitson,123,1246,9,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-7,2024/10/13,8,GORGEOUS WIN,M F Poon,123,1163,10,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-8,2024/10/13,9,WONDER KIT,M L Yeung,123,1102,12,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-9,2024/10/13,10,SEASONS WIT,C Y Ho,121,1110,5,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-10,2024/10/13,11,SING DRAGON,L Ferraris,119,1176,8,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-11,2024/10/13,12,BOTTOMUPTOGETHER,M Chadwick,118,1039,11,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-12,2024/10/13,13,WONDERSTAR,K Teetan,118,1200,4,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-13,2024/10/13,14,VICTORY MOMENTS,H Bentley,117,1141,7,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going
+0,2024/10/13,1,SON PAK FU,C L Chau,135,1193,14,A S Cruz,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+1,2024/10/13,2,BUNDLE OF CHARM,A Badel,132,1183,3,J Size,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+2,2024/10/13,3,ATULLIBIGEAL,H Bowman,131,1068,2,D J Hall,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+3,2024/10/13,4,SUPERB CAPITALIST,Y L Chung,131,1143,6,A S Cruz,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+4,2024/10/13,5,LUCKY ENCOUNTER,A Atzeni,125,1112,13,D A Hayes,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+5,2024/10/13,6,WUNDERBAR,Z Purton,124,1218,1,J Size,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+6,2024/10/13,7,CALL ME GLORIOUS,L Hewitson,123,1246,9,K W Lui,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+7,2024/10/13,8,GORGEOUS WIN,M F Poon,123,1163,10,C S Shum,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+8,2024/10/13,9,WONDER KIT,M L Yeung,123,1102,12,K W Lui,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+9,2024/10/13,10,SEASONS WIT,C Y Ho,121,1110,5,J Richards,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+10,2024/10/13,11,SING DRAGON,L Ferraris,119,1176,8,M Newnham,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+11,2024/10/13,12,BOTTOMUPTOGETHER,M Chadwick,118,1039,11,F C Lor,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+12,2024/10/13,13,WONDERSTAR,K Teetan,118,1200,4,P C Ng,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+13,2024/10/13,14,VICTORY MOMENTS,H Bentley,117,1141,7,F C Lor,10,Class 2,1200,Sha Tin:,"TURF - ""A+3"" Course",Good

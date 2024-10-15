@@ -186,6 +186,8 @@ msgstr "賽馬"
 
 msgid "Top Jockey"
 msgstr "騎師王"
+msgid "Top Trainer"
+msgstr "練馬師王"
 
 msgid "Score"
 msgstr "得分"
@@ -223,6 +225,19 @@ msgid "Reputation"
 msgstr "聲譽"
 
 #: Horse Name
+#2024-10-16
+msgid "BRAVE OF FRIENDS"
+msgstr "友盈勇者"
+msgid "THE DOUBLE EAGLE"
+msgstr "火金鷹"
+msgid "LUCKY MAN"
+msgstr "文明福星"
+msgid "POSITIVE SMILE"
+msgstr "心雄雄"
+msgid "TALE OF PERTH"
+msgstr "開心之旅"
+
+
 #2024-10-13
 msgid "BABY SATELLITE"
 msgstr "雄彬飛翔"
@@ -4070,6 +4085,76 @@ msgid "B Thompson"
 msgstr "湯普新"
 
 
+#####Trainer Section
+msgid "P C Ng"
+msgstr "伍鵬志"
+
+msgid "J Size"
+msgstr "蔡約翰"
+
+msgid "A S Cruz"
+msgstr "告東尼"
+
+msgid "D A Hayes"
+msgstr "大衛希斯"
+
+msgid "F C Lor"
+msgstr "羅富全"
+
+msgid "D J Hall"
+msgstr "賀賢"
+
+
+msgid "K W Lui"
+msgstr "呂健威"
+
+msgid "P F Yiu"
+msgstr "姚本輝"
+
+msgid "W Y So"
+msgstr "蘇偉賢"
+
+msgid "K L Man"
+msgstr "文家良"
+
+msgid "C S Shum"
+msgstr "沈集成"
+
+
+msgid "W K Mo"
+msgstr "巫偉傑"
+
+msgid "C W Chang"
+msgstr "鄭俊偉"
+
+msgid "D J Whyte"
+msgstr "韋達"
+
+msgid "K H Ting"
+msgstr "丁冠豪"
+
+msgid "D Eustace"
+msgstr "游達榮"
+
+msgid "T P Yung"
+msgstr "容天鵬"
+
+
+msgid "J Richards"
+msgstr "黎昭昇"
+
+
+msgid "Y S Tsui"
+msgstr "徐雨石"
+
+msgid "M Newnham"
+msgstr "廖康銘"
+
+msgid "C Fownes"
+msgstr "方嘉柏"
+
+msgid "C H Yip"
+msgstr "葉楚航"
 
 
 #Football

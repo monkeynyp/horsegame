@@ -1,15 +1,13 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/10/13,1,STELLAR SWIFT,H Bowman,135,1177,5,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-1,2024/10/13,2,SUNNY DA BEST,A Atzeni,134,1155,9,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-2,2024/10/13,3,I AM THE BOSS,M L Yeung,133,1132,2,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-3,2024/10/13,4,LIGHTNING BOLT,M F Poon,131,1157,10,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-4,2024/10/13,5,CELTIC TIMES,K Teetan,129,1235,6,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-5,2024/10/13,6,RED ACLAIM,B Avdulla,129,1070,3,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-6,2024/10/13,7,JUBILANT WINNER,Z Purton,127,1132,4,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-7,2024/10/13,8,DOUBLE WIN,L Hewitson,126,1113,1,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-8,2024/10/13,9,HAPPY DAILY,C Y Ho,126,1087,8,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-9,2024/10/13,10,DRAGON FOUR SEAS,K C Leung,124,1177,13,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-10,2024/10/13,11,TEAM HAPPY,Y L Chung,124,1223,7,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-11,2024/10/13,12,STRATHPEFFER,M Chadwick,121,1003,12,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-12,2024/10/13,13,EVER SMART,H Bentley,119,1134,14,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-13,2024/10/13,14,MR GOOD VIBES,A Badel,118,1082,11,10,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going
+0,2024/10/16,1,NORDIC DRAGON,H Bowman,135,1141,12,C S Shum,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/10/16,2,SUGAR SUGAR,E C W Wong,130,1097,11,C Fownes,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/10/16,3,POWER KOEPP,M Chadwick,128,1118,10,K L Man,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/10/16,4,EASON,M F Poon,126,1147,8,P F Yiu,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/10/16,5,KYRUS DRAGON,Z Purton,125,1052,2,D J Hall,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/10/16,6,GUSTOSISIMO,Y L Chung,124,1190,7,A S Cruz,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/10/16,7,SWEET BRIAR,L Hewitson,123,1088,1,K W Lui,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/10/16,8,YOUNG ARROW,K Teetan,123,1104,6,D J Whyte,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/10/16,9,ARMOUR EAGLE,A Atzeni,121,1121,9,J Richards,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/10/16,10,TALE OF PERTH,B Thompson,120,1144,4,M Newnham,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/10/16,11,OUR LUCKY GLORY,A Badel,119,1026,3,W Y So,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/10/16,12,VIVA CHALEUR,K De Melo,119,1093,5,P C Ng,8,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good

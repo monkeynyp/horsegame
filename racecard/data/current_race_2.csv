@@ -1,9 +1,13 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/10/13,1,CANDLELIGHT DINNER,K Teetan,128,1155,6,10,Class 3,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-1,2024/10/13,2,CAPTAIN WIN,C Y Ho,125,1263,4,10,Class 3,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-2,2024/10/13,3,ENTERPRISE ATTACK,A Hamelin,125,1081,7,10,Class 3,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-3,2024/10/13,4,POLARIS,P N Wong,124,1181,3,10,Class 3,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-4,2024/10/13,5,SAVVY BRILLIANT,Z Purton,122,1104,2,10,Class 3,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-5,2024/10/13,6,SUPER FORTUNE,M F Poon,121,1193,8,10,Class 3,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-6,2024/10/13,7,GALVANIC,M L Yeung,120,1098,1,10,Class 3,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-7,2024/10/13,8,SUPER INFINITY,L Hewitson,120,1134,5,10,Class 3,1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going
+0,2024/10/16,1,MA COMET,Z Purton,135,1112,10,J Richards,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/10/16,2,E UNIVERSE,L Hewitson,134,1016,4,W K Mo,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/10/16,3,BULB EMPEROR,A Atzeni,129,1176,12,P C Ng,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/10/16,4,BRAVE OF FRIENDS,H Bentley,128,1041,9,D J Whyte,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/10/16,5,SILVER SPURS,A Badel,124,1087,1,C Fownes,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/10/16,6,HAPPY TANGO,K Teetan,121,1220,11,Y S Tsui,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/10/16,7,ROARING BEBE,B Avdulla,121,1121,3,D J Hall,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/10/16,8,UNIVERSAL BLAZE,B Thompson,121,1081,5,J Size,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/10/16,9,VICTORYTHIRTYTHREE,L Ferraris,121,1142,7,P F Yiu,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/10/16,10,MIU FA FA,M Chadwick,120,1095,6,F C Lor,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/10/16,11,HAPPY HORSE,Y L Chung,118,1107,8,K L Man,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/10/16,12,MODEST GENTLEMAN,M F Poon,117,1045,2,C H Yip,8,Class 4,1000,Happy Valley:,"TURF - ""B"" Course",Good

@@ -1,14 +1,13 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/10/13,1,PATCH OF COSMO,L Ferraris,132,1240,8,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-1,2024/10/13,2,SANTORINI,H Bowman,131,1068,1,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-2,2024/10/13,3,RUN YES RUN,M Chadwick,127,1071,4,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-3,2024/10/13,4,BABY SATELLITE,A Hamelin,126,1098,6,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-4,2024/10/13,5,CIRCUIT JOLLY,Z Purton,126,1138,5,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-5,2024/10/13,6,ETALON OR,A Badel,126,1130,13,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-6,2024/10/13,7,JUNEAU PRIDE,B Avdulla,126,994,12,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-7,2024/10/13,8,KA YING ATTACK,M F Poon,126,1086,2,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-8,2024/10/13,9,NORTHERN FIRE BALL,Y L Chung,126,1122,10,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-9,2024/10/13,10,TOP TIME,K De Melo,126,1032,9,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-10,2024/10/13,11,CASHISCASH,K Teetan,122,1041,11,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-11,2024/10/13,12,SMILING EMPEROR,H Bentley,122,1181,7,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
-12,2024/10/13,13,CONCORDE STAR,K C Leung,120,1051,3,10,Class 4 (Restricted),1200,Sha Tin:,"TURF - ""A+3"" Course",Good
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going
+0,2024/10/16,1,HERO STAR,H Bowman,135,1142,5,K L Man,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/10/16,2,THE CONCENTRATION,L Ferraris,135,1061,6,P F Yiu,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/10/16,3,FALCON COURT,A Atzeni,133,1093,1,D A Hayes,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/10/16,4,GORGEOUS VITALITY,L Hewitson,132,1104,9,F C Lor,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/10/16,5,SPEEDY CHARIOT,Z Purton,132,1118,12,D J Whyte,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/10/16,6,SUPER EAGLE,K Teetan,132,1100,11,W Y So,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/10/16,7,VERBIER,B Avdulla,132,1246,3,C Fownes,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/10/16,8,WOODFIRE CHAMP,C Y Ho,128,1030,7,C W Chang,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/10/16,9,E GLORY,M Chadwick,127,1159,2,W K Mo,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/10/16,10,ALLOY KING,H Bentley,125,1116,8,K H Ting,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/10/16,11,PODIUM,M F Poon,123,1045,4,D Eustace,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/10/16,12,WIND SPEEDER,A Badel,121,1065,10,Y S Tsui,8,Class 5,1200,Happy Valley:,"TURF - ""B"" Course",Good

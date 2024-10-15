@@ -20,14 +20,14 @@ class Command(BaseCommand):
         # Access command line arguments
         num_races = options['num_races']
         race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
-        jockey_scores = {}
-        score_map = [12, 6, 4]
         
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
         #alg_methods = ['LogRegress','NaiveBayes','RanForest','NeuroNet','ForestReg','NeuroReg']
         alg_methods = ['LogRegress','RanForest','NeuroReg']
         #alg_methods = ['LogRegress','RanForest']
         #alg_methods = ['NeuroReg']
+        jockey_score = 0
+        trainer_score = 0
         class_flag=0
         for alg in alg_methods:
             user_id = User.objects.get(username=alg)
@@ -70,10 +70,13 @@ class Command(BaseCommand):
                 for i,row in result_df.iterrows():
                     if i == 0:
                         jockey_score = 12
+                        trainer_score = 12
                     elif i == 1:
                         jockey_score = 6
+                        trainer_score = 6
                     elif i == 2:
                         jockey_score = 4
+                        trainer_score = 4
                     # Your logic to update the database with race_date and race_no
                     UserTips.objects.update_or_create(
                         user = user_id,
@@ -82,30 +85,14 @@ class Command(BaseCommand):
                         horse_no = row[ 'Unnamed: 0']+1,
                         rank = i+1,
                         jockey_score = jockey_score,
+                        trainer_score = trainer_score,
                         horse_name = row['HorseName'],
                         jockey = row['Jockey'],
+                        trainer = row['Trainer'],
                         hit = 0,
                         ratio=round(row['Score'] * 100 / 10) * 10  # Multiply by 100, then round up to the nearest 10
                         )
-                    if alg == "NeuroReg":
-                        jockey = row['Jockey']
-                        score = score_map[i]
-                        if jockey in jockey_scores:
-                            jockey_scores[jockey] += score
-                        else:
-                            jockey_scores[jockey] = score
 
-
-                        
-            print("JockeyScore: ",jockey_scores)
-            for jockey_name, score in jockey_scores.items():
-            # Create a new record for each jockey in the UserTipsJC model
-                UserTips_jc.objects.update_or_create(
-                    user=user_id,  # Link to the current logged-in user
-                    race_date=race_date,
-                    jockey=jockey_name,
-                    score=score,
-        )
 
         self.stdout.write(self.style.SUCCESS('Data updated successfully.'))
 

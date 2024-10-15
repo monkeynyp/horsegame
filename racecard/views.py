@@ -175,15 +175,19 @@ def submit_tips(request):
             horse_no=split_values[0]
             horse_name=split_values[1].split("|")[0]
             jockey = split_values[2]
+            trainer = split_values[3]
             rank=rank+1
             if rank == 1:
                 jockey_score = 12
+                trainer_score = 12
             elif rank == 2:
                 jockey_score = 6
+                trainer_score = 6
             elif rank == 3:
                 jockey_score = 4
+                trainer_score = 4
             
-            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no,rank=rank,jockey_score=jockey_score, horse_no=horse_no,horse_name=horse_name, jockey=jockey, hit=0)
+            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no,rank=rank,jockey_score=jockey_score,trainer_score=trainer_score, horse_no=horse_no,horse_name=horse_name, jockey=jockey, trainer=trainer,hit=0)
         # Redirect to a success page or wherever needed
         
     return redirect('../racecard/?id='+race_no)
@@ -268,6 +272,46 @@ def jockey_king(request):
 
     }
     return render(request, 'jockey_king.html', context)
+
+def trainer_king(request):
+    #if request.session.get('button_clicked')!=True:
+        # Change the button's behavior after the first click
+     #   return redirect('click_ads')  # Redirect to external URL
+    
+    #print('test123',request.session.get('button_clicked'))
+    # Step 1: Get the most recent race_date
+    recent_race_date = UserTips.objects.aggregate(Max('race_date'))['race_date__max']
+
+    # Step 2: Filter UserTips by the most recent race_date
+    recent_tips = UserTips.objects.filter(race_date=recent_race_date)
+
+    # Step 3: Group by 'user' and 'trainer', then accumulate (sum) the trainer_scores
+    trainer_scores = recent_tips.values('user__username', 'trainer') \
+        .annotate(total_trainer_score=Sum('trainer_score')) \
+        .order_by('user__username', '-total_trainer_score')  # Order by user first, then score descending
+        # Get the user scores and calculate the percentage of hits
+    user_scores = UserScores.objects.annotate(
+        percentage= F('total_hits') * 100.0 / F('total_records'),
+        confidence = F('hit_weight')* 100.0,
+            profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
+            ).order_by('-percentage')
+    # Step 4: Find the top jockey per user
+    top_trainers_per_user = {}
+    print("original:",trainer_scores)
+    for trainer_score in trainer_scores:
+        username = trainer_score['user__username']
+        if username not in top_trainers_per_user:
+            # Add the first (top) jockey for each user
+            top_trainers_per_user[username] = trainer_score
+
+    # Step 5: Pass the dictionary of top jockeys per user to the template
+    context = {
+        'race_date':recent_race_date,
+        'top_trainers': top_trainers_per_user,
+        'user_scores': user_scores
+
+    }
+    return render(request, 'trainer_king.html', context)
     
 def match_chart(request):
      id = request.GET.get('id')

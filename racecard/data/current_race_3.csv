@@ -1,10 +1,13 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/10/13,1,ENSUED,Z Purton,135,1072,5,10,Class 3,2000,Sha Tin:,"TURF - ""A+3"" Course",Good
-1,2024/10/13,2,AWESOME FLUKE,A Atzeni,130,1182,6,10,Class 3,2000,Sha Tin:,"TURF - ""A+3"" Course",Good
-2,2024/10/13,3,PACKING HURRICANE,E C W Wong,129,1015,4,10,Class 3,2000,Sha Tin:,"TURF - ""A+3"" Course",Good
-3,2024/10/13,4,SUPREME AGILITY,H Bowman,127,996,2,10,Class 3,2000,Sha Tin:,"TURF - ""A+3"" Course",Good
-4,2024/10/13,5,WINNING DRAGON,B Avdulla,127,1044,3,10,Class 3,2000,Sha Tin:,"TURF - ""A+3"" Course",Good
-5,2024/10/13,6,UNIVERSAL HORIZON,C Y Ho,125,1116,7,10,Class 3,2000,Sha Tin:,"TURF - ""A+3"" Course",Good
-6,2024/10/13,7,EIGHTEEN CARAT,A Badel,118,1129,1,10,Class 3,2000,Sha Tin:,"TURF - ""A+3"" Course",Good
-7,2024/10/13,8,BRIGHT INHERITANCE,M Chadwick,116,1098,8,10,Class 3,2000,Sha Tin:,"TURF - ""A+3"" Course",Good
-8,2024/10/13,9,BEAUTY LIVE,Y L Chung,115,1102,9,10,Class 3,2000,Sha Tin:,"TURF - ""A+3"" Course",Good
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going
+0,2024/10/16,1,WAH MAY WAI WAI,Y L Chung,133,1053,11,A S Cruz,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/10/16,2,HIGHLAND RAHY,L Hewitson,131,1181,7,K W Lui,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/10/16,3,APOLAR FIGHTER,C Y Ho,129,1058,6,D Eustace,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/10/16,4,SURE JOYFUL,M Chadwick,129,1083,1,P F Yiu,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/10/16,5,THE DOUBLE EAGLE,K De Melo,129,1046,12,K H Ting,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/10/16,6,CAN'T GO WONG,M F Poon,127,1139,5,F C Lor,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/10/16,7,SOLAR GOGO,A Hamelin,127,1184,10,T P Yung,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/10/16,8,FOREMOST TEDDY,Z Purton,124,1192,8,C S Shum,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/10/16,9,COURIER MAGIC,A Atzeni,123,1064,9,J Richards,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/10/16,10,SUPER BABY,L Ferraris,123,1166,2,M Newnham,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/10/16,11,PRINCE ALEX,H Bentley,122,1090,4,D J Whyte,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/10/16,12,SMART ZIPANG,A Badel,120,1047,3,W Y So,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good

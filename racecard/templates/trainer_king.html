@@ -1,0 +1,110 @@
+{% extends "master.html" %} {% block title %} 騎師王預測 {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
+<style>
+.w3-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8); /* Background with opacity */
+}
+
+.w3-modal-content {
+    position: relative;
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+    width: 100%; /* Full width */
+    height:100%; /* Full height */
+}
+</style>
+<script>
+    // Automatically show the modal if 'button_clicked' is not True
+    window.onload = function() {
+        // Check if the button has been clicked
+        var buttonClicked = "{{ request.session.button_clicked|default:False }}";
+        var isButtonClicked = (buttonClicked === 'True');
+        // If button_clicked is not set (False), show the modal
+        if (!isButtonClicked) {
+            document.getElementById('adsModal').style.display = 'block';
+        }
+    };
+</script>
+<div class="w3-container w3-margin-top">
+    <h2 class="w3-center w3-text-teal">練馬師王預測</h2>
+  
+    <div class="w3-container"></div>
+    <h2 class="w3-center"> 各會員的選擇 &nbsp; ({{ race_date }})</h2>
+  
+    <!-- Create a grid for the cards -->
+    <div class="w3-row-padding">
+  
+      <!-- Loop through top jockeys -->
+      {% for username, trainer in top_trainers.items %}
+      <div class="w3-col l4 m4 s6"> <!-- Two-column layout for large and medium screens, single column for small screens -->
+        <div class="w3-card w3-round w3-margin-bottom w3-light-grey">
+          <div class="w3-container w3-blue">
+            <h5>{{ username }}</h5>
+           <span class="w3-tag w3-red w3-round w3-border w3-border-white"> {% trans 'Reputation' %}</span>
+            {% for score in user_scores %}
+              {% if score.user|stringformat:"s" == username|stringformat:"s" %}
+                    {% if score.stars2 > 0 %}
+                    &nbsp<i class="fa-solid fa-medal fa-lg" style="color: #FBB337;"></i> x {{score.stars2}} 
+                    {% endif %} &nbsp;
+                      {% if score.stars1 > 0 %}
+                      <i class="fa-solid fa-star fa-sm" style="color: #FBB337;"></i> x {{score.stars1}} 
+                      {% endif %} 
+                    {% endif %}
+            {% endfor %}</h6>
+          </div>
+          <div class="w3-container w3-padding">
+            {% with trainer.trainer|lower|cut:" " as trainer_id %}
+            <p><strong>{% trans 'Top Trainer' %}:</strong> {% trans trainer.trainer %} &nbsp;  </p> 
+            <p><img src="{% static 'trainer' %}{{trainer_id}}.jpg" alt="{{ trainer.trainer }}" class="w3-circle" style="width:60px;height:60px;"></p>
+           
+            <p><strong>{% trans 'Score' %}:</strong> {{ trainer.total_trainer_score }}</p>
+            {% endwith %}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+  
+    </div>
+    <!-- Modal Trigger Button (manual display, if needed) -->
+<!--<button onclick="document.getElementById('adsModal').style.display='block'" class="w3-button w3-red">
+    Click Ad
+</button> -->
+
+<!-- Modal structure -->
+<div id="adsModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-opacity">
+        <header class="w3-container w3-teal">
+           <!-- <span onclick="document.getElementById('adsModal').style.display='none'"
+                  class="w3-button w3-display-topright">&times;</span>-->
+            <h2>點擊解鎖練馬師王功能</h2>
+        </header>
+       
+        <!-- Include click_ads.html content inside the modal -->
+        <div class="w3-container">
+          <div class="w3-center">
+          <img src="/static/index-jk-c.png" width="300"></div>
+            {% include 'click_ads.html' %}
+        </div>
+
+        <footer class="w3-container w3-teal">
+            <p>再次點擊進入功能</p>
+        </footer>
+    </div>
+</div>
+
+
+  </div>
+  
+
+
+
+{% endblock %}

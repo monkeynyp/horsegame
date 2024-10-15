@@ -1,12 +1,13 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Total,Class,Distance,Venue,Course,Going
-0,2024/10/13,1,VOYAGE BUBBLE,A Atzeni,135,1237,8,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
-1,2024/10/13,2,BEAUTY ETERNAL,Z Purton,131,1211,6,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
-2,2024/10/13,3,BEAUTY JOY,M Chadwick,129,1022,1,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
-3,2024/10/13,4,GALAXY PATCH,C Y Ho,129,1155,2,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
-4,2024/10/13,5,RED LION,H Bowman,126,1126,7,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
-5,2024/10/13,6,STRAIGHT ARRON,B Avdulla,125,1104,3,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
-6,2024/10/13,7,"HAPPY TOGETHER
-(Scratched)",-,-,-,-,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
-7,2024/10/13,8,CHANCHENG GLORY,L Hewitson,115,1160,9,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
-8,2024/10/13,9,LA CITY BLANCHE,Y L Chung,115,1003,4,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
-9,2024/10/13,10,THE GOLDEN SCENERY,K Teetan,115,1067,5,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good
+,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going
+0,2024/10/16,1,CALIFORNIA VOCE,B Avdulla,135,1087,10,A S Cruz,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+1,2024/10/16,2,SIMPLY MAVERICK,A Atzeni,135,1216,2,P F Yiu,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+2,2024/10/16,3,FRANTANCK,M F Poon,132,1147,4,P C Ng,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+3,2024/10/16,4,CHAIN OF GOLD,K Teetan,126,1030,8,W K Mo,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+4,2024/10/16,5,IVY LEAGUE,K De Melo,124,1209,7,D J Whyte,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+5,2024/10/16,6,AESTHETICISM,Z Purton,122,1039,9,P C Ng,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+6,2024/10/16,7,THE HEIR,L Ferraris,122,1153,11,C Fownes,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+7,2024/10/16,8,GLORIOUS JOURNEY,M Chadwick,120,1045,6,F C Lor,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+8,2024/10/16,9,SOLEIL FIGHTER,L Hewitson,120,1104,3,D A Hayes,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+9,2024/10/16,10,JUMBO LEGEND,C Y Ho,118,1096,12,C Fownes,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+10,2024/10/16,11,MIGHTY STEED,B Thompson,118,1013,1,K W Lui,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
+11,2024/10/16,12,RED MAJESTY,A Hamelin,118,1228,5,D A Hayes,8,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good
