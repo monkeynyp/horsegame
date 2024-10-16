@@ -175,7 +175,7 @@ def submit_tips(request):
             horse_no=split_values[0]
             horse_name=split_values[1].split("|")[0]
             jockey = split_values[2]
-            trainer = split_values[3]
+       
             rank=rank+1
             if rank == 1:
                 jockey_score = 12
@@ -187,7 +187,7 @@ def submit_tips(request):
                 jockey_score = 4
                 trainer_score = 4
             
-            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no,rank=rank,jockey_score=jockey_score,trainer_score=trainer_score, horse_no=horse_no,horse_name=horse_name, jockey=jockey, trainer=trainer,hit=0)
+            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no,rank=rank,jockey_score=jockey_score, horse_no=horse_no,horse_name=horse_name, jockey=jockey,hit=0)
         # Redirect to a success page or wherever needed
         
     return redirect('../racecard/?id='+race_no)

@@ -307,7 +307,7 @@
                     {% for i, r in current_race.iterrows %}
                         <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %} narrow-row" >
                             <label class="w3-container narrow-row">
-                                <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}|{{ forloop.counter }}.{{ r.Trainer }}" data-translated="{{ forloop.counter }}.{% trans r.HorseName %}"
+                                <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}" data-translated="{{ forloop.counter }}.{% trans r.HorseName %}"
                                        {% if r.HorseName in selected_horses %} checked {% endif %}
                                        onclick="updateSelection(this)" >
                                 {{ forloop.counter }}. {% trans r.HorseName %}
