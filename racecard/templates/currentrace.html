@@ -63,7 +63,7 @@
 <div class="w3-container w3-padding-32"></div>
 <div class="w3-margin ">
   
-    <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1}} </h2>
+    <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1}} &nbsp; {{race_time}}</h2>
         <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
         <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
         <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=3">3</a>
@@ -137,9 +137,9 @@
    
   <div class="w3-center w3-xlarge">
   {% if user.is_authenticated %}
-    <button id='myButton' onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"> <i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Tips" %}</span>
+    <button id='myButton' onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"> <i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Tips" %} ({{ race_time }})</span>
   {% else %}
-    <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Tips" %} </span>
+    <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Tips" %} ({{ race_time }})</span>
   {% endif %}
   </div>
 
@@ -319,7 +319,7 @@
                     {% for i, r in current_race.iterrows %}
                         <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %} narrow-row" >
                             <label class="w3-container narrow-row">
-                                <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}|{{ forloop.counter }}.{{ r.Trainer }}|{{ forloop.counter }}.{{ r.HorseName_cn }}" data-translated="{{ forloop.counter }}.{% trans r.HorseName %}"
+                                <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}|{{ forloop.counter }}.{{ r.Trainer }}|{{ forloop.counter }}.{{ r.HorseName_cn }}" data-translated="{{ forloop.counter }}.{{ r.HorseName_cn }}"
                                        {% if r.HorseName in selected_horses %} checked {% endif %}
                                        onclick="updateSelection(this)" >
                                 {{ forloop.counter }}.           
@@ -384,7 +384,11 @@
       // Get the current date and time
       var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
       // Define the start and end date and time for the period
-      var startDate = new Date("2024-10-20T12:45:00");
+      var raceDate = "{{ current_race.iloc.2.1 }}";  // date from Django context
+      raceDate = raceDate.replace(/\//g, '-');
+      var raceTime = "{{ race_time }}"+":00";  // time from Django context
+      var startDate = new Date(raceDate + "T" + raceTime);
+      alert(startDate)
       var endDate = new Date("2025-12-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period
@@ -422,10 +426,7 @@
         }
     </script>
 
-<script type="text/javascript">
-  var utag_data = {
-  }
-  </script>
+
   
 
   
