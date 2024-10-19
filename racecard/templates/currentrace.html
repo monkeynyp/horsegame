@@ -388,8 +388,8 @@
       raceDate = raceDate.replace(/\//g, '-');
       var raceTime = "{{ race_time }}"+":00";  // time from Django context
       var startDate = new Date(raceDate + "T" + raceTime);
-      alert(startDate)
-      var endDate = new Date("2025-12-25T23:59:59");
+     // alert(startDate)
+      var endDate = new Date("2026-12-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period
       if (currentDatetime >= startDate && currentDatetime < endDate) {
