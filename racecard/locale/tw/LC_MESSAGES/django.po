@@ -161,6 +161,9 @@ msgstr "賽馬"
 msgid "Jockey Challenge"
 msgstr "騎師王"
 
+msgid "Trainer Challenge"
+msgstr "練馬師王"
+
 msgid "MarkSix"
 msgstr "六合彩"
 
