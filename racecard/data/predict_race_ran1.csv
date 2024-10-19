@@ -1,13 +1,14 @@
-,HorseName,Jockey,Trainer,Score
-0,HERO STAR,H Bowman,K L Man,0.35625
-1,THE CONCENTRATION,L Ferraris,P F Yiu,0.1375
-2,FALCON COURT,A Atzeni,D A Hayes,0.46875
-3,GORGEOUS VITALITY,L Hewitson,F C Lor,0.2
-4,SPEEDY CHARIOT,Z Purton,D J Whyte,0.2625
-5,SUPER EAGLE,K Teetan,W Y So,0.14375
-6,VERBIER,B Avdulla,C Fownes,0.225
-7,WOODFIRE CHAMP,C Y Ho,C W Chang,0.26875
-8,E GLORY,M Chadwick,W K Mo,0.4375
-9,ALLOY KING,H Bentley,K H Ting,0.11875
-10,PODIUM,M F Poon,D Eustace,0.09375
-11,WIND SPEEDER,A Badel,Y S Tsui,0.0875
+,HorseName,HorseName_cn,Jockey,Trainer,Score
+0,NOT A FEW,牽旺寶寶,H Bowman,D Eustace,0.3125
+1,NOBLE WIN,魅力一心,A Atzeni,D Eustace,0.19375
+2,CASA LEGEND,領航傳祺,M F Poon,C W Chang,0.25625
+3,MISTER FOX,九尾狐,A Badel,D J Hall,0.1125
+4,PAKISTAN FRIEND,巴基之友,Z Purton,W Y So,0.51875
+5,MERCHANT PRINCE,勇冠皇子,B Thompson,J Richards,0.0625
+6,HARRY'S HERO,極速之子,M Chadwick,P F Yiu,0.06875
+7,YOUTH POWER,青春力量,M L Yeung,D A Hayes,0.2375
+8,PRECISION GOAL,天時明駒,K Teetan,D A Hayes,0.2625
+9,BEAU GOSSE,俏郎中,C L Chau,K W Lui,0.14375
+10,LADY BILLIE,同得寶,K C Leung,W K Mo,0.1
+11,E TALENT,電子達人,P N Wong,K L Man,0.16875
+12,RED MAVERICK,雄昇勇士,Y L Chung,Y S Tsui,0.1375

@@ -87,6 +87,7 @@ class Command(BaseCommand):
                         jockey_score = jockey_score,
                         trainer_score = trainer_score,
                         horse_name = row['HorseName'],
+                        horse_name_cn = row['HorseName_cn'],
                         jockey = row['Jockey'],
                         trainer = row['Trainer'],
                         hit = 0,

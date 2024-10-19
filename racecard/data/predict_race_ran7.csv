@@ -1,13 +1,14 @@
-,HorseName,Jockey,Trainer,Score
-0,CALIFORNIA VOCE,B Avdulla,A S Cruz,0.24375
-1,SIMPLY MAVERICK,A Atzeni,P F Yiu,0.35625
-2,FRANTANCK,M F Poon,P C Ng,0.23125
-3,CHAIN OF GOLD,K Teetan,W K Mo,0.25625
-4,IVY LEAGUE,K De Melo,D J Whyte,0.125
-5,AESTHETICISM,Z Purton,P C Ng,0.2875
-6,THE HEIR,L Ferraris,C Fownes,0.1375
-7,GLORIOUS JOURNEY,M Chadwick,F C Lor,0.14375
-8,SOLEIL FIGHTER,L Hewitson,D A Hayes,0.23125
-9,JUMBO LEGEND,C Y Ho,C Fownes,0.45
-10,MIGHTY STEED,B Thompson,K W Lui,0.2
-11,RED MAJESTY,A Hamelin,D A Hayes,0.125
+,HorseName,HorseName_cn,Jockey,Trainer,Score
+0,CALIFORNIA SPANGLE,加州星球,B Avdulla,A S Cruz,0.5125
+1,KA YING RISING,嘉應高昇,Z Purton,D A Hayes,0.73125
+2,INVINCIBLE SAGE,賢者無敵,H Bowman,D J Hall,0.5625
+3,TAJ DRAGON,神虎龍駒,C Y Ho,P C Ng,0.24375
+4,ENCOUNTERED,安遇,H Bentley,D J Hall,0.2875
+5,FLYING ACE,威力奔騰,M F Poon,D J Hall,0.13125
+6,HOWDEEPISYOURLOVE,嫡愛心,K Teetan,J Size,0.45
+7,BEAUTY WAVES,美麗第一,M Chadwick,P C Ng,0.3125
+8,LUCKY WITH YOU,幸運有您,A Atzeni,F C Lor,0.13125
+9,MAJESTIC KNIGHT,電氣騎士,M L Yeung,D J Whyte,0.2125
+10,HELIOS EXPRESS,驕陽明駒,A Badel,J Size,0.3875
+11,PACKING TREADMILL,包裝必勝,L Hewitson,K W Lui,0.2875
+12,HARMONY N BLESSED,人和家興,K De Melo,D A Hayes,0.275

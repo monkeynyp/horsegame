@@ -1,13 +1,15 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going
-0,2024/10/16,1,WAH MAY WAI WAI,Y L Chung,133,1053,11,A S Cruz,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-1,2024/10/16,2,HIGHLAND RAHY,L Hewitson,131,1181,7,K W Lui,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-2,2024/10/16,3,APOLAR FIGHTER,C Y Ho,129,1058,6,D Eustace,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-3,2024/10/16,4,SURE JOYFUL,M Chadwick,129,1083,1,P F Yiu,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-4,2024/10/16,5,THE DOUBLE EAGLE,K De Melo,129,1046,12,K H Ting,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-5,2024/10/16,6,CAN'T GO WONG,M F Poon,127,1139,5,F C Lor,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-6,2024/10/16,7,SOLAR GOGO,A Hamelin,127,1184,10,T P Yung,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-7,2024/10/16,8,FOREMOST TEDDY,Z Purton,124,1192,8,C S Shum,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-8,2024/10/16,9,COURIER MAGIC,A Atzeni,123,1064,9,J Richards,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-9,2024/10/16,10,SUPER BABY,L Ferraris,123,1166,2,M Newnham,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-10,2024/10/16,11,PRINCE ALEX,H Bentley,122,1090,4,D J Whyte,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
-11,2024/10/16,12,SMART ZIPANG,A Badel,120,1047,3,W Y So,8,Class 4,1650,Happy Valley:,"TURF - ""B"" Course",Good
+,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
+0,2024/10/20,1,BALLISTIC WIN,極速贏,H Bowman,布文,135,1180,3,T P Yung,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+1,2024/10/20,2,MASTER MASTERMIND,智智多寶,Z Purton,潘頓,135,1081,12,D A Hayes,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+2,2024/10/20,3,HANDSOME BOMB,帥炸,A Atzeni,艾兆禮,132,1041,1,W Y So,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+3,2024/10/20,4,MIGHTY STRENGTH,勁大威猛,A Hamelin,賀銘年,132,1004,13,P F Yiu,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+4,2024/10/20,5,DURHAM STAR,對衡之星,L Hewitson,希威森,128,1166,2,D J Whyte,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+5,2024/10/20,6,PATCH OF LUCKY,錶之福將,L Ferraris,霍宏聲,128,1094,5,K H Ting,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+6,2024/10/20,7,PEARL OF PANG'S,彭玥,M Chadwick,蔡明紹,128,1209,10,K L Man,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+7,2024/10/20,8,JUMBO FORTUNE,連連歡呼,K Teetan,田泰安,127,1325,9,D Eustace,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+8,2024/10/20,9,EN PERFECTO,完美演繹,M F Poon,潘明輝 (-2),126,1062,4,C S Shum,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+9,2024/10/20,10,POCHETTINO,八正道,B Avdulla,艾道拿,126,1087,8,J Size,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+10,2024/10/20,11,FOXHUNTER KING,獵狐者勁,M L Yeung,楊明綸,124,1040,6,K W Lui,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+11,2024/10/20,12,YEE CHEONG RAIDER,怡昌奇兵,C Y Ho,何澤堯,124,1140,11,J Richards,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+12,2024/10/20,13,SUPER TAICHI,己多福,H Bentley,班德禮,118,1133,14,C Fownes,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45
+13,2024/10/20,14,FIGHT TIME,凱旋幸運,A Badel,巴度,117,1063,7,D J Hall,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:45

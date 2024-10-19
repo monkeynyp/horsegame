@@ -1,4 +1,4 @@
-{% extends "master.html" %} {% block title %} 騎師王預測 {% endblock %} 
+{% extends "master.html" %} {% block title %} 練馬師王預測 {% endblock %} 
 {% load i18n %}
 {% load static %}
 {% block content %}
@@ -22,6 +22,7 @@
     height:100%; /* Full height */
 }
 </style>
+<!--
 <script>
     // Automatically show the modal if 'button_clicked' is not True
     window.onload = function() {
@@ -34,6 +35,7 @@
         }
     };
 </script>
+-->
 <div class="w3-container w3-margin-top">
     <h2 class="w3-center w3-text-teal">練馬師王預測</h2>
   
@@ -74,36 +76,8 @@
       {% endfor %}
   
     </div>
-    <!-- Modal Trigger Button (manual display, if needed) -->
-<!--<button onclick="document.getElementById('adsModal').style.display='block'" class="w3-button w3-red">
-    Click Ad
-</button> -->
-
-<!-- Modal structure -->
-<div id="adsModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-opacity">
-        <header class="w3-container w3-teal">
-           <!-- <span onclick="document.getElementById('adsModal').style.display='none'"
-                  class="w3-button w3-display-topright">&times;</span>-->
-            <h2>點擊解鎖練馬師王功能</h2>
-        </header>
-       
-        <!-- Include click_ads.html content inside the modal -->
-        <div class="w3-container">
-          <div class="w3-center">
-          <img src="/static/index-jk-c.png" width="300"></div>
-            {% include 'click_ads.html' %}
-        </div>
-
-        <footer class="w3-container w3-teal">
-            <p>再次點擊進入功能</p>
-        </footer>
-    </div>
-</div>
-
 
   </div>
-  
 
 
 

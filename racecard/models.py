@@ -13,6 +13,7 @@ class UserTips(models.Model):
     trainer_score = models.IntegerField(default=0)
     horse_no = models.IntegerField()
     horse_name = models.CharField(max_length=50)
+    horse_name_cn = models.CharField(max_length=50, null=True)
     jockey = models.CharField(max_length=25, null=True)
     trainer = models.CharField(max_length=25, null=True)
     hit = models.IntegerField()

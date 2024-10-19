@@ -1,13 +1,15 @@
-,HorseName,Jockey,Trainer,Score
-0,BRAVE STAR,C Y Ho,K W Lui,0.29375
-1,HAPPY FAT CAT,E C W Wong,W K Mo,0.28125
-2,PRAWNS ELEVEN,H Bentley,M Newnham,0.11875
-3,BEAUTY INFINITY,B Avdulla,J Size,0.2375
-4,LUCKY ARCHANGEL,M F Poon,F C Lor,0.31875
-5,HEALTHY HEALTHY,Z Purton,P C Ng,0.4
-6,MEGA BONUS,A Atzeni,P F Yiu,0.1125
-7,KING PROFIT,L Hewitson,C S Shum,0.10625
-8,POSITIVE SMILE,B Thompson,D A Hayes,0.05625
-9,RIDING HIGH,M Chadwick,A S Cruz,0.3875
-10,VICTOR THE RAPID,K Teetan,D J Whyte,0.30625
-11,MIGHTY COMMANDER,L Ferraris,C Fownes,0.21875
+,HorseName,HorseName_cn,Jockey,Trainer,Score
+0,HAROLD WIN,哈羅威,A Atzeni,K W Lui,0.46875
+1,COURIER ALADDIN,超平凡,Z Purton,J Richards,0.38125
+2,MOTOMAN,競馬一心,M F Poon,P C Ng,0.175
+3,NEW FUTURE FOLKS,帥帥友福,B Thompson,C W Chang,0.55
+4,BLAZING WIND,熾烈神駒,C Y Ho,C S Shum,0.475
+5,DECRELOT,球皇,H Bentley,D A Hayes,0.10625
+6,MONARCH COUNTY,仁仁有餘,H Bowman,C Fownes,0.225
+7,COLOURFUL WINNER,多彩多姿,M L Yeung,W Y So,0.06875
+8,DRAGON JOY,皇仁歡星,B Avdulla,P F Yiu,0.1
+9,KING OBERON,勝多多,L Hewitson,D J Whyte,0.2875
+10,LIFE OF STONE,一石二鳥,C L Chau,T P Yung,0.10625
+11,CIRCUIT VICTORY,綫路光驊,K C Leung,K L Man,0.25
+12,PATCH OF TIME,手錶之星,K Teetan,W K Mo,0.225
+13,SILVER DESTINY,水龍頭,Y L Chung,C H Yip,0.1625

@@ -1,14 +1,15 @@
-,Racedate,HorseNo,HorseName,Jockey,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going
-0,2024/10/13,1,SPEED DRAGON,A Atzeni,135,1187,5,K W Lui,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-1,2024/10/13,2,YOUNG ACHIEVER,Z Purton,135,1142,7,J Richards,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-2,2024/10/13,3,BEAUTY CRESCENT,H Bowman,130,1047,13,A S Cruz,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-3,2024/10/13,4,GRACIOUS EXPRESS,K C Leung,129,1127,11,P F Yiu,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-4,2024/10/13,5,LUCY IN THE SKY,K Teetan,128,1186,3,Y S Tsui,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-5,2024/10/13,6,SILO,B Avdulla,124,1143,12,M Newnham,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-6,2024/10/13,7,STORM RIDER,L Hewitson,124,1091,10,D A Hayes,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-7,2024/10/13,8,AMAZING VICTORY,C Y Ho,120,1046,4,W Y So,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-8,2024/10/13,9,MASSIVE ACTION,Y L Chung,120,1184,1,F C Lor,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-9,2024/10/13,10,PRINCE OF PORTY,H Bentley,118,1172,6,D J Hall,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-10,2024/10/13,11,THE WAY WE WIN,M L Yeung,118,1067,8,C S Shum,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-11,2024/10/13,12,ACROSS DA UNIVERSE,M F Poon,117,1152,2,P C Ng,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
-12,2024/10/13,13,FIRST LOVE,A Badel,117,1175,9,P C Ng,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good
+,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
+0,2024/10/20,1,SO WE SING,有誰共鳴,B Thompson,湯普新,133,1199,4,C W Chang,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+1,2024/10/20,2,SWEET ENCOUNTER,魅力知遇,A Atzeni,艾兆禮,133,1199,14,J Size,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+2,2024/10/20,3,FORTUNATE SON,將義,B Avdulla,艾道拿,130,1090,6,D J Whyte,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+3,2024/10/20,4,ILLUMINOUS,明亮天下,H Bowman,布文,129,989,9,F C Lor,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+4,2024/10/20,5,TURIN STARSPANGLED,都靈星球,Z Purton,潘頓,129,1153,11,P C Ng,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+5,2024/10/20,6,WINNING GOLD,金勝名駒,K De Melo,董明朗,129,1054,1,W Y So,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+6,2024/10/20,7,PRAY FOR MIR,和平波,M Chadwick,蔡明紹,128,1070,3,W K Mo,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+7,2024/10/20,8,FALLON,快路,Y L Chung,鍾易禮 (-3),126,1108,12,A S Cruz,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+8,2024/10/20,9,STAR MAC,久久為尊,K Teetan,田泰安,126,1193,7,D A Hayes,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+9,2024/10/20,10,FLAGSHIP WARRIOR,旗幟鬥士,L Hewitson,希威森,122,1037,13,C Fownes,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+10,2024/10/20,11,SECOND TO NONE,獨步天下,C Y Ho,何澤堯,122,1133,5,K W Lui,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+11,2024/10/20,12,FUN TOGETHER,時尚歡欣,C L Chau,周俊樂 (-2),121,1132,10,T P Yung,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+12,2024/10/20,13,BRAVEHEARTS,愛心神駒,M F Poon,潘明輝 (-2),120,1105,2,M Newnham,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20
+13,2024/10/20,14,SUNSTRIDER,金陽飛駒,A Badel,巴度,120,1130,8,D J Hall,10,Class 3,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,17:20

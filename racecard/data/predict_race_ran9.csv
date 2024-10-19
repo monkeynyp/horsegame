@@ -1,14 +1,15 @@
-,HorseName,Jockey,Trainer,Score
-0,SPEED DRAGON,A Atzeni,K W Lui,0.1375
-1,YOUNG ACHIEVER,Z Purton,J Richards,0.2875
-2,BEAUTY CRESCENT,H Bowman,A S Cruz,0.38125
-3,GRACIOUS EXPRESS,K C Leung,P F Yiu,0.3125
-4,LUCY IN THE SKY,K Teetan,Y S Tsui,0.61875
-5,SILO,B Avdulla,M Newnham,0.15625
-6,STORM RIDER,L Hewitson,D A Hayes,0.09375
-7,AMAZING VICTORY,C Y Ho,W Y So,0.3125
-8,MASSIVE ACTION,Y L Chung,F C Lor,0.2375
-9,PRINCE OF PORTY,H Bentley,D J Hall,0.14375
-10,THE WAY WE WIN,M L Yeung,C S Shum,0.10625
-11,ACROSS DA UNIVERSE,M F Poon,P C Ng,0.125
-12,FIRST LOVE,A Badel,P C Ng,0.14375
+,HorseName,HorseName_cn,Jockey,Trainer,Score
+0,SO WE SING,有誰共鳴,B Thompson,C W Chang,0.15
+1,SWEET ENCOUNTER,魅力知遇,A Atzeni,J Size,0.35625
+2,FORTUNATE SON,將義,B Avdulla,D J Whyte,0.21875
+3,ILLUMINOUS,明亮天下,H Bowman,F C Lor,0.51875
+4,TURIN STARSPANGLED,都靈星球,Z Purton,P C Ng,0.46875
+5,WINNING GOLD,金勝名駒,K De Melo,W Y So,0.325
+6,PRAY FOR MIR,和平波,M Chadwick,W K Mo,0.1625
+7,FALLON,快路,Y L Chung,A S Cruz,0.0875
+8,STAR MAC,久久為尊,K Teetan,D A Hayes,0.21875
+9,FLAGSHIP WARRIOR,旗幟鬥士,L Hewitson,C Fownes,0.1875
+10,SECOND TO NONE,獨步天下,C Y Ho,K W Lui,0.3125
+11,FUN TOGETHER,時尚歡欣,C L Chau,T P Yung,0.1
+12,BRAVEHEARTS,愛心神駒,M F Poon,M Newnham,0.05
+13,SUNSTRIDER,金陽飛駒,A Badel,D J Hall,0.1

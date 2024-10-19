@@ -1,13 +1,15 @@
-,HorseName,Jockey,Trainer,Score
-0,NORDIC DRAGON,H Bowman,C S Shum,0.33125
-1,SUGAR SUGAR,E C W Wong,C Fownes,0.24375
-2,POWER KOEPP,M Chadwick,K L Man,0.08125
-3,EASON,M F Poon,P F Yiu,0.19375
-4,KYRUS DRAGON,Z Purton,D J Hall,0.56875
-5,GUSTOSISIMO,Y L Chung,A S Cruz,0.1
-6,SWEET BRIAR,L Hewitson,K W Lui,0.6
-7,YOUNG ARROW,K Teetan,D J Whyte,0.225
-8,ARMOUR EAGLE,A Atzeni,J Richards,0.15625
-9,TALE OF PERTH,B Thompson,M Newnham,0.03125
-10,OUR LUCKY GLORY,A Badel,W Y So,0.2625
-11,VIVA CHALEUR,K De Melo,P C Ng,0.25625
+,HorseName,HorseName_cn,Jockey,Trainer,Score
+0,I GIVE,我為您,A Atzeni,P C Ng,0.3375
+1,PACKING HERMOD,包裝天將,Z Purton,K W Lui,0.4875
+2,YOUNG SUPERSTAR,競駿先鋒,Y L Chung,A S Cruz,0.225
+3,PERFUSE,增勁,K De Melo,D J Hall,0.1125
+4,CAPTAIN WIN,旭日昇,K Teetan,P C Ng,0.31875
+5,GREAT STATE,德薩斯,M L Yeung,W Y So,0.24375
+6,DASHING DRAGON,長勝威龍,B Thompson,D A Hayes,0.05625
+7,GIDDY UP,跑得好快,A Hamelin,J Richards,0.28125
+8,GOKO WIN,超霸勝,M Chadwick,D J Whyte,0.10625
+9,MAGNIFICENT NINE,鐵金剛,M F Poon,J Size,0.0375
+10,THUNDER BLINK,同得威,C L Chau,K H Ting,0.275
+11,SUPER INFINITY,河好運,H Bentley,M Newnham,0.24375
+12,ARMOUR WAR EAGLE,穿甲戰鷹,L Hewitson,M Newnham,0.1
+13,ELEGANT LIFE,風采人生,A Badel,T P Yung,0.0625

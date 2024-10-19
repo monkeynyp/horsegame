@@ -36,6 +36,8 @@ def racecard(request):
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
      dt_obj = datetime.strptime(curr_race_date, "%Y-%m-%d")
      timestamp = int(dt_obj.timestamp())+int(id)
+     race_time = current_race['RaceTime'].iloc[0]
+     print("Race_timne:", race_time)
      random.seed(timestamp)
      # Generate random integers between 1 and 64
      num_rows = len(current_race)
@@ -45,7 +47,8 @@ def racecard(request):
      current_race['Ichi'] = random_numbers_list
 
      total_race = current_race['Total'].iloc[0]
-     
+
+     print("Total race:",total_race)
      horse_tips_qty = (
         UserTips.objects
         .filter(race_date=curr_race_date, race_no=id)
@@ -135,6 +138,7 @@ def racecard(request):
         context = {
             'current_race': current_race,
             'total_race': total_race,
+            'race_time': race_time,
             'current_datetime':current_datetime,
             'race_id' : id,
             'complete_tips_by_user': complete_tips_by_user,
@@ -153,7 +157,8 @@ def submit_tips(request):
         selected_horses = selected_horses.split(',') 
         # Process the horse name and jockey
         for horse_jockey in selected_horses:
-            horse_name, jockey_name = horse_jockey.split('|')
+            print("test:",horse_jockey)
+            horse_name, jockey_name,trainer_name,horse_name_cn = horse_jockey.split('|')
         # Now you can work with horse_name and jockey_name separately
         print(f"Horse: {horse_name}, Jockey: {jockey_name}")
         # Assuming you have a user identifier, replace 'user_id' with the actual field name
@@ -171,11 +176,14 @@ def submit_tips(request):
             existing_records.delete()
         rank =0
         for horse_select in selected_horses:
+            
             split_values = horse_select.split(".")
             horse_no=split_values[0]
             horse_name=split_values[1].split("|")[0]
             jockey = split_values[2]
-       
+            trainer = split_values[3]
+            horse_name_cn = split_values[4]
+            print("HorseCN:",horse_name_cn)
             rank=rank+1
             if rank == 1:
                 jockey_score = 12
@@ -187,7 +195,7 @@ def submit_tips(request):
                 jockey_score = 4
                 trainer_score = 4
             
-            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no,rank=rank,jockey_score=jockey_score, horse_no=horse_no,horse_name=horse_name, jockey=jockey,hit=0)
+            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no,rank=rank,jockey_score=jockey_score,trainer_score=trainer_score, horse_no=horse_no,horse_name=horse_name,horse_name_cn=horse_name_cn, jockey=jockey,trainer=trainer,hit=0)
         # Redirect to a success page or wherever needed
         
     return redirect('../racecard/?id='+race_no)

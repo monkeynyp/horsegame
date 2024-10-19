@@ -1,13 +1,15 @@
-,HorseName,Jockey,Trainer,Score
-0,MA COMET,Z Purton,J Richards,0.21875
-1,E UNIVERSE,L Hewitson,W K Mo,0.3125
-2,BULB EMPEROR,A Atzeni,P C Ng,0.1125
-3,BRAVE OF FRIENDS,H Bentley,D J Whyte,0.15625
-4,SILVER SPURS,A Badel,C Fownes,0.19375
-5,HAPPY TANGO,K Teetan,Y S Tsui,0.2
-6,ROARING BEBE,B Avdulla,D J Hall,0.225
-7,UNIVERSAL BLAZE,B Thompson,J Size,0.05625
-8,VICTORYTHIRTYTHREE,L Ferraris,P F Yiu,0.1
-9,MIU FA FA,M Chadwick,F C Lor,0.15625
-10,HAPPY HORSE,Y L Chung,K L Man,0.14375
-11,MODEST GENTLEMAN,M F Poon,C H Yip,0.1625
+,HorseName,HorseName_cn,Jockey,Trainer,Score
+0,ROMAN CROWN,祥龍駒,K Teetan,P C Ng,0.19375
+1,FASHION LEGEND,川河型駒,A Atzeni,D Eustace,0.075
+2,DREAM PURSUER,逐夢年代,L Ferraris,K L Man,0.2875
+3,AMAZING RUN,奔妙星,L Hewitson,D A Hayes,0.23125
+4,CORLEONE,相映紅,H Bowman,C Fownes,0.38125
+5,FORERUNNER,博愛先鋒,Z Purton,W K Mo,0.39375
+6,LEGEND ST PAUL'S,保羅傳奇,K C Leung,F C Lor,0.1625
+7,LUCKY TOUCH,勝意,C Y Ho,J Richards,0.2125
+8,CALIFORNIA MOXIE,加州活力,B Avdulla,A S Cruz,0.08125
+9,HARMONY N HOME,人和家盛,M F Poon,C S Shum,0.175
+10,FIREFOOT,風起雲湧,C L Chau,W Y So,0.05
+11,AFFIRM,綠族威,H Bentley,P F Yiu,0.1125
+12,SKYEY BLUE,雙天寳馬,Y L Chung,C W Chang,0.1625
+13,WIN SPEED,超風速,M Chadwick,M Newnham,0.04375
