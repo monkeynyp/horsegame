@@ -160,7 +160,7 @@ def submit_tips(request):
             print("test:",horse_jockey)
             horse_name, jockey_name,trainer_name,horse_name_cn = horse_jockey.split('|')
         # Now you can work with horse_name and jockey_name separately
-        print(f"Horse: {horse_name}, Jockey: {jockey_name}")
+        print(f"Horse: {horse_name}, Jockey: {jockey_name}, trainer: {trainer_name}")
         # Assuming you have a user identifier, replace 'user_id' with the actual field name
         user_id = request.user  # Replace with the actual user ID
         race_date=request.POST['race_date'].replace('/','-')
@@ -180,8 +180,8 @@ def submit_tips(request):
             split_values = horse_select.split(".")
             horse_no=split_values[0]
             horse_name=split_values[1].split("|")[0]
-            jockey = split_values[2]
-            trainer = split_values[3]
+            jockey = split_values[2].split("|")[0]
+            trainer = split_values[3].split("|")[0]
             horse_name_cn = split_values[4]
             print("HorseCN:",horse_name_cn)
             rank=rank+1
