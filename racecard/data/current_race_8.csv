@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/10/20,1,I GIVE,我為您,A Atzeni,艾兆禮,135,1167,10,P C Ng,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-1,2024/10/20,2,PACKING HERMOD,包裝天將,Z Purton,潘頓,129,1119,12,K W Lui,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-2,2024/10/20,3,YOUNG SUPERSTAR,競駿先鋒,Y L Chung,鍾易禮 (-3),125,1140,5,A S Cruz,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-3,2024/10/20,4,PERFUSE,增勁,K De Melo,董明朗,124,1159,6,D J Hall,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-4,2024/10/20,5,CAPTAIN WIN,旭日昇,K Teetan,田泰安,123,1265,14,P C Ng,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-5,2024/10/20,6,GREAT STATE,德薩斯,M L Yeung,楊明綸,123,1083,2,W Y So,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-6,2024/10/20,7,DASHING DRAGON,長勝威龍,B Thompson,湯普新,119,1227,8,D A Hayes,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-7,2024/10/20,8,GIDDY UP,跑得好快,A Hamelin,賀銘年,119,1127,9,J Richards,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-8,2024/10/20,9,GOKO WIN,超霸勝,M Chadwick,蔡明紹,119,1078,11,D J Whyte,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-9,2024/10/20,10,MAGNIFICENT NINE,鐵金剛,M F Poon,潘明輝 (-2),119,1112,7,J Size,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-10,2024/10/20,11,THUNDER BLINK,同得威,C L Chau,周俊樂 (-2),119,1167,4,K H Ting,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-11,2024/10/20,12,SUPER INFINITY,河好運,H Bentley,班德禮,117,1126,1,M Newnham,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-12,2024/10/20,13,ARMOUR WAR EAGLE,穿甲戰鷹,L Hewitson,希威森,116,1126,3,M Newnham,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
-13,2024/10/20,14,ELEGANT LIFE,風采人生,A Badel,巴度,116,1135,13,T P Yung,10,Class 3,1200,Sha Tin:,"TURF - ""B+2"" Course",Good,16:45
+0,2024/10/23,1,CAPITAL DELIGHT,喜至寶,C Y Ho,何澤堯,135,1184,6,C Fownes,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+1,2024/10/23,2,VICTORY MOMENTS,凱旋時光,H Bowman,布文,135,1136,11,F C Lor,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+2,2024/10/23,3,ALPHA ONE,大老撾,M Chadwick,蔡明紹,129,1203,10,W K Mo,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+3,2024/10/23,4,SUPER WIN DRAGON,勝意龍,Z Purton,潘頓,128,1150,2,W Y So,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+4,2024/10/23,5,PACKING BOLE,包裝伯樂,C L Chau,周俊樂 (-2),126,1242,5,C S Shum,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+5,2024/10/23,6,HONG KONG HALL,福國寶,M F Poon,潘明輝 (-2),125,1208,8,D J Hall,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+6,2024/10/23,7,SELF IMPROVEMENT,自強不息,B Avdulla,艾道拿,125,1098,7,K L Man,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+7,2024/10/23,8,HEROIC MASTER,英雄豪邁,A Atzeni,艾兆禮,121,1085,12,F C Lor,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+8,2024/10/23,9,MUST GO,德心知遇,A Hamelin,賀銘年,119,1159,3,J Size,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+9,2024/10/23,10,KA YING CHEER,嘉應喝彩,P N Wong,黃寶妮 (-10),116,1209,1,P C Ng,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+10,2024/10/23,11,ONE FOR ALL,心想事成,A Badel,巴度,116,1253,4,M Newnham,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50
+11,2024/10/23,12,SKY FOREVER,天行健,M L Yeung,楊明綸,116,1047,9,K L Man,8,Class 3,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,22:50

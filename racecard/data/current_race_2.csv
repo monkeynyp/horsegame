@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/10/20,1,ROMAN CROWN,祥龍駒,K Teetan,田泰安,135,1099,4,P C Ng,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-1,2024/10/20,2,FASHION LEGEND,川河型駒,A Atzeni,艾兆禮,133,1063,13,D Eustace,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-2,2024/10/20,3,DREAM PURSUER,逐夢年代,L Ferraris,霍宏聲,130,1199,2,K L Man,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-3,2024/10/20,4,AMAZING RUN,奔妙星,L Hewitson,希威森,128,1243,11,D A Hayes,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-4,2024/10/20,5,CORLEONE,相映紅,H Bowman,布文,127,1032,1,C Fownes,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-5,2024/10/20,6,FORERUNNER,博愛先鋒,Z Purton,潘頓,127,1023,9,W K Mo,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-6,2024/10/20,7,LEGEND ST PAUL'S,保羅傳奇,K C Leung,梁家俊,127,1221,5,F C Lor,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-7,2024/10/20,8,LUCKY TOUCH,勝意,C Y Ho,何澤堯,127,1111,7,J Richards,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-8,2024/10/20,9,CALIFORNIA MOXIE,加州活力,B Avdulla,艾道拿,125,1096,6,A S Cruz,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-9,2024/10/20,10,HARMONY N HOME,人和家盛,M F Poon,潘明輝 (-2),124,1058,8,C S Shum,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-10,2024/10/20,11,FIREFOOT,風起雲湧,C L Chau,周俊樂 (-2),120,1132,10,W Y So,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-11,2024/10/20,12,AFFIRM,綠族威,H Bentley,班德禮,119,1201,14,P F Yiu,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-12,2024/10/20,13,SKYEY BLUE,雙天寳馬,Y L Chung,鍾易禮 (-3),118,1034,3,C W Chang,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
-13,2024/10/20,14,WIN SPEED,超風速,M Chadwick,蔡明紹,117,1105,12,M Newnham,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,13:15
+0,2024/10/23,1,FLYING ROMANTIC,威力勇驥,M F Poon,潘明輝 (-2),135,1071,5,D J Hall,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+1,2024/10/23,2,SMART LEADER,醒目勇駒,K De Melo,董明朗,132,1126,4,W Y So,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+2,2024/10/23,3,SUPER CHARIZZARD,超勁火力,H Bowman,布文,132,1078,10,M Newnham,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+3,2024/10/23,4,HIGH RISE POWER,高明力量,B Avdulla,艾道拿,131,1182,2,C H Yip,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+4,2024/10/23,5,VULCANUS,星火燎原,Y L Chung,鍾易禮 (-3),130,1140,7,Y S Tsui,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+5,2024/10/23,6,EXCELLENT DADDY,逆市奇爸,K C Leung,梁家俊,128,1275,12,T P Yung,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+6,2024/10/23,7,GALLANT GOODY,威武良駒,Z Purton,潘頓,128,1081,3,P F Yiu,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+7,2024/10/23,8,SUPER JOY,最多歡笑,M Chadwick,蔡明紹,128,1095,6,W K Mo,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+8,2024/10/23,9,CALIFORNIA ICON,加州代表,H Bentley,班德禮,127,1134,11,A S Cruz,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+9,2024/10/23,10,RATTAN WORLD,世界籐王,A Hamelin,賀銘年,126,1083,9,J Richards,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+10,2024/10/23,11,PATCH OF WATCH,錶之多多,E C W Wong,黃智弘 (-7),125,1211,1,K L Man,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
+11,2024/10/23,12,REGENCY HAPPY STAR,帝豪歡星,P N Wong,黃寶妮 (-10),117,1082,8,C W Chang,8,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45
