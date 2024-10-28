@@ -83,3 +83,31 @@ class LottoForm(forms.Form):
         if len(set(numbers)) != 7:
             raise forms.ValidationError(_("Numbers must be unique."))
         return cleaned_data
+    
+class LottoTrioForm(forms.Form):
+    number1 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+    number2 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+    number3 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+    def clean(self):
+        cleaned_data = super().clean()
+        # Set default value for number7 if not provided
+        numbers = [
+            cleaned_data.get('number1'),
+            cleaned_data.get('number2'),
+            cleaned_data.get('number3'),
+        ]
+        
+        if any(n is None for n in numbers):
+            raise forms.ValidationError(_("請提供三個號碼."))
+        if len(set(numbers)) != 3:
+            raise forms.ValidationError(_("號碼必須不同."))
+        return cleaned_data

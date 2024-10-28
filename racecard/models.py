@@ -19,14 +19,6 @@ class UserTips(models.Model):
     hit = models.IntegerField()
     dividend = models.FloatField(default=0)
     ratio = models.IntegerField(default=0)
-
-class UserTips_jc(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)  # Link to the User model
-    race_date = models.DateField()
-    jockey = models.CharField(max_length=50)
-    score = models.IntegerField()
-    hit = models.IntegerField(default=0)
-    dividend = models.FloatField(default=0)
         
 class UserScores(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='score')
@@ -113,31 +105,17 @@ class Marksix_user_rec(models.Model):
     def __str__(self):
         return f"{self.Draw} - {self.Date}"
 
-class FootballTeam(models.Model):
-    team_name = models.CharField(max_length=100)
-    attack_score = models.DecimalField(max_digits=3, decimal_places=1,default=1.0)
-    defence_score = models.DecimalField(max_digits=3, decimal_places=1, default=1.0)
-    strategy_score = models.DecimalField(max_digits=3, decimal_places=1, default=1.0)
-    perf_score = models.DecimalField(max_digits=3, decimal_places=1, default=1.0)
-    desc_en = models.TextField(blank=True)
-    desc_cn = models.TextField(blank=True)
-    team_logos = models.ImageField(upload_to='team_logos/', blank=True)
+class LottoTrioSearch(models.Model):
+    Search_date = models.DateField()
+    Draw = models.CharField(max_length=255)
+    No1 = models.IntegerField()
+    No2 = models.IntegerField()
+    No3 = models.IntegerField()
+    Diff_days = models.IntegerField()
 
     def __str__(self):
-        return self.team_name
-
-class FootballMatch(models.Model):
-    match_date = models.DateTimeField()
-    team_a = models.CharField(max_length=100)
-    team_b = models.CharField(max_length=100)
-    match_name = models.CharField(max_length=200)
-    location = models.CharField(max_length=200)
-    team_a_goal = models.IntegerField(default=0)
-    team_b_goal = models.IntegerField(default=0)
-
-    def __str__(self):
-        return f"{self.match_name} ({self.team_a} vs {self.team_b})"
-
+        return f"Draw: {self.Draw}, Search Date: {self.Search_date}"
+    
 class HorseInfo(models.Model):
     horse_name = models.CharField(max_length=100)
     horse_name_cn = models.CharField(max_length=100)

@@ -32,13 +32,11 @@ urlpatterns = [
     path('ichi_lotto/', views.ichi_lotto, name='ichi_lotto'),
     path('lotto_next_stat/', views.lotto_next_stat, name='lotto_next_stat'),
     path('update_lotto_tips/', views.update_lotto_tips, name='update_lotto_tips'),
-    path('footballmatch/', views.football_match, name='football_match'),
     path('lotto_must_win/<int:id>/', views.lotto_must_win, name='lotto_must_win'),
     path('lotto_test/', views.lotto_test, name='lotto_test'),
     path('lottory_predict_tw/', views.lottory_predict_tw, name='lottory_predict_tw'),
     path('lotto_test_tw/', views.lotto_test_tw, name='lotto_test_tw'),
-    path('external_redirect/', views.external_redirect, name='external_redirect'),
-    path('internal_function/', views.internal_function, name='internal_function'),
+    path('lotto_trio/', views.lotto_trio, name='lotto_trio'),
 
     # Other URL patterns
 

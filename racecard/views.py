@@ -8,10 +8,10 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import FootballMatch, FootballTeam, UserTips,UserTips_jc,UserScores,Article,Marksix_hist,Marksix_user_rec,TW_lotto_hist
-from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField
+from .models import  UserTips,UserScores,Article,Marksix_hist,Marksix_user_rec,TW_lotto_hist,LottoTrioSearch
+from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField,Q
 from django.utils import timezone
-from .forms import CustomUserCreationForm,NumberForm,LottoForm
+from .forms import CustomUserCreationForm,NumberForm,LottoForm,LottoTrioForm
 from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
@@ -968,50 +968,67 @@ def lotto_test_tw(request):
   
     
      return render(request, 'lotto_test_tw.html', {'form': form, 'results': results, 'total_records': total_records})
-  
-def football_match(request):
-    id = request.GET.get('id')
-    if  id is None:
-        today_matches = FootballMatch.objects.filter(match_date__date__gte=date.today())
-    else:
-    # Get football matches for today
-        today_matches = FootballMatch.objects.filter(id=id)
+def lotto_trio(request):
+     user_language = 'tw'  # or
+     translation.activate(user_language)
+
+     request.session[settings.LANGUAGE_COOKIE_NAME] = user_language
+     print("I am here")
+     record = None
+     hist_records = None
+     total_records = 0
+     diff = 0
+     largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+     if request.method == 'POST':
+        form = LottoTrioForm(request.POST)
+        if form.is_valid():
+            number_list = [
+                form.cleaned_data['number1'],
+                form.cleaned_data['number2'],
+                form.cleaned_data['number3'],
+            ]
+            # Fetch records based on the option_value
+            print("numbers:",number_list)
+            condition = (
+                Q(No1=number_list[0]) | Q(No2=number_list[0]) | Q(No3=number_list[0]) | Q(No4=number_list[0]) | Q(No5=number_list[0]) | Q(No6=number_list[0]) | Q(No7=number_list[0])
+            ) & (
+                Q(No1=number_list[1]) | Q(No2=number_list[1]) | Q(No3=number_list[1]) | Q(No4=number_list[1]) | Q(No5=number_list[1]) | Q(No6=number_list[1]) | Q(No7=number_list[1])
+            ) & (
+                Q(No1=number_list[2]) | Q(No2=number_list[2]) | Q(No3=number_list[2]) | Q(No4=number_list[2]) | Q(No5=number_list[2]) | Q(No6=number_list[2]) | Q(No7=number_list[2])
+            )
+
+            record = Marksix_hist.objects.filter(condition).distinct().first()
+            if record:
+                print("Result:", record.Date)
+                diff = calculate_days_difference(record.Date)
+
+                lotto_trio_search, created = LottoTrioSearch.objects.update_or_create(
+                            Draw=largest_draw,
+                            No1=number_list[0],
+                            No2=number_list[1],
+                            No3=number_list[2],
+                            defaults={
+                                'Search_date': datetime.now().date(),
+                                'Diff_days': diff
+                            }
+                        )
+            hist_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')
+            
+     else:
+        form = LottoTrioForm()
     
-    if not today_matches:
-        id = 1
-        # Handle the case when no matches are found
-        today_matches = FootballMatch.objects.filter(id=1)
-    
-    for match in today_matches:
-        # Fetch team information based on team names
-        team_a_info = FootballTeam.objects.get(team_name=match.team_a)
-        print("Team_A:",team_a_info)
-        team_b_info = FootballTeam.objects.get(team_name=match.team_b)
-        print("Team_B:",team_b_info)
+     return render(request, 'lotto_trio.html', {'form': form, 'diff':diff, 'result':record, 'hist':hist_records})
 
-        # Combine match and team data
-        combined_data = {
-            'match': match,
-            'team_a_info': team_a_info,
-            'team_b_info': team_b_info,
-        }
-    
-    # Render the template with the combined data
-    return render(request, 'footballmatch.html', {'combined_data': combined_data, 'id':id})
+def calculate_days_difference(record_date):
+    # Convert record_date to a datetime object if it's not already
+    if isinstance(record_date, str):
+        record_date = datetime.strptime(record_date, '%Y-%m-%d').date()
 
+    # Get the current date
+    current_date = datetime.now().date()
 
-# View to handle the internal function call
-def internal_function(request):
-    # Perform your internal logic here
-    return HttpResponse("Internal function called!")
+    # Calculate the difference in days
+    days_difference = (current_date - record_date).days
 
-# View to handle the first click to the external URL
-def external_redirect(request):
-    # Set session variable after the button is clicked
-    if request.session.get('button_clicked') == None:
-        request.session['button_clicked'] = True
-    # Set session to expire in 1 hour (3600 seconds)
-        request.session.set_expiry(1800)
-        return redirect('https://noohapou.com/4/7649284')  # Redirect to external URL
-    else:
-        return redirect('jockey_king')  # Redirect to external URL
+    return days_difference
+

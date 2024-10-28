@@ -1,0 +1,90 @@
+{% extends "master.html" %} {% block title %} 六合彩組合測試 {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<div class="w3-container w3-padding-16 w3-margin">
+    <h2>建立你六合彩組合</h2>
+    <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
+        <p class=" w3-large w3-serif">
+        <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+        六合彩是一個隨機的遊戲，所以長遠來講，每個號碼，和每個組合出現的機率是一樣的。如果有個組合很久没有出現，你可以試試看下期會否出現，從而達到機率一樣的現象。Monkey推出新的六合彩功能，幫助大家測試號碼組合上次出現的時間。而三個數字為一組，因為三個號碼是中奬的最少數字。你可以試下不同的組合，組成一個超冷門的組合。同時Monkey也會展示其他朋友的搜索歷史，等大家唔使下下自己來。祝大家好運👍</i></a></p>
+      </div>
+    <form class="w3-form" method="post" action="{% url 'lotto_trio' %}">
+        {% csrf_token %}
+        <div class="w3-section">
+            <label class="w3-label w3-text-teal">請輸入三號碼的組合 (1-49):</label><br>
+            {{ form.number1 }} {{ form.number2 }} {{ form.number3 }}
+        </div>
+        <button class="w3-button w3-teal" type="submit">查詢</button>
+    </form>
+</div>
+{% if diff %}
+    <div class="w3-container w3-margin-top">
+        <h3>上次出現 {{ diff }} 天之前</h3>
+        <table class="w3-table w3-bordered">
+            <thead>
+                <tr>
+                    <th class="w3-hide-small">期數</th>
+                    <th>日期</th>
+                    <th>No 1</th>
+                    <th>No 2</th>
+                    <th>No 3</th>
+                    <th>No 4</th>
+                    <th>No 5</th>
+                    <th>No 6</th>
+                    <th>特碼</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td class="w3-hide-small">{{ result.Draw }}</td>
+                        <td>{{ result.Date|date:"d/m/y" }}</td>
+                        <td><img src="{% static 'no_' %}{{ result.No1|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                        <td><img src="{% static 'no_' %}{{ result.No2|stringformat:'d' }}.gif?CV=L4.07R2a" ></td>
+                        <td><img src="{% static 'no_' %}{{ result.No3|stringformat:'d' }}.gif?CV=L4.07R2a" ></td>
+                        <td><img src="{% static 'no_' %}{{ result.No4|stringformat:'d' }}.gif?CV=L4.07R2a" ></td>
+                        <td><img src="{% static 'no_' %}{{ result.No5|stringformat:'d' }}.gif?CV=L4.07R2a" ></td>
+                        <td><img src="{% static 'no_' %}{{ result.No6|stringformat:'d' }}.gif?CV=L4.07R2a" ></td>
+                        <td><img src="{% static 'no_' %}{{ result.No7|stringformat:'d' }}.gif?CV=L4.07R2a" ></td>
+                    </tr>
+            </tbody>
+        </table>
+        <div class="w3-container">
+            <h2 class="w3-center">形態搜索記錄</h2>
+        
+            {% for record in hist %}
+            <div class="w3-quarter w3-margin-bottom">
+                <div class="w3-card-4 w3-margin w3-padding">
+                    <header class="w3-container w3-light-grey">
+                        <h5>最近出現: {{ record.Diff_days }}天前</h5>
+                    </header>
+                    <div class="w3-container">
+                        <table class="w3-table">
+                            <tr>
+                                <td><img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"></td>
+                                <td><img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"></td>
+                                <td><img src="{% static 'no_' %}{{ record.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {% if forloop.counter|divisibleby:4 and not forloop.last %}
+                </div><div class="w3-row-padding">
+            {% endif %}
+    {% endfor %}
+        
+{% endif %}
+<footer class="w3-container w3-padding-32 w3-center w3-light-grey w3-margin-top">
+    <h4>其他🎱六合彩功能</h4>
+    <div class="w3-bar w3-light-grey">
+        <a href="/lottory_predict/?id=1" class="w3-bar-item w3-button w3-hover-light-blue">走勢分析</a>
+        <a href="/ichi_lotto/" class="w3-bar-item w3-button w3-hover-light-blue">易卦預測</a>
+        <a href="/lotto_must_win/1/" class="w3-bar-item w3-button w3-hover-light-blue">必中組合</a>
+        <a href="/lotto_next_stat/?id=1" class="w3-bar-item w3-button w3-hover-light-blue">形態統計</a>
+        <a href="/lotto_test" class="w3-bar-item w3-button w3-hover-light-blue">測試組合</a>
+    </div>
+</footer>
+
+{% endblock %}
