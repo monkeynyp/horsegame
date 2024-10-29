@@ -88,12 +88,14 @@
                              <img src="{% static 'no_' %}{{ record1.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div>
                              </div> 
                             </div> {% endif %} 
-                            {% if record2 %} <div class="w3-container w3-margin-bottom"> <h4>天數: {{ record2.Diff_days }}</h4> 
+                            {% if record2 %} <div class="w3-container w3-margin-bottom"> 
                                  <div class="inverted-triangle-container"> <div class="inverted-triangle-row top">
                                      <img src="{% static 'no_' %}{{ record2.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> 
                                      <img src="{% static 'no_' %}{{ record2.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"> </div> 
                                      <div class="inverted-triangle-row"> <img src="{% static 'no_' %}{{ record2.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div> </div> 
-                            </div> {% endif %} </div>
+                            </div> 
+                            <h4>天數: {{ record2.Diff_days }}</h4> 
+                            {% endif %} </div>
              </div> 
             
             <h2 class="w3-center">形態搜索記錄</h2>
