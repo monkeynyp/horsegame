@@ -2,7 +2,23 @@
 {% load i18n %}
 {% load static %}
 {% block content %}
-
+<style>
+    .triangle-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .triangle-row {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .triangle-row.bottom {
+        width: 50%;
+    }
+</style>
+</head>
 <div class="w3-container w3-padding-16 w3-margin">
     <h2>建立你六合彩組合</h2>
     <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
@@ -59,16 +75,7 @@
                     <header class="w3-container w3-light-grey">
                         <h5>最近出現: {{ record.Diff_days }}天前</h5>
                     </header>
-                    <div class="w3-container">
-                        <table class="w3-table">
-                            <tr>
-                                <td><img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"></td>
-                                <td><img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"></td>
-                                <td><img src="{% static 'no_' %}{{ record.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+                    <div class="w3-container"> <div class="triangle-container"> <div class="triangle-row"> <img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> </div> <div class="triangle-row bottom"> <img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"> <img src="{% static 'no_' %}{{ record.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div> </div> </div> </div>
             </div>
             {% if forloop.counter|divisibleby:4 and not forloop.last %}
                 </div><div class="w3-row-padding">
@@ -76,6 +83,7 @@
     {% endfor %}
         
 {% endif %}
+</div>
 <footer class="w3-container w3-padding-32 w3-center w3-light-grey w3-margin-top">
     <h4>其他🎱六合彩功能</h4>
     <div class="w3-bar w3-light-grey">

@@ -1,5 +1,5 @@
 from django.core.management.base import BaseCommand
-from racecard.models import UserTips,User, UserScores, UserTips_jc # Replace 'YourModel' with the actual model name
+from racecard.models import UserTips,User, UserScores # Replace 'YourModel' with the actual model name
 from datetime import datetime
 import pandas as pd
 import os,math
