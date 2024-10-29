@@ -17,10 +17,21 @@
     .triangle-row.bottom {
         width: 50%;
     }
+
+    .inverted-triangle-container { 
+        display: flex; 
+        justify-content: center; 
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 20px; } 
+    .inverted-triangle-row 
+        { display: flex; justify-content: space-around; width: 50%; } 
+    .inverted-triangle-row.top 
+        { width: 50%; }
 </style>
 </head>
 <div class="w3-container w3-padding-16 w3-margin">
-    <h2>建立你六合彩組合</h2>
+    <h2>建立你冷門組合</h2>
     <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
         <p class=" w3-large w3-serif">
         <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
@@ -66,7 +77,25 @@
                     </tr>
             </tbody>
         </table>
-        <div class="w3-container">
+        <br><br>
+        <div class="w3-container w3-card-4 w3-margin">
+            <h2 class="w3-center w3-light-blue">今期值搏號碼</h2>
+            <div class="w3-row-padding w3-margin-top"> 
+                {% if record1 %} <div class="w3-container w3-margin-bottom">
+                     <h4>天數: {{ record1.Diff_days }}</h4> <div class="triangle-container">
+                         <div class="triangle-row"> <img src="{% static 'no_' %}{{ record1.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> </div> 
+                         <div class="triangle-row bottom"> <img src="{% static 'no_' %}{{ record1.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
+                             <img src="{% static 'no_' %}{{ record1.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div>
+                             </div> 
+                            </div> {% endif %} 
+                            {% if record2 %} <div class="w3-container w3-margin-bottom"> <h4>天數: {{ record2.Diff_days }}</h4> 
+                                 <div class="inverted-triangle-container"> <div class="inverted-triangle-row top">
+                                     <img src="{% static 'no_' %}{{ record2.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> 
+                                     <img src="{% static 'no_' %}{{ record2.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"> </div> 
+                                     <div class="inverted-triangle-row"> <img src="{% static 'no_' %}{{ record2.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div> </div> 
+                            </div> {% endif %} </div>
+             </div> 
+            
             <h2 class="w3-center">形態搜索記錄</h2>
         
             {% for record in hist %}
@@ -75,7 +104,16 @@
                     <header class="w3-container w3-light-grey">
                         <h5>最近出現: {{ record.Diff_days }}天前</h5>
                     </header>
-                    <div class="w3-container"> <div class="triangle-container"> <div class="triangle-row"> <img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> </div> <div class="triangle-row bottom"> <img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"> <img src="{% static 'no_' %}{{ record.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div> </div> </div> </div>
+                    <div class="w3-container"> 
+                        <div class="triangle-container"> 
+                            <div class="triangle-row"> 
+                                <img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> </div>
+                             <div class="triangle-row bottom"> 
+                                <img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
+                                 <img src="{% static 'no_' %}{{ record.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div>
+                         </div> 
+                    </div> 
+                </div>
             </div>
             {% if forloop.counter|divisibleby:4 and not forloop.last %}
                 </div><div class="w3-row-padding">

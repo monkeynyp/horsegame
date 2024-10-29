@@ -976,7 +976,9 @@ def lotto_trio(request):
      print("I am here")
      record = None
      hist_records = None
-     total_records = 0
+     record1 = None 
+     record2 = None 
+    
      diff = 0
      largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
      if request.method == 'POST':
@@ -1013,11 +1015,20 @@ def lotto_trio(request):
                             }
                         )
             hist_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')
-            
+
+            # Loop through the records to find the first two distinct ones 
+            for i, hist_record in enumerate(hist_records): 
+                if record1 is None: 
+                    record1 = hist_record 
+                elif record2 is None: 
+                    if set([record1.No1, record1.No2, record1.No3]).isdisjoint([hist_record.No1, hist_record.No2, hist_record.No3]): 
+                        record2 =hist_record
+                        break
+     
      else:
         form = LottoTrioForm()
     
-     return render(request, 'lotto_trio.html', {'form': form, 'diff':diff, 'result':record, 'hist':hist_records})
+     return render(request, 'lotto_trio.html', {'form': form, 'diff':diff, 'result':record, 'hist':hist_records, 'record1':record1, 'record2':record2})
 
 def calculate_days_difference(record_date):
     # Convert record_date to a datetime object if it's not already
