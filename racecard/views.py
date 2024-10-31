@@ -1001,7 +1001,6 @@ def lotto_trio(request):
 
             record = Marksix_hist.objects.filter(condition).distinct().first()
             if record:
-                print("Result:", record.Date)
                 diff = calculate_days_difference(record.Date)
 
                 lotto_trio_search, created = LottoTrioSearch.objects.update_or_create(
