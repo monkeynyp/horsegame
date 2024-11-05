@@ -265,13 +265,13 @@ def jockey_king(request):
             ).order_by('-percentage')
     # Step 4: Find the top jockey per user
     top_jockeys_per_user = {}
-    print("original:",jockey_scores)
+    #print("original:",jockey_scores)
     for jockey_score in jockey_scores:
         username = jockey_score['user__username']
         if username not in top_jockeys_per_user:
             # Add the first (top) jockey for each user
             top_jockeys_per_user[username] = jockey_score
-
+    print(top_jockeys_per_user)
     # Step 5: Pass the dictionary of top jockeys per user to the template
     context = {
         'race_date':recent_race_date,
