@@ -38,6 +38,8 @@ class Command(BaseCommand):
             band_no = cols[2].text.strip()
             rating = cols[3].text.strip()
             rate_change = cols[4].text.strip()
+            if rate_change == '*':
+                rate_change = 0
 
             # Handle missing ratings and rate changes
             rating = int(rating) if rating else 0
