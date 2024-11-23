@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/11/20,1,HELENE WARRIOR,喜蓮勇略,E C W Wong,黃智弘 (-7),135,1016,11,C S Shum,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-1,2024/11/20,2,SIMPLY MAVERICK,極速奇兵,J McDonald,麥道朗,135,1207,12,P F Yiu,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-2,2024/11/20,3,APACHE PASS,好好心得,A Atzeni,艾兆禮,131,1080,4,D Eustace,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-3,2024/11/20,4,LOVERO,開心勇駒,Y L Chung,鍾易禮 (-3),131,1144,3,A S Cruz,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-4,2024/11/20,5,TOURBILLON PRINCE,飛輪步,H Bowman,布文,131,1159,10,T P Yung,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-5,2024/11/20,6,ROMANTIC LAOS,浪漫老撾,K C Leung,梁家俊,129,1152,2,W K Mo,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-6,2024/11/20,7,SILO,豐盛,L Ferraris,霍宏聲,128,1153,5,M Newnham,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-7,2024/11/20,8,I CAN,我做到,A Badel,巴度,124,1094,1,P C Ng,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-8,2024/11/20,9,SOLEIL FIGHTER,太陽勇士,M F Poon,潘明輝 (-2),121,1101,9,D A Hayes,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-9,2024/11/20,10,TOY SOLTERO,整蠱專家,B Thompson,湯普新,121,1173,7,C W Chang,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-10,2024/11/20,11,SECOND TO NONE,獨步天下,C Y Ho,何澤堯,120,1137,8,K W Lui,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
-11,2024/11/20,12,SUPER UNICORN,勁好運,Z Purton,潘頓,119,1094,6,F C Lor,9,Class 3,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:45
+0,2024/11/24,1,HEALTHY HAPPY,健康愉快,A Badel,巴度,135,1166,12,F C Lor,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+1,2024/11/24,2,GREEN N WHITE,堅又威,M F Poon,潘明輝 (-2),122,1195,4,P F Yiu,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+2,2024/11/24,3,HELENE FEELING,喜蓮勇感,B Avdulla,艾道拿,122,1251,11,C S Shum,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+3,2024/11/24,4,ATULLIBIGEAL,增有,Z Purton,潘頓,121,1069,8,D J Hall,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+4,2024/11/24,5,OUTGATE,亞機拉,Y L Chung,鍾易禮 (-3),120,1068,14,A S Cruz,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+5,2024/11/24,6,TELECOM FIGHTERS,電訊巴打,P N Wong,黃寶妮 (-10),120,1133,3,Y S Tsui,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+6,2024/11/24,7,KARMA,話你知,C Y Ho,何澤堯,119,1211,13,C Fownes,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+7,2024/11/24,8,PATCH OF THETA,手機錶霸,K C Leung,梁家俊,119,1204,2,K W Lui,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+8,2024/11/24,9,YOUNG CHAMPION,競駿輝煌,K Teetan,田泰安,118,1137,5,J Size,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+9,2024/11/24,10,SUNLIGHT POWER,陽光勇士,A Hamelin,賀銘年,116,1072,10,P F Yiu,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+10,2024/11/24,11,THE BEST PEACH,桃花雲,B Thompson,湯普新,115,1065,9,A S Cruz,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+11,2024/11/24,12,VOYAGE SAMURAI,遨遊武士,M L Yeung,楊明綸,115,1199,1,F C Lor,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+12,2024/11/24,13,ROMANTIC THOR,浪漫戰神,A Atzeni,艾兆禮,115,1098,7,C S Shum,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
+13,2024/11/24,14,TOP GUN,壯志凌雲,M Chadwick,蔡明紹,115,1110,6,F C Lor,10,Class 2,1600,Sha Tin:,"TURF - ""C"" Course",Good,16:10
