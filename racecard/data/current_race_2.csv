@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/11/24,1,FUN ELITE,中環精英,L Hewitson,希威森,135,1140,1,T P Yung,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-1,2024/11/24,2,GRAND NOVA,鴻圖新星,H Bowman,布文,133,1086,13,J Size,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-2,2024/11/24,3,KA YING RESILIENCE,嘉應駿馬,Z Purton,潘頓,130,1195,9,D A Hayes,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-3,2024/11/24,4,ALLURING LAOS,美麗老撾,K C Leung,梁家俊,128,1181,12,W K Mo,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-4,2024/11/24,5,PRECIOUS HILL,綠水青山,M L Yeung,楊明綸,128,1060,7,K L Man,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-5,2024/11/24,6,RISING PHOENIX,金滙千帥,B Avdulla,艾道拿,128,1067,2,D J Hall,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-6,2024/11/24,7,SHINY RAPIDASH,宇上龍騰,A Atzeni,艾兆禮,128,1152,4,P C Ng,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-7,2024/11/24,8,THOUSAND CUPS,千杯,Y L Chung,鍾易禮 (-3),128,1082,6,A S Cruz,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-8,2024/11/24,9,RUN YES RUN,東昇鉞,K Teetan,田泰安,127,1066,11,C W Chang,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-9,2024/11/24,10,SOLAR RIVER,洛河,M F Poon,潘明輝 (-2),126,1171,5,K H Ting,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-10,2024/11/24,11,SUPER SIXTY,超強六十,A Badel,巴度,121,1062,3,C Fownes,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-11,2024/11/24,12,DOUBLE BINGO,東方寶寶,K De Melo,董明朗,118,1090,14,Y S Tsui,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-12,2024/11/24,13,FLYING DRAGON,龍騰飛翔,A Hamelin,賀銘年,117,1241,8,C H Yip,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
-13,2024/11/24,14,DAN ATTACK,花好月盈,P N Wong,黃寶妮 (-10),116,1185,10,J Richards,10,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:15
+0,2024/11/27,1,MODEST GENTLEMAN,謙謙君子,C L Chau,周俊樂 (-2),135,1055,7,C H Yip,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+1,2024/11/27,2,SPEEDY FORTUNE,連連勝利,M F Poon,潘明輝 (-2),135,1062,2,D Eustace,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+2,2024/11/27,3,GUSTY FIGHTER,驍勇善戰,L Hewitson,希威森,134,1082,9,D J Whyte,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+3,2024/11/27,4,HAPPY HORSE,開心馬,M Chadwick,蔡明紹,134,1117,4,K L Man,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+4,2024/11/27,5,FLYING PHANTOM,旋風飛颺,Z Purton,潘頓,133,1032,6,J Size,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+5,2024/11/27,6,ACE TALENT,天分高,E C W Wong,黃智弘 (-7),131,1039,11,C Fownes,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+6,2024/11/27,7,CIRCUIT TEN,電路十號,C Y Ho,何澤堯,131,1031,1,W Y So,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+7,2024/11/27,8,PHILOS,會展二號,Y L Chung,鍾易禮 (-3),126,1143,12,A S Cruz,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+8,2024/11/27,9,DIAMOND SOARS,鑽飾翱翔,L Ferraris,霍宏聲,124,1202,8,P F Yiu,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+9,2024/11/27,10,PLENTIFUL,同滿滿,A Atzeni,艾兆禮,123,1097,3,P C Ng,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+10,2024/11/27,11,GOODMANSHIP,友誼至佳,H Bentley,班德禮,121,1187,10,D J Whyte,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+11,2024/11/27,12,WIND SPEEDER,前風,M L Yeung,楊明綸,118,1068,5,Y S Tsui,9,Class 5,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
