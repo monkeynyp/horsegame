@@ -1,13 +1,14 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/11/27,1,ATOMIC FORCE,巴薩諾瓦,H Bowman,布文,133,1163,10,W K Mo,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-1,2024/11/27,2,RED ELEGANCE,紅逸舍,M Chadwick,蔡明紹,133,1122,2,D J Whyte,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-2,2024/11/27,3,YOUTHFUL SPIRITS,年少多好,L Ferraris,霍宏聲,133,1070,8,M Newnham,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-3,2024/11/27,4,HORSEPOWER,馬力,Z Purton,潘頓,130,1114,11,F C Lor,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-4,2024/11/27,5,TURF PHOENIX,戰騎飛,M L Yeung,楊明綸,129,1058,9,W Y So,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-5,2024/11/27,6,ALLGREEKTOME,雅典武士,E C W Wong,黃智弘 (-7),126,1299,1,D A Hayes,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-6,2024/11/27,7,ETERNAL FORTUNE,連連幸運,J McDonald,麥道朗,126,1017,12,C S Shum,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-7,2024/11/27,8,BUNTA BABY,品德寶寶,K C Leung,梁家俊,124,1271,7,K L Man,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-8,2024/11/27,9,CHARMING BABE,輕功猛男,M F Poon,潘明輝 (-2),124,1119,4,P F Yiu,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-9,2024/11/27,10,HAPPY UNITED,萬眾開心,L Hewitson,希威森,124,1139,5,J Richards,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-10,2024/11/27,11,HEALTHY HEALTHY,添開心,C Y Ho,何澤堯,124,1175,6,P C Ng,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
-11,2024/11/27,12,DO YOUR PART,做好自己,A Atzeni,艾兆禮,121,1039,3,K W Lui,9,Class 3,1000,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15
+0,2024/12/01,1,SUPREME AGILITY,奮鬥心,M F Poon,潘明輝 (-2),133,975,8,P C Ng,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+1,2024/12/01,2,APACHE PASS,好好心得,L Ferraris,霍宏聲,131,1089,1,D Eustace,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+2,2024/12/01,3,FRANTANCK,手到再來,L Hewitson,希威森,131,1143,12,P C Ng,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+3,2024/12/01,4,PERFECT TEAM,精彩動力,J McDonald,麥道朗,130,1065,10,C Fownes,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+4,2024/12/01,5,TALENTS AMBITION,精英雄心,H Bowman,布文,130,1197,11,M Newnham,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+5,2024/12/01,6,FIGHTING MACHINE,堅闖,Z Purton,潘頓,125,1082,4,P C Ng,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+6,2024/12/01,7,WINNING STEPS,逐步贏,A Atzeni,艾兆禮,125,1154,13,P C Ng,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+7,2024/12/01,8,MUST GO,德心知遇,B Avdulla,艾道拿,124,1173,7,J Size,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+8,2024/12/01,9,YOUNG BRILLIANT,競駿光輝,C L Chau,周俊樂 (-2),124,1141,2,C H Yip,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+9,2024/12/01,10,JOLLY RULER,旌鷹,A Hamelin,賀銘年,122,1191,6,P F Yiu,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+10,2024/12/01,11,RED MAJESTY,赤馬雄風,M L Yeung,楊明綸,121,1241,9,D A Hayes,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+11,2024/12/01,12,THESIS,論文,A Badel,巴度,121,1216,5,Y S Tsui,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
+12,2024/12/01,13,FUN TOGETHER,時尚歡欣,M Chadwick,蔡明紹,120,1145,3,T P Yung,10,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,16:40
