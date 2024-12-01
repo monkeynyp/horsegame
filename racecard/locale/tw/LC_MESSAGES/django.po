@@ -4087,6 +4087,9 @@ msgstr "特別號碼"
 msgid "B Thompson"
 msgstr "湯普新"
 
+msgid "A Pouchin"
+msgstr "貝知仁"
+
 
 #####Trainer Section
 msgid "P C Ng"
