@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/12/04,1,PRIME MORTAR,砂漿金剛,Y L Chung,鍾易禮 (-3),135,1063,8,A S Cruz,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-1,2024/12/04,2,STREET CONQUEROR,炯炯有神,L Ferraris,霍宏聲,133,1161,10,M Newnham,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-2,2024/12/04,3,EXCELLENT PEERS,越駿知己,M Chadwick,蔡明紹,131,1155,9,F C Lor,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-3,2024/12/04,4,MASTEROFMYUNIVERSE,真心傳奇,Z Purton,潘頓,130,996,11,J Size,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-4,2024/12/04,5,TEAM HAPPY,添喜運,K Teetan,田泰安,130,1227,2,P C Ng,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-5,2024/12/04,6,PANDA LEGEND,熊噹噹,K De Melo,董明朗,127,1250,7,W Y So,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-6,2024/12/04,7,BRAVE OF FRIENDS,友盈勇者,L Hewitson,希威森,126,1043,3,D J Whyte,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-7,2024/12/04,8,FORTUNE WARRIOR,運來勇士,C Y Ho,何澤堯,126,1122,4,D Eustace,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-8,2024/12/04,9,SHINE BRIGHT,發光發亮,A Pouchin,貝知仁,126,1060,5,C H Yip,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-9,2024/12/04,10,SMART FIGHTER,你知我得,J McDonald,麥道朗,126,1163,1,P F Yiu,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-10,2024/12/04,11,WORLD HERO,環球英雄,H Doyle,杜苑欣,122,1102,12,D A Hayes,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
-11,2024/12/04,12,CRYSTAL POWERFUL,妙玲瓏,M Barzalona,巴米高,118,1157,6,W K Mo,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,21:10
+0,2024/12/08,1,BRAVEHEARTS,愛心神駒,M F Poon,潘明輝 (-2),135,1090,3,M Newnham,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+1,2024/12/08,2,SO WE SING,有誰共鳴,A Pouchin,貝知仁,133,1202,1,C W Chang,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+2,2024/12/08,3,PRAY FOR MIR,和平波,M Chadwick,蔡明紹,130,1086,7,W K Mo,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+3,2024/12/08,4,STAR MAC,久久為尊,K Teetan,田泰安,130,1194,10,D A Hayes,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+4,2024/12/08,5,UNIVERSAL HORIZON,陽明天空,C Y Ho,何澤堯,130,1125,14,K W Lui,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+5,2024/12/08,6,EIGHTEEN CARAT,十八掌門,A Atzeni,艾兆禮,129,1144,2,C S Shum,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+6,2024/12/08,7,FORTUNATE SON,將義,B Shinn,薛恩,129,1098,6,D J Whyte,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+7,2024/12/08,8,FAMILY JEWEL,共享富裕,J McDonald,麥道朗,127,1024,5,C Fownes,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+8,2024/12/08,9,SIMPLE HEDGE,精算謀略,M Barzalona,巴米高,127,1137,8,J Size,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+9,2024/12/08,10,CALIFORNIATOTALITY,加州動員,B Avdulla,艾道拿,124,1052,12,A S Cruz,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+10,2024/12/08,11,SUNSTRIDER,金陽飛駒,Z Purton,潘頓,122,1118,4,D J Hall,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+11,2024/12/08,12,GOOD LUCK BABE,開心五月,L Hewitson,希威森,121,1132,9,D Eustace,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+12,2024/12/08,13,BEAUTY LIVE,美麗在線,A Badel,巴度,119,1113,13,F C Lor,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25
+13,2024/12/08,14,BRIGHT INHERITANCE,光明傳承,K De Melo,董明朗,119,1121,11,C H Yip,10,Class 3,1800,Sha Tin:,"TURF - ""A"" Course",Good,15:25

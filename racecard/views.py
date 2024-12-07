@@ -968,6 +968,7 @@ def lotto_test_tw(request):
   
     
      return render(request, 'lotto_test_tw.html', {'form': form, 'results': results, 'total_records': total_records})
+
 def lotto_trio(request):
      user_language = 'tw'  # or
      translation.activate(user_language)
