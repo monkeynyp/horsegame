@@ -1,9 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/12/11,1,ON THE LASH,齊歡最樂,J McDonald,麥道朗,133,1228,3,P C Ng,9,Class 5,2200,Happy Valley:,"TURF - ""B"" Course",Good,18:40
-1,2024/12/11,2,PALACE PAL,大登殿,Z Purton,潘頓,133,975,2,D J Hall,9,Class 5,2200,Happy Valley:,"TURF - ""B"" Course",Good,18:40
-2,2024/12/11,3,MR ALADDIN,同寶寶,A Pouchin,貝知仁,132,1082,5,P C Ng,9,Class 5,2200,Happy Valley:,"TURF - ""B"" Course",Good,18:40
-3,2024/12/11,4,SUPER HONG KONG,香港精神,K Teetan,田泰安,129,1050,8,C H Yip,9,Class 5,2200,Happy Valley:,"TURF - ""B"" Course",Good,18:40
-4,2024/12/11,5,NICE BIRDIE,樂捉鳥,C L Chau,周俊樂 (-2),127,1225,7,C S Shum,9,Class 5,2200,Happy Valley:,"TURF - ""B"" Course",Good,18:40
-5,2024/12/11,6,FURY AND GOLD,神煞金剛,A Atzeni,艾兆禮,126,1145,6,C H Yip,9,Class 5,2200,Happy Valley:,"TURF - ""B"" Course",Good,18:40
-6,2024/12/11,7,GOLDEN FAIRY,皇金風速,A Badel,巴度,121,1035,1,W Y So,9,Class 5,2200,Happy Valley:,"TURF - ""B"" Course",Good,18:40
-7,2024/12/11,8,TIGER AND GOLD,神虎金剛,B Thompson,湯普新,120,1238,4,C H Yip,9,Class 5,2200,Happy Valley:,"TURF - ""B"" Course",Good,18:40
+0,2024/12/15,1,GANGNAM STAR,江南盛,A Badel,巴度,135,1085,10,P C Ng,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+1,2024/12/15,2,CHARMANDER,喜報圍家,Z Purton,潘頓,134,1150,12,D J Hall,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+2,2024/12/15,3,GALLANT CROWN,冠寶駒,E C W Wong,黃智弘 (-7),134,1081,8,D A Hayes,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+3,2024/12/15,4,SUPREME WINNER,紅旺繽紛,C L Chau,周俊樂 (-2),134,1083,1,C H Yip,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+4,2024/12/15,5,UNIVERSAL BLAZE,陽明閃耀,B Avdulla,艾道拿,134,1089,9,J Size,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+5,2024/12/15,6,GLUCK RACER,好運寶馬,K Teetan,田泰安,133,1148,3,W K Mo,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+6,2024/12/15,7,HOSS,勝神威,J McDonald,麥道朗,132,1117,5,W Y So,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+7,2024/12/15,8,FAMILY FORTUNE,富裕君子,H Bowman,布文,131,992,13,C Fownes,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+8,2024/12/15,9,SO AWESOME,進優自在,C Y Ho,何澤堯,130,1121,2,K L Man,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+9,2024/12/15,10,PODIUM,焦點,M F Poon,潘明輝 (-2),129,1060,14,D Eustace,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+10,2024/12/15,11,DOUBLE SHOW,飛躍凱旋,L Hewitson,希威森,125,1223,11,D J Whyte,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+11,2024/12/15,12,MANYTHANKS FOREVER,常常感恩,A Atzeni,艾兆禮,123,1098,4,W Y So,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+12,2024/12/15,13,TELECOM BULLET,電訊子彈,Y L Chung,鍾易禮 (-3),119,1095,7,Y S Tsui,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
+13,2024/12/15,14,SUNNY SHINES,陽光燦爛,M L Yeung,楊明綸,115,1103,6,D Eustace,10,Class 5,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,13:00
