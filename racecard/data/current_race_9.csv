@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/12/15,1,SWIFT ASCEND,駿步騰飛,J McDonald,麥道朗,135,1039,2,D Eustace,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-1,2024/12/15,2,KA YING VICTORY,嘉應獎昇,A Badel,巴度,132,1259,10,D J Hall,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-2,2024/12/15,3,AERIS NOVA,風再起時,H Bowman,布文,128,1263,7,T P Yung,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-3,2024/12/15,4,AWESOME TREASURE,佳運發,P N Wong,黃寶妮 (-10),126,1150,5,D A Hayes,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-4,2024/12/15,5,JOYFUL HUNTER,歡樂至寶,L Hewitson,希威森,125,1188,3,K W Lui,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-5,2024/12/15,6,SUPER INFINITY,河好運,Z Purton,潘頓,124,1141,11,M Newnham,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-6,2024/12/15,7,MAJESTIC EXPRESS,英勇快車,B Avdulla,艾道拿,123,1226,1,J Size,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-7,2024/12/15,8,ENDUED,安都,C Y Ho,何澤堯,122,1184,12,J Richards,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-8,2024/12/15,9,LUCKY ARCHANGEL,幸運旅程,M F Poon,潘明輝 (-2),122,1197,6,F C Lor,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-9,2024/12/15,10,CHARMING BABE,輕功猛男,K Teetan,田泰安,121,1116,8,P F Yiu,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-10,2024/12/15,11,GOLDEN LUCK,金運來,A Atzeni,艾兆禮,118,1112,9,K L Man,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
-11,2024/12/15,12,MEOWTH,喵喵怪,M Chadwick,蔡明紹,118,1103,4,W K Mo,10,Class 3,1200,Sha Tin:,"TURF - ""C+3"" Course",Good,17:15
+0,2024/12/22,1,SUPERB BOY,巴閉哥,A Pouchin,貝知仁,135,1130,5,K W Lui,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+1,2024/12/22,2,LUCY IN THE SKY,鑽石星空,Z Purton,潘頓,134,1207,11,Y S Tsui,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+2,2024/12/22,3,JOHANNES BRAHMS,玩笑,J McDonald,麥道朗,131,1177,2,P C Ng,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+3,2024/12/22,4,BEAUTY CRESCENT,同樣美麗,B Avdulla,艾道拿,129,1078,3,A S Cruz,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+4,2024/12/22,5,KEMPES,肯佩斯,H Bowman,布文,127,1115,10,D J Hall,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+5,2024/12/22,6,EASON,伊臣,A Badel,巴度,126,1168,8,P F Yiu,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+6,2024/12/22,7,BUNDLE AWARD,有目共賞,B Thompson,湯普新,123,1093,13,J Size,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+7,2024/12/22,8,STORMI,翠兒威威,C L Chau,周俊樂 (-2),123,1100,14,T P Yung,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+8,2024/12/22,9,BLESSED NATION,福祐神州,M L Yeung,楊明綸,121,1125,4,D J Whyte,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+9,2024/12/22,10,SMART TRIO,常多笑,M F Poon,潘明輝 (-2),121,1033,9,C W Chang,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+10,2024/12/22,11,GLORIOUS SUCCESS,本領輝煌,A Atzeni,艾兆禮,119,1096,1,D Eustace,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+11,2024/12/22,12,CASA ROCHESTER,領航天子,L Hewitson,希威森,118,950,7,M Newnham,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+12,2024/12/22,13,FANTASTIC FUN,凡凡有餘,H Bentley,班德禮,116,1200,6,C Fownes,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
+13,2024/12/22,14,KA YING SUPERB,嘉應巨昇,M Chadwick,蔡明紹,116,1050,12,W K Mo,10,Class 3,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,17:15
