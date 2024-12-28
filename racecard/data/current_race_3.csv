@@ -1,13 +1,11 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/12/26,1,NATURAL STORM,自然力量,A Hamelin,賀銘年,132,1140,2,P F Yiu,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
-1,2024/12/26,2,CALIFORNIA VOCE,加州偟者,B Avdulla,艾道拿,130,1091,1,A S Cruz,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
-2,2024/12/26,3,ROCKET SPADE,黑桃火箭,H Bowman,布文,126,1153,8,C Fownes,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
-3,2024/12/26,4,"SO WE SING
-(Scratched)","有誰共鳴
-(退出)",-,-,-,-,-,-,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
-4,2024/12/26,5,NOISY BOY,優才,Z Purton,潘頓,125,1067,7,C H Yip,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
-5,2024/12/26,6,FRANTANCK,手到再來,L Hewitson,希威森,124,1172,4,P C Ng,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
-6,2024/12/26,7,STELLAR GRANDE,志敏將星,L Ferraris,霍宏聲,121,1067,3,D Eustace,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
-7,2024/12/26,8,SHARPEN BRIGHT,一支箭,M F Poon,潘明輝,120,1042,6,D J Hall,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
-8,2024/12/26,9,SIMPLE HEDGE,精算謀略,A Badel,巴度,120,1159,9,J Size,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
-9,2024/12/26,10,WINNING STEPS,逐步贏,A Atzeni,艾兆禮,120,1159,5,P C Ng,10,Class 3,2200,Happy Valley:,"TURF - ""C+3"" Course",Good,19:10
+0,2024/12/29,1,SENOR TOBA,多巴先生,H Bowman,布文,135,1189,5,C Fownes,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
+1,2024/12/29,2,MONEY CATCHER,發財先鋒,M Chadwick,蔡明紹,133,1150,1,F C Lor,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
+2,2024/12/29,3,ATULLIBIGEAL,增有,B Avdulla,艾道拿,129,1076,7,D J Hall,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
+3,2024/12/29,4,AWESOME FLUKE,非惟僥倖,A Atzeni,艾兆禮,124,1179,6,P F Yiu,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
+4,2024/12/29,5,ROMANTIC THOR,浪漫戰神,A Pouchin,貝知仁,124,1104,8,C S Shum,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
+5,2024/12/29,6,THE BEST PEACH,桃花雲,B Thompson,湯普新,124,1063,9,A S Cruz,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
+6,2024/12/29,7,WINNING DRAGON,又龍串鳳,A Badel,巴度,124,1062,4,A S Cruz,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
+7,2024/12/29,8,STAR CONTACT,久久為攻,L Hewitson,希威森,122,1197,3,D A Hayes,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
+8,2024/12/29,9,BRAVEHEARTS,愛心神駒,M F Poon,潘明輝,118,1101,2,M Newnham,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
+9,2024/12/29,10,NAVAL FORCE,恒之有道,K Teetan,田泰安,118,1020,10,P C Ng,10,Class 2,2000,Sha Tin:,"TURF - ""B+2"" Course",Good,14:00
