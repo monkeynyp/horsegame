@@ -934,15 +934,7 @@ def lotto_trio(request):
      diff = 0
      largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
      print("largest Draw:",largest_draw)
-     hist_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')
-     # Loop through the records to find the first two distinct ones 
-     for i, hist_record in enumerate(hist_records): 
-                if record1 is None: 
-                    record1 = hist_record 
-                elif record2 is None: 
-                    if set([record1.No1, record1.No2, record1.No3]).isdisjoint([hist_record.No1, hist_record.No2, hist_record.No3]): 
-                        record2 =hist_record
-                        break
+
      if request.method == 'POST':
         form = LottoTrioForm(request.POST)
         if form.is_valid():
@@ -975,7 +967,7 @@ def lotto_trio(request):
                                 'Diff_days': diff
                             }
                         )
-            #hist_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')
+            hist_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')
 
             # Loop through the records to find the first two distinct ones 
             for i, hist_record in enumerate(hist_records): 
@@ -988,6 +980,15 @@ def lotto_trio(request):
      
      else:
         form = LottoTrioForm()
+        hist_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')
+     # Loop through the records to find the first two distinct ones 
+        for i, hist_record in enumerate(hist_records): 
+                if record1 is None: 
+                    record1 = hist_record 
+                elif record2 is None: 
+                    if set([record1.No1, record1.No2, record1.No3]).isdisjoint([hist_record.No1, hist_record.No2, hist_record.No3]): 
+                        record2 =hist_record
+                        break
     
      return render(request, 'lotto_trio.html', {'form': form, 'diff':diff, 'result':record, 'hist':hist_records, 'record1':record1, 'record2':record2})
 
