@@ -918,63 +918,14 @@ def lotto_test(request):
     
      return render(request, 'lotto_test.html', {'form': form, 'results': results, 'total_records': total_records})
 
-def lotto_test_tw(request):
-     user_language = 'tw'  # or
-     translation.activate(user_language)
 
-     request.session[settings.LANGUAGE_COOKIE_NAME] = user_language
-     results = None
-     total_records = 0
-     if request.method == 'POST':
-        form = LottoForm(request.POST)
-        if form.is_valid():
-            option_value = int(form.cleaned_data['option'])
-            numbers = [
-                form.cleaned_data['number1'],
-                form.cleaned_data['number2'],
-                form.cleaned_data['number3'],
-                form.cleaned_data['number4'],
-                form.cleaned_data['number5'],
-                form.cleaned_data['number6'],
-                form.cleaned_data['number7'],
-            ]
-            # Fetch records based on the option_value
-            records = TW_lotto_hist.objects.all().order_by('-Date')[:option_value]
-            
-            results = []
-            for record in records:
-                match_count = len(set(numbers[:6]) & {record.No1, record.No2, record.No3, record.No4, record.No5, record.No6})
-                if match_count >= 3:
-                    score = match_count
-                    if record.No7 in numbers:
-                        score += 0.5
-                    results.append({
-                        'Draw': record.Draw,
-                        'Date': record.Date,
-                        'No1': record.No1,
-                        'No2': record.No2,
-                        'No3': record.No3,
-                        'No4': record.No4,
-                        'No5': record.No5,
-                        'No6': record.No6,
-                        'No7': record.No7,
-                        'score': score,
-                    })
-            total_records = len(results)
-     else:
-        form = LottoForm()
-    
-    
-  
-    
-     return render(request, 'lotto_test_tw.html', {'form': form, 'results': results, 'total_records': total_records})
 
 def lotto_trio(request):
      user_language = 'tw'  # or
      translation.activate(user_language)
 
      request.session[settings.LANGUAGE_COOKIE_NAME] = user_language
-     print("I am here")
+
      record = None
      hist_records = None
      record1 = None 
@@ -982,6 +933,16 @@ def lotto_trio(request):
     
      diff = 0
      largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+     print("largest Draw:",largest_draw)
+     hist_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')
+     # Loop through the records to find the first two distinct ones 
+     for i, hist_record in enumerate(hist_records): 
+                if record1 is None: 
+                    record1 = hist_record 
+                elif record2 is None: 
+                    if set([record1.No1, record1.No2, record1.No3]).isdisjoint([hist_record.No1, hist_record.No2, hist_record.No3]): 
+                        record2 =hist_record
+                        break
      if request.method == 'POST':
         form = LottoTrioForm(request.POST)
         if form.is_valid():
@@ -1000,7 +961,7 @@ def lotto_trio(request):
                 Q(No1=number_list[2]) | Q(No2=number_list[2]) | Q(No3=number_list[2]) | Q(No4=number_list[2]) | Q(No5=number_list[2]) | Q(No6=number_list[2]) | Q(No7=number_list[2])
             )
 
-            record = Marksix_hist.objects.filter(condition).distinct().first()
+            record = Marksix_hist.objects.filter(condition).distinct().last()
             if record:
                 diff = calculate_days_difference(record.Date)
 
@@ -1014,7 +975,7 @@ def lotto_trio(request):
                                 'Diff_days': diff
                             }
                         )
-            hist_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')
+            #hist_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')
 
             # Loop through the records to find the first two distinct ones 
             for i, hist_record in enumerate(hist_records): 
