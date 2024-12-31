@@ -1,15 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/12/29,1,BALLISTIC WIN,極速贏,E C W Wong,黃智弘 (-7),134,1200,5,T P Yung,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-1,2024/12/29,2,THE ABSOLUTE,定數,L Ferraris,霍宏聲,130,1140,9,K H Ting,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-2,2024/12/29,3,PANDA,黑白,A Pouchin,貝知仁,129,1077,6,C H Yip,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-3,2024/12/29,4,DRAGON SUNRISE,龍又生,K De Melo,董明朗,127,1007,3,K W Lui,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-4,2024/12/29,5,FORERUNNER,博愛先鋒,H Bowman,布文,127,1026,13,W K Mo,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-5,2024/12/29,6,NOT USUAL DRAGON,非凡龍駒,A Hamelin,賀銘年,127,1262,1,J Richards,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-6,2024/12/29,7,QUICK QUICK WIN,快步向前,P N Wong,黃寶妮 (-10),127,1087,11,P C Ng,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-7,2024/12/29,8,STRATHPEFFER,龍城強將,L Hewitson,希威森,126,1025,12,D J Whyte,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-8,2024/12/29,9,MY FLYING ANGEL,美神來,A Atzeni,艾兆禮,125,1073,10,F C Lor,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-9,2024/12/29,10,CARRYON SMILING,始終如一,M L Yeung,楊明綸,123,1101,14,W Y So,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-10,2024/12/29,11,DRAGON FOUR SEAS,騰龍四海,Z Purton,潘頓,121,1190,4,K L Man,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-11,2024/12/29,12,STRONGEST BOY,武林至尊,B Thompson,湯普新,120,1077,8,D A Hayes,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-12,2024/12/29,13,RAGNARR,快樂奇兵,K Teetan,田泰安,119,1063,7,D J Hall,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
-13,2024/12/29,14,SO TREASURE,儀琪之寶,M Chadwick,蔡明紹,116,1197,2,M Newnham,10,Class 4,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,16:05
+0,2025/01/01,1,ACE WAR,祥勝將軍,P N Wong,黃寶妮 (-10),135,1102,8,D J Whyte,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+1,2025/01/01,2,VOLCANIC SPARK,風火恆雲,A Pouchin,貝知仁,134,1090,10,P F Yiu,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+2,2025/01/01,3,MATSU VICTOR,江南勇士,M L Yeung,楊明綸,133,1090,9,K W Lui,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+3,2025/01/01,4,BEAUTY ALLIANCE,一起美麗,B Avdulla,艾道拿,132,1193,14,J Size,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+4,2025/01/01,5,FLYING LUCK,昭易搵,C Y Ho,何澤堯,132,1174,7,C Fownes,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+5,2025/01/01,6,INTREPID WINNER,多多勇駒,B Thompson,湯普新,130,1037,1,C W Chang,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+6,2025/01/01,7,LEGEND ST PAUL'S,保羅傳奇,Z Purton,潘頓,130,1229,12,F C Lor,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+7,2025/01/01,8,CELTIC TIMES,佳福駒,M Chadwick,蔡明紹,126,1239,13,W K Mo,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+8,2025/01/01,9,SMILING COLLECTOR,聚風雲,H Bentley,班德禮,126,1136,6,K H Ting,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+9,2025/01/01,10,HEALTHY GOLF,健康高球,L Ferraris,霍宏聲,125,1110,2,M Newnham,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+10,2025/01/01,11,HAILTOTHEVICTORS,光輝歲月,L Hewitson,希威森,124,1084,5,D Eustace,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+11,2025/01/01,12,ONLY U,銳一,A Atzeni,艾兆禮,124,1088,3,T P Yung,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+12,2025/01/01,13,EN PERFECTO,完美演繹,A Badel,巴度,121,1073,11,C S Shum,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40
+13,2025/01/01,14,FIGHT TIME,凱旋幸運,M F Poon,潘明輝,116,1064,4,D J Hall,11,Class 4,1600,Sha Tin:,"TURF - ""C"" Course",Good,15:40

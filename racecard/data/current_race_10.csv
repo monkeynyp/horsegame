@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2024/12/29,1,TOURBILLON PRINCE,飛輪步,Z Purton,潘頓,135,1166,13,T P Yung,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-1,2024/12/29,2,CHARMING LEGEND,川河帥駒,H Bowman,布文,132,1241,7,C S Shum,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-2,2024/12/29,3,BEAUTY CRESCENT,同樣美麗,B Avdulla,艾道拿,131,1081,5,A S Cruz,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-3,2024/12/29,4,LO RIDER,平凡騎士,M L Yeung,楊明綸,130,1067,2,C Fownes,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-4,2024/12/29,5,TAMRA BLITZ,宜春火力,A Pouchin,貝知仁,130,1137,11,D J Whyte,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-5,2024/12/29,6,WINNING GOLD,金勝名駒,K De Melo,董明朗,128,1050,14,W Y So,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-6,2024/12/29,7,MARKWIN,但求開心,M Chadwick,蔡明紹,127,1219,6,W K Mo,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-7,2024/12/29,8,ILLUMINOUS,明亮天下,K Teetan,田泰安,125,995,12,F C Lor,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-8,2024/12/29,9,SOLID IMPACT,實力派,A Badel,巴度,125,1054,8,D J Hall,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-9,2024/12/29,10,BEAUTY VIVA,爆出美麗,L Hewitson,希威森,124,1132,10,P C Ng,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-10,2024/12/29,11,STORM RIDER,風雲武士,B Thompson,湯普新,124,1099,3,D A Hayes,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-11,2024/12/29,12,EXCELLENCE VALUE,星價,L Ferraris,霍宏聲,121,1236,1,M Newnham,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-12,2024/12/29,13,WINNING WING,天將龍駒,H T Mo,巫顯東 (-2),120,1172,4,K W Lui,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
-13,2024/12/29,14,LESLIE,風繼續吹,P N Wong,黃寶妮 (-10),118,1177,9,C W Chang,10,Class 3,1400,Sha Tin:,"TURF - ""B+2"" Course",Good,17:45
+0,2025/01/01,1,DANCING CODE,舞林密碼,E C W Wong,黃智弘 (-7),135,1040,1,C Fownes,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+1,2025/01/01,2,KING MILES,安康萬里,C Y Ho,何澤堯,129,1166,12,K W Lui,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+2,2025/01/01,3,MATTERS MOST,關鍵所在,H Bentley,班德禮,124,1133,4,C S Shum,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+3,2025/01/01,4,PRAWNS ELEVEN,多利彩駒,M F Poon,潘明輝,124,1088,7,M Newnham,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+4,2025/01/01,5,ROMANTIC SON,友愛心得,Z Purton,潘頓,123,1180,10,D A Hayes,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+5,2025/01/01,6,ENDUED,安都,B Avdulla,艾道拿,121,1174,6,J Richards,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+6,2025/01/01,7,KNOW AT HEART,心裡有數,M Chadwick,蔡明紹,121,1055,5,W Y So,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+7,2025/01/01,8,TELL ME MORE,凡喜,K Teetan,田泰安,121,1222,2,P C Ng,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+8,2025/01/01,9,UP WITH CHARM,友運行,A Pouchin,貝知仁,121,1026,3,D J Whyte,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+9,2025/01/01,10,LIFELINE EXPRESS,健康快車,A Atzeni,艾兆禮,120,1131,11,J Size,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+10,2025/01/01,11,BEAUTY GLORY,美麗邂逅,Y L Chung,鍾易禮 (-3),119,1135,8,A S Cruz,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
+11,2025/01/01,12,LUCKY COMBINATION,幸運夥伴,M L Yeung,楊明綸,119,1195,9,F C Lor,11,Class 3,1200,Sha Tin:,"TURF - ""C"" Course",Good,17:20
