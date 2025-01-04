@@ -1,15 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2025/01/01,1,GO GO GO,上市魅力,Z Purton,潘頓,135,1128,14,W Y So,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-1,2025/01/01,2,SMASHING EXPRESS,駿彩飛馳,A Hamelin,賀銘年,135,1059,1,J Size,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-2,2025/01/01,3,GLUCK RACER,好運寶馬,H Bentley,班德禮,132,1151,2,W K Mo,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-3,2025/01/01,4,MARIO,馬利奧,M L Yeung,楊明綸,132,1174,13,D J Hall,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-4,2025/01/01,5,ON THE LASH,齊歡最樂,A Atzeni,艾兆禮,131,1210,12,P C Ng,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-5,2025/01/01,6,SUPER HONG KONG,香港精神,K Teetan,田泰安,130,1043,11,C H Yip,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-6,2025/01/01,7,CHILLI BABA,烈火駿馬,L Ferraris,霍宏聲,128,1188,7,P F Yiu,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-7,2025/01/01,8,FAMILY FORTUNE,富裕君子,E C W Wong,黃智弘 (-7),128,976,9,C Fownes,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-8,2025/01/01,9,NICE BIRDIE,樂捉鳥,B Avdulla,艾道拿,128,1230,6,C S Shum,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-9,2025/01/01,10,CHATEAU LE PECHE,永勝金駒,M F Poon,潘明輝,127,1045,10,K H Ting,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-10,2025/01/01,11,GOLDEN FAIRY,皇金風速,A Badel,巴度,125,1037,4,W Y So,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-11,2025/01/01,12,TURTLE AGAIN,滿載歸來,H Bowman,布文,125,1211,3,T P Yung,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-12,2025/01/01,13,RED MAVERICK,雄昇勇士,Y L Chung,鍾易禮 (-3),117,1230,5,Y S Tsui,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
-13,2025/01/01,14,JOYFUL CHAMPION,喜悅一生,M Chadwick,蔡明紹,115,1182,8,C W Chang,11,Class 5,1800,Sha Tin:,"TURF - ""C"" Course",Good,13:00
+0,2025/01/05,1,SUMMIT CHEERS,攻頂,P N Wong,黃寶妮 (-10),132,1210,1,D J Hall,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+1,2025/01/05,2,ALLURING LAOS,美麗老撾,K C Leung,梁家俊,131,1167,6,W K Mo,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+2,2025/01/05,3,MULTISUPER,萬事快,L Hewitson,希威森,131,1169,12,T P Yung,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+3,2025/01/05,4,DO YOUR PART,做好自己,A Pouchin,貝知仁,130,1016,3,K W Lui,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+4,2025/01/05,5,ENJOY GOLF,快樂高球,H Bowman,布文,129,1174,10,F C Lor,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+5,2025/01/05,6,CIRCUIT JOLLY,綫路盈樂,Z Purton,潘頓,126,1129,7,D A Hayes,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+6,2025/01/05,7,AMAZING GALAXY,銀河勇士,L Ferraris,霍宏聲,124,1097,11,K H Ting,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+7,2025/01/05,8,BEAUTY FORMULA,實在美麗,A Badel,巴度,124,1234,2,A S Cruz,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+8,2025/01/05,9,CLUB ACE,勁者,B Avdulla,艾道拿,124,1145,4,J Size,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+9,2025/01/05,10,SUNNY Q,新力驕,K De Melo,董明朗,124,1158,9,W Y So,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+10,2025/01/05,11,SHINY RAPIDASH,宇上龍騰,A Atzeni,艾兆禮,122,1124,13,P C Ng,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+11,2025/01/05,12,SONIC PURSUIT,大千絕塵,C Y Ho,何澤堯,122,1195,8,J Richards,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+12,2025/01/05,13,MACANESE MASTER,銀亮濠俠,Y L Chung,鍾易禮 (-3),121,1061,5,C H Yip,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
+13,2025/01/05,14,BRAVE OF FRIENDS,友盈勇者,H Bentley,班德禮,120,1039,14,D J Whyte,10,Class 4,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,13:30
