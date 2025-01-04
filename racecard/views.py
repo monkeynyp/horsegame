@@ -883,17 +883,9 @@ def lotto_trio(request):
      record2 = None 
     
      diff = 0
-     largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+     largest_draw = Marksix_hist.objects.aggregate(models.Max('Draw'))['Draw__max']
      print("largest Draw:",largest_draw)
-# ...existing code...
 
-# Fetch the first 20 records from LottoTrioSearch ordered by Diff_days in descending order
-     top_20_records = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Diff_days')[:20]
-     print(top_20_records)
-     # Extract No1, No2, No3 into an array of number lists
-     number_lists = [[record.No1, record.No2, record.No3] for record in top_20_records]
-     print("Number Lists:", number_lists)
-# ...existing code...
      if request.method == 'POST':
         form = LottoTrioForm(request.POST)
         if form.is_valid():

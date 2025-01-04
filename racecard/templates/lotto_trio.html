@@ -31,12 +31,28 @@
 </style>
 </head>
 <div class="w3-container w3-padding-16 w3-margin">
-    <h2>建立你冷門組合</h2>
-    <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
-        <p class=" w3-large w3-serif">
-        <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
-        六合彩是一個隨機的遊戲，所以長遠來講，每個號碼，和每個組合出現的機率是一樣的。如果有個組合很久没有出現，你可以試試看下期會否出現，從而達到機率一樣的現象。Monkey推出新的六合彩功能，幫助大家測試號碼組合上次出現的時間。而三個數字為一組，因為三個號碼是中奬的最少數字。你可以試下不同的組合，組成一個超冷門的組合。同時Monkey也會展示其他朋友的搜索歷史，等大家唔使下下自己來。可參考我的更新YouTube Video <a href="https://youtu.be/xOSfc9ZhXVw"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a>祝大家好運👍</i></a></p>
-      </div>
+    <div class="w3-container w3-card-4 w3-margin">
+        <h2 class="w3-center w3-light-blue">今期值搏號碼</h2>
+        <div class="w3-row-padding w3-margin-top"> 
+            {% if record1 %} <div class="w3-container w3-margin-bottom">
+                 <h4>天數: {{ record1.Diff_days }}</h4> <div class="triangle-container">
+                     <div class="triangle-row"> <img src="{% static 'no_' %}{{ record1.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> </div> 
+                     <div class="triangle-row bottom"> <img src="{% static 'no_' %}{{ record1.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
+                         <img src="{% static 'no_' %}{{ record1.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div>
+                         </div> 
+                        </div> {% endif %} 
+                        <hr>
+                        {% if record2 %} <div class="w3-container w3-margin-bottom"> 
+                             <div class="inverted-triangle-container"> <div class="inverted-triangle-row top">
+                                 <img src="{% static 'no_' %}{{ record2.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> 
+                                 <img src="{% static 'no_' %}{{ record2.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"> </div> 
+                                 <div class="inverted-triangle-row"> <img src="{% static 'no_' %}{{ record2.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div> </div> 
+                        </div> 
+                        <h4>天數: {{ record2.Diff_days }}</h4> 
+                        {% endif %} </div>
+         </div> 
+
+    <h3>尋找更多的組合</h3>
     <form class="w3-form" method="post" action="{% url 'lotto_trio' %}">
         {% csrf_token %}
         <div class="w3-section">
@@ -79,26 +95,11 @@
         </table>
         <br><br>
     {% endif %}
-        <div class="w3-container w3-card-4 w3-margin">
-            <h2 class="w3-center w3-light-blue">今期值搏號碼</h2>
-            <div class="w3-row-padding w3-margin-top"> 
-                {% if record1 %} <div class="w3-container w3-margin-bottom">
-                     <h4>天數: {{ record1.Diff_days }}</h4> <div class="triangle-container">
-                         <div class="triangle-row"> <img src="{% static 'no_' %}{{ record1.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> </div> 
-                         <div class="triangle-row bottom"> <img src="{% static 'no_' %}{{ record1.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
-                             <img src="{% static 'no_' %}{{ record1.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div>
-                             </div> 
-                            </div> {% endif %} 
-                            {% if record2 %} <div class="w3-container w3-margin-bottom"> 
-                                 <div class="inverted-triangle-container"> <div class="inverted-triangle-row top">
-                                     <img src="{% static 'no_' %}{{ record2.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> 
-                                     <img src="{% static 'no_' %}{{ record2.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"> </div> 
-                                     <div class="inverted-triangle-row"> <img src="{% static 'no_' %}{{ record2.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div> </div> 
-                            </div> 
-                            <h4>天數: {{ record2.Diff_days }}</h4> 
-                            {% endif %} </div>
-             </div> 
-            
+        <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
+        <p class=" w3-large w3-serif">
+        <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+        六合彩是一個隨機的遊戲，所以長遠來講，每個號碼，和每個組合出現的機率是一樣的。如果有個組合很久没有出現，你可以試試看下期會否出現，從而達到機率一樣的現象。Monkey推出新的六合彩功能，幫助大家測試號碼組合上次出現的時間。而三個數字為一組，因為三個號碼是中奬的最少數字。你可以試下不同的組合，組成一個超冷門的組合。同時Monkey也會展示其他朋友的搜索歷史，等大家唔使下下自己來。可參考我的更新YouTube Video <a href="https://youtu.be/xOSfc9ZhXVw"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a>祝大家好運👍</i></a></p>
+      </div>
             <h2 class="w3-center">形態搜索記錄</h2>
         
             {% for record in hist %}

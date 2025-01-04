@@ -68,7 +68,6 @@ class Marksix_hist(models.Model):
     No5 = models.IntegerField()
     No6 = models.IntegerField()
     No7 = models.IntegerField()
-    NextDraw_date = models.DateField(null=True)
 
     def __str__(self):
         return f"{self.Draw} - {self.Date}"
@@ -83,7 +82,6 @@ class TW_lotto_hist(models.Model):
     No5 = models.IntegerField()
     No6 = models.IntegerField()
     No7 = models.IntegerField()
-    NextDraw_date = models.DateField(null=True)
 
     def __str__(self):
         return f"{self.Draw} - {self.Date}"
