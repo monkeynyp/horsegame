@@ -967,7 +967,7 @@ def lotto_trio(request):
                     if set([record1.No1, record1.No2, record1.No3]).isdisjoint([hist_record.No1, hist_record.No2, hist_record.No3]): 
                         record2 =hist_record
                         break
-                    hist_records_freq = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Freq')
+        hist_records_freq = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Freq')
             # Loop through the records to find the first two distinct ones 
         for i, hist_record_freq in enumerate(hist_records_freq): 
             if record1_freq is None: 
