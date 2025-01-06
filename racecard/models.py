@@ -110,7 +110,8 @@ class LottoTrioSearch(models.Model):
     No2 = models.IntegerField()
     No3 = models.IntegerField()
     Diff_days = models.IntegerField(default=0)
-    Freq = models.IntegerField(default=0)
+    Freq= models.IntegerField(default=0, null=True)
+
 
     def __str__(self):
         return f"Draw: {self.Draw}, Search Date: {self.Search_date}"
