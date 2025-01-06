@@ -47,10 +47,10 @@ class Command(BaseCommand):
             self.stdout.write(self.style.ERROR(f'Error parsing input: {e}'))
         except Exception as e:
             self.stdout.write(self.style.ERROR(f'An unexpected error occurred: {e}'))
-
+# Find the oldest combination
 # Step 1: Fetch the first 20 records from LottoTrioSearch ordered by Diff_days in descending order
         
-        top_20_records = LottoTrioSearch.objects.order_by('-Diff_days')[:20]
+        top_20_records = LottoTrioSearch.objects.order_by('-Diff_days')[:50]
         print(top_20_records)
 
         # Extract No1, No2, No3 into an array of number lists
@@ -68,6 +68,7 @@ class Command(BaseCommand):
             )
 
             record = Marksix_hist.objects.filter(condition).distinct().last()
+            freq = Marksix_hist.objects.filter(condition).count()
             if record:
                 diff = calculate_days_difference(record.Date)
 
@@ -76,6 +77,7 @@ class Command(BaseCommand):
                     No1=number_list[0],
                     No2=number_list[1],
                     No3=number_list[2],
+                    Freq=freq,
                     defaults={
                         'Search_date': datetime.now().date(),
                         'Diff_days': diff

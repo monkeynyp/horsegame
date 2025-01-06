@@ -31,26 +31,116 @@
 </style>
 </head>
 <div class="w3-container w3-padding-16 w3-margin">
-    <div class="w3-container w3-card-4 w3-margin">
-        <h2 class="w3-center w3-light-blue">今期值搏號碼</h2>
-        <div class="w3-row-padding w3-margin-top"> 
-            {% if record1 %} <div class="w3-container w3-margin-bottom">
-                 <h4>天數: {{ record1.Diff_days }}</h4> <div class="triangle-container">
-                     <div class="triangle-row"> <img src="{% static 'no_' %}{{ record1.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> </div> 
-                     <div class="triangle-row bottom"> <img src="{% static 'no_' %}{{ record1.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
-                         <img src="{% static 'no_' %}{{ record1.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div>
-                         </div> 
-                        </div> {% endif %} 
-                        <hr>
-                        {% if record2 %} <div class="w3-container w3-margin-bottom"> 
-                             <div class="inverted-triangle-container"> <div class="inverted-triangle-row top">
-                                 <img src="{% static 'no_' %}{{ record2.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> 
-                                 <img src="{% static 'no_' %}{{ record2.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"> </div> 
-                                 <div class="inverted-triangle-row"> <img src="{% static 'no_' %}{{ record2.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div> </div> 
-                        </div> 
-                        <h4>天數: {{ record2.Diff_days }}</h4> 
-                        {% endif %} </div>
-         </div> 
+        <h3 class="w3-center w3-light-blue">今期值搏號碼</h3>
+        
+<div class="w3-row-padding w3-margin-top">
+    <div class="w3-bar w3-teal">
+        <button class="w3-bar-item w3-button tablink w3-red" onclick="openTab(event, 'Tab1')">🕓相隔最久</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Tab2')">🔥次數最多</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openTab(event, 'Tab3')">🥶次數最少</button>
+    </div>
+
+    <div id="Tab1" class="w3-container w3-border tab-content" style="display:block">
+        {% if record1 %}
+        <div class="w3-container w3-margin-bottom">
+            <h6>天數: {{ record1.Diff_days }}</h6>
+            <div class="triangle-container">
+                <div class="triangle-row">
+                    <img src="{% static 'no_' %}{{ record1.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1">
+                </div>
+                <div class="triangle-row bottom">
+                    <img src="{% static 'no_' %}{{ record1.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
+                    <img src="{% static 'no_' %}{{ record1.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3">
+                </div>
+            </div>
+        {% endif %}
+        {% if record2 %} <div class="w3-container w3-margin-bottom"> 
+            <div class="inverted-triangle-container"> <div class="inverted-triangle-row top">
+                <img src="{% static 'no_' %}{{ record2.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1"> 
+                <img src="{% static 'no_' %}{{ record2.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2"> </div> 
+                <div class="inverted-triangle-row"> <img src="{% static 'no_' %}{{ record2.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3"> </div> </div> 
+       </div> 
+       <h6>天數: {{ record2.Diff_days }}</h6> 
+       {% endif %} </div>
+    </div>
+
+    <div id="Tab2" class="w3-container w3-border tab-content" style="display:none">
+        {% if record1_freq %}
+        <div class="w3-container w3-margin-bottom">
+            <h6>次數: {{ record1_freq.Freq }}</h6>
+            <div class="triangle-container">
+                <div class="triangle-row">
+                    <img src="{% static 'no_' %}{{ record1_freq.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1">
+                </div>
+                <div class="triangle-row bottom">
+                    <img src="{% static 'no_' %}{{ record1_freq.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
+                    <img src="{% static 'no_' %}{{ record1_freq.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3">
+                </div>
+            </div>
+        {% endif %}
+        {% if record2_freq %}
+        <div class="w3-container w3-margin-bottom">
+            <div class="inverted-triangle-container">
+                <div class="inverted-triangle-row top">
+                    <img src="{% static 'no_' %}{{ record2_freq.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1">
+                    <img src="{% static 'no_' %}{{ record2_freq.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
+                </div>
+                <div class="inverted-triangle-row">
+                    <img src="{% static 'no_' %}{{ record2_freq.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3">
+                </div>
+            </div>
+        </div>
+        <h6>次數: {{ record2_freq.Freq }}</h6>
+        {% endif %}
+    </div>
+</div>
+<div id="Tab3" class="w3-container w3-border tab-content" style="display:none">
+    {% if record1_cold %}
+    <div class="w3-container w3-margin-bottom">
+        <h6>次數: {{ record1_cold.Freq }}</h6>
+        <div class="triangle-container">
+            <div class="triangle-row">
+                <img src="{% static 'no_' %}{{ record1_cold.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1">
+            </div>
+            <div class="triangle-row bottom">
+                <img src="{% static 'no_' %}{{ record1_cold.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
+                <img src="{% static 'no_' %}{{ record1_cold.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3">
+            </div>
+        </div>
+
+    {% endif %}
+    {% if record2_cold %}
+        <div class="inverted-triangle-container">
+            <div class="inverted-triangle-row top">
+                <img src="{% static 'no_' %}{{ record2_cold.No1|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No1">
+                <img src="{% static 'no_' %}{{ record2_cold.No2|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No2">
+            </div>
+            <div class="inverted-triangle-row">
+                <img src="{% static 'no_' %}{{ record2_cold.No3|stringformat:'d' }}.gif?CV=L4.07R2a" alt="No3">
+            </div>
+        </div>
+   
+    <h6>次數: {{ record2_cold.Freq }}</h6>
+    {% endif %}
+    </div>
+</div>
+
+
+<script>
+function openTab(evt, tabName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("tab-content");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " w3-red";
+}
+</script>
 
     <h3>尋找更多的組合</h3>
     <form class="w3-form" method="post" action="{% url 'lotto_trio' %}">
@@ -100,13 +190,15 @@
         <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
         六合彩是一個隨機的遊戲，所以長遠來講，每個號碼，和每個組合出現的機率是一樣的。如果有個組合很久没有出現，你可以試試看下期會否出現，從而達到機率一樣的現象。Monkey推出新的六合彩功能，幫助大家測試號碼組合上次出現的時間。而三個數字為一組，因為三個號碼是中奬的最少數字。你可以試下不同的組合，組成一個超冷門的組合。同時Monkey也會展示其他朋友的搜索歷史，等大家唔使下下自己來。可參考我的更新YouTube Video <a href="https://youtu.be/xOSfc9ZhXVw"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a>祝大家好運👍</i></a></p>
       </div>
+      <script src="//servedby.studads.com/ads/ads.php?t=MjAwODE7MTM1Mzg7aG9yaXpvbnRhbC5iYW5uZXI=&index=1"></script>
             <h2 class="w3-center">形態搜索記錄</h2>
         
             {% for record in hist %}
+    
             <div class="w3-quarter w3-margin-bottom">
                 <div class="w3-card-4 w3-margin w3-padding">
                     <header class="w3-container w3-light-grey">
-                        <h5>最近出現: {{ record.Diff_days }}天前</h5>
+                        <h7>相隔: {{ record.Diff_days }}天前 | &nbsp; 次數: {{ record.Freq }} </h7>
                     </header>
                     <div class="w3-container"> 
                         <div class="triangle-container"> 
@@ -129,7 +221,7 @@
 <footer class="w3-container w3-padding-32 w3-center w3-light-grey w3-margin-top">
     <h4>其他🎱六合彩功能</h4>
     <div class="w3-bar w3-light-grey">
-        <a href="/lotto_trio" class="w3-bar-item w3-button w3-hover-light-blue">三角數字</a>
+        <a href="/lotto_trio" class="w3-bar-item w3-button w3-hover-light-blue">值搏號碼</a>
         <a href="/lottory_predict/?id=1" class="w3-bar-item w3-button w3-hover-light-blue">走勢分析</a>
         <a href="/ichi_lotto/" class="w3-bar-item w3-button w3-hover-light-blue">易卦預測</a>
         <a href="/lotto_must_win/1/" class="w3-bar-item w3-button w3-hover-light-blue">必中組合</a>

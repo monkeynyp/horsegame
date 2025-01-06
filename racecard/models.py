@@ -109,7 +109,8 @@ class LottoTrioSearch(models.Model):
     No1 = models.IntegerField()
     No2 = models.IntegerField()
     No3 = models.IntegerField()
-    Diff_days = models.IntegerField()
+    Diff_days = models.IntegerField(default=0)
+    Freq = models.IntegerField(default=0)
 
     def __str__(self):
         return f"Draw: {self.Draw}, Search Date: {self.Search_date}"
@@ -120,6 +121,7 @@ class HorseInfo(models.Model):
     band_no = models.CharField(max_length=20, unique=True)
     rating = models.IntegerField()
     rate_change = models.IntegerField()
+
 
     def __str__(self):
         return self.horse_name

@@ -881,6 +881,11 @@ def lotto_trio(request):
      hist_records = None
      record1 = None 
      record2 = None 
+     record1_freq = None
+     record2_freq = None
+     record1_cold = None
+     record2_cold = None
+     
     
      diff = 0
      largest_draw = Marksix_hist.objects.aggregate(models.Max('Draw'))['Draw__max']
@@ -905,6 +910,8 @@ def lotto_trio(request):
             )
 
             record = Marksix_hist.objects.filter(condition).distinct().last()
+            freq = Marksix_hist.objects.filter(condition).count()
+            print("Freq:",freq)
             if record:
                 diff = calculate_days_difference(record.Date)
 
@@ -913,6 +920,7 @@ def lotto_trio(request):
                             No1=number_list[0],
                             No2=number_list[1],
                             No3=number_list[2],
+                            Freq = freq,
                             defaults={
                                 'Search_date': datetime.now().date(),
                                 'Diff_days': diff
@@ -928,6 +936,25 @@ def lotto_trio(request):
                     if set([record1.No1, record1.No2, record1.No3]).isdisjoint([hist_record.No1, hist_record.No2, hist_record.No3]): 
                         record2 =hist_record
                         break
+            hist_records_freq = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Freq')
+            # Loop through the records to find the first two distinct ones 
+            for i, hist_record_freq in enumerate(hist_records_freq): 
+                if record1_freq is None: 
+                    record1_freq = hist_record_freq 
+                elif record2_freq is None: 
+                    if set([record1_freq.No1, record1_freq.No2, record1_freq.No3]).isdisjoint([hist_record_freq.No1, hist_record_freq.No2, hist_record_freq.No3]): 
+                        record2_freq =hist_record_freq
+                        break
+            
+            hist_records_cold = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('Freq')
+            # Loop through the records to find the first two distinct ones 
+            for i, hist_record_cold in enumerate(hist_records_cold): 
+                if record1_cold is None: 
+                    record1_cold = hist_record_cold 
+                elif record2_cold is None: 
+                    if set([record1_cold.No1, record1_cold.No2, record1_cold.No3]).isdisjoint([hist_record_cold.No1, hist_record_cold.No2, hist_record_cold.No3]): 
+                        record2_cold =hist_record_cold
+                        break
      
      else:
         form = LottoTrioForm()
@@ -940,8 +967,27 @@ def lotto_trio(request):
                     if set([record1.No1, record1.No2, record1.No3]).isdisjoint([hist_record.No1, hist_record.No2, hist_record.No3]): 
                         record2 =hist_record
                         break
+                    hist_records_freq = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('-Freq')
+            # Loop through the records to find the first two distinct ones 
+        for i, hist_record_freq in enumerate(hist_records_freq): 
+            if record1_freq is None: 
+                record1_freq = hist_record_freq 
+            elif record2_freq is None: 
+                if set([record1_freq.No1, record1_freq.No2, record1_freq.No3]).isdisjoint([hist_record_freq.No1, hist_record_freq.No2, hist_record_freq.No3]): 
+                    record2_freq =hist_record_freq
+                    break
+        hist_records_cold = LottoTrioSearch.objects.filter(Draw=largest_draw).order_by('Freq')
+        # Loop through the records to find the first two distinct ones 
+        for i, hist_record_cold in enumerate(hist_records_cold): 
+            if record1_cold is None: 
+                record1_cold = hist_record_cold 
+            elif record2_cold is None: 
+                if set([record1_cold.No1, record1_cold.No2, record1_cold.No3]).isdisjoint([hist_record_cold.No1, hist_record_cold.No2, hist_record_cold.No3]): 
+                    record2_cold =hist_record_cold
+                    break
+        
     
-     return render(request, 'lotto_trio.html', {'form': form, 'diff':diff, 'result':record, 'hist':hist_records, 'record1':record1, 'record2':record2})
+     return render(request, 'lotto_trio.html', {'form': form, 'diff':diff, 'result':record, 'hist':hist_records, 'record1':record1, 'record2':record2, 'record1_freq':record1_freq, 'record2_freq':record2_freq, 'record1_cold':record1_cold, 'record2_cold':record2_cold})
 
 def calculate_days_difference(record_date):
     # Convert record_date to a datetime object if it's not already
