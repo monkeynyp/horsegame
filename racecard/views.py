@@ -463,6 +463,9 @@ def privacy(request):
 def disclaimer(request):
     return render(request, 'disclaimer.html')
 
+def responsible(request):
+    return render(request, 'responsible.html')
+
 def help(request):
     return render(request, 'help.html')
 

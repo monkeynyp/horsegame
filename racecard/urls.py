@@ -24,6 +24,7 @@ urlpatterns = [
     path('logout/', user_logout, name='logout'),
     path('privacy/', views.privacy, name='privacy'),
     path('disclaimer/', views.disclaimer, name='disclaimer'),
+    path('responsible/', views.responsible, name='responsible'),
     path('like_article/<int:article_id>/', views.like_article, name='like_article'),
     path('match_chart/', views.match_chart, name='match_chart'),
     path('data_update_console/', views.data_update_console, name='data_update_console'),
