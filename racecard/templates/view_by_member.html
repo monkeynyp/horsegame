@@ -51,7 +51,12 @@
                                 <div class="w3-row-padding">
                                     {% for record in records %}
                                         <div class="w3-col s4">
-                                            <span class="w3-badge">{{ record.horse_no }}</span>&nbsp{% trans record.horse_name %}
+                                            <span class="w3-badge">{{ record.horse_no }}</span>&nbsp
+                                            {% if LANGUAGE_CODE == 'en' %}
+                                                {{ record.horse_name }}
+                                        {% elif LANGUAGE_CODE == 'tw' %}
+                                            {{ record.horse_name_cn }}
+                                        {% endif %}
                                             {% if record.hit == 1 %}
                                                 <span class="w3-badge w3-red w3-small">${{record.dividend}}</span>
                                             {% endif %}
