@@ -341,10 +341,11 @@ def racecard_vip(request):
           id = 1
      current_datetime = timezone.now()
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
-     prob_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu2_weight"+str(id)+".csv")
+     #prob_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu2_weight"+str(id)+".csv")
+     prob_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
      current_prob = pd.read_csv(prob_path)
-     current_race["Prob"] = current_prob['Values']*100
+     current_race["Prob"] = current_prob['Score']*100
 
      print(current_race)
     
@@ -355,7 +356,7 @@ def racecard_vip(request):
      print(total_race)
 
      curr_tips_by_user = (
-        UserTips.objects.filter(race_date=curr_race_date, user__username='NeuroReg')  # Current Tips Only
+        UserTips.objects.filter(race_date=curr_race_date, user__username='RanForest')  # Current Tips Only
             .values('user', 'user__groups__name')
             .annotate(
             hit_pst=Sum('hit') * 100.0 / Count('hit'),
@@ -561,7 +562,6 @@ def user_logout(request):
 #login_required
 def member(request):
      return render(request, 'member.html')
-
 
 def lottory_predict(request):
     listNo='No1'
@@ -871,8 +871,6 @@ def lotto_test(request):
   
     
      return render(request, 'lotto_test.html', {'form': form, 'results': results, 'total_records': total_records})
-
-
 
 def lotto_trio(request):
      user_language = 'tw'  # or

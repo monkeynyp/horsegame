@@ -34,11 +34,11 @@
         <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=6">6</a>
         <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=7">7</a>
         <a class="w3-button w3-large w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=8">8</a>
-        {% if current_race.iloc.2.8 > 8 %}
+        {% if total_race > 8 %}
         <a class="w3-button w3-large w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=9">9</a>
-        {% if current_race.iloc.2.8 > 9 %}
+        {% if total_race > 9 %}
           <a class="w3-button w3-large w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=10">10</a>
-          {% if current_race.iloc.2.8 > 10 %}
+          {% if total_race > 10 %}
             <a class="w3-button w3-large w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/racecard_vip/?id=11">11</a>
           {% endif %}
         {% endif %}
@@ -59,7 +59,11 @@
       {% for i, r in current_race.iterrows %}
       <tr>
         <td>{{ forloop.counter }}</td>
-        <td>{% trans r.HorseName %} </td>
+        <td>{% if LANGUAGE_CODE == 'en' %}
+          {{ r.HorseName }}
+      {% elif LANGUAGE_CODE == 'tw' %}
+          {{ r.HorseName_cn }}
+      {% endif %} </td>
         <td class="w3-hide-small">{% trans r.Jockey %}</td>
         <td>{{r.Prob|floatformat:1 }} % </td>
         <td class="w3-hide-small">{{ r.Draw }}</td>
@@ -114,7 +118,12 @@
                 {% endfor %}</h6>
               </header>
                   {% for user_tips in user_data.records %}
-                          <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp {% trans user_tips.horse_name %} &nbsp; {{ user_tips.ratio}}
+                          <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp         
+                            {% if LANGUAGE_CODE == 'en' %}
+                              {{ user_tips.horse_name }}
+                            {% elif LANGUAGE_CODE == 'tw' %}
+                                {{ user_tips.horse_name_cn }}
+                        {% endif %} &nbsp; {{ user_tips.ratio}}
                             {% if user_tips.hit == 1 %}
                             <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
                           {% endif %}
