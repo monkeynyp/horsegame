@@ -202,6 +202,9 @@ msgstr "支持MK"
 msgid "Support Monkey"
 msgstr "支持 Monkey"
 
+msgid "Professional"
+msgstr "專業模式"
+
 msgid "Selected Horses"
 msgstr "已選馬匹  名次: ① > ② > ③"
 

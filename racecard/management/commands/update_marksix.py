@@ -71,6 +71,7 @@ class Command(BaseCommand):
             freq = Marksix_hist.objects.filter(condition).count()
             if record:
                 diff = calculate_days_difference(record.Date)
+                freq = Marksix_hist.objects.filter(condition).count()
 
                 lotto_trio_search, created = LottoTrioSearch.objects.update_or_create(
                     Draw=draw,
