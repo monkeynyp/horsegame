@@ -195,6 +195,17 @@ msgstr "練馬師王"
 msgid "Score"
 msgstr "得分"
 
+msgid "Win"
+msgstr "獨贏"
+
+
+msgid "Prob"
+msgstr "機率"
+
+msgid "Expected"
+msgstr "期望值"
+
+
 #: racecard/templates/master.html:33
 msgid "Support MK"
 msgstr "支持MK"

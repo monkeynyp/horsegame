@@ -53,6 +53,9 @@
           <th>{% trans "Horse Name" %}</th>
           <th class="w3-hide-small">{% trans "Jockey" %}</th>
           <th>{% trans 'Prob' %}</th>
+          <th>{% trans "Win" %}</th>
+          <th>{% trans "Place" %}</th>
+          <th>{% trans "Expected" %}</th>
           <th  class="w3-hide-small">{% trans "Draw" %}</th>
         </tr>
       </thead>
@@ -66,8 +69,12 @@
       {% endif %} </td>
         <td class="w3-hide-small">{% trans r.Jockey %}</td>
         <td>{{r.Prob|floatformat:1 }} % </td>
+        <td>{{ r.Win }}</td>
+        <td>{{ r.Place }}</td>
+        <td>{{ r.Expected|floatformat:1}}</td>
         <td class="w3-hide-small">{{ r.Draw }}</td>
       </tr>
+
       {% endfor %}
     </table>
    

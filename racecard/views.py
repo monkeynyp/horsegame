@@ -157,7 +157,6 @@ def submit_tips(request):
         selected_horses = selected_horses.split(',') 
         # Process the horse name and jockey
         for horse_jockey in selected_horses:
-            print("test:",horse_jockey)
             horse_name, jockey_name,trainer_name,horse_name_cn = horse_jockey.split('|')
         # Now you can work with horse_name and jockey_name separately
         print(f"Horse: {horse_name}, Jockey: {jockey_name}, trainer: {trainer_name}")
@@ -343,9 +342,16 @@ def racecard_vip(request):
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      #prob_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu2_weight"+str(id)+".csv")
      prob_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran"+str(id)+".csv")
+     odds_path = os.path.join(settings.BASE_DIR, "racecard/data/race_odds_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
      current_prob = pd.read_csv(prob_path)
+     current_odds = pd.read_csv(odds_path)
      current_race["Prob"] = current_prob['Score']*100
+     current_race["Win"] = current_odds["win"]
+     current_race["Place"] = current_odds["place"]
+     current_race["Expected"] = current_race["Prob"] * current_race["Place"]
+
+    
 
      print(current_race)
     
@@ -354,15 +360,15 @@ def racecard_vip(request):
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
      total_race = current_race['Total'].iloc[0]     
      print(total_race)
-
+    
      curr_tips_by_user = (
-        UserTips.objects.filter(race_date=curr_race_date, user__username='RanForest')  # Current Tips Only
-            .values('user', 'user__groups__name')
-            .annotate(
-            hit_pst=Sum('hit') * 100.0 / Count('hit'),
-            total_dividend=Sum('dividend') - Count('hit') * 10,
-        )
-        .order_by('-hit_pst')  # Sort in descending order of hit ratio
+       UserTips.objects.filter(race_date=curr_race_date, user__username__in=['RanForest', 'WePower'])  # Current Tips Only
+          .values('user', 'user__groups__name')
+          .annotate(
+          hit_pst=Sum('hit') * 100.0 / Count('hit'),
+          total_dividend=Sum('dividend') - Count('hit') * 10,
+       )
+       .order_by('-hit_pst')  # Sort in descending order of hit ratio
     )  
          # Organize the data by username and fetch all relevant records for each user
      last_perf_by_user = (
@@ -397,6 +403,46 @@ def racecard_vip(request):
       
         if user_records:
             complete_tips_by_user.append({'user': user_records[0].user, 'groups_name': user_tips['user__groups__name'], 'records': user_records})
+     
+
+
+
+    # Create or update the records in the UserTips model
+     act = request.GET.get('act')
+     if act == 'update':
+            # Get the top 3 records based on the 'Expected' value
+        top_3_records = current_race.nlargest(3, 'Expected')
+        # Normalize the 'Expected' values to sum up to 100
+        total_expected = top_3_records['Expected'].sum()
+        top_3_records['Ratio'] = (top_3_records['Expected'] / total_expected) * 100
+        # Round the ratio to the nearest 0 or 5
+        top_3_records['Ratio'] = top_3_records['Ratio'].apply(lambda x: round(x / 5) * 5)
+
+        print(top_3_records['Ratio'])
+        
+        rank = 0
+        for index, row in top_3_records.iterrows():
+            rank = rank + 1
+
+            UserTips.objects.update_or_create(
+                user=User.objects.get(username='WePower'),
+                race_date=curr_race_date,
+                race_no=id,
+                horse_no=row['HorseNo'],
+                defaults={
+                    'rank': rank,
+                    'jockey_score': 12 if rank == 1 else 6 if rank == 2 else 4,
+                    'trainer_score': 12 if rank == 1 else 6 if rank == 2 else 4,
+                    'horse_name': row['HorseName'],
+                    'horse_name_cn': row['HorseName_cn'],
+                    'jockey': row['Jockey'],
+                    'trainer': row['Trainer'],
+                    'hit': 0,
+                    'ratio': row['Ratio'],
+                    
+                }
+            )
+    
      #print(complete_tips_by_user)
      context = {
             'current_race': current_race,
@@ -407,7 +453,7 @@ def racecard_vip(request):
             'last_perf_by_user' : last_perf_by_user,
             'curr_perf_by_user': curr_perf_by_user,
         }
-       
+
      return render(request, 'currentrace_vip.html', context)
     
 
@@ -891,6 +937,12 @@ def lotto_trio(request):
      diff = 0
      largest_draw = Marksix_hist.objects.aggregate(models.Max('Draw'))['Draw__max']
      print("largest Draw:",largest_draw)
+     draw_without_slash = largest_draw.replace('/', '')
+     seed_no = int(draw_without_slash)+1
+     draw_string = str(seed_no)
+
+     # Insert the '/' character at the appropriate position
+     next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
 
      if request.method == 'POST':
         form = LottoTrioForm(request.POST)
@@ -988,7 +1040,7 @@ def lotto_trio(request):
                     break
         
     
-     return render(request, 'lotto_trio.html', {'form': form, 'diff':diff, 'result':record, 'hist':hist_records, 'record1':record1, 'record2':record2, 'record1_freq':record1_freq, 'record2_freq':record2_freq, 'record1_cold':record1_cold, 'record2_cold':record2_cold})
+     return render(request, 'lotto_trio.html', {'form': form, 'next_draw':next_draw,'diff':diff, 'result':record, 'hist':hist_records, 'record1':record1, 'record2':record2, 'record1_freq':record1_freq, 'record2_freq':record2_freq, 'record1_cold':record1_cold, 'record2_cold':record2_cold})
 
 def calculate_days_difference(record_date):
     # Convert record_date to a datetime object if it's not already
