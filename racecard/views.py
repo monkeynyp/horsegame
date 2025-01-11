@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 import pandas as pd
-import os,json,math,random
+import os,json,math,random,time
 import requests
 from django.db import models
 from django.conf import settings
@@ -34,6 +34,8 @@ def racecard(request):
      current_race = pd.read_csv(csv_path)
      odds_path = os.path.join(settings.BASE_DIR, "racecard/data/race_odds_"+str(id)+".csv")
      current_odds = pd.read_csv(odds_path)
+     creation_time = os.path.getctime(odds_path)
+     odds_time = time.strftime('%H:%M:%S', time.localtime(creation_time))
      current_race["Win"] = current_odds["win"]
      current_race["Place"] = current_odds["place"]
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
@@ -140,6 +142,7 @@ def racecard(request):
 
         context = {
             'current_race': current_race,
+            'odds_time': odds_time,
             'total_race': total_race,
             'race_time': race_time,
             'current_datetime':current_datetime,
