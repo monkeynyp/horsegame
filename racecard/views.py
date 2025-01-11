@@ -429,7 +429,12 @@ def racecard_vip(request):
         rank = 0
         for index, row in top_3_records.iterrows():
             rank = rank + 1
-
+            UserTips.objects.filter(
+                user=User.objects.get(username='WePower'),
+                race_date=curr_race_date,
+                race_no=id,
+                horse_no=row['HorseNo']
+            ).delete()
             UserTips.objects.update_or_create(
                 user=User.objects.get(username='WePower'),
                 race_date=curr_race_date,
