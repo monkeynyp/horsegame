@@ -110,6 +110,9 @@ msgstr "密碼"
 msgid "Email"
 msgstr "電郵"
 
+msgid "Odds"
+msgstr "賠率"
+
 msgid "Confirm Password"
 msgstr "確認密碼"
 

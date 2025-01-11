@@ -88,14 +88,22 @@
   <div class="w3-col w3-padding-top-32 l6 s12">
     
     <table class="w3-table-all w3-card-4 w3-margin">
-      <span class="w3-tag w3-right w3-grey">壞卦</span><span class="w3-tag w3-right w3-yellow">好卦</span>
+      
       <thead>
         <tr class="w3-light-blue">
           <th>No</th>
           <th>{% trans "Horse Name" %}</th>
           <th class="w3-hide-small">{% trans "Jockey" %}</th>
           <th>{% trans 'Vote' %}</th>
-          <th>卦象</th>
+          <th colspan="2">{% trans "Odds" %}</th>
+        </tr>
+        <tr class="w3-light-blue">
+          <th></th>
+          <th></th>
+          <th class="w3-hide-small"></th>
+          <th></th>
+          <th>{% trans "Win" %}</th>
+          <th>{% trans "Place" %}</th>
         </tr>
       </thead>
       {% for i, r in current_race.iterrows %}
@@ -129,9 +137,12 @@
           {% endfor %}
           {% endwith %}
       </td>
-      <td class="w3-center {% if r.Ichi == 1 or r.Ichi == 2 or r.Ichi == 34 or r.Ichi == 11  or r.Ichi == 13 or r.Ichi == 14 or r.Ichi == 50 or r.Ichi == 35 or r.Ichi == 9 %} w3-yellow {% endif %} {% if r.Ichi == 23 or r.Ichi == 44 or r.Ichi == 21 or r.Ichi == 18  or r.Ichi == 59 %} w3-grey {% endif %}">
+      <td>{{ r.Win }}</td>
+
+      <td style="background-color: lightgreen;">{{ r.Place }}</td>
+      <!-- <td class="w3-center {% if r.Ichi == 1 or r.Ichi == 2 or r.Ichi == 34 or r.Ichi == 11  or r.Ichi == 13 or r.Ichi == 14 or r.Ichi == 50 or r.Ichi == 35 or r.Ichi == 9 %} w3-yellow {% endif %} {% if r.Ichi == 23 or r.Ichi == 44 or r.Ichi == 21 or r.Ichi == 18  or r.Ichi == 59 %} w3-grey {% endif %}">
         <img src="/static/Iching-{{ r.Ichi }}.png" width="20">
-    </td>
+    </td> -->
       {% endfor %}
     </table>
    

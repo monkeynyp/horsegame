@@ -32,7 +32,10 @@ def racecard(request):
      current_datetime = timezone.now()
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
-     
+     odds_path = os.path.join(settings.BASE_DIR, "racecard/data/race_odds_"+str(id)+".csv")
+     current_odds = pd.read_csv(odds_path)
+     current_race["Win"] = current_odds["win"]
+     current_race["Place"] = current_odds["place"]
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
      dt_obj = datetime.strptime(curr_race_date, "%Y-%m-%d")
      timestamp = int(dt_obj.timestamp())+int(id)
