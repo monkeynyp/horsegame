@@ -423,18 +423,17 @@ def racecard_vip(request):
         top_3_records['Ratio'] = (top_3_records['Expected'] / total_expected) * 100
         # Round the ratio to the nearest 0 or 5
         top_3_records['Ratio'] = top_3_records['Ratio'].apply(lambda x: round(x / 5) * 5)
-
+        UserTips.objects.filter(
+            user=User.objects.get(username='WePower'),
+            race_date=curr_race_date,
+            race_no=id,
+            ).delete()
         print(top_3_records['Ratio'])
         
         rank = 0
         for index, row in top_3_records.iterrows():
             rank = rank + 1
-            UserTips.objects.filter(
-                user=User.objects.get(username='WePower'),
-                race_date=curr_race_date,
-                race_no=id,
-                horse_no=row['HorseNo']
-            ).delete()
+
             UserTips.objects.update_or_create(
                 user=User.objects.get(username='WePower'),
                 race_date=curr_race_date,
