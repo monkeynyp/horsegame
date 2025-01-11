@@ -349,7 +349,7 @@ def racecard_vip(request):
      current_race["Prob"] = current_prob['Score']*100
      current_race["Win"] = current_odds["win"]
      current_race["Place"] = current_odds["place"]
-     current_race["Expected"] = current_race["Prob"] * current_race["Place"]
+     current_race["Expected"] = current_race["Prob"] * current_race["Place"]-(100-current_race["Prob"])
 
     
 

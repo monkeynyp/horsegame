@@ -1,15 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2025/01/05,1,KEEFY,瑪瑙,K C Leung,梁家俊,135,1168,9,F C Lor,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-1,2025/01/05,2,KAHOLO ANGEL,鈦易搵,C Y Ho,何澤堯,129,1134,7,C Fownes,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-2,2025/01/05,3,SILO,豐盛,H Bowman,布文,127,1146,12,M Newnham,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-3,2025/01/05,4,EQUATORIAL,新躍飛,Y L Chung,鍾易禮 (-3),124,1084,2,P C Ng,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-4,2025/01/05,5,BUNDLE AWARD,有目共賞,A Badel,巴度,123,1086,1,J Size,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-5,2025/01/05,6,KING OF FIGHTERS,佛亮老撾,B Avdulla,艾道拿,122,1140,8,A S Cruz,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-6,2025/01/05,7,LO PAN SPIRIT,魯班精神,H Bentley,班德禮,120,1203,13,K H Ting,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-7,2025/01/05,8,NEW FUTURE FOLKS,帥帥友福,B Thompson,湯普新,120,1099,5,C W Chang,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-8,2025/01/05,9,STELLAR SWIFT,紫荊歡呼,A Pouchin,貝知仁,120,1187,14,D A Hayes,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-9,2025/01/05,10,BUCEPHALAS,鬥志波,M Chadwick,蔡明紹,119,1189,4,W K Mo,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-10,2025/01/05,11,LIGHT YEARS CHARM,光年魅力,A Atzeni,艾兆禮,119,1218,11,D Eustace,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-11,2025/01/05,12,PATCH OF COSMO,錶之宇宙,L Ferraris,霍宏聲,119,1244,10,K L Man,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-12,2025/01/05,13,PACKING ANGEL,包裝福星,Z Purton,潘頓,118,1131,6,K W Lui,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
-13,2025/01/05,14,CHARMING BABE,輕功猛男,K Teetan,田泰安,116,1111,3,P F Yiu,10,Class 3,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+0,2025/01/12,1,LUCY IN THE SKY,鑽石星空,K Teetan,田泰安,135,1222,1,Y S Tsui,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+1,2025/01/12,2,CHARMING LEGEND,川河帥駒,K C Leung,梁家俊,133,1233,7,C S Shum,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+2,2025/01/12,3,CHING,晴王,B Avdulla,艾道拿,133,1284,12,C W Chang,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+3,2025/01/12,4,LO RIDER,平凡騎士,H Bowman,布文,130,1056,10,C Fownes,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+4,2025/01/12,5,LUPO SOLITARIO,健而快,M L Yeung,楊明綸,130,1141,8,F C Lor,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+5,2025/01/12,6,PACKING TURBINE,包裝明駒,A Atzeni,艾兆禮,124,1138,11,P C Ng,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+6,2025/01/12,7,FALLON,快路,M Chadwick,蔡明紹,123,1113,3,A S Cruz,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+7,2025/01/12,8,BLESSED NATION,福祐神州,L Ferraris,霍宏聲,122,1121,9,D J Whyte,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+8,2025/01/12,9,TEST FOR LOVE,三才鬥士,L Hewitson,希威森,122,1001,6,K W Lui,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+9,2025/01/12,10,AMAZING VICTORY,縱橫天下,K De Melo,董明朗,121,1047,5,W Y So,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+10,2025/01/12,11,GLORIOUS SUCCESS,本領輝煌,Z Purton,潘頓,121,1097,13,D Eustace,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+11,2025/01/12,12,IVY LEAGUE,大學生,A Hamelin,賀銘年,121,1206,2,D J Whyte,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+12,2025/01/12,13,STELLAR SWIFT,紫荊歡呼,A Pouchin,貝知仁,119,1184,14,D A Hayes,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
+13,2025/01/12,14,EMBRACES,納百川,C L Chau,周俊樂 (-2),118,1076,4,W K Mo,10,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45
