@@ -1,5 +1,4 @@
-{% extends "master.html" %}
-{% block title %}香港電腦模型賽馬預測{% endblock %}
+{% extends "master.html" %} {% block title %} 香港電腦模型賽馬預測 {% endblock %} 
 
 {% load i18n %}
 {% load static %}
@@ -7,59 +6,60 @@
 {% block content %}
 <style>
   .narrow-row {
-    padding: 5px 0;
-    margin: 3px 0;
+      padding: 5px 0;  /* Adjust the padding as needed */
+      margin: 3px 0;   /* Adjust the margin as needed */
   }
 
   .narrow-row label {
-    padding: 0;
-  }
-
-  @media (max-width: 600px) {
-    .w3-table-all th, .w3-table-all td {
-      font-size: 12px;
-    }
-    .w3-button.w3-large {
-      font-size: 14px;
-    }
+      padding: 0;  /* Optional: Adjust label padding */
   }
 </style>
-
+<!-- This part ensure the user check box selection is less or equal to 3 -->
 <script>
   let selectionSequence = [];
   let selectionSequenceTrans = [];
   function updateSelection(checkbox) {
-    var selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
-    if (selectedCheckboxes.length > 3) {
-      checkbox.checked = false;
-    }
-    var uncheckedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:not(:checked)');
-    uncheckedCheckboxes.forEach(function (uncheckedCheckbox) {
-      uncheckedCheckbox.disabled = selectedCheckboxes.length >= 3;
-    });
-    let horseName = checkbox.value;
-    let horseTransName = checkbox.dataset.translated;
-    if (checkbox.checked) {
-      selectionSequence.push(horseName);
-      selectionSequenceTrans.push(horseTransName);
-    } else {
-      let index = selectionSequence.indexOf(horseName);
-      if (index > -1) {
-        selectionSequence.splice(index, 1);
-        selectionSequenceTrans.splice(index, 1);
-      }
-    }
-    document.getElementById('selected-horses').innerText = selectionSequenceTrans.join(', ');
-    document.getElementById('selection-sequence').value = selectionSequence.join(',');
-  }
+      var selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
 
-  function submitForm() {
-    document.getElementById('selection-sequence').value = selectionSequence.join(',');
-  }
+      if (selectedCheckboxes.length > 3) {
+          checkbox.checked = false; // Uncheck the current checkbox if more than 3 are selected
+      }
+
+      // Disable unchecked checkboxes if 3 are selected
+      var uncheckedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:not(:checked)');
+      uncheckedCheckboxes.forEach(function (uncheckedCheckbox) {
+          uncheckedCheckbox.disabled = selectedCheckboxes.length >= 3;
+      });
+
+      let horseName = checkbox.value; // Get horse name
+      let horseTransName = checkbox.dataset.translated;
+      if (checkbox.checked) {
+          // Add to sequence if checked
+          selectionSequence.push(horseName);
+          selectionSequenceTrans.push(horseTransName);
+      } else {
+          // Remove from sequence if unchecked
+          let index = selectionSequence.indexOf(horseName);
+          if (index > -1) {
+              selectionSequence.splice(index, 1); // Remove the unchecked horse from sequence
+              selectionSequenceTrans.splice(index, 1); // Remove the unchecked horse from sequence
+          }
+      }
+
+      // Display the updated selection sequence
+      document.getElementById('selected-horses').innerText = selectionSequenceTrans.join(', ');
+
+      // Update the hidden field with the current selection sequence
+      document.getElementById('selection-sequence').value = selectionSequence.join(',');
+      }
+
+      function submitForm() {
+      // Ensure the selection sequence is up-to-date before submitting the form
+      document.getElementById('selection-sequence').value = selectionSequence.join(',');
+      }
+        
 </script>
 
-<div class="w3-container w3-padding-32"></div>
-<div class="w3-margin">
 <div class="w3-container w3-padding-32"></div>
 <div class="w3-margin ">
   
