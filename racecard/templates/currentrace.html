@@ -58,10 +58,8 @@
   }
 </script>
 
-<div class="w3-container w3-padding-32"></div>
+<div class="w3-container"></div>
 <div class="w3-margin">
-<div class="w3-container w3-padding-32"></div>
-<div class="w3-margin ">
   
     <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1}} &nbsp; {{race_time}}</h2>
         <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
