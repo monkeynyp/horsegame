@@ -1,13 +1,13 @@
-,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime
-0,2025/01/12,1,SKY PROPHET,漣心星,E C W Wong,黃智弘 (-7),135,1129,1,C Fownes,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-1,2025/01/12,2,SMART LEADER,醒目勇駒,K De Melo,董明朗,135,1149,5,W Y So,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-2,2025/01/12,3,CURRAHEE,時時如意,M Chadwick,蔡明紹,134,1056,7,W K Mo,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-3,2025/01/12,4,SPEED SWORD,劍山鋒,H Bowman,布文,134,1116,11,M Newnham,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-4,2025/01/12,5,FLYING DRAGON,龍騰飛翔,K C Leung,梁家俊,132,1242,4,C H Yip,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-5,2025/01/12,6,FUNG,鋒王,Z Purton,潘頓,132,1141,3,C W Chang,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-6,2025/01/12,7,EXCELLENT DADDY,逆市奇爸,L Ferraris,霍宏聲,130,1274,6,T P Yung,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-7,2025/01/12,8,FALCON COURT,隼閣,B Thompson,湯普新,125,1116,8,D A Hayes,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-8,2025/01/12,9,DIAMOND SOARS,鑽飾翱翔,A Pouchin,貝知仁,122,1226,12,P F Yiu,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-9,2025/01/12,10,CHEER FOR SOUTH,南區旺,M F Poon,潘明輝,121,1062,10,F C Lor,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-10,2025/01/12,11,PATCH OF WATCH,錶之多多,P N Wong,黃寶妮 (-10),119,1225,2,K L Man,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
-11,2025/01/12,12,GOODMANSHIP,友誼至佳,M L Yeung,楊明綸,117,1189,9,D J Whyte,10,Class 5,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,13:00
+,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays
+0,2025/01/15,1,CONFRINGO,閃亮老撾,K C Leung,梁家俊,135,1161,4,W K Mo,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,24
+1,2025/01/15,2,SMASHING EXPRESS,駿彩飛馳,H Bowman,布文,134,1049,2,J Size,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,14
+2,2025/01/15,3,YOU'REMYEVERYTHING,讓愛高飛,K H Chan,陳嘉熙 (-5),134,1000,12,C W Chang,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,20
+3,2025/01/15,4,FURY AND GOLD,神煞金剛,A Atzeni,艾兆禮,133,1146,5,C H Yip,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,35
+4,2025/01/15,5,GO GO GO,上市魅力,E C W Wong,黃智弘 (-7),133,1136,3,W Y So,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,14
+5,2025/01/15,6,KASA PAPA,架勢奇爸,Z Purton,潘頓,132,1165,9,A S Cruz,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,24
+6,2025/01/15,7,ON THE LASH,齊歡最樂,M Chadwick,蔡明紹,132,1210,11,P C Ng,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,14
+7,2025/01/15,8,GOLD TACK,金德義,K De Melo,董明朗,129,1053,1,D J Hall,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,7
+8,2025/01/15,9,RUNNING AHEAD,領頭先駒,A Pouchin,貝知仁,127,1057,6,T P Yung,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,49
+9,2025/01/15,10,NICE BIRDIE,樂捉鳥,C L Chau,周俊樂 (-2),126,1235,8,C S Shum,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,14
+10,2025/01/15,11,WINNING SEVEN,凱旋七福,K Teetan,田泰安,119,1105,10,D J Whyte,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,24
+11,2025/01/15,12,RED MAVERICK,雄昇勇士,Y L Chung,鍾易禮 (-3),116,1219,7,Y S Tsui,9,Class 5,1800,Happy Valley:,"TURF - ""B"" Course",Good,18:40,7

@@ -13,9 +13,9 @@ import csv
 driver = webdriver.Chrome()
 
 # Get input for race_date, venue, and number of races
-race_date = input("Enter the race date (YYYY-MM-DD): ")
-venue = input("Enter the venue: ")
-num_races = int(input("Enter the number of races: "))
+race_date = "2025-01-15"
+venue = "HV"
+num_races = 9
 
 # Loop through each race
 for race_no in range(1, num_races + 1):
