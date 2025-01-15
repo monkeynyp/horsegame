@@ -1,0 +1,189 @@
+{% extends "master.html" %} {% block title %} 香港六合彩預測 {% endblock %} {% block content %}
+{% load i18n %}
+{% load static %}
+
+{% if user.is_authenticated %}
+    <button id='myButton' class="w3-button w3-ripple w3-red" onclick="openModal()">+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp 加入你的心水號 </span>
+{% else %}
+    <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Numbers" %} </span>
+{% endif %}
+<div id="numberModal" class="w3-modal w3-container w3-padding-16">
+    <div class="w3-modal-content w3-card-4 w3-padding-32">
+        <span class="w3-button w3-display-topright" onclick="closeModal()">&times;</span>
+        <h3 class="w3-center">輸入你長期的心水號</h3>
+        <form id="lotto-form" class="w3-container" method="post" action="{% url 'update_lotto_tips' %}">
+            {% csrf_token %}
+            <input type="hidden" name="DrawNo" value="{{ next_draw }}">
+            <label for="id_No1">No1:</label>
+            {{ form.No1 }}
+            <br>
+            <label for="id_No2">No2:</label>
+            {{ form.No2 }}
+            <br>
+            <label for="id_No2">No3:</label>
+            {{ form.No3 }}
+            <br>
+            <label for="id_No2">No4:</label>
+            {{ form.No4 }}
+            <br>
+            <label for="id_No2">No5:</label>
+            {{ form.No5 }}
+            <br>
+            <label for="id_No2">No6:</label>
+            {{ form.No6 }}
+            <br>
+            <label for="id_No2">No7:</label>
+            {{ form.No7 }}
+            <br><br>
+            <!-- Repeat for No3 to No7 -->
+            <button class="w3-button w3-blue" type="submit" onclick="submitForm()">保存</button>
+        </form>
+        <div id="successMessage" style="display: none;">
+            Success! Your numbers have been saved.
+        </div>
+    </div>
+</div>
+
+
+<table class="w3-table-all">
+    <thead>
+        <tr calss="w3-blue">
+            <th>用戶</th>
+            <th>No1</th>
+            <th>No2</th>
+            <th>No3</th>
+            <th>No4</th>
+            <th>No5</th>
+            <th>No6</th>
+            <th>No7</th>
+            <th class="w3-red">命中</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+        <tr>
+            <td>{{ record.user }}</td>
+            <td><img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No3|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No4|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No5|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No6|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td><img src="{% static 'no_' %}{{ record.No7|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+            <td class="w3-red">{{ record.Hit }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top">
+        <div class="w3-center">
+            <span onclick="closeLoginFormModal()" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        </div>
+        <div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top" style="max-width: 400px;">
+            <h2 class="w3-center">{% trans 'Login' %}</h2>
+            <form method="post" action="{% url 'login' %}" class="w3-container login-form">
+                <div class="w3-section">
+                    {% csrf_token %}
+                    <label class="w3-input w3-label w3-margin-bottom" for="id_username">{% trans 'Username' %}:</label>
+                    <input class="w3-input w3-border" type="text" name="username" id="id_username" required>
+                </div>
+                <div class="w3-section">
+                    <label class="w3-input w3-label w3-margin-bottom" for="id_password">{% trans 'Password' %}:</label>
+                    <input class="w3-input w3-border" type="password" name="password" id="id_password" required>
+                </div>
+                <div class="w3-section">
+                    <button type="submit" class="w3-button w3-block w3-green w3-section w3-padding">{% trans 'Login' %}</button>
+                </div>
+            </form>
+            <div class="w3-section">
+              <!-- Add a button for new user registration -->
+              <a href="{% url 'register' %}" class="w3-button w3-block w3-blue w3-section w3-padding">{% trans 'Register' %}</a>
+          </div>
+        </div>
+    </div></div>
+</body>
+<script>
+    // Get the current date and time
+    var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
+    // Define the start and end date and time for the period
+    var startDate = new Date("2024-07-25T21:15:00");
+    var endDate = new Date("2025-12-25T23:59:59");
+ 
+    // Disable the button if the current date and time fall within the specified period
+    if (currentDatetime >= startDate && currentDatetime < endDate) {
+        var myButton = document.getElementById("myButton");
+        myButton.disabled = true;
+        myButton.classList.add("disabled-button");
+        document.getElementById("myButton").innerHTML = "X"; // Change the text
+        document.getElementById("msg001").innerHTML = '<i class="fa fa-hand-o-left fa-lg" aria-hidden="true"></i>&nbsp;{% trans "Not Open Yet" %}'
+    }
+    </script>
+
+<script>
+    function openModal() {
+        document.getElementById('numberModal').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('numberModal').style.display = 'none';
+    }
+    function submitForm() {
+    // ... (your existing AJAX code)
+    // After successful response from the server
+    event.preventDefault(); // Prevent the default form submission
+
+    const inputValues = [
+    document.getElementById('id_No1').value,
+    document.getElementById('id_No2').value,
+    document.getElementById('id_No3').value,
+    document.getElementById('id_No4').value,
+    document.getElementById('id_No5').value,
+    document.getElementById('id_No6').value,
+    document.getElementById('id_No7').value
+    // Repeat for No2 to No7
+    // ...
+        ];
+     // Validate range (1 to 49)
+     const isValidRange = inputValues.every(value => {
+        const num = parseInt(value, 10);
+        return !isNaN(num) && num >= 1 && num <= 49;
+    });
+
+    if (!isValidRange) {
+        alert('請輸入 1 and 49 的數字.');
+        return;
+    }
+
+        if (hasDuplicates(inputValues)) {
+            alert('數字不能重複.');
+            return;
+        }
+
+        // If validation passes, submit the form
+        document.getElementById('lotto-form').submit();
+    }
+
+    function hasDuplicates(arr) {
+        const uniqueSet = new Set(arr);
+        return uniqueSet.size !== arr.length;
+        }
+    function closeLoginFormModal() {
+            document.getElementById("id02").style.display = "none";
+        }
+</script>
+
+<footer class="w3-container w3-padding-32 w3-center w3-light-grey w3-margin-top">
+    <h4>其他🎱六合彩功能</h4>
+    <div class="w3-bar w3-light-grey">
+        <a href="/lotto_trio" class="w3-bar-item w3-button w3-hover-light-blue">三角數字</a>
+        <a href="/lottory_predict/?id=1" class="w3-bar-item w3-button w3-hover-light-blue">走勢分析</a>
+        <a href="/ichi_lotto/" class="w3-bar-item w3-button w3-hover-light-blue">易卦預測</a>
+        <a href="/lotto_must_win/1/" class="w3-bar-item w3-button w3-hover-light-blue">必中組合</a>
+        <a href="/lotto_next_stat/?id=1" class="w3-bar-item w3-button w3-hover-light-blue">形態統計</a>
+        <a href="/lotto_test" class="w3-bar-item w3-button w3-hover-light-blue">測試組合</a>
+    </div>
+</footer>
+  
+{% endblock %}
