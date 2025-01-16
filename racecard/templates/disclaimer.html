@@ -1,10 +1,8 @@
-
-
-{% extends "master.html" %} {% block title %} Monkey's Disclaimer {% endblock %} 
+{% extends "master.html" %} 
+{% block title %} Monkey's Disclaimer {% endblock %} 
 {% load i18n %}
 {% load static %}
 {% block content %}
-
 
 <div class="w3-container w3-padding w3-margin">
     <h2 class="w3-center">Disclaimer</h2>
@@ -16,10 +14,10 @@
   
     <p class="w3-justify">By using this website, you agree that the owners and operators of this website shall not be held liable for any losses or damages incurred as a result of using the information provided here.</p>
   
-    <p class="w3-justify">If you have any questions or concerns about the content on this website, please contact us at [Your Contact Information].</p>
-  </div>
+    <p class="w3-justify">If you have any questions or concerns about the content on this website, please contact us at <a href="mailto:thinking.monkey@gmail.com">thinking.monkey@gmail.com</a>.</p>
+</div>
 
-  <div class="w3-container w3-padding">
+<div class="w3-container w3-padding">
     <h2 class="w3-center">免責聲明</h2>
     <p class="w3-justify">本網站所提供的資訊僅供教育和實驗目的使用。本網站的目標是測試機器學習算法在現實生活情境中的應用，其中一個使用案例是分析賽馬賽事數據。</p>
   
@@ -29,7 +27,29 @@
   
     <p class="w3-justify">通過使用本網站，您同意本網站的所有者和營運者不對使用本網站提供的信息而導致的任何損失或損害負責。</p>
   
-    <p class="w3-justify">如果您對本網站的內容有任何問題或疑慮，請聯繫我們，聯繫方式：thinking.monkey@gmail.com。</p>
-  </div>
+    <p class="w3-justify">如果您對本網站的內容有任何問題或疑慮，請聯繫我們，聯繫方式：<a href="mailto:thinking.monkey@gmail.com">thinking.monkey@gmail.com</a>。</p>
+</div>
+
+<div class="w3-container w3-padding">
+    <h2 class="w3-center">Privacy Policy</h2>
+    <p class="w3-justify">We are committed to protecting your privacy. This privacy policy explains how we collect, use, and disclose your personal information in compliance with the General Data Protection Regulation (GDPR) and US privacy laws.</p>
   
+    <h3>Information Collection</h3>
+    <p class="w3-justify">We may collect personal information such as your name, email address, and IP address when you use our website. This information is collected through forms, cookies, and other tracking technologies.</p>
+  
+    <h3>Use of Information</h3>
+    <p class="w3-justify">The personal information we collect is used to provide and improve our services, communicate with you, and ensure the security of our website. We do not sell or share your personal information with third parties for marketing purposes.</p>
+  
+    <h3>Data Security</h3>
+    <p class="w3-justify">We implement appropriate technical and organizational measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction.</p>
+  
+    <h3>Your Rights</h3>
+    <p class="w3-justify">Under the GDPR, you have the right to access, rectify, erase, restrict, or object to the processing of your personal information. You also have the right to data portability. To exercise these rights, please contact us at <a href="mailto:thinking.monkey@gmail.com">thinking.monkey@gmail.com</a>.</p>
+  
+    <h3>Changes to this Policy</h3>
+    <p class="w3-justify">We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on our website. You are advised to review this policy periodically for any changes.</p>
+  
+    <p class="w3-justify">If you have any questions or concerns about our privacy policy, please contact us at <a href="mailto:thinking.monkey@gmail.com">thinking.monkey@gmail.com</a>.</p>
+</div>
+
 {% endblock %}
