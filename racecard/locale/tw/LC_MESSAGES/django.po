@@ -219,6 +219,9 @@ msgstr "支持MK"
 msgid "Support Monkey"
 msgstr "支持 Monkey"
 
+msgid "Contact Monkey"
+msgstr "聯絡 Monkey"
+
 msgid "Professional"
 msgstr "專業模式"
 
