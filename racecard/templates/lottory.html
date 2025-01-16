@@ -87,11 +87,6 @@
     <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
   </div>
 
-  {% if user.is_authenticated %}
-    <button id='myButton' class="w3-button w3-ripple w3-red" onclick="openModal()">+</button>&nbsp;<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp;加入你的心水號</span>
-  {% else %}
-    <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red">+</button>&nbsp;<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp;{% trans "Add Your Numbers" %}</span>
-  {% endif %}
 </div>
 
 <div class="w3-panel w3-card-4 w3-light-grey lottery-footer">
