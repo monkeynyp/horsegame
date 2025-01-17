@@ -1,392 +1,247 @@
 {% extends "master.html" %} {% block title %} 香港六合彩易卦預測 {% endblock %} {% block content %}
 {% load i18n %}
 {% load static %}
-<div class="w3-container">
-<div class="w3-margin ">
-  
-<h1>易卦預測六合彩</h1>
-<h2>期數： &nbsp;{{ next_draw }}</h2>
-<!-- lotto_form_template.html -->
-<form method="post">
-    {% csrf_token %}
-    <label for="id_number">加入你幸運號碼🍀:</label>
-    <input type="number" id="id_number" name="number" value="0">
-    <button type="submit">🀄起卦🀄</button>
-</form>
-<br>
 
-<div class="w3-row-padding">
-        {% if ichi.1 %}
-        <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-            <header class="w3-container w3-blue w3-padding">
-                <img src="/static/Iching-1.png" alt="qiang"> 乾為天
-            </header>
-            <div class="w3-padding-32 w3-margin-left">
-            {% for value in ichi.1 %}
-            {% with padded_value=value|stringformat:"02d" %}
-                <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-            {% endwith %}
-            {% endfor %}
-            </div>
-            <footer class="w3-container w3-blue w3-left-align">
-                <span class="w3-small">Footer</span>
-            </footer>
-       
-        </div>
+<style>
+  .ichi-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .ichi-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ichi-form {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .ichi-form input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .ichi-form button {
+    padding: 5px 10px;
+  }
+
+  .ichi-card {
+    margin-bottom: 20px;
+  }
+
+  .ichi-card img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+  }
+
+  .ichi-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 600px) {
+    .ichi-form input[type="number"] {
+      width: 50px;
+    }
+
+    .ichi-card img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+</style>
+
+<div class="ichi-container w3-card-4 w3-light-grey">
+  <div class="ichi-header">
+    <h1>易卦預測六合彩</h1>
+    <h2>期數： &nbsp;{{ next_draw }}</h2>
+  </div>
+
+  <div class="ichi-form">
+    <form method="post">
+      {% csrf_token %}
+      <label for="id_number">加入你幸運號碼🍀:</label>
+      <input type="number" id="id_number" name="number" value="0">
+      <button type="submit">🀄起卦🀄</button>
+    </form>
+  </div>
+
+  <div class="w3-row-padding">
+    {% if ichi.1 %}
+    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+      <header class="w3-container w3-blue w3-padding">
+        <img src="/static/Iching-1.png" alt="qiang"> 乾為天
+      </header>
+      <div class="w3-padding-32 w3-margin-left">
+        {% for value in ichi.1 %}
+        {% with padded_value=value|stringformat:"02d" %}
+        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+        {% endwith %}
+        {% endfor %}
+      </div>
+      <footer class="w3-container w3-blue w3-left-align">
+        <span class="w3-small">Footer</span>
+      </footer>
+    </div>
     {% endif %}
 
-{% if ichi.2 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+    {% if ichi.2 %}
+    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+      <header class="w3-container w3-green w3-padding">
+        <img src="/static/Iching-2.png" alt="qiang"> 坤為地
+      </header>
+      <div class="w3-padding-32 w3-margin-left">
+        {% for value in ichi.2 %}
+        {% with padded_value=value|stringformat:"02d" %}
+        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+        {% endwith %}
+        {% endfor %}
+      </div>
+      <footer class="w3-container w3-green w3-left-align">
+        <span class="w3-small">Footer</span>
+      </footer>
+    </div>
+    {% endif %}
 
-  <header class="w3-container w3-green w3-padding" >
-    <img src="/static/Iching-2.png" alt="qiang">坤為地
- </header>
- 
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.2 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-green w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
+    {% if ichi.34 %}
+    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+      <header class="w3-container w3-yellow w3-padding">
+        <img src="/static/Iching-34.png" alt="雷天大壯"> 雷天大壯
+      </header>
+      <div class="w3-padding-32 w3-margin-left">
+        {% for value in ichi.34 %}
+        {% with padded_value=value|stringformat:"02d" %}
+        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+        {% endwith %}
+        {% endfor %}
+      </div>
+      <footer class="w3-container w3-yellow w3-left-align">
+        <span class="w3-small">Footer</span>
+      </footer>
+    </div>
+    {% endif %}
 
-{% if ichi.34 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-yellow w3-padding" >
-    <img src="/static/Iching-34.png" alt="雷天大壯">雷天大壯
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.34 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-yellow w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-{% if ichi.11 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-brown w3-padding" >
-    <img src="/static/Iching-11.png" alt="地天泰">地天泰
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.11 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-brown w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-{% if ichi.13 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-indigo w3-padding" >
-    <img src="/static/Iching-13.png" alt="天火同人">天火同人
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.13 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
-</div>
- <footer class="w3-container w3-indigo w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-{% if ichi.7 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-pale-blue w3-padding" >
-    <img src="/static/Iching-7.png" alt="qiang">地水師
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.7 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-pale-blue w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
+    {% if ichi.11 %}
+    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+      <header class="w3-container w3-brown w3-padding">
+        <img src="/static/Iching-11.png" alt="地天泰"> 地天泰
+      </header>
+      <div class="w3-padding-32 w3-margin-left">
+        {% for value in ichi.11 %}
+        {% with padded_value=value|stringformat:"02d" %}
+        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+        {% endwith %}
+        {% endfor %}
+      </div>
+      <footer class="w3-container w3-brown w3-left-align">
+        <span class="w3-small">Footer</span>
+      </footer>
+    </div>
+    {% endif %}
 
-{% if ichi.50 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-pale-blue w3-padding" >
-    <img src="/static/Iching-50.png" alt="qiang">火風鼎
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.50 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-pale-blue w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
+    {% if ichi.13 %}
+    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+      <header class="w3-container w3-indigo w3-padding">
+        <img src="/static/Iching-13.png" alt="天火同人"> 天火同人
+      </header>
+      <div class="w3-padding-32 w3-margin-left">
+        {% for value in ichi.13 %}
+        {% with padded_value=value|stringformat:"02d" %}
+        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+        {% endwith %}
+        {% endfor %}
+      </div>
+      <footer class="w3-container w3-indigo w3-left-align">
+        <span class="w3-small">Footer</span>
+      </footer>
+    </div>
+    {% endif %}
 
-</div>
-{% endif %}
+    {% if ichi.7 %}
+    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+      <header class="w3-container w3-pale-blue w3-padding">
+        <img src="/static/Iching-7.png" alt="qiang"> 地水師
+      </header>
+      <div class="w3-padding-32 w3-margin-left">
+        {% for value in ichi.7 %}
+        {% with padded_value=value|stringformat:"02d" %}
+        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+        {% endwith %}
+        {% endfor %}
+      </div>
+      <footer class="w3-container w3-pale-blue w3-left-align">
+        <span class="w3-small">Footer</span>
+      </footer>
+    </div>
+    {% endif %}
 
-{% if ichi.27 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-light-grey w3-padding" >
-    <img src="/static/Iching-27.png" alt="qiang">山雷頤
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.27 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-light-grey w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
+    {% if ichi.50 %}
+    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+      <header class="w3-container w3-pale-blue w3-padding">
+        <img src="/static/Iching-50.png" alt="qiang"> 火風鼎
+      </header>
+      <div class="w3-padding-32 w3-margin-left">
+        {% for value in ichi.50 %}
+        {% with padded_value=value|stringformat:"02d" %}
+        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+        {% endwith %}
+        {% endfor %}
+      </div>
+      <footer class="w3-container w3-pale-blue w3-left-align">
+        <span class="w3-small">Footer</span>
+      </footer>
+    </div>
+    {% endif %}
 
-{% if ichi.9 %}
-<div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-  <header class="w3-container w3-pale-red w3-padding" >
-    <img src="/static/Iching-9.png" alt="qiang">風天小畜
- </header>
- <div class="w3-padding-32 w3-margin-left">
- {% for value in ichi.9 %}
- {% with padded_value=value|stringformat:"02d" %}
-     <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
- {% endwith %}
- {% endfor %}
- </div>
- <footer class="w3-container w3-pale-red w3-left-align">
-          <span class="w3-small">
-            Footer
-        </span>
-    </footer>
-</div>
-{% endif %}
-</div>
-<div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
-    <p class=" w3-large w3-serif">
-    <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
-    每期都會以最新開彩日的日期來起卦，每個數字都會有自己的卦。本頁只會列出幾個大吉的卦，給大家參考。大家也可以輸入自己的幸運號碼來起自己獨有的卦，睇下上天是否眷顧你。</p>
+    {% if ichi.27 %}
+    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+      <header class="w3-container w3-light-grey w3-padding">
+        <img src="/static/Iching-27.png" alt="qiang"> 山雷頤
+      </header>
+      <div class="w3-padding-32 w3-margin-left">
+        {% for value in ichi.27 %}
+        {% with padded_value=value|stringformat:"02d" %}
+        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+        {% endwith %}
+        {% endfor %}
+      </div>
+      <footer class="w3-container w3-light-grey w3-left-align">
+        <span class="w3-small">Footer</span>
+      </footer>
+    </div>
+    {% endif %}
+
+    {% if ichi.9 %}
+    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+      <header class="w3-container w3-pale-red w3-padding">
+        <img src="/static/Iching-9.png" alt="qiang"> 風天小畜
+      </header>
+      <div class="w3-padding-32 w3-margin-left">
+        {% for value in ichi.9 %}
+        {% with padded_value=value|stringformat:"02d" %}
+        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+        {% endwith %}
+        {% endfor %}
+      </div>
+      <footer class="w3-container w3-pale-red w3-left-align">
+        <span class="w3-small">Footer</span>
+      </footer>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="w3-panel w3-card-4 w3-light-grey ichi-footer">
+    <p class="w3-large w3-serif">
+      <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+      每期都會以最新開彩日的日期來起卦，每個數字都會有自己的卦。本頁只會列出幾個大吉的卦，給大家參考。大家也可以輸入自己的幸運號碼來起自己獨有的卦，睇下上天是否眷顧你。
+    </p>
   </div>
 </div>
-<br><br>
-{% if user.is_authenticated %}
-    <button id='myButton' class="w3-button w3-ripple w3-red" onclick="openModal()">+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp 加入你的心水號 </span>
-{% else %}
-    <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Numbers" %} </span>
-{% endif %}
-<div id="numberModal" class="w3-modal w3-container w3-padding-16">
-    <div class="w3-modal-content w3-card-4 w3-padding-32">
-        <span class="w3-button w3-display-topright" onclick="closeModal()">&times;</span>
-        <h3 class="w3-center">輸入你的心水號</h3><h4>期數：&nbsp;{{ next_draw }}</h4>
-        <form id="lotto-form" class="w3-container" method="post" action="{% url 'update_lotto_tips' %}">
-            {% csrf_token %}
-            <input type="hidden" name="DrawNo" value="{{ next_draw }}">
-            <label for="id_No1">No1:</label>
-            {{ form.No1 }}
-            <br>
-            <label for="id_No2">No2:</label>
-            {{ form.No2 }}
-            <br>
-            <label for="id_No2">No3:</label>
-            {{ form.No3 }}
-            <br>
-            <label for="id_No2">No4:</label>
-            {{ form.No4 }}
-            <br>
-            <label for="id_No2">No5:</label>
-            {{ form.No5 }}
-            <br>
-            <label for="id_No2">No6:</label>
-            {{ form.No6 }}
-            <br>
-            <label for="id_No2">No7:</label>
-            {{ form.No7 }}
-            <br><br>
-            <!-- Repeat for No3 to No7 -->
-            <button class="w3-button w3-blue" type="submit" onclick="submitForm()">保存</button>
-        </form>
-        <div id="successMessage" style="display: none;">
-            Success! Your numbers have been saved.
-        </div>
-    </div>
-</div>
 
-
-<table class="w3-table-all">
-    <thead>
-        <tr calss="w3-blue">
-            <th>用戶</th>
-            <th>No1</th>
-            <th>No2</th>
-            <th>No3</th>
-            <th>No4</th>
-            <th>No5</th>
-            <th>No6</th>
-            <th>No7</th>
-            <th class="w3-red">命中</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for record in records %}
-        <tr>
-            <td>{{ record.user }}</td>
-            <td><img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-            <td><img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-            <td><img src="{% static 'no_' %}{{ record.No3|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-            <td><img src="{% static 'no_' %}{{ record.No4|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-            <td><img src="{% static 'no_' %}{{ record.No5|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-            <td><img src="{% static 'no_' %}{{ record.No6|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-            <td><img src="{% static 'no_' %}{{ record.No7|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-            <td class="w3-red">{{ record.Hit }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
-<div class="w3-center">
-    <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
-      </button>
-      </div>
-
-<div id="id02" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top">
-        <div class="w3-center">
-            <span onclick="closeLoginFormModal()" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-        </div>
-        <div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top" style="max-width: 400px;">
-            <h2 class="w3-center">{% trans 'Login' %}</h2>
-            <form method="post" action="{% url 'login' %}" class="w3-container login-form">
-                <div class="w3-section">
-                    {% csrf_token %}
-                    <label class="w3-input w3-label w3-margin-bottom" for="id_username">{% trans 'Username' %}:</label>
-                    <input class="w3-input w3-border" type="text" name="username" id="id_username" required>
-                </div>
-                <div class="w3-section">
-                    <label class="w3-input w3-label w3-margin-bottom" for="id_password">{% trans 'Password' %}:</label>
-                    <input class="w3-input w3-border" type="password" name="password" id="id_password" required>
-                </div>
-                <div class="w3-section">
-                    <button type="submit" class="w3-button w3-block w3-green w3-section w3-padding">{% trans 'Login' %}</button>
-                </div>
-            </form>
-            <div class="w3-section">
-              <!-- Add a button for new user registration -->
-              <a href="{% url 'register' %}" class="w3-button w3-block w3-blue w3-section w3-padding">{% trans 'Register' %}</a>
-          </div>
-        </div>
-    </div></div>
-</body>
-<script>
-    // Get the current date and time
-    var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
-    // Define the start and end date and time for the period
-    var startDate = new Date("2024-07-25T21:15:00");
-    var endDate = new Date("2025-12-25T23:59:59");
- 
-    // Disable the button if the current date and time fall within the specified period
-    if (currentDatetime >= startDate && currentDatetime < endDate) {
-        var myButton = document.getElementById("myButton");
-        myButton.disabled = true;
-        myButton.classList.add("disabled-button");
-        document.getElementById("myButton").innerHTML = "X"; // Change the text
-        document.getElementById("msg001").innerHTML = '<i class="fa fa-hand-o-left fa-lg" aria-hidden="true"></i>&nbsp;{% trans "Not Open Yet" %}'
-    }
-    </script>
-
-<script>
-    function openModal() {
-        document.getElementById('numberModal').style.display = 'block';
-    }
-
-    function closeModal() {
-        document.getElementById('numberModal').style.display = 'none';
-    }
-    function submitForm() {
-    // ... (your existing AJAX code)
-    // After successful response from the server
-    event.preventDefault(); // Prevent the default form submission
-
-    const inputValues = [
-    document.getElementById('id_No1').value,
-    document.getElementById('id_No2').value,
-    document.getElementById('id_No3').value,
-    document.getElementById('id_No4').value,
-    document.getElementById('id_No5').value,
-    document.getElementById('id_No6').value,
-    document.getElementById('id_No7').value
-    // Repeat for No2 to No7
-    // ...
-        ];
-     // Validate range (1 to 49)
-     const isValidRange = inputValues.every(value => {
-        const num = parseInt(value, 10);
-        return !isNaN(num) && num >= 1 && num <= 49;
-    });
-
-    if (!isValidRange) {
-        alert('請輸入 1 and 49 的數字.');
-        return;
-    }
-
-        if (hasDuplicates(inputValues)) {
-            alert('數字不能重複.');
-            return;
-        }
-
-        // If validation passes, submit the form
-        document.getElementById('lotto-form').submit();
-    }
-
-    function hasDuplicates(arr) {
-        const uniqueSet = new Set(arr);
-        return uniqueSet.size !== arr.length;
-        }
-    function closeLoginFormModal() {
-            document.getElementById("id02").style.display = "none";
-        }
-</script>
-
-
-<footer class="w3-container w3-padding-32 w3-center w3-light-grey w3-margin-top">
-    <h4>其他🎱六合彩功能</h4>
-    <div class="w3-bar w3-light-grey">
-        <a href="/lottory_predict/?id=1" class="w3-bar-item w3-button w3-hover-light-blue">走勢分析</a>
-        <a href="/ichi_lotto/" class="w3-bar-item w3-button w3-hover-light-blue">易卦預測</a>
-        <a href="/lotto_must_win/1/" class="w3-bar-item w3-button w3-hover-light-blue">必中組合</a>
-        <a href="/lotto_next_stat/?id=1" class="w3-bar-item w3-button w3-hover-light-blue">形態統計</a>
-        <a href="/lotto_test" class="w3-bar-item w3-button w3-hover-light-blue">測試組合</a>
-    </div>
-</footer>
+{% include "lotto_footer.html" %}
 {% endblock %}

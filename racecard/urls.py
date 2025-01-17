@@ -36,7 +36,7 @@ urlpatterns = [
     path('lotto_must_win/<int:id>/', views.lotto_must_win, name='lotto_must_win'),
     path('lotto_test/', views.lotto_test, name='lotto_test'),
     path('lotto_trio/', views.lotto_trio, name='lotto_trio'),
-    #path('lotto_longterm/', views.lotto_longterm, name='lotto_longterm'),
+    path('lotto_longterm/', views.lotto_longterm, name='lotto_longterm'),
 
     # Other URL patterns
 

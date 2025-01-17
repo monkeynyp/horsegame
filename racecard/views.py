@@ -1049,12 +1049,11 @@ def lotto_trio(request):
                 if set([record1_cold.No1, record1_cold.No2, record1_cold.No3]).isdisjoint([hist_record_cold.No1, hist_record_cold.No2, hist_record_cold.No3]): 
                     record2_cold =hist_record_cold
                     break
-        
-    
      return render(request, 'lotto_trio.html', {'form': form, 'next_draw':next_draw,'diff':diff, 'result':record, 'hist':hist_records, 'record1':record1, 'record2':record2, 'record1_freq':record1_freq, 'record2_freq':record2_freq, 'record1_cold':record1_cold, 'record2_cold':record2_cold})
-# def lotto_longterm(request):
-#     form = NumberForm() 
-#     return render(request, 'lotto_longterm.html','form':form)
+
+def lotto_longterm(request):     
+     form = NumberForm() 
+     return render(request, 'lotto_longterm.html',{'form':form})
 
 def calculate_days_difference(record_date):
     # Convert record_date to a datetime object if it's not already
