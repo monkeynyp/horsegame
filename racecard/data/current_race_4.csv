@@ -1,15 +1,15 @@
-,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays
-0,2025/01/19,1,FUN TOGETHER,時尚歡欣,L Ferraris,霍宏聲,135,1154,12,T P Yung,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,18
-1,2025/01/19,2,LESLIE,風繼續吹,J McDonald,麥道朗,135,1190,14,C W Chang,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,21
-2,2025/01/19,3,SECOND TO NONE,獨步天下,C Y Ho,何澤堯,134,1126,1,K W Lui,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,60
-3,2025/01/19,4,FANTASTIC FUN,凡凡有餘,B Shinn,薛恩,133,1202,4,C Fownes,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,14
-4,2025/01/19,5,BRILLIANT EXPRESS,神馳,H Bowman,布文,130,1148,8,J Size,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,18
-5,2025/01/19,6,ETALON OR,準輝煌,A Badel,巴度,130,1162,9,P F Yiu,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,28
-6,2025/01/19,7,TOP TIME,醒目先駒,K De Melo,董明朗,129,1041,13,W Y So,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,24
-7,2025/01/19,8,MR JUSTICE,銳義,H Bentley,班德禮,127,1041,6,C S Shum,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,18
-8,2025/01/19,9,STRATHPEFFER,龍城強將,L Hewitson,希威森,126,1033,2,D J Whyte,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,21
-9,2025/01/19,10,FORERUNNER,博愛先鋒,C Williams,韋紀力,125,1038,7,W K Mo,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,21
-10,2025/01/19,11,PATCH OF STARS,錶之星河,K C Leung,梁家俊,125,1150,5,K L Man,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,28
-11,2025/01/19,12,EURO ROCKS,歐洲傳奇,C L Chau,周俊樂 (-2),122,1148,11,C H Yip,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,28
-12,2025/01/19,13,WORLD HERO,環球英雄,A Pouchin,貝知仁,118,1100,10,D A Hayes,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,28
-13,2025/01/19,14,PERFECTO MOMENTS,勁爽,Y L Chung,鍾易禮 (-3),117,1150,3,K H Ting,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,18
+,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
+0,2025/01/19,1,FUN TOGETHER,時尚歡欣,L Ferraris,霍宏聲,135,1154,12,T P Yung,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,18,2
+1,2025/01/19,2,LESLIE,風繼續吹,J McDonald,麥道朗,135,1190,14,C W Chang,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,21,3
+2,2025/01/19,3,SECOND TO NONE,獨步天下,C Y Ho,何澤堯,134,1126,1,K W Lui,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,60,1
+3,2025/01/19,4,FANTASTIC FUN,凡凡有餘,B Shinn,薛恩,133,1202,4,C Fownes,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,14,2
+4,2025/01/19,5,BRILLIANT EXPRESS,神馳,H Bowman,布文,130,1148,8,J Size,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,18,2
+5,2025/01/19,6,ETALON OR,準輝煌,A Badel,巴度,130,1162,9,P F Yiu,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,28,1
+6,2025/01/19,7,TOP TIME,醒目先駒,K De Melo,董明朗,129,1041,13,W Y So,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,24,1
+7,2025/01/19,8,MR JUSTICE,銳義,H Bentley,班德禮,127,1041,6,C S Shum,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,18,1
+8,2025/01/19,9,STRATHPEFFER,龍城強將,L Hewitson,希威森,126,1033,2,D J Whyte,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,21,1
+9,2025/01/19,10,FORERUNNER,博愛先鋒,C Williams,韋紀力,125,1038,7,W K Mo,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,21,1
+10,2025/01/19,11,PATCH OF STARS,錶之星河,K C Leung,梁家俊,125,1150,5,K L Man,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,28,1
+11,2025/01/19,12,EURO ROCKS,歐洲傳奇,C L Chau,周俊樂 (-2),122,1148,11,C H Yip,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,28,2
+12,2025/01/19,13,WORLD HERO,環球英雄,A Pouchin,貝知仁,118,1100,10,D A Hayes,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,28,2
+13,2025/01/19,14,PERFECTO MOMENTS,勁爽,Y L Chung,鍾易禮 (-3),117,1150,3,K H Ting,11,Class 4,1400,Sha Tin:,"TURF - ""A"" Course",Good,14:00,18,2

@@ -1,9 +1,9 @@
-,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays
-0,2025/01/19,1,KA YING RISING,嘉應高昇,Z Purton,潘頓,126,1137,8,D A Hayes,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42
-1,2025/01/19,2,VICTOR THE WINNER,維港智能,K C Leung,梁家俊,126,1098,1,D Eustace,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42
-2,2025/01/19,3,HELIOS EXPRESS,驕陽明駒,H Bowman,布文,126,1146,7,J Size,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42
-3,2025/01/19,4,HOWDEEPISYOURLOVE,嫡愛心,J McDonald,麥道朗,126,1213,3,J Size,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,18
-4,2025/01/19,5,INVINCIBLE SAGE,賢者無敵,B Avdulla,艾道拿,126,1100,6,D J Hall,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42
-5,2025/01/19,6,LUCKY WITH YOU,幸運有您,A Atzeni,艾兆禮,126,1237,5,F C Lor,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42
-6,2025/01/19,7,BEAUTY WAVES,美麗第一,B Shinn,薛恩,126,1189,2,P C Ng,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,18
-7,2025/01/19,8,MAGIC CONTROL,魔術控制,C Williams,韋紀力,126,1084,4,W K Mo,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,18
+,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
+0,2025/01/19,1,KA YING RISING,嘉應高昇,Z Purton,潘頓,126,1137,8,D A Hayes,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42,1
+1,2025/01/19,2,VICTOR THE WINNER,維港智能,K C Leung,梁家俊,126,1098,1,D Eustace,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42,1
+2,2025/01/19,3,HELIOS EXPRESS,驕陽明駒,H Bowman,布文,126,1146,7,J Size,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42,1
+3,2025/01/19,4,HOWDEEPISYOURLOVE,嫡愛心,J McDonald,麥道朗,126,1213,3,J Size,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,18,2
+4,2025/01/19,5,INVINCIBLE SAGE,賢者無敵,B Avdulla,艾道拿,126,1100,6,D J Hall,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42,1
+5,2025/01/19,6,LUCKY WITH YOU,幸運有您,A Atzeni,艾兆禮,126,1237,5,F C Lor,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,42,1
+6,2025/01/19,7,BEAUTY WAVES,美麗第一,B Shinn,薛恩,126,1189,2,P C Ng,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,18,2
+7,2025/01/19,8,MAGIC CONTROL,魔術控制,C Williams,韋紀力,126,1084,4,W K Mo,11,Group One,1200,Sha Tin:,"TURF - ""A"" Course",Good,15:00,18,1

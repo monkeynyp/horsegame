@@ -216,6 +216,9 @@ msgstr "期望值"
 msgid "Support MK"
 msgstr "支持MK"
 
+msgid "Freq"
+msgstr "密度"
+
 msgid "Support Monkey"
 msgstr "支持 Monkey"
 
@@ -4030,6 +4033,9 @@ msgstr "蔡明紹"
 
 msgid "M L Yeung"
 msgstr "楊明綸"
+
+msgid "C Williams"
+msgstr "韋紀力"
 
 msgid "A Hamelin"
 msgstr "賀銘年"
