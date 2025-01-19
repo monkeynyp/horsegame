@@ -355,7 +355,17 @@ def racecard_vip(request):
      current_race["Prob"] = current_prob['Score']*100
      current_race["Win"] = current_odds["win"]
      current_race["Place"] = current_odds["place"]
-     current_race["Expected"] = current_race["Prob"] * current_race["Place"]-(100-current_race["Prob"])
+     def is_float(value):
+        try:
+            float(value)
+            return True
+        except ValueError:
+            return False
+    
+     current_race["Expected"] = current_race.apply(
+        lambda row: row["Prob"] * float(row["Place"]) - (100 - row["Prob"]) if is_float(row["Place"]) else 0,
+        axis=1
+    )
 
     
 
