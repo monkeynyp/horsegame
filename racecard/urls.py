@@ -1,7 +1,7 @@
 from django.urls import path,include
 from . import views
 from django.views.generic import RedirectView
-from .views import register, user_login, user_logout
+from .views import register, user_login, user_logout, add_comment  # Ensure add_comment is imported
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
@@ -20,7 +20,6 @@ urlpatterns = [
     path('help/', views.help, name='help'),
     path('register/', register, name='register'),
     path('login/', user_login, name='login'),
-    path('register/', register, name='register'),
     path('logout/', user_logout, name='logout'),
     path('privacy/', views.privacy, name='privacy'),
     path('disclaimer/', views.disclaimer, name='disclaimer'),
@@ -37,11 +36,10 @@ urlpatterns = [
     path('lotto_test/', views.lotto_test, name='lotto_test'),
     path('lotto_trio/', views.lotto_trio, name='lotto_trio'),
     path('lotto_longterm/', views.lotto_longterm, name='lotto_longterm'),
+    path('race/<int:race_id>/add_comment/', views.add_comment, name='add_comment'),
+    path('race/<int:race_id>/comments/', views.view_comments, name='view_comments'),
 
     # Other URL patterns
-
-
-
 
     # Password reset URLs
     path('password-reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),

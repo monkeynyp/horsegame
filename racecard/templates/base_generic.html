@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Horse Game{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <h1>Horse Game</h1>
+    </header>
+    <nav>
+        <!-- Navigation links can go here -->
+    </nav>
+    <main>
+        {% block content %}
+        <!-- Content from child templates will be rendered here -->
+        {% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2025 Horse Game</p>
+    </footer>
+</body>
+</html>

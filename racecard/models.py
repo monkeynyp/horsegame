@@ -150,3 +150,21 @@ class Race_hist(models.Model):
 
     def __str__(self):
         return f"Race {self.index} at {self.place} on {self.date}"
+
+class RaceComment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    race_id = models.IntegerField()
+    comment = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'Comment by {self.user.username} on race {self.race_id}'
+
+class Race(models.Model):
+    name = models.CharField(max_length=200)
+    date = models.DateField()
+    location = models.CharField(max_length=100)
+    # Add other fields as necessary
+
+    def __str__(self):
+        return self.name

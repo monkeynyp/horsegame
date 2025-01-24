@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from .models import TW_lotto_hist,UserTips, UserScores, Article, User, Marksix_hist,Marksix_user_rec,HorseInfo,Race_hist,LottoTrioSearch
+from .models import Race,UserTips, UserScores, Article, User, Marksix_hist,Marksix_user_rec,HorseInfo,Race_hist,LottoTrioSearch
 # Register your models here.
 class UserTipsAdmin(admin.ModelAdmin):
     list_display = ("user","race_date","race_no","horse_no","horse_name","hit")
@@ -18,8 +18,6 @@ class ArticleAdmin(admin.ModelAdmin):
 
 class Marksix_histAdmin(admin.ModelAdmin):
     list_display = ("Draw","Date","No1","No2","No3","No4","No5","No6","No7")
-class TW_lotto_histAdmin(admin.ModelAdmin):
-    list_display = ("Draw","Date","No1","No2","No3","No4","No5","No6","No7")
 
 class LottoTrioSearchAdmin(admin.ModelAdmin):
     list_display = ("Draw","Search_date","No1","No2","No3","Diff_days")
@@ -33,6 +31,9 @@ class Horse_InfoAdmin(admin.ModelAdmin):
 
 class Race_histAdmin(admin.ModelAdmin):
     list_display = ("band_no","index","rating")
+
+class Race_Admin(admin.ModelAdmin):
+    list_display = ("name","date","location")
 
 class CustomUserAdmin(UserAdmin):
     list_display = ('username', 'email','get_groups')
@@ -50,7 +51,7 @@ admin.site.register(UserTips, UserTipsAdmin)
 admin.site.register(UserScores, UserScoresAdmin)
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Marksix_hist, Marksix_histAdmin)
-admin.site.register(TW_lotto_hist, TW_lotto_histAdmin)
 admin.site.register(Marksix_user_rec, Marksix_user_recAdmin)
 admin.site.register(HorseInfo, Horse_InfoAdmin)
 admin.site.register(Race_hist,Race_histAdmin)
+admin.site.register(Race,Race_Admin)

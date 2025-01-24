@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect, get_object_or_404
 import pandas as pd
 import os,json,math,random,time
 import requests
@@ -8,10 +8,10 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import  UserTips,UserScores,Article,Marksix_hist,Marksix_user_rec,TW_lotto_hist,LottoTrioSearch
+from .models import  UserTips,UserScores,Article,Marksix_hist,Marksix_user_rec,TW_lotto_hist,LottoTrioSearch, Race
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField,Q
 from django.utils import timezone
-from .forms import CustomUserCreationForm,NumberForm,LottoForm,LottoTrioForm
+from .forms import CustomUserCreationForm, NumberForm, LottoForm, LottoTrioForm, RaceCommentForm
 from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
@@ -22,6 +22,8 @@ from .get_results import get_results
 from django.contrib import messages
 from datetime import datetime, date
 from sklearn.neighbors import KNeighborsRegressor
+from .models import RaceComment
+from .forms import RaceCommentForm
 
 
 ## Horse Raching Features Create your views here.
@@ -1077,4 +1079,31 @@ def calculate_days_difference(record_date):
     days_difference = (current_date - record_date).days
 
     return days_difference
+
+@login_required
+def add_comment(request, race_id):
+    print("Test here",race_id)
+
+    try:
+        race = Race.objects.get(pk=race_id)
+    except Race.DoesNotExist:
+        messages.error(request, _('Race does not exist.'))
+        return redirect('racecard')  # Redirect to a relevant page
+
+    if request.method == 'POST':
+        form = RaceCommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.user = request.user
+            comment.race_id = race_id
+            comment.save()
+            messages.success(request, _('Your comment has been added.'))
+            return redirect('view_comments', race_id=race_id)
+    else:
+        form = RaceCommentForm()
+    return render(request, 'add_comment.html', {'form': form, 'race_id': race_id})
+
+def view_comments(request, race_id):
+    comments = RaceComment.objects.filter(race_id=race_id).order_by('-created_at')
+    return render(request, 'view_comments.html', {'comments': comments, 'race_id': race_id})
 
