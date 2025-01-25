@@ -26,7 +26,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                   <img src="{{ article.image.url }}" alt="Nature" class="fallback-image" onerror="this.onerror=null;this.src='{% static article.image  %}';" style="width:100%">
                 </div>
                 <div class="w3-col m2 w3-padding">
-                    <h5><span class="w3-opacity">{{ article.pub_date }}</span></h5>
+                    <h5><span class="w3-opacity">{{ article.pub_date|date:"Y-m-d" }}</span></h5>
                 </div>
             </div>
                   <p>{{ article.content | linebreaks  }}</p>
