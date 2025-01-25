@@ -37,7 +37,7 @@ def racecard(request):
      odds_path = os.path.join(settings.BASE_DIR, "racecard/data/race_odds_"+str(id)+".csv")
      current_odds = pd.read_csv(odds_path)
      creation_time = os.path.getctime(odds_path)
-     odds_time = time.strftime('%H:%M:%S', time.localtime(creation_time))
+     odds_time = time.strftime('%H:%M', time.localtime(creation_time))
      current_race["Win"] = current_odds["win"]
      current_race["Place"] = current_odds["place"]
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
