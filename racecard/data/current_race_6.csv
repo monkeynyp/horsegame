@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/01/22,1,GOOD LUCK BABE,開心五月,L Hewitson,希威森,135,1133,6,D Eustace,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,21,2
-1,2025/01/22,2,TURIN WARRIOR,都靈勇士,C Y Ho,何澤堯,131,1114,11,K L Man,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,27,2
-2,2025/01/22,3,SMART CITY,君智盛,M F Poon,潘明輝,130,1128,12,P F Yiu,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,14,2
-3,2025/01/22,4,GOOD LUCK WIN,寶成智星,Y L Chung,鍾易禮 (-3),128,1080,4,K H Ting,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,14,2
-4,2025/01/22,5,FIREFOOT,風起雲湧,Z Purton,潘頓,127,1152,10,W Y So,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,14,2
-5,2025/01/22,6,NOT USUAL DRAGON,非凡龍駒,A Hamelin,賀銘年,127,1271,7,J Richards,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,24,1
-6,2025/01/22,7,PHANTOM CYCLONE,幻影旋風,K De Melo,董明朗,127,1107,2,T P Yung,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,27,2
-7,2025/01/22,8,SNOWALOT,錢多多,B Thompson,湯普新,127,1097,9,D A Hayes,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,42,1
-8,2025/01/22,9,CLASSIC CENTURY,經典時代,L Ferraris,霍宏聲,126,1212,5,M Newnham,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,27,2
-9,2025/01/22,10,VIVA GRACIOUSNESS,爆笑,M Chadwick,蔡明紹,135,1095,3,A S Cruz,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,27,1
-10,2025/01/22,11,EN PERFECTO,完美演繹,A Badel,巴度,120,1078,1,C S Shum,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,21,2
-11,2025/01/22,12,RAGNARR,快樂奇兵,K Teetan,田泰安,117,1067,8,D J Hall,9,Class 4,1650,Happy Valley:,"TURF - ""C"" Course",Good,21:10,7,3
+0,2025/01/26,1,HAPPY PARK,開心樂園,A Atzeni,艾兆禮,134,1218,11,K W Lui,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,18,3
+1,2025/01/26,2,YUEN LONG ELITE,元朗精英,Z Purton,潘頓,134,1140,5,K L Man,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,25,1
+2,2025/01/26,3,SOUTH STAR,南區之星,K C Leung,梁家俊,129,1030,12,F C Lor,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,999,0
+3,2025/01/26,4,CHILL KAKA,超加加,H Bentley,班德禮,128,1095,8,P F Yiu,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,28,2
+4,2025/01/26,5,HAPPY DAY,仁仁之寶,C Y Ho,何澤堯,128,1260,4,J Richards,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,18,3
+5,2025/01/26,6,TEAM HAPPY,添喜運,A Hamelin,賀銘年,128,1233,6,P C Ng,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,18,3
+6,2025/01/26,7,WIN SPEED,超風速,M Chadwick,蔡明紹,128,1110,3,M Newnham,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,21,2
+7,2025/01/26,8,BABY SATELLITE,雄彬飛翔,A Pouchin,貝知仁,127,1099,13,D Eustace,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,21,1
+8,2025/01/26,9,THE AUSPICIOUS,豐辰,M L Yeung,楊明綸,125,1091,7,Y S Tsui,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,35,2
+9,2025/01/26,10,ALL ARE MINE,開心三多,Y L Chung,鍾易禮 (-3),126,1024,9,A S Cruz,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,25,2
+10,2025/01/26,11,MONARCH COUNTY,仁仁有餘,H Bowman,布文,126,1086,2,C Fownes,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,49,1
+11,2025/01/26,12,CIRCUIT FIERY,綫路萬里,M F Poon,潘明輝,121,1093,10,W Y So,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,84,0
+12,2025/01/26,13,GOLDEN DARCI,金駿星,K Teetan,田泰安,119,1131,14,D J Hall,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,31,3
+13,2025/01/26,14,LUCKY MAN,文明福星,L Hewitson,希威森,119,1111,1,D A Hayes,11,Class 4,1400,Sha Tin:,"TURF - ""A+3"" Course",Good,15:05,25,2

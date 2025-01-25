@@ -1,15 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/01/19,1,LADY'S CHOICE,愛馬善,J McDonald,麥道朗,135,1139,5,C W Chang,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,28,2
-1,2025/01/19,2,DREAM WINNER,實現夢想,L Ferraris,霍宏聲,131,1268,11,F C Lor,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,14,1
-2,2025/01/19,3,INVINCIBLE SHIELD,笑傲江湖,C Y Ho,何澤堯,131,1209,14,K W Lui,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,999,0
-3,2025/01/19,4,HOLMES A COURT,風火猴王,A Pouchin,貝知仁,127,1147,3,A S Cruz,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,14,1
-4,2025/01/19,5,STORMING DRAGON,勇霸龍,B Shinn,薛恩,126,1222,12,J Richards,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,18,3
-5,2025/01/19,6,MAJESTIC EXPRESS,英勇快車,B Avdulla,艾道拿,123,1242,10,J Size,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,18,1
-6,2025/01/19,7,SUNNYVALE,綠族晴朗,K De Melo,董明朗,123,1041,1,W Y So,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,18,1
-7,2025/01/19,8,HALO OF SUCCESS,功名顯赫,A Atzeni,艾兆禮,122,1135,2,D Eustace,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,18,2
-8,2025/01/19,9,PRINCE OF PORTY,還看今朝,M F Poon,潘明輝,122,1186,4,D J Hall,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,71,0
-9,2025/01/19,10,TIMES TABLE,九因歌,B Thompson,湯普新,122,979,7,M Newnham,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,28,1
-10,2025/01/19,11,AURIO,志滿同行,C Williams,韋紀力,121,1140,8,D A Hayes,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,14,3
-11,2025/01/19,12,FUN ELITE,中環精英,L Hewitson,希威森,121,1153,6,T P Yung,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,18,2
-12,2025/01/19,13,VICTORY SKY,樂勝天下,K C Leung,梁家俊,120,1181,13,P F Yiu,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,28,2
-13,2025/01/19,14,MEOWTH,喵喵怪,M Chadwick,蔡明紹,119,1089,9,W K Mo,11,Class 3,1200,Sha Tin:,"TURF - ""A"" Course",Good,17:50,63,0
+0,2025/01/26,1,TALENTS AMBITION,精英雄心,H Bowman,布文,135,1209,14,M Newnham,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,39,2
+1,2025/01/26,2,SIMPLY MAVERICK,極速奇兵,L Ferraris,霍宏聲,134,1212,9,P F Yiu,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,25,2
+2,2025/01/26,3,CHING,晴王,B Avdulla,艾道拿,132,1282,11,C W Chang,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,14,2
+3,2025/01/26,4,M UNICORN,獨角獸,C Y Ho,何澤堯,128,1211,10,C Fownes,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,31,2
+4,2025/01/26,5,YOUNG BRILLIANT,競駿光輝,Y L Chung,鍾易禮 (-3),128,1154,2,C H Yip,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,39,2
+5,2025/01/26,6,FIGHTING MACHINE,堅闖,Z Purton,潘頓,126,1080,13,P C Ng,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,39,2
+6,2025/01/26,7,FRANTANCK,手到再來,A Atzeni,艾兆禮,125,1173,8,P C Ng,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,31,2
+7,2025/01/26,8,PERFECT TEAM,精彩動力,A Badel,巴度,125,1094,1,C Fownes,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,39,2
+8,2025/01/26,9,GLORIOUS SUCCESS,本領輝煌,K Teetan,田泰安,124,1092,6,D Eustace,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,14,3
+9,2025/01/26,10,MUST GO,德心知遇,A Hamelin,賀銘年,123,1179,7,J Size,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,14,5
+10,2025/01/26,11,WINNING STEPS,逐步贏,M F Poon,潘明輝,122,1154,4,P C Ng,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,31,3
+11,2025/01/26,12,CAPITAL LEGEND,川河首駒,H Bentley,班德禮,121,1167,12,C Fownes,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,39,1
+12,2025/01/26,13,SUPER UNICORN,勁好運,K C Leung,梁家俊,121,1094,5,F C Lor,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,18,2
+13,2025/01/26,14,RED MAJESTY,赤馬雄風,M L Yeung,楊明綸,119,1240,3,D A Hayes,11,Class 3,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,17:50,11,3

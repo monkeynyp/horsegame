@@ -1,13 +1,14 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/01/22,1,ETERNAL FORTUNE,連連幸運,H Bowman,布文,135,1029,4,C S Shum,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,14,2
-1,2025/01/22,2,A AMERIC TE SPECSO,有財有勢,A Atzeni,艾兆禮,127,1108,10,J Size,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,14,2
-2,2025/01/22,3,PRAWNS ELEVEN,多利彩駒,M F Poon,潘明輝,125,1088,2,M Newnham,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,21,2
-3,2025/01/22,4,VIEW OF THE WORLD,觀天下,Z Purton,潘頓,125,1098,5,C H Yip,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,27,1
-4,2025/01/22,5,CALIFORNIA DEEPLY,加州得力,B Avdulla,艾道拿,124,1101,6,A S Cruz,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,14,2
-5,2025/01/22,6,ALLGREEKTOME,雅典武士,L Ferraris,霍宏聲,123,1279,3,D A Hayes,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,14,3
-6,2025/01/22,7,KING ECCELLENTE,皇帝英明,H Bentley,班德禮,123,1147,8,D J Whyte,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,27,2
-7,2025/01/22,8,POWER KOEPP,電源之駒,A Pouchin,貝知仁,123,1116,9,K L Man,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,14,2
-8,2025/01/22,9,SERGEANT PEPPER,胡椒軍曹,M L Yeung,楊明綸,123,1173,11,Y S Tsui,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,14,3
-9,2025/01/22,10,FLAGSHIP WARRIOR,旗幟鬥士,E C W Wong,黃智弘 (-7),121,1076,7,C Fownes,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,21,1
-10,2025/01/22,11,PARTERRE,拍馬難追,K De Melo,董明朗,121,1154,12,W Y So,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,24,2
-11,2025/01/22,12,LUCKY ARCHANGEL,幸運旅程,Y L Chung,鍾易禮 (-3),120,1194,1,F C Lor,9,Class 3,1200,Happy Valley:,"TURF - ""C"" Course",Good,22:50,17,1
+0,2025/01/26,1,DREAM WINNER,實現夢想,C Y Ho,何澤堯,130,1276,12,F C Lor,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,7,2
+1,2025/01/26,2,SUPER FORTUNE,連連有盈,M F Poon,潘明輝,127,1230,8,A S Cruz,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,28,2
+2,2025/01/26,3,CARROLL STREET,當家精神,L Hewitson,希威森,126,1112,2,D J Whyte,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,28,2
+3,2025/01/26,4,AWESOME TREASURE,佳運發,E C W Wong,黃智弘 (-7),125,1156,5,D A Hayes,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,14,2
+4,2025/01/26,5,FAST RESPONDER,會長之寶,P N Wong,黃寶妮 (-10),125,1042,13,D J Whyte,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,21,2
+5,2025/01/26,6,SPARKLING FELLOW,飛來閃耀,Z Purton,潘頓,124,1143,11,D J Hall,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,999,0
+6,2025/01/26,7,CRIMSON FLASH,翠紅,L Ferraris,霍宏聲,123,1098,3,M Newnham,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,999,0
+7,2025/01/26,8,CANDLELIGHT DINNER,燭光晚餐,M L Yeung,楊明綸,122,1135,6,Y S Tsui,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,21,2
+8,2025/01/26,9,SILK ROAD GLORY,絲路之光,K Teetan,田泰安,121,1235,1,P C Ng,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,21,1
+9,2025/01/26,10,CHEVAL VALIANT,不可擋,H Bentley,班德禮,120,1157,7,D J Whyte,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,28,1
+10,2025/01/26,11,GRAND NOVA,鴻圖新星,A Atzeni,艾兆禮,120,1084,4,J Size,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,21,4
+11,2025/01/26,12,KNOW AT HEART,心裡有數,M Chadwick,蔡明紹,120,1049,10,W Y So,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,25,2
+12,2025/01/26,13,SKY CAP,富心星,A Badel,巴度,120,1156,9,C Fownes,11,Class 3,1000,Sha Tin:,"TURF - ""A+3"" Course",Good,16:40,21,2

@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/01/22,1,DAN ATTACK,花好月盈,H Bowman,布文,134,1188,11,J Richards,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,24,3
-1,2025/01/22,2,WOOD ON FIRE,木火同明,H T Mo,巫顯東 (-2),133,1145,9,C W Chang,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,27,2
-2,2025/01/22,3,SPEEDY FORTUNE,連連勝利,M F Poon,潘明輝,132,1065,5,D Eustace,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,17,3
-3,2025/01/22,4,DAY DAY VICTORY,瑤瑤日上,L Hewitson,希威森,131,1154,1,T P Yung,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,17,3
-4,2025/01/22,5,STRIVE FOR GLORY,佳尊三,M L Yeung,楊明綸,131,1103,10,W Y So,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,42,2
-5,2025/01/22,6,TIMESTORM,日新月著,B Avdulla,艾道拿,131,1066,6,D J Hall,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,42,1
-6,2025/01/22,7,PLENTIFUL,同滿滿,A Atzeni,艾兆禮,129,1108,3,P C Ng,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,24,3
-7,2025/01/22,8,GORGEOUS VITALITY,華麗活力,L Ferraris,霍宏聲,128,1092,7,F C Lor,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,24,2
-8,2025/01/22,9,DOUBLE SHOW,飛躍凱旋,H Bentley,班德禮,125,1234,12,D J Whyte,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,52,1
-9,2025/01/22,10,PHILOS,會展二號,Y L Chung,鍾易禮 (-3),124,1129,4,A S Cruz,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,56,1
-10,2025/01/22,11,YOO YOO KNIGHT,優悠俠,K C Leung,梁家俊,124,1133,8,W K Mo,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,24,1
-11,2025/01/22,12,WIND SPEEDER,前風,K Teetan,田泰安,118,1064,2,Y S Tsui,9,Class 5,1000,Happy Valley:,"TURF - ""C"" Course",Good,18:40,24,4
+0,2025/01/26,1,SKY PROPHET,漣心星,E C W Wong,黃智弘 (-7),135,1128,9,C Fownes,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,14,2
+1,2025/01/26,2,YODA'S CHOICE,精明選擇,Z Purton,潘頓,134,1116,8,P C Ng,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,39,2
+2,2025/01/26,3,PRECISION GOAL,天時明駒,L Ferraris,霍宏聲,133,1095,12,D A Hayes,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,39,2
+3,2025/01/26,4,SONIC BOOM,快馬加鞭,M Chadwick,蔡明紹,133,1165,3,W K Mo,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,39,2
+4,2025/01/26,5,SOLAR GOGO,太陽高高,A Hamelin,賀銘年,132,1195,2,T P Yung,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,18,3
+5,2025/01/26,6,AROMATICA,香飄萬里,C Y Ho,何澤堯,131,1184,11,W Y So,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,117,0
+6,2025/01/26,7,COLOURFUL BARON,豐盛多彩,L Hewitson,希威森,131,1115,10,D J Whyte,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,78,0
+7,2025/01/26,8,SPEED SWORD,劍山鋒,H Bowman,布文,131,1113,1,M Newnham,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,14,1
+8,2025/01/26,9,CASA LEGEND,領航傳祺,Y L Chung,鍾易禮 (-3),130,1171,7,C W Chang,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,18,2
+9,2025/01/26,10,SUPER HONG KONG,香港精神,A Pouchin,貝知仁,129,1043,5,C H Yip,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,25,3
+10,2025/01/26,11,YEABOI,星雲浩騰,M F Poon,潘明輝,124,1144,6,C H Yip,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,39,2
+11,2025/01/26,12,TSUEN WAN GLORY,荃程路通,P N Wong,黃寶妮 (-10),120,1089,13,K L Man,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,117,0
+12,2025/01/26,13,COOL BLUE,型到爆,K Teetan,田泰安,118,1064,14,W K Mo,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,28,2
+13,2025/01/26,14,JOYFUL CHAMPION,喜悅一生,M L Yeung,楊明綸,115,1178,4,C W Chang,11,Class 5,1650,Sha Tin:,ALL WEATHER TRACK - 1650M,Good,12:30,25,3
