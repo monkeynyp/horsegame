@@ -5,6 +5,7 @@ from .views import register, user_login, user_logout, add_comment  # Ensure add_
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('', views.recent_article, name='recent_article'),
@@ -38,7 +39,7 @@ urlpatterns = [
     path('lotto_longterm/', views.lotto_longterm, name='lotto_longterm'),
     path('race/<int:race_id>/add_comment/', views.add_comment, name='add_comment'),
     path('race/<int:race_id>/comments/', views.view_comments, name='view_comments'),
-
+    path('robots.txt', TemplateView.as_view(template_name="robots.txt", content_type='text/plain')),
     # Other URL patterns
 
     # Password reset URLs
