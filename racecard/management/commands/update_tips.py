@@ -22,7 +22,7 @@ class Command(BaseCommand):
         race_date = datetime.strptime(options['race_date'], '%Y-%m-%d').date()
         
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
-        alg_methods = ['LogRegress','RanForest','NeuroNet','ForestReg','NeuroReg']
+        alg_methods = ['LogRegress','RanForest','ForestReg','NeuroReg']
         #alg_methods = ['LogRegress','RanForest','NeuroReg']
         #alg_methods = ['LogRegress','RanForest']
         #alg_methods = ['NeuroReg']
