@@ -1,6 +1,16 @@
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
 from .models import Article, Race
+from datetime import datetime
+
+# Dictionary to store last modification dates for static pages
+lastmod_dates = {
+    'recent_article': datetime(2024, 10, 10),
+    'racecard': datetime(2025, 1, 28),  # Update this date to the correct last modification date
+    'racecard_vip': datetime(2025, 1, 18),  # Example update
+    'jockey_king': datetime(2025, 1, 19),  # Example update
+    # Add other static pages and their last modification dates here
+}
 
 class StaticViewSitemap(Sitemap):
     priority = 0.5
@@ -17,6 +27,9 @@ class StaticViewSitemap(Sitemap):
     def location(self, item):
         return reverse(item)
 
+    def lastmod(self, item):
+        return lastmod_dates.get(item, datetime(2000, 1, 1))  # Default date if not found
+
 class ArticleSitemap(Sitemap):
     changefreq = 'weekly'
     priority = 0.6
@@ -25,7 +38,7 @@ class ArticleSitemap(Sitemap):
         return Article.objects.all()
 
     def lastmod(self, obj):
-        return obj.pub_date
+        return obj.pub_date or datetime(2000, 1, 1)  # Default date if pub_date is None
 
 class RaceSitemap(Sitemap):
     changefreq = 'weekly'
@@ -35,4 +48,4 @@ class RaceSitemap(Sitemap):
         return Race.objects.all()
 
     def lastmod(self, obj):
-        return obj.date
+        return obj.date or datetime(2000, 1, 1)  # Default date if date is None
