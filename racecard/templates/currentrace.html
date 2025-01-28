@@ -302,6 +302,30 @@
       {% endif %}
     {% endif %}
     </div>
+    <div class="w3-container w3-margin-top">
+      <h4 class="w3-text-blue">{% trans 'Comments' %}</h4>
+      <div class="w3-card w3-padding w3-light-grey">
+        {% for comment in race_comments %}
+          <div class="w3-container w3-margin-bottom w3-border-bottom w3-border-light-grey">
+            <strong class="w3-text-dark-grey">{{ comment.user.username }}:</strong>
+            <p>{{ comment.comment }}</p>
+            <span class="w3-small w3-text-grey">{{ comment.created_at }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="w3-container w3-margin-top">
+      <h4 class="w3-text-blue">{% trans 'Add Your Comment' %}</h4>
+      <form method="post" action="{% url 'add_comment' race_id=race_id %}" class="w3-card w3-padding w3-light-grey">
+        {% csrf_token %}
+        <input type="hidden" name="race_id" value="{{ race_id }}">
+        <input type="hidden" name="race_date" value="{{current_race.iloc.2.1}}">
+        <div class="w3-section">
+          <textarea class="w3-input w3-border w3-round" id="comment" name="comment" rows="4" placeholder="{% trans 'Write your comment here...' %}" required></textarea>
+        </div>
+        <button type="submit" class="w3-button w3-green w3-margin-top w3-round">{% trans 'Submit' %}</button>
+      </form>
+    </div>
     <div class="w3-center">
       <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
         </button>

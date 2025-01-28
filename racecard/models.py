@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 
 
 # Create your models here.
@@ -57,6 +58,9 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('article_detail', args=[str(self.id)])
 
 class Marksix_hist(models.Model):
     Draw = models.CharField(max_length=255)
@@ -154,11 +158,12 @@ class Race_hist(models.Model):
 class RaceComment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     race_id = models.IntegerField()
+    race_date = models.DateField(null=True)
     comment = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'Comment by {self.user.username} on race {self.race_id}'
+        return f'Comment by {self.user.username} on race {self.race_id} dated {self.race_date}'
 
 class Race(models.Model):
     name = models.CharField(max_length=200)
@@ -168,3 +173,6 @@ class Race(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_absolute_url(self):
+        return reverse('race_detail', args=[str(self.id)])

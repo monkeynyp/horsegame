@@ -38,3 +38,4 @@ class RaceCommentForm(forms.ModelForm):
     class Meta:
         model = RaceComment
         fields = ['comment']
+        race_date = forms.DateField(label='Race Date')

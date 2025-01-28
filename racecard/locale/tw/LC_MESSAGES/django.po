@@ -125,6 +125,13 @@ msgstr "帳號注冊"
 msgid "Submit"
 msgstr "遞交"
 
+msgid "Comments"
+msgstr "評論"
+
+msgid "Add Your Comment"
+msgstr "加入你的評論"
+
+
 msgid "Select up to 3 horses"
 msgstr "請按名次選三匹馬"
 

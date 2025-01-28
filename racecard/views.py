@@ -140,7 +140,8 @@ def racecard(request):
 
         selected_language = translation.get_language()  # Default to Chinese if language is not provided
         recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:5]
-
+        
+        race_comments = RaceComment.objects.filter(race_date=curr_race_date, race_id=id).order_by('-created_at')
 
         context = {
             'current_race': current_race,
@@ -154,7 +155,8 @@ def racecard(request):
             'recent_articles': recent_articles,
             'last_perf_by_user' : last_perf_by_user,
             'horse_tips_qty' : horse_tips_qty,
-            'tips_qty_by_type': tips_qty_by_type
+            'tips_qty_by_type': tips_qty_by_type,
+            'race_comments': race_comments
         }
        
      return render(request, 'currentrace.html', context)
@@ -593,6 +595,14 @@ def like_article(request, article_id):
         request.session['liked_articles'] = list(liked_articles)
 
     return JsonResponse({'likes': article.likes})
+
+def article_detail(request, id):
+    article = get_object_or_404(Article, pk=id)
+    return render(request, 'article_detail.html', {'article': article})
+
+def race_detail(request, id):
+    race = get_object_or_404(Race, pk=id)
+    return render(request, 'race_detail.html', {'race': race})
 
 
 ## Login and Administration Session
@@ -1082,8 +1092,6 @@ def calculate_days_difference(record_date):
 
 @login_required
 def add_comment(request, race_id):
-    print("Test here",race_id)
-
     try:
         race = Race.objects.get(pk=race_id)
     except Race.DoesNotExist:
@@ -1096,14 +1104,22 @@ def add_comment(request, race_id):
             comment = form.save(commit=False)
             comment.user = request.user
             comment.race_id = race_id
+            race_date_str = request.POST['race_date']
+            race_date_obj = datetime.strptime(race_date_str, '%Y/%m/%d').date()
+            comment.race_date = race_date_obj  # Convert to YYYY-MM-DD format
             comment.save()
             messages.success(request, _('Your comment has been added.'))
-            return redirect('view_comments', race_id=race_id)
+            return redirect('/racecard/?id=' + str(race_id))
     else:
         form = RaceCommentForm()
     return render(request, 'add_comment.html', {'form': form, 'race_id': race_id})
 
 def view_comments(request, race_id):
-    comments = RaceComment.objects.filter(race_id=race_id).order_by('-created_at')
+    race_date = request.GET.get('race_date')
+    if race_date:
+        race_date = datetime.strptime(race_date, '%Y-%m-%d').date()
+        comments = RaceComment.objects.filter(race_id=race_id, race_date=race_date).order_by('-created_at')
+    else:
+        comments = RaceComment.objects.filter(race_id=race_id).order_by('-created_at')
     return render(request, 'view_comments.html', {'comments': comments, 'race_id': race_id})
 
