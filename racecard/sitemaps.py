@@ -28,7 +28,7 @@ class StaticViewSitemap(Sitemap):
         return reverse(item)
 
     def lastmod(self, item):
-        return lastmod_dates.get(item, datetime(2000, 1, 1))  # Default date if not found
+        return lastmod_dates.get(item, datetime(2025, 1, 1))  # Default date if not found
 
 class ArticleSitemap(Sitemap):
     changefreq = 'weekly'
