@@ -29,7 +29,7 @@ and is wrapped around the whole page content, except for the footer in this exam
                     <h5><span class="w3-opacity">{{ article.pub_date|date:"Y-m-d" }}</span></h5>
                 </div>
             </div>
-                  <p>{{ article.content | linebreaks  }}</p>
+                  <p>{{ article.content | urlize| linebreaks  }}</p>
                     <div class="w3-row">
                         <div class="w3-col m8 s12">
                           <p><button class="w3-button w3-padding-large w3-blue w3-border w3-round" onclick="likeArticle({{ article.id }})"><i class="fa-solid fa-thumbs-up fa-lg"></i><span id="likesCount" class="w3-text w3-padding">{{ article.likes }}</span></button> </p>
