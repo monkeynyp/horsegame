@@ -1,9 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/01/26,1,THE GOLDEN SCENERY,中華盛景,B Avdulla,艾道拿,135,1094,6,A S Cruz,11,Class 2,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,13:30,18,2
-1,2025/01/26,2,WOODFIRE BRO,木火兄弟,M L Yeung,楊明綸,124,1199,8,C W Chang,11,Class 2,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,13:30,18,1
-2,2025/01/26,3,KARMA,話你知,C Y Ho,何澤堯,123,1229,2,C Fownes,11,Class 2,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,13:30,53,2
-3,2025/01/26,4,SUNLIGHT POWER,陽光勇士,Z Purton,潘頓,121,1109,1,P F Yiu,11,Class 2,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,13:30,14,2
-4,2025/01/26,5,ATULLIBIGEAL,增有,M F Poon,潘明輝,120,1067,5,D J Hall,11,Class 2,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,13:30,28,3
-5,2025/01/26,6,VOYAGE SAMURAI,遨遊武士,K C Leung,梁家俊,120,1201,3,F C Lor,11,Class 2,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,13:30,25,2
-6,2025/01/26,7,FLAMING RABBIT,九五赤兔,K Teetan,田泰安,118,1122,4,D J Whyte,11,Class 2,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,13:30,25,2
-7,2025/01/26,8,YELLOWFIN,黃腳鱲,L Hewitson,希威森,118,1238,7,K W Lui,11,Class 2,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,13:30,21,3
+0,2025/01/31,1,SUNSTRIDER,金陽飛駒,H Bowman,布文,135,1108,4,D J Hall,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,23,2
+1,2025/01/31,2,JUMBO FORTUNE,連連歡呼,M F Poon,潘明輝,123,1321,12,D Eustace,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,12,3
+2,2025/01/31,3,BRIGHT INHERITANCE,光明傳承,C Soumillon,蘇銘倫,131,1101,14,C H Yip,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,12,2
+3,2025/01/31,4,ORIENTAL SMOKE,東方飛影,B Shinn,薛恩,130,1252,11,D A Hayes,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,19,1
+4,2025/01/31,5,SILVER UP,銀騰,L Ferraris,霍宏聲,128,1141,1,M Newnham,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,23,1
+5,2025/01/31,6,D STAR,健康之星,B Avdulla,艾道拿,127,1088,5,A S Cruz,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,79,0
+6,2025/01/31,7,FOREVER FOLKS,年年友福,B Thompson,湯普新,125,1194,10,C W Chang,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,40,2
+7,2025/01/31,8,PATCH OF LUCKY,錶之福將,M L Yeung,楊明綸,125,1091,7,K H Ting,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,40,1
+8,2025/01/31,9,LUCKY FIONN,幸運芙蓉,M Barzalona,巴米高,124,1129,13,P F Yiu,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,19,2
+9,2025/01/31,10,CELTIC TIMES,佳福駒,A Hamelin,賀銘年,122,1229,3,W K Mo,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,12,2
+10,2025/01/31,11,CIRCUIT MIGHTY,綫路神驊,A Atzeni,艾兆禮,122,1012,8,K L Man,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,30,1
+11,2025/01/31,12,ONLY U,銳一,K C Leung,梁家俊,122,1096,9,T P Yung,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,30,1
+12,2025/01/31,13,SUNDAY'S SERENADE,卓越蒨鋒,K Teetan,田泰安,120,1022,6,J Richards,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,12,3
+13,2025/01/31,14,SWEET SMILE,銘記知友,Z Purton,潘頓,120,1022,2,J Size,11,Class 4,1600,Sha Tin:,"TURF - ""B+2"" Course",Good,13:30,40,1

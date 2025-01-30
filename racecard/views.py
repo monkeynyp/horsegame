@@ -141,7 +141,7 @@ def racecard(request):
         selected_language = translation.get_language()  # Default to Chinese if language is not provided
         recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:5]
         
-        race_comments = RaceComment.objects.filter(race_date=curr_race_date, race_id=id).order_by('-created_at')
+        race_comments = RaceComment.objects.filter(race_date=curr_race_date).order_by('-created_at') # View comments for all races 
 
         context = {
             'current_race': current_race,
