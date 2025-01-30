@@ -487,7 +487,7 @@ def racecard_vip(request):
 
 def is_specific_user(user):
     # Check if the user is the specific user you want to allow access
-    return user.username == 'louisngai'
+    return user.username == 'Monkey'
 
 @login_required
 @user_passes_test(is_specific_user)
