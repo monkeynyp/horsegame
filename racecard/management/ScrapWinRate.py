@@ -13,7 +13,7 @@ import csv
 driver = webdriver.Chrome()
 
 # Get input for race_date, venue, and number of races
-race_date = "2025-01-26"
+race_date = "2025-01-31"
 venue = "ST"
 num_races =11
 
