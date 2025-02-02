@@ -19,7 +19,10 @@ sitemaps = {
 
 
 def redirect_to_www(request):
-    return HttpResponsePermanentRedirect(f"https://www.monkeyforecast.com{request.path}")
+    """Redirect non-www traffic to www.monkeyforecast.com"""
+    if request.get_host() == "monkeyforecast.com":
+        return HttpResponsePermanentRedirect(f"https://www.monkeyforecast.com{request.path}")
+    return HttpResponsePermanentRedirect(f"https://www.monkeyforecast.com/")
 
 urlpatterns = [
     path('', views.recent_article, name='recent_article'),
