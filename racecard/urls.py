@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 from django.views.generic import TemplateView
 from django.contrib.sitemaps.views import sitemap
 from .sitemaps import StaticViewSitemap, ArticleSitemap, RaceSitemap
-from django.http import HttpResponsePermanentRedirect
+
 
 sitemaps = {
     'static': StaticViewSitemap,
@@ -18,11 +18,7 @@ sitemaps = {
 
 
 
-def redirect_to_www(request):
-    """Redirect non-www traffic to www.monkeyforecast.com"""
-    if request.get_host() == "monkeyforecast.com":
-        return HttpResponsePermanentRedirect(f"https://www.monkeyforecast.com{request.path}")
-    return HttpResponsePermanentRedirect(f"https://www.monkeyforecast.com/")
+
 
 urlpatterns = [
     path('', views.recent_article, name='recent_article'),
@@ -60,7 +56,7 @@ urlpatterns = [
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('article/<int:id>/', views.article_detail, name='article_detail'),
     path('race/<int:id>/', views.race_detail, name='race_detail'),
-    path('', redirect_to_www),
+ 
     # Other URL patterns
     
 
