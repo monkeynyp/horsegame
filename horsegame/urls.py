@@ -15,16 +15,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path, include
 from django.views.i18n import set_language
 from django.http import HttpResponsePermanentRedirect
 
 def redirect_to_www(request):
     """Redirect non-www traffic to www.monkeyforecast.com"""
-    if request.get_host() == "monkeyforecast.com":
+    host = request.get_host()
+    if host == "monkeyforecast.com":
         return HttpResponsePermanentRedirect(f"https://www.monkeyforecast.com{request.path}")
-    return HttpResponsePermanentRedirect(f"https://www.monkeyforecast.com/")
-
+    return None
 
 urlpatterns = [
     path('', redirect_to_www),
@@ -33,5 +33,4 @@ urlpatterns = [
     path('i18n/', include('django.conf.urls.i18n')),
     path('i18n/', set_language, name='set_language'),
     path('comments/', include('django_comments.urls')),
-
 ]

@@ -55,6 +55,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'horsegame.middleware.RedirectToWwwMiddleware',
     #'racecard.middleware.LanguageMiddleware',
 ]
 
