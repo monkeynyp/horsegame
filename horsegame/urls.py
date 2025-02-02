@@ -17,17 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.i18n import set_language
-from django.http import HttpResponsePermanentRedirect
-
-def redirect_to_www(request):
-    """Redirect non-www traffic to www.monkeyforecast.com"""
-    host = request.get_host()
-    if host == "monkeyforecast.com":
-        return HttpResponsePermanentRedirect(f"https://www.monkeyforecast.com{request.path}")
-    return None
 
 urlpatterns = [
-    path('', redirect_to_www),
     path("admin/", admin.site.urls),
     path('', include('racecard.urls')),
     path('i18n/', include('django.conf.urls.i18n')),
