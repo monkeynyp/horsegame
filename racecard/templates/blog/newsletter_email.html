@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html>
+{% extends "master.html" %} {% block title %} Monkey AI 賽馬預測 {% endblock %} 
+{% load i18n %}
+{% load static %}
+
+{% block content %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body style="background-color: #f1f1f1; font-family: Arial, sans-serif;">
     <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <img src="https://nyp.pythonanywhere.com/static/monkeyLogo1.jpeg" alt="Monkey Icon" style="width:50px;height:50px; display: inline-block; vertical-align: middle; margin-right: 10px;">
+        <img src="https://www.monkeyforecast.com/static/monkeyLogo1.jpeg" alt="Monkey Icon" style="width:50px;height:50px; display: inline-block; vertical-align: middle; margin-right: 10px;">
         <span style="font-size: 24px; vertical-align: middle;">Monkey 通訊</span>
         <div class="w3-row">
             <div class="w3-col m8">
@@ -15,9 +18,9 @@
         <h1 style="color: #333;">{{ subject }}</h1>
         <div style="border-radius: 5px; border: 1px solid #ddd; padding: 15px;">
             <p>{{ message|urlize|linebreaksbr }}</p>
-            <p>訪問網站: <a href="https://nyp.pythonanywhere.com" style="color: #007bff; text-decoration: none;">https://nyp.pythonanywhere.com</a></p>
+            <p>訪問網站: <a href="https://www.monkeyforecast.com" style="color: #007bff; text-decoration: none;">https://www.monkeyforecast.com</a></p>
             <p> <a href="https://dolatiaschan.com/4/7649284" style="color: #007bff; text-decoration: none;">支持Monkey</a></p>
         </div>
     </div>
 </body>
-</html>
+{% endblock %} 
