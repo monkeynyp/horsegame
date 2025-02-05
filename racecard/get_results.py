@@ -6,8 +6,8 @@ from datetime import datetime
 
 def get_results(race_no):
     race_date = date.today()
-    race_date=datetime.strptime("2025-02-05","%Y-%m-%d")
-    print(race_date)
+    #race_date=datetime.strptime("2025-02-05","%Y-%m-%d") 
+    #print(race_date)
     formatted_date = race_date.strftime('%Y/%m/%d')
     print(formatted_date)
     response = requests.get('https://racing.hkjc.com/racing/information/English/Racing/LocalResults.aspx?RaceDate='+str(formatted_date)+'&RaceNo='+str(race_no))
