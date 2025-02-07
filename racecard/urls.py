@@ -56,6 +56,8 @@ urlpatterns = [
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
     path('article/<int:id>/', views.article_detail, name='article_detail'),
     path('race/<int:id>/', views.race_detail, name='race_detail'),
+    path('add_stock_info/', views.add_stock_info, name='add_stock_info'),
+    path('stock_info/', views.stock_info, name='stock_info'),
  
     # Other URL patterns
     

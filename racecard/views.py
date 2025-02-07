@@ -8,10 +8,10 @@ from django.utils.translation import gettext as _
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required, user_passes_test
-from .models import  UserTips,UserScores,Article,Marksix_hist,Marksix_user_rec,TW_lotto_hist,LottoTrioSearch, Race
+from .models import  UserTips,UserScores,Article,Marksix_hist,Marksix_user_rec,TW_lotto_hist,LottoTrioSearch, Race, StockInfo
 from django.db.models import Max, F, Count, Sum, ExpressionWrapper, FloatField, IntegerField,Q
 from django.utils import timezone
-from .forms import CustomUserCreationForm, NumberForm, LottoForm, LottoTrioForm, RaceCommentForm
+from .forms import CustomUserCreationForm, NumberForm, LottoForm, LottoTrioForm, RaceCommentForm, StockInfoForm
 from django.core.mail import send_mail
 from django.contrib.auth.models import User, Group
 from django.template.loader import render_to_string
@@ -1122,4 +1122,23 @@ def view_comments(request, race_id):
     else:
         comments = RaceComment.objects.filter(race_id=race_id).order_by('-created_at')
     return render(request, 'view_comments.html', {'comments': comments, 'race_id': race_id})
+
+from django.utils import translation
+
+def stock_info(request):
+    selected_language = translation.get_language()
+    stocks = StockInfo.objects.filter(language=selected_language).order_by('-created_at')
+    return render(request, 'stock_info.html', {'stocks': stocks})
+
+def add_stock_info(request):
+    if request.method == 'POST':
+        form = StockInfoForm(request.POST)
+        if form.is_valid():
+            stock_info = form.save(commit=False)
+            stock_info.language = translation.get_language()
+            stock_info.save()
+            return redirect('stock_info')
+    else:
+        form = StockInfoForm()
+    return render(request, 'add_stock_info.html', {'form': form})
 

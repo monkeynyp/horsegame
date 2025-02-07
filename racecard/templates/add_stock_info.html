@@ -1,0 +1,11 @@
+{% extends "master.html" %}
+{% block title %}Add Stock Info{% endblock %}
+{% block content %}
+<h1>Add Stock Info</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+<p class="w3-text-red">本文僅供參考，不構成任何投資建議。</p>
+{% endblock %}

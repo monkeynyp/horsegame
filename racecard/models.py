@@ -176,3 +176,13 @@ class Race(models.Model):
 
     def get_absolute_url(self):
         return reverse('race_detail', args=[str(self.id)])
+
+class StockInfo(models.Model):
+    title = models.CharField(max_length=200)
+    stock_code = models.CharField(max_length=50)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    language = models.CharField(max_length=2, choices=[('en', 'English'), ('tw', 'Chinese')],default='tw')
+
+    def __str__(self):
+        return self.title

@@ -113,6 +113,12 @@ msgstr "密碼"
 msgid "Email"
 msgstr "電郵"
 
+msgid "Stocks"
+msgstr "股票"
+
+msgid "Stocks Up and Down Reason"
+msgstr "股票升跌原因"
+
 msgid "Odds"
 msgstr "賠率"
 

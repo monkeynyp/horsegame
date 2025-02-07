@@ -3,7 +3,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.utils.translation import gettext_lazy as _
 
-from .models import RaceComment
+from .models import RaceComment, StockInfo
 
 class CustomUserCreationForm(UserCreationForm):
     email = forms.EmailField(required=True)
@@ -39,3 +39,8 @@ class RaceCommentForm(forms.ModelForm):
         model = RaceComment
         fields = ['comment']
         race_date = forms.DateField(label='Race Date')
+
+class StockInfoForm(forms.ModelForm):
+    class Meta:
+        model = StockInfo
+        fields = ['title', 'stock_code', 'content']
