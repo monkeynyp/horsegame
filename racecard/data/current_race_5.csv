@@ -1,13 +1,13 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/02/05,1,CIRCUIT DUFFY,綫路達飛,B Avdulla,艾道拿,135,1130,9,F C Lor,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,28,2
-1,2025/02/05,2,GOLDEN RISE,金匯昇昇,Z Purton,潘頓,132,1040,10,J Size,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,28,1
-2,2025/02/05,3,KA YING POWER,嘉應威風,C L Chau,周俊樂 (-2),123,1125,3,T P Yung,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,28,2
-3,2025/02/05,4,GALVANIC,加非凡,H Bowman,布文,130,1121,12,C Fownes,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,17,2
-4,2025/02/05,5,FORTUNE WHISKEY,運來伍寶,M F Poon,潘明輝,128,1108,8,D Eustace,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,14,3
-5,2025/02/05,6,IRON LEGION,鐵甲驌龍,Y L Chung,鍾易禮 (-3),128,1126,6,A S Cruz,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,28,1
-6,2025/02/05,7,ACE POWER,祥勝力駒,A Atzeni,艾兆禮,120,1105,11,D J Whyte,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,21,2
-7,2025/02/05,8,ROARING BEBE,威武寶寶,K Teetan,田泰安,120,1087,5,D J Hall,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,70,0
-8,2025/02/05,9,BULB EMPEROR,燈胆皇,A Hamelin,賀銘年,119,1178,7,P C Ng,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,14,2
-9,2025/02/05,10,SWEET DIAMOND,鑽石寶寶,H Bentley,班德禮,118,1198,4,P F Yiu,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,21,2
-10,2025/02/05,11,TOGEPI,小刺蛋,M Chadwick,蔡明紹,118,1077,2,W K Mo,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,41,1
-11,2025/02/05,12,WORLD HERO,環球英雄,L Hewitson,希威森,117,1102,1,D A Hayes,9,Class 4,1200,Happy Valley:,"TURF - ""A"" Course",Good,20:40,17,2
+0,2025/02/09,1,GREAT STATE,德薩斯,H Bowman,布文,135,1083,8,W Y So,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,28,2
+1,2025/02/09,2,KA YING RESILIENCE,嘉應駿馬,M L Yeung,楊明綸,130,1191,10,D A Hayes,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,45,1
+2,2025/02/09,3,AUTUMN VIBES,金風萬里,Z Purton,潘頓,127,1144,3,J Richards,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,999,0
+3,2025/02/09,4,DREAMING WINNER,超越夢想,C Y Ho,何澤堯,127,1151,2,F C Lor,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,35,1
+4,2025/02/09,5,IRON FIGHTER,鋼鐵戰士,L Ferraris,霍宏聲,127,1170,6,K H Ting,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,999,0
+5,2025/02/09,6,RAGING RAPIDS,精算激流,A Badel,巴度,127,1260,11,J Size,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,21,1
+6,2025/02/09,7,SUPER LOVE,戀愛狂,K Teetan,田泰安,127,1140,4,C H Yip,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,39,1
+7,2025/02/09,8,DRALA,吉祥寶,M Chadwick,蔡明紹,125,1023,9,P F Yiu,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,102,0
+8,2025/02/09,9,SOMETHING JONAH,拚搏,B Avdulla,艾道拿,125,1111,12,D J Hall,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,28,2
+9,2025/02/09,10,KA YING POWER,嘉應威風,C L Chau,周俊樂 (-2),122,1109,5,T P Yung,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,4,3
+10,2025/02/09,11,VIGOR ELLEEGANT,銳高,E C W Wong,黃智弘 (-7),118,1182,1,K L Man,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,25,2
+11,2025/02/09,12,CASHISCASH,志在福星,B Thompson,湯普新,117,1041,7,D J Whyte,11,Class 4,1200,Sha Tin:,"TURF - ""C"" Course",Good,14:30,49,1
