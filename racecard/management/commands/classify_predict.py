@@ -17,9 +17,9 @@ class Command(BaseCommand):
         return race_result
 
     def handle(self, *args, **options):
-       race_result = self.get_race_hist_data()
-       data = []
-       for race in race_result:
+        race_result = self.get_race_hist_data()
+        data = []
+        for race in race_result:
             data.append([
             race.date,
             race.index,
@@ -40,18 +40,36 @@ class Command(BaseCommand):
           
             ])
         
-       columns = [
+        columns = [
          'date', 'index', 'place', 'band_no', 'jockey', 'trainer', 'act_wt', 'draw', 'win_odds', 'declar_horse_wt',
          'gear', 'track', 'race_class', 'distance', 'good', 'rating'
         ]
-       race_hist = pd.DataFrame(data, columns=columns)
-       print(race_hist.head())
-
-       preprocessor = ColumnTransformer(
+        categoryList = ['band_no','jockey', 'trainer', 'gear', 'track', 'race_class', 'good']
+        test_case=['band_no', 'jockey', 'trainer', 'gear','track', 'race_class','good','act_wt','draw','declar_horse_wt','distance','rating']
+        race_hist = pd.DataFrame(data, columns=columns)
+        print(race_hist.head()) 
+        horse_jockey_avg_result = race_hist
+        preprocessor = ColumnTransformer(
             transformers=[
                 ('categorical', OneHotEncoder(handle_unknown='ignore', sparse_output=True), categoryList)
             ],
             remainder='passthrough'  # Include non-categorical features as is
         )
+        pipeline = Pipeline([
+            ('preprocessor', preprocessor),
+            #('Classifier', LogisticRegression(C=5,max_iter=3000,solver='lbfgs'))
+            #('Classifier', CategoricalNB()),
+            #('regressor', MLPRegressor(hidden_layer_sizes=(150,), max_iter=500, alpha=0.0001,solver='adam',tol=0.0001,verbose=10, random_state=1))
+            ('Classifier',RandomForestClassifier(n_estimators=1299, random_state=42))
+            #('classifier', SVC(kernel='rbf', C=7, gamma='auto', probability=True)
+            
+            #('classifier', MLPClassifier(hidden_layer_sizes=(150,), max_iter=500, alpha=0.000005,
+                        #solver='adam', verbose=10, random_state=1, tol=0.0001)),
+        ])
 
-        
+        # Train a Random Forest classifier
+        X = horse_jockey_avg_result[test_case]
+        y = horse_jockey_avg_result['Result']
+        pipeline.fit(X, y)
+
+        test_hist = pd.read_csv('Evaluation/test_curr_hist_df_m.csv')

@@ -1,15 +1,13 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/02/09,1,ENJOY GOLF,快樂高球,B Avdulla,艾道拿,134,1185,10,F C Lor,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,14,2
-1,2025/02/09,2,SUMMIT CHEERS,攻頂,A Badel,巴度,132,1209,12,D J Hall,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,35,1
-2,2025/02/09,3,LA FORZA,超力量,Z Purton,潘頓,131,1109,7,J Richards,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,259,0
-3,2025/02/09,4,DO YOUR PART,做好自己,K H Chan,陳嘉熙 (-5),130,1014,11,K W Lui,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,35,2
-4,2025/02/09,5,APPEALING CITY,顯力之城,L Hewitson,希威森,126,1082,6,D J Whyte,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,14,1
-5,2025/02/09,6,DIVINE MOONLIGHT,神舟彎月,H Bentley,班德禮,126,1058,14,P C Ng,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,21,1
-6,2025/02/09,7,JUMBO TREASURE,寶進,C Y Ho,何澤堯,126,1219,8,W K Mo,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,999,0
-7,2025/02/09,8,KING ALLOY,皇金合,A Hamelin,賀銘年,126,1190,9,K H Ting,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,999,0
-8,2025/02/09,9,KING VICTOR,英勇名駒,P N Wong,黃寶妮 (-10),126,1012,3,K L Man,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,999,0
-9,2025/02/09,10,PANDA,黑白,C L Chau,周俊樂 (-2),126,1080,13,C H Yip,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,9,3
-10,2025/02/09,11,COLOURFUL WINNER,多彩多姿,M L Yeung,楊明綸,124,1177,2,W Y So,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,28,1
-11,2025/02/09,12,METRO WARRIOR,精彩勇士,L Ferraris,霍宏聲,124,1206,1,D A Hayes,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,14,2
-12,2025/02/09,13,MACANESE MASTER,銀亮濠俠,Y L Chung,鍾易禮 (-3),121,1079,4,C H Yip,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,35,2
-13,2025/02/09,14,COUNTRY DANCER,鄉村樂韻,K Teetan,田泰安,120,1150,5,J Size,11,Class 4,1000,Sha Tin:,"TURF - ""C"" Course",Good,13:30,14,4
+0,2025/02/12,1,SUNNY DARLING,陽光寶貝,L Ferraris,霍宏聲,135,1187,4,P C Ng,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,24,2
+1,2025/02/12,2,LEAN MASTER,精益大師,E C W Wong,黃智弘 (-7),134,1113,10,C H Yip,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,21,3
+2,2025/02/12,3,JOLLY COMPANION,良駒好友,A Atzeni,艾兆禮,133,1190,9,K L Man,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,31,2
+3,2025/02/12,4,NATURAL HIGH,贏得自然,P N Wong,黃寶妮 (-10),130,1130,7,D J Hall,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,31,2
+4,2025/02/12,5,NOBLE DELUXE,魅力星,H Bowman,布文,128,1161,3,J Size,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,31,2
+5,2025/02/12,6,ORIENTAL SURPRISE,東方魅影,B Thompson,湯普新,128,1073,11,D A Hayes,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,42,1
+6,2025/02/12,7,HE WAS YOU,劍無名,B Avdulla,艾道拿,124,1181,8,A S Cruz,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,42,1
+7,2025/02/12,8,ALL EYES ON ME,樂矚心機,H T Mo,巫顯東 (-2),121,1073,12,C W Chang,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,24,2
+8,2025/02/12,9,HINOKAMI KAGURA,火神神樂,M Chadwick,蔡明紹,120,1135,6,W Y So,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,56,1
+9,2025/02/12,10,YEAH BUDDY,辰速密碼,M F Poon,潘明輝,120,1112,1,W K Mo,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,31,2
+10,2025/02/12,11,DAILY TROPHY,日日獎,H Bentley,班德禮,119,1173,5,C Fownes,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,17,2
+11,2025/02/12,12,GIMME FIVE,五福星,K Teetan,田泰安,118,1086,2,F C Lor,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,19:45,28,2

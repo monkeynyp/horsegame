@@ -108,7 +108,7 @@ if mode.lower() == 'y':
         y = horse_jockey_avg_result['Result']
         pipeline.fit(X, y)
 
-        pipeline.fit(X, y)
+
     # Save the trained pipeline to a file
         model_filename = 'trained_random_forest_pipeline.pkl'
         joblib.dump(pipeline, model_filename)

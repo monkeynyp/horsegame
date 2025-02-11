@@ -1,15 +1,10 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/02/09,1,BEAUTY CRESCENT,同樣美麗,B Avdulla,艾道拿,134,1077,11,A S Cruz,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,42,2
-1,2025/02/09,2,AERIS NOVA,風再起時,L Ferraris,霍宏聲,129,1275,6,T P Yung,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,14,2
-2,2025/02/09,3,GRACIOUS EXPRESS,駿奕快車,H Bowman,布文,129,1119,8,P F Yiu,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,21,2
-3,2025/02/09,4,STORM RIDER,風雲武士,L Hewitson,希威森,129,1091,12,D A Hayes,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,28,2
-4,2025/02/09,5,SUPREME AGILITY,奮鬥心,A Badel,巴度,127,979,5,P C Ng,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,21,2
-5,2025/02/09,6,ILLUMINOUS,明亮天下,C Y Ho,何澤堯,126,990,9,F C Lor,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,42,1
-6,2025/02/09,7,LIGHT YEARS CHARM,光年魅力,Z Purton,潘頓,124,1226,13,D Eustace,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,21,2
-7,2025/02/09,8,CAPITAL LEGEND,川河首駒,E C W Wong,黃智弘 (-7),123,1158,2,C Fownes,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,14,2
-8,2025/02/09,9,SUGAR BALL,糖不甩,H Bentley,班德禮,123,1166,3,W K Mo,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,28,2
-9,2025/02/09,10,YIU CHEUNG VICTORY,耀昌勝世,C L Chau,周俊樂 (-2),123,1129,4,C H Yip,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,999,0
-10,2025/02/09,11,TIMES TABLE,九因歌,B Thompson,湯普新,122,971,1,M Newnham,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,21,2
-11,2025/02/09,12,JUNEAU PRIDE,至尊高超,K Teetan,田泰安,121,997,10,J Size,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,28,2
-12,2025/02/09,13,NEVER TOO SOON,快搏,M F Poon,潘明輝,121,1122,14,D J Hall,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,53,1
-13,2025/02/09,14,FIND MY LOVE,紅愛舍,M L Yeung,楊明綸,120,1178,7,D J Whyte,11,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good,15:35,21,1
+0,2025/02/12,1,FLYING ACE,威力奔騰,M F Poon,潘明輝,135,1230,8,D J Hall,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,38,1
+1,2025/02/12,2,MAJESTIC KNIGHT,電氣騎士,H Bowman,布文,131,1224,5,D J Whyte,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,28,2
+2,2025/02/12,3,SUPERB CAPITALIST,八駿巨昇,A Badel,巴度,125,1160,9,A S Cruz,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,2
+3,2025/02/12,4,FULL CREDIT,同祥和順,L Ferraris,霍宏聲,124,1223,3,M Newnham,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,3
+4,2025/02/12,5,CAPITAL DELIGHT,喜至寶,B Avdulla,艾道拿,123,1190,7,C Fownes,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,7,2
+5,2025/02/12,6,TOMODACHI KOKOROE,好友心得,K Teetan,田泰安,123,1209,2,D A Hayes,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,28,2
+6,2025/02/12,7,BUNDLE OF CHARM,魅力寶駒,B Thompson,湯普新,120,1223,4,J Size,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,2
+7,2025/02/12,8,SING DRAGON,昇瀧駒,M Chadwick,蔡明紹,120,1191,6,M Newnham,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,31,2
+8,2025/02/12,9,LADY'S CHOICE,愛馬善,P N Wong,黃寶妮 (-10),115,1156,1,C W Chang,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,24,2
