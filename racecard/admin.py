@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from .models import RaceComment,Race,UserTips, UserScores, Article, User, Marksix_hist,Marksix_user_rec,HorseInfo,Race_hist,LottoTrioSearch
+from .models import StockInfo,RaceComment,Race,UserTips, UserScores, Article, User, Marksix_hist,Marksix_user_rec,HorseInfo,Race_hist,LottoTrioSearch
 # Register your models here.
 class UserTipsAdmin(admin.ModelAdmin):
     list_display = ("user","race_date","race_no","horse_no","horse_name","hit")
@@ -35,6 +35,9 @@ class Race_histAdmin(admin.ModelAdmin):
 class Race_Admin(admin.ModelAdmin):
     list_display = ("name","date","location")
 
+class StockInfo_Admin(admin.ModelAdmin):
+    list_display = ("title","content")
+    
 class RaceComment_Admin(admin.ModelAdmin):
     list_display = ("race_date","race_id","comment")
 
@@ -59,3 +62,4 @@ admin.site.register(HorseInfo, Horse_InfoAdmin)
 admin.site.register(Race_hist,Race_histAdmin)
 admin.site.register(Race,Race_Admin)
 admin.site.register(RaceComment,RaceComment_Admin)
+admin.site.register(StockInfo,StockInfo_Admin)
