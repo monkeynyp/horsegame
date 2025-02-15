@@ -1,15 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/02/12,1,GLORIOUS JOURNEY,本領非凡,B Avdulla,艾道拿,135,1043,8,F C Lor,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,7,3
-1,2025/02/12,2,RED MAJESTY,赤馬雄風,E C W Wong,黃智弘 (-7),135,1247,12,D A Hayes,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,17,3
-2,2025/02/12,3,RELIABLE PROFIT,堅有利,H Bowman,布文,132,1154,11,C S Shum,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,38,2
-3,2025/02/12,4,ACE WAR,祥勝將軍,A Hamelin,賀銘年,129,1093,1,D J Whyte,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,17,3
-4,2025/02/12,5,S J TOURBILLON,三江飛輪,H Bentley,班德禮,129,1111,2,C H Yip,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,17,2
-5,2025/02/12,6,TO INFINITY,極速滿貫,M Chadwick,蔡明紹,126,1068,14,J Richards,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,21,3
-6,2025/02/12,7,VIVA CHALEUR,爆熱,L Ferraris,霍宏聲,126,1087,5,P C Ng,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,17,3
-7,2025/02/12,8,SNOWALOT,錢多多,P N Wong,黃寶妮 (-10),125,1103,6,D A Hayes,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,21,1
-8,2025/02/12,9,FOREVER FOLKS,年年友福,B Thompson,湯普新,124,1194,3,C W Chang,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,12,2
-9,2025/02/12,10,ALL ARE MINE,開心三多,A Badel,巴度,122,1023,10,A S Cruz,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,17,3
-10,2025/02/12,11,BABY SATELLITE,雄彬飛翔,K Teetan,田泰安,122,1105,9,D Eustace,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,17,2
-11,2025/02/12,12,MULTIBINGO,萬事掂,H T Mo,巫顯東 (-2),121,1119,4,A S Cruz,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,38,2
-12,2025/02/12,13,PERFECT PAIRING,幸運同行,M F Poon,潘明輝,121,991,7,J Size,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,52,1
-13,2025/02/12,14,CHARMING STEED,飛騰騅,K De Melo,董明朗,120,1094,13,C Fownes,9,Class 4,1800,Sha Tin:,ALL WEATHER TRACK - 1800M,Good,20:15,48,1
+0,2025/02/16,1,MAGNIFICENT NINE,鐵金剛,B Avdulla,艾道拿,135,1131,7,J Size,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,25,3
+1,2025/02/16,2,RICH HORSE,富貴駒,B Thompson,湯普新,133,999,3,D J Hall,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,32,1
+2,2025/02/16,3,FORERUNNER,博愛先鋒,H Bowman,布文,131,1046,1,W K Mo,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,28,2
+3,2025/02/16,4,TELECOM DRAGON,電訊龍駒,M Chadwick,蔡明紹,128,1079,5,C H Yip,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,32,1
+4,2025/02/16,5,D STAR,健康之星,H Bentley,班德禮,127,1094,10,A S Cruz,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,16,1
+5,2025/02/16,6,MAGIC COMBO,開心老友,H T Mo,巫顯東 (-2),127,1300,6,C S Shum,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,999,0
+6,2025/02/16,7,MUSANG KING,貓山王,K C Leung,梁家俊,127,1225,2,F C Lor,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,28,1
+7,2025/02/16,8,ROSEWOOD FLEETFOOT,捷足奔馳,K Teetan,田泰安,127,1138,13,J Richards,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,999,0
+8,2025/02/16,9,JOLLY JUMPER,肥仔精神,A Badel,巴度,122,1160,11,T P Yung,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,16,3
+9,2025/02/16,10,LUCKY BLESSING,幸運福星,T Marquand,馬昆,121,1027,14,P C Ng,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,16,3
+10,2025/02/16,11,YOUNG HORIZON,競駿天下,E C W Wong,黃智弘 (-7),121,1173,12,D A Hayes,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,32,2
+11,2025/02/16,12,CIRCUIT MIGHTY,綫路神驊,A Atzeni,艾兆禮,120,1024,4,K L Man,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,16,2
+12,2025/02/16,13,LUCKY GOLD,金發銀發,H Doyle,杜苑欣,118,1199,8,K W Lui,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,16,2
+13,2025/02/16,14,BEAUTIFUL WIN,勝得福,K De Melo,董明朗,116,1209,9,W Y So,11,Class 4,1400,Sha Tin:,"TURF - ""C+3"" Course",Good,14:00,28,1

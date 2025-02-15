@@ -1,10 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/02/12,1,FLYING ACE,威力奔騰,M F Poon,潘明輝,135,1230,8,D J Hall,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,38,1
-1,2025/02/12,2,MAJESTIC KNIGHT,電氣騎士,H Bowman,布文,131,1224,5,D J Whyte,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,28,2
-2,2025/02/12,3,SUPERB CAPITALIST,八駿巨昇,A Badel,巴度,125,1160,9,A S Cruz,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,2
-3,2025/02/12,4,FULL CREDIT,同祥和順,L Ferraris,霍宏聲,124,1223,3,M Newnham,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,3
-4,2025/02/12,5,CAPITAL DELIGHT,喜至寶,B Avdulla,艾道拿,123,1190,7,C Fownes,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,7,2
-5,2025/02/12,6,TOMODACHI KOKOROE,好友心得,K Teetan,田泰安,123,1209,2,D A Hayes,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,28,2
-6,2025/02/12,7,BUNDLE OF CHARM,魅力寶駒,B Thompson,湯普新,120,1223,4,J Size,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,2
-7,2025/02/12,8,SING DRAGON,昇瀧駒,M Chadwick,蔡明紹,120,1191,6,M Newnham,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,31,2
-8,2025/02/12,9,LADY'S CHOICE,愛馬善,P N Wong,黃寶妮 (-10),115,1156,1,C W Chang,9,Class 2,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,24,2
+0,2025/02/16,1,TOP GUN,壯志凌雲,L Ferraris,霍宏聲,135,1102,11,F C Lor,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,16,3
+1,2025/02/16,2,MARKWIN,但求開心,A Badel,巴度,132,1207,13,W K Mo,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,16,3
+2,2025/02/16,3,NAVAL FORCE,恒之有道,T Marquand,馬昆,130,1028,2,P C Ng,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,28,2
+3,2025/02/16,4,STEPS AHEAD,遙遙領先,A Atzeni,艾兆禮,130,1092,8,K W Lui,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,35,2
+4,2025/02/16,5,LO RIDER,平凡騎士,B Avdulla,艾道拿,129,1045,1,C Fownes,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,7,3
+5,2025/02/16,6,PACKING HURRICANE,包裝旋風,K Teetan,田泰安,129,1004,10,D Eustace,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,91,0
+6,2025/02/16,7,MEGA FORCE,十力,K C Leung,梁家俊,128,1148,3,P C Ng,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,999,0
+7,2025/02/16,8,FAMILY JEWEL,共享富裕,H Bowman,布文,124,1027,6,C Fownes,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,70,0
+8,2025/02/16,9,SUPREME AGILITY,奮鬥心,M F Poon,潘明輝,122,982,4,P C Ng,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,7,3
+9,2025/02/16,10,LIVEANDLETLIVE,奔放,H Bentley,班德禮,121,1137,5,A S Cruz,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,28,2
+10,2025/02/16,11,STELLAR GRANDE,志敏將星,M Chadwick,蔡明紹,121,1043,14,D Eustace,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,25,2
+11,2025/02/16,12,MIDORI GIANT,綠色巨人,B Thompson,湯普新,119,1296,12,M Newnham,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,7,2
+12,2025/02/16,13,NAMJONG KINGDOM,南莊堡,H Doyle,杜苑欣,118,1146,9,C S Shum,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,28,2
+13,2025/02/16,14,SIMPLE HEDGE,精算謀略,A Hamelin,賀銘年,118,1160,7,J Size,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,25,3
