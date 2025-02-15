@@ -94,10 +94,10 @@
           <th class="w3-hide-small">{% trans "Jockey" %}</th>
           <th>{% trans 'Vote' %}</th>
             <th>{% trans "Freq" %}&nbsp;/&nbsp;{% trans "Period" %} <i class="fa fa-info-circle w3-tooltip" style="position: relative;"><span class="w3-text w3-tag w3-round w3-light-grey w3-small w3-tooltip-content" style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); white-space: nowrap;">密度:過去六十日，馬匹參賽的次數<br>相隔:顯示馬匹上次比賽相隔的時間</span></i></th>
-            <th colspan="2" class="w3-center w3-blue">{% trans "Odds" %} <br>{% trans 'Updated' %}: {{ odds_time}}</th>
+            <!--<th colspan="2" class="w3-center w3-blue">{% trans "Odds" %} <br>{% trans 'Updated' %}: {{ odds_time}}</th>-->
          
           </tr>
-        <tr class="w3-light-blue w3-center">
+        <!--<tr class="w3-light-blue w3-center">
           <th></th>
           <th></th>
           <th></th>
@@ -105,7 +105,7 @@
           <th></th>
           <th class="w3-hide-small">{% trans "Win" %}</th>
           <th>{% trans "Place" %}</th>
-        </tr>
+        </tr> -->
        <!--test123-->
       </thead>
       {% for i, r in current_race.iterrows %}
@@ -142,9 +142,9 @@
     <td><span class="w3-badge w3-red">{{ r.Freq|floatformat:0}}</span>/<span class="w3-tag">{{ r.RestDays|floatformat:0 }}</span></td>
       
   
-      <td class="w3-hide-small">{{ r.Win }}</td>
+     <!-- <td class="w3-hide-small">{{ r.Win }}</td>
 
-      <td style="background-color: lightgreen;">{{ r.Place }}</td>
+      <td style="background-color: lightgreen;">{{ r.Place }}</td>-->
 
 
       {% endfor %}
