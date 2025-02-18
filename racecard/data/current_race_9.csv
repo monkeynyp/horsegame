@@ -1,15 +1,13 @@
-,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/02/16,1,FAST RESPONDER,會長之寶,P N Wong,黃寶妮 (-10),134,1048,12,D J Whyte,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,21,2
-1,2025/02/16,2,HORSEPOWER,馬力,M Chadwick,蔡明紹,131,1107,6,F C Lor,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,112,0
-2,2025/02/16,3,SUPER FORTUNE,連連有盈,H Bowman,布文,129,1244,1,A S Cruz,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,21,2
-3,2025/02/16,4,COLOURFUL KING,顏色之皇,A Atzeni,艾兆禮,128,1106,8,D Eustace,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,999,0
-4,2025/02/16,5,MAJESTIC EXPRESS,英勇快車,B Avdulla,艾道拿,127,1220,9,J Size,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,7,3
-5,2025/02/16,6,SPARKLING FELLOW,飛來閃耀,A Badel,巴度,126,1125,10,D J Hall,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,21,1
-6,2025/02/16,7,CRIMSON FLASH,翠紅,L Ferraris,霍宏聲,125,1096,13,M Newnham,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,21,1
-7,2025/02/16,8,SWEET BRIAR,瑰麗人生,K De Melo,董明朗,125,1100,11,K W Lui,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,46,1
-8,2025/02/16,9,LEGENDARY IMPACT,傳承效應,K C Leung,梁家俊,124,1206,3,W K Mo,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,999,0
-9,2025/02/16,10,SAL,赤霞,B Thompson,湯普新,124,1149,5,C W Chang,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,999,0
-10,2025/02/16,11,CANDLELIGHT DINNER,燭光晚餐,H Doyle,杜苑欣,122,1122,14,Y S Tsui,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,21,2
-11,2025/02/16,12,KNOW AT HEART,心裡有數,K Teetan,田泰安,122,1063,7,W Y So,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,21,3
-12,2025/02/16,13,VON BAER,建測精英,E C W Wong,黃智弘 (-7),122,1131,4,D A Hayes,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,11,3
-13,2025/02/16,14,AURORA PATCH,錶之極光,M F Poon,潘明輝,121,1202,2,P C Ng,11,Class 3,1000,Sha Tin:,"TURF - ""C+3"" Course",Good,16:35,16,3
+,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
+0,2025/02/19,1,SOLEIL FIGHTER,太陽勇士,K Teetan,田泰安,135,1109,6,D A Hayes,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,14,3,XB,
+1,2025/02/19,2,SIMPLY MAVERICK,極速奇兵,L Ferraris,霍宏聲,132,1202,4,P F Yiu,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,24,2,V1,
+2,2025/02/19,3,HAMERON,博望坡,T Marquand,馬昆,126,1045,3,K W Lui,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,28,2,,
+3,2025/02/19,4,AESTHETICISM,唯美主義,M F Poon,潘明輝,122,1071,10,P C Ng,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,28,2,,
+4,2025/02/19,5,NEW FOREST,新意馬,L Hewitson,希威森,121,1136,7,M Newnham,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,7,2,B/TT1,
+5,2025/02/19,6,STORMI,翠兒威威,C L Chau,周俊樂 (-2),121,1112,12,T P Yung,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,19,3,TT,
+6,2025/02/19,7,CAPITAL LEGEND,川河首駒,E C W Wong,黃智弘 (-7),120,1153,5,C Fownes,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,10,2,TT,
+7,2025/02/19,8,DEVAS TWELVE,十二神將,K De Melo,董明朗,120,1106,9,W Y So,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,19,2,CP/TT,
+8,2025/02/19,9,MIGHTY COMMANDER,三軍勇將,A Badel,巴度,119,1052,1,C Fownes,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,42,1,H/TT,
+9,2025/02/19,10,QUANTUM PATCH,錶之量子,H Bentley,班德禮,119,1133,8,P C Ng,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,14,2,TT,
+10,2025/02/19,11,SUPER UNICORN,勁好運,M L Yeung,楊明綸,119,1090,2,F C Lor,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,24,2,TT,
+11,2025/02/19,12,VIVA GRACIOUSNESS,爆笑,M Chadwick,蔡明紹,117,1109,11,A S Cruz,9,Class 3,1650,Happy Valley:,"TURF - ""B"" Course",Good,22:50,28,2,TT,

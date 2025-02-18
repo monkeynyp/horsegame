@@ -1,15 +1,13 @@
-,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/02/16,1,TOP GUN,壯志凌雲,L Ferraris,霍宏聲,135,1102,11,F C Lor,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,16,3
-1,2025/02/16,2,MARKWIN,但求開心,A Badel,巴度,132,1207,13,W K Mo,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,16,3
-2,2025/02/16,3,NAVAL FORCE,恒之有道,T Marquand,馬昆,130,1028,2,P C Ng,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,28,2
-3,2025/02/16,4,STEPS AHEAD,遙遙領先,A Atzeni,艾兆禮,130,1092,8,K W Lui,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,35,2
-4,2025/02/16,5,LO RIDER,平凡騎士,B Avdulla,艾道拿,129,1045,1,C Fownes,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,7,3
-5,2025/02/16,6,PACKING HURRICANE,包裝旋風,K Teetan,田泰安,129,1004,10,D Eustace,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,91,0
-6,2025/02/16,7,MEGA FORCE,十力,K C Leung,梁家俊,128,1148,3,P C Ng,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,999,0
-7,2025/02/16,8,FAMILY JEWEL,共享富裕,H Bowman,布文,124,1027,6,C Fownes,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,70,0
-8,2025/02/16,9,SUPREME AGILITY,奮鬥心,M F Poon,潘明輝,122,982,4,P C Ng,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,7,3
-9,2025/02/16,10,LIVEANDLETLIVE,奔放,H Bentley,班德禮,121,1137,5,A S Cruz,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,28,2
-10,2025/02/16,11,STELLAR GRANDE,志敏將星,M Chadwick,蔡明紹,121,1043,14,D Eustace,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,25,2
-11,2025/02/16,12,MIDORI GIANT,綠色巨人,B Thompson,湯普新,119,1296,12,M Newnham,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,7,2
-12,2025/02/16,13,NAMJONG KINGDOM,南莊堡,H Doyle,杜苑欣,118,1146,9,C S Shum,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,28,2
-13,2025/02/16,14,SIMPLE HEDGE,精算謀略,A Hamelin,賀銘年,118,1160,7,J Size,11,Class 3,1800,Sha Tin:,"TURF - ""C+3"" Course",Good,15:35,25,3
+,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
+0,2025/02/19,1,BEAUTY DESTINY,美麗緣分,A Atzeni,艾兆禮,135,1194,3,F C Lor,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,28,2,H/P/TT,
+1,2025/02/19,2,SEASONS WIT,四季醒,L Ferraris,霍宏聲,132,1125,10,J Richards,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,19,3,B/TT,
+2,2025/02/19,3,SPORTS LEGEND,川河動駒,H T Mo,巫顯東 (-2),132,1194,8,C S Shum,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,70,0,B/TT,
+3,2025/02/19,4,HONG KONG HALL,福國寶,K De Melo,董明朗,124,1205,9,D J Hall,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,24,2,CP-/TT-,
+4,2025/02/19,5,PRAWNS ELEVEN,多利彩駒,M F Poon,潘明輝,124,1099,2,M Newnham,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,28,3,XB/TT,
+5,2025/02/19,6,KING OF FIGHTERS,佛亮老撾,B Avdulla,艾道拿,123,1143,6,A S Cruz,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,19,2,TT,
+6,2025/02/19,7,BEAUTY INFINITY,無限美麗,K Teetan,田泰安,122,1141,11,J Size,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,91,0,,
+7,2025/02/19,8,AURIO,志滿同行,H Doyle,杜苑欣,121,1151,1,D A Hayes,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,10,4,SR/TT,
+8,2025/02/19,9,GOKO WIN,超霸勝,H Bentley,班德禮,121,1076,5,D J Whyte,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,38,2,B,
+9,2025/02/19,10,HAYDAY,千杯敬典,M Chadwick,蔡明紹,119,1111,4,P F Yiu,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,14,3,,
+10,2025/02/19,11,KARATE EXPRESS,精英勇士,L Hewitson,希威森,119,1030,7,K W Lui,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,24,2,,
+11,2025/02/19,12,THUNDER PRINCE,雷神太保,A Badel,巴度,119,1074,12,W Y So,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,28,2,E1/TT,

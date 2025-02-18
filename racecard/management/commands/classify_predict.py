@@ -71,5 +71,45 @@ class Command(BaseCommand):
         X = horse_jockey_avg_result[test_case]
         y = horse_jockey_avg_result['Result']
         pipeline.fit(X, y)
+        no_of_race = input("Input Total Number of Race: ")
+        try:
+            for pred_i in range(1,int(no_of_race)+1):
+                print(pred_i)
 
-        test_hist = pd.read_csv('Evaluation/test_curr_hist_df_m.csv')
+                race_predict_df = pd.DataFrame([],columns=['HorseName','HorseName_cn','Jockey','Trainer','Score'])
+                race_data = pd.read_csv('current_race_'+str(pred_i)+'.csv')
+                race_data['band_no']= race_data['HorseName']
+                race_data['jockey'] = race_data['Jockey']
+                race_data['trainer'] = race_data['Trainer']
+                race_data['act_wt']= race_data['ActWeight']
+                race_data['WeightRatio'] = (race_data['ActWeight'] / race_data['HorseW`eight']).astype(float)
+                race_data['race_class'] = race_data['Class']
+
+                # Make predictions on the new data
+                new_predictions = pipeline.predict(race_data)
+
+                # Print the predictions
+                print(new_predictions)
+
+                probabilities = pipeline.predict_proba(race_data)
+            
+                race_data['prob'] = probabilities[:, 1]
+                # Print the probability of each horse belonging to class 1
+                for i, horse_name in enumerate(race_data['HorseName']):
+                    jockey = race_data['Jockey'][i]
+                    trainer = race_data['Trainer'][i]
+                    horse_name_cn = race_data['HorseName_cn'][i]
+                    probability_class_1 = probabilities[i, 1]  # Assuming class 1 is the second column
+                    race_predict_data = [horse_name,horse_name_cn,jockey,trainer,probability_class_1]
+                    print(race_predict_data)
+                    race_predict_df.loc[len(race_predict_df)] = race_predict_data
+
+                    print(f'Probability of {horse_name} : {probability_class_1}')
+                
+                print("My Prediction")
+                print(race_predict_df)
+                
+                race_predict_df.to_csv('../horsegame/racecard/data/predict_db_ran'+str(pred_i)+'.csv')
+        except Exception as e:
+                print(e)
+  
