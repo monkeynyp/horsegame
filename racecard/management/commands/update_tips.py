@@ -23,7 +23,7 @@ class Command(BaseCommand):
         
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
         #alg_methods = ['LogRegress','RanForest','ForestReg','NeuroReg']
-        alg_methods = ['LogRegress','RanForest','NeuroReg']
+        alg_methods = ['LogRegress','RanForest','NeuroReg','NeuroNet']
         #alg_methods = ['LogRegress','RanForest']
         #alg_methods = ['NeuroReg']
         jockey_score = 0
@@ -46,7 +46,7 @@ class Command(BaseCommand):
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran"+str(counter)+".csv")
                 elif alg == 'NeuroNet':
                     class_flag=1
-                    csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu"+str(counter)+".csv")
+                    csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu3"+str(counter)+".csv")
                 elif alg == 'ForestReg':
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran2"+str(counter)+".csv")
                 elif alg == 'NeuroReg':
