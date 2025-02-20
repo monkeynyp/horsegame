@@ -47,6 +47,13 @@ class Command(BaseCommand):
 
         merged_df = pd.merge(race_hist, race_hist_db, left_on=['RaceDate', 'HorseName'], right_on=['date', 'horse_name'], how='left')
         
+        # Assign the new columns
+        race_hist['Gear'] = merged_df['gear']
+        race_hist['Rating'] = merged_df['rating']
+
+        # Write the updated race_hist into a new csv file curr_hist_4.csv
+        race_hist.to_csv('/Users/louisngai/horsegame/curr_hist_4.csv', index=False)
+        
         merged_df.to_csv('/Users/louisngai/horsegame/merged_df.csv', index=False)   
 
         # Close the database connection 
