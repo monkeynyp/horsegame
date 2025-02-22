@@ -1,13 +1,11 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/02/19,1,BEAUTY DESTINY,美麗緣分,A Atzeni,艾兆禮,135,1194,3,F C Lor,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,28,2,H/P/TT,
-1,2025/02/19,2,SEASONS WIT,四季醒,L Ferraris,霍宏聲,132,1125,10,J Richards,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,19,3,B/TT,
-2,2025/02/19,3,SPORTS LEGEND,川河動駒,H T Mo,巫顯東 (-2),132,1194,8,C S Shum,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,70,0,B/TT,
-3,2025/02/19,4,HONG KONG HALL,福國寶,K De Melo,董明朗,124,1205,9,D J Hall,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,24,2,CP-/TT-,
-4,2025/02/19,5,PRAWNS ELEVEN,多利彩駒,M F Poon,潘明輝,124,1099,2,M Newnham,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,28,3,XB/TT,
-5,2025/02/19,6,KING OF FIGHTERS,佛亮老撾,B Avdulla,艾道拿,123,1143,6,A S Cruz,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,19,2,TT,
-6,2025/02/19,7,BEAUTY INFINITY,無限美麗,K Teetan,田泰安,122,1141,11,J Size,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,91,0,,
-7,2025/02/19,8,AURIO,志滿同行,H Doyle,杜苑欣,121,1151,1,D A Hayes,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,10,4,SR/TT,
-8,2025/02/19,9,GOKO WIN,超霸勝,H Bentley,班德禮,121,1076,5,D J Whyte,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,38,2,B,
-9,2025/02/19,10,HAYDAY,千杯敬典,M Chadwick,蔡明紹,119,1111,4,P F Yiu,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,14,3,,
-10,2025/02/19,11,KARATE EXPRESS,精英勇士,L Hewitson,希威森,119,1030,7,K W Lui,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,24,2,,
-11,2025/02/19,12,THUNDER PRINCE,雷神太保,A Badel,巴度,119,1074,12,W Y So,9,Class 3,1200,Happy Valley:,"TURF - ""B"" Course",Good,21:40,28,2,E1/TT,
+0,2025/02/23,1,VOYAGE BUBBLE,遨遊氣泡,J McDonald,麥道朗,126,1243,1,P F Yiu,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,35,1,CP,120
+1,2025/02/23,2,GALAXY PATCH,錶之銀河,B Shinn,薛恩,126,1162,5,P C Ng,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,35,1,,116
+2,2025/02/23,3,CHANCHENG GLORY,禪勝輝煌,H Bowman,布文,126,1175,7,K W Lui,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,23,2,B/XB,114
+3,2025/02/23,4,ENSUED,安騁,K Teetan,田泰安,126,1071,6,J Size,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,23,1,,114
+4,2025/02/23,5,HAPPY TOGETHER,越駿歡欣,A Badel,巴度,126,1146,4,F C Lor,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,23,2,H/TT,114
+5,2025/02/23,6,STRAIGHT ARRON,直線力山,L Ferraris,霍宏聲,126,1122,9,P F Yiu,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,23,1,XB,114
+6,2025/02/23,7,FIVE G PATCH,錶之五知,B Avdulla,艾道拿,126,1019,10,A S Cruz,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,23,2,TT,113
+7,2025/02/23,8,LA CITY BLANCHE,當年情,M Chadwick,蔡明紹,126,1001,2,A S Cruz,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,23,2,TT,111
+8,2025/02/23,9,SWORD POINT,知足常樂,A Atzeni,艾兆禮,126,1143,8,F C Lor,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,23,2,CP-,108
+9,2025/02/23,10,WINNING DRAGON,又龍串鳳,H Bentley,班德禮,126,1074,3,A S Cruz,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:05,23,3,TT,97
