@@ -4193,6 +4193,15 @@ msgstr "游達榮"
 msgid "T P Yung"
 msgstr "容天鵬"
 
+msgid "R Kingscote"
+msgstr "金誠剛"
+
+msgid "D McDonogh"
+msgstr "麥當能"
+
+msgid "J Orman"
+msgstr "奧爾民"
+
 
 msgid "J Richards"
 msgstr "黎昭昇"
