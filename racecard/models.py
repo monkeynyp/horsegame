@@ -51,8 +51,9 @@ class Article(models.Model):
     title = models.CharField(max_length=50)
     content = models.TextField()
     image = models.ImageField(upload_to='racecard/images/')
+    topics = models.CharField(max_length=15,default="Horse")
     pub_date = models.DateTimeField(auto_now_add=True)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, default="Monkey")
     language = models.CharField(max_length=2, choices=LANGUAGE_CHOICES)
     likes = models.IntegerField(default=0)
 
