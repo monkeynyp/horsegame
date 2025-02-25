@@ -1,11 +1,40 @@
-<!DOCTYPE html>
-<html>
+{% extends "master.html" %} {% block title %} Member Portal {% endblock %} 
+{% load i18n %}
+{% load static %}
+{% block content %}
 <head>
     <title>{{ article.title }}</title>
 </head>
 <body>
-    <h1>{{ article.title }}</h1>
-    <p>{{ article.content }}</p>
+    <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container">
+            <h3><b>{{ article.title }}</b></h3>
+            <div class="w3-row">
+                <div class="w3-col m8">
+                  <img src="{{ article.image.url }}" alt="Nature" class="fallback-image" onerror="this.onerror=null;this.src='{% static article.image  %}';" style="width:100%">
+                </div>
+                <div class="w3-col m2 w3-padding">
+                    <h5><span class="w3-opacity">{{ article.pub_date|date:"Y-m-d" }}</span></h5>
+                </div>
+            </div>
+                  <p>{{ article.content | urlize| linebreaks  }}</p>
+                    <div class="w3-row">
+                        <div class="w3-col m8 s12">
+                          <p><button class="w3-button w3-padding-large w3-blue w3-border w3-round" onclick="likeArticle({{ article.id }})"><i class="fa-solid fa-thumbs-up fa-lg"></i><span id="likesCount" class="w3-text w3-padding">{{ article.likes }}</span></button> </p>
+                      </div>
+                    </div>
+            </div>
+        </div>
     <p>Published on: {{ article.pub_date }}</p>
+    {% with id=article.id %}
+    <div class="w3-container w3-padding-16" style="text-align: center;">
+        {% if id|add:"-1" > 0 %}
+            <a href="/article/{{ id|add:'-1' }}/"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">{% trans 'Previous' %}</button></a>
+        {% else %}
+            <a href="/article/1/"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">{% trans 'Previous' %}</button></a>
+        {% endif %}
+        <a href="/article/{{ id|add:'1' }}/"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">{% trans 'Next' %} »</button></a>
+    </div>
+    {% endwith %}
 </body>
-</html>
+{% endblock %}
