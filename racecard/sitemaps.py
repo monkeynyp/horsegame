@@ -18,10 +18,10 @@ class StaticViewSitemap(Sitemap):
 
     def items(self):
         return [
-            'recent_article', 'racecard', 'racecard_vip', 'jockey_king', 'trainer_king',
+            'recent_article', 'racecard_vip', 'jockey_king', 'trainer_king',
             'view_by_member', 'newsletter', 'contact', 'help', 'privacy', 'disclaimer',
             'responsible', 'match_chart', 'data_update_console', 'lottory_predict',
-            'ichi_lotto', 'lotto_next_stat', 'lotto_test', 'lotto_trio', 'lotto_longterm','stock_info'
+            'ichi_lotto', 'lotto_next_stat', 'lotto_test', 'lotto_trio', 'lotto_longterm', 'stock_info'
         ]
 
     def location(self, item):
