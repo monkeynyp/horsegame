@@ -22,7 +22,7 @@ sitemaps = {
 
 urlpatterns = [
     path('', views.recent_article, name='recent_article'),
-    path('racecard/', views.racecard, name='racecard'),
+    path('racecard/<int:race_id>/', views.racecard, name='racecard'),
     path('racecard_vip/', views.racecard_vip, name='racecard_vip'),
     path('jockey_king/', views.jockey_king, name='jockey_king'),
     path('trainer_king/', views.trainer_king, name='trainer_king'),
@@ -58,6 +58,7 @@ urlpatterns = [
     path('race/<int:id>/', views.race_detail, name='race_detail'),
     path('add_stock_info/', views.add_stock_info, name='add_stock_info'),
     path('stock_info/', views.stock_info, name='stock_info'),
+    path('racecard/', views.racecard_old),
  
     # Other URL patterns
     

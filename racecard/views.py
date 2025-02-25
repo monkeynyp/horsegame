@@ -27,8 +27,13 @@ from .forms import RaceCommentForm
 
 
 ## Horse Raching Features Create your views here.
-def racecard(request):
-     id = request.GET.get('id')
+def racecard_old(request):
+    race_id = request.GET.get('id')
+    if race_id:
+        return redirect(f'/racecard/{race_id}/', permanent=True)
+    
+def racecard(request,race_id):
+     id = race_id
      if id is None:
           id = 1
      current_datetime = timezone.now()

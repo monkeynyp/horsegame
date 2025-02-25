@@ -60,22 +60,21 @@
 
 <div class="w3-container"></div>
 <div class="w3-margin">
-  
     <h3><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1|slice:"-5:" }} &nbsp;{{race_time}} </h3>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=3">3</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=4">4</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=5">5</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=6">6</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=7">7</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=8">8</a>
+    <a class="w3-button w3-large w3-circle {% if race_id == 1 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/1/">1</a>
+    <a class="w3-button w3-large w3-circle {% if race_id == 2 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/2/">2</a>
+    <a class="w3-button w3-large w3-circle {% if race_id == 3 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/3/">3</a>
+    <a class="w3-button w3-large w3-circle {% if race_id == 4 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/4/">4</a>
+    <a class="w3-button w3-large w3-circle {% if race_id == 5 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/5/">5</a>
+    <a class="w3-button w3-large w3-circle {% if race_id == 6 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/6/">6</a>
+    <a class="w3-button w3-large w3-circle {% if race_id == 7 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/7/">7</a>
+    <a class="w3-button w3-large w3-circle {% if race_id == 8 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/8/">8</a>
     {% if total_race > 8 %}
-      <a class="w3-button w3-large w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=9">9</a>
+      <a class="w3-button w3-large w3-circle {% if race_id == 9 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/9/">9</a>
       {% if total_race > 9 %}
-        <a class="w3-button w3-large w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=10">10</a>
+        <a class="w3-button w3-large w3-circle {% if race_id == 10 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/10/">10</a>
         {% if total_race > 10 %}
-          <a class="w3-button w3-large w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=11">11</a>
+          <a class="w3-button w3-large w3-circle {% if race_id == 11 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/11/">11</a>
         {% endif %}
       {% endif %}
     {% endif %}
@@ -271,24 +270,24 @@
 
 
 
-     <div class="w3-container w3-padding-16 w3-margin-left">
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=1">1</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=2">2</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=3">3</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=4">4</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=5">5</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=6">6</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=7">7</a>
-    <a class="w3-button w3-large w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=8">8</a>
-    {% if total_race > 8 %}
-      <a class="w3-button w3-large w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=9">9</a>
-      {% if total_race > 9 %}
-        <a class="w3-button w3-large w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=10">10</a>
-        {% if total_race > 10 %}
-          <a class="w3-button w3-large w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/racecard/?id=11">11</a>
+      <div class="w3-margin">
+        <a class="w3-button w3-large w3-circle {% if race_id == 1 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/1/">1</a>
+        <a class="w3-button w3-large w3-circle {% if race_id == 2 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/2/">2</a>
+        <a class="w3-button w3-large w3-circle {% if race_id == 3 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/3/">3</a>
+        <a class="w3-button w3-large w3-circle {% if race_id == 4 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/4/">4</a>
+        <a class="w3-button w3-large w3-circle {% if race_id == 5 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/5/">5</a>
+        <a class="w3-button w3-large w3-circle {% if race_id == 6 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/6/">6</a>
+        <a class="w3-button w3-large w3-circle {% if race_id == 7 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/7/">7</a>
+        <a class="w3-button w3-large w3-circle {% if race_id == 8 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/8/">8</a>
+        {% if total_race > 8 %}
+          <a class="w3-button w3-large w3-circle {% if race_id == 9 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/9/">9</a>
+          {% if total_race > 9 %}
+            <a class="w3-button w3-large w3-circle {% if race_id == 10 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/10/">10</a>
+            {% if total_race > 10 %}
+              <a class="w3-button w3-large w3-circle {% if race_id == 11 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/11/">11</a>
+            {% endif %}
+          {% endif %}
         {% endif %}
-      {% endif %}
-    {% endif %}
     </div>
     <div class="w3-container w3-margin-top">
       <h4 class="w3-text-blue">{% trans 'Comments' %}</h4>
