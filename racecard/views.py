@@ -31,6 +31,8 @@ def racecard_old(request):
     race_id = request.GET.get('id')
     if race_id:
         return redirect(f'/racecard/{race_id}/', permanent=True)
+    else:
+        return redirect('/racecard/1/', permanent=True)
     
 def racecard(request,race_id):
      id = race_id
