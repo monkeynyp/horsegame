@@ -23,7 +23,7 @@ class LottoTrioSearchAdmin(admin.ModelAdmin):
     list_display = ("Draw","Search_date","No1","No2","No3","Diff_days")
 
 class Marksix_user_recAdmin(admin.ModelAdmin):
-    list_display = ("user","Draw","Date","No1","No2","No3","No4","No5","No6","No7")
+    list_display = ("user","Date","No1","No2","No3","No4","No5","No6")
 
 
 class Horse_InfoAdmin(admin.ModelAdmin):

@@ -94,7 +94,7 @@ class TW_lotto_hist(models.Model):
 class Marksix_user_rec(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='marksix_rec')
     seq  = models.IntegerField()
-    Draw = models.CharField(max_length=10)
+    Draw = models.CharField(max_length=10,default="NA")
     Date = models.DateField()
     No1 = models.IntegerField()
     No2 = models.IntegerField()
@@ -102,8 +102,14 @@ class Marksix_user_rec(models.Model):
     No4 = models.IntegerField()
     No5 = models.IntegerField()
     No6 = models.IntegerField()
-    No7 = models.IntegerField()
-    Hit = models.IntegerField(default=0)
+    #No7 = models.IntegerField()
+    Hit1 = models.IntegerField(default=0)
+    Hit2 = models.IntegerField(default=0)
+    Hit3 = models.IntegerField(default=0)
+    Hit4 = models.IntegerField(default=0)
+    Hit5 = models.IntegerField(default=0)
+    Hit6 = models.IntegerField(default=0)
+    Hit7 = models.IntegerField(default=0)
 
     def __str__(self):
         return f"{self.Draw} - {self.Date}"

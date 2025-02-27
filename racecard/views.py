@@ -34,6 +34,9 @@ def racecard_old(request):
     else:
         return redirect('/racecard/1/', permanent=True)
     
+def portal_old(request):
+        return redirect('/blog/', permanent=True)
+    
 def racecard(request,race_id):
      id = race_id
      if id is None:
@@ -753,7 +756,6 @@ def update_lotto_tips(request):
     if request.method == 'POST':
         form = NumberForm(request.POST)
         if form.is_valid():
-            draw_no = request.POST.get('DrawNo')
             # Sort the numbers in ascending order
             sorted_numbers = sorted([
                 form.cleaned_data['No1'],
@@ -762,27 +764,40 @@ def update_lotto_tips(request):
                 form.cleaned_data['No4'],
                 form.cleaned_data['No5'],
                 form.cleaned_data['No6'],
-                form.cleaned_data['No7'],
+                #form.cleaned_data['No7'],
             ])
             # Update or create the instance
-            user_rec, created = Marksix_user_rec.objects.update_or_create(
+            #draw_no = request.session.get('next_draw')
+            existing_record = Marksix_user_rec.objects.filter(
                 user=request.user,
-                seq=1,  # Set the appropriate sequence value
-                Draw=draw_no,  # Set the appropriate draw value
-                defaults={
-                    'Date': date.today(),
-                    'No1': sorted_numbers[0],
-                    'No2': sorted_numbers[1],
-                    'No3': sorted_numbers[2],
-                    'No4': sorted_numbers[3],
-                    'No5': sorted_numbers[4],
-                    'No6': sorted_numbers[5],
-                    'No7': sorted_numbers[6],
-                }
-            )
-            # Save the instance to the database
-            user_rec.save()
-    return redirect('../ichi_lotto/')
+                #Draw=draw_no,
+                No1=sorted_numbers[0],
+                No2=sorted_numbers[1],
+                No3=sorted_numbers[2],
+                No4=sorted_numbers[3],
+                No5=sorted_numbers[4],
+                No6=sorted_numbers[5],
+            ).exists()
+
+            if not existing_record:
+                max_seq = Marksix_user_rec.objects.filter(user=request.user).aggregate(Max('seq'))['seq__max'] or 0
+                new_seq = max_seq + 1
+
+                user_rec = Marksix_user_rec(
+                    user=request.user,
+                    seq=new_seq,
+                    #Draw=draw_no,
+                    Date=date.today(),
+                    No1=sorted_numbers[0],
+                    No2=sorted_numbers[1],
+                    No3=sorted_numbers[2],
+                    No4=sorted_numbers[3],
+                    No5=sorted_numbers[4],
+                    No6=sorted_numbers[5],
+                )
+                user_rec.save()
+        
+    return redirect('../lotto_longterm/')
 
 def lotto_next_stat(request):
     listNo='No1'
@@ -1080,9 +1095,11 @@ def lotto_trio(request):
                     break
      return render(request, 'lotto_trio.html', {'form': form, 'next_draw':next_draw,'diff':diff, 'result':record, 'hist':hist_records, 'record1':record1, 'record2':record2, 'record1_freq':record1_freq, 'record2_freq':record2_freq, 'record1_cold':record1_cold, 'record2_cold':record2_cold})
 
-def lotto_longterm(request):     
-     form = NumberForm() 
-     return render(request, 'lotto_longterm.html',{'form':form})
+def lotto_longterm(request):   
+      
+    form = NumberForm() 
+    records = Marksix_user_rec.objects.all()
+    return render(request, 'lotto_longterm.html',{'form':form, 'records':records})
 
 def calculate_days_difference(record_date):
     # Convert record_date to a datetime object if it's not already
@@ -1130,7 +1147,7 @@ def view_comments(request, race_id):
         comments = RaceComment.objects.filter(race_id=race_id).order_by('-created_at')
     return render(request, 'view_comments.html', {'comments': comments, 'race_id': race_id})
 
-from django.utils import translation
+
 
 def stock_info(request):
     selected_language = translation.get_language()

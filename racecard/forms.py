@@ -17,7 +17,13 @@ class HorseChartForm(forms.Form):
     race_date = forms.DateField(label='Race Date')
 
 class NumberForm(forms.Form):
-    number = forms.IntegerField(label='Number')
+     No1 = forms.IntegerField(min_value=1, max_value=49)
+     No2 = forms.IntegerField(min_value=1, max_value=49)
+     No3 = forms.IntegerField(min_value=1, max_value=49)
+     No4 = forms.IntegerField(min_value=1, max_value=49)
+     No5 = forms.IntegerField(min_value=1, max_value=49)
+     No6 = forms.IntegerField(min_value=1, max_value=49)
+     #No7 = forms.IntegerField(min_value=1, max_value=49)
 
 class LottoForm(forms.Form):
     option = forms.ChoiceField(choices=[(10, 'Last 10 draws'), (20, 'Last 20 draws'), (30, 'Last 30 draws')])

@@ -1,7 +1,8 @@
 from django.core.management.base import BaseCommand
-from racecard.models import Marksix_hist,LottoTrioSearch
+from racecard.models import Marksix_hist,LottoTrioSearch, Marksix_user_rec
 from datetime import datetime
 from django.db.models import Q
+from django.core.mail import send_mail
 
 class Command(BaseCommand):
     help = 'Create a new Marksix record'
@@ -42,20 +43,58 @@ class Command(BaseCommand):
                 self.stdout.write(self.style.SUCCESS('Successfully created new Marksix record.'))
             else:
                 self.stdout.write(self.style.SUCCESS('Successfully updated existing Marksix record.'))
+        # Validate the Hit number of User's Record
+            user_records = Marksix_user_rec.objects.all()
 
+            for user_record in user_records:
+                score = 0
+                user_numbers = [user_record.No1, user_record.No2, user_record.No3, user_record.No4, user_record.No5, user_record.No6]
+                result_numbers = [marksix_record.No1, marksix_record.No2, marksix_record.No3, marksix_record.No4, marksix_record.No5, marksix_record.No6]
+                print(user_numbers)
+                for num in user_numbers:
+                    print(num,result_numbers)
+                    if num in result_numbers:
+                        score += 1
+
+                    if num == marksix_record.No7:
+                        score += 0.5
+                        
+                    print("Score is:", score)
+                if score == 3:
+                    user_record.Hit7 += 1
+                elif score == 3.5:
+                    user_record.Hit6 += 1
+                elif score == 4:
+                    user_record.Hit5 += 1
+                elif score == 4.5:
+                    user_record.Hit4 += 1
+                elif score == 5:
+                    user_record.Hit3 += 1
+                elif score == 5.5:
+                    user_record.Hit2 += 1
+                elif score == 6:
+                    user_record.Hit1 += 1
+                user_record.save()
+                if score >= 3:
+                    send_mail(
+                        'Congratulations!',
+                        f'Congratulations! Your Marksix record {user_numbers} has hit a score of {score}.',
+                        'from@example.com',
+                        [user_record.user.email],
+                        fail_silently=False,
+                    )
         except ValueError as e:
             self.stdout.write(self.style.ERROR(f'Error parsing input: {e}'))
-        except Exception as e:
-            self.stdout.write(self.style.ERROR(f'An unexpected error occurred: {e}'))
+
 # Find the oldest combination
 # Step 1: Fetch the first 20 records from LottoTrioSearch ordered by Diff_days in descending order
         
         top_20_records = LottoTrioSearch.objects.order_by('-Diff_days')[:50]
-        print(top_20_records)
+        #print(top_20_records)
 
         # Extract No1, No2, No3 into an array of number lists
         number_lists = [[record.No1, record.No2, record.No3] for record in top_20_records]
-        print("Number Lists:", number_lists)
+        #print("Number Lists:", number_lists)
 
         # Step 2: Run the loop of top_20_records with the following logic
         for number_list in number_lists:

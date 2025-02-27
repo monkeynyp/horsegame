@@ -59,6 +59,7 @@ urlpatterns = [
     path('add_stock_info/', views.add_stock_info, name='add_stock_info'),
     path('stock_info/', views.stock_info, name='stock_info'),
     path('racecard/', views.racecard_old),
+    path('portal/', views.portal_old),
  
     # Other URL patterns
     
