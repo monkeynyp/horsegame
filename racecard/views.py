@@ -637,7 +637,7 @@ def user_login(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
-            return redirect('racecard')  # replace with the actual URL
+            return redirect('/racecard/1/', permanent=True)  # replace with the actual URL
     else:
         form = AuthenticationForm()
     return render(request, 'registration/login.html', {'form': form})
