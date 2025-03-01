@@ -242,8 +242,9 @@
                             {% trans 'Current' %}:
                             {% for last_perf in last_perf_by_user %}
                               {% if last_perf.user__username  == user_data.user.username %}
-                                <span class ="w3-tooltip w3-red">{{ last_perf.hit_pst | floatformat:0 }}% 
-                                <span class="w3-text">(<em>💰${{ last_perf.total_dividend | floatformat:0 }}</em>)</span></span>
+                                <span class="w3-red" style="font-size: larger;">${{ last_perf.total_dividend | floatformat:0 }}</span>
+                                <span class ="w3-light-blue">{{ last_perf.hit_pst | floatformat:0 }}% </span>
+                        
                               {% endif %}
                             {% endfor %}
                             <br>
@@ -426,7 +427,7 @@
       var raceTime = "{{ race_time }}"+":00";  // time from Django context
       var startDate = new Date(raceDate + "T" + raceTime);
      // alert(startDate)
-      var endDate = new Date("2026-12-25T23:59:59");
+      var endDate = new Date("2030-12-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period
       if (currentDatetime >= startDate && currentDatetime < endDate) {
