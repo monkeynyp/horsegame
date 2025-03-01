@@ -1,13 +1,19 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/02/26,1,HARMONY N BLESSED,人和家興,E C W Wong,黃智弘 (-7),135,1204,9,D A Hayes,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,17,4,B/TT,
-1,2025/02/26,2,RED ELEGANCE,紅逸舍,H Bowman,布文,131,1127,4,D J Whyte,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,21,2,B,
-2,2025/02/26,3,ETERNAL FORTUNE,連連幸運,R Moore,莫雅,127,1025,5,C S Shum,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,7,4,TT,
-3,2025/02/26,4,HEALTHY HEALTHY,添開心,B Avdulla,艾道拿,126,1178,6,P C Ng,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,3,4,B/TT,
-4,2025/02/26,5,YOUTHFUL SPIRITS,年少多好,L Ferraris,霍宏聲,126,1069,10,M Newnham,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,21,2,B-/SR/V1/TT,
-5,2025/02/26,6,MAJESTIC EXPRESS,英勇快車,A Badel,巴度,116,1225,8,J Size,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,10,4,E,
-6,2025/02/26,7,HEROIC MASTER,英雄豪邁,A Atzeni,艾兆禮,115,1077,2,F C Lor,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,21,2,B/TT,
-7,2025/02/26,8,AWESOME TREASURE,佳運發,L Hewitson,希威森,115,1147,11,D A Hayes,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,7,4,B-/CP1/TT,
-8,2025/02/26,9,HONG KONG HALL,福國寶,H T Mo,巫顯東 (-2),115,1204,3,D J Hall,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,7,3,,
-9,2025/02/26,10,KING ECCELLENTE,皇帝英明,K Teetan,田泰安,115,1149,7,D J Whyte,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,35,1,B/XB,
-10,2025/02/26,11,MULTIDUTCH,萬事得意,B Thompson,湯普新,115,1043,12,A S Cruz,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,999,0,B1/TT1,
-11,2025/02/26,12,SERGEANT PEPPER,胡椒軍曹,M L Yeung,楊明綸,115,1184,1,Y S Tsui,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:50,21,3,CP-,
+0,2025/03/02,1,"ROMANTIC THOR
+(Scratched)","浪漫戰神
+(退出)",-,-,-,-,-,-,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,999,0,-,
+1,2025/03/02,2,TALENTS AMBITION,精英雄心,B Shinn,薛恩,135,1210,11,M Newnham,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,30,2,B/XB,
+2,2025/03/02,3,AGENDA,清雲龍駒,M F Poon,潘明輝,133,1112,2,D J Hall,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,11,1,CP1,
+3,2025/03/02,4,CAMBRIDGE,包裝創新,J Moreira,莫雷拉,133,1051,10,P C Ng,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,42,1,SR-/XB1/TT1,
+4,2025/03/02,5,THE BEST PEACH,桃花雲,J McDonald,麥道朗,131,1069,5,A S Cruz,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,14,2,TT,
+5,2025/03/02,6,NAVAL FORCE,恒之有道,T Marquand,馬昆,129,1035,6,P C Ng,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,14,2,PC/TT,
+6,2025/03/02,7,PRAY FOR MIR,和平波,M Chadwick,蔡明紹,128,1098,3,W K Mo,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,21,2,CP,
+7,2025/03/02,8,DEFINITIVE,時時精準,R Moore,莫雅,124,1084,12,D Eustace,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,25,2,B/TT,
+8,2025/03/02,9,"FAMILY JEWEL
+(Scratched)","共享富裕
+(退出)",-,-,-,-,-,-,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,999,0,-,
+9,2025/03/02,10,SHARPEN BRIGHT,一支箭,K Teetan,田泰安,122,1029,1,D J Hall,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,39,1,B,
+10,2025/03/02,11,ENTHRALLED,安可,B Avdulla,艾道拿,120,1073,9,J Size,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,21,2,,
+11,2025/03/02,12,SPANISH FLAME,俊才,H Bentley,班德禮,119,1192,8,W Y So,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,14,2,,
+12,2025/03/02,13,STELLAR GRANDE,志敏將星,A Atzeni,艾兆禮,118,1043,4,D Eustace,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,14,2,CP/XB,
+13,2025/03/02,14,MIDORI GIANT,綠色巨人,C Williams,韋紀力,117,1313,7,M Newnham,10,Class 3,2000,Sha Tin:,"TURF - ""B"" Course",Good,17:15,14,3,B,

@@ -1,126 +1,95 @@
 ,RaceDate,RaceNo,Venue,Class,Going,Course,Place,HorseName,Jockey,Trainer,ActWeight,HorseWeight,Draw,FinishTime,WinOdd,Dividend,RaceMonth
-0,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",1,CARRYON SMILING,K De Melo,W Y So,119,1088,11,1:21.99,84,149.00,02
-1,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",2,MAX QUE,L Ferraris,M Newnham,125,1095,6,1:22.05,10,27.00,02
-2,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",3,EXCEL WONGCHOY,K Teetan,P C Ng,132,1084,14,1:22.21,27,54.00,02
-3,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",4,ETALON OR,A Badel,P F Yiu,132,1155,12,1:22.30,3.3,0,02
-4,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",5,VIEW ALL THINGS,M L Yeung,Y S Tsui,125,1167,3,1:22.33,103,0,02
-5,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",6,HAPPY UNIVERSE,R Kingscote,K H Ting,125,1178,7,1:22.35,110,0,02
-6,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",7,LAKESHORE HERO,B Avdulla,D J Hall,125,1061,4,1:22.37,9.6,0,02
-7,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",8,SHAMUS STORM,A Atzeni,D A Hayes,128,1057,1,1:22.41,2.4,0,02
-8,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",9,FLYING WROTE,H T Mo,A S Cruz,129,1108,9,1:22.61,30,0,02
-9,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",10,DREAMING WINNER,L Hewitson,F C Lor,129,1149,2,1:22.80,12,0,02
-10,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",11,HAPPY SHOOTER,H Bentley,C S Shum,126,1270,10,1:22.84,38,0,02
-11,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",12,LESLIE,P N Wong,C W Chang,121,1180,8,1:22.88,25,0,02
-12,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",13,MANAPHY,B Shinn,W K Mo,127,1216,5,1:23.56,25,0,02
-13,2025/02/23,1,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",14,TOP PEAK,C L Chau,T P Yung,133,1204,13,1:25.09,42,0,02
-14,2025/02/23,2,Sha Tin:,Class 2 - 1000M - (100-75),GOOD,"TURF - ""A"" Course",1,MAGIC CONTROL,B Shinn,W K Mo,135,1093,2,0:56.40,3.9,14.50,02
-15,2025/02/23,2,Sha Tin:,Class 2 - 1000M - (100-75),GOOD,"TURF - ""A"" Course", 2,JAMES TAK,A Atzeni,T P Yung,118,1131,4,0:56.64,10,26.50,02
-16,2025/02/23,2,Sha Tin:,Class 2 - 1000M - (100-75),GOOD,"TURF - ""A"" Course",3,FULL CREDIT,L Hewitson,M Newnham,126,1221,8,0:56.64,4.6,17.00,02
-17,2025/02/23,2,Sha Tin:,Class 2 - 1000M - (100-75),GOOD,"TURF - ""A"" Course",4,WHIZZ KID,H Bentley,A S Cruz,125,1195,7,0:56.75,21,0,02
-18,2025/02/23,2,Sha Tin:,Class 2 - 1000M - (100-75),GOOD,"TURF - ""A"" Course",5,HEALTHY HEALTHY,K Teetan,P C Ng,115,1201,5,0:56.82,16,0,02
-19,2025/02/23,2,Sha Tin:,Class 2 - 1000M - (100-75),GOOD,"TURF - ""A"" Course",6,BOTTOMUPTOGETHER,H Bowman,F C Lor,126,1041,1,0:56.89,4,0,02
-20,2025/02/23,2,Sha Tin:,Class 2 - 1000M - (100-75),GOOD,"TURF - ""A"" Course",7,SUPERB CAPITALIST,M Chadwick,A S Cruz,123,1162,6,0:57.08,33,0,02
-21,2025/02/23,2,Sha Tin:,Class 2 - 1000M - (100-75),GOOD,"TURF - ""A"" Course",8,STELLAR EXPRESS,B Avdulla,J Size,119,1135,3,0:57.13,3.9,0,02
-22,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",1,SKY JEWELLERY,H Bowman,J Size,135,1104,13,1:22.19,2.2,12.50,02
-23,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",2,SOUTH STAR,L Hewitson,F C Lor,127,1008,2,1:22.26,5.8,18.50,02
-24,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",3,HAROLD WIN,C L Chau,K W Lui,131,1103,14,1:22.58,9.4,27.00,02
-25,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course", 4,LUCKY SAM GOR,L Ferraris,M Newnham,127,1194,12,1:22.66,11,0,02
-26,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",5,CALIFORNIA BLITZ,M Chadwick,W K Mo,127,1120,6,1:22.66,145,0,02
-27,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",6,NEVER TOO SOON,P N Wong,D J Hall,125,1122,4,1:22.72,22,0,02
-28,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",7,SUPER CONTENTED,K De Melo,C Fownes,123,1117,1,1:22.80,55,0,02
-29,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",8,GALE SAGA,K Teetan,P C Ng,126,1130,10,1:22.84,10,0,02
-30,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",9,YEE CHEONG RAIDER,M L Yeung,J Richards,117,1150,3,1:22.86,33,0,02
-31,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",10,JOLLY RULER,R Kingscote,P F Yiu,133,1165,7,1:22.94,13,0,02
-32,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",11,SHINKANSEN,H Bentley,D J Whyte,117,1151,5,1:23.02,69,0,02
-33,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",12,SHINE BRIGHT,B Thompson,C H Yip,120,1050,11,1:23.06,54,0,02
-34,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",13,CELESTIAL PATCH,A Atzeni,D Eustace,127,1117,9,1:23.27,49,0,02
-35,2025/02/23,3,Sha Tin:,Class 4 - 1400M - (60-40),GOOD,"TURF - ""A"" Course",14,PEARL OF PANG'S,D McDonogh,K L Man,121,1205,8,1:23.52,16,0,02
-36,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",1,CROSSBORDERPEGASUS,H Bowman,J Size,127,1210,9,1:09.58,2,12.00,02
-37,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course", 2,AHREN,C L Chau,P F Yiu,125,1116,8,1:09.68,13,41.50,02
-38,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course", 3,BULB GENERAL,B Avdulla,J Richards,127,1166,14,1:09.69,81,176.00,02
-39,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",4,WITH A SMILE,K Teetan,W Y So,127,1170,11,1:09.70,10,0,02
-40,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",5,PHOENIX LIGHT,E C W Wong,C H Yip,128,1078,5,1:09.79,18,0,02
-41,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",6,BULB EMPEROR,B Thompson,P C Ng,116,1176,3,1:10.01,98,0,02
-42,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",7,BIENVENUE,L Hewitson,D A Hayes,124,1105,2,1:10.18,5.2,0,02
-43,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",8,ELEGANT LIFE,A Atzeni,T P Yung,127,1148,1,1:10.22,19,0,02
-44,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",9,KING OBERON,A Badel,D J Whyte,117,1075,4,1:10.26,13,0,02
-45,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",10,ALLURING LAOS,H Bentley,W K Mo,134,1135,6,1:10.33,10,0,02
-46,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",11,BLAZING BEAM,L Ferraris,K H Ting,127,1083,10,1:10.54,35,0,02
-47,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",12,SUMMIT CHEERS,P N Wong,D J Hall,122,1209,13,1:10.56,67,0,02
-48,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",13,JOYOUS LILY,J Orman,F C Lor,125,942,7,1:11.66,236,0,02
-49,2025/02/23,4,Sha Tin:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""A"" Course",14,BEAUTY FORMULA,M L Yeung,A S Cruz,127,1231,12,1:12.25,145,0,02
-50,2025/02/23,5,Sha Tin:,Group One - 1400M,GOOD,"TURF - ""A"" Course",1,KA YING RISING,K Teetan,D A Hayes,126,1131,9,1:20.33,1.2,10.10,02
-51,2025/02/23,5,Sha Tin:,Group One - 1400M,GOOD,"TURF - ""A"" Course", 2,HELIOS EXPRESS,H Bowman,J Size,126,1151,2,1:20.56,5.3,12.50,02
-52,2025/02/23,5,Sha Tin:,Group One - 1400M,GOOD,"TURF - ""A"" Course",3,HOWDEEPISYOURLOVE,B Thompson,J Size,126,1203,1,1:20.58,59,53.50,02
-53,2025/02/23,5,Sha Tin:,Group One - 1400M,GOOD,"TURF - ""A"" Course",4,BEAUTY ETERNAL,A Atzeni,J Size,126,1235,4,1:20.66,44,0,02
-54,2025/02/23,5,Sha Tin:,Group One - 1400M,GOOD,"TURF - ""A"" Course",5,RED LION,A Badel,J Size,126,1150,6,1:20.73,22,0,02
-55,2025/02/23,5,Sha Tin:,Group One - 1400M,GOOD,"TURF - ""A"" Course",6,CALIFORNIA SPANGLE,B Avdulla,A S Cruz,126,1206,7,1:20.76,35,0,02
-56,2025/02/23,5,Sha Tin:,Group One - 1400M,GOOD,"TURF - ""A"" Course",7,INVINCIBLE SAGE,L Ferraris,D J Hall,126,1097,3,1:20.81,98,0,02
-57,2025/02/23,5,Sha Tin:,Group One - 1400M,GOOD,"TURF - ""A"" Course",8,PATCH OF THETA,H Bentley,K W Lui,126,1209,8,1:20.89,18,0,02
-58,2025/02/23,5,Sha Tin:,Group One - 1400M,GOOD,"TURF - ""A"" Course",9,MUGEN,B Shinn,P C Ng,126,1099,5,1:21.17,72,0,02
-59,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",1,MISTER DAPPER,B Avdulla,D Eustace,120,1195,5,1:34.17,2.8,14.50,02
-60,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",2,ORIENTAL SMOKE,B Shinn,D A Hayes,131,1250,12,1:34.45,15,39.50,02
-61,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",3,GOLD MASTER,A Atzeni,K L Man,131,1035,8,1:34.54,7.8,25.00,02
-62,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",4,MIGHTY STRENGTH,C L Chau,P F Yiu,130,1000,2,1:34.57,8,0,02
-63,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",5,MATSU VICTOR,M L Yeung,K W Lui,134,1083,1,1:34.69,15,0,02
-64,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",6,KASA PAPA,A Badel,A S Cruz,118,1167,14,1:34.82,53,0,02
-65,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",7,FIGHT TIME,B Thompson,D J Hall,116,1051,10,1:34.91,20,0,02
-66,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",8,SUNDAY'S SERENADE,K Teetan,J Richards,122,1028,6,1:34.97,4.4,0,02
-67,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",9,PANDA LEGEND,M Chadwick,W Y So,121,1258,7,1:35.05,21,0,02
-68,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",10,AMAZING DUCK,L Hewitson,K H Ting,128,1103,11,1:35.19,36,0,02
-69,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",11,ONLY U,D McDonogh,T P Yung,122,1095,9,1:35.35,53,0,02
-70,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",12,LUCKY GENERATIONS,L Ferraris,C Fownes,121,1066,13,1:35.38,44,0,02
-71,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",13,DILBAGH,K De Melo,D J Whyte,135,1044,3,1:35.65,59,0,02
-72,2025/02/23,6,Sha Tin:,Class 4 - 1600M - (60-40),GOOD,"TURF - ""A"" Course",14,GLUCK RACER,H Bentley,W K Mo,118,1157,4,1:35.94,17,0,02
-73,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course",1,VOYAGE BUBBLE,J McDonald,P F Yiu,126,1243,1,2:00.59,1.3,10.10,02
-74,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course",2,ENSUED,K Teetan,J Size,126,1071,6,2:01.18,15,21.50,02
-75,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course", 3,CHANCHENG GLORY,H Bowman,K W Lui,126,1175,7,2:01.40,16,22.00,02
-76,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course",4,WINNING DRAGON,H Bentley,A S Cruz,126,1074,3,2:01.40,47,0,02
-77,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course",5,HAPPY TOGETHER,A Badel,F C Lor,126,1146,4,2:01.43,48,0,02
-78,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course",6,LA CITY BLANCHE,M Chadwick,A S Cruz,126,1001,2,2:01.45,86,0,02
-79,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course",7,STRAIGHT ARRON,L Ferraris,P F Yiu,126,1122,9,2:01.54,56,0,02
-80,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course",8,GALAXY PATCH,B Shinn,P C Ng,126,1162,5,2:01.63,4.1,0,02
-81,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course",9,FIVE G PATCH,B Avdulla,A S Cruz,126,1019,10,2:01.75,73,0,02
-82,2025/02/23,7,Sha Tin:,Group One - 2000M,GOOD,"TURF - ""A"" Course",10,SWORD POINT,A Atzeni,F C Lor,126,1143,8,2:02.49,146,0,02
-83,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",1,JUNEAU PRIDE,B Avdulla,J Size,119,989,5,1:20.93,3.2,14.00,02
-84,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",2,ARMOUR WAR EAGLE,L Hewitson,M Newnham,117,1155,8,1:20.98,6.5,21.00,02
-85,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",3,VICTORY SKY,A Atzeni,P F Yiu,119,1165,2,1:21.08,8.9,25.50,02
-86,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",4,STORM RIDER,B Thompson,D A Hayes,124,1106,11,1:21.16,28,0,02
-87,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",5,JOY OF SPRING,A Badel,C Fownes,121,1009,7,1:21.22,11,0,02
-88,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",6,PATCH OF COSMO,M Chadwick,K L Man,126,1250,1,1:21.37,5.2,0,02
-89,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",7,ANOTHER ZONDA,M L Yeung,Y S Tsui,118,1101,4,1:21.45,80,0,02
-90,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",8,KEEFY,E C W Wong,F C Lor,122,1157,12,1:21.56,103,0,02
-91,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",9,BUCEPHALAS,H T Mo,W K Mo,116,1167,3,1:21.69,16,0,02
-92,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",10,THE ABSOLUTE,H Bentley,K H Ting,118,1158,13,1:21.99,22,0,02
-93,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",11,MR ENERGIA,K Teetan,D J Hall,117,1121,6,1:22.26,6.1,0,02
-94,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",12,YIU CHEUNG VICTORY,K De Melo,C H Yip,120,1131,14,1:22.27,208,0,02
-95,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",13,SUNNYVALE,D McDonogh,W Y So,121,1037,9,1:22.90,186,0,02
-96,2025/02/23,8,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",14,LUCK IS BACK,L Ferraris,K W Lui,132,1210,10,1:22.97,55,0,02
-97,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",1,BRILLIANT EXPRESS,A Badel,J Size,123,1151,10,1:20.81,4.2,18.50,02
-98,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",2,TAMRA BLITZ,H Bowman,D J Whyte,129,1129,7,1:21.25,10,33.50,02
-99,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",3,BEAUTY CRESCENT,B Avdulla,A S Cruz,132,1069,9,1:21.49,12,34.00,02
-100,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course", 4,WINNING GOLD,K Teetan,W Y So,134,1063,6,1:21.55,9.4,0,02
-101,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",5,YUEN LONG ELITE,L Hewitson,K L Man,125,1126,11,1:21.57,4.9,0,02
-102,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",6,SOLID WIN,M Chadwick,P F Yiu,121,1079,1,1:21.67,4.6,0,02
-103,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",7,SUPER JOY N FUN,C L Chau,T P Yung,126,1113,4,1:21.71,13,0,02
-104,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",8,CHAIN OF GOLD,H Bentley,W K Mo,129,1024,2,1:21.72,24,0,02
-105,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",9,RISING FROM ASHES,K De Melo,C W Chang,129,1005,3,1:21.79,38,0,02
-106,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",10,TIMES TABLE,B Thompson,M Newnham,120,972,5,1:21.81,98,0,02
-107,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",11,STELLAR SWIFT,A Atzeni,D A Hayes,120,1187,14,1:21.87,12,0,02
-108,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",12,KEMPES,J Orman,D J Hall,129,1117,8,1:21.91,48,0,02
-109,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",13,SUPERB BOY,L Ferraris,K W Lui,135,1135,13,1:22.21,45,0,02
-110,2025/02/23,9,Sha Tin:,Class 3 - 1400M - (80-60),GOOD,"TURF - ""A"" Course",14,MR VIGOR,D McDonogh,C S Shum,125,1000,12,1:23.75,171,0,02
-111,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",1,TRIUMPHANT MORE,A Badel,F C Lor,124,1155,2,1:09.01,17,45.50,02
-112,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",2,LIFELINE EXPRESS,A Atzeni,J Size,124,1131,1,1:09.04,5.3,17.00,02
-113,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",3,FUN ELITE,L Hewitson,T P Yung,123,1143,7,1:09.29,45,112.50,02
-114,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",4,CHATEAUNEUF,H Bowman,D A Hayes,131,1204,9,1:09.36,13,0,02
-115,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",5,PAKISTAN LEGACY,L Ferraris,W Y So,128,1204,5,1:09.42,14,0,02
-116,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",6,KING MILES,K De Melo,K W Lui,127,1149,14,1:09.43,26,0,02
-117,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",7,YEE CHEONG GLORY,K Teetan,J Richards,120,1171,3,1:09.44,2.5,0,02
-118,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",8,SUPER LEGENDS,H T Mo,C S Shum,130,1138,11,1:09.46,41,0,02
-119,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",9,LUCKY EIGHT,J McDonald,P F Yiu,128,1150,12,1:09.79,9.8,0,02
-120,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",10,LO PAN SPIRIT,H Bentley,K H Ting,124,1200,13,1:09.88,5.7,0,02
-121,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",11,IGOT,C L Chau,C H Yip,121,1116,6,1:10.06,78,0,02
-122,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",12,SMART TRIO,M L Yeung,C W Chang,125,1032,4,1:10.30,239,0,02
-123,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",13,EVERSTAR,B Thompson,Y S Tsui,123,1182,10,1:10.51,262,0,02
-124,2025/02/23,10,Sha Tin:,Class 3 - 1200M - (80-60),GOOD,"TURF - ""A"" Course",14,YOUNG SUPERSTAR,M Chadwick,A S Cruz,135,1148,8,1:11.35,24,0,02
+0,2025/02/26,1,Happy Valley:,Class 1 - 1200M - (110-85),GOOD,"TURF - ""C"" Course", 1,SON PAK FU,M Chadwick,A S Cruz,119,1182,3,1:08.95,7.4,25.00,02
+1,2025/02/26,1,Happy Valley:,Class 1 - 1200M - (110-85),GOOD,"TURF - ""C"" Course",2,COPARTNER PRANCE,R Moore,K W Lui,131,1135,4,1:08.95,2.2,13.00,02
+2,2025/02/26,1,Happy Valley:,Class 1 - 1200M - (110-85),GOOD,"TURF - ""C"" Course",3,BRAVE STAR,A Atzeni,K W Lui,116,1104,1,1:09.08,7.7,"3,4",02
+3,2025/02/26,1,Happy Valley:,Class 1 - 1200M - (110-85),GOOD,"TURF - ""C"" Course",4,RAGING BLIZZARD,H Bowman,J Size,132,1106,2,1:09.25,2.7,0,02
+4,2025/02/26,1,Happy Valley:,Class 1 - 1200M - (110-85),GOOD,"TURF - ""C"" Course",5,TAJ DRAGON,B Avdulla,P C Ng,135,1049,5,1:09.29,8.5,0,02
+5,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",1,SERANGOON,H Bentley,A S Cruz,127,1120,1,2:16.91,5.2,18.00,02
+6,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",2,HAKKA RADIANCE,A Badel,C S Shum,117,1141,3,2:17.05,3.2,15.50,02
+7,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",3,GOOD GOOD,B Avdulla,J Size,125,1130,7,2:17.18,6.9,23.00,02
+8,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",4,MANAGEMENT FOLKS,K Teetan,D J Hall,118,1139,5,2:17.21,5.5,0,02
+9,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",5,JOYFUL PROSPERITY,D McDonogh,C S Shum,135,1106,2,2:17.33,27,0,02
+10,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",6,FORTUNE SUPERSTAR,H Bowman,M Newnham,134,1133,11,2:17.39,14,0,02
+11,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",7,INTREPID WINNER,B Thompson,C W Chang,125,1041,4,2:17.49,26,0,02
+12,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",8,FLYING SILVER,H T Mo,C S Shum,118,1061,6,2:17.78,44,0,02
+13,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",9,PERFECT PAIRING,M Chadwick,J Size,120,1010,9,2:17.82,17,0,02
+14,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",10,PHANTOM CYCLONE,C L Chau,T P Yung,124,1107,8,2:17.87,98,0,02
+15,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",11,AFFORDABLE,R Moore,D A Hayes,127,1235,10,2:17.91,8.6,0,02
+16,2025/02/26,2,Happy Valley:,Class 4 - 2200M - (60-40),GOOD,"TURF - ""C"" Course",12,BRIGHT INHERITANCE,A Atzeni,C H Yip,131,1109,12,2:18.18,24,0,02
+17,2025/02/26,3,Happy Valley:,Class 3 - 1650M - (85-60),GOOD,"TURF - ""C"" Course",1,SOLEIL FIGHTER,R Moore,D A Hayes,129,1117,1,1:39.08,1.4,10.10,02
+18,2025/02/26,3,Happy Valley:,Class 3 - 1650M - (85-60),GOOD,"TURF - ""C"" Course",2,ROMANTIC LAOS,K C Leung,W K Mo,125,1184,6,1:39.23,23,41.50,02
+19,2025/02/26,3,Happy Valley:,Class 3 - 1650M - (85-60),GOOD,"TURF - ""C"" Course",3,LEAN HERO,L Hewitson,D A Hayes,117,1110,3,1:39.29,59,104.50,02
+20,2025/02/26,3,Happy Valley:,Class 3 - 1650M - (85-60),GOOD,"TURF - ""C"" Course",4,JUMBO LEGEND,K Teetan,C Fownes,117,1128,8,1:39.31,12,0,02
+21,2025/02/26,3,Happy Valley:,Class 3 - 1650M - (85-60),GOOD,"TURF - ""C"" Course",5,RED HARE KING,B Avdulla,A S Cruz,130,1086,7,1:39.54,8.3,0,02
+22,2025/02/26,3,Happy Valley:,Class 3 - 1650M - (85-60),GOOD,"TURF - ""C"" Course",6,I CAN,A Atzeni,P C Ng,123,1091,4,1:39.68,10,0,02
+23,2025/02/26,3,Happy Valley:,Class 3 - 1650M - (85-60),GOOD,"TURF - ""C"" Course",7,AERIS NOVA,H Bentley,T P Yung,118,1280,5,1:39.75,28,0,02
+24,2025/02/26,3,Happy Valley:,Class 3 - 1650M - (85-60),GOOD,"TURF - ""C"" Course",8,SIMPLE HEDGE,A Badel,J Size,115,1153,2,1:39.98,14,0,02
+25,2025/02/26,3,Happy Valley:,Class 3 - 1650M - (85-60),GOOD,"TURF - ""C"" Course",9,TELECOM FIGHTERS,H Bowman,Y S Tsui,135,1128,9,1:40.64,15,0,02
+26,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",1,SUPER SIXTY,A Badel,C Fownes,121,1063,2,1:09.76,2.7,14.00,02
+27,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course", 2,HAPPY TRIO,H Bentley,D J Whyte,129,1071,6,1:09.81,19,42.00,02
+28,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",3,NEW POWER,M L Yeung,C W Chang,121,1099,9,1:09.82,10,29.50,02
+29,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course", 4,EXCELLENT PEERS,M Chadwick,F C Lor,124,1165,11,1:09.89,17,0,02
+30,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",5,SONIC PURSUIT,K C Leung,J Richards,121,1200,4,1:09.90,54,0,02
+31,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",6,SOLAR RIVER,C L Chau,K H Ting,121,1171,1,1:10.01,10,0,02
+32,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",7,YEE CHEONG SPIRIT,R Moore,C S Shum,135,1242,7,1:10.29,5.8,0,02
+33,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",8,TRAVEL GOLF,L Hewitson,M Newnham,123,1116,3,1:10.38,4,0,02
+34,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",9,CRYSTAL POWERFUL,A Atzeni,W K Mo,117,1162,10,1:10.40,29,0,02
+35,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",10,SWEET DIAMOND,B Thompson,P F Yiu,116,1192,12,1:10.43,66,0,02
+36,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",11,REGENT GLORY,A Hamelin,D A Hayes,119,1051,5,1:10.45,24,0,02
+37,2025/02/26,4,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",12,GLORIOUS EXPERT,K Teetan,D J Hall,117,1128,8,1:10.48,36,0,02
+38,2025/02/26,5,Happy Valley:,Class 1 - 1650M - (110-85),GOOD,"TURF - ""C"" Course", 1,MOMENTS IN TIME,R Moore,C S Shum,129,1084,3,1:39.01,3.6,13.50,02
+39,2025/02/26,5,Happy Valley:,Class 1 - 1650M - (110-85),GOOD,"TURF - ""C"" Course",2,HELENE FEELING,H Bentley,C S Shum,129,1252,8,1:39.02,7,23.00,02
+40,2025/02/26,5,Happy Valley:,Class 1 - 1650M - (110-85),GOOD,"TURF - ""C"" Course",3,C P BRAVE,C L Chau,P F Yiu,120,1126,7,1:39.24,11,31.50,02
+41,2025/02/26,5,Happy Valley:,Class 1 - 1650M - (110-85),GOOD,"TURF - ""C"" Course", 4,MR ASCENDENCY,L Ferraris,P F Yiu,124,1151,6,1:39.34,7.8,0,02
+42,2025/02/26,5,Happy Valley:,Class 1 - 1650M - (110-85),GOOD,"TURF - ""C"" Course",5,NIMBLE NIMBUS,E C W Wong,P F Yiu,128,1135,4,1:39.34,18,0,02
+43,2025/02/26,5,Happy Valley:,Class 1 - 1650M - (110-85),GOOD,"TURF - ""C"" Course",6,WOODFIRE BRO,M L Yeung,C W Chang,117,1190,2,1:39.35,6.7,0,02
+44,2025/02/26,5,Happy Valley:,Class 1 - 1650M - (110-85),GOOD,"TURF - ""C"" Course",7,THE GOLDEN SCENERY,B Avdulla,A S Cruz,127,1093,9,1:39.63,12,0,02
+45,2025/02/26,5,Happy Valley:,Class 1 - 1650M - (110-85),GOOD,"TURF - ""C"" Course",8,ENCOUNTERED,K Teetan,D J Hall,131,1171,1,1:39.65,3.9,0,02
+46,2025/02/26,5,Happy Valley:,Class 1 - 1650M - (110-85),GOOD,"TURF - ""C"" Course",9,SENOR TOBA,A Atzeni,C H Yip,119,1170,5,1:39.73,23,0,02
+47,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",1,CHARMING BABE,J Orman,P F Yiu,135,1091,11,1:09.92,26,55.50,02
+48,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",2,GOOD PROSPECT,K C Leung,T P Yung,123,1077,4,1:10.03,8,25.50,02
+49,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",3,CLUB ACE,H Bowman,J Size,130,1145,10,1:10.07,9.6,27.50,02
+50,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",4,TOGEPI,H T Mo,W K Mo,117,1078,12,1:10.16,95,0,02
+51,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",5,MY INTELLIGENT,M L Yeung,W Y So,121,1115,5,1:10.40,31,0,02
+52,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",6,FUN N FUN TOGETHER,L Hewitson,F C Lor,132,1140,1,1:10.48,2.4,0,02
+53,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",7,ACE POWER,A Atzeni,D J Whyte,122,1113,7,1:10.53,8.4,0,02
+54,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",8,IRON LEGION,B Thompson,A S Cruz,129,1151,8,1:10.55,87,0,02
+55,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",9,THE PRIME,M Chadwick,J Richards,119,1135,3,1:10.59,22,0,02
+56,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",10,JUDY'S GREAT,B Avdulla,C S Shum,133,1094,2,1:10.72,16,0,02
+57,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",11,SIGHT HAPPY,K Teetan,D A Hayes,134,1129,6,1:10.84,4.2,0,02
+58,2025/02/26,6,Happy Valley:,Class 4 - 1200M - (60-40),GOOD,"TURF - ""C"" Course",12,COSMO NAVIGATOR,A Hamelin,C W Chang,125,1191,9,1:11.19,78,0,02
+59,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course", 1,STURDY RUBY,L Ferraris,K L Man,131,1148,2,1:40.18,5,18.00,02
+60,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",2,JUMBO FORTUNE,A Hamelin,D Eustace,119,1342,3,1:40.20,7.7,27.50,02
+61,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",3,GOOD LUCK WIN,H Bentley,K H Ting,126,1088,12,1:40.24,12,34.50,02
+62,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",4,RED MAJESTY,H Bowman,D A Hayes,133,1228,1,1:40.49,5.1,0,02
+63,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",5,PEGASUS GENERAL,A Badel,W K Mo,118,1067,5,1:40.56,15,0,02
+64,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",6,THE AZURE,R Moore,F C Lor,129,1103,7,1:40.57,4.3,0,02
+65,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",7,HARMONY GALAXY,D McDonogh,C S Shum,133,1043,6,1:40.76,12,0,02
+66,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",8,CIRCUIT FIERY,K Teetan,W Y So,117,1094,9,1:40.78,14,0,02
+67,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",9,TAKE ACTION,B Avdulla,J Size,129,1154,8,1:41.09,8.9,0,02
+68,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",10,STORM RUNNER,R Kingscote,P C Ng,121,1023,11,1:41.10,45,0,02
+69,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",11,PRINCE ALEX,A Atzeni,D J Whyte,131,1105,10,1:41.28,45,0,02
+70,2025/02/26,7,Happy Valley:,Class 4 - 1650M - (60-40),GOOD,"TURF - ""C"" Course",12,THE WAY WE WIN,B Thompson,J Richards,131,1061,4,1:42.01,144,0,02
+71,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course",1,AURORA LADY,A Atzeni,P C Ng,134,1152,5,1:09.26,3.9,16.50,02
+72,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course", 2,PRAWNS ELEVEN,H Bentley,M Newnham,117,1101,11,1:09.43,11,33.50,02
+73,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course",3,GALLANT VALOUR,B Avdulla,J Richards,125,1123,4,1:09.44,7.8,22.50,02
+74,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course", 4,KYRUS DRAGON,K Teetan,D J Hall,127,1046,6,1:09.49,5.3,0,02
+75,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course",5,CALIFORNIA TOUCH,M Chadwick,W K Mo,125,1306,2,1:09.50,4,0,02
+76,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course",6,WINGS OF WAR,H Bowman,D J Whyte,132,1158,7,1:09.51,11,0,02
+77,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course",7,MONTA FRUTTA,A Badel,A S Cruz,115,1131,1,1:09.52,13,0,02
+78,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course",8,NORDIC DRAGON,C L Chau,C S Shum,121,1152,10,1:09.72,15,0,02
+79,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course",9,VON BAER,B Thompson,D A Hayes,115,1118,9,1:09.83,158,0,02
+80,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course",10,BUNDLE OF CHARM,R Moore,J Size,135,1210,8,1:09.85,15,0,02
+81,2025/02/26,8,Happy Valley:,Class 3 - 1200M - (85-60),GOOD,"TURF - ""C"" Course",11,AUTOMATED,M L Yeung,W Y So,116,1007,3,1:10.26,57,0,02
+82,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",1,RED ELEGANCE,H Bowman,D J Whyte,131,1127,4,0:56.48,4,16.50,02
+83,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",2,YOUTHFUL SPIRITS,L Ferraris,M Newnham,126,1069,10,0:56.59,6.5,22.50,02
+84,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",3,HARMONY N BLESSED,E C W Wong,D A Hayes,128,1204,9,0:56.76,21,53.00,02
+85,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",4,ETERNAL FORTUNE,R Moore,C S Shum,127,1025,5,0:56.85,3.6,0,02
+86,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",5,SERGEANT PEPPER,M L Yeung,Y S Tsui,115,1184,1,0:57.05,55,0,02
+87,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",6,HEROIC MASTER,A Atzeni,F C Lor,116,1077,2,0:57.13,7.4,0,02
+88,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",7,HEALTHY HEALTHY,B Avdulla,P C Ng,126,1178,6,0:57.15,7.9,0,02
+89,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",8,KING ECCELLENTE,K Teetan,D J Whyte,115,1149,7,0:57.26,18,0,02
+90,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",9,MAJESTIC EXPRESS,A Badel,J Size,116,1225,8,0:57.27,8.7,0,02
+91,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",10,MULTIDUTCH,B Thompson,A S Cruz,115,1043,12,0:57.35,58,0,02
+92,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",11,AWESOME TREASURE,L Hewitson,D A Hayes,117,1147,11,0:57.41,76,0,02
+93,2025/02/26,9,Happy Valley:,Class 3 - 1000M - (85-60),GOOD,"TURF - ""C"" Course",12,HONG KONG HALL,H T Mo,D J Hall,113,1204,3,0:57.70,72,0,02

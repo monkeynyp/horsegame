@@ -34,10 +34,10 @@ class Command(BaseCommand):
             for counter in range(1,num_races+1):
                 if alg =="LogRegress":
                     class_flag=1
-                    csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_log"+str(counter)+".csv")
+                    csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu5"+str(counter)+".csv")
                 elif alg == 'NaiveBayes':
                     class_flag=1
-                    csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_nav"+str(counter)+".csv")
+                    csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu5"+str(counter)+".csv")
                 elif alg == 'SVC':
                     class_flag=1
                     csv_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_svc"+str(counter)+".csv")
