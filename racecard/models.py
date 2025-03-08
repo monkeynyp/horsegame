@@ -28,7 +28,7 @@ class UserScores(models.Model):
     total_dividend = models.FloatField(default=0)
     hit_weight = models.FloatField(default=0)
     div_weight = models.FloatField(default=0)
-    stars = models.CharField(max_length=25, null=True)
+    stars = models.CharField(max_length=25, null=True, blank=True)
     stars1 = models.IntegerField(default=0)
     stars2 = models.IntegerField(default=0)
 
@@ -39,7 +39,7 @@ class UserScores_my(models.Model):
     total_dividend = models.FloatField(default=0)
     hit_weight = models.FloatField(default=0)
     div_weight = models.FloatField(default=0)
-    stars = models.CharField(max_length=25, null=True)
+    stars = models.CharField(max_length=25, null=True, blank=True)
 
 class Article(models.Model):
     LANGUAGE_CHOICES = [
