@@ -1,15 +1,15 @@
-,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq
-0,2025/02/16,1,ALLCASH,凱明神駒,E C W Wong,黃智弘 (-7),135,1008,9,C S Shum,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,7,2
-1,2025/02/16,2,THE BEST PEACH,桃花雲,M Chadwick,蔡明紹,135,1075,10,A S Cruz,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,28,2
-2,2025/02/16,3,BUNDLE AWARD,有目共賞,B Avdulla,艾道拿,132,1081,1,J Size,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,28,3
-3,2025/02/16,4,NEW FUTURE FOLKS,帥帥友福,B Thompson,湯普新,129,1084,5,C W Chang,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,16,2
-4,2025/02/16,5,DRAGON JOY,皇仁歡星,M F Poon,潘明輝,127,1173,14,P F Yiu,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,35,2
-5,2025/02/16,6,EMBRACES,納百川,H Bentley,班德禮,127,1073,13,W K Mo,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,16,3
-6,2025/02/16,7,SKY HEART,仁心星,H Bowman,布文,126,1217,11,C Fownes,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,16,2
-7,2025/02/16,8,MORGAN SUCCESS,龍城精將,A Badel,巴度,124,1111,3,D J Whyte,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,7,1
-8,2025/02/16,9,BEAUTY VIVA,爆出美麗,T Marquand,馬昆,123,1138,4,P C Ng,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,35,3
-9,2025/02/16,10,SPANISH FLAME,俊才,K De Melo,董明朗,123,1202,6,W Y So,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,28,1
-10,2025/02/16,11,EVERYONE'S STAR,大眾福星,K C Leung,梁家俊,122,1132,8,F C Lor,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,28,1
-11,2025/02/16,12,EXCELLENCE VALUE,星價,L Ferraris,霍宏聲,122,1209,2,M Newnham,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,21,2
-12,2025/02/16,13,ANOTHER WORLD,不同世界,A Atzeni,艾兆禮,121,1114,7,T P Yung,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,16,3
-13,2025/02/16,14,WINNING WING,天將龍駒,H T Mo,巫顯東 (-2),120,1170,12,K W Lui,11,Class 3,1600,Sha Tin:,"TURF - ""C+3"" Course",Good,17:45,28,2
+,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
+0,2025/03/09,1,GHORGAN,確好勁,L Ferraris,霍宏聲,135,1093,12,J Richards,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,999,0,P1/TT1,
+1,2025/03/09,2,TOP GUN,壯志凌雲,J Orman,奧爾民,132,1094,1,F C Lor,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,21,3,CP-/V1,
+2,2025/03/09,3,HUGE WAVE,大浪圖田,R Kingscote,金誠剛,130,1187,4,K H Ting,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,37,1,TT,
+3,2025/03/09,4,LIGHT YEARS CHARM,光年魅力,H Bowman,布文,130,1209,6,D Eustace,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,28,2,XB,
+4,2025/03/09,5,WINNING GOLD,金勝名駒,D McDonogh,麥當能,130,1059,9,W Y So,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,14,3,TT,
+5,2025/03/09,6,BRILLIANT EXPRESS,神馳,A Badel,巴度,129,1152,10,J Size,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,14,3,,
+6,2025/03/09,7,NEW FUTURE FOLKS,帥帥友福,B Thompson,湯普新,127,1079,5,C W Chang,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,21,2,,
+7,2025/03/09,8,DRAGON JOY,皇仁歡星,K Teetan,田泰安,125,1156,13,P F Yiu,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,21,2,SR/TT,
+8,2025/03/09,9,EMBRACES,納百川,H Bentley,班德禮,125,1066,2,W K Mo,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,21,3,TT,
+9,2025/03/09,10,PATCH OF COSMO,錶之宇宙,M Chadwick,蔡明紹,125,1242,11,K L Man,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,14,2,B,
+10,2025/03/09,11,LIVEANDLETLIVE,奔放,Y L Chung,鍾易禮 (-3),121,1138,3,A S Cruz,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,21,2,TT,
+11,2025/03/09,12,SUNSTRIDER,金陽飛駒,B Avdulla,艾道拿,121,1122,8,D J Hall,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,37,2,B,
+12,2025/03/09,13,FORTUNATE SON,將義,L Hewitson,希威森,120,1083,7,D J Whyte,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,28,2,SR-,
+13,2025/03/09,14,JOY OF SPRING,春風萬里,E C W Wong,黃智弘 (-7),120,1012,14,C Fownes,11,Class 3,1600,Sha Tin:,"TURF - ""C"" Course",Good,17:45,14,1,TT,
