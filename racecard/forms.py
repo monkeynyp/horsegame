@@ -26,14 +26,64 @@ class NumberForm(forms.Form):
      #No7 = forms.IntegerField(min_value=1, max_value=49)
 
 class LottoForm(forms.Form):
-    option = forms.ChoiceField(choices=[(10, 'Last 10 draws'), (20, 'Last 20 draws'), (30, 'Last 30 draws')])
-    number1 = forms.IntegerField()
-    number2 = forms.IntegerField()
-    number3 = forms.IntegerField()
-    number4 = forms.IntegerField()
-    number5 = forms.IntegerField()
-    number6 = forms.IntegerField()
-    number7 = forms.IntegerField()
+    OPTIONS = [
+        (500, '500'),
+        (1000, '1000'),
+        (2000, '2000'),
+    ]
+    option = forms.ChoiceField(choices=OPTIONS, widget=forms.RadioSelect, initial=500)
+    number1 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+    number2 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+    number3 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+    number4 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+    number5 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+    number6 = forms.IntegerField(min_value=1, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+    number7 = forms.IntegerField(required=False, min_value=0, max_value=49, error_messages={
+        'min_value': _('Ensure this value is greater than or equal to %(limit_value)s.'),
+        'max_value': _('Ensure this value is less than or equal to %(limit_value)s.'),
+    })
+
+    def clean(self):
+        cleaned_data = super().clean()
+        # Set default value for number7 if not provided
+        if cleaned_data.get('number7') is None:
+            cleaned_data['number7'] = 0
+        numbers = [
+            cleaned_data.get('number1'),
+            cleaned_data.get('number2'),
+            cleaned_data.get('number3'),
+            cleaned_data.get('number4'),
+            cleaned_data.get('number5'),
+            cleaned_data.get('number6'),
+            cleaned_data.get('number7'),
+        ]
+
+        # Set default value for number7 if not provided
+   
+
+        if any(n is None for n in numbers):
+            raise forms.ValidationError(_("lease provide at least 6 numbers."))
+        if len(set(numbers)) != 7:
+            raise forms.ValidationError(_("Numbers must be unique."))
+        return cleaned_data
 
 class LottoTrioForm(forms.Form):
     number1 = forms.IntegerField()
