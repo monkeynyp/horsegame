@@ -100,7 +100,8 @@ def racecard(request,race_id):
             hit_pst=Sum('hit') * 100.0 / Count('hit'),
             total_dividend=Sum('dividend') - Count('hit') * 10,
         )
-        .order_by('-hit_pst')  # Sort in descending order of hit ratio
+       # .order_by('-hit_pst')  # Sort in descending order of hit ratio
+         .order_by('-total_dividend')  # Sort in descending order of hit ratio
     )   
      
     
@@ -135,8 +136,7 @@ def racecard(request,race_id):
         percentage= F('total_hits') * 100.0 / F('total_records'),
         confidence = F('hit_weight')* 100.0,
         profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
-            ).order_by('-total_dividend')
-           # ).order_by('-percentage')
+            ).order_by('-percentage')
     
      #request.session['user_scores'] = list(user_scores)
 
