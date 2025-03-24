@@ -55,9 +55,9 @@ def racecard(request,race_id):
      timestamp = int(dt_obj.timestamp())+int(id)
      race_time = current_race['RaceTime'].iloc[0]
      print("Race_timne:", race_time)
-     random.seed(timestamp)
+     #random.seed(timestamp)
      # Generate random integers between 1 and 64
-     num_rows = len(current_race)
+     #num_rows = len(current_race)
 
      #random_numbers_list = [random.randint(1, 64) for _ in range(num_rows)]
      # Add the 'Rand' column to the DataFrame
@@ -135,7 +135,8 @@ def racecard(request,race_id):
         percentage= F('total_hits') * 100.0 / F('total_records'),
         confidence = F('hit_weight')* 100.0,
         profit_percentage=ExpressionWrapper((F('total_dividend') - F('total_records') * 10) * 100.0 / (F('total_records') * 10), output_field=FloatField())
-            ).order_by('-percentage')
+            ).order_by('-total_dividend')
+           # ).order_by('-percentage')
     
      #request.session['user_scores'] = list(user_scores)
 
