@@ -1,13 +1,8 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/03/26,1,MONTA FRUTTA,花果猴王,Y L Chung,鍾易禮 (-3),135,1123,8,A S Cruz,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,3,H/TT,
-1,2025/03/26,2,FORTUNE WARRIOR,運來勇士,L Ferraris,霍宏聲,134,1133,4,D Eustace,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,2,P/XB/TT,
-2,2025/03/26,3,RISING FORCE,扶搖勢勁,R Kingscote,金誠剛,128,1070,3,P F Yiu,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,999,0,,
-3,2025/03/26,4,ARDEN,宸居武士,H Bowman,布文,126,1026,12,J Size,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,2,PC1/TT,
-4,2025/03/26,5,PATCH OF STARS,錶之星河,M Chadwick,蔡明紹,125,1150,9,K L Man,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,24,1,TT,
-5,2025/03/26,6,VULCANUS,星火燎原,A Atzeni,艾兆禮,125,1139,10,Y S Tsui,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,2,,
-6,2025/03/26,7,DAILY TROPHY,日日獎,H Bentley,班德禮,124,1186,11,C Fownes,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,42,2,B/TT,
-7,2025/03/26,8,COLOURFUL WINNER,多彩多姿,M L Yeung,楊明綸,122,1176,6,W Y So,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,21,2,CP,
-8,2025/03/26,9,TAIHANG SCENERY,太行美景,C L Chau,周俊樂 (-2),121,1130,5,C S Shum,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,11,3,H/TT,
-9,2025/03/26,10,JOLLY JUMPER,肥仔精神,K C Leung,梁家俊,120,1154,7,T P Yung,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,3,CP/TT,
-10,2025/03/26,11,FUN N GLORY,超悅明駒,P N Wong,黃寶妮 (-10),116,1179,1,D J Hall,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,17,2,B/XB,
-11,2025/03/26,12,GIMME FIVE,五福星,K Teetan,田泰安,116,1066,2,F C Lor,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,21:45,21,2,B,
+0,2025/03/30,1,KA YING RISING,嘉應高昇,Z Purton,潘頓,128,1127,6,D A Hayes,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,35,1,,125
+1,2025/03/30,2,CALIFORNIA SPANGLE,加州星球,B Avdulla,艾道拿,123,1201,7,A S Cruz,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,35,1,TT,119
+2,2025/03/30,3,HELIOS EXPRESS,驕陽明駒,H Bowman,布文,123,1133,1,J Size,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,35,1,,115
+3,2025/03/30,4,LUCKY WITH YOU,幸運有您,L Ferraris,霍宏聲,123,1205,4,F C Lor,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,21,2,,111
+4,2025/03/30,5,MAGIC CONTROL,魔術控制,H Bentley,班德禮,123,1060,2,W K Mo,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,21,3,P/TT,105
+5,2025/03/30,6,COPARTNER PRANCE,合夥奔馳,J Orman,奧爾民,123,1125,3,K W Lui,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,21,3,XB,102
+6,2025/03/30,7,GORGEOUS WIN,華麗再勝,A Atzeni,艾兆禮,123,1175,5,C S Shum,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,49,1,TT,96

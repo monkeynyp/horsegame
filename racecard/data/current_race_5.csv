@@ -1,13 +1,13 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/03/26,1,EVERSTAR,廚神,M F Poon,潘明輝,135,1157,4,Y S Tsui,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,14,3,CP,
-1,2025/03/26,2,SOLID SHALAA,實力哥,E C W Wong,黃智弘 (-7),135,1172,5,D A Hayes,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,340,0,B/TT,
-2,2025/03/26,3,NATURAL HIGH,贏得自然,P N Wong,黃寶妮 (-10),134,1121,11,D J Hall,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,17,2,B,
-3,2025/03/26,4,PATCH OF TIME,手錶之星,K Teetan,田泰安,131,1177,3,W K Mo,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,17,2,,
-4,2025/03/26,5,EVERYONE'S GALLOP,大眾快駒,K C Leung,梁家俊,127,1260,8,F C Lor,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,38,1,B-/V1,
-5,2025/03/26,6,REGENCY WIN WIN,帝豪勝駒,C L Chau,周俊樂 (-2),127,1178,10,C S Shum,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,999,0,TT1,
-6,2025/03/26,7,SUNNY DARLING,陽光寶貝,J Orman,奧爾民,126,1165,1,P C Ng,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,17,3,B/TT,
-7,2025/03/26,8,LOOKS OUTSTANDING,譽友駿駒,L Ferraris,霍宏聲,125,1048,9,M Newnham,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,17,2,B1/TT,
-8,2025/03/26,9,NOBLE GO,魅力心,A Atzeni,艾兆禮,123,1152,7,J Size,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,35,1,XB/P1/TT1,
-9,2025/03/26,10,SOLAR RIVER,洛河,A Hamelin,賀銘年,122,1171,6,K H Ting,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,28,2,CP/TT,
-10,2025/03/26,11,CALIFORNIA STAR,加州星馳,Y L Chung,鍾易禮 (-3),117,1167,2,A S Cruz,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,24,1,B/TT,
-11,2025/03/26,12,SILVER SPURS,銀刺勇士,H Bentley,班德禮,115,1107,12,C Fownes,9,Class 4,1200,Sha Tin:,ALL WEATHER TRACK - 1200M,Good,20:45,21,3,CP/TT,
+0,2025/03/30,1,BEAUTY ETERNAL,永遠美麗,A Atzeni,艾兆禮,128,1200,4,J Size,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,35,1,E,117
+1,2025/03/30,2,BEAUTY JOY,美麗同享,B Avdulla,艾道拿,123,1045,6,A S Cruz,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,70,0,TT,116
+2,2025/03/30,3,GALAXY PATCH,錶之銀河,Z Purton,潘頓,123,1158,9,P C Ng,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,35,1,,116
+3,2025/03/30,4,CHANCHENG GLORY,禪勝輝煌,H Bowman,布文,123,1169,7,K W Lui,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,35,2,B/XB,114
+4,2025/03/30,5,ENSUED,安騁,K Teetan,田泰安,123,1067,5,J Size,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,35,2,,114
+5,2025/03/30,6,HAPPY TOGETHER,越駿歡欣,A Badel,巴度,123,1132,10,F C Lor,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,35,2,H/TT,114
+6,2025/03/30,7,RED LION,紅運帝王,J Orman,奧爾民,123,1155,12,J Size,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,35,1,,114
+7,2025/03/30,8,STRAIGHT ARRON,直線力山,M F Poon,潘明輝,123,1117,2,P F Yiu,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,35,2,XB,114
+8,2025/03/30,9,LA CITY BLANCHE,當年情,M Chadwick,蔡明紹,123,992,8,A S Cruz,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,35,2,TT,111
+9,2025/03/30,10,MOMENTS IN TIME,智取神駒,H Bentley,班德禮,123,1087,1,C S Shum,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,32,2,TT,111
+10,2025/03/30,11,NIMBLE NIMBUS,觔斗雲,K C Leung,梁家俊,123,1144,11,P F Yiu,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,15,3,V/TT,111
+11,2025/03/30,12,SUNLIGHT POWER,陽光勇士,C L Chau,周俊樂,123,1106,3,P F Yiu,10,Group Two,1600,Sha Tin:,"TURF - ""A+3"" Course",Good,15:10,15,2,CP/H,102
