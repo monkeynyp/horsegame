@@ -259,7 +259,8 @@ def view_by_member(request):
     context = {
             'complete_tips_by_user': complete_tips_by_user,
             'last_perf_by_user' : last_perf_by_user,
-            'user_scores': user_scores
+            'user_scores': user_scores,
+            'request': request,
     }
     return render(request, 'view_by_member.html', context)
 

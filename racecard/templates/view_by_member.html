@@ -103,6 +103,16 @@
             {% endfor %}
         </div>
     </div>
+
+    <div class="w3-center w3-margin-top">
+        <h4>{% trans "Share this page" %}</h4>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri }}" target="_blank" class="w3-button w3-blue w3-round w3-margin-right">
+            <i class="fa-brands fa-facebook-f"></i> Facebook
+        </a>
+        <a href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ block.super }}" target="_blank" class="w3-button w3-light-blue w3-round">
+            <i class="fa-brands fa-twitter"></i> Twitter
+        </a>
+    </div>
 </div>
 
 <script>
