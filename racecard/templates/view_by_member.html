@@ -188,14 +188,17 @@
             return;
         }
 
-        // Extract the text content from the userTabs element
+        // Extract the text content from all user-record elements
         let textContent = '';
         const userRecords = userTabs.querySelectorAll('.user-record');
         userRecords.forEach(record => {
-            if (record.style.display !== 'none') { // Only include visible records
-                textContent += record.innerText.trim() + '\n\n';
-            }
+            textContent += record.innerText.trim() + '\n\n'; // Include all records, regardless of visibility
         });
+
+        if (!textContent.trim()) {
+            alert('No content to share!');
+            return;
+        }
 
         // Encode the text content for sharing
         const encodedText = encodeURIComponent(textContent);
