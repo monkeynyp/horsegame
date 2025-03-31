@@ -116,11 +116,8 @@
         <a href="https://twitter.com/intent/tweet?url={{ request.build_absolute_uri }}&text={{ block.super }}" target="_blank" class="w3-button w3-light-blue w3-round">
             <i class="fa-brands fa-twitter"></i> Twitter
         </a>
-        <button class="w3-button w3-green w3-round" onclick="captureTable()">
-            <i class="fa-solid fa-camera"></i> {% trans "Share Table as Image" %}
-        </button>
-        <button class="w3-button w3-green w3-round" onclick="shareTableData()">
-            <i class="fa-solid fa-share"></i> {% trans "Share Table Data" %}
+        <button class="w3-button w3-green w3-round" onclick="shareTableDataAsText()">
+            <i class="fa-solid fa-share"></i> {% trans "Share Table as Text on Facebook" %}
         </button>
     </div>
 </div>
@@ -145,16 +142,26 @@
     document.getElementById("{{ complete_tips_by_user.0.user }}").style.display = "block";
 
     function captureTable() {
-        const table = document.querySelector('.w3-table-all'); // Replace with your table selector
-        html2canvas(table).then(canvas => {
+        const userTabs = document.getElementById('userTabs'); // Select the correct element by ID
+        if (!userTabs) {
+            alert('Content not found!');
+            return;
+        }
+
+        html2canvas(userTabs, {
+            backgroundColor: '#ffffff' // Set a solid white background
+        }).then(canvas => {
             // Convert the canvas to a data URL
             const image = canvas.toDataURL('image/png');
 
-            // Open the image in a new tab or download it
+            // Create a download link for the image
             const link = document.createElement('a');
             link.href = image;
-            link.download = 'table.png';
+            link.download = 'userTabs.png';
             link.click();
+        }).catch(error => {
+            console.error('Error capturing content:', error);
+            alert('Failed to capture the content. Please try again.');
         });
     }
 
@@ -172,6 +179,32 @@
         // Open a sharing dialog (e.g., Twitter)
         const shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tableText)}`;
         window.open(shareUrl, '_blank');
+    }
+
+    function shareTableDataAsText() {
+        const userTabs = document.getElementById('userTabs'); // Select the correct element by ID
+        if (!userTabs) {
+            alert('Content not found!');
+            return;
+        }
+
+        // Extract the text content from the userTabs element
+        let textContent = '';
+        const userRecords = userTabs.querySelectorAll('.user-record');
+        userRecords.forEach(record => {
+            if (record.style.display !== 'none') { // Only include visible records
+                textContent += record.innerText.trim() + '\n\n';
+            }
+        });
+
+        // Encode the text content for sharing
+        const encodedText = encodeURIComponent(textContent);
+
+        // Create a Facebook share URL
+        const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&quote=${encodedText}`;
+
+        // Open the Facebook share dialog
+        window.open(facebookShareUrl, '_blank');
     }
 </script>
 {% endblock %}
