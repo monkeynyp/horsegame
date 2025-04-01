@@ -28,6 +28,7 @@
 </style>
 
 <script>
+  let race_id = "{{ race_id }}"; // Pass race_id from Django context
   let selectionSequence = [];
   let selectionSequenceTrans = [];
   function updateSelection(checkbox) {
@@ -201,7 +202,7 @@
         
         {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->
           {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' 'w3-lime' 'w3-pale-blue' as color silent %}
-              <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
+              <div id="userTips" class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
                 
                 <header class="w3-container {{color}}" >
                   <h6>{{ user_data.user  }}
@@ -272,6 +273,9 @@
                               <i class="fa-solid fa-robot"></i>
                             {% endif %} </span>
                           </p> 
+                          <button class="w3-button w3-white w3-round" onclick="shareTableDataAsText()">
+                            <i class="fa-solid fa-share"></i> {% trans "分享到 " %}<i class="fa-brands fa-facebook fa-xl" style="color: #058af0;"></i>
+                        </button>
                       </span>
                       </footer>
               </div>
@@ -470,6 +474,36 @@
         // Function to close the add tips form modal
         function closeAddTipsFormModal() {
             document.getElementById("id01").style.display = "none";
+        }
+
+        function shareTableDataAsText() {
+            const userTabs = document.querySelectorAll('#userTips h6, #userTips p'); // Select all <h6> elements and <p> elements inside the userTips div
+            if (!userTabs.length) {
+                alert('Content not found!');
+                return;
+            }
+        
+            // Extract the text content from all user-record elements
+            let textContent = `第${race_id}場貼士\n\n`;
+            userTabs.forEach((tab, index) => {
+              if (index < 4) { // Only include the first record
+                textContent += '     ' + tab.innerText.trim() + '\n\n'; // Add 5 spaces at the beginning of each line
+              }
+            });
+        
+            if (!textContent.trim()) {
+                alert('No content to share!');
+                return;
+            }
+        
+            // Encode the text content for sharing
+            const encodedText = encodeURIComponent(textContent.substring(0, 90));
+        
+            // Create a Facebook share URL
+            const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&hashtag=${encodedText}`;
+        
+            // Open the Facebook share dialog
+            window.open(facebookShareUrl, '_blank');
         }
     </script>
 
