@@ -191,10 +191,15 @@
         // Extract the text content from all user-record elements
         let textContent = '';
         const userRecords = userTabs.querySelectorAll('.user-record');
-        userRecords.forEach(record => {
-            textContent += record.innerText.trim() + '\n\n'; // Include all records, regardless of visibility
-        });
+        userRecords.forEach((record, index) => {
 
+            if (index < 1) { // Only include the first 1 records
+            textContent += record.innerText.trim() + '\n\n';
+            textContent = textContent.substring(0, 90) + '...';
+            alert(textContent)
+            }
+        });
+        
         if (!textContent.trim()) {
             alert('No content to share!');
             return;
@@ -204,7 +209,7 @@
         const encodedText = encodeURIComponent(textContent);
 
         // Create a Facebook share URL
-        const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&quote=${encodedText}`;
+        const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&hashtag=${encodedText}`;
 
         // Open the Facebook share dialog
         window.open(facebookShareUrl, '_blank');

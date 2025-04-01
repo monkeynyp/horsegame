@@ -1,8 +1,13 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/03/30,1,KA YING RISING,嘉應高昇,Z Purton,潘頓,128,1127,6,D A Hayes,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,35,1,,125
-1,2025/03/30,2,CALIFORNIA SPANGLE,加州星球,B Avdulla,艾道拿,123,1201,7,A S Cruz,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,35,1,TT,119
-2,2025/03/30,3,HELIOS EXPRESS,驕陽明駒,H Bowman,布文,123,1133,1,J Size,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,35,1,,115
-3,2025/03/30,4,LUCKY WITH YOU,幸運有您,L Ferraris,霍宏聲,123,1205,4,F C Lor,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,21,2,,111
-4,2025/03/30,5,MAGIC CONTROL,魔術控制,H Bentley,班德禮,123,1060,2,W K Mo,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,21,3,P/TT,105
-5,2025/03/30,6,COPARTNER PRANCE,合夥奔馳,J Orman,奧爾民,123,1125,3,K W Lui,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,21,3,XB,102
-6,2025/03/30,7,GORGEOUS WIN,華麗再勝,A Atzeni,艾兆禮,123,1175,5,C S Shum,10,Group Two,1200,Sha Tin:,"TURF - ""A+3"" Course",Good,16:15,49,1,TT,96
+0,2025/04/02,1,DRAGON FOUR SEAS,騰龍四海,H Bowman,布文,135,1190,6,K L Man,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,28,3,B,
+1,2025/04/02,2,MOTOMAN,競馬一心,J Orman,奧爾民,134,1174,10,P C Ng,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,21,3,PC/TT,
+2,2025/04/02,3,PRIME MORTAR,砂漿金剛,B Avdulla,艾道拿,134,1056,8,A S Cruz,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,28,2,V/TT,
+3,2025/04/02,4,HAPPY PARK,開心樂園,Y L Chung,鍾易禮 (-3),132,1217,2,K W Lui,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,18,1,XB,
+4,2025/04/02,5,MEGA BONUS,有鴻利,R Kingscote,金誠剛,129,1276,1,P F Yiu,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,28,3,V,
+5,2025/04/02,6,STAR BROSE,禾道威,Z Purton,潘頓,128,1187,11,D A Hayes,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,999,0,,
+6,2025/04/02,7,SAVVY TWINKLE,亮寶,A Badel,巴度,125,1093,9,F C Lor,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,18,2,XB/TT,
+7,2025/04/02,8,SHOTGUN,盛勢威楓,L Ferraris,霍宏聲,128,1089,5,D J Hall,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,91,0,XB-,
+8,2025/04/02,9,NEW POWER,新力,M L Yeung,楊明綸,122,1102,4,C W Chang,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,21,2,,
+9,2025/04/02,10,ACCOLADE START,賞豐泰,M F Poon,潘明輝,120,1044,3,D Eustace,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,14,3,B-/TT,
+10,2025/04/02,11,FAIRY HORSE,夢幻駿駒,M Chadwick,蔡明紹,116,1120,12,C Fownes,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,18,2,SB/TT,
+11,2025/04/02,12,SHINKANSEN,新幹線,K Teetan,田泰安,116,1158,7,D J Whyte,9,Class 4,1200,Happy Valley:,"TURF - ""C+3"" Course",Good,21:45,38,2,H-/CP/TT,
