@@ -63,7 +63,7 @@
 
 <div class="w3-container"></div>
 <div class="w3-margin">
-    <h3><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1|slice:"-5:" }} &nbsp;{{race_time}} </h3>
+    <h3><img src="{% static 'hkrace.png' %}" alt="Hong Kong" style="width:4%"> &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1|slice:"-5:" }} &nbsp;{{race_time}} </h3>
     <a class="w3-button w3-large w3-circle {% if race_id == 1 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/1/">1</a>
     <a class="w3-button w3-large w3-circle {% if race_id == 2 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/2/">2</a>
     <a class="w3-button w3-large w3-circle {% if race_id == 3 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/3/">3</a>
