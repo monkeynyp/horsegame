@@ -501,7 +501,7 @@
             const encodedText = encodeURIComponent(textContent.substring(0, 90));
         
             // Create a Facebook share URL
-            const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&hashtag=${encodedText}`;
+            const facebookShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}&fbclid=${encodedText}`;
         
             // Open the Facebook share dialog
             window.open(facebookShareUrl, '_blank');
