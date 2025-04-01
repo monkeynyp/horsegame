@@ -205,7 +205,8 @@
               <div id="userTips" class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
                 
                 <header class="w3-container {{color}}" >
-                  <h6>{{ user_data.user  }}
+                  <h6>{{ user_data.user  }}</h6>
+                  <h7>
                     <!-- Dislay Gold Crown and Silver Crown for first and second users-->
                     {% if forloop.counter == 1 %}
                         <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 15deg;""></i></span>
@@ -229,7 +230,7 @@
                       {% endif %}
                         
                     {% endif %}
-                    {% endfor %}</h6>
+                    {% endfor %}</h7>
                   </header>
                       
                       {% for user_tips in user_data.records %}
