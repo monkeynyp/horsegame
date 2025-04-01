@@ -205,14 +205,14 @@
               <div id="userTips" class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
                 
                 <header class="w3-container {{color}}" >
-                  <h6>{{ user_data.user  }}</h6>
-                  <h7>
+                  <h6>{{ user_data.user  }}
+                  
                     <!-- Dislay Gold Crown and Silver Crown for first and second users-->
                     {% if forloop.counter == 1 %}
                         <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 15deg;""></i></span>
                     {% elif forloop.counter == 2 %}
                     <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #f6f5f1e9; --fa-rotate-angle: 15deg;""></i></span>
-                    {% endif %}<br>
+                    {% endif %}<br> </h6>
                     <!-- Create Medal for Users-->
                     {% for score in user_scores %}
                     {% if score.user == user_data.user %}
