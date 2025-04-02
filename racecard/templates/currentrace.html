@@ -519,14 +519,20 @@
     var url = encodeURIComponent(window.location.href);
     var hashtag = encodeURIComponent("#YourHashtag");
 
-    // Detect if the user is on a mobile device
+    // Detect if user is on Facebook in-app browser
+    var isFacebookApp = /FBAN|FBAV/.test(navigator.userAgent);
+    
+    // Mobile check
     var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-    if (isMobile) {
-        // Mobile: Use sharer.php (direct link works better on mobile)
+    if (isFacebookApp) {
+        // Facebook in-app browser: Open in a new tab (forces external browser)
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&hashtag=${hashtag}`, "_blank");
+    } else if (isMobile) {
+        // Mobile: Open sharer.php (ensures it's handled correctly)
         window.location.href = `https://www.facebook.com/sharer/sharer.php?u=${url}&hashtag=${hashtag}`;
     } else {
-        // Desktop: Use Facebook SDK (popup method works better on PC)
+        // Desktop: Use Facebook SDK (popup method)
         FB.ui({
             method: 'share',
             href: window.location.href,
@@ -536,6 +542,7 @@
         });
     }
 }
+
 
     </script>
 
