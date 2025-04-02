@@ -516,39 +516,27 @@
             window.open(facebookShareUrl, '_blank');
         }
         function shareToFacebook() {
-          const userTabs = document.querySelectorAll('#userTips h6, #userTips p'); // Select all <h6> elements and <p> elements inside the userTips div
-            if (!userTabs.length) {
-                alert('Content not found!');
-                return;
-            }
-        
-            // Extract the text content from all user-record elements
-            let textContent = `第${race_id}場貼士\n\n`;
-            userTabs.forEach((tab, index) => {
-              if (index < 4) { // Only include the first record
-                textContent += '     ' + tab.innerText.trim() + '\n\n'; // Add 5 spaces at the beginning of each line
-              }
-            });
-        
-            if (!textContent.trim()) {
-                alert('No content to share!');
-                return;
-            }
-        
-            // Encode the text content for sharing
-            //const encodedText = encodeURIComponent(textContent.substring(0, 90));
-            FB.ui({
-                method: 'share',
-                href: window.location.href,  // The URL to share
-                hashtag: "Test Test" // Hashtag (optional)
-            }, function(response) {
-                if (response && !response.error_message) {
-                    console.log("Post shared successfully!");
-                } else {
-                    console.error("Error sharing post:", response.error_message);
-                }
-            });
+    var url = encodeURIComponent(window.location.href);
+    var hashtag = encodeURIComponent("#YourHashtag");
+
+    // Detect if the user is on a mobile device
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        // Mobile: Use sharer.php (direct link works better on mobile)
+        window.location.href = `https://www.facebook.com/sharer/sharer.php?u=${url}&hashtag=${hashtag}`;
+    } else {
+        // Desktop: Use Facebook SDK (popup method works better on PC)
+        FB.ui({
+            method: 'share',
+            href: window.location.href,
+            hashtag: "#YourHashtag"
+        }, function(response) {
+            console.log(response);
+        });
+    }
 }
+
     </script>
 
 
