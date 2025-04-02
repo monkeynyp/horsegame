@@ -516,20 +516,20 @@
             window.open(facebookShareUrl, '_blank');
         }
         function shareToFacebook() {
-      FB.ui({
-          method: 'share',
-          href: window.location.href, // The page URL
-          quote: "Check this out!", // Optional text
-          hashtag: "#YourHashtag" // The hashtag (optional)
-      }, function(response) {
-          if (response && !response.error_message) {
-              console.log("Posting successful:", response);
-          } else {
-              console.log("Error while posting:", response.error_message);
-          }
-      });
-  }
-
+    const urlWithHashtag = window.location.href + "#YourHashtag"; // Append the hashtag to the URL
+    FB.ui({
+        method: 'share',
+        href: urlWithHashtag,
+        quote: "Check this out!",
+        hashtag: "#YourHashtag" // Still include it here for desktop
+    }, function(response) {
+        if (response && !response.error_message) {
+            console.log("Posting successful:", response);
+        } else {
+            console.log("Error while posting:", response.error_message);
+        }
+    });
+}
 
     </script>
 
