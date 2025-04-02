@@ -516,30 +516,19 @@
             window.open(facebookShareUrl, '_blank');
         }
         function shareToFacebook() {
-    var url = encodeURIComponent(window.location.href);
-    var hashtag = encodeURIComponent("#YourHashtag");
+    var url = window.location.href;
+    var text = "Check this out!"; // Optional text
 
-    // Detect if user is on Facebook in-app browser
-    var isFacebookApp = /FBAN|FBAV/.test(navigator.userAgent);
-    
-    // Mobile check
-    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-    if (isFacebookApp) {
-        // Facebook in-app browser: Open in a new tab (forces external browser)
-        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}&hashtag=${hashtag}`, "_blank");
-    } else if (isMobile) {
-        // Mobile: Open sharer.php (ensures it's handled correctly)
-        window.location.href = `https://www.facebook.com/sharer/sharer.php?u=${url}&hashtag=${hashtag}`;
+    if (navigator.share) {
+        // Native Mobile Share API (Opens Facebook if installed)
+        navigator.share({
+            title: document.title,
+            text: text,
+            url: url
+        }).catch(err => console.log("Error sharing:", err));
     } else {
-        // Desktop: Use Facebook SDK (popup method)
-        FB.ui({
-            method: 'share',
-            href: window.location.href,
-            hashtag: "#YourHashtag"
-        }, function(response) {
-            console.log(response);
-        });
+        // Fallback: Use Facebook Share URL
+        window.location.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
     }
 }
 
