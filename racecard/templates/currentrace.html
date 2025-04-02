@@ -516,23 +516,16 @@
             window.open(facebookShareUrl, '_blank');
         }
         function shareToFacebook() {
-    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-    const url = isMobile 
-        ? window.location.href + "#YourHashtag" 
-        : window.location.href;
+    const url = encodeURIComponent(window.location.href + "#YourHashtag");
+    const text = encodeURIComponent("Check this out! #YourHashtag");
+    const fbAppUrl = `fb://share?u=${url}&text=${text}`;
+    const fbWebUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}&quote=${text}`;
 
-    FB.ui({
-        method: 'share',
-        href: url,
-        quote: "Check this out!" + (isMobile ? " #YourHashtag" : ""),
-        hashtag: isMobile ? undefined : "#YourHashtag" // Only include on desktop
-    }, function(response) {
-        if (response && !response.error_message) {
-            console.log("Posting successful:", response);
-        } else {
-            console.log("Error while posting:", response.error_message);
-        }
-    });
+    // Try opening the app first, fall back to web if it fails
+    window.location.href = fbAppUrl;
+    setTimeout(() => {
+        if (!document.hidden) window.open(fbWebUrl, '_blank');
+    }, 500);
 }
 
     </script>
