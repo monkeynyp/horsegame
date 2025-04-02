@@ -516,26 +516,24 @@
             window.open(facebookShareUrl, '_blank');
         }
         function shareToFacebook() {
-    var url = window.location.href;
-    var text = "Check this out!"; // Optional text
-
-    if (navigator.share) {
-        // Native Mobile Share API (Opens Facebook if installed)
-        navigator.share({
-            title: document.title,
-            text: text,
-            url: url
-        }).catch(err => console.log("Error sharing:", err));
-    } else {
-        // Fallback: Use Facebook Share URL
-        window.location.href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-    }
-}
+      FB.ui({
+          method: 'share',
+          href: window.location.href, // The page URL
+          quote: "Check this out!", // Optional text
+          hashtag: "#YourHashtag" // The hashtag (optional)
+      }, function(response) {
+          if (response && !response.error_message) {
+              console.log("Posting successful:", response);
+          } else {
+              console.log("Error while posting:", response.error_message);
+          }
+      });
+  }
 
 
     </script>
 
-
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 <footer class="w3-container w3-padding-32 w3-center w3-light-grey w3-margin-top">
   <h4>其他賽馬🏇功能</h4>
   <div class="w3-bar w3-light-grey">
