@@ -516,12 +516,16 @@
             window.open(facebookShareUrl, '_blank');
         }
         function shareToFacebook() {
-    const urlWithHashtag = window.location.href + "#LouisHashtag"; // Append the hashtag to the URL
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    const url = isMobile 
+        ? window.location.href + "#YourHashtag" 
+        : window.location.href;
+
     FB.ui({
         method: 'share',
-        href: urlWithHashtag,
-        quote: "Check this out!",
-        hashtag: "#YIUHashtag" // Still include it here for desktop
+        href: url,
+        quote: "Check this out!" + (isMobile ? " #YourHashtag" : ""),
+        hashtag: isMobile ? undefined : "#YourHashtag" // Only include on desktop
     }, function(response) {
         if (response && !response.error_message) {
             console.log("Posting successful:", response);
