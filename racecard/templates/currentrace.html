@@ -516,12 +516,12 @@
             window.open(facebookShareUrl, '_blank');
         }
         function shareToFacebook() {
-    const urlWithHashtag = window.location.href + "#YourHashtag"; // Append the hashtag to the URL
+    const urlWithHashtag = window.location.href + "#LouisHashtag"; // Append the hashtag to the URL
     FB.ui({
         method: 'share',
         href: urlWithHashtag,
         quote: "Check this out!",
-        hashtag: "#YourHashtag" // Still include it here for desktop
+        hashtag: "#YIUHashtag" // Still include it here for desktop
     }, function(response) {
         if (response && !response.error_message) {
             console.log("Posting successful:", response);
