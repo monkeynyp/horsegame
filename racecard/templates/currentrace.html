@@ -536,11 +536,11 @@
             }
         
             // Encode the text content for sharing
-            const encodedText = encodeURIComponent(textContent.substring(0, 90));
+            //const encodedText = encodeURIComponent(textContent.substring(0, 90));
             FB.ui({
                 method: 'share',
                 href: window.location.href,  // The URL to share
-                hashtag: encodedText // Hashtag (optional)
+                hashtag: textContent // Hashtag (optional)
             }, function(response) {
                 if (response && !response.error_message) {
                     console.log("Post shared successfully!");
