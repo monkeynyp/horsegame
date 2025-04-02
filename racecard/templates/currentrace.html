@@ -26,7 +26,16 @@
     }
   }
 </style>
-
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+<script>
+  window.fbAsyncInit = function() {
+      FB.init({
+          appId: '1703820186874019', // Replace with your actual Facebook App ID
+          xfbml: true,
+          version: 'v18.0' // Use the latest Facebook API version
+      });
+  };
+</script>
 <script>
   let race_id = "{{ race_id }}"; // Pass race_id from Django context
   let selectionSequence = [];
@@ -274,7 +283,7 @@
                               <i class="fa-solid fa-robot"></i>
                             {% endif %} </span>
                           </p> 
-                          <button class="w3-button w3-white w3-round" onclick="shareTableDataAsText()">
+                          <button class="w3-button w3-white w3-round" onclick="shareToFacebook()">
                             <i class="fa-solid fa-share"></i> {% trans "分享到 " %}<i class="fa-brands fa-facebook fa-xl" style="color: #058af0;"></i>
                         </button>
                       </span>
@@ -506,6 +515,19 @@
             // Open the Facebook share dialog
             window.open(facebookShareUrl, '_blank');
         }
+        function shareToFacebook() {
+    FB.ui({
+        method: 'share',
+        href: window.location.href,  // The URL to share
+        hashtag: "#YourHashtag" // Hashtag (optional)
+    }, function(response) {
+        if (response && !response.error_message) {
+            console.log("Post shared successfully!");
+        } else {
+            console.error("Error sharing post:", response.error_message);
+        }
+    });
+}
     </script>
 
 
