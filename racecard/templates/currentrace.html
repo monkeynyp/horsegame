@@ -27,7 +27,7 @@
   }
 </style>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-<script>
+<!-- <script>
   window.fbAsyncInit = function() {
       FB.init({
           appId: '1703820186874019', // Replace with your actual Facebook App ID
@@ -35,7 +35,7 @@
           version: 'v18.0' // Use the latest Facebook API version
       });
   };
-</script>
+</script> -->
 <script>
   let race_id = "{{ race_id }}"; // Pass race_id from Django context
   let selectionSequence = [];
@@ -221,7 +221,7 @@
                         <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 15deg;""></i></span>
                     {% elif forloop.counter == 2 %}
                     <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #f6f5f1e9; --fa-rotate-angle: 15deg;""></i></span>
-                    {% endif %}<br> </h6>
+                    {% endif %}<br> 
                     <!-- Create Medal for Users-->
                     {% for score in user_scores %}
                     {% if score.user == user_data.user %}
@@ -239,7 +239,7 @@
                       {% endif %}
                         
                     {% endif %}
-                    {% endfor %}</h7>
+                    {% endfor %}</h6>
                   </header>
                       
                       {% for user_tips in user_data.records %}
@@ -283,9 +283,9 @@
                               <i class="fa-solid fa-robot"></i>
                             {% endif %} </span>
                           </p> 
-                          <button class="w3-button w3-white w3-round" onclick="shareToFacebook()">
+<!--                           <button class="w3-button w3-white w3-round" onclick="shareToFacebook()">
                             <i class="fa-solid fa-share"></i> {% trans "分享到 " %}<i class="fa-brands fa-facebook fa-xl" style="color: #058af0;"></i>
-                        </button>
+                        </button> -->
                       </span>
                       </footer>
               </div>
@@ -486,7 +486,7 @@
             document.getElementById("id01").style.display = "none";
         }
 
-        function shareTableDataAsText() {
+/*         function shareTableDataAsText() {
             const userTabs = document.querySelectorAll('#userTips h6, #userTips p'); // Select all <h6> elements and <p> elements inside the userTips div
             if (!userTabs.length) {
                 alert('Content not found!');
@@ -548,7 +548,7 @@
                     console.error("Error sharing post:", response.error_message);
                 }
             });
-}
+} */
     </script>
 
 
