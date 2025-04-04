@@ -13,37 +13,7 @@
                     </div>
                     <div class="w3-col s6 w3-center">
                         <h2>等運到組合</h2>
-                        <div class="w3-container w3-margin-top">
-                            <h3>最近 10 次結果</h3>
-                            <table class="w3-table-all w3-hoverable w3-small">
-                                <thead>
-                                    <tr class="w3-blue">
-                                        <th>期數</th>
-                                        <th>No1</th>
-                                        <th>No2</th>
-                                        <th>No3</th>
-                                        <th>No4</th>
-                                        <th>No5</th>
-                                        <th>No6</th>
-                                        <th>特別號</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {% for record in last_10_records %}
-                                    <tr>
-                                        <td>{{ record.Draw }}</td>
-                                        <td><img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a" style="width:20px; height:20px;"></td>
-                                        <td><img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a" style="width:20px; height:20px;"></td>
-                                        <td><img src="{% static 'no_' %}{{ record.No3|stringformat:'d' }}.gif?CV=L4.07R2a" style="width:20px; height:20px;"></td>
-                                        <td><img src="{% static 'no_' %}{{ record.No4|stringformat:'d' }}.gif?CV=L4.07R2a" style="width:20px; height:20px;"></td>
-                                        <td><img src="{% static 'no_' %}{{ record.No5|stringformat:'d' }}.gif?CV=L4.07R2a" style="width:20px; height:20px;"></td>
-                                        <td><img src="{% static 'no_' %}{{ record.No6|stringformat:'d' }}.gif?CV=L4.07R2a" style="width:20px; height:20px;"></td>
-                                        <td><img src="{% static 'no_' %}{{ record.No7|stringformat:'d' }}.gif?CV=L4.07R2a" style="width:20px; height:20px;"></td>
-                                    </tr>
-                                    {% endfor %}
-                                </tbody>
-                            </table>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="w3-panel w3-card-4 w3-light-grey w3-margin-top">
@@ -56,13 +26,7 @@
         </div>
     </div>
 </div>
-<div class="w3-container w3-padding-16">
-    {% if user.is_authenticated %}
-        <button id='myButton' class="w3-button w3-ripple w3-red w3-large" onclick="openModal()">+</button>&nbsp;<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp;加入你的心水號</span>
-    {% else %}
-        <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red w3-large">+</button>&nbsp;<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp;{% trans "Add Your Numbers" %}</span>
-    {% endif %}
-</div>
+
 <div class="w3-container w3-margin-top">
     <table class="w3-table-all w3-hoverable">
         <thead>
@@ -102,7 +66,13 @@
     </table>
 </div>
 
-
+<div class="w3-container w3-padding-16">
+    {% if user.is_authenticated %}
+        <button id='myButton' class="w3-button w3-ripple w3-red" onclick="openModal()">+</button>&nbsp;<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp;加入你的心水號</span>
+    {% else %}
+        <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red">+</button>&nbsp;<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp;{% trans "Add Your Numbers" %}</span>
+    {% endif %}
+</div>
 
 <div id="numberModal" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-zoom w3-padding-32">
