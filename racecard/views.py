@@ -1102,8 +1102,9 @@ def lotto_trio(request):
 def lotto_longterm(request):   
       
     form = NumberForm() 
+    last_10_records = Marksix_hist.objects.order_by('-Date')[:10]
     records = Marksix_user_rec.objects.all()
-    return render(request, 'lotto_longterm.html',{'form':form, 'records':records})
+    return render(request, 'lotto_longterm.html',{'form':form, 'records':records,'last_10_records': last_10_records})
 
 def calculate_days_difference(record_date):
     # Convert record_date to a datetime object if it's not already
