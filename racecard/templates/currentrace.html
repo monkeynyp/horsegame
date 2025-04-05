@@ -319,7 +319,7 @@
         {% for comment in race_comments %}
           <div class="w3-container w3-margin-bottom w3-border-bottom w3-border-light-grey">
             <strong class="w3-text-dark-grey">{{ comment.user.username }}:</strong>
-            <p>{{ comment.comment }}</p>
+            <p style="white-space: pre-wrap;">{{ comment.comment }}</p>
             <span class="w3-small w3-text-grey">{{ comment.created_at }}</span>
           </div>
         {% endfor %}
