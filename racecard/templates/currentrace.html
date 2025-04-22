@@ -225,6 +225,7 @@
                     <!-- Create Medal for Users-->
                     {% for score in user_scores %}
                     {% if score.user == user_data.user %}
+                    <br>
                         {% if score.stars %}
                           {% for i in score.stars|stringformat:"s" %}
                           <i class="fa-solid fa-sack-dollar fa-lg" style="color: #ff9705;"></i>
