@@ -1,13 +1,12 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/04/23,1,HORSEPOWER,馬力,Z Purton,潘頓,135,1118,10,F C Lor,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,24,1,XB/TT,
-1,2025/04/23,2,YOUTHFUL SPIRITS,年少多好,L Ferraris,霍宏聲,135,1064,2,M Newnham,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,14,4,SR/V/TT,
-2,2025/04/23,3,CELESTIAL COLOURS,寰宇豐采,H Bowman,布文,131,1164,3,J Richards,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,10,2,V/TT,
-3,2025/04/23,4,SPORTS LEGEND,川河動駒,E C W Wong,黃智弘 (-7),129,1166,7,C S Shum,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,28,4,B/TT,
-4,2025/04/23,5,HEALTHY HEALTHY,添開心,K C Leung,梁家俊,128,1181,6,P C Ng,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,35,3,B/TT,
-5,2025/04/23,6,VIEW OF THE WORLD,觀天下,A Hamelin,賀銘年,128,1071,5,C H Yip,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,21,1,TT,
-6,2025/04/23,7,CASA OF HONOR,領航君子,M F Poon,潘明輝,127,1182,4,C W Chang,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,14,1,XB,
-7,2025/04/23,8,SEASONS WIT,四季醒,L Hewitson,希威森,122,1130,8,J Richards,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,14,3,B/TT,
-8,2025/04/23,9,SPARKLING FELLOW,飛來閃耀,B Avdulla,艾道拿,121,1116,12,D J Hall,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,10,2,B,
-9,2025/04/23,10,STAR PERFORMER,枕頭之星,K Teetan,田泰安,120,1164,11,M Newnham,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,24,1,,
-10,2025/04/23,11,BASIC INSTINCT,本能,M L Yeung,楊明綸,119,1095,1,Y S Tsui,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,14,5,B,
-11,2025/04/23,12,PARENTS' LOVE,勝萬金,Y L Chung,鍾易禮 (-3),118,1050,9,A S Cruz,9,Class 3,1000,Happy Valley:,"TURF - ""C"" Course",Good,22:15,10,2,H/TT,
+0,2025/04/27,1,GOLIATH,歌利巨人,C Soumillon,蘇銘倫,126,1056,9,F-H Graffard,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,999,0,,126
+1,2025/04/27,2,PROGNOSIS,先見,J McDonald,麥道朗,126,1044,6,M Nakauchida,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,364,0,H,118
+2,2025/04/27,3,TASTIERA,鍵琴高奏,D Lane,連達文,126,1099,10,N Hori,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,140,0,XB/TT,118
+3,2025/04/27,4,CALIF,奇力駒,A De Vries,范以誠,126,1070,2,F A Nass,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,140,0,V/XB,117
+4,2025/04/27,5,EL VENCEDOR,贏家,Z Purton,潘頓,126,1130,1,S Marsh,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,999,0,H/SR/TT,117
+5,2025/04/27,6,STRAIGHT ARRON,直線力山,M F Poon,潘明輝,126,1113,5,P F Yiu,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,28,2,XB,115
+6,2025/04/27,7,ENSUED,安騁,B Avdulla,艾道拿,126,1062,4,J Size,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,28,2,,114
+7,2025/04/27,8,MOMENTS IN TIME,智取神駒,J Moreira,莫雷拉,126,1079,7,C S Shum,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,28,2,TT,114
+8,2025/04/27,9,CAP FERRAT,百賀飛駒,C Williams,韋紀力,126,1072,8,K W Lui,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,35,5,,110
+9,2025/04/27,10,RUBYLOT,球星,H Bowman,布文,126,1114,3,D A Hayes,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,14,6,CP,106
+10,2025/04/27,11,LIBERTY ISLAND,自由島,Y Kawada,川田將雅,122,1043,11,M Nakauchida,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,140,0,,117
