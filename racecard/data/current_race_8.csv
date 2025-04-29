@@ -1,12 +1,13 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/04/27,1,GOLIATH,歌利巨人,C Soumillon,蘇銘倫,126,1056,9,F-H Graffard,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,999,0,,126
-1,2025/04/27,2,PROGNOSIS,先見,J McDonald,麥道朗,126,1044,6,M Nakauchida,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,364,0,H,118
-2,2025/04/27,3,TASTIERA,鍵琴高奏,D Lane,連達文,126,1099,10,N Hori,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,140,0,XB/TT,118
-3,2025/04/27,4,CALIF,奇力駒,A De Vries,范以誠,126,1070,2,F A Nass,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,140,0,V/XB,117
-4,2025/04/27,5,EL VENCEDOR,贏家,Z Purton,潘頓,126,1130,1,S Marsh,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,999,0,H/SR/TT,117
-5,2025/04/27,6,STRAIGHT ARRON,直線力山,M F Poon,潘明輝,126,1113,5,P F Yiu,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,28,2,XB,115
-6,2025/04/27,7,ENSUED,安騁,B Avdulla,艾道拿,126,1062,4,J Size,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,28,2,,114
-7,2025/04/27,8,MOMENTS IN TIME,智取神駒,J Moreira,莫雷拉,126,1079,7,C S Shum,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,28,2,TT,114
-8,2025/04/27,9,CAP FERRAT,百賀飛駒,C Williams,韋紀力,126,1072,8,K W Lui,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,35,5,,110
-9,2025/04/27,10,RUBYLOT,球星,H Bowman,布文,126,1114,3,D A Hayes,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,14,6,CP,106
-10,2025/04/27,11,LIBERTY ISLAND,自由島,Y Kawada,川田將雅,122,1043,11,M Nakauchida,10,Group One,2000,Sha Tin:,"TURF - ""A"" Course",Good,16:40,140,0,,117
+0,2025/04/30,1,SKY HEART,仁心星,H Bowman,布文,135,1228,2,C Fownes,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,38,5,V/TT,
+1,2025/04/30,2,HAMERON,博望坡,Z Purton,潘頓,132,1035,8,K W Lui,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,28,2,,
+2,2025/04/30,3,STAR CONTACT,久久為攻,B Avdulla,艾道拿,131,1200,12,D A Hayes,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,21,2,B/TT,
+3,2025/04/30,4,CAMBRIDGE,包裝創新,K C Leung,梁家俊,130,1041,11,P C Ng,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,21,3,XB2/TT,
+4,2025/04/30,5,DEFINITIVE,時時精準,K Teetan,田泰安,128,1103,7,D Eustace,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,28,2,B/TT,
+5,2025/04/30,6,A AMERIC TE SPECSO,有財有勢,A Atzeni,艾兆禮,125,1092,6,J Size,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,14,4,B,
+6,2025/04/30,7,ALLCASH,凱明神駒,E C W Wong,黃智弘 (-7),125,994,3,C S Shum,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,28,5,CP/TT,
+7,2025/04/30,8,FLYING FORTRESS,非凡豪傑,H Bentley,班德禮,125,1008,10,W K Mo,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,21,2,TT,
+8,2025/04/30,9,KOLACHI,至高心得,M Chadwick,蔡明紹,125,993,5,D J Whyte,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,21,1,,
+9,2025/04/30,10,BEAUTY CRESCENT,同樣美麗,J Orman,奧爾民,124,1076,1,A S Cruz,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,10,3,TT,
+10,2025/04/30,11,STURDY RUBY,紅海勁,A Badel,巴度,121,1135,9,K L Man,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,14,2,TT,
+11,2025/04/30,12,SETANTA,駟跑得,L Hewitson,希威森,118,1180,4,M Newnham,9,Class 3,1650,Happy Valley:,"TURF - ""C+3"" Course",Good,22:15,21,1,B-/TT,
