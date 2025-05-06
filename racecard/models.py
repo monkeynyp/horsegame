@@ -20,6 +20,7 @@ class UserTips(models.Model):
     hit = models.IntegerField()
     dividend = models.FloatField(default=0)
     ratio = models.IntegerField(default=0)
+    win_flag = models.BooleanField(default=False)
         
 class UserScores(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='score')
