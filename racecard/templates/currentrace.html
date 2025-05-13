@@ -247,8 +247,8 @@
                   </header>
                       
                       {% for user_tips in user_data.records %}
-                          
-                              <p><span class="w3-badge">{{ user_tips.horse_no }}</span>&nbsp           
+                            
+                        <p><span class="w3-badge {% if user_tips.win_flag %}w3-amber{% endif %}">{{ user_tips.horse_no }}</span>&nbsp           
                                 {% if LANGUAGE_CODE == 'en' %}
                                   {{ user_tips.horse_name }}
                             {% elif LANGUAGE_CODE == 'tw' %}
@@ -381,23 +381,42 @@
                 <!-- Horse Selection Section -->
                 <h5 class="w3-left-align">{% trans 'Select up to 3 horses' %}:</h5>
                 <div class="w3-container">
-                    {% for i, r in current_race.iterrows %}
-                        <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %} narrow-row" >
-                            <label class="w3-container narrow-row">
-                                <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}|{{ forloop.counter }}.{{ r.Trainer }}|{{ forloop.counter }}.{{ r.HorseName_cn }}" data-translated="{{ forloop.counter }}.{{ r.HorseName_cn }}"
-                                       {% if r.HorseName in selected_horses %} checked {% endif %}
-                                       onclick="updateSelection(this)" >
-                                {{ forloop.counter }}.           
-                                  {% if LANGUAGE_CODE == 'en' %}
-                                    {{ r.HorseName }}
-                                {% elif LANGUAGE_CODE == 'tw' %}
-                                    {{ r.HorseName_cn }}
-                                {% endif %}          
-    
-                                
-                            </label>
-                        </div>
-                    {% endfor %}
+                  {% for i, r in current_race.iterrows %}
+                    <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %} narrow-row">
+                      <label class="w3-container narrow-row">
+                        <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}|{{ forloop.counter }}.{{ r.Trainer }}|{{ forloop.counter }}.{{ r.HorseName_cn }}" data-translated="{{ forloop.counter }}.{{ r.HorseName_cn }}"
+                             {% if r.HorseName in selected_horses %} checked {% endif %}
+                             onclick="updateSelection(this)">
+                        {{ forloop.counter }}.
+                        {% if LANGUAGE_CODE == 'en' %}
+                          {{ r.HorseName }}
+                        {% elif LANGUAGE_CODE == 'tw' %}
+                          {{ r.HorseName_cn }}
+                        {% endif %}
+                      </label>
+                      <label class="w3-container narrow-row">
+                        <input type="radio" name="win_horse" value="{{ forloop.counter }}.{{ r.HorseName }}" 
+                             {% if r.HorseName == win_horse %} checked {% endif %}
+                             onclick="updateWinSelection(this)" 
+                             {% if selected_horses and r.HorseName not in selected_horses %} disabled {% endif %}
+                             {% if selected_horses and r.HorseName not in selected_horses %} checked=false {% endif %}>
+                        {% trans "Win" %}
+                      </label>
+                    </div>
+                  {% endfor %}
+                </div>
+
+                <script>
+                  function updateWinSelection(radio) {
+                    // Ensure only one selected horse can be marked as "Win"
+                    let selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
+                    let winRadioButtons = document.querySelectorAll('input[name="win_horse"]');
+                    
+                    winRadioButtons.forEach(function (radioButton) {
+                      radioButton.disabled = !Array.from(selectedCheckboxes).some(checkbox => checkbox.value.includes(radioButton.value.split('.')[1]));
+                    });
+                  }
+                </script>
                 </div>
     
                 <!-- Submit Button -->
@@ -457,7 +476,8 @@
       var endDate = new Date("2030-12-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period
-      if (currentDatetime >= startDate && currentDatetime < endDate) {
+      //if (currentDatetime >= startDate && currentDatetime < endDate) {
+        if (currentDatetime < startDate) {
     
           var myButton = document.getElementById("myButton");
           myButton.disabled = true;

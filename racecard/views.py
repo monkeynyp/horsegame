@@ -178,14 +178,15 @@ def submit_tips(request):
     if request.method == 'POST':
         selected_horses = request.POST.get('selection_sequence')
         selected_horses = selected_horses.split(',') 
+        win_horse = request.POST.get('win_horse')  # Get the win_horse value from the POST data
         # Process the horse name and jockey
         for horse_jockey in selected_horses:
-            horse_name, jockey_name,trainer_name,horse_name_cn = horse_jockey.split('|')
+            horse_name, jockey_name, trainer_name, horse_name_cn = horse_jockey.split('|')
         # Now you can work with horse_name and jockey_name separately
-        print(f"Horse: {horse_name}, Jockey: {jockey_name}, trainer: {trainer_name}")
+            print(f"Horse: {horse_name}, Jockey: {jockey_name}, trainer: {trainer_name}")
         # Assuming you have a user identifier, replace 'user_id' with the actual field name
         user_id = request.user  # Replace with the actual user ID
-        race_date=request.POST['race_date'].replace('/','-')
+        race_date = request.POST['race_date'].replace('/', '-')
         race_no = request.POST['race_no']
 
         if not UserScores.objects.filter(user=user_id).exists():
@@ -196,17 +197,16 @@ def submit_tips(request):
         existing_records = UserTips.objects.filter(user=user_id, race_date=race_date, race_no=race_no)
         if existing_records.exists():
             existing_records.delete()
-        rank =0
+        rank = 0
         for horse_select in selected_horses:
-            
             split_values = horse_select.split(".")
-            horse_no=split_values[0]
-            horse_name=split_values[1].split("|")[0]
+            horse_no = split_values[0]
+            horse_name = split_values[1].split("|")[0]
             jockey = split_values[2].split("|")[0]
             trainer = split_values[3].split("|")[0]
             horse_name_cn = split_values[4]
-            print("HorseCN:",horse_name_cn)
-            rank=rank+1
+            print("HorseCN:", horse_name_cn)
+            rank += 1
             if rank == 1:
                 jockey_score = 12
                 trainer_score = 12
@@ -216,11 +216,31 @@ def submit_tips(request):
             elif rank == 3:
                 jockey_score = 4
                 trainer_score = 4
-            
-            UserTips.objects.create(user=user_id, race_date=race_date, race_no=race_no,rank=rank,jockey_score=jockey_score,trainer_score=trainer_score, horse_no=horse_no,horse_name=horse_name,horse_name_cn=horse_name_cn, jockey=jockey,trainer=trainer,hit=0)
+
+            # Set win_flag to True if the horse matches the win_horse
+            win_flag = horse_name == win_horse.split(".")[1]
+            print("horse_name:", horse_name)
+            print("win_horse:", win_horse)
+            print("Win_flag:", win_flag)
+
+            UserTips.objects.create(
+                user=user_id,
+                race_date=race_date,
+                race_no=race_no,
+                rank=rank,
+                jockey_score=jockey_score,
+                trainer_score=trainer_score,
+                horse_no=horse_no,
+                horse_name=horse_name,
+                horse_name_cn=horse_name_cn,
+                jockey=jockey,
+                trainer=trainer,
+                hit=0,
+                win_flag=win_flag  # Add win_flag to the record
+            )
         # Redirect to a success page or wherever needed
         
-    return redirect('../racecard/?id='+race_no)
+    return redirect('../racecard/?id=' + race_no)
 
 def view_by_member(request):
     curr_tips_by_user = request.session.get('curr_tips_by_user',[])
