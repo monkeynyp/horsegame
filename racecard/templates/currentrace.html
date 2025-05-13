@@ -476,8 +476,8 @@
       var endDate = new Date("2030-12-25T23:59:59");
       
       // Disable the button if the current date and time fall within the specified period
-      //if (currentDatetime >= startDate && currentDatetime < endDate) {
-        if (currentDatetime < startDate) {
+      if (currentDatetime >= startDate && currentDatetime < endDate) {
+        //if (currentDatetime < startDate) {
     
           var myButton = document.getElementById("myButton");
           myButton.disabled = true;
