@@ -19,6 +19,7 @@ class UserTips(models.Model):
     trainer = models.CharField(max_length=25, null=True)
     hit = models.IntegerField()
     dividend = models.FloatField(default=0)
+    win_div = models.FloatField(default=0)
     ratio = models.IntegerField(default=0)
     win_flag = models.BooleanField(default=False)
         

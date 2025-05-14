@@ -19,7 +19,20 @@ def get_results(race_no):
 
     for index, row in enumerate(rows):
         columns = row.find_all("td", class_="f_fs14")
-        if index >= 3 and index <= 5:
+        print(columns)
+        if index == 2: #Update Win Dividend
+            horse_no = columns[0].text.strip()
+            dividend = columns[1].text.strip()
+            print(f"Horse No: {horse_no}, Dividend: {dividend}")
+
+            UserTips.objects.filter(
+                horse_no=horse_no,
+                race_date=race_date,
+                race_no=race_no, 
+                win_flag=True, 
+              ).update(hit=1, win_div=dividend)
+            
+        if index >= 3 and index <= 5: #Update Place Dividend
             horse_no = columns[0].text.strip()
             dividend = columns[1].text.strip()
             print(f"Horse No: {horse_no}, Dividend: {dividend}")

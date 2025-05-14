@@ -123,12 +123,12 @@ def racecard(request,race_id):
 
     # Organize the data by username and fetch all relevant records for each user
      last_perf_by_user = (
-       UserTips.objects.filter(race_date=curr_race_date, race_no__lte=race_id)
-       .select_related('user')
-       .values('user__username')
-       .annotate(
-               hit_pst = Sum('hit')*100.0/Count('hit'),
-               total_dividend = Sum('dividend')-Count('hit')*10
+      UserTips.objects.filter(race_date=curr_race_date, race_no__lte=race_id)
+      .select_related('user')
+      .values('user__username')
+      .annotate(
+            hit_pst = Sum('hit')*100.0/Count('hit'),
+            total_dividend = Sum('dividend') + Sum('win_div') - Count('hit')*10 - Count('win_flag', filter=Q(win_flag=True))*10,
     ))
      request.session['last_perf_by_user'] = list(last_perf_by_user)
     # Get the user scores and calculate the percentage of hits

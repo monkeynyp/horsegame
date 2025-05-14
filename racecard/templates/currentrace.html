@@ -254,9 +254,13 @@
                             {% elif LANGUAGE_CODE == 'tw' %}
                                   {{ user_tips.horse_name_cn }}
                             {% endif %}
+                        
                             {% if user_tips.hit == 1 %}
-                                <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
-                              {% endif %} 
+                              {% if user_tips.win_div > 0 %}
+                                <span class="w3-badge w3-amber w3-small">${{user_tips.win_div}}</span>
+                              {% endif %}
+                              <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
+                            {% endif %} 
                               </p>
                               <!-- Add more details as needed -->
                       {% endfor %}
