@@ -387,24 +387,24 @@
                 <div class="w3-container">
                   {% for i, r in current_race.iterrows %}
                     <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %} narrow-row">
-                      <label class="w3-container narrow-row">
+                      <label class="w3-container narrow-row" style="display: flex; align-items: center; gap: 10px;">
                         <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}|{{ forloop.counter }}.{{ r.Trainer }}|{{ forloop.counter }}.{{ r.HorseName_cn }}" data-translated="{{ forloop.counter }}.{{ r.HorseName_cn }}"
                              {% if r.HorseName in selected_horses %} checked {% endif %}
                              onclick="updateSelection(this)">
-                        {{ forloop.counter }}.
-                        {% if LANGUAGE_CODE == 'en' %}
-                          {{ r.HorseName }}
-                        {% elif LANGUAGE_CODE == 'tw' %}
-                          {{ r.HorseName_cn }}
-                        {% endif %}
-                      </label>
-                      <label class="w3-container narrow-row">
+                        <span>
+                          {{ forloop.counter }}.
+                          {% if LANGUAGE_CODE == 'en' %}
+                            {{ r.HorseName }}
+                          {% elif LANGUAGE_CODE == 'tw' %}
+                            {{ r.HorseName_cn }}
+                          {% endif %}
+                        </span>
                         <input type="radio" name="win_horse" value="{{ forloop.counter }}.{{ r.HorseName }}" 
                              {% if r.HorseName == win_horse %} checked {% endif %}
                              onclick="updateWinSelection(this)" 
                              {% if selected_horses and r.HorseName not in selected_horses %} disabled {% endif %}
                              {% if selected_horses and r.HorseName not in selected_horses %} checked=false {% endif %}>
-                        {% trans "Win" %}
+                        <span>{% trans "Win" %}</span>
                       </label>
                     </div>
                   {% endfor %}
