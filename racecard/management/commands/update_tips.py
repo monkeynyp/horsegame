@@ -23,9 +23,9 @@ class Command(BaseCommand):
         
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
         #alg_methods = ['LogRegress','RanForest','ForestReg','NeuroReg']
-        alg_methods = ['LogRegress','RanForest','NeuroReg','NeuroNet','ForestReg']
+        #alg_methods = ['LogRegress','RanForest','NeuroReg','NeuroNet','ForestReg']
         #alg_methods = ['LogRegress','RanForest']
-        #alg_methods = ['LogRegress']
+        alg_methods = ['NeuroReg']
         jockey_score = 0
         trainer_score = 0
         class_flag=0
@@ -71,12 +71,19 @@ class Command(BaseCommand):
                     if i == 0:
                         jockey_score = 12
                         trainer_score = 12
+                        win_flag = True
                     elif i == 1:
                         jockey_score = 6
                         trainer_score = 6
+                        win_flag = False
                     elif i == 2:
                         jockey_score = 4
                         trainer_score = 4
+                        win_flag = False
+                    else:
+                        jockey_score = 0
+                        trainer_score = 0
+                        win_flag = False
                     # Your logic to update the database with race_date and race_no
                     UserTips.objects.update_or_create(
                         user = user_id,
@@ -91,6 +98,7 @@ class Command(BaseCommand):
                         jockey = row['Jockey'],
                         trainer = row['Trainer'],
                         hit = 0,
+                        win_flag = win_flag,
                         ratio=round(row['Score'] * 100 / 10) * 10  # Multiply by 100, then round up to the nearest 10
                         )
 
