@@ -25,7 +25,7 @@ class Command(BaseCommand):
         #alg_methods = ['LogRegress','RanForest','ForestReg','NeuroReg']
         alg_methods = ['LogRegress','RanForest','NeuroReg','NeuroNet','ForestReg']
         #alg_methods = ['LogRegress','RanForest']
-        #alg_methods = ['NeuroReg']
+        #alg_methods = ['RanForest']
         jockey_score = 0
         trainer_score = 0
         class_flag=0
@@ -63,20 +63,24 @@ class Command(BaseCommand):
                 print(df)
                 
                 result_df = df.head(3)
+                print("Top3: ",result_df)
                 existing_records = UserTips.objects.filter(user=user_id, race_date=race_date, race_no=counter)
                 if existing_records.exists():
                     existing_records.delete()
                 rank = 0
+                j = 0
                 for i,row in result_df.iterrows():
-                    if i == 0:
+                
+                    print(f"Processing row {j}: {row}")
+                    if j == 0:
                         jockey_score = 12
                         trainer_score = 12
                         win_flag = True
-                    elif i == 1:
+                    elif j == 1:
                         jockey_score = 6
                         trainer_score = 6
                         win_flag = False
-                    elif i == 2:
+                    elif j == 2:
                         jockey_score = 4
                         trainer_score = 4
                         win_flag = False
@@ -84,13 +88,14 @@ class Command(BaseCommand):
                         jockey_score = 0
                         trainer_score = 0
                         win_flag = False
+                    j += 1
                     # Your logic to update the database with race_date and race_no
                     UserTips.objects.update_or_create(
                         user = user_id,
                         race_date = race_date,
                         race_no = counter,
                         horse_no = row[ 'Unnamed: 0']+1,
-                        rank = i+1,
+                        rank = j,
                         jockey_score = jockey_score,
                         trainer_score = trainer_score,
                         horse_name = row['HorseName'],
