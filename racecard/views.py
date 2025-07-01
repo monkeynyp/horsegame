@@ -98,7 +98,7 @@ def racecard(request,race_id):
             .values('user', 'user__groups__name')
             .annotate(
             hit_pst=Sum('hit') * 100.0 / Count('hit'),
-            total_dividend=Sum('dividend') - Count('hit') * 10,
+            total_dividend = Sum('dividend') + Sum('win_div') - Count('hit')*10 - Count('win_flag', filter=Q(win_flag=True))*10,
         )
        # .order_by('-hit_pst')  # Sort in descending order of hit ratio
          .order_by('-total_dividend')  # Sort in descending order of hit ratio
