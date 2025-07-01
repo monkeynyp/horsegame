@@ -94,7 +94,7 @@ def racecard(request,race_id):
     ## For Tips Sorting based on Current Peformance. If the Current Performance is zero, Last Performace will be used for sorting ##
      
      curr_tips_by_user = (
-        UserTips.objects.filter(race_date=curr_race_date)  # Current Tips Only
+        UserTips.objects.filter(race_date=curr_race_date, race_no__lte=race_id)  # Current Tips Only
             .values('user', 'user__groups__name')
             .annotate(
             hit_pst=Sum('hit') * 100.0 / Count('hit'),
@@ -104,7 +104,7 @@ def racecard(request,race_id):
          .order_by('-total_dividend')  # Sort in descending order of hit ratio
     )   
      
-    
+     print("User Tips:", curr_tips_by_user)
 
     # Calculate the total sum of 'Hit' in 'curr_tips_by_user' with handling for None values
      sum_pst = 0
@@ -130,6 +130,8 @@ def racecard(request,race_id):
             hit_pst = Sum('hit')*100.0/Count('hit'),
             total_dividend = Sum('dividend') + Sum('win_div') - Count('hit')*10 - Count('win_flag', filter=Q(win_flag=True))*10,
     ))
+     
+     print("Last Performance by User:", last_perf_by_user)
      request.session['last_perf_by_user'] = list(last_perf_by_user)
     # Get the user scores and calculate the percentage of hits
      user_scores = UserScores.objects.annotate(
