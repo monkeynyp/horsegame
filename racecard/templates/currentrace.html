@@ -28,6 +28,15 @@
     }
   }
 </style>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "925200f0-a7bc-47ce-99f7-f3e5b4367759",
+    });
+  });
+</script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 <!-- <script>
   window.fbAsyncInit = function() {
