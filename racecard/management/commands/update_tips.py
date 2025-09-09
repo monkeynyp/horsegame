@@ -23,9 +23,9 @@ class Command(BaseCommand):
         
         #alg_methods = ['LogRegress','NaiveBayes','SVC','RanForest','NeuroNet','ForestReg','NeuroReg','GradientB','TimeMonkey']
         #alg_methods = ['LogRegress','RanForest','ForestReg','NeuroReg']
-        #alg_methods = ['LogRegress','NeuroReg','NeuroNet']
+        alg_methods = ['LogRegress','NeuroReg','NeuroNet']
         #alg_methods = ['LogRegress','RanForest']
-        alg_methods = ['NeuroNet']
+        #alg_methods = ['NeuroNet']
         jockey_score = 0
         trainer_score = 0
         class_flag=0
