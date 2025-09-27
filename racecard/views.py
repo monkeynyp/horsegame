@@ -652,7 +652,7 @@ def register(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
-            return redirect('racecard')  # replace with the actual URL
+            return redirect('../racecard/1/')  # replace with the actual URL
     else:
         form = CustomUserCreationForm()
     return render(request, 'registration/registration_form.html', {'form': form})

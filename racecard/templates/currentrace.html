@@ -7,462 +7,535 @@
 
 {% block content %}
 
-<div style="margin-top:70px"></div>
-
 <style>
-  .narrow-row {
-    padding: 5px 0;
-    margin: 3px 0;
+  body, .racecard-bg {
+    background: #f7f9fa;
   }
-
-  .narrow-row label {
-    padding: 0;
+  .racecard-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0 8px 0;
+    margin-bottom: 16px;
   }
-
-  @media (max-width: 600px) {
-    .w3-table-all th, .w3-table-all td {
-      font-size: 12px;
-    }
-    .w3-button.w3-large {
-      font-size: 14px;
-    }
+  .racecard-navbar .w3-button {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    transition: box-shadow 0.2s;
+  }
+  .racecard-navbar .w3-button:hover {
+    box-shadow: 0 2px 8px #b3c6e0;
+    transform: translateY(-2px) scale(1.08);
+  }
+  .racecard-section-title {
+    font-weight: 600;
+    font-size: 1.25em;
+    margin: 24px 0 12px 0;
+    color: #1565c0;
+    letter-spacing: 1px;
+    border-left: 4px solid #2196f3;
+    padding-left: 12px;
+    background: #e3f2fd;
+    border-radius: 4px;
+  }
+  .racecard-divider {
+    border-bottom: 1px solid #e0e0e0;
+    margin: 18px 0 18px 0;
+  }
+  .racecard-card {
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #e0e0e0;
+    background: #fff;
+    margin-bottom: 18px;
+    transition: box-shadow 0.2s;
+  }
+  .racecard-card:hover {
+    box-shadow: 0 4px 24px #b3c6e0;
+  }
+  .racecard-table th, .racecard-table td {
+    border-radius: 4px;
+    background: #fff;
+  }
+  .racecard-user-card {
+    border-radius: 10px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px #e0e0e0;
+    background: #f8fafc;
+    transition: box-shadow 0.2s;
+  }
+  .racecard-user-card:hover {
+    box-shadow: 0 4px 16px #b3c6e0;
+  }
+  .racecard-comment {
+    background: #f4f8fb;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    border-left: 3px solid #90caf9;
+  }
+  .racecard-add-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-radius: 50px;
+    padding: 8px 24px;
+    box-shadow: 0 2px 8px #e0e0e0;
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+  .racecard-add-btn:hover {
+    background: #1565c0 !important;
+    color: #fff !important;
+    box-shadow: 0 4px 16px #b3c6e0;
+  }
+  .racecard-backtotop {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 999;
+    display: none;
+    background: #2196f3;
+    color: #fff;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px #b3c6e0;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .racecard-backtotop:hover {
+    background: #1565c0;
   }
 </style>
 
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-<!-- <script>
-  window.fbAsyncInit = function() {
-      FB.init({
-          appId: '1703820186874019', // Replace with your actual Facebook App ID
-          xfbml: true,
-          version: 'v18.0' // Use the latest Facebook API version
-      });
-  };
-</script> -->
-<script>
-  let race_id = "{{ race_id }}"; // Pass race_id from Django context
-  let selectionSequence = [];
-  let selectionSequenceTrans = [];
-  function updateSelection(checkbox) {
-    var selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
-    if (selectedCheckboxes.length > 3) {
-      checkbox.checked = false;
-    }
-    var uncheckedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:not(:checked)');
-    uncheckedCheckboxes.forEach(function (uncheckedCheckbox) {
-      uncheckedCheckbox.disabled = selectedCheckboxes.length >= 3;
-    });
-    let horseName = checkbox.value;
-    let horseTransName = checkbox.dataset.translated;
-    if (checkbox.checked) {
-      selectionSequence.push(horseName);
-      selectionSequenceTrans.push(horseTransName);
-    } else {
-      let index = selectionSequence.indexOf(horseName);
-      if (index > -1) {
-        selectionSequence.splice(index, 1);
-        selectionSequenceTrans.splice(index, 1);
-      }
-    }
-    document.getElementById('selected-horses').innerText = selectionSequenceTrans.join(', ');
-    document.getElementById('selection-sequence').value = selectionSequence.join(',');
-  }
-
-  function submitForm() {
-    document.getElementById('selection-sequence').value = selectionSequence.join(',');
-  }
-</script>
-
-<div class="w3-container"></div>
-<div class="w3-margin">
-    <h3><img src="{% static 'hkrace.png' %}" alt="Hong Kong" style="width:4%"> &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1|slice:"-5:" }} &nbsp;{{race_time}} </h3>
-    <a class="w3-button w3-large w3-circle {% if race_id == 1 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/1/">1</a>
-    <a class="w3-button w3-large w3-circle {% if race_id == 2 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/2/">2</a>
-    <a class="w3-button w3-large w3-circle {% if race_id == 3 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/3/">3</a>
-    <a class="w3-button w3-large w3-circle {% if race_id == 4 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/4/">4</a>
-    <a class="w3-button w3-large w3-circle {% if race_id == 5 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/5/">5</a>
-    <a class="w3-button w3-large w3-circle {% if race_id == 6 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/6/">6</a>
-    <a class="w3-button w3-large w3-circle {% if race_id == 7 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/7/">7</a>
-    <a class="w3-button w3-large w3-circle {% if race_id == 8 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/8/">8</a>
-    {% if total_race > 8 %}
-      <a class="w3-button w3-large w3-circle {% if race_id == 9 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/9/">9</a>
-      {% if total_race > 9 %}
-        <a class="w3-button w3-large w3-circle {% if race_id == 10 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/10/">10</a>
-        {% if total_race > 10 %}
-          <a class="w3-button w3-large w3-circle {% if race_id == 11 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/11/">11</a>
+<div class="racecard-bg">
+  <div class="w3-container"></div>
+  <div class="racecard-navbar w3-center">
+    <h3 style="display:inline-block;vertical-align:middle;">
+      <img src="{% static 'hkrace.png' %}" alt="Hong Kong" style="width:4%;vertical-align:middle;"> 
+      &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1|slice:"-5:" }} &nbsp;{{race_time}}
+    </h3>
+    <div style="margin-top:8px;">
+      <!-- Race navigation buttons -->
+      <a class="w3-button w3-circle {% if race_id == 1 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/1/">1</a>
+      <a class="w3-button w3-circle {% if race_id == 2 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/2/">2</a>
+      <a class="w3-button w3-circle {% if race_id == 3 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/3/">3</a>
+      <a class="w3-button w3-circle {% if race_id == 4 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/4/">4</a>
+      <a class="w3-button w3-circle {% if race_id == 5 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/5/">5</a>
+      <a class="w3-button w3-circle {% if race_id == 6 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/6/">6</a>
+      <a class="w3-button w3-circle {% if race_id == 7 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/7/">7</a>
+      <a class="w3-button w3-circle {% if race_id == 8 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/8/">8</a>
+      {% if total_race > 8 %}
+        <a class="w3-button w3-circle {% if race_id == 9 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/9/">9</a>
+        {% if total_race > 9 %}
+          <a class="w3-button w3-circle {% if race_id == 10 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/10/">10</a>
+          {% if total_race > 10 %}
+            <a class="w3-button w3-circle {% if race_id == 11 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/11/">11</a>
+          {% endif %}
         {% endif %}
       {% endif %}
-    {% endif %}
+    </div>
+  </div>
 
- 
-<div class="w3-row">
-  
-
-
-
-</div>
-    
-
-<!-- This Part shows the User Tips rank by the most updated Current Race Performance -->
-  <div class="w3-col w3-padding-top-32 l6 s12" >
-        <div class="w3-margin">
-        <a href="/view_by_member" class="w3-button w3-black"><i class="fa-solid fa-circle-arrow-right"></i>&nbsp {% trans 'Tips Summary' %}</a> 
-        
-        <a href="/jockey_king" class="w3-button w3-black"><i class="fa-solid fa-solid  fa-person-rays" ></i>&nbsp {% trans 'Jockey Challenge' %}</a>
-        <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-black"><i class="fa-solid fa-chess-knight"></i>&nbsp {% trans 'Battle Chart' %}</a>&nbsp 
-        <br><br>
-        &nbsp &nbsp <i class="fa-solid fa-person fa-xl"></i>&nbsp  {% trans 'Human'%} &nbsp 
-        {% for item in tips_qty_by_type %}
-            {% if item.user__groups__name == 'MailList' %}
-                    <span class="w3-badge w3-green"> {{ item.num_users }} </span>
-            {% endif %}
-        {% endfor %}
-              
-                     |&nbsp
-          <i class="fa-solid fa-robot fa-xl"></i>&nbsp {% trans 'Robot'%} &nbsp; 
-          {% for item in tips_qty_by_type %}
-          {% if item.user__groups__name != 'MailList' %}
-          <span class="w3-badge w3-blue"> {{ item.num_users }}</span>
-          {% endif %}
-          {% endfor %}
-
+  <div class="w3-row racecard-2col">
+    <!-- Left column: User Tips Summary -->
+    <div class="w3-col l6 s12 w3-padding-top-32">
+      <div class="racecard-section-title">{% trans "Tips & Rankings" %}</div>
+      <div class="racecard-card w3-margin">
+        <div class="w3-row w3-center" style="gap: 12px; display: flex; flex-wrap: wrap; justify-content: center;">
+          <a href="/view_by_member" class="w3-button w3-blue w3-hover-indigo w3-large" style="margin:6px 8px; border-radius: 30px; min-width: 160px; font-weight:600; box-shadow:0 2px 8px #e3f2fd;">
+            <i class="fa-solid fa-circle-arrow-right"></i>&nbsp;{% trans 'Tips Summary' %}
+          </a>
+          <a href="/jockey_king" class="w3-button w3-teal w3-hover-dark-grey w3-large" style="margin:6px 8px; border-radius: 30px; min-width: 160px; font-weight:600; box-shadow:0 2px 8px #e0f2f1;">
+            <i class="fa-solid fa-person-rays"></i>&nbsp;{% trans 'Jockey Challenge' %}
+          </a>
+          <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-amber w3-hover-orange w3-large" style="margin:6px 8px; border-radius: 30px; min-width: 160px; font-weight:600; box-shadow:0 2px 8px #fff3e0;">
+            <i class="fa-solid fa-chess-knight"></i>&nbsp;{% trans 'Battle Chart' %}
+          </a>
+        </div>
+        <div class="w3-margin-top w3-center" style="font-size:1.1em;">
+          <span style="margin-right:10px;">
+            <i class="fa-solid fa-person fa-xl" style="color:#388e3c;"></i>&nbsp;{% trans 'Human'%}
+            {% for item in tips_qty_by_type %}
+              {% if item.user__groups__name == 'MailList' %}
+                <span class="w3-badge w3-green" style="margin-left:2px;">{{ item.num_users }}</span>
+              {% endif %}
+            {% endfor %}
+          </span>
+          <span style="margin:0 8px;">|</span>
+          <span>
+            <i class="fa-solid fa-robot fa-xl" style="color:#1976d2;"></i>&nbsp;{% trans 'Robot'%}
+            {% for item in tips_qty_by_type %}
+              {% if item.user__groups__name != 'MailList' %}
+                <span class="w3-badge w3-blue" style="margin-left:2px;">{{ item.num_users }}</span>
+              {% endif %}
+            {% endfor %}
+          </span>
+        </div>
       </div>
-        <div class="w3-row-padding">
-        
-        {% for user_data in complete_tips_by_user %} <!-- Loop over the zipped data -->
+      <div class="racecard-divider"></div>
+      <div class="w3-row-padding">
+        {% for user_data in complete_tips_by_user %}
           {% cycle 'w3-blue' 'w3-green' 'w3-yellow' 'w3-brown' 'w3-indigo' 'w3-lime' 'w3-pale-blue' as color silent %}
-              <div id="userTips" class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom l3 m5 s5 w3-left-align">
-                
-                <header class="w3-container {{color}}" >
-                  <h6>{{ user_data.user  }}
-                  
-                    <!-- Dislay Gold Crown and Silver Crown for first and second users-->
-                    {% if forloop.counter == 1 %}
-                        <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #FFD43B; --fa-rotate-angle: 15deg;""></i></span>
-                    {% elif forloop.counter == 2 %}
-                    <span class="w3-right"><i class="fa-solid fa-crown fa-rotate-by" style="color: #f6f5f1e9; --fa-rotate-angle: 15deg;""></i></span>
-                    {% endif %}<br> 
-                    <!-- Create Medal for Users-->
-                    {% for score in user_scores %}
+          <div id="userTips" class="w3-col l12 m12 s12">
+            <div class="racecard-user-card w3-card-4" style="margin-bottom:18px; padding:0;">
+              <!-- Card Header -->
+              <div style="display:flex; align-items:center; justify-content:space-between; background:{{color}}; border-radius:10px 10px 0 0; padding:10px 16px;">
+                <div style="font-weight:600; font-size:1.1em;">
+                  {{ user_data.user }}
+                  {% if forloop.counter == 1 %}
+                    <i class="fa-solid fa-crown" style="color: #FFD43B; margin-left:6px;" title="Top User"></i>
+                  {% elif forloop.counter == 2 %}
+                    <i class="fa-solid fa-crown" style="color: #f6f5f1e9; margin-left:6px;" title="Second"></i>
+                  {% endif %}
+                </div>
+                <div>
+                  {% for score in user_scores %}
                     {% if score.user == user_data.user %}
-                        {% if score.stars %}
-                          <br>
-                          {% for i in score.stars|stringformat:"s" %}
-                          <i class="fa-solid fa-sack-dollar fa-lg" style="color: #ff9705;"></i>
-                          {% endfor %}
-                          <br>
-                      {% endif %}
-                      <br>
-                      {% if score.stars2 > 0 %}
-                         <i class="fa-solid fa-medal fa-lg" style="color: #FBB337;"></i> x {{score.stars2}} 
-                      {% endif %} &nbsp;
-                      {% if score.stars1 > 0 %}
-                        <i class="fa-solid fa-star fa-sm" style="color: #FBB337;"></i> x {{score.stars1}} 
-                      {% endif %} 
-                      &nbsp;
-
-                        
-                    {% endif %}
-                    {% endfor %}</h6>
-                  </header>
-                      
-                      {% for user_tips in user_data.records %}
-                            
-                        <p><span class="w3-badge {% if user_tips.win_flag %}w3-amber{% endif %}">{{ user_tips.horse_no }}</span>&nbsp           
-                                {% if LANGUAGE_CODE == 'en' %}
-                                  {{ user_tips.horse_name }}
-                            {% elif LANGUAGE_CODE == 'tw' %}
-                                  {{ user_tips.horse_name_cn }}
-                            {% endif %}
-                        
-                            {% if user_tips.hit == 1 %}
-                              {% if user_tips.win_div > 0 %}
-                                <span class="w3-badge w3-amber w3-small">${{user_tips.win_div}}</span>
-                              {% endif %}
-                              <span class="w3-badge w3-red w3-small">${{user_tips.dividend}}</span>
-                            {% endif %} 
-                              </p>
-                              <!-- Add more details as needed -->
+                      {% for i in score.stars|stringformat:"s" %}
+                        <i class="fa-solid fa-sack-dollar" style="color: #ff9705;" title="Profit"></i>
                       {% endfor %}
-                      <footer class="w3-container {{color}} w3-left-align">
-                        <span class="w3-small">
-                          <p class="w3-left-align">
-                            {% trans 'Current' %}:
-                            {% for last_perf in last_perf_by_user %}
-                              {% if last_perf.user__username  == user_data.user.username %}
-                                <span class="w3-red" style="font-size: larger;">${{ last_perf.total_dividend | floatformat:0 }}</span>
-                                <span class ="w3-light-blue">{{ last_perf.hit_pst | floatformat:0 }}% </span>
-                        
-                              {% endif %}
-                            {% endfor %}
-                            <br>
-                            {% trans 'Total' %}:
-                            {% for score in user_scores %}
-                                {% if score.user == user_data.user %}
-                                    {{ score.percentage | floatformat:0 }}%
-                                {% endif %}
-                            {% endfor %}
-                            <span class = "w3-right">
-                            {% if user_data.groups_name == "MailList" %}
-                              <i class="fa-solid fa-person fa-xl "></i>
-                            {% elif user_data.user.username == 'WePower' %}
-                                <i class="fa-solid fa-users-gear fa-xl"></i>
-                            {% else %}
-                              <i class="fa-solid fa-robot"></i>
-                            {% endif %} </span>
-                          </p> 
-<!--                           <button class="w3-button w3-white w3-round" onclick="shareToFacebook()">
-                            <i class="fa-solid fa-share"></i> {% trans "分享到 " %}<i class="fa-brands fa-facebook fa-xl" style="color: #058af0;"></i>
-                        </button> -->
-                      </span>
-                      </footer>
+                      {% if score.stars2 > 0 %}
+                        <span style="margin-left:6px;"><i class="fa-solid fa-medal" style="color: #FBB337;"></i> x {{score.stars2}}</span>
+                      {% endif %}
+                      {% if score.stars1 > 0 %}
+                        <span style="margin-left:6px;"><i class="fa-solid fa-star" style="color: #FBB337;"></i> x {{score.stars1}}</span>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                </div>
               </div>
-          {% endfor %}
+              <!-- Card Body: Horse Tips List -->
+              <div style="padding:12px 16px;">
+                <ul style="list-style:none; margin:0; padding:0;">
+                  {% for user_tips in user_data.records %}
+                    <li style="display:flex; align-items:center; margin-bottom:6px;">
+                      <span class="w3-badge {% if user_tips.win_flag %}w3-amber{% else %}w3-light-grey{% endif %}" style="min-width:28px; text-align:center; margin-right:8px;">
+                        {{ user_tips.horse_no }}
+                      </span>
+                      <span style="flex:1;">
+                        {% if LANGUAGE_CODE == 'en' %}
+                          {{ user_tips.horse_name }}
+                        {% elif LANGUAGE_CODE == 'tw' %}
+                          {{ user_tips.horse_name_cn }}
+                        {% endif %}
+                      </span>
+                      {% if user_tips.hit == 1 %}
+                        {% if user_tips.win_div > 0 %}
+                          <span class="w3-badge w3-amber w3-small" style="margin-left:8px;">${{user_tips.win_div}}</span>
+                        {% endif %}
+                        <span class="w3-badge w3-red w3-small" style="margin-left:4px;">${{user_tips.dividend}}</span>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <!-- Card Footer: Performance -->
+              <div style="display:flex; align-items:center; justify-content:space-between; background:#f4f8fb; border-radius:0 0 10px 10px; padding:8px 16px;">
+                <div style="font-size:0.95em;">
+                  <span style="color:#1976d2;">{% trans 'Current' %}:</span>
+                  {% for last_perf in last_perf_by_user %}
+                    {% if last_perf.user__username  == user_data.user.username %}
+                      <span class="w3-red" style="font-size:1.1em; font-weight:600;">${{ last_perf.total_dividend | floatformat:0 }}</span>
+                      <span class="w3-light-blue">{{ last_perf.hit_pst | floatformat:0 }}%</span>
+                    {% endif %}
+                  {% endfor %}
+                  <span style="margin-left:12px; color:#1976d2;">{% trans 'Total' %}:</span>
+                  {% for score in user_scores %}
+                    {% if score.user == user_data.user %}
+                      {{ score.percentage | floatformat:0 }}%
+                    {% endif %}
+                  {% endfor %}
+                </div>
+                <div>
+                  {% if user_data.groups_name == "MailList" %}
+                    <i class="fa-solid fa-person fa-xl" title="Human"></i>
+                  {% elif user_data.user.username == 'WePower' %}
+                    <i class="fa-solid fa-users-gear fa-xl" title="Admin"></i>
+                  {% else %}
+                    <i class="fa-solid fa-robot" title="Robot"></i>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
       </div>
-
-
-
-      <div class="w3-margin">
-        <a class="w3-button w3-large w3-circle {% if race_id == 1 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/1/">1</a>
-        <a class="w3-button w3-large w3-circle {% if race_id == 2 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/2/">2</a>
-        <a class="w3-button w3-large w3-circle {% if race_id == 3 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/3/">3</a>
-        <a class="w3-button w3-large w3-circle {% if race_id == 4 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/4/">4</a>
-        <a class="w3-button w3-large w3-circle {% if race_id == 5 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/5/">5</a>
-        <a class="w3-button w3-large w3-circle {% if race_id == 6 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/6/">6</a>
-        <a class="w3-button w3-large w3-circle {% if race_id == 7 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/7/">7</a>
-        <a class="w3-button w3-large w3-circle {% if race_id == 8 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/8/">8</a>
+      <div class="racecard-divider"></div>
+      <!-- Move Add Your Tips section here -->
+      <div class="racecard-section-title">{% trans "Add Your Tips" %}</div>
+      <div class="w3-center w3-xlarge">
+        {% if user.is_authenticated %}
+          <button id='myButton' onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-ripple w3-red racecard-add-btn" >+</button>
+          &nbsp;<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp;{% trans "Add Your Tips" %} ({{ race_time }})</span>
+        {% else %}
+          <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red racecard-add-btn" >+</button>
+          &nbsp;<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp;{% trans "Add Your Tips" %} ({{ race_time }})</span>
+        {% endif %}
+      </div>
+      <div class="racecard-divider"></div>
+      <!-- Move Add Your Comment section here -->
+      <div class="racecard-section-title">{% trans "Add Your Comment" %}</div>
+      <div class="racecard-card w3-padding">
+        <form method="post" action="{% url 'add_comment' race_id=race_id %}" class="w3-container">
+          {% csrf_token %}
+          <input type="hidden" name="race_id" value="{{ race_id }}">
+          <input type="hidden" name="race_date" value="{{current_race.iloc.2.1}}">
+          <div class="w3-section">
+            <textarea class="w3-input w3-border w3-round" id="comment" name="comment" rows="4" placeholder="{% trans 'Write your comment here...' %}" required></textarea>
+          </div>
+          <button type="submit" class="w3-button w3-green w3-margin-top w3-round">{% trans 'Submit' %}</button>
+        </form>
+      </div>
+      <div class="racecard-divider"></div>
+      <div class="w3-margin w3-center">
+        <a class="w3-button w3-circle {% if race_id == 1 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/1/">1</a>
+        <a class="w3-button w3-circle {% if race_id == 2 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/2/">2</a>
+        <a class="w3-button w3-circle {% if race_id == 3 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/3/">3</a>
+        <a class="w3-button w3-circle {% if race_id == 4 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/4/">4</a>
+        <a class="w3-button w3-circle {% if race_id == 5 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/5/">5</a>
+        <a class="w3-button w3-circle {% if race_id == 6 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/6/">6</a>
+        <a class="w3-button w3-circle {% if race_id == 7 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/7/">7</a>
+        <a class="w3-button w3-circle {% if race_id == 8 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/8/">8</a>
         {% if total_race > 8 %}
-          <a class="w3-button w3-large w3-circle {% if race_id == 9 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/9/">9</a>
+          <a class="w3-button w3-circle {% if race_id == 9 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/9/">9</a>
           {% if total_race > 9 %}
-            <a class="w3-button w3-large w3-circle {% if race_id == 10 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/10/">10</a>
+            <a class="w3-button w3-circle {% if race_id == 10 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/10/">10</a>
             {% if total_race > 10 %}
-              <a class="w3-button w3-large w3-circle {% if race_id == 11 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/11/">11</a>
+              <a class="w3-button w3-circle {% if race_id == 11 %}w3-red{% else %}w3-black{% endif %}" href="/racecard/11/">11</a>
             {% endif %}
           {% endif %}
         {% endif %}
+      </div>
     </div>
-    <div class="w3-col w3-padding-top-32 l6 s12">
-    
-    <table class="w3-table-all w3-card-4 w3-margin">
-      
-      <thead>
-        <tr class="w3-light-blue">
-          <th>No</th>
-          <th>{% trans "Horse Name" %}</th>
-          <th class="w3-hide-small">{% trans "Jockey" %}</th>
-          <th>{% trans 'Vote' %}</th>
-            <th>{% trans "Freq" %}&nbsp;/&nbsp;{% trans "Period" %} <i class="fa fa-info-circle w3-tooltip" style="position: relative;"><span class="w3-text w3-tag w3-round w3-light-grey w3-small w3-tooltip-content" style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); white-space: nowrap;">密度:過去六十日，馬匹參賽的次數<br>相隔:顯示馬匹上次比賽相隔的時間</span></i></th>
-            <!--<th colspan="2" class="w3-center w3-blue">{% trans "Odds" %} <br>{% trans 'Updated' %}: {{ odds_time}}</th>-->
-         
-          </tr>
-        <!--<tr class="w3-light-blue w3-center">
-          <th></th>
-          <th></th>
-          <th></th>
-          <th class="w3-hide-small"></th>
-          <th></th>
-          <th class="w3-hide-small">{% trans "Win" %}</th>
-          <th>{% trans "Place" %}</th>
-        </tr> -->
-       <!--test123-->
-      </thead>
-      {% for i, r in current_race.iterrows %}
-      <tr>
-        <td>{{ forloop.counter }}</td>
-        <td>
-          {% if LANGUAGE_CODE == 'en' %}
-              {{ r.HorseName }}
-          {% elif LANGUAGE_CODE == 'tw' %}
-              {{ r.HorseName_cn }}
-          {% endif %}
-      </td>
-        <td class="w3-hide-small">{% trans r.Jockey %}</td>
-        <td>
+
+    <!-- Right column: Race Table, Comments, Add Tips, Recent Posts, etc. -->
+    <div class="w3-col l6 s12 w3-padding-top-32">
+      <div class="racecard-section-title">{% trans "Race Details" %}</div>
+      <div class="racecard-card">
+        <table class="w3-table-all w3-card-4 w3-margin racecard-table">
           
-          {% with horse_name=r.HorseName %}
-          {% for vote in horse_tips_qty %}
-          {% if vote.horse_name == horse_name %}
-              {% if vote.user__groups__name == "MailList" %}
-                {% cycle 'w3-green' as color silent %}
-                {% cycle 'fa-person' as icon silent %}
-              {% else %}
-                {% cycle 'w3-blue' as color silent %}
-                {% cycle 'fa-robot' as icon silent %}
-              {% endif %}
-          <div class="w3-light-grey">
-            <div class="{{ color }} w3-center w3-round" style="height: 20px; width:{{ vote.num_tips }}0px; display: inline-block;">{{ vote.num_tips }}</div>
-            <i class="fa-solid {{icon}}" style="display: inline-block; width: 16px;"></i>
-          </div>
-          {% endif %}
-          {% endfor %}
-          {% endwith %}
-      </td>
-    <td><span class="w3-badge w3-red">{{ r.Freq|floatformat:0}}</span>/<span class="w3-tag">{{ r.RestDays|floatformat:0 }}</span></td>
+          <thead>
+            <tr class="w3-light-blue">
+              <th>No</th>
+              <th>{% trans "Horse Name" %}</th>
+              <th class="w3-hide-small">{% trans "Jockey" %}</th>
+              <th>{% trans 'Vote' %}</th>
+                <th>{% trans "Freq" %}&nbsp;/&nbsp;{% trans "Period" %} <i class="fa fa-info-circle w3-tooltip" style="position: relative;"><span class="w3-text w3-tag w3-round w3-light-grey w3-small w3-tooltip-content" style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); white-space: nowrap;">密度:過去六十日，馬匹參賽的次數<br>相隔:顯示馬匹上次比賽相隔的時間</span></i></th>
+                <!--<th colspan="2" class="w3-center w3-blue">{% trans "Odds" %} <br>{% trans 'Updated' %}: {{ odds_time}}</th>-->
+             
+            </tr>
+          <!--<tr class="w3-light-blue w3-center">
+            <th></th>
+            <th></th>
+            <th></th>
+            <th class="w3-hide-small"></th>
+            <th></th>
+            <th class="w3-hide-small">{% trans "Win" %}</th>
+            <th>{% trans "Place" %}</th>
+          </tr> -->
+         <!--test123-->
+        </thead>
+        {% for i, r in current_race.iterrows %}
+        <tr>
+          <td>{{ forloop.counter }}</td>
+          <td>
+            {% if LANGUAGE_CODE == 'en' %}
+                {{ r.HorseName }}
+            {% elif LANGUAGE_CODE == 'tw' %}
+                {{ r.HorseName_cn }}
+            {% endif %}
+        </td>
+          <td class="w3-hide-small">{% trans r.Jockey %}</td>
+          <td>
+            
+            {% with horse_name=r.HorseName %}
+            {% for vote in horse_tips_qty %}
+            {% if vote.horse_name == horse_name %}
+                {% if vote.user__groups__name == "MailList" %}
+                  {% cycle 'w3-green' as color silent %}
+                  {% cycle 'fa-person' as icon silent %}
+                {% else %}
+                  {% cycle 'w3-blue' as color silent %}
+                  {% cycle 'fa-robot' as icon silent %}
+                {% endif %}
+            <div class="w3-light-grey">
+              <div class="{{ color }} w3-center w3-round" style="height: 20px; width:{{ vote.num_tips }}0px; display: inline-block;">{{ vote.num_tips }}</div>
+              <i class="fa-solid {{icon}}" style="display: inline-block; width: 16px;"></i>
+            </div>
+            {% endif %}
+            {% endfor %}
+            {% endwith %}
+        </td>
+      <td><span class="w3-badge w3-red">{{ r.Freq|floatformat:0}}</span>/<span class="w3-tag">{{ r.RestDays|floatformat:0 }}</span></td>
       
-  
+    
      <!-- <td class="w3-hide-small">{{ r.Win }}</td>
 
       <td style="background-color: lightgreen;">{{ r.Place }}</td>-->
 
 
       {% endfor %}
-    </table>
-    <div class="w3-container w3-margin-top">
-      <h4 class="w3-text-blue">{% trans 'Comments' %}</h4>
-      <div class="w3-card w3-padding w3-light-grey">
+        </table>
+      </div>
+      <!-- Move Comments display here, after race table -->
+      <div class="racecard-section-title">{% trans "Comments" %}</div>
+      <div class="racecard-card w3-padding">
         {% for comment in race_comments %}
-          <div class="w3-container w3-margin-bottom w3-border-bottom w3-border-light-grey">
+          <div class="racecard-comment">
             <strong class="w3-text-dark-grey">{{ comment.user.username }}:</strong>
             <p style="white-space: pre-wrap;">{{ comment.comment }}</p>
             <span class="w3-small w3-text-grey">{{ comment.created_at }}</span>
           </div>
         {% endfor %}
       </div>
-    </div>
-    <div class="w3-container w3-margin-top">
-      <h4 class="w3-text-blue">{% trans 'Add Your Comment' %}</h4>
-      <form method="post" action="{% url 'add_comment' race_id=race_id %}" class="w3-card w3-padding w3-light-grey">
-        {% csrf_token %}
-        <input type="hidden" name="race_id" value="{{ race_id }}">
-        <input type="hidden" name="race_date" value="{{current_race.iloc.2.1}}">
-        <div class="w3-section">
-          <textarea class="w3-input w3-border w3-round" id="comment" name="comment" rows="4" placeholder="{% trans 'Write your comment here...' %}" required></textarea>
-        </div>
-        <button type="submit" class="w3-button w3-green w3-margin-top w3-round">{% trans 'Submit' %}</button>
-      </form>
-    </div>
-    <div class="w3-center">
-      <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
-        </button>
-        </div>
-      <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
-          <p class=" w3-large w3-serif">
-        <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
-        
-        最近增加了新的功能在賽馬預測，讓各位網友除了位置之外，更可以參考Win，和三重彩等的推薦。可參考我的更新YouTube Video <a href="https://youtu.be/GHNhPTl26Zk"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a><br>
-        Monkey每期開賽前，Monkey會更新電腦程式的賽馬位置預測。同時也會開放平台給會員分享心水，希望通過分享，大家可以有準確的投注。我的YouTube Video有詳細介紹 <a href="https://youtu.be/bK_yWVwjz48"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a>
-     
-      </p>
+      <div class="racecard-divider"></div>
+      <div class="w3-center">
+        <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large racecard-add-btn">
+          <i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}
+        </a>
       </div>
-       <!-- Add Tips by users-->
-        <div class="w3-center w3-xlarge">
-  {% if user.is_authenticated %}
-    <button id='myButton' onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"> <i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Tips" %} ({{ race_time }})</span>
-  {% else %}
-    <button id='myButton' onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-ripple w3-red" >+</button>&nbsp<span id="msg001"><i class="fa-regular fa-hand-point-left fa-xl"></i>&nbsp{% trans "Add Your Tips" %} ({{ race_time }})</span>
-  {% endif %}
-  </div>
-
-  <div class="w3-card w3-margin">
-    <div class="w3-container w3-padding">
-      <h4>{% trans 'Recent Posts' %}</h4>
+      <div class="racecard-card w3-panel w3-light-grey" style="width:90%">
+        <p class=" w3-large w3-serif">
+      <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+      
+      最近增加了新的功能在賽馬預測，讓各位網友除了位置之外，更可以參考Win，和三重彩等的推薦。可參考我的更新YouTube Video <a href="https://youtu.be/GHNhPTl26Zk"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a><br>
+      Monkey每期開賽前，Monkey會更新電腦程式的賽馬位置預測。同時也會開放平台給會員分享心水，希望通過分享，大家可以有準確的投注。我的YouTube Video有詳細介紹 <a href="https://youtu.be/bK_yWVwjz48"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a>
+   
+    </p>
+      </div>
+      <div class="racecard-section-title">{% trans "Recent Posts" %}</div>
+      <div class="racecard-card w3-margin">
+        <ul class="w3-ul w3-hoverable w3-white">
+          <ul>
+            {% for article in recent_articles %}
+            <li><a href="../../blog/?id={{ forloop.counter }}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ul>
+      </div>
     </div>
-    <ul class="w3-ul w3-hoverable w3-white">
-      <ul>
-        {% for article in recent_articles %}
-        <li><a href="../../blog/?id={{ forloop.counter }}">{{ article.title }}</a></li>
-        {% endfor %}
-    </ul>
   </div>
-       <div id="id01" class="w3-modal">
-        <div class="w3-modal-content w3-animate-zoom" style="max-width: 600px;">
-            <!-- Modal Header -->
-            <div class="w3-container w3-blue w3-padding-8 w3-center">
-                <span onclick="closeAddTipsFormModal()" class="w3-button w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-                <h2 class="w3-xlarge"><i class="fa fa-trophy w3-margin-right"></i>{% trans 'Race' %} {{ race_id }} Tips &nbsp; {{ current_race.iloc.2.1 }}</h2>
-        
-            </div>
-    
-            <!-- Selected Horses Display -->
-            <div class="w3-container w3-padding-small">
-                <h4 class="w3-text-grey w3-left-align">{% trans 'Selected Horses' %}:</h4>
-                <div id="selected-horses" class="w3-panel w3-border w3-light-grey w3-round" style="min-height: 35px; padding: 4px;"></div>
-            </div>
-    
-            <!-- Form for Horse Selection -->
-            <form method="post" action="{% url 'submit_tips' %}" class="w3-container" onsubmit="submitForm()">
-                {% csrf_token %}
-                <input type="hidden" name="race_no" value="{{ race_id }}">
-                <input type="hidden" name="race_date" value="{{current_race.iloc.2.1}}">
-                <input type="hidden" id="selection-sequence" name="selection_sequence" value="">
-    
-                <!-- Horse Selection Section -->
-                <h5 class="w3-left-align">{% trans 'Select up to 3 horses' %}:</h5>
-                <div class="w3-container">
-                  {% for i, r in current_race.iterrows %}
-                    <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %} narrow-row">
-                      <label class="w3-container narrow-row" style="display: flex; align-items: center; gap: 10px;">
-                        <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}|{{ forloop.counter }}.{{ r.Trainer }}|{{ forloop.counter }}.{{ r.HorseName_cn }}" data-translated="{{ forloop.counter }}.{{ r.HorseName_cn }}"
-                             {% if r.HorseName in selected_horses %} checked {% endif %}
-                             onclick="updateSelection(this)">
-                        <span>
-                          {{ forloop.counter }}.
-                          {% if LANGUAGE_CODE == 'en' %}
-                            {{ r.HorseName }}
-                          {% elif LANGUAGE_CODE == 'tw' %}
-                            {{ r.HorseName_cn }}
-                          {% endif %}
-                        </span>
-                        <input type="radio" name="win_horse" value="{{ forloop.counter }}.{{ r.HorseName }}" 
-                             {% if r.HorseName == win_horse %} checked {% endif %}
-                             onclick="updateWinSelection(this)" 
-                             {% if selected_horses and r.HorseName not in selected_horses %} disabled {% endif %}
-                             {% if selected_horses and r.HorseName not in selected_horses %} checked=false {% endif %}>
-                        <span>{% trans "Win" %}</span>
-                      </label>
-                    </div>
-                  {% endfor %}
-                </div>
+</div>
 
-                <script>
-                  function updateWinSelection(radio) {
-                    // Ensure only one selected horse can be marked as "Win"
-                    let selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
-                    let winRadioButtons = document.querySelectorAll('input[name="win_horse"]');
-                    
-                    winRadioButtons.forEach(function (radioButton) {
-                      radioButton.disabled = !Array.from(selectedCheckboxes).some(checkbox => checkbox.value.includes(radioButton.value.split('.')[1]));
-                    });
-                  }
-                </script>
+<!-- Back to Top Button -->
+<div id="racecardBackToTop" class="racecard-backtotop w3-center" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa fa-arrow-up"></i>
+</div>
+<script>
+  // Show/hide back to top button
+  window.addEventListener('scroll', function() {
+    var btn = document.getElementById('racecardBackToTop');
+    if (window.scrollY > 300) btn.style.display = 'flex';
+    else btn.style.display = 'none';
+  });
+</script>
+
+<!-- Modals and scripts remain unchanged -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="max-width: 600px;">
+      <!-- Modal Header -->
+      <div class="w3-container w3-blue w3-padding-8 w3-center">
+          <span onclick="closeAddTipsFormModal()" class="w3-button w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+          <h2 class="w3-xlarge"><i class="fa fa-trophy w3-margin-right"></i>{% trans 'Race' %} {{ race_id }} Tips &nbsp; {{ current_race.iloc.2.1 }}</h2>
+      </div>
+
+      <!-- Selected Horses Display -->
+      <div class="w3-container w3-padding-small">
+          <h4 class="w3-text-grey w3-left-align">{% trans 'Selected Horses' %}:</h4>
+          <div id="selected-horses" class="w3-panel w3-border w3-light-grey w3-round" style="min-height: 35px; padding: 4px;"></div>
+      </div>
+
+      <!-- Form for Horse Selection -->
+      <form method="post" action="{% url 'submit_tips' %}" class="w3-container" onsubmit="submitForm()">
+          {% csrf_token %}
+          <input type="hidden" name="race_no" value="{{ race_id }}">
+          <input type="hidden" name="race_date" value="{{current_race.iloc.2.1}}">
+          <input type="hidden" id="selection-sequence" name="selection_sequence" value="">
+
+          <!-- Horse Selection Section -->
+          <h5 class="w3-left-align">{% trans 'Select up to 3 horses' %}:</h5>
+          <div class="w3-container">
+        {% for i, r in current_race.iterrows %}
+          <div class="{% if forloop.counter|divisibleby:2 %}w3-light-gray{% else %}w3-white{% endif %} narrow-row">
+            <label class="w3-container narrow-row" style="display: flex; align-items: center; gap: 10px;">
+          <input type="checkbox" name="selected_horses" value="{{ forloop.counter }}.{{ r.HorseName }}|{{ forloop.counter }}.{{ r.Jockey }}|{{ forloop.counter }}.{{ r.Trainer }}|{{ forloop.counter }}.{{ r.HorseName_cn }}" data-translated="{{ forloop.counter }}.{{ r.HorseName_cn }}"
+               {% if r.HorseName in selected_horses %} checked {% endif %}
+               onclick="updateSelection(this)">
+          <span>
+            {{ forloop.counter }}.
+            {% if LANGUAGE_CODE == 'en' %}
+              {{ r.HorseName }}
+            {% elif LANGUAGE_CODE == 'tw' %}
+              {{ r.HorseName_cn }}
+            {% endif %}
+          </span>
+          <input type="radio" name="win_horse" value="{{ forloop.counter }}.{{ r.HorseName }}" 
+               {% if r.HorseName == win_horse %} checked {% endif %}
+               onclick="updateWinSelection(this)" 
+               {% if selected_horses and r.HorseName not in selected_horses %} disabled {% endif %}
+               {% if selected_horses and r.HorseName not in selected_horses %} checked=false {% endif %}>
+          <span>{% trans "Win" %}</span>
+            </label>
+          </div>
+        {% endfor %}
+          </div>
+
+          <!-- Submit and Cancel Buttons -->
+          <div class="w3-container w3-padding-16" style="display: flex; gap: 12px;">
+          <button type="submit" class="w3-button w3-green w3-round" style="flex:1;">{% trans 'Submit' %}</button>
+          <button type="button" class="w3-button w3-grey w3-round" style="flex:1;" onclick="closeAddTipsFormModal()">{% trans 'Cancel' %}</button>
+          </div>
+      </form>
+
+          <script>
+            function updateWinSelection(radio) {
+              // Ensure only one selected horse can be marked as "Win"
+              let selectedCheckboxes = document.querySelectorAll('input[name="selected_horses"]:checked');
+              let winRadioButtons = document.querySelectorAll('input[name="win_horse"]');
+              
+              winRadioButtons.forEach(function (radioButton) {
+                radioButton.disabled = !Array.from(selectedCheckboxes).some(checkbox => checkbox.value.includes(radioButton.value.split('.')[1]));
+              });
+            }
+          </script>
+
+
+      </form>
+  </div>
+</div>
+  <div id="id02" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top">
+        <div class="w3-center">
+            <span onclick="closeLoginFormModal()" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        </div>
+        <div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top" style="max-width: 400px;">
+            <h2 class="w3-center">{% trans 'Login' %}</h2>
+            <form method="post" action="{% url 'login' %}" class="w3-container login-form">
+                <div class="w3-section">
+                    {% csrf_token %}
+                    <label class="w3-input w3-label w3-margin-bottom" for="id_username">{% trans 'Username' %}:</label>
+                    <input class="w3-input w3-border" type="text" name="username" id="id_username" required>
                 </div>
-    
-                <!-- Submit Button -->
-                <div class="w3-container w3-padding-16">
-                    <button type="submit" class="w3-button w3-green w3-block w3-round">{% trans 'Submit' %}</button>
+                <div class="w3-section">
+                    <label class="w3-input w3-label w3-margin-bottom" for="id_password">{% trans 'Password' %}:</label>
+                    <input class="w3-input w3-border" type="password" name="password" id="id_password" required>
+                </div>
+                <div class="w3-section">
+                    <button type="submit" class="w3-button w3-block w3-green w3-section w3-padding">{% trans 'Login' %}</button>
                 </div>
             </form>
+            <div class="w3-section">
+              <!-- Add a button for new user registration -->
+              <a href="{% url 'register' %}" class="w3-button w3-block w3-blue w3-section w3-padding">{% trans 'Register' %}</a>
+          </div>
         </div>
     </div>
-      <div id="id02" class="w3-modal">
-        <div class="w3-modal-content w3-animate-top">
-            <div class="w3-center">
-                <span onclick="closeLoginFormModal()" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-            </div>
-            <div class="w3-container w3-card-4 login-container w3-padding-64 w3-section w3-margin-top" style="max-width: 400px;">
-                <h2 class="w3-center">{% trans 'Login' %}</h2>
-                <form method="post" action="{% url 'login' %}" class="w3-container login-form">
-                    <div class="w3-section">
-                        {% csrf_token %}
-                        <label class="w3-input w3-label w3-margin-bottom" for="id_username">{% trans 'Username' %}:</label>
-                        <input class="w3-input w3-border" type="text" name="username" id="id_username" required>
-                    </div>
-                    <div class="w3-section">
-                        <label class="w3-input w3-label w3-margin-bottom" for="id_password">{% trans 'Password' %}:</label>
-                        <input class="w3-input w3-border" type="password" name="password" id="id_password" required>
-                    </div>
-                    <div class="w3-section">
-                        <button type="submit" class="w3-button w3-block w3-green w3-section w3-padding">{% trans 'Login' %}</button>
-                    </div>
-                </form>
-                <div class="w3-section">
-                  <!-- Add a button for new user registration -->
-                  <a href="{% url 'register' %}" class="w3-button w3-block w3-blue w3-section w3-padding">{% trans 'Register' %}</a>
-              </div>
-            </div>
-        </div>
 
-    </div>
+</div>
 
     </div>
     
@@ -596,3 +669,10 @@
       
   
 {% endblock %}
+  
+      
+  
+
+
+
+

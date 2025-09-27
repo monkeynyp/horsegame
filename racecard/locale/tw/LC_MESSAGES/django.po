@@ -165,6 +165,20 @@ msgstr "即場"
 msgid "Horse Racing"
 msgstr "香港賽馬"
 
+msgid "Tips & Rankings"
+msgstr "貼士 & 榮耀"
+
+msgid "Quick Race Navigation"
+msgstr "快速轉場"
+
+msgid "Race Details"
+msgstr "賽事詳情"
+
+msgid "Recent Posts"
+msgstr "過去文章"
+
+
+
 
 msgid "This website uses cookies to ensure you get the best experience on our website"
 msgstr "此網站使用Cookie使你有更好的瀏覽體驗"
