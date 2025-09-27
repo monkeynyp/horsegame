@@ -114,7 +114,7 @@
 
 <div class="racecard-bg">
   <div class="w3-container"></div>
-  <div class="racecard-navbar w3-center">
+  <div class="racecard-navbar w3-center" style="position: static; border-bottom: none; margin-bottom: 0;"></div>
     <h3 style="display:inline-block;vertical-align:middle;">
       <img src="{% static 'hkrace.png' %}" alt="Hong Kong" style="width:4%;vertical-align:middle;"> 
       &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1|slice:"-5:" }} &nbsp;{{race_time}}
@@ -146,17 +146,17 @@
     <div class="w3-col l6 s12 w3-padding-top-32">
       <div class="racecard-section-title">{% trans "Tips & Rankings" %}</div>
       <div class="racecard-card w3-margin">
-        <div class="w3-row w3-center" style="gap: 12px; display: flex; flex-wrap: wrap; justify-content: center;">
-          <a href="/view_by_member" class="w3-button w3-blue w3-hover-indigo w3-large" style="margin:6px 8px; border-radius: 30px; min-width: 160px; font-weight:600; box-shadow:0 2px 8px #e3f2fd;">
-            <i class="fa-solid fa-circle-arrow-right"></i>&nbsp;{% trans 'Tips Summary' %}
-          </a>
-          <a href="/jockey_king" class="w3-button w3-teal w3-hover-dark-grey w3-large" style="margin:6px 8px; border-radius: 30px; min-width: 160px; font-weight:600; box-shadow:0 2px 8px #e0f2f1;">
-            <i class="fa-solid fa-person-rays"></i>&nbsp;{% trans 'Jockey Challenge' %}
-          </a>
-          <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-amber w3-hover-orange w3-large" style="margin:6px 8px; border-radius: 30px; min-width: 160px; font-weight:600; box-shadow:0 2px 8px #fff3e0;">
-            <i class="fa-solid fa-chess-knight"></i>&nbsp;{% trans 'Battle Chart' %}
-          </a>
-        </div>
+      <div class="w3-row w3-center" style="gap: 8px; display: flex; flex-wrap: wrap; justify-content: center;"></div>
+        <a href="/view_by_member" class="w3-button w3-blue w3-hover-indigo w3-medium" style="margin:4px 4px; border-radius: 24px; min-width: 100px; font-weight:600; box-shadow:0 2px 8px #e3f2fd; padding:6px 8px; font-size:0.95em;">
+        <i class="fa-solid fa-circle-arrow-right"></i>&nbsp;{% trans 'Tips Summary' %}
+        </a>
+        <a href="/jockey_king" class="w3-button w3-teal w3-hover-dark-grey w3-medium" style="margin:4px 4px; border-radius: 24px; min-width: 100px; font-weight:600; box-shadow:0 2px 8px #e0f2f1; padding:6px 8px; font-size:0.95em;">
+        <i class="fa-solid fa-person-rays"></i>&nbsp;{% trans 'Jockey Challenge' %}
+        </a>
+        <a href="{% url 'match_chart' %}?id={{ race_id }}" class="w3-button w3-amber w3-hover-orange w3-medium" style="margin:4px 4px; border-radius: 24px; min-width: 100px; font-weight:600; box-shadow:0 2px 8px #fff3e0; padding:6px 8px; font-size:0.95em;">
+        <i class="fa-solid fa-chess-knight"></i>&nbsp;{% trans 'Battle Chart' %}
+        </a>
+      </div>
         <div class="w3-margin-top w3-center" style="font-size:1.1em;">
           <span style="margin-right:10px;">
             <i class="fa-solid fa-person fa-xl" style="color:#388e3c;"></i>&nbsp;{% trans 'Human'%}
@@ -326,19 +326,7 @@
               <th class="w3-hide-small">{% trans "Jockey" %}</th>
               <th>{% trans 'Vote' %}</th>
                 <th>{% trans "Freq" %}&nbsp;/&nbsp;{% trans "Period" %} <i class="fa fa-info-circle w3-tooltip" style="position: relative;"><span class="w3-text w3-tag w3-round w3-light-grey w3-small w3-tooltip-content" style="position: absolute; top: -20px; left: 50%; transform: translateX(-50%); white-space: nowrap;">密度:過去六十日，馬匹參賽的次數<br>相隔:顯示馬匹上次比賽相隔的時間</span></i></th>
-                <!--<th colspan="2" class="w3-center w3-blue">{% trans "Odds" %} <br>{% trans 'Updated' %}: {{ odds_time}}</th>-->
-             
             </tr>
-          <!--<tr class="w3-light-blue w3-center">
-            <th></th>
-            <th></th>
-            <th></th>
-            <th class="w3-hide-small"></th>
-            <th></th>
-            <th class="w3-hide-small">{% trans "Win" %}</th>
-            <th>{% trans "Place" %}</th>
-          </tr> -->
-         <!--test123-->
         </thead>
         {% for i, r in current_race.iterrows %}
         <tr>
@@ -352,7 +340,6 @@
         </td>
           <td class="w3-hide-small">{% trans r.Jockey %}</td>
           <td>
-            
             {% with horse_name=r.HorseName %}
             {% for vote in horse_tips_qty %}
             {% if vote.horse_name == horse_name %}
@@ -372,13 +359,6 @@
             {% endwith %}
         </td>
       <td><span class="w3-badge w3-red">{{ r.Freq|floatformat:0}}</span>/<span class="w3-tag">{{ r.RestDays|floatformat:0 }}</span></td>
-      
-    
-     <!-- <td class="w3-hide-small">{{ r.Win }}</td>
-
-      <td style="background-color: lightgreen;">{{ r.Place }}</td>-->
-
-
       {% endfor %}
         </table>
       </div>
@@ -402,10 +382,8 @@
       <div class="racecard-card w3-panel w3-light-grey" style="width:90%">
         <p class=" w3-large w3-serif">
       <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
-      
       最近增加了新的功能在賽馬預測，讓各位網友除了位置之外，更可以參考Win，和三重彩等的推薦。可參考我的更新YouTube Video <a href="https://youtu.be/GHNhPTl26Zk"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a><br>
       Monkey每期開賽前，Monkey會更新電腦程式的賽馬位置預測。同時也會開放平台給會員分享心水，希望通過分享，大家可以有準確的投注。我的YouTube Video有詳細介紹 <a href="https://youtu.be/bK_yWVwjz48"><i class="fa-brands fa-youtube fa-xl" style="color: #f10909;"></i></a>
-   
     </p>
       </div>
       <div class="racecard-section-title">{% trans "Recent Posts" %}</div>
