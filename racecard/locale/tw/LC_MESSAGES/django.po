@@ -177,6 +177,9 @@ msgstr "賽事詳情"
 msgid "Recent Posts"
 msgstr "過去文章"
 
+msgid "Cancel"
+msgstr "取消"
+
 
 
 
