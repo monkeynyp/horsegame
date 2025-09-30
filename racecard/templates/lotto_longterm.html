@@ -85,6 +85,21 @@
     font-weight: 600;
     text-align: center;
 }
+/* Responsive: Hide last column in table, show result as a separate row on mobile */
+@media (max-width: 700px) {
+    .lotto-table th.result-col,
+    .lotto-table td.result-cell {
+        display: none;
+    }
+    .lotto-result-mobile {
+        display: table-row;
+    }
+}
+@media (min-width: 701px) {
+    .lotto-result-mobile {
+        display: none;
+    }
+}
 @media (max-width: 900px) {
     .w3-col, .w3-col.s6, .w3-col.m8, .w3-col.l9, .w3-col.m4, .w3-col.l3 {
         width: 100% !important;
@@ -128,12 +143,12 @@
                     <th>No4</th>
                     <th>No5</th>
                     <th>No6</th>
-                    <th class="w3-red">命中</th>
+                    <th class="w3-red result-col">命中</th>
                 </tr>
             </thead>
             <tbody>
                 {% for record in records %}
-                <tr>
+                <tr class="lotto-row">
                     <td>{{ record.user }}</td>
                     <td><img src="{% static 'no_' %}{{ record.No1|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
                     <td><img src="{% static 'no_' %}{{ record.No2|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
@@ -141,7 +156,7 @@
                     <td><img src="{% static 'no_' %}{{ record.No4|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
                     <td><img src="{% static 'no_' %}{{ record.No5|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
                     <td><img src="{% static 'no_' %}{{ record.No6|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-                    <td class="w3-light-gray">
+                    <td class="w3-light-gray result-cell">
                         {% if record.Hit1 > 0 %}<span class="w3-tag">1 奬</span> x {{ record.Hit1 }}{% endif %}
                         {% if record.Hit2 > 0 %}<br><span class="w3-tag">2 奬</span> x {{ record.Hit2 }}{% endif %}
                         {% if record.Hit3 > 0 %}<br><span class="w3-tag">3 奬</span> x {{ record.Hit3 }}{% endif %}
@@ -149,6 +164,18 @@
                         {% if record.Hit5 > 0 %}<br><span class="w3-tag">5 奬</span> x {{ record.Hit5 }}{% endif %}
                         {% if record.Hit6 > 0 %}<br><span class="w3-tag">6 奬</span> x {{ record.Hit6 }}{% endif %}
                         {% if record.Hit7 > 0 %}<br><span class="w3-tag">7 奬</span> x {{ record.Hit7 }}{% endif %}
+                    </td>
+                </tr>
+                <tr class="lotto-result-mobile">
+                    <td colspan="7" style="padding: 4px 8px 10px 8px; background: #f7f9fa;">
+                        <span style="font-weight:600; color:#d84315;">命中：</span>
+                        {% if record.Hit1 > 0 %}<span class="w3-tag">1 奬</span> x {{ record.Hit1 }} {% endif %}
+                        {% if record.Hit2 > 0 %}<span class="w3-tag">2 奬</span> x {{ record.Hit2 }} {% endif %}
+                        {% if record.Hit3 > 0 %}<span class="w3-tag">3 奬</span> x {{ record.Hit3 }} {% endif %}
+                        {% if record.Hit4 > 0 %}<span class="w3-tag">4 奬</span> x {{ record.Hit4 }} {% endif %}
+                        {% if record.Hit5 > 0 %}<span class="w3-tag">5 奬</span> x {{ record.Hit5 }} {% endif %}
+                        {% if record.Hit6 > 0 %}<span class="w3-tag">6 奬</span> x {{ record.Hit6 }} {% endif %}
+                        {% if record.Hit7 > 0 %}<span class="w3-tag">7 奬</span> x {{ record.Hit7 }} {% endif %}
                     </td>
                 </tr>
                 {% endfor %}
