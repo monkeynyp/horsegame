@@ -116,7 +116,7 @@
   <div class="w3-container"></div>
   <div class="racecard-navbar w3-center" style="position: static; border-bottom: none; margin-bottom: 0;"></div>
     <h3 style="display:inline-block;vertical-align:middle;">
-      <img src="{% static 'hkrace.png' %}" alt="Hong Kong" style="width:4%;vertical-align:middle;"> 
+      <img src="{% static 'hkrace.png' %}" alt="Hong Kong" style="width:1%;vertical-align:middle;"> 
       &nbsp; {% trans "Current Race"  %} {{ current_race.iloc.2.1|slice:"-5:" }} &nbsp;{{race_time}}
     </h3>
     <div style="margin-top:8px;">
@@ -314,7 +314,7 @@
     </div>
 
     <!-- Right column: Race Table, Comments, Add Tips, Recent Posts, etc. -->
-    <div class="w3-col l6 s12 w3-padding-top-32">
+    <div class="w3-col l8 s12 w3-padding-top-32">
       <div class="racecard-section-title">{% trans "Race Details" %}</div>
       <div class="racecard-card">
         <table class="w3-table-all w3-card-4 w3-margin racecard-table">

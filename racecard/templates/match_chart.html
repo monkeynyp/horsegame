@@ -6,54 +6,154 @@
 {% load static %}
 {% block content %}
 
+<style>
+  .match-chart-bg {
+    background: #f7f9fa;
+    min-height: 100vh;
+  }
+  .match-chart-header {
+    background: #1976d2;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 24px 0 16px 0;
+    margin-bottom: 0;
+    box-shadow: 0 2px 12px #e0e0e0;
+    text-align: center;
+    position: relative;
+  }
+  .match-chart-header h2 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .match-chart-navbar {
+    margin: 18px 0 24px 0;
+    text-align: center;
+  }
+  .match-chart-navbar .w3-button {
+    margin: 0 2px 6px 2px;
+    font-size: 1.1em;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  }
+  .match-chart-navbar .w3-button.w3-red {
+    box-shadow: 0 2px 8px #ffd180;
+  }
+  .match-chart-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #e0e0e0;
+    margin: 0 auto 32px auto;
+    padding: 32px 0 32px 0;
+    max-width: 900px;
+    text-align: center;
+  }
+  .match-chart-img {
+    max-width: 98%;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px #e0e0e0;
+    margin: 0 auto;
+    background: #f4f8fb;
+  }
+  .match-chart-support-btn {
+    margin: 24px 0 0 0;
+    font-size: 1.1em;
+    border-radius: 30px;
+    padding: 8px 28px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #e0e0e0;
+    background: #fff8e1;
+    color: #d84315;
+    transition: background 0.2s, color 0.2s;
+    display: inline-block;
+  }
+  .match-chart-support-btn:hover {
+    background: #ffd180;
+    color: #fff;
+  }
+  .match-chart-back-btn {
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    background: #fff;
+    color: #1976d2;
+    border-radius: 30px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px #e3f2fd;
+    padding: 8px 18px;
+    transition: background 0.2s, color 0.2s;
+    z-index: 2;
+  }
+  .match-chart-back-btn:hover {
+    background: #1976d2;
+    color: #fff;
+  }
+  @media (max-width: 700px) {
+    .match-chart-header, .match-chart-card {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .match-chart-back-btn {
+      left: 8px;
+      top: 8px;
+      padding: 6px 12px;
+    }
+  }
+</style>
 
-<div class="w3-container w3-padding-32"></div>
-<div class="w3-margin ">
-  <h2>{% trans "Horses Battle Chart"  %}  </h2>
-  <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=1">1</a>
-  <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=2">2</a>
-  <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=3">3</a>
-  <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=4">4</a>
-  <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=5">5</a>
-  <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=6">6</a>
-  <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=7">7</a>
-  <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=8">8</a>
-  {% if total_race > 8 %}
-    <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=9">9</a>
-    {% if total_race > 9 %}
-      <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=10">10</a>
-      {% if total_race > 10 %}
-        <a class="w3-button w3-xlarge w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=11">11</a>
+<div class="match-chart-bg">
+  <div class="match-chart-header">
+    <a href="/racecard/" class="match-chart-back-btn w3-button w3-hover-blue">
+      <i class="fa-solid fa-circle-arrow-left"></i> {% trans 'Back to Race Card' %}
+    </a>
+    <h2>{% trans "Horses Battle Chart" %}</h2>
+  </div>
+  <div class="match-chart-navbar">
+    <span style="font-weight:600; color:#1976d2; margin-right:12px;">{% trans "Select Race" %}:</span>
+    <a class="w3-button w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=1">1</a>
+    <a class="w3-button w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=2">2</a>
+    <a class="w3-button w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=3">3</a>
+    <a class="w3-button w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=4">4</a>
+    <a class="w3-button w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=5">5</a>
+    <a class="w3-button w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=6">6</a>
+    <a class="w3-button w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=7">7</a>
+    <a class="w3-button w3-circle {% if request.GET.id == '8' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=8">8</a>
+    {% if total_race > 8 %}
+      <a class="w3-button w3-circle {% if request.GET.id == '9' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=9">9</a>
+      {% if total_race > 9 %}
+        <a class="w3-button w3-circle {% if request.GET.id == '10' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=10">10</a>
+        {% if total_race > 10 %}
+          <a class="w3-button w3-circle {% if request.GET.id == '11' %}w3-red{% else %}w3-black{% endif %}" href="/match_chart/?id=11">11</a>
+        {% endif %}
       {% endif %}
     {% endif %}
-  {% endif %}
-  <div class="w3-card w3-margin w3-padding-64">
-      <!-- Display desktop image -->
-      <img class="w3-image" src="{% static 'horse_relationship' %}{{ race_id }}.png" alt="Lights">
-    <!-- Add other content as needed -->
+  </div>
+  <div class="match-chart-card">
+    <img class="match-chart-img" src="{% static 'horse_relationship' %}{{ race_id }}.png" alt="Horse Battle Chart">
+    <div class="w3-center">
+      <a href="https://glaultoa.com/4/7158508" class="match-chart-support-btn w3-button w3-hover-orange">
+        <i class="fa-solid fa-heart" style="color: #f01000;"></i> {% trans "Support Monkey" %}
+      </a>
+    </div>
   </div>
 </div>
-<div class="w3-center"> 
-  <button class="w3-button w3-sand w3-round w3-ripple w3-large" ><a href="https://glaultoa.com/4/7158508"><i class="fa-solid fa-heart" style="color: #f01000;"></i>{% trans "Support Monkey" %}</h5></a>
-</button>
-</div>
+
 <script>
   // Get the URL parameters
   const urlParams = new URLSearchParams(window.location.search);
-  
-  // Check if the 'id' parameter is present and equals '1'
   const shouldLoadScript = urlParams.get('id') === '3' || urlParams.get('id') === '6';
 
   if (shouldLoadScript) {
-      // Define a function to load the script
       function loadVendorScript() {
           var script = document.createElement('script');
           script.async = true;
           script.src = "//thubanoa.com/1?z=7235972";
           document.body.appendChild(script);
       }
-
-      // Call the function to load the script
       loadVendorScript();
   }
 </script>

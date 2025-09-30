@@ -181,6 +181,10 @@ msgid "Cancel"
 msgstr "取消"
 
 
+msgid "Horses Battle Chart"
+msgstr "馬匹對戰記錄"
+
+
 
 
 msgid "This website uses cookies to ensure you get the best experience on our website"
