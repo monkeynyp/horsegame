@@ -1,248 +1,247 @@
-{% extends "master.html" %} {% block title %} 香港六合彩易卦預測 {% endblock %} {% block content %}
+{% extends "master.html" %} 
 {% block title %}易經預測六合彩 - 下期開彩分析 | AI數據預測 | Marksix Lottory Predictions - Accurate AI Tips for Today’s Marksix{% endblock %}
 {% block description %}易經預測六合彩，易學，易卦預測下期六合彩開獎結果{% endblock %}
 {% block keywords %}易經預測, 預測, 六合彩開獎, 開獎結果，幸運號碼，乾卦，坤卦{% endblock %}
 {% load i18n %}
 {% load static %}
-
+{% block content %}
 <style>
-  .ichi-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
+  .ichi-bg {
+    background: linear-gradient(135deg, #ede7f6 0%, #e3f2fd 100%);
+    min-height: 100vh;
+    padding-bottom: 32px;
   }
-
+  .ichi-container {
+    max-width: 900px;
+    margin: 32px auto 0 auto;
+    padding: 0 12px 24px 12px;
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #b39ddb;
+    position: relative;
+  }
   .ichi-header {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    padding-top: 24px;
+    color: #4527a0;
+    letter-spacing: 1px;
+    font-family: 'Noto Serif TC', serif;
+    position: relative;
   }
-
+  .ichi-header h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #b39ddb44;
+  }
+  .ichi-header h2 {
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-top: 8px;
+    color: #6a1b9a;
+  }
+  .ichi-mystery-bar {
+    text-align: center;
+    font-size: 1.15em;
+    color: #fff;
+    background: linear-gradient(90deg, #4527a0 0%, #1976d2 100%);
+    border-radius: 12px;
+    margin: 0 auto 18px auto;
+    padding: 8px 0;
+    max-width: 420px;
+    box-shadow: 0 2px 8px #b39ddb;
+    letter-spacing: 1px;
+    font-family: 'Noto Serif TC', serif;
+  }
   .ichi-form {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    background: #ede7f6;
+    border-radius: 12px;
+    padding: 18px 0 10px 0;
+    box-shadow: 0 2px 8px #d1c4e9;
   }
-
+  .ichi-form label {
+    font-weight: 600;
+    color: #4527a0;
+    font-size: 1.1em;
+    margin-right: 8px;
+  }
   .ichi-form input[type="number"] {
-    width: 60px;
-    padding: 5px;
+    width: 70px;
+    padding: 6px;
     margin-right: 10px;
+    border-radius: 8px;
+    border: 1px solid #b39ddb;
+    font-size: 1.1em;
+    text-align: center;
+    background: #fff;
   }
-
   .ichi-form button {
-    padding: 5px 10px;
+    padding: 7px 18px;
+    border-radius: 24px;
+    background: #7e57c2;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px #b39ddb;
+    transition: background 0.2s;
+    cursor: pointer;
   }
-
+  .ichi-form button:hover {
+    background: #512da8;
+  }
   .ichi-card {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px #b39ddb33;
+    background: #fff;
+    transition: box-shadow 0.2s;
+    position: relative;
   }
-
-  .ichi-card img {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
+  .ichi-card:hover {
+    box-shadow: 0 4px 24px #7e57c2;
   }
-
+  .ichi-card header {
+    font-size: 1.15em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 14px 14px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(90deg, #ede7f6 0%, #fffde7 100%);
+    color: #4527a0;
+    padding: 12px 18px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  .ichi-card img.ichi-hex {
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    border-radius: 8px;
+    background: #ede7f6;
+    box-shadow: 0 1px 4px #b39ddb44;
+  }
+  .ichi-card .ichi-numbers {
+    padding: 18px 0 10px 18px;
+    min-height: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 0;
+    align-items: center;
+  }
+  .ichi-card .ichi-numbers img {
+    width: 36px;
+    height: 36px;
+    margin: 2px 8px 2px 0;
+    border-radius: 50%;
+    border: 2px solid #b39ddb33;
+    background: #fff;
+    box-shadow: 0 1px 4px #b39ddb22;
+  }
+  .ichi-card footer {
+    border-radius: 0 0 14px 14px;
+    background: #ede7f6;
+    color: #6a1b9a;
+    font-size: 0.98em;
+    padding: 8px 18px;
+    border-top: 1px solid #e0e0e0;
+    text-align: right;
+    font-style: italic;
+  }
   .ichi-footer {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 32px;
+    background: #ede7f6;
+    border-radius: 12px;
+    padding: 18px 18px 10px 18px;
+    color: #4527a0;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px #b39ddb;
+    font-family: 'Noto Serif TC', serif;
   }
-
-  @media (max-width: 600px) {
-    .ichi-form input[type="number"] {
-      width: 50px;
-    }
-
-    .ichi-card img {
-      width: 30px;
-      height: 30px;
-    }
+  .ichi-magic-glow {
+    animation: ichi-magic-glow 2.5s infinite alternate;
+    color: #ffd600;
+    text-shadow: 0 0 8px #ffd600, 0 0 16px #ffecb3;
+  }
+  @keyframes ichi-magic-glow {
+    from { text-shadow: 0 0 8px #ffd600, 0 0 16px #ffecb3; }
+    to { text-shadow: 0 0 24px #ffd600, 0 0 32px #ffecb3; }
+  }
+  @media (max-width: 900px) {
+    .ichi-container { padding: 0 2px 18px 2px; }
+    .ichi-card .ichi-numbers { padding-left: 8px; }
+    .ichi-header h1 { font-size: 1.4em; }
+    .ichi-header h2 { font-size: 1em; }
+    .ichi-card header { font-size: 1em; padding: 10px 8px; }
+    .ichi-card .ichi-numbers img { width: 28px; height: 28px; }
+    .ichi-card img.ichi-hex { width: 28px; height: 28px; }
   }
 </style>
 
-<div class="ichi-container w3-card-4 w3-light-grey">
-  <div class="ichi-header">
-    <h1>易卦預測六合彩</h1>
-    <h2>期數： &nbsp;{{ next_draw }}</h2>
-  </div>
-
-  <div class="ichi-form">
-    <form method="post">
-      {% csrf_token %}
-      <label for="id_number">加入你幸運號碼🍀:</label>
-      <input type="number" id="id_number" name="number" value="0">
-      <button type="submit">🀄起卦🀄</button>
-    </form>
-  </div>
-
-  <div class="w3-row-padding">
-    {% if ichi.1 %}
-    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
-      <header class="w3-container w3-blue w3-padding">
-        <img src="/static/Iching-1.png" alt="qiang"> 乾為天
-      </header>
-      <div class="w3-padding-32 w3-margin-left">
-        {% for value in ichi.1 %}
-        {% with padded_value=value|stringformat:"02d" %}
-        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-        {% endwith %}
-        {% endfor %}
+<div class="ichi-bg">
+  <div class="ichi-container">
+    <div class="ichi-header">
+      <span class="ichi-magic-glow" style="font-size:2em;">🪄</span>
+      <h1>易卦預測六合彩</h1>
+      <h2>期數：&nbsp;{{ next_draw }}</h2>
+      <div class="ichi-mystery-bar">
+        <span style="font-size:1.2em;">✨</span>
+        <span style="font-weight:600;">神秘卦象</span>正在流動，<span style="font-style:italic;">請靜心感受你的幸運號碼</span>
+        <span style="font-size:1.2em;">🔮</span>
       </div>
-      <footer class="w3-container w3-blue w3-left-align">
-        <span class="w3-small">Footer</span>
-      </footer>
     </div>
-    {% endif %}
 
-    {% if ichi.2 %}
-    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
-      <header class="w3-container w3-green w3-padding">
-        <img src="/static/Iching-2.png" alt="qiang"> 坤為地
-      </header>
-      <div class="w3-padding-32 w3-margin-left">
-        {% for value in ichi.2 %}
-        {% with padded_value=value|stringformat:"02d" %}
-        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-        {% endwith %}
-        {% endfor %}
+    <div class="ichi-form">
+      <form method="post">
+        {% csrf_token %}
+        <label for="id_number">加入你幸運號碼🍀:</label>
+        <input type="number" id="id_number" name="number" value="0" min="1" max="49">
+        <button type="submit">🀄 起卦 🀄</button>
+      </form>
+      <div style="margin-top:8px; color:#6a1b9a; font-size:0.98em;">
+        <i class="fa-solid fa-circle-info"></i> 
+        <span>輸入你的幸運號碼，讓神秘力量為你起卦！</span>
       </div>
-      <footer class="w3-container w3-green w3-left-align">
-        <span class="w3-small">Footer</span>
-      </footer>
     </div>
-    {% endif %}
 
-    {% if ichi.34 %}
-    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
-      <header class="w3-container w3-yellow w3-padding">
-        <img src="/static/Iching-34.png" alt="雷天大壯"> 雷天大壯
-      </header>
-      <div class="w3-padding-32 w3-margin-left">
-        {% for value in ichi.34 %}
-        {% with padded_value=value|stringformat:"02d" %}
-        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-        {% endwith %}
-        {% endfor %}
-      </div>
-      <footer class="w3-container w3-yellow w3-left-align">
-        <span class="w3-small">Footer</span>
-      </footer>
+    <div class="w3-row-padding">
+      {% for key, hex in ichi.items %}
+        {% if hex %}
+        <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
+          <header>
+            <img src="/static/Iching-{{ key }}.png" alt="hexagram" class="ichi-hex">
+            <span>
+              {% if key == '1' %}乾為天{% elif key == '2' %}坤為地{% elif key == '34' %}雷天大壯
+              {% elif key == '11' %}地天泰{% elif key == '13' %}天火同人{% elif key == '7' %}地水師
+              {% elif key == '50' %}火風鼎{% elif key == '27' %}山雷頤{% elif key == '9' %}風天小畜
+              {% else %}卦象 {{ key }}{% endif %}
+            </span>
+          </header>
+          <div class="ichi-numbers">
+            {% for value in hex %}
+              {% with padded_value=value|stringformat:"02d" %}
+                <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
+              {% endwith %}
+            {% endfor %}
+          </div>
+          <footer>
+            <span class="w3-small">神秘卦象指引你的幸運之路</span>
+          </footer>
+        </div>
+        {% endif %}
+      {% endfor %}
     </div>
-    {% endif %}
 
-    {% if ichi.11 %}
-    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
-      <header class="w3-container w3-brown w3-padding">
-        <img src="/static/Iching-11.png" alt="地天泰"> 地天泰
-      </header>
-      <div class="w3-padding-32 w3-margin-left">
-        {% for value in ichi.11 %}
-        {% with padded_value=value|stringformat:"02d" %}
-        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-        {% endwith %}
-        {% endfor %}
-      </div>
-      <footer class="w3-container w3-brown w3-left-align">
-        <span class="w3-small">Footer</span>
-      </footer>
+    <div class="ichi-footer">
+      <i class="fa fa-quote-right w3-xxlarge ichi-magic-glow"></i><br>
+      每期都會以最新開彩日的日期來起卦，每個數字都會有自己的卦。本頁只會列出幾個大吉的卦，給大家參考。大家也可以輸入自己的幸運號碼來起自己獨有的卦，靜心感受，讓神秘力量指引你。
     </div>
-    {% endif %}
-
-    {% if ichi.13 %}
-    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
-      <header class="w3-container w3-indigo w3-padding">
-        <img src="/static/Iching-13.png" alt="天火同人"> 天火同人
-      </header>
-      <div class="w3-padding-32 w3-margin-left">
-        {% for value in ichi.13 %}
-        {% with padded_value=value|stringformat:"02d" %}
-        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-        {% endwith %}
-        {% endfor %}
-      </div>
-      <footer class="w3-container w3-indigo w3-left-align">
-        <span class="w3-small">Footer</span>
-      </footer>
-    </div>
-    {% endif %}
-
-    {% if ichi.7 %}
-    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
-      <header class="w3-container w3-pale-blue w3-padding">
-        <img src="/static/Iching-7.png" alt="qiang"> 地水師
-      </header>
-      <div class="w3-padding-32 w3-margin-left">
-        {% for value in ichi.7 %}
-        {% with padded_value=value|stringformat:"02d" %}
-        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-        {% endwith %}
-        {% endfor %}
-      </div>
-      <footer class="w3-container w3-pale-blue w3-left-align">
-        <span class="w3-small">Footer</span>
-      </footer>
-    </div>
-    {% endif %}
-
-    {% if ichi.50 %}
-    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
-      <header class="w3-container w3-pale-blue w3-padding">
-        <img src="/static/Iching-50.png" alt="qiang"> 火風鼎
-      </header>
-      <div class="w3-padding-32 w3-margin-left">
-        {% for value in ichi.50 %}
-        {% with padded_value=value|stringformat:"02d" %}
-        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-        {% endwith %}
-        {% endfor %}
-      </div>
-      <footer class="w3-container w3-pale-blue w3-left-align">
-        <span class="w3-small">Footer</span>
-      </footer>
-    </div>
-    {% endif %}
-
-    {% if ichi.27 %}
-    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
-      <header class="w3-container w3-light-grey w3-padding">
-        <img src="/static/Iching-27.png" alt="qiang"> 山雷頤
-      </header>
-      <div class="w3-padding-32 w3-margin-left">
-        {% for value in ichi.27 %}
-        {% with padded_value=value|stringformat:"02d" %}
-        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-        {% endwith %}
-        {% endfor %}
-      </div>
-      <footer class="w3-container w3-light-grey w3-left-align">
-        <span class="w3-small">Footer</span>
-      </footer>
-    </div>
-    {% endif %}
-
-    {% if ichi.9 %}
-    <div class="w3-col w3-card-4 w3-third w3-margin-left w3-margin-bottom ichi-card">
-      <header class="w3-container w3-pale-red w3-padding">
-        <img src="/static/Iching-9.png" alt="qiang"> 風天小畜
-      </header>
-      <div class="w3-padding-32 w3-margin-left">
-        {% for value in ichi.9 %}
-        {% with padded_value=value|stringformat:"02d" %}
-        <img src="/static/no_{{ padded_value }}.gif" alt="Number {{ value }}">
-        {% endwith %}
-        {% endfor %}
-      </div>
-      <footer class="w3-container w3-pale-red w3-left-align">
-        <span class="w3-small">Footer</span>
-      </footer>
-    </div>
-    {% endif %}
-  </div>
-
-  <div class="w3-panel w3-card-4 w3-light-grey ichi-footer">
-    <p class="w3-large w3-serif">
-      <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
-      每期都會以最新開彩日的日期來起卦，每個數字都會有自己的卦。本頁只會列出幾個大吉的卦，給大家參考。大家也可以輸入自己的幸運號碼來起自己獨有的卦，睇下上天是否眷顧你。
-    </p>
   </div>
 </div>
 

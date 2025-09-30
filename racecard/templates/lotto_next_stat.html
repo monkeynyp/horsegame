@@ -1,35 +1,156 @@
-{% extends "master.html" %} {% block title %}六合彩趨勢預測 {% endblock %} 
+{% extends "master.html" %} 
+{% block title %}六合彩趨勢預測{% endblock %} 
 {% load i18n %}
 {% load static %}
 {% block content %}
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-   <div class="w3-container">
-       <h2><img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:4%"> &nbsp 三角形態--號碼走勢 </h2>
-       <h5>下一期數： &nbsp;{{ next_draw }}</h5>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=1">號碼1</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=2">號碼2</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=3">號碼3</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=4">號碼4</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=5">號碼5</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=6">號碼6</a>
-           <a class="w3-button w3-large w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=7">特碼</a>
-    </div></h2>
-    <div class="w3-panel w3-card-4 w3-light-grey" style="width:90%">
-        <p class=" w3-large w3-serif">
+<style>
+.lotto-next-bg {
+    background: #f7f9fa;
+    min-height: 100vh;
+}
+.lotto-next-header {
+    background: #1976d2;
+    color: #fff;
+    border-radius: 12px 12px 0 0;
+    padding: 24px 0 16px 0;
+    margin-bottom: 0;
+    box-shadow: 0 2px 12px #e0e0e0;
+    text-align: center;
+    position: relative;
+}
+.lotto-next-header h2 {
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.lotto-next-navbar {
+    margin: 18px 0 24px 0;
+    text-align: center;
+}
+.lotto-next-navbar .w3-button {
+    margin: 0 2px 6px 2px;
+    font-size: 1.1em;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.lotto-next-navbar .w3-button.w3-red {
+    box-shadow: 0 2px 8px #ffd180;
+}
+.lotto-next-info-panel {
+    background: #e3f2fd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #e0e0e0;
+    padding: 18px 24px;
+    margin: 18px auto 18px auto;
+    font-size: 1.1em;
+    max-width: 900px;
+}
+.lotto-next-main-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 24px;
+}
+.lotto-next-chart-col, .lotto-next-table-col {
+    box-sizing: border-box;
+    padding: 0 12px;
+}
+.lotto-next-chart-col {
+    flex: 1 1 350px;
+    min-width: 300px;
+    max-width: 600px;
+}
+.lotto-next-table-col {
+    flex: 1 1 250px;
+    min-width: 220px;
+    max-width: 400px;
+}
+.lotto-next-table {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px #e0e0e0;
+    padding: 12px 0 12px 0;
+    margin: 0 auto 18px auto;
+    width: 100%;
+    max-width: 400px;
+}
+.lotto-next-table th, .lotto-next-table td {
+    text-align: center;
+    font-size: 1.05em;
+    padding: 8px 4px;
+}
+.lotto-next-table th {
+    background: #1976d2 !important;
+    color: #fff;
+    font-weight: 600;
+}
+.lotto-next-table td img {
+    width: 32px;
+    height: 32px;
+}
+.lotto-next-nav-btns {
+    margin: 18px 0 0 0;
+    text-align: center;
+}
+.lotto-next-nav-btns .w3-button {
+    margin: 0 8px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    font-weight: 600;
+    min-width: 60px;
+}
+@media (max-width: 900px) {
+    .lotto-next-main-row {
+        display: block;
+    }
+    .lotto-next-chart-col, .lotto-next-table-col {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        padding: 0;
+    }
+    .lotto-next-header, .lotto-next-info-panel, .lotto-next-table {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+</style>
+
+<div class="lotto-next-bg">
+    <div class="lotto-next-header">
+        <h2>
+            <img src="{% static 'HKFlag.png' %}" alt="Hong Kong" style="width:32px;vertical-align:middle;"> 
+            &nbsp;三角形態--號碼走勢
+        </h2>
+        <div style="font-size:1.1em; margin-top:8px;">
+            <span style="color:#fff; background:#388e3c; border-radius:8px; padding:2px 12px;">下一期數：{{ next_draw }}</span>
+        </div>
+    </div>
+    <div class="lotto-next-navbar">
+        <span style="font-weight:600; color:#1976d2; margin-right:12px;">選擇號碼組：</span>
+        <a class="w3-button w3-circle {% if request.GET.id == '1' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=1">1</a>
+        <a class="w3-button w3-circle {% if request.GET.id == '2' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=2">2</a>
+        <a class="w3-button w3-circle {% if request.GET.id == '3' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=3">3</a>
+        <a class="w3-button w3-circle {% if request.GET.id == '4' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=4">4</a>
+        <a class="w3-button w3-circle {% if request.GET.id == '5' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=5">5</a>
+        <a class="w3-button w3-circle {% if request.GET.id == '6' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=6">6</a>
+        <a class="w3-button w3-circle {% if request.GET.id == '7' %}w3-red{% else %}w3-black{% endif %}" href="/lotto_next_stat/?id=7">特</a>
+    </div>
+    <div class="lotto-next-info-panel">
         <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
-        Monkey將過去開出的號碼分為七組，號碼1 就是最小的號碼，如此類推。通過上三期的號碼，例如最小號碼3,9,7的組合和形態，在過去二千多期的六合彩紀錄中，有相同形態的記錄中，下一期通常會開出哪一個號碼，俾大家參考。七幅走勢圖，預測七組號碼。要留意，有時三角形態比較特的，未必有歷史記錄，所以會留空。</i></a></p>
-      </div>
-<div class="w3-row">
-        <div class="w3-col w3-padding-top-32 l6 s12">
-            
+        Monkey將過去開出的號碼分為七組，號碼1 就是最小的號碼，如此類推。通過上三期的號碼，例如最小號碼3,9,7的組合和形態，在過去二千多期的六合彩紀錄中，有相同形態的記錄中，下一期通常會開出哪一個號碼，俾大家參考。七幅走勢圖，預測七組號碼。要留意，有時三角形態比較特的，未必有歷史記錄，所以會留空。
+    </div>
+    <div class="lotto-next-main-row">
+        <div class="lotto-next-chart-col w3-padding-top-32">
             <canvas id="myChart" width="300" height="200"></canvas>
-            
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
             <script>
-                // Get the data passed from the view
                 var pastPattern = JSON.parse('{{ past_pattern|safe }}');
-        
-                // Create a line chart using Chart.js
                 var ctx = document.getElementById('myChart').getContext('2d');
                 var myChart = new Chart(ctx, {
                     type: 'line',
@@ -44,96 +165,64 @@
                         }]
                     },
                     options: {
-        layout: {
-            padding: {
-                right: 5 // Adjust the value as needed
-            }
-        },
-          scales: {
-              y: {
-                  beginAtZero: true
-              }
-          },
-          elements: {
-              point: {
-                  radius: 10,
-                  hoverRadius: 20
-              }
-          }
-      }
+                        layout: { padding: { right: 5 } },
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: { y: { beginAtZero: true } },
+                        elements: { point: { radius: 10, hoverRadius: 20 } }
+                    }
                 });
             </script>
-
-</div>
-
-<div class="w3-col l6 s12  w3-padding-top-64">
-{% if number_pairs %}
-<table class="w3-table-all w3-hoverable">
-    <thead>
-        <tr class="w3-light-grey">
-            <th>下期號碼</th>
-            <th>出現次數</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for num, count in number_pairs %}
-            <tr>
-                <td><img src="{% static 'no_' %}{{ num|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-                <td>{{ count }}</td>
-            </tr>
-        {% endfor %}
-    </tbody>
-    </table>
-    {% else %}
-        <p>没有對應的形態！</p>
-    {% endif %}
-</div>
-</div>
-
+        </div>
+        <div class="lotto-next-table-col w3-padding-top-64">
+            {% if number_pairs %}
+            <div class="lotto-next-table">
+                <table class="w3-table-all w3-hoverable">
+                    <thead>
+                        <tr class="w3-light-grey">
+                            <th>下期號碼</th>
+                            <th>出現次數</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for num, count in number_pairs %}
+                        <tr>
+                            <td><img src="{% static 'no_' %}{{ num|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
+                            <td>{{ count }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% else %}
+                <div class="w3-panel w3-pale-red w3-round" style="margin:0 0 18px 0;">
+                    <p style="margin:0;">没有對應的形態！</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
     {% with id=request.GET.id|default:"1" %}
     {% if id %}
-        <div class="w3-container w3-padding-16" style="text-align: center;">
+        <div class="lotto-next-nav-btns">
             {% if id|add:"-1" > 0 %}
-                <a href="?id={{ id|add:'-1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom"><<</button></a>
+                <a href="?id={{ id|add:'-1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">&lt;&lt;</button></a>
             {% else %}
-                <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom"><<</button></a>
+                <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">&lt;&lt;</button></a>
             {% endif %}
             {% if id|add:"1" > 7 %}
-                <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">>></button></a>
+                <a href="?id=1"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">&gt;&gt;</button></a>
             {% else %}
-                <a href="?id={{ id|add:'1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">>></button></a>
+                <a href="?id={{ id|add:'1' }}"><button class="w3-button w3-black w3-padding-large w3-margin-bottom">&gt;&gt;</button></a>
             {% endif %}
-            </div>
+        </div>
     {% endif %}
-{% endwith %}
-<br>
-<div class="w3-center">
-    <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large"><i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp {% trans "Support Monkey" %}</a>
-      </button>
+    {% endwith %}
+    <div class="w3-center" style="margin:32px 0 0 0;">
+        <a href="https://ragnolopi.net/4/7158525" class="w3-button w3-large w3-round w3-hover-orange" style="font-size:1.1em;">
+            <i class="fa-solid fa-circle-arrow-right fa-xl" style="color: #f01000;"></i>&nbsp;{% trans "Support Monkey" %}
+        </a>
+    </div>
 </div>
 <br><br>
-
-</body>
-<script>
-    // Get the current date and time
-    var currentDatetime = new Date("{{ current_datetime | date:'Y-m-d\TH:i:s' }}");
-    // Define the start and end date and time for the period
-    var startDate = new Date("2024-07-23T21:15:00");
-    var endDate = new Date("2025-12-25T23:59:59");
- 
-    // Disable the button if the current date and time fall within the specified period
-    if (currentDatetime >= startDate && currentDatetime < endDate) {
-        var myButton = document.getElementById("myButton");
-        myButton.disabled = true;
-        myButton.classList.add("disabled-button");
-        document.getElementById("myButton").innerHTML = "X"; // Change the text
-        document.getElementById("msg001").innerHTML = '<i class="fa fa-hand-o-left fa-lg" aria-hidden="true"></i>&nbsp;{% trans "Not Open Yet" %}'
-    }
-    </script>
-
-
-
-
 {% include "lotto_footer.html" %}
-
 {% endblock %}
