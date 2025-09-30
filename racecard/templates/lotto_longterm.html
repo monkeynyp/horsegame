@@ -49,7 +49,7 @@
     overflow-x: auto;
 }
 .lotto-table th, .lotto-table td {
-    text-align: center;
+    text-align: left;
     font-size: 1.05em;
     padding: 8px 4px;
 }
@@ -90,6 +90,9 @@
     .lotto-table th.result-col,
     .lotto-table td.result-cell {
         display: none;
+    }
+    .mobile-hide-label {
+        display: none !important;
     }
     .lotto-result-mobile {
         display: table-row;
@@ -143,7 +146,7 @@
                     <th>No4</th>
                     <th>No5</th>
                     <th>No6</th>
-                    <th class="w3-red result-col">命中</th>
+                    <th class="w3-red result-col mobile-hide-label">命中</th>
                 </tr>
             </thead>
             <tbody>
@@ -156,26 +159,71 @@
                     <td><img src="{% static 'no_' %}{{ record.No4|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
                     <td><img src="{% static 'no_' %}{{ record.No5|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
                     <td><img src="{% static 'no_' %}{{ record.No6|stringformat:'d' }}.gif?CV=L4.07R2a"></td>
-                    <td class="w3-light-gray result-cell">
-                        {% if record.Hit1 > 0 %}<span class="w3-tag">1 奬</span> x {{ record.Hit1 }}{% endif %}
-                        {% if record.Hit2 > 0 %}<br><span class="w3-tag">2 奬</span> x {{ record.Hit2 }}{% endif %}
-                        {% if record.Hit3 > 0 %}<br><span class="w3-tag">3 奬</span> x {{ record.Hit3 }}{% endif %}
-                        {% if record.Hit4 > 0 %}<br><span class="w3-tag">4 奬</span> x {{ record.Hit4 }}{% endif %}
-                        {% if record.Hit5 > 0 %}<br><span class="w3-tag">5 奬</span> x {{ record.Hit5 }}{% endif %}
-                        {% if record.Hit6 > 0 %}<br><span class="w3-tag">6 奬</span> x {{ record.Hit6 }}{% endif %}
-                        {% if record.Hit7 > 0 %}<br><span class="w3-tag">7 奬</span> x {{ record.Hit7 }}{% endif %}
+                    <td class="w3-light-gray result-cell" style="padding: 6px 2px;">
+                        <div style="display:flex; flex-wrap:wrap; gap:4px 2px; justify-content:center;">
+                            {% if record.Hit1 > 0 %}
+                              <span class="w3-badge w3-red" style="font-size:1em; min-width:38px;">1奬</span>
+                              <span class="w3-tag w3-pale-red" style="font-weight:600; color:#d84315;">×{{ record.Hit1 }}</span>
+                            {% endif %}
+                            {% if record.Hit2 > 0 %}
+                              <span class="w3-badge w3-orange" style="font-size:1em; min-width:38px;">2奬</span>
+                              <span class="w3-tag w3-pale-yellow" style="font-weight:600; color:#ff9800;">×{{ record.Hit2 }}</span>
+                            {% endif %}
+                            {% if record.Hit3 > 0 %}
+                              <span class="w3-badge w3-yellow" style="font-size:1em; min-width:38px;">3奬</span>
+                              <span class="w3-tag w3-pale-yellow" style="font-weight:600; color:#fbc02d;">×{{ record.Hit3 }}</span>
+                            {% endif %}
+                            {% if record.Hit4 > 0 %}
+                              <span class="w3-badge w3-green" style="font-size:1em; min-width:38px;">4奬</span>
+                              <span class="w3-tag w3-pale-green" style="font-weight:600; color:#388e3c;">×{{ record.Hit4 }}</span>
+                            {% endif %}
+                            {% if record.Hit5 > 0 %}
+                              <span class="w3-badge w3-blue" style="font-size:1em; min-width:38px;">5奬</span>
+                              <span class="w3-tag w3-pale-blue" style="font-weight:600; color:#1976d2;">×{{ record.Hit5 }}</span>
+                            {% endif %}
+                            {% if record.Hit6 > 0 %}
+                              <span class="w3-badge w3-indigo" style="font-size:1em; min-width:38px;">6奬</span>
+                              <span class="w3-tag w3-pale-blue" style="font-weight:600; color:#512da8;">×{{ record.Hit6 }}</span>
+                            {% endif %}
+                            {% if record.Hit7 > 0 %}
+                              <span class="w3-badge w3-brown" style="font-size:1em; min-width:38px;">7奬</span>
+                              <span class="w3-tag w3-pale-yellow" style="font-weight:600; color:#795548;">×{{ record.Hit7 }}</span>
+                            {% endif %}
+                        </div>
                     </td>
                 </tr>
                 <tr class="lotto-result-mobile">
                     <td colspan="7" style="padding: 4px 8px 10px 8px; background: #f7f9fa;">
-                        <span style="font-weight:600; color:#d84315;">命中：</span>
-                        {% if record.Hit1 > 0 %}<span class="w3-tag">1 奬</span> x {{ record.Hit1 }} {% endif %}
-                        {% if record.Hit2 > 0 %}<span class="w3-tag">2 奬</span> x {{ record.Hit2 }} {% endif %}
-                        {% if record.Hit3 > 0 %}<span class="w3-tag">3 奬</span> x {{ record.Hit3 }} {% endif %}
-                        {% if record.Hit4 > 0 %}<span class="w3-tag">4 奬</span> x {{ record.Hit4 }} {% endif %}
-                        {% if record.Hit5 > 0 %}<span class="w3-tag">5 奬</span> x {{ record.Hit5 }} {% endif %}
-                        {% if record.Hit6 > 0 %}<span class="w3-tag">6 奬</span> x {{ record.Hit6 }} {% endif %}
-                        {% if record.Hit7 > 0 %}<span class="w3-tag">7 奬</span> x {{ record.Hit7 }} {% endif %}
+                        <span style="display:flex; flex-wrap:wrap; gap:4px 2px;">
+                        {% if record.Hit1 > 0 %}
+                          <span class="w3-badge w3-red" style="font-size:1em; min-width:38px;">1奬</span>
+                          <span class="w3-tag w3-pale-red" style="font-weight:600; color:#d84315;">×{{ record.Hit1 }}</span>
+                        {% endif %}
+                        {% if record.Hit2 > 0 %}
+                          <span class="w3-badge w3-orange" style="font-size:1em; min-width:38px;">2奬</span>
+                          <span class="w3-tag w3-pale-yellow" style="font-weight:600; color:#ff9800;">×{{ record.Hit2 }}</span>
+                        {% endif %}
+                        {% if record.Hit3 > 0 %}
+                          <span class="w3-badge w3-yellow" style="font-size:1em; min-width:38px;">3奬</span>
+                          <span class="w3-tag w3-pale-yellow" style="font-weight:600; color:#fbc02d;">×{{ record.Hit3 }}</span>
+                        {% endif %}
+                        {% if record.Hit4 > 0 %}
+                          <span class="w3-badge w3-green" style="font-size:1em; min-width:38px;">4奬</span>
+                          <span class="w3-tag w3-pale-green" style="font-weight:600; color:#388e3c;">×{{ record.Hit4 }}</span>
+                        {% endif %}
+                        {% if record.Hit5 > 0 %}
+                          <span class="w3-badge w3-blue" style="font-size:1em; min-width:38px;">5奬</span>
+                          <span class="w3-tag w3-pale-blue" style="font-weight:600; color:#1976d2;">×{{ record.Hit5 }}</span>
+                        {% endif %}
+                        {% if record.Hit6 > 0 %}
+                          <span class="w3-badge w3-indigo" style="font-size:1em; min-width:38px;">6奬</span>
+                          <span class="w3-tag w3-pale-blue" style="font-weight:600; color:#512da8;">×{{ record.Hit6 }}</span>
+                        {% endif %}
+                        {% if record.Hit7 > 0 %}
+                          <span class="w3-badge w3-brown" style="font-size:1em; min-width:38px;">7奬</span>
+                          <span class="w3-tag w3-pale-yellow" style="font-weight:600; color:#795548;">×{{ record.Hit7 }}</span>
+                        {% endif %}
+                        </span>
                     </td>
                 </tr>
                 {% endfor %}
