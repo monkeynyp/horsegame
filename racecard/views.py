@@ -689,9 +689,10 @@ def lottory_predict(request):
 
     # Next, remove the '/' character and convert it to an integer
     draw_without_slash = largest_draw.replace('/', '')
+    
     seed_no = int(draw_without_slash)+1
     draw_string = str(seed_no)
-    print("SeedNo:", seed_no)
+    #print("SeedNo:", seed_no)
     # Insert the '/' character at the appropriate position
     next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
 
@@ -701,7 +702,7 @@ def lottory_predict(request):
     # Convert the queryset to a list
     data_list = list(data)
     data_list.reverse()
-    print(data_list)
+    #print(data_list)
     # Prepare the features (X) and target (y) for KNN
     X = [[x] for x in data_list[:-1]]  # Features: all numbers except the last one
     y = data_list[1:]  # Target: the next number for each feature
@@ -718,8 +719,8 @@ def lottory_predict(request):
     labels = list(range(1, 21))  # Numbers 1 to 20 for the recent numbers
     labels = list(range(int(draw_string[2:]) - 10, int(draw_string[2:])))
     labels.append('下期預測')  # Label for the next number
-    predicted_numbers = knn_model.predict([[x] for x in range(1, 22)])
-    print("predicted Number",predicted_numbers)
+    #predicted_numbers = knn_model.predict([[x] for x in range(1, 22)])
+    #print("predicted Number",predicted_numbers)
     records = Marksix_user_rec.objects.filter(Draw=next_draw)
     # Pass the results to the template
     context = {
@@ -729,7 +730,7 @@ def lottory_predict(request):
         'recent_numbers': data_list[-10:],
         'next_number': next_number,
         'labels': json.dumps(labels),
-        'predicted_numbers': json.dumps(predicted_numbers.tolist()),
+        #'predicted_numbers': json.dumps(predicted_numbers.tolist()),
         'form':form,
     }
 
