@@ -217,10 +217,7 @@
           <header>
             <img src="/static/Iching-{{ key }}.png" alt="hexagram" class="ichi-hex">
             <span>
-              {% if key == '1' %}乾為天{% elif key == '2' %}坤為地{% elif key == '34' %}雷天大壯
-              {% elif key == '11' %}地天泰{% elif key == '13' %}天火同人{% elif key == '7' %}地水師
-              {% elif key == '50' %}火風鼎{% elif key == '27' %}山雷頤{% elif key == '9' %}風天小畜
-              {% else %}卦象 {{ key }}{% endif %}
+              {% if key == 1 %}乾為天{% elif key == 2 %}坤為地{% elif key == 34 %}雷天大壯{% elif key == 11 %}地天泰{% elif key == 13 %}天火同人{% elif key == 7 %}地水師{% elif key == 50 %}火風鼎{% elif key == 27 %}山雷頤{% elif key == 9 %}風天小畜{% else %}卦象 {{ key }}{% endif %}
             </span>
           </header>
           <div class="ichi-numbers">
