@@ -197,7 +197,7 @@
                   {% for score in user_scores %}
                     {% if score.user == user_data.user %}
                       {% for i in score.stars %}
-                        <i class="fa-solid fa-sack-dollar" style="color: #ff0505;" title="Profit"></i>
+                        <i class="fa-solid fa-sack-dollar fa-xl" style="color: #ff0505;" title="Profit"></i>
                       {% endfor %}
                       {% if score.stars2 > 0 %}
                         <span style="margin-left:6px;"><i class="fa-solid fa-medal" style="color: #FBB337;"></i> x {{score.stars2}}</span>
