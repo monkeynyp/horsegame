@@ -1,13 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/10/15,1,SUNDAY'S SERENADE,卓越蒨鋒,Z Purton,潘頓,135,1048,8,J Richards,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,14,2,B/TT,
-1,2025/10/15,2,STAR GLOW,共同輝煌,C Y Ho,何澤堯,134,1060,9,K W Lui,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,28,1,,
-2,2025/10/15,3,FORTUNATE SON,將義,K C Leung,梁家俊,132,1128,12,W K Mo,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,91,0,TT,
-3,2025/10/15,4,FOREVER GLORIOUS,龍船快,K De Melo,董明朗,130,1136,2,B Crawford,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,154,0,V-/XB1/TT-,
-4,2025/10/15,5,FANTASTIC FUN,凡凡有餘,H Bowman,布文,128,1185,1,C S Shum,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,31,2,XB/TT,
-5,2025/10/15,6,SMART CITY,君智盛,M F Poon,潘明輝,128,1113,10,P F Yiu,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,98,0,CP/TT,
-6,2025/10/15,7,YOUTH POWER,青春力量,E C W Wong,黃智弘 (-5),125,1064,7,D A Hayes,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,35,1,B/TT,
-7,2025/10/15,8,GLORIOUS RYDER,榮耀盛甲,L Hewitson,希威森,124,969,6,D Eustace,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,35,1,CP-/B1/TT1,
-8,2025/10/15,9,YOUNG FIGHTER,競駿勇士,R Kingscote,金誠剛,124,1038,3,C Fownes,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,24,1,PC1/TT,
-9,2025/10/15,10,GALE SAGA,旋風傳奇,A Badel,巴度,121,1127,5,P C Ng,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,14,2,B,
-10,2025/10/15,11,ACE WAR,祥勝將軍,D Probert,潘大衛,118,1094,4,D J Whyte,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,24,1,TT,
-11,2025/10/15,12,YIU CHEUNG VICTORY,耀昌勝世,K Teetan,田泰安,118,1155,11,C H Yip,9,Class 4,1650,Happy Valley:,"TURF - ""A"" Course",Good,20:40,11,3,PC-/B2,
+0,2025/10/19,1,BLAZING WUKONG,火悟空,A Atzeni,艾兆禮,135,1230,13,P F Yiu,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,21,1,PPG,60
+1,2025/10/19,2,ALL ROUND WINNER,榮利雙收,B Avdulla,艾道拿,131,1146,2,D A Hayes,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,28,1,PP,56
+2,2025/10/19,3,VICTORY CHAMPION,凱旋王者,Z Purton,潘頓,129,1140,4,F C Lor,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,18,2,PPG,54
+3,2025/10/19,4,AEROINVINCIBLE,友瑩仁,C Y Ho,何澤堯,128,1105,11,P C Ng,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,35,1,PPG,53
+4,2025/10/19,5,LUCKY SAM GOR,一生好彩,C L Chau,周俊樂 (-2),128,1190,12,M Newnham,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,21,2,PPG,53
+5,2025/10/19,6,STRANGE ALERT,如蝶翩翩,H Bowman,布文,128,1219,1,D Eustace,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,18,1,PPG,53
+6,2025/10/19,7,AUDACIOUS PURSUIT,大千雄心,L Ferraris,霍宏聲,126,1151,14,C Fownes,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,15,1,PPG,51
+7,2025/10/19,8,RAINBOW SEVEN,彩虹七色,K C Leung,梁家俊,126,1057,8,K W Lui,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,18,1,PPG,51
+8,2025/10/19,9,SMART FAT CAT,天蓬貓,K Teetan,田泰安,126,1194,7,W K Mo,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,98,0,PPG,51
+9,2025/10/19,10,MULTIDUTCH,萬事得意,R Kingscote,金誠剛,123,1047,6,A S Cruz,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,15,2,PP,48
+10,2025/10/19,11,COME FAST FAY FAY,金快飛飛,H Bentley,班德禮,122,1100,10,K H Ting,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,98,0,PPG,47
+11,2025/10/19,12,GOR GOR,暴風一族,L Hewitson,希威森,122,1138,3,J Richards,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,106,0,PPG,47
+12,2025/10/19,13,TIME TO FIRE,長峰小子,M F Poon,潘明輝,120,1104,5,D J Hall,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,21,1,PPG,45
+13,2025/10/19,14,COLOURFUL WINNER,多彩多姿,M L Yeung,楊明綸,116,1157,9,W Y So,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,15:10,21,2,PPG,41

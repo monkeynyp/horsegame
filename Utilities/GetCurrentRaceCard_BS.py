@@ -12,7 +12,7 @@ if len(sys.argv) > 2:
     race_no = sys.argv[2]
 else:
     race_date = input("Current Race Date (YYYY/MM/DD): ")
-    race_no = input("Current Race No: ")
+    race_no = input("Total Races: ")
 
 race_no = int(race_no)
 horse_last_race = pd.read_csv('horse_last_racedate.csv')
@@ -36,9 +36,9 @@ for rn in range(1, race_no + 1):
     lines = race_info_text.split("\n")
     race_class = race_distance = race_venue = race_course = race_going = race_time = ""
     for line in lines:
-        if "Class" in line:
-            race_class = re.search(r'Class\s*\d+', line)
-            race_class = race_class.group(0) if race_class else ""
+        # Capture "Class N" or "Group One/Two/Three" (also "Group 1", etc.)
+        class_match = re.search(r'(Class\s*\d+|Group\s+(?:One|Two|Three|Four|Five|\d+))', line, re.IGNORECASE)
+        race_class = class_match.group(0).strip() if class_match else ""
         if "Turf" in line or "All Weather" in line:
             # Extract course in format "TURF - \"C+3\" Course"
             course_match = re.search(r'(Turf|All Weather)[^,]*,\s*"[^"]+"\s*Course', line, re.IGNORECASE)
@@ -115,10 +115,10 @@ for rn in range(1, race_no + 1):
 
             raceData = [
                 race_date, horse_no, horseName, horseName_cn, jockey, jockey_cn, actWeight, horse_weight, draw, trainer,
-                rn, race_class, race_distance, race_venue, race_course, race_going, race_time,
+                race_no, race_class, race_distance, race_venue, race_course, race_going, race_time,
                 last_race_day, frequency, gear, horse_score
             ]
             curr_race_df.loc[len(curr_race_df)] = raceData
 
-    #curr_race_df.to_csv(f'current_race_{rn}.csv', index=False)
-    curr_race_df.to_csv(f'../racecard/data/current_race_{rn}.csv', index=False)
+    #curr_race_df.to_csv(f'current_race_{rn}.csv', index=True)
+    curr_race_df.to_csv(f'../racecard/data/current_race_{rn}.csv', index=True)

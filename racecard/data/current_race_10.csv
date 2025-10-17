@@ -1,15 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/10/12,1,JUNEAU PRIDE,至尊高超,B Avdulla,艾道拿,135,995,10,J Size,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,155,0,,
-1,2025/10/12,2,SKY HEART,仁心星,E C W Wong,黃智弘 (-5),131,1218,13,C Fownes,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,165,0,V-/TT,
-2,2025/10/12,3,ANOTHER WORLD,不同世界,C Y Ho,何澤堯,125,1070,9,C H Yip,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,99,0,CP-,
-3,2025/10/12,4,LIM'S SHAVANO,林家山神,J Orman,奧爾民,124,1109,12,M Newnham,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,28,1,,
-4,2025/10/12,5,MASTER OF ALL,勇冠群英,A Badel,巴度,124,1074,14,W Y So,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,28,1,B/TT,
-5,2025/10/12,6,IGOR STRAVINSKY,八駿福昇,M Chadwick,蔡明紹,121,1172,8,A S Cruz,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,99,0,B/TT,
-6,2025/10/12,7,SUGAR BALL,糖不甩,K C Leung,梁家俊,121,1155,4,W K Mo,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,28,1,TT,
-7,2025/10/12,8,STAR MAC,久久為尊,D Probert,潘大衛,120,1209,11,D A Hayes,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,95,0,B/TT,
-8,2025/10/12,9,TIN FOOK,天福,M F Poon,潘明輝,120,1168,2,D J Hall,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,21,1,,
-9,2025/10/12,10,URANUS STAR,開心三寶,Z Purton,潘頓,120,1151,3,K W Lui,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,300,0,,
-10,2025/10/12,11,SOLID WIN,一定掂,A Atzeni,艾兆禮,119,1075,6,P F Yiu,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,21,1,,
-11,2025/10/12,12,LEGENDARY YEARS,佳駿年年,M L Yeung,楊明綸,117,1016,1,B Crawford,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,134,0,B-/XB1,
-12,2025/10/12,13,THE RED HARE,超勁赤兔,L Hewitson,希威森,117,1141,5,F C Lor,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,21,1,E/TT,
-13,2025/10/12,14,COLOURFUL KNIGHT,顏色勇士,Y L Chung,鍾易禮 (-2),116,1144,7,C S Shum,10,Class 3,1400,Sha Tin:,"TURF - ""C"" Course",Good To Firm,17:45,21,2,CP2/TT,
+0,2025/10/19,1,AWESOME FLUKE,非惟僥倖,L Ferraris,霍宏聲,135,1189,8,P F Yiu,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,218,0,PP,80
+1,2025/10/19,2,WINNING GOLD,金勝名駒,R Kingscote,金誠剛,134,1065,3,W Y So,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,21,2,PPG,79
+2,2025/10/19,3,YUEN LONG ELITE,元朗精英,M L Yeung,楊明綸,131,1145,12,K L Man,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,21,1,PPG,76
+3,2025/10/19,4,POPE CODY,幸運派彩,J Orman,奧爾民,130,1104,2,Y S Tsui,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,21,2,PP,75
+4,2025/10/19,5,BEAUTY BOLT,美麗星晨,Z Purton,潘頓,129,1163,10,A S Cruz,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,21,1,PP,74
+5,2025/10/19,6,I CAN,我做到,A Atzeni,艾兆禮,129,1090,5,P C Ng,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,32,2,PP,74
+6,2025/10/19,7,MORGAN SUCCESS,龍城精將,H Bowman,布文,127,1117,7,D J Whyte,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,119,0,PP,72
+7,2025/10/19,8,MISTER DAPPER,英駿飛駒,B Avdulla,艾道拿,123,1205,1,D Eustace,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,98,0,PPG,68
+8,2025/10/19,9,CALIFORNIA WAVES,加州熱浪,C L Chau,周俊樂 (-2),122,1118,6,W K Mo,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,35,1,PP,67
+9,2025/10/19,10,MAX QUE,勁沙塵,A Badel,巴度,122,1107,4,M Newnham,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,18,2,PPG,67
+10,2025/10/19,11,MASTER TRILLION,八仟財陞,K C Leung,梁家俊,121,1068,13,F C Lor,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,21,1,PPG,66
+11,2025/10/19,12,SKY VINO,滿心星,E C W Wong,黃智弘 (-5),120,1105,11,C Fownes,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,18,1,PPG,65
+12,2025/10/19,13,SPIRIT OF PEACE,泰泰精神,M Chadwick,蔡明紹,120,1036,14,J Size,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,21,2,PPG,65
+13,2025/10/19,14,FORTUNE BOY,火焰閃爍,K Teetan,田泰安,116,1115,9,D A Hayes,10,Class 3,1600,Sha Tin,"Turf, ""C+3"" Course",Good,17:55,21,1,PPG,61

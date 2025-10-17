@@ -48,7 +48,7 @@ for race_date in raceDates:
                         raceGoing = tds[2].text.strip()
                     # Course (e.g. "TURF - \"C+3\" Course")
                     if "Course" in tds[1].text:
-                        2025
+                        raceCourse = tds[2].text.strip()
 
             # Fallback for Venue (use previous method)
             span = soup.find('span', class_='f_fl f_fs13')
@@ -156,5 +156,5 @@ for race_date in raceDates:
 
 print(race_df)
 
-race_df.to_csv('race_hist_update.csv', index=False)
-race_df.to_csv('../racecard/data/race_hist_update.csv', index=False)
+#race_df.to_csv('race_hist_update.csv', index=False)
+race_df.to_csv('race_hist_update.csv', index=True)

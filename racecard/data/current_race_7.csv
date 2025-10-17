@@ -1,11 +1,15 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/10/15,1,CHILL CHIBI,超超比,H Bowman,布文,133,1143,5,C S Shum,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,11,1,B/TT,
-1,2025/10/15,2,CALIFORNIATOTALITY,加州動員,A Badel,巴度,130,1082,1,A S Cruz,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,28,1,B/TT,
-2,2025/10/15,3,ENCOUNTERED,安遇,K Teetan,田泰安,128,1177,4,B Crawford,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,28,1,,
-3,2025/10/15,4,HELENE FEELING,喜蓮勇感,C L Chau,周俊樂 (-2),128,1249,8,C S Shum,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,11,1,B/TT,
-4,2025/10/15,5,LO RIDER,平凡騎士,H Bentley,班德禮,125,1040,9,C Fownes,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,28,1,H/SR,
-5,2025/10/15,6,LA CITY BLANCHE,當年情,M Chadwick,蔡明紹,124,1006,2,A S Cruz,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,28,1,TT,
-6,2025/10/15,7,TELECOM FIGHTERS,電訊巴打,J Orman,奧爾民,124,1114,6,Y S Tsui,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,11,2,,
-7,2025/10/15,8,SPEED DRAGON,勁速威龍,C Y Ho,何澤堯,123,1191,10,K W Lui,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,241,0,B,
-8,2025/10/15,9,JUMBO LEGEND,銀進,E C W Wong,黃智弘 (-5),121,1149,3,C Fownes,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,28,1,TT,
-9,2025/10/15,10,WINNING DRAGON,又龍串鳳,B Avdulla,艾道拿,120,1055,7,A S Cruz,9,Class 2,1800,Happy Valley:,"TURF - ""A"" Course",Good,21:45,94,0,TT,
+0,2025/10/19,1,VOYAGE BUBBLE,遨遊氣泡,M F Poon,潘明輝,135,1231,6,P F Yiu,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,147,0,PPG,134
+1,2025/10/19,2,GALAXY PATCH,錶之銀河,C L Chau,周俊樂,122,1173,9,P C Ng,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,175,0,PP,121
+2,2025/10/19,3,RED LION,紅運帝王,R Kingscote,金誠剛,119,1140,13,J Size,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,141,0,PP,118
+3,2025/10/19,4,BEAUTY JOY,美麗同享,K C Leung,梁家俊,117,1064,14,A S Cruz,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,98,0,PP,116
+4,2025/10/19,5,STRAIGHT ARRON,直線力山,E C W Wong,黃智弘,117,1127,1,P F Yiu,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,119,0,PP,116
+5,2025/10/19,6,MY WISH,祝願,A Badel,巴度,115,1003,11,M Newnham,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,1,PPG,114
+6,2025/10/19,7,COPARTNER PRANCE,合夥奔馳,K De Melo,董明朗,115,1131,10,K W Lui,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,2,PPG,111
+7,2025/10/19,8,HAPPY TOGETHER,越駿歡欣,K Teetan,田泰安,115,1141,8,F C Lor,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,1,PP,111
+8,2025/10/19,9,BEAUTY ETERNAL,永遠美麗,M Chadwick,蔡明紹,115,1198,5,J Size,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,98,0,PPG,108
+9,2025/10/19,10,CAP FERRAT,百賀飛駒,M L Yeung,楊明綸,115,1085,3,K W Lui,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,119,0,PP,108
+10,2025/10/19,11,ENSUED,安騁,A Atzeni,艾兆禮,115,1075,2,J Size,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,119,0,PP,108
+11,2025/10/19,12,SWORD POINT,知足常樂,D Probert,潘大衛,115,1127,7,F C Lor,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,119,0,PP,108
+12,2025/10/19,13,VICTOR THE WINNER,維港智能,Y L Chung,鍾易禮,115,1094,12,D Eustace,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,2,PPG,108
+13,2025/10/19,14,MOMENTS IN TIME,智取神駒,H Bentley,班德禮,115,1089,4,C S Shum,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,1,PP,107
