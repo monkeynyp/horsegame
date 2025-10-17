@@ -5,6 +5,8 @@ from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 import sys
+from sklearn import __version__ as sklearn_version
+from distutils.version import LooseVersion
 
 def simulate_race(win_probabilities, horses):
     # Simulate the race outcome
@@ -39,9 +41,16 @@ horse_jockey_avg_result = race_hist.groupby(['HorseName', 'Jockey','Class_pur','
 horse_jockey_avg_result.columns = ['HorseName', 'Jockey','Class','Distance','Draw','Course','Venue','Going','RaceMonth','WeightRatio','RestDays','HasPreviousRace','AvgResult']
 print(horse_jockey_avg_result)
 
+# Create OneHotEncoder compatibly with installed scikit-learn version
+if LooseVersion(sklearn_version) >= LooseVersion("1.2"):
+    ohe = OneHotEncoder(handle_unknown='ignore', sparse_output=True)
+else:
+    # Old sklearn versions use `sparse` argument
+    ohe = OneHotEncoder(handle_unknown='ignore', sparse=False)
+
 preprocessor = ColumnTransformer(
     transformers=[
-        ('categorical', OneHotEncoder(handle_unknown='ignore', sparse_output=True), ['HorseName','Jockey','Class','Course','Going','Venue'])
+        ('categorical', ohe, ['HorseName','Jockey','Class','Course','Going','Venue'])
     ],
     remainder='passthrough'  # Include non-categorical features as is
 )
