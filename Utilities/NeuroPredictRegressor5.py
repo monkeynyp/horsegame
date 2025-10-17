@@ -51,7 +51,7 @@ else:
 
 preprocessor = ColumnTransformer(
     transformers=[
-        ('categorical', OneHotEncoder(handle_unknown='ignore', sparse_output=True), ['HorseName','Jockey','Class','Course','Going','Venue'])
+        ('categorical', ohe, ['HorseName','Jockey','Class','Course','Going','Venue'])
     ],
     remainder='passthrough'  # Include non-categorical features as is
 )
