@@ -31,4 +31,4 @@ def adjust_age(row):
 merged_df['AdjustedAge'] = merged_df.apply(adjust_age, axis=1)
 
 # Save the merged dataframe to a new CSV file
-merged_df.to_csv('curr_hist_df_m_5.csv', index=True)
+merged_df.to_csv('../racecard/data/curr_hist_df_m_5.csv', index=True)

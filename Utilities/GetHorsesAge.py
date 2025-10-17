@@ -39,4 +39,4 @@ df.drop_duplicates(subset=["HorseName"], inplace=True)
 
 # Print the DataFrame
 print(df)
-df.to_csv("horse_ages202509.csv")
+df.to_csv("../racecard/data/horse_ages202509.csv")

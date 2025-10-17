@@ -4,6 +4,8 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
+from sklearn import __version__ as sklearn_version
+from distutils.version import LooseVersion
 import sys
 
 def simulate_race(win_probabilities, horses):
@@ -39,6 +41,13 @@ race_hist['Year']=race_hist['RaceDate'].str[:4]
 horse_jockey_avg_result = race_hist.groupby(['HorseName', 'Jockey','Class_pur','Distance','Draw','Course','Venue','Going','RaceMonth','WeightRatio','RestDays','AdjustedAge'])['Place'].mean().reset_index()
 horse_jockey_avg_result.columns = ['HorseName', 'Jockey','Class','Distance','Draw','Course','Venue','Going','RaceMonth','WeightRatio','RestDays','Age','AvgResult']
 print(horse_jockey_avg_result)
+
+# Create OneHotEncoder compatibly with installed scikit-learn version
+if LooseVersion(sklearn_version) >= LooseVersion("1.2"):
+    ohe = OneHotEncoder(handle_unknown='ignore', sparse_output=True)
+else:
+    # Old sklearn versions use `sparse` argument
+    ohe = OneHotEncoder(handle_unknown='ignore', sparse=False)
 
 preprocessor = ColumnTransformer(
     transformers=[

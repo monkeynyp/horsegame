@@ -18,7 +18,7 @@ if len(sys.argv) > 1:
 else:
     no_of_race = input("Input Total Number of Race: ")
 # Assume you have a DataFrame 'historical_data' containing the historical racing data
-race_hist = pd.read_csv('curr_hist_df_m_3.csv')
+race_hist = pd.read_csv('../racecard/data/curr_hist_df_m_3.csv')
 # Feature Engineering
 race_hist['RaceMonth'] = pd.to_numeric(race_hist['RaceMonth'])
 # Calculate average running result for each horse-jockey pair

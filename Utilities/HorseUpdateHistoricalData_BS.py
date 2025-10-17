@@ -157,4 +157,4 @@ for race_date in raceDates:
 print(race_df)
 
 #race_df.to_csv('race_hist_update.csv', index=False)
-race_df.to_csv('race_hist_update.csv', index=True)
+race_df.to_csv('../racecard/data/race_hist_update.csv', index=True)
