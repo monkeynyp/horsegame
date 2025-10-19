@@ -104,7 +104,7 @@ class Marksix_user_rec(models.Model):
     No4 = models.IntegerField()
     No5 = models.IntegerField()
     No6 = models.IntegerField()
-    #No7 = models.IntegerField()
+    No7 = models.IntegerField(default=0)
     Hit1 = models.IntegerField(default=0)
     Hit2 = models.IntegerField(default=0)
     Hit3 = models.IntegerField(default=0)

@@ -3,6 +3,10 @@ from racecard.models import Marksix_hist,LottoTrioSearch, Marksix_user_rec
 from datetime import datetime
 from django.db.models import Q
 from django.core.mail import send_mail
+from django.utils import timezone
+from django.db import models
+from sklearn.neighbors import KNeighborsRegressor
+import math
 
 class Command(BaseCommand):
     help = 'Create a new Marksix record'
@@ -43,6 +47,8 @@ class Command(BaseCommand):
                 self.stdout.write(self.style.SUCCESS('Successfully created new Marksix record.'))
             else:
                 self.stdout.write(self.style.SUCCESS('Successfully updated existing Marksix record.'))
+        
+        
         # Validate the Hit number of User's Record
             user_records = Marksix_user_rec.objects.all()
 
@@ -83,8 +89,16 @@ class Command(BaseCommand):
                         [user_record.user.email],
                         fail_silently=False,
                     )
+            # After updating user records for this draw, generate and save KNN-based chart prediction
+            try:
+                pred_rec = marksix_predict()
+                if pred_rec:
+                    self.stdout.write(self.style.SUCCESS(f"Marksix prediction (Chart) saved for draw {pred_rec.Draw}"))
+            except Exception as e:
+                # Do not fail the whole command for prediction errors
+                self.stdout.write(self.style.WARNING(f"marksix_predict failed: {e}"))
         except ValueError as e:
-            self.stdout.write(self.style.ERROR(f'Error parsing input: {e}'))
+             self.stdout.write(self.style.ERROR(f'Error parsing input: {e}'))
 
 # Find the oldest combination
 # Step 1: Fetch the first 20 records from LottoTrioSearch ordered by Diff_days in descending order
@@ -124,6 +138,14 @@ class Command(BaseCommand):
                     }
                 )
 
+        # After updating trio search, generate KNN predictions for next draw and save as a "Chart" user rec
+        try:
+            marksix_pred = marksix_predict()
+            if marksix_pred:
+                self.stdout.write(self.style.SUCCESS(f"Marksix prediction saved for draw {marksix_pred.Draw}"))
+        except Exception as ex:
+            # avoid failing the whole command if prediction has an issue
+            self.stdout.write(self.style.WARNING(f"marksix_predict failed: {ex}"))
  
 def calculate_days_difference(record_date):
     # Convert record_date to a datetime object if it's not already
@@ -137,3 +159,80 @@ def calculate_days_difference(record_date):
     days_difference = (current_date - record_date).days
 
     return days_difference
+
+def marksix_predict(id='1'):
+    """
+    Predict next number for No1..No7 using KNN on historical series and
+    save the predicted 7-number record to Marksix_user_rec with User='Chart'.
+    """
+    list_ids = []
+    # Determine next draw seed based on largest Draw value
+    largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+    if not largest_draw:
+        raise ValueError("No existing draws found in Marksix_hist")
+
+    # remove slash and increment
+    draw_without_slash = largest_draw.replace('/', '')
+    try:
+        seed_no = int(draw_without_slash) + 1
+    except ValueError:
+        raise ValueError(f"Cannot parse largest_draw '{largest_draw}' to integer")
+    draw_string = str(seed_no).zfill(5)  # zero-pad if needed
+    next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
+
+    update_date = timezone.now().date()
+
+    predicted_numbers = {}
+    # for No1..No7
+    for idx in range(1, 8):
+        listNo = f'No{idx}'
+        # fetch historical series ordered by Date ascending (oldest first)
+        qs = Marksix_hist.objects.order_by('Date').values_list(listNo, flat=True)
+        data_list = [int(x) for x in qs if x is not None]
+        # Need at least 4 data points to use KNN with n_neighbors=3
+        if len(data_list) < 4:
+            # fallback: pick most recent value
+            predicted = data_list[-1] if data_list else None
+        else:
+            # Prepare X and y
+            X = [[x] for x in data_list[:-1]]
+            y = data_list[1:]
+            knn = KNeighborsRegressor(n_neighbors=3)
+            knn.fit(X, y)
+            pred = knn.predict([[data_list[-1]]])[0]
+            predicted = int(math.ceil(pred))
+            # ensure predicted in 1..49
+            if predicted < 1: predicted = 1
+            if predicted > 49: predicted = 49
+        predicted_numbers[listNo] = predicted
+
+    # Build defaults to save; attempt to set fields No1..No7, User/Draw/Date
+    defaults = {
+        'Draw': next_draw,
+        'Date': update_date,
+        'No1': predicted_numbers.get('No1'),
+        'No2': predicted_numbers.get('No2'),
+        'No3': predicted_numbers.get('No3'),
+        'No4': predicted_numbers.get('No4'),
+        'No5': predicted_numbers.get('No5'),
+        'No6': predicted_numbers.get('No6'),
+        'No7': predicted_numbers.get('No7'),
+    }
+    # Try to create or update a record for user "Chart" - field name may be 'User' or 'user'
+    # Prefer 'User' if exists, else fall back to 'user' text field.
+    try:
+        # If model has 'User' CharField
+        lotto_rec, created = Marksix_user_rec.objects.update_or_create(
+            User='Chart',
+            Draw=next_draw,
+            defaults=defaults
+        )
+    except Exception:
+        # fallback: try lowercase 'user' field
+        lotto_rec, created = Marksix_user_rec.objects.update_or_create(
+            user='Chart',
+            Draw=next_draw,
+            defaults=defaults
+        )
+
+    return lotto_rec
