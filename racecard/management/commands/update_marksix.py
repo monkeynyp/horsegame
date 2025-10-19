@@ -1,12 +1,13 @@
 from django.core.management.base import BaseCommand
 from racecard.models import Marksix_hist,LottoTrioSearch, Marksix_user_rec
 from datetime import datetime
-from django.db.models import Q
+from django.db.models import Q, Max
 from django.core.mail import send_mail
 from django.utils import timezone
 from django.db import models
 from sklearn.neighbors import KNeighborsRegressor
 import math
+from django.contrib.auth import get_user_model
 
 class Command(BaseCommand):
     help = 'Create a new Marksix record'
@@ -47,7 +48,15 @@ class Command(BaseCommand):
                 self.stdout.write(self.style.SUCCESS('Successfully created new Marksix record.'))
             else:
                 self.stdout.write(self.style.SUCCESS('Successfully updated existing Marksix record.'))
-        
+                    # After updating user records for this draw, generate and save KNN-based chart prediction
+            
+            try:
+                pred_rec = marksix_predict()
+                if pred_rec:
+                    self.stdout.write(self.style.SUCCESS(f"Marksix prediction (Chart) saved for draw {pred_rec.Draw}"))
+            except Exception as e:
+                # Do not fail the whole command for prediction errors
+                self.stdout.write(self.style.WARNING(f"marksix_predict failed: {e}"))
         
         # Validate the Hit number of User's Record
             user_records = Marksix_user_rec.objects.all()
@@ -89,14 +98,7 @@ class Command(BaseCommand):
                         [user_record.user.email],
                         fail_silently=False,
                     )
-            # After updating user records for this draw, generate and save KNN-based chart prediction
-            try:
-                pred_rec = marksix_predict()
-                if pred_rec:
-                    self.stdout.write(self.style.SUCCESS(f"Marksix prediction (Chart) saved for draw {pred_rec.Draw}"))
-            except Exception as e:
-                # Do not fail the whole command for prediction errors
-                self.stdout.write(self.style.WARNING(f"marksix_predict failed: {e}"))
+
         except ValueError as e:
              self.stdout.write(self.style.ERROR(f'Error parsing input: {e}'))
 
@@ -177,6 +179,7 @@ def marksix_predict(id='1'):
         seed_no = int(draw_without_slash) + 1
     except ValueError:
         raise ValueError(f"Cannot parse largest_draw '{largest_draw}' to integer")
+    
     draw_string = str(seed_no).zfill(5)  # zero-pad if needed
     next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
 
@@ -189,21 +192,56 @@ def marksix_predict(id='1'):
         # fetch historical series ordered by Date ascending (oldest first)
         qs = Marksix_hist.objects.order_by('Date').values_list(listNo, flat=True)
         data_list = [int(x) for x in qs if x is not None]
+
+        def find_nearest_available(start, used):
+            # search outward from start for the nearest number in 1..49 not in used
+            for offset in range(0, 50):
+                cand1 = start + offset
+                cand2 = start - offset
+                if 1 <= cand1 <= 49 and cand1 not in used:
+                    return cand1
+                if 1 <= cand2 <= 49 and cand2 not in used:
+                    return cand2
+            return None
+
         # Need at least 4 data points to use KNN with n_neighbors=3
         if len(data_list) < 4:
             # fallback: pick most recent value
             predicted = data_list[-1] if data_list else None
+            # if duplicate, pick nearest available
+            if predicted in predicted_numbers.values():
+                nearest = find_nearest_available(predicted or 1, set(predicted_numbers.values()))
+                predicted = nearest
         else:
-            # Prepare X and y
-            X = [[x] for x in data_list[:-1]]
-            y = data_list[1:]
-            knn = KNeighborsRegressor(n_neighbors=3)
-            knn.fit(X, y)
-            pred = knn.predict([[data_list[-1]]])[0]
-            predicted = int(math.ceil(pred))
-            # ensure predicted in 1..49
-            if predicted < 1: predicted = 1
-            if predicted > 49: predicted = 49
+            predicted = None
+            # Try KNN with n_neighbors = 3 then 5 if duplication occurs
+            for n_neighbors in (3, 9):
+                try:
+                    # Prepare X and y
+                    X = [[x] for x in data_list[:-1]]
+                    y = data_list[1:]
+                    knn = KNeighborsRegressor(n_neighbors=n_neighbors)
+                    knn.fit(X, y)
+                    pred = knn.predict([[data_list[-1]]])[0]
+                    cand = int(math.ceil(pred))
+                    # clamp into valid range
+                    if cand < 1: cand = 1
+                    if cand > 49: cand = 49
+                    # accept if not duplicate
+                    if cand not in predicted_numbers.values():
+                        predicted = cand
+                        break
+                    # otherwise try next n_neighbors
+                except Exception:
+                    # on any KNN error, continue to next n_neighbors or fallback
+                    continue
+
+            # If still duplicated or not predicted, pick nearest available
+            if predicted is None or predicted in predicted_numbers.values():
+                base = int(math.ceil(data_list[-1])) if data_list else 1
+                nearest = find_nearest_available(base, set(predicted_numbers.values()))
+                predicted = nearest
+
         predicted_numbers[listNo] = predicted
 
     # Build defaults to save; attempt to set fields No1..No7, User/Draw/Date
@@ -218,21 +256,21 @@ def marksix_predict(id='1'):
         'No6': predicted_numbers.get('No6'),
         'No7': predicted_numbers.get('No7'),
     }
-    # Try to create or update a record for user "Chart" - field name may be 'User' or 'user'
-    # Prefer 'User' if exists, else fall back to 'user' text field.
-    try:
-        # If model has 'User' CharField
-        lotto_rec, created = Marksix_user_rec.objects.update_or_create(
-            User='Chart',
-            Draw=next_draw,
-            defaults=defaults
-        )
-    except Exception:
-        # fallback: try lowercase 'user' field
-        lotto_rec, created = Marksix_user_rec.objects.update_or_create(
-            user='Chart',
-            Draw=next_draw,
-            defaults=defaults
-        )
+    # Ensure we use a real User object for the ForeignKey. Create a system user "Chart" if missing.
+    User = get_user_model()
+    chart_user, created_user = User.objects.get_or_create(
+        username='Chart',
+        defaults={'email': 'chart@example.com', 'is_active': False}
+    )
+    # Determine next seq = last seq + 1 to satisfy NOT NULL constraint
+    last_seq = Marksix_user_rec.objects.aggregate(max_seq=Max('seq'))['max_seq'] or 0
+    defaults['seq'] = int(last_seq) + 1
 
+    # Save/update the predicted record tied to that user
+    lotto_rec, created = Marksix_user_rec.objects.update_or_create(
+        user=chart_user,
+        Draw=next_draw,
+        defaults=defaults
+    )
+ 
     return lotto_rec
