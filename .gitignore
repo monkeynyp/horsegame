@@ -1,4 +1,10 @@
 db.sqlite3
 racecard/static/blogimage
 media/racecard/images
-racecard/data/
+# Ignore entire racecard data directory (anchor to repo root)
+# ignore directory and all recursive contents
+/racecard/data/
+/racecard/data/**
+
+# optional: keep a .gitkeep if you want the empty folder in repo
+#!/racecard/data/.gitkeep
