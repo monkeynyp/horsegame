@@ -5,6 +5,7 @@ media/racecard/images
 # ignore directory and all recursive contents
 /racecard/data/
 /racecard/data/**
+racecard/static/
 
 # optional: keep a .gitkeep if you want the empty folder in repo
 #!/racecard/data/.gitkeep
