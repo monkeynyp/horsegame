@@ -9,3 +9,5 @@ racecard/static/
 
 # optional: keep a .gitkeep if you want the empty folder in repo
 #!/racecard/data/.gitkeep
+racecard/data/
+racecard/static/
