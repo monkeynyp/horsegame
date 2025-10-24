@@ -1,15 +1,14 @@
 ,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore
-0,2025/10/19,1,VOYAGE BUBBLE,遨遊氣泡,M F Poon,潘明輝,135,1231,6,P F Yiu,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,147,0,PPG,134
-1,2025/10/19,2,GALAXY PATCH,錶之銀河,C L Chau,周俊樂,122,1173,9,P C Ng,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,175,0,PP,121
-2,2025/10/19,3,RED LION,紅運帝王,R Kingscote,金誠剛,119,1140,13,J Size,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,141,0,PP,118
-3,2025/10/19,4,BEAUTY JOY,美麗同享,K C Leung,梁家俊,117,1064,14,A S Cruz,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,98,0,PP,116
-4,2025/10/19,5,STRAIGHT ARRON,直線力山,E C W Wong,黃智弘,117,1127,1,P F Yiu,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,119,0,PP,116
-5,2025/10/19,6,MY WISH,祝願,A Badel,巴度,115,1003,11,M Newnham,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,1,PPG,114
-6,2025/10/19,7,COPARTNER PRANCE,合夥奔馳,K De Melo,董明朗,115,1131,10,K W Lui,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,2,PPG,111
-7,2025/10/19,8,HAPPY TOGETHER,越駿歡欣,K Teetan,田泰安,115,1141,8,F C Lor,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,1,PP,111
-8,2025/10/19,9,BEAUTY ETERNAL,永遠美麗,M Chadwick,蔡明紹,115,1198,5,J Size,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,98,0,PPG,108
-9,2025/10/19,10,CAP FERRAT,百賀飛駒,M L Yeung,楊明綸,115,1085,3,K W Lui,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,119,0,PP,108
-10,2025/10/19,11,ENSUED,安騁,A Atzeni,艾兆禮,115,1075,2,J Size,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,119,0,PP,108
-11,2025/10/19,12,SWORD POINT,知足常樂,D Probert,潘大衛,115,1127,7,F C Lor,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,119,0,PP,108
-12,2025/10/19,13,VICTOR THE WINNER,維港智能,Y L Chung,鍾易禮,115,1094,12,D Eustace,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,2,PPG,108
-13,2025/10/19,14,MOMENTS IN TIME,智取神駒,H Bentley,班德禮,115,1089,4,C S Shum,7,Group Two,1600,Sha Tin,"Turf, ""C+3"" Course",Good,16:10,21,1,PP,107
+0,2025/10/26,1,BRAVEHEARTS,愛心神駒,M F Poon,潘明輝,135,1112,2,M Newnham,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,22,2,PP,78
+1,2025/10/26,2,GENTLEMEN LEGACY,君子傳承,Z Purton,潘頓,135,1182,4,A S Cruz,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,22,1,PP,78
+2,2025/10/26,3,ROMANTIC THOR,浪漫戰神,K Teetan,田泰安,135,1094,7,C S Shum,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,252,0,PP,78
+3,2025/10/26,4,SNOWFIELD,飛雪神駒,C Y Ho,何澤堯,131,1122,12,M Newnham,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,28,2,PP,74
+4,2025/10/26,5,ENTHRALLED,安可,H Bowman,布文,129,1072,3,J Size,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,22,1,PP,72
+5,2025/10/26,6,AESTHETICISM,唯美主義,C L Chau,周俊樂 (-2),127,1053,6,P C Ng,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,22,2,PPG,70
+6,2025/10/26,7,WINNING WING,天將龍駒,H T Mo,巫顯東 (-2),127,1165,11,K W Lui,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,28,1,PP,70
+7,2025/10/26,8,MONEY CATCHER,發財先鋒,K C Leung,梁家俊,124,1129,1,F C Lor,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,22,1,PP,67
+8,2025/10/26,9,AGENDA,清雲龍駒,R Kingscote,金誠剛,123,1120,8,D J Hall,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,120,0,PP,66
+9,2025/10/26,10,MIGHTY STRENGTH,勁大威猛,E C W Wong,黃智弘 (-5),123,1004,9,P F Yiu,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,22,1,PPG,66
+10,2025/10/26,11,S J TOURBILLON,三江飛輪,P N Wong,黃寶妮 (-7),123,1114,5,C H Yip,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,11,4,PP,66
+11,2025/10/26,12,KING OF SELECTION,揀馬之皇,A Badel,巴度,121,1021,13,W K Mo,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,22,1,PP,64
+12,2025/10/26,13,WITHALLMYFAITH,魅力知耀,M L Yeung,楊明綸,119,1214,10,D A Hayes,10,Class 3,2000,Sha Tin,"Turf, ""A"" Course",Good,16:15,11,4,PP,62

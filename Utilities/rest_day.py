@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 
 # Read the CSV file
-df = pd.read_csv('curr_hist_df_m_2.csv')
+df = pd.read_csv('../racecard/data/curr_hist_df_m_2.csv')
 
 # Convert the RaceDate column to datetime, handling multiple formats
 df['RaceDate'] = pd.to_datetime(df['RaceDate'], format='mixed', dayfirst=False)
@@ -31,7 +31,7 @@ df = df.sort_values(by=['RaceDate', 'RaceNo', 'Place'])
 # Replace NA values in the 'Place' column with 99
 df['Place'] = df['Place'].fillna(99)
 
-df.to_csv('curr_hist_df_m_3.csv', index=False)
+df.to_csv('../racecard/curr_hist_df_m_3.csv', index=False)
 
 # Select the required columns for display
 # Get the latest race date for each horse
@@ -59,7 +59,7 @@ latest_race_date_df['Frequency'] = latest_race_date_df['Frequency'].astype(int)
 df = df.drop(columns=['DaysSinceRace'])
 
 # Save the result to a new CSV file
-latest_race_date_df.to_csv('horse_last_racedate.csv', index=False)
+latest_race_date_df.to_csv('../racecard/data/horse_last_racedate.csv', index=False)
 
 
 

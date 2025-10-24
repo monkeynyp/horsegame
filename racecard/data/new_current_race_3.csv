@@ -1,15 +1,15 @@
 Unnamed: 0_x,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore,Unnamed: 0_y,Age
-0,2025/10/19,1,SHARPEN BRIGHT,一支箭,M F Poon,潘明輝,135,1046,10,D J Hall,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,18,2,PPG,58,1522,6
-1,2025/10/19,2,PACKING HURRICANE,包裝旋風,H Bowman,布文,134,987,13,P C Ng,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,18,1,PP,57,1525,6
-2,2025/10/19,3,BEAUTY VIVA,爆出美麗,Z Purton,潘頓,133,1163,5,A S Cruz,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,18,2,PP,56,567,4
-3,2025/10/19,4,CHARITY TOGETHER,同益善,R Kingscote,金誠剛,133,1050,14,D Eustace,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,113,0,PP,56,64,3
-4,2025/10/19,5,ILLUMINOUS,明亮天下,J Orman,奧爾民,131,985,11,F C Lor,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,28,1,PP,54,1538,6
-5,2025/10/19,6,FOREVER FOLKS,年年友福,K Teetan,田泰安,129,1182,7,C S Shum,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,18,2,ISG,52,1721,7
-6,2025/10/19,7,SUPER GOLDENDRAGON,佰勝金龍,C L Chau,周俊樂 (-2),129,1100,12,W K Mo,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,300,0,ISG,52,202,3
-7,2025/10/19,8,OCEAN IMPACT,蜜蜜送,K De Melo,董明朗,126,1174,4,D J Whyte,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,15,1,PPG,49,1283,5
-8,2025/10/19,9,MISSION STRIKE,妙算奇勝,L Ferraris,霍宏聲,125,1018,2,M Newnham,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,28,1,PPG,48,831,4
-9,2025/10/19,10,PERFECT PAIRING,幸運同行,B Avdulla,艾道拿,125,1001,1,J Size,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,18,2,PP,48,1577,6
-10,2025/10/19,11,SPECIAL HEDGE,精算特殊,L Hewitson,希威森,121,1079,8,C W Chang,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,28,1,PPG,44,1594,6
-11,2025/10/19,12,STAR BROSE,禾道威,A Atzeni,艾兆禮,121,1216,9,D A Hayes,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,28,1,ISG,44,899,4
-12,2025/10/19,13,DOUBLE WIN,雙贏,K C Leung,梁家俊,120,1140,3,K L Man,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,18,1,PPG,43,1595,6
-13,2025/10/19,14,FIREFOOT,風起雲湧,H Bentley,班德禮,120,1159,6,W Y So,10,Class 4,1800,Sha Tin,"Turf, ""C+3"" Course",Good,13:45,18,3,PPG,43,1339,5
+0,2025/10/26,1,DO YOUR PART,做好自己,E C W Wong,黃智弘 (-5),134,1037,4,K W Lui,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,25,2,PP,60,1178,5
+1,2025/10/26,2,AEROVOLANIC,友瑩亮,C Y Ho,何澤堯,133,1121,2,P C Ng,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,35,1,PPG,59,538,4
+2,2025/10/26,3,GOLDENTRONICMIGHTY,金創福威,M L Yeung,楊明綸,130,1296,7,J Richards,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,105,0,PPG,56,1214,5
+3,2025/10/26,4,CHEVAL VICTORIOUS,利不可擋,K De Melo,董明朗,128,1170,11,D J Whyte,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,113,0,PP,54,569,4
+4,2025/10/26,5,JUBILANT STAR,福聚,Z Purton,潘頓,128,1157,5,D J Hall,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,300,0,PPG,54,666,4
+5,2025/10/26,6,TOP PEAK,翹峯,K Teetan,田泰安,128,1202,1,B Crawford,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,140,0,PPG,54,1541,6
+6,2025/10/26,7,DUKE OF ORANGE,韋少寶,H Bowman,布文,126,1044,12,C H Yip,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,300,0,PPG,52,625,4
+7,2025/10/26,8,FLYING BOOM,勤德天下,M F Poon,潘明輝,126,1115,13,C W Chang,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,300,0,PPG,52,631,4
+8,2025/10/26,9,NYX GLUCK,嵐臣,C L Chau,周俊樂 (-2),126,1138,9,W K Mo,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,25,1,PPG,52,693,4
+9,2025/10/26,10,ONE LOVE,心愛的,J Orman,奧爾民,126,1115,3,J Size,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,300,0,PPG,52,694,4
+10,2025/10/26,11,WINNING NOW,勝在當下,A Badel,巴度,126,1094,14,F C Lor,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,300,0,PPG,52,745,4
+11,2025/10/26,12,MASTER OF HUMOR,幽默大師,Y L Chung,鍾易禮 (-2),123,1095,8,A S Cruz,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,126,0,PPG,49,817,4
+12,2025/10/26,13,SUNNY Q,新力驕,A Atzeni,艾兆禮,122,1155,6,W Y So,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,25,2,PPG,48,1291,5
+13,2025/10/26,14,RUBY SAILING,紅海風帆,P N Wong,黃寶妮 (-7),120,1165,10,K L Man,10,Class 4,1200,Sha Tin,"Turf, ""A"" Course",Good,13:45,22,2,PPG,46,1306,5

@@ -15,7 +15,7 @@ else:
     race_no = input("Total Races: ")
 
 race_no = int(race_no)
-horse_last_race = pd.read_csv('../racecard/horse_last_racedate.csv')
+horse_last_race = pd.read_csv('../racecard/data/horse_last_racedate.csv')
 cur_raceColumn = ['Racedate','HorseNo','HorseName','HorseName_cn','Jockey','Jockey_cn','ActWeight','HorseWeight','Draw','Trainer','Total','Class','Distance','Venue','Course','Going','RaceTime','RestDays','Freq','Gear','HorseScore']
 
 for rn in range(1, race_no + 1):

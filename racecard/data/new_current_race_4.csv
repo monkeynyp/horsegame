@@ -1,15 +1,15 @@
 Unnamed: 0_x,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore,Unnamed: 0_y,Age
-0,2025/10/19,1,FUN TOGETHER,時尚歡欣,C L Chau,周俊樂 (-2),135,1149,3,C W Chang,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,15,1,PPG,60,1708,7
-1,2025/10/19,2,WE CAN PARTY,令狐沖,E C W Wong,黃智弘 (-5),135,1190,7,D Eustace,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,21,1,PP,60,1518,6
-2,2025/10/19,3,RAGING RAPIDS,精算激流,B Avdulla,艾道拿,128,1231,12,J Size,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,18,2,PPG,53,1241,5
-3,2025/10/19,4,SUPER LOVE,戀愛狂,H Bowman,布文,127,1129,11,C H Yip,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,15,1,PPG,52,1253,5
-4,2025/10/19,5,CALIFORNIA MOXIE,加州活力,Y L Chung,鍾易禮 (-2),126,1158,2,A S Cruz,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,98,0,PPG,51,755,4
-5,2025/10/19,6,THE GOLDEN KNIGHT,黃金騎士,C Y Ho,何澤堯,125,1167,5,K W Lui,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,98,0,PPG,50,799,4
-6,2025/10/19,7,RUN RUN SMART,自動自覺,A Badel,巴度,124,1112,8,F C Lor,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,21,2,PP,49,228,3
-7,2025/10/19,8,THE AUSPICIOUS,豐辰,J Orman,奧爾民,124,1124,9,Y S Tsui,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,21,2,PPG,49,819,4
-8,2025/10/19,9,AUTUMN VIBES,金風萬里,Z Purton,潘頓,123,1179,13,J Richards,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,18,1,PPG,48,823,4
-9,2025/10/19,10,LUCKY MAN,文明福星,D Probert,潘大衛,122,1115,14,D A Hayes,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,18,2,PPG,47,1302,5
-10,2025/10/19,11,CARRYON SMILING,始終如一,R Kingscote,金誠剛,120,1090,10,W Y So,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,42,1,PPG,45,1309,5
-11,2025/10/19,12,ROMANTIC PARTY,浪漫喜宴,H T Mo,巫顯東 (-2),120,1239,1,P F Yiu,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,21,2,PPG,45,882,4
-12,2025/10/19,13,BLAZING BEAM,前衛火影,K Teetan,田泰安,119,1090,4,K H Ting,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,154,0,PPG,44,891,4
-13,2025/10/19,14,RATTAN GALAXY,籐王駒,M F Poon,潘明輝,117,1067,6,K L Man,10,Class 4,1400,Sha Tin,"Turf, ""C+3"" Course",Good,14:15,28,1,PPG,42,925,4
+0,2025/10/26,1,SUPREME MASTERMIND,智多多寶,M L Yeung,楊明綸,135,1097,1,D A Hayes,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,28,2,PP,59,547,4
+1,2025/10/26,2,THE HEIR,星運少爵,C Y Ho,何澤堯,131,1171,3,C Fownes,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,35,2,PP,55,1534,6
+2,2025/10/26,3,GOOD GOOD,小飛俠,B Avdulla,艾道拿,130,1151,11,J Size,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,35,1,PPG,54,1230,5
+3,2025/10/26,4,BRIGHT INHERITANCE,光明傳承,L Ferraris,霍宏聲,128,1121,2,C H Yip,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,35,1,PP,52,1549,6
+4,2025/10/26,5,PEARL OF PANG'S,彭玥,K C Leung,梁家俊,128,1217,5,K L Man,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,35,1,PPG,52,1251,5
+5,2025/10/26,6,SPLENDID FORCE,揚威四海,D Probert,潘大衛,128,1073,4,D J Whyte,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,300,0,PPG,52,729,4
+6,2025/10/26,7,ABSOLUTE AWAKENED,活力精神,A Badel,巴度,126,1077,7,F C Lor,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,22,2,PPG,50,1266,5
+7,2025/10/26,8,BULL ATTITUDE,林寶精神,A Atzeni,艾兆禮,126,1070,10,M Newnham,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,35,2,PPG,50,905,4
+8,2025/10/26,9,INNO SUPER,創科群英,C L Chau,周俊樂 (-2),126,1141,14,D Eustace,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,35,1,PPG,50,813,4
+9,2025/10/26,10,SERANGOON,八駿笑昇,Z Purton,潘頓,126,1139,6,A S Cruz,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,120,0,PP,50,1570,6
+10,2025/10/26,11,SOARING BRONCO,神駒馬靈,K Teetan,田泰安,119,1109,13,P C Ng,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,18,2,PPG,43,1342,5
+11,2025/10/26,12,TIME TO FIRE,長峰小子,M F Poon,潘明輝,119,1092,12,D J Hall,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,28,1,PPG,43,886,4
+12,2025/10/26,13,JOLLY JUMPER,肥仔精神,H Bentley,班德禮,118,1157,8,W K Mo,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,28,1,PPG,42,919,4
+13,2025/10/26,14,ROSEWOOD FLEETFOOT,捷足奔馳,M Chadwick,蔡明紹,117,1142,9,J Richards,10,Class 4,1600,Sha Tin,"Turf, ""A"" Course",Good,14:15,35,1,PPG,41,1353,5

@@ -1,13 +1,15 @@
 Unnamed: 0_x,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore,Unnamed: 0_y,Age
-0,2025/10/19,1,CHATEAUNEUF,飲杯,H Bowman,布文,135,1229,5,D A Hayes,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,15,1,PPG,80,1038,5
-1,2025/10/19,2,PATCH OF STARS,錶之星河,Z Purton,潘頓,134,1179,1,K L Man,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,42,1,PPG,79,302,4
-2,2025/10/19,3,SAVVY BRILLIANT,耀寶,A Atzeni,艾兆禮,132,1135,8,F C Lor,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,110,0,PP,77,1054,5
-3,2025/10/19,4,INFINITE RESOLVE,晒冷,L Ferraris,霍宏聲,128,1092,2,M Newnham,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,15,2,PP,73,326,4
-4,2025/10/19,5,STAR RISE,久久為昇,M F Poon,潘明輝,127,1038,4,D J Hall,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,21,1,PP,72,341,4
-5,2025/10/19,6,SKY JOY,天賜喜,C L Chau,周俊樂 (-2),122,1184,10,P F Yiu,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,273,0,PPG,67,387,4
-6,2025/10/19,7,WOLF COMING,狼來了,R Kingscote,金誠剛,121,1133,11,C S Shum,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,165,0,PP,66,38,3
-7,2025/10/19,8,ALL TOO BRAVE,見義勇為,A Badel,巴度,120,1117,6,J Richards,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,300,0,PP,65,405,4
-8,2025/10/19,9,STAR SATYR,久久為軍,Y L Chung,鍾易禮 (-2),120,1109,7,A S Cruz,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,15,2,PP,65,434,4
-9,2025/10/19,10,COPARTNER FLEET,合夥飛馳,K Teetan,田泰安,117,1090,12,K W Lui,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,21,1,PPG,62,497,4
-10,2025/10/19,11,LIGHT YEARS GLORY,光年程祥,M Chadwick,蔡明紹,117,1150,3,W K Mo,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,21,1,PPG,62,56,3
-11,2025/10/19,12,HEALTHY HEALTHY,添開心,H Bentley,班德禮,116,1189,9,P C Ng,10,Class 3,1200,Sha Tin,"Turf, ""C+3"" Course",Good,16:45,15,2,PPG,61,1510,6
+0,2025/10/26,1,HELIOS EXPRESS,驕陽明駒,H Bowman,布文,135,1116,2,J Size,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,148,0,PP,122,1427,6
+1,2025/10/26,2,BEAUTY WAVES,美麗第一,M Chadwick,蔡明紹,127,1198,10,A S Cruz,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,25,2,PP,114,981,5
+2,2025/10/26,3,LUCKY WITH YOU,幸運有您,L Ferraris,霍宏聲,127,1213,4,F C Lor,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,49,1,PPG,114,1749,8
+3,2025/10/26,4,FAST NETWORK,舉步生風,A Badel,巴度,124,1174,12,C H Yip,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,25,2,PPG,111,985,5
+4,2025/10/26,5,PACKING HERMOD,包裝天將,Z Purton,潘頓,121,1109,8,K W Lui,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,28,1,PPG,108,989,5
+5,2025/10/26,6,RAGING BLIZZARD,精算暴雪,B Avdulla,艾道拿,121,1106,7,J Size,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,25,2,PPG,108,1435,6
+6,2025/10/26,7,INVINCIBLE SAGE,賢者無敵,M F Poon,潘明輝,120,1102,14,D J Hall,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,25,1,PP,107,1437,6
+7,2025/10/26,8,WUNDERBAR,氣勢,A Atzeni,艾兆禮,118,1211,11,J Size,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,25,1,PPG,105,993,5
+8,2025/10/26,9,DIVANO,開心寶寶,Y L Chung,鍾易禮,117,1135,1,K W Lui,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,28,2,PPG,104,995,5
+9,2025/10/26,10,MAGIC CONTROL,魔術控制,K C Leung,梁家俊,116,1063,6,W K Mo,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,25,2,PP,103,997,5
+10,2025/10/26,11,BOTTOMUPTOGETHER,天天同樂,E C W Wong,黃智弘,115,1052,3,F C Lor,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,25,2,PPG,101,999,5
+11,2025/10/26,12,MUGEN,綠族無限,K Teetan,田泰安,115,1099,9,P C Ng,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,126,0,PP,100,1667,7
+12,2025/10/26,13,TOMODACHI KOKOROE,好友心得,H Bentley,班德禮,115,1221,5,D A Hayes,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,28,1,PP,100,1668,7
+13,2025/10/26,14,INVINCIBLE SHIELD,笑傲江湖,M L Yeung,楊明綸,115,1191,13,K W Lui,10,Group Two,1200,Sha Tin,"Turf, ""A"" Course",Good,16:45,140,0,PP,94,1005,5

@@ -1,15 +1,15 @@
 Unnamed: 0_x,Racedate,HorseNo,HorseName,HorseName_cn,Jockey,Jockey_cn,ActWeight,HorseWeight,Draw,Trainer,Total,Class,Distance,Venue,Course,Going,RaceTime,RestDays,Freq,Gear,HorseScore,Unnamed: 0_y,Age
-0,2025/10/19,1,BRILLIANT EXPRESS,神馳,H Bowman,布文,135,1149,5,J Size,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,21,1,PPG,80,1037,5
-1,2025/10/19,2,FLYING FORTRESS,非凡豪傑,H Bentley,班德禮,130,1034,4,W K Mo,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,21,1,PP,75,1063,5
-2,2025/10/19,3,EVERYONE'S STAR,大眾福星,Z Purton,潘頓,127,1096,10,F C Lor,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,141,0,PP,72,1074,5
-3,2025/10/19,4,GRACIOUS EXPRESS,駿奕快車,M F Poon,潘明輝,127,1142,14,P F Yiu,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,11,1,PP,72,1075,5
-4,2025/10/19,5,HAROLD WIN,哈羅威,C L Chau,周俊樂 (-2),124,1122,2,K W Lui,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,18,2,PPG,69,1095,5
-5,2025/10/19,6,MASK RIDER,假面騎士,M Chadwick,蔡明紹,124,1130,3,W Y So,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,35,1,PP,69,1098,5
-6,2025/10/19,7,GHORGAN,確好勁,K C Leung,梁家俊,123,1094,9,K L Man,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,21,1,PP,68,365,4
-7,2025/10/19,8,NEARLY FINE,寶賢得得,C Y Ho,何澤堯,122,1136,12,C Fownes,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,312,0,PP,67,1759,8
-8,2025/10/19,9,OUTGATE,亞機拉,Y L Chung,鍾易禮 (-2),122,1066,13,A S Cruz,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,18,2,PP,67,1493,6
-9,2025/10/19,10,RIDING TOGETHER,同心同樂,A Atzeni,艾兆禮,119,1161,8,D Eustace,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,98,0,PP,64,478,4
-10,2025/10/19,11,SMART AVENUE,榮駿大道,K Teetan,田泰安,119,1092,6,C H Yip,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,110,0,PP,64,481,4
-11,2025/10/19,12,STAR MAC,久久為尊,R Kingscote,金誠剛,118,1210,7,D A Hayes,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,102,0,PP,63,1503,6
-12,2025/10/19,13,KINGDOM OF RICHES,龍之邦,M L Yeung,楊明綸,117,1184,1,C S Shum,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,28,2,PP,62,499,4
-13,2025/10/19,14,THOUSAND SPIRIT,千杯不醉,L Hewitson,希威森,116,1025,11,M Newnham,10,Class 3,1400,Sha Tin,"Turf, ""C+3"" Course",Good,17:20,28,1,PP,61,525,4
+0,2025/10/26,1,WONDERSTAR,手到齊來,M Chadwick,蔡明紹,133,1253,2,Y S Tsui,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,22,3,PP,74,1478,6
+1,2025/10/26,2,FAST RESPONDER,會長之寶,H Bowman,布文,132,1075,8,D J Whyte,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,22,2,PP,73,323,4
+2,2025/10/26,3,METRO POWER,精彩福星,Z Purton,潘頓,132,1119,3,D A Hayes,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,22,2,PP,73,327,4
+3,2025/10/26,4,CASA OF HONOR,領航君子,M F Poon,潘明輝,128,1196,6,C W Chang,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,22,1,PP,69,1091,5
+4,2025/10/26,5,SUNNY DA BEST,新力好,L Ferraris,霍宏聲,127,1175,1,W Y So,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,117,0,PPG,68,1110,5
+5,2025/10/26,6,HOLMES A COURT,風火猴王,Y L Chung,鍾易禮 (-2),125,1162,14,A S Cruz,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,25,1,PP,66,391,4
+6,2025/10/26,7,STORMY GROVE,紫荊盛勢,H Bentley,班德禮,125,1207,5,F C Lor,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,300,0,PP,66,402,4
+7,2025/10/26,8,ACE CHAMPION,長勝隊長,K C Leung,梁家俊,124,1004,12,P C Ng,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,117,0,PP,65,39,3
+8,2025/10/26,9,CHILL BUDDY,超寫意,A Atzeni,艾兆禮,124,1182,7,P F Yiu,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,22,1,PP,65,410,4
+9,2025/10/26,10,ALPHA STRIKE,星運傳奇,C Y Ho,何澤堯,123,1242,9,C Fownes,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,300,0,PP,64,441,4
+10,2025/10/26,11,ALSONSO,展雄威,B Avdulla,艾道拿,122,1179,10,M Newnham,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,42,1,PP,63,1155,5
+11,2025/10/26,12,SUPERB KING,巴閉王,K De Melo,董明朗,122,1039,4,K W Lui,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,22,1,PP,63,494,4
+12,2025/10/26,13,QUICK MONEY,不勞而獲,K Teetan,田泰安,121,1097,13,C H Yip,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,22,1,PPG,62,58,3
+13,2025/10/26,14,SPARKLING FELLOW,飛來閃耀,A Badel,巴度,120,1134,11,D J Hall,10,Class 3,1000,Sha Tin,"Turf, ""A"" Course",Good,17:20,140,0,PP,61,1173,5

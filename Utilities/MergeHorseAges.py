@@ -4,8 +4,8 @@ import pandas as pd
 
 # Read in the CSV files
 
-curr_hist_df = pd.read_csv('curr_hist_df_m_3.csv')
-horse_ages = pd.read_csv('../racecard/horse_ages202509.csv')
+curr_hist_df = pd.read_csv('../racecard/data/curr_hist_df_m_3.csv')
+horse_ages = pd.read_csv('../racecard/data/horse_ages202509.csv')
 
 for i in range(1, 12):
     # Read in the current race CSV file
