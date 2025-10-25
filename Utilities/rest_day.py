@@ -31,7 +31,7 @@ df = df.sort_values(by=['RaceDate', 'RaceNo', 'Place'])
 # Replace NA values in the 'Place' column with 99
 df['Place'] = df['Place'].fillna(99)
 
-df.to_csv('../racecard/curr_hist_df_m_3.csv', index=False)
+df.to_csv('../racecard/data/curr_hist_df_m_3.csv', index=False)
 
 # Select the required columns for display
 # Get the latest race date for each horse
