@@ -60,7 +60,9 @@ urlpatterns = [
     path('stock_info/', views.stock_info, name='stock_info'),
     path('racecard/', views.racecard_old),
     path('portal/', views.portal_old),
+    path('marksix_stat/', views.marksix_stat, name='marksix_stat'),
  
+
     # Other URL patterns
     
 

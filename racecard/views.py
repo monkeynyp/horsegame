@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect, get_object_or_404
 import pandas as pd
 import os,json,math,random,time
+from collections import Counter
 import requests
 from django.db import models
 from django.conf import settings
@@ -26,7 +27,7 @@ from .models import RaceComment
 from .forms import RaceCommentForm
 
 
-## Horse Raching Features Create your views here.
+## Horse Racing Features Create your views here.
 def racecard_old(request):
     race_id = request.GET.get('id')
     if race_id:
@@ -187,9 +188,9 @@ def submit_tips(request):
         # Now you can work with horse_name and jockey_name separately
             print(f"Horse: {horse_name}, Jockey: {jockey_name}, trainer: {trainer_name}")
         # Assuming you have a user identifier, replace 'user_id' with the actual field name
-        user_id = request.user  # Replace with the actual user ID
-        race_date = request.POST['race_date'].replace('/', '-')
-        race_no = request.POST['race_no']
+            user_id = request.user  # Replace with the actual user ID
+            race_date = request.POST['race_date'].replace('/', '-')
+            race_no = request.POST['race_no']
 
         if not UserScores.objects.filter(user=user_id).exists():
             # If not, create a new UserScores record with default values
@@ -914,7 +915,10 @@ def find_occurrences_and_next_numbers(history, target_sequence,id):
 
 def lotto_must_win(request, id):
 
-    largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
+    largest_draw = Marksix_hist.objects.aggregate(models.Max('Draw'))['Draw__max']
+    print("largest_draw:",largest_draw)
+    # Now 'largest_draw' contains the largest value from the 'Draw' column
+    # (e.g., '24/071')
 
     # Next, remove the '/' character and convert it to an integer
     draw_without_slash = largest_draw.replace('/', '')
@@ -1175,8 +1179,6 @@ def view_comments(request, race_id):
         comments = RaceComment.objects.filter(race_id=race_id).order_by('-created_at')
     return render(request, 'view_comments.html', {'comments': comments, 'race_id': race_id})
 
-
-
 def stock_info(request):
     selected_language = translation.get_language()
     stocks = StockInfo.objects.filter(language=selected_language).order_by('-created_at')
@@ -1193,4 +1195,86 @@ def add_stock_info(request):
     else:
         form = StockInfoForm()
     return render(request, 'add_stock_info.html', {'form': form})
+
+def marksix_stat(request):
+    """
+    Show top 10 numbers occurred in last N draws (N from GET param 'n', default 100).
+    Also pass the last N records for display (most recent first).
+    """
+    try:
+        n = int(request.GET.get('n', 100))
+    except (ValueError, TypeError):
+        n = 100
+    # sane limits
+    n = max(1, min(n, 2000))
+
+    qs = Marksix_hist.objects.order_by('-Date')[:n]
+    records = list(qs)  # most recent first
+
+    # count occurrences across No1..No7
+    counter = Counter()
+    for rec in records:
+        for field in ('No1','No2','No3','No4','No5','No6','No7'):
+            val = getattr(rec, field, None)
+            if val is None:
+                continue
+            try:
+                num = int(val)
+            except Exception:
+                continue
+            counter[num] += 1
+
+    # Ensure we account for all numbers 1..49 (zero occurrences included)
+    all_counts = {i: counter.get(i, 0) for i in range(1, 50)}
+    # Hot: top 10 numbers by frequency (descending)
+    top10 = sorted(all_counts.items(), key=lambda x: x[1], reverse=True)[:10]
+    hot_labels = [str(item[0]) for item in top10]
+    hot_values = [item[1] for item in top10]
+    # Cold: bottom 10 numbers by frequency (ascending)
+    least10 = sorted(all_counts.items(), key=lambda x: x[1])[:10]
+    cold_labels = [str(item[0]) for item in least10]
+    cold_values = [item[1] for item in least10]
+
+    # --- New: count consecutive-number pairs within each draw ---
+    pair_counter = Counter()
+    for rec in records:
+        # collect numbers in this draw, ignore None/non-int
+        nums = []
+        for field in ('No1','No2','No3','No4','No5','No6','No7'):
+            v = getattr(rec, field, None)
+            try:
+                if v is not None:
+                    nums.append(int(v))
+            except Exception:
+                continue
+        if not nums:
+            continue
+        nums_sorted = sorted(set(nums))
+        # detect adjacent consecutive pairs (ascending)
+        for i in range(len(nums_sorted)-1):
+            a = nums_sorted[i]
+            b = nums_sorted[i+1]
+            if b == a + 1:
+                pair_label = f"{a}-{b}"
+                pair_counter[pair_label] += 1
+
+    top_pairs = pair_counter.most_common(5)
+    pair_labels = [item[0] for item in top_pairs]
+    pair_values = [item[1] for item in top_pairs]
+    # fallback to empty lists if none
+    if not pair_labels:
+        pair_labels = []
+        pair_values = []
+
+    context = {
+        'records': records,
+        'n': n,
+        'top_labels_json': json.dumps(hot_labels),
+        'top_values_json': json.dumps(hot_values),
+        'cold_labels_json': json.dumps(cold_labels),
+        'cold_values_json': json.dumps(cold_values),
+        'pair_labels_json': json.dumps(pair_labels),
+        'pair_values_json': json.dumps(pair_values),
+    }
+    return render(request, 'marksix_stat.html', context)
 

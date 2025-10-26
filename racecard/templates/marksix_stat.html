@@ -1,0 +1,184 @@
+{% extends "master.html" %}
+{% load i18n %}
+{% block title %}Mark Six - Latest Results{% endblock %}
+
+{% block content %}
+<div class="w3-container w3-padding-32">
+  <h2 class="w3-center">Mark Six — 中獎號碼統計</h2>
+
+  <!-- Input: number of past draws -->
+  <div class="w3-center w3-margin-bottom" style="max-width:600px;margin:auto;">
+    <form method="get" class="w3-inline">
+      <label for="id_n">顯示最近</label>
+      <input class="w3-input w3-border" id="id_n" name="n" type="number" min="1" max="2000" value="{{ n }}" style="width:120px; display:inline-block; margin-left:8px;">
+      <span style="margin-left:8px;">期</span>
+      <button class="w3-button w3-blue w3-round" type="submit" style="margin-left:12px;">更新</button>
+    </form>
+  </div>
+
+  <!-- Two charts side-by-side -->
+  <div class="w3-card w3-margin w3-padding" style="max-width:1100px;margin:auto;">
+    <div style="display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap;">
+      <div style="flex:1 1 480px; min-width:300px;">
+        <h3 style="text-align:center; margin:6px 0;">Hot Number</h3>
+        <div style="text-align:center; font-weight:600; color:#d32f2f; margin-bottom:6px;">熱門號碼</div>
+        <div class="chart-wrapper" style="height:320px; max-height:420px;">
+          <canvas id="hotChart" class="chart-canvas" style="width:100%; height:100%;"></canvas>
+        </div>
+      </div>
+      <div style="flex:1 1 480px; min-width:300px;">
+        <h3 style="text-align:center; margin:6px 0;">Cold Number</h3>
+        <div style="text-align:center; font-weight:600; color:#1976d2; margin-bottom:6px;">冷門號碼</div>
+        <div class="chart-wrapper" style="height:320px; max-height:420px;">
+          <canvas id="coldChart" class="chart-canvas" style="width:100%; height:100%;"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- New: Pie chart for top-5 consecutive pairs -->
+    <div style="margin-top:18px; display:flex; justify-content:center;">
+      <div style="width:480px; max-width:90%;">
+        <h3 style="text-align:center; margin:6px 0;">Top 5 Consecutive Pairs</h3>
+        <div style="text-align:center; font-weight:600; margin-bottom:6px;">最常見連號（前5）</div>
+        <div class="chart-wrapper" style="height:360px; max-height:420px;">
+          <canvas id="pairPieChart" class="chart-canvas" style="width:100%; height:100%;"></canvas>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Table of draws (most recent first) -->
+  <div class="w3-card w3-margin w3-padding" style="max-width:1100px;margin:auto;">
+    <h4 class="w3-margin-top">最近 {{ records|length }} 期開獎（最新在前）</h4>
+    <table class="w3-table-all w3-striped w3-hoverable w3-small">
+      <thead>
+        <tr class="w3-light-grey">
+          <th>期號</th>
+          <th>開獎日期</th>
+          <th>No1</th>
+          <th>No2</th>
+          <th>No3</th>
+          <th>No4</th>
+          <th>No5</th>
+          <th>No6</th>
+          <th>特別號</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for rec in records %}
+        <tr>
+          <td>{{ rec.Draw }}</td>
+          <td>{{ rec.Date }}</td>
+          <td>{{ rec.No1 }}</td>
+          <td>{{ rec.No2 }}</td>
+          <td>{{ rec.No3 }}</td>
+          <td>{{ rec.No4 }}</td>
+          <td>{{ rec.No5 }}</td>
+          <td>{{ rec.No6 }}</td>
+          <td>{{ rec.No7 }}</td>
+        </tr>
+        {% empty %}
+        <tr><td colspan="9" class="w3-center">沒有找到記錄。</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  // hot and cold data injected from view (use default [] to avoid errors)
+  const hotLabels = {{ top_labels_json|default:"[]"|safe }};
+  const hotValues = {{ top_values_json|default:"[]"|safe }};
+  const coldLabels = {{ cold_labels_json|default:"[]"|safe }};
+  const coldValues = {{ cold_values_json|default:"[]"|safe }};
+  const pairLabels = {{ pair_labels_json|default:"[]"|safe }};
+  const pairValues = {{ pair_values_json|default:"[]"|safe }};
+
+  // Helper to create a responsive chart only when there is data
+  function createBarChart(canvasId, labels, data, bgColor, borderColor, title) {
+    if (!Array.isArray(labels) || labels.length === 0 || !Array.isArray(data) || data.length === 0) {
+      // Hide canvas container and show a simple message
+      const canvas = document.getElementById(canvasId);
+      if (canvas && canvas.parentElement) {
+        canvas.parentElement.innerHTML = '<p class="w3-center" style="padding:40px 0; margin:0;">無資料顯示</p>';
+      }
+      return;
+    }
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    return new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: '出現次數',
+          data: data,
+          backgroundColor: bgColor,
+          borderColor: borderColor,
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        layout: { padding: 8 },
+        scales: { y: { beginAtZero: true, ticks: { precision:0 } } },
+        plugins: { legend: { display: false }, title: { display: false }, tooltip: { mode: 'index', intersect: false } }
+      }
+    });
+  }
+ 
+  // Create charts safely
+  createBarChart('hotChart', hotLabels, hotValues, 'rgba(244,67,54,0.85)', 'rgba(211,47,47,1)', 'Hot Number');
+  createBarChart('coldChart', coldLabels, coldValues, 'rgba(33,150,243,0.85)', 'rgba(25,118,210,1)', 'Cold Number');
+
+  // Create Pie chart for consecutive pairs
+  function createPieChart(canvasId, labels, data, palette) {
+    if (!Array.isArray(labels) || labels.length === 0 || !Array.isArray(data) || data.length === 0) {
+      const canvas = document.getElementById(canvasId);
+      if (canvas && canvas.parentElement) {
+        canvas.parentElement.innerHTML = '<p class="w3-center" style="padding:40px 0; margin:0;">沒有連號資料可顯示</p>';
+      }
+      return;
+    }
+    const ctx = document.getElementById(canvasId).getContext('2d');
+    // build colors array from palette or fallback
+    const bg = palette && palette.length >= labels.length ? palette.slice(0, labels.length) :
+        labels.map((_, i) => `hsl(${(i * 72) % 360} 70% 55%)`);
+    return new Chart(ctx, {
+      type: 'pie',
+      data: {
+        labels: labels,
+        datasets: [{
+          data: data,
+          backgroundColor: bg,
+          borderColor: '#ffffff',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: {
+          legend: { position: 'right' },
+          tooltip: { callbacks: { label: function(context) { return context.label + '：' + context.parsed + ' 次'; } } }
+        }
+      }
+    });
+  }
+
+  // palette for slices (distinct colors)
+  const pairPalette = [
+    'rgba(244,67,54,0.9)',
+    'rgba(33,150,243,0.9)',
+    'rgba(76,175,80,0.9)',
+    'rgba(255,193,7,0.9)',
+    'rgba(156,39,176,0.9)'
+  ];
+  createPieChart('pairPieChart', pairLabels, pairValues, pairPalette);
+</script>
+
+
+{% endblock %}
