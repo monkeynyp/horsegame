@@ -41,8 +41,10 @@ for race_date in raceDates:
                 tds = tr.find_all('td')
                 if tds:
                     # Class (e.g. "Class 5 - 1800M - (40-0)")
-                    if "Class" in tds[0].text:
-                        raceClass = tds[0].text.strip()  # "Class 5"
+                    text = tds[0].text.strip()
+                    if "Class" in text or "Group" in text:
+                        raceClass = text
+
                     # Going (e.g. "GOOD TO FIRM")
                     if "Going" in tds[1].text:
                         raceGoing = tds[2].text.strip()
