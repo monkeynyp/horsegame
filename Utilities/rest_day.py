@@ -5,7 +5,7 @@ from datetime import datetime
 df = pd.read_csv('../racecard/data/curr_hist_df_m_2.csv')
 
 # Convert the RaceDate column to datetime, handling multiple formats
-df['RaceDate'] = pd.to_datetime(df['RaceDate'], format='mixed', dayfirst=False)
+df['RaceDate'] = pd.to_datetime(df['RaceDate'], infer_datetime_format=True, errors='coerce')
 # Convert the Place column to integer
 try:
     df['Place'] = df['Place'].astype(int)
