@@ -164,10 +164,16 @@ def calculate_days_difference(record_date):
 
 def marksix_predict(id='1'):
     """
-    Predict next number for No1..No7 using KNN on historical series and
-    save the predicted 7-number record to Marksix_user_rec with User='Chart'.
+    Predict next number for No1..No7 using sliding-window KNN (window=5)
+    and save the predicted 7-number record to Marksix_user_rec with User='Chart'.
+    Returns the created/updated Marksix_user_rec instance.
     """
-    list_ids = []
+    import math
+    from sklearn.neighbors import KNeighborsRegressor
+    from django.contrib.auth import get_user_model
+    from django.utils import timezone
+    from django.db.models import Max
+
     # Determine next draw seed based on largest Draw value
     largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
     if not largest_draw:
@@ -179,69 +185,103 @@ def marksix_predict(id='1'):
         seed_no = int(draw_without_slash) + 1
     except ValueError:
         raise ValueError(f"Cannot parse largest_draw '{largest_draw}' to integer")
-    
+
     draw_string = str(seed_no).zfill(5)  # zero-pad if needed
     next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
 
     update_date = timezone.now().date()
 
     predicted_numbers = {}
-    # for No1..No7
+    used_numbers = set()
+    window = 5  # sliding window length
+
+    def clamp_and_fix(val):
+        """Ensure integer within 1..49 and return int."""
+        try:
+            iv = int(math.ceil(val))
+        except Exception:
+            iv = 1
+        if iv < 1:
+            iv = 1
+        if iv > 49:
+            iv = ((iv - 1) % 49) + 1
+        return iv
+
+    def find_nearest_available(start, used):
+        """Search outward from start for the nearest number in 1..49 not in used."""
+        start = int(start) if start is not None else 1
+        for offset in range(0, 50):
+            cand1 = start + offset
+            cand2 = start - offset
+            if 1 <= cand1 <= 49 and cand1 not in used:
+                return cand1
+            if 1 <= cand2 <= 49 and cand2 not in used:
+                return cand2
+        return 1
+
+    # For each No1..No7, build prediction
     for idx in range(1, 8):
-        listNo = f'No{idx}'
-        # fetch historical series ordered by Date ascending (oldest first)
+        listNo = f"No{idx}"
+
         qs = Marksix_hist.objects.order_by('Date').values_list(listNo, flat=True)
+        # Convert and remove None
         data_list = [int(x) for x in qs if x is not None]
 
-        def find_nearest_available(start, used):
-            # search outward from start for the nearest number in 1..49 not in used
-            for offset in range(0, 50):
-                cand1 = start + offset
-                cand2 = start - offset
-                if 1 <= cand1 <= 49 and cand1 not in used:
-                    return cand1
-                if 1 <= cand2 <= 49 and cand2 not in used:
-                    return cand2
-            return None
+        predicted = None
 
-        # Need at least 4 data points to use KNN with n_neighbors=3
-        if len(data_list) < 4:
-            # fallback: pick most recent value
-            predicted = data_list[-1] if data_list else None
-            # if duplicate, pick nearest available
-            if predicted in predicted_numbers.values():
-                nearest = find_nearest_available(predicted or 1, set(predicted_numbers.values()))
-                predicted = nearest
+        # If insufficient data for sliding-window, fallback to most recent if exists
+        if len(data_list) <= window:
+            if data_list:
+                predicted = data_list[-1]
+            else:
+                predicted = 1  # fallback if totally empty
+
+            # ensure in range and unique
+            predicted = clamp_and_fix(predicted)
+            if predicted in used_numbers:
+                predicted = find_nearest_available(predicted, used_numbers)
+
         else:
-            predicted = None
-            # Try KNN with n_neighbors = 3 then 5 if duplication occurs
-            for n_neighbors in (3, 9):
+            # Build sliding-window X,y
+            X = []
+            y = []
+            for j in range(len(data_list) - window):
+                X.append(data_list[j:j + window])
+                y.append(data_list[j + window])
+
+            # Try KNN with neighbors 5 (as used in view). If fails, try 3 then 9
+            tried = False
+            for n_neighbors in (5, 3, 9):
                 try:
-                    # Prepare X and y
-                    X = [[x] for x in data_list[:-1]]
-                    y = data_list[1:]
                     knn = KNeighborsRegressor(n_neighbors=n_neighbors)
                     knn.fit(X, y)
-                    pred = knn.predict([[data_list[-1]]])[0]
-                    cand = int(math.ceil(pred))
-                    # clamp into valid range
-                    if cand < 1: cand = 1
-                    if cand > 49: cand = 49
-                    # accept if not duplicate
-                    if cand not in predicted_numbers.values():
+                    pred_val = knn.predict([data_list[-window:]])[0]
+                    cand = clamp_and_fix(pred_val)
+                    # If cand not used, accept
+                    if cand not in used_numbers:
                         predicted = cand
+                        tried = True
                         break
-                    # otherwise try next n_neighbors
+                    # else try next n_neighbors
                 except Exception:
-                    # on any KNN error, continue to next n_neighbors or fallback
+                    # skip and try next n_neighbors
                     continue
 
-            # If still duplicated or not predicted, pick nearest available
-            if predicted is None or predicted in predicted_numbers.values():
-                base = int(math.ceil(data_list[-1])) if data_list else 1
-                nearest = find_nearest_available(base, set(predicted_numbers.values()))
+            # If still not accepted, pick nearest available around last observed
+            if (predicted is None) or (predicted in used_numbers):
+                base = data_list[-1] if data_list else 1
+                base = clamp_and_fix(base)
+                nearest = find_nearest_available(base, used_numbers)
                 predicted = nearest
 
+        # ensure predicted integer and uniqueness with wrap-around increment
+        predicted = clamp_and_fix(predicted)
+        while predicted in used_numbers:
+            predicted += 1
+            if predicted > 49:
+                predicted = 1
+
+        used_numbers.add(predicted)
         predicted_numbers[listNo] = predicted
 
     # Build defaults to save; attempt to set fields No1..No7, User/Draw/Date
@@ -256,12 +296,14 @@ def marksix_predict(id='1'):
         'No6': predicted_numbers.get('No6'),
         'No7': predicted_numbers.get('No7'),
     }
+
     # Ensure we use a real User object for the ForeignKey. Create a system user "Chart" if missing.
     User = get_user_model()
     chart_user, created_user = User.objects.get_or_create(
         username='Chart',
         defaults={'email': 'chart@example.com', 'is_active': False}
     )
+
     # Determine next seq = last seq + 1 to satisfy NOT NULL constraint
     last_seq = Marksix_user_rec.objects.aggregate(max_seq=Max('seq'))['max_seq'] or 0
     defaults['seq'] = int(last_seq) + 1
@@ -272,5 +314,5 @@ def marksix_predict(id='1'):
         Draw=next_draw,
         defaults=defaults
     )
- 
+
     return lotto_rec

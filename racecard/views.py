@@ -679,63 +679,102 @@ def member(request):
      return render(request, 'member.html')
 
 def lottory_predict(request):
-    listNo='No1'
-    id = request.GET.get('id')
-    listNo = 'No'+id
+    import math
+    from sklearn.neighbors import KNeighborsRegressor
+
+    id = request.GET.get('id')  # which set to display (1-7)
+    listNo = 'No' + id
     current_datetime = timezone.now()
     largest_draw = Marksix_hist.objects.aggregate(largest_draw=models.Max('Draw'))['largest_draw']
-    form = NumberForm() 
-    # Now 'largest_draw' contains the largest value from the 'Draw' column
-    # (e.g., '24/071')
+    form = NumberForm()
 
-    # Next, remove the '/' character and convert it to an integer
+    # next_draw calculation (unchanged)
     draw_without_slash = largest_draw.replace('/', '')
-    
-    seed_no = int(draw_without_slash)+1
+    seed_no = int(draw_without_slash) + 1
     draw_string = str(seed_no)
-    #print("SeedNo:", seed_no)
-    # Insert the '/' character at the appropriate position
     next_draw = f"{draw_string[:2]}/{draw_string[2:]}"
 
-     # Retrieve the data from the Marksix_hist model, sorted by Date in descending order
-    data = Marksix_hist.objects.order_by('-Date').values_list(listNo, flat=True)
+    # containers for predictions and recent numbers per column
+    predicted_numbers_map = {}
+    recent_numbers_map = {}
+    used_numbers = set()
 
-    # Convert the queryset to a list
-    data_list = list(data)
-    data_list.reverse()
-    #print(data_list)
-    # Prepare the features (X) and target (y) for KNN
-    X = [[x] for x in data_list[:-1]]  # Features: all numbers except the last one
-    y = data_list[1:]  # Target: the next number for each feature
+    window = 5  # sliding window length
 
-    # Create and fit the KNN model
-    knn_model = KNeighborsRegressor(n_neighbors=3)
-    knn_model.fit(X, y)
+    # Loop through No1 to No7 and build predictions + recent numbers
+    for i in range(1, 8):  # 1..7 inclusive
+        col = f"No{i}"
 
-    # Predict the next number
-    next_number = math.ceil(knn_model.predict([[data_list[-1]]])[0])
-    print("Next_number:",next_number)
+        data_qs = Marksix_hist.objects.order_by('-Date').values_list(col, flat=True)
+        data_list = list(data_qs)
+        data_list.reverse()  # oldest -> newest
 
-    # Prepare data for the chart
-    labels = list(range(1, 21))  # Numbers 1 to 20 for the recent numbers
+        # Store recent numbers for this column (last 10, or fewer if not available)
+        recent_numbers_map[col] = data_list[-10:] if len(data_list) > 0 else []
+
+        # Default fallback if not enough data
+        if len(data_list) <= window:
+            # if no data at all, fallback to None or 0 — choose sensible default
+            predicted = data_list[-1] if data_list else 0
+        else:
+            X = []
+            y = []
+            for j in range(len(data_list) - window):
+                X.append(data_list[j:j+window])
+                y.append(data_list[j+window])
+
+            model = KNeighborsRegressor(n_neighbors=5)
+            model.fit(X, y)
+
+            last_window = data_list[-window:]
+            predicted = math.ceil(model.predict([last_window])[0])
+
+        # Ensure uniqueness across the 7 predicted numbers
+        # If predicted is invalid (0) or out of range, clamp into 1..49
+        if not isinstance(predicted, int) or predicted <= 0:
+            predicted = 1
+        if predicted > 49:
+            predicted = ((predicted - 1) % 49) + 1
+
+        # avoid duplicates by incrementing (wrap at 49 -> 1)
+        while predicted in used_numbers:
+            predicted += 1
+            if predicted > 49:
+                predicted = 1
+
+        used_numbers.add(predicted)
+        predicted_numbers_map[col] = predicted
+
+    # Select the requested prediction and recent numbers for the template
+    if listNo not in predicted_numbers_map:
+        # fallback if id missing or invalid (shouldn't normally happen)
+        next_number = None
+        recent_numbers = []
+    else:
+        next_number = predicted_numbers_map[listNo]
+        recent_numbers = recent_numbers_map.get(listNo, [])
+
+    print("Predicted Set:", predicted_numbers_map)
+    print("Next_number (requested):", next_number)
+
     labels = list(range(int(draw_string[2:]) - 10, int(draw_string[2:])))
-    labels.append('下期預測')  # Label for the next number
-    #predicted_numbers = knn_model.predict([[x] for x in range(1, 22)])
-    #print("predicted Number",predicted_numbers)
+    labels.append('下期預測')
+
     records = Marksix_user_rec.objects.filter(Draw=next_draw)
-    # Pass the results to the template
+
     context = {
-        'records':records,
+        'records': records,
         'next_draw': next_draw,
         'current_datetime': current_datetime,
-        'recent_numbers': data_list[-10:],
+        'recent_numbers': recent_numbers,   # now correct per No1..No7
         'next_number': next_number,
         'labels': json.dumps(labels),
-        #'predicted_numbers': json.dumps(predicted_numbers.tolist()),
-        'form':form,
+        'form': form,
     }
 
     return render(request, 'lottory.html', context)
+
+
 
 def ichi_lotto(request):
     current_datetime = timezone.now()

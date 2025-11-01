@@ -85,6 +85,7 @@ for i in range(1,int(no_of_race)+1):
 
 
 # Predict running result for each horse
+    print("new race:",new_race_data)
     new_race_data['PredictedResult'] = pipeline.predict(new_race_data)
     predictions = pipeline.predict(new_race_data)
 
