@@ -76,7 +76,7 @@ for i in range(1,int(no_of_race)+1):
     new_race_data['WeightRatio'] = (new_race_data['ActWeight'] / new_race_data['HorseWeight']).astype(float)
     new_race_data['Last10Races'] = new_race_data['Freq']
     
-    new_race_data['RaceMonth'] = 10
+    new_race_data['RaceMonth'] = 11
     new_race_data['Year'] = 2025
 # Encode new race data
     #encoded_new_race_data = encoder.transform(new_race_data[['HorseName','Jockey','Class','Distance']])

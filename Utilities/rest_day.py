@@ -1,10 +1,11 @@
 import pandas as pd
 from datetime import datetime
+import numpy as np
 
 # Read the CSV file
 df = pd.read_csv('../racecard/data/curr_hist_df_m_2.csv')
 
-# Convert the RaceDate column to datetime, handling multiple formats
+# Convert the RaceDate column to datetime, handling multiple formats (coerce invalid)
 df['RaceDate'] = pd.to_datetime(df['RaceDate'], infer_datetime_format=True, errors='coerce')
 # Convert the Place column to integer
 try:
@@ -20,8 +21,33 @@ df['RestDays'] = df.groupby('HorseName')['RaceDate'].diff().dt.days
 df['HasPreviousRace'] = df['RestDays'].notna().astype(int)
 df['RestDays'] = df['RestDays'].fillna(300)
 
-# Calculate the number of times each horse participated in the last 10 racing days
-df['Last10Races'] = df.groupby('HorseName').apply(lambda x: x.rolling(window='60D', on='RaceDate', min_periods=1)['RaceDate'].count()).reset_index(level=0, drop=True)-1
+# Calculate the number of times each horse participated in the last 60 days (excluding current race)
+# Use a robust per-group approach to avoid rolling() monotonic/NaT issues.
+def _count_last_60(group):
+    # work on a copy to avoid modifying original order
+    dates = group['RaceDate']
+    # sort dates and keep corresponding index order
+    sorted_idx = dates.sort_values().index
+    sorted_dates = dates.loc[sorted_idx].values.astype('datetime64[ns]')
+    n = len(sorted_dates)
+    counts = np.zeros(n, dtype=int)
+    for i in range(n):
+        d = sorted_dates[i]
+        if pd.isna(d):
+            counts[i] = 0
+            continue
+        start = d - np.timedelta64(60, 'D')
+        # count dates in [start, d] then subtract 1 to exclude current race
+        cnt = int(((sorted_dates >= start) & (sorted_dates <= d)).sum()) - 1
+        counts[i] = max(0, cnt)
+    # return Series indexed by the original index positions
+    return pd.Series(counts, index=sorted_idx)
+
+# Apply per-group and align back to original DataFrame index
+last10_series = df.groupby('HorseName', sort=False).apply(_count_last_60)
+# groupby.apply produced a Series with a MultiIndex (HorseName, original_index) — drop the first level
+last10_series = last10_series.reset_index(level=0, drop=True)
+df['Last10Races'] = last10_series.reindex(df.index).fillna(0).astype(int)
 
 # Sort the dataframe by the original order of the records in curr_hist_df_m_2.csv
 
