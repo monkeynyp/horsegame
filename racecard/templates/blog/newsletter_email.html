@@ -7,20 +7,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="background-color: #f1f1f1; font-family: Arial, sans-serif;">
-    <div style="max-width: 600px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <img src="https://www.monkeyforecast.com/static/monkeyLogo1.jpeg" alt="Monkey Icon" style="width:50px;height:50px; display: inline-block; vertical-align: middle; margin-right: 10px;">
-        <span style="font-size: 24px; vertical-align: middle;">Monkey 通訊</span>
-        <div class="w3-row">
-            <div class="w3-col m8">
-              <img src="{{ article.image.url }}" alt="Nature" class="fallback-image" onerror="this.onerror=null;this.src='{% static article.image  %}';" style="width:100%">
+<body style="background-color: #f1f1f1; font-family: Arial, sans-serif; color:#333;">
+    <div style="max-width: 700px; margin: 16px auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 6px 22px rgba(0,0,0,0.08);">
+        <!-- Header -->
+        <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
+            <img src="https://www.monkeyforecast.com/static/monkeyLogo1.jpeg" alt="Monkey Icon" style="width:56px;height:56px; border-radius:8px; object-fit:cover;">
+            <div>
+                <div style="font-size:20px; font-weight:700; color:#2c2c2c;">Monkey 通訊</div>
+                <div style="font-size:13px; color:#666;">AI 賽馬預測與最新消息</div>
             </div>
-        <h1 style="color: #333;">{{ subject }}</h1>
-        <div style="border-radius: 5px; border: 1px solid #ddd; padding: 15px;">
-            <p>{{ message|urlize|linebreaksbr }}</p>
-            <p>訪問網站: <a href="https://www.monkeyforecast.com" style="color: #007bff; text-decoration: none;">https://www.monkeyforecast.com</a></p>
-            <p> <a href="https://dolatiaschan.com/4/7649284" style="color: #007bff; text-decoration: none;">支持Monkey</a></p>
+        </div>
+
+        <!-- Article image -->
+        {% comment %} Choose image URL: prefer article.image.url; ensure absolute URL for email clients {% endcomment %}
+        {% if article and article.image %}
+            {% with img_url=article.image.url %}
+                {% if img_url|slice:":4" == "http" %}
+                    {% with final_img=img_url %}
+                {% else %}
+                    {% with final_img="https://www.monkeyforecast.com"|add:img_url %}
+                {% endif %}
+                    <div style="width:100%; max-height:360px; overflow:hidden; border-radius:8px; margin-bottom:14px;">
+                        <img src="{{ final_img }}" alt="{{ article.title|default:subject }}" style="width:100%; height:auto; display:block; object-fit:cover;">
+                    </div>
+                {% endwith %}
+            {% endwith %}
+        {% endif %}
+
+        <!-- Title and meta -->
+        <div style="padding: 6px 2px 16px 2px; border-bottom: 1px solid #eee; margin-bottom:14px;">
+            <h1 style="margin:0 0 8px 0; font-size:22px; color:#222; line-height:1.2;">
+                {% if article and article.title %}
+                    {{ article.title }}
+                {% else %}
+                    {{ subject }}
+                {% endif %}
+            </h1>
+            <div style="font-size:13px; color:#888;">
+                {% if article %}
+                    {% if article.author %} 作者：{{ article.author }} &nbsp;|&nbsp;{% endif %}
+                    發佈日期：{% if article.pub_date %}{{ article.pub_date|date:"Y-m-d" }}{% else %}{{ current_datetime|date:"Y-m-d" }}{% endif %}
+                {% else %}
+                    發佈日期：{{ current_datetime|date:"Y-m-d" }}
+                {% endif %}
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div style="font-size:15px; color:#333; line-height:1.6; padding: 6px 2px 18px 2px;">
+            {% if article and article.content %}
+                {{ article.content|linebreaksbr|safe }}
+            {% else %}
+                {{ message|urlize|linebreaksbr }}
+            {% endif %}
+        </div>
+
+        <!-- Call to action -->
+        <div style="text-align:center; margin-top:18px;">
+            {% if article and article.id %}
+                <a href="https://www.monkeyforecast.com/blog/?id={{ article.id }}" style="display:inline-block; background:#1976d2; color:#fff; padding:12px 22px; border-radius:28px; text-decoration:none; font-weight:600;">
+                    閱讀完整文章 &nbsp;→
+                </a>
+            {% else %}
+                <a href="https://www.monkeyforecast.com" style="display:inline-block; background:#1976d2; color:#fff; padding:12px 22px; border-radius:28px; text-decoration:none; font-weight:600;">
+                    訪問我們的網站 &nbsp;→
+                </a>
+            {% endif %}
+        </div>
+
+        <!-- Footer note -->
+        <div style="margin-top:18px; font-size:12px; color:#999; text-align:center;">
+            如果您不希望收到這類郵件，請登入帳戶停用郵件通知或聯絡我們。
         </div>
     </div>
 </body>
-{% endblock %} 
+{% endblock %}

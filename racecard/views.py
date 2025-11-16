@@ -3,6 +3,7 @@ import pandas as pd
 import os,json,math,random,time
 from collections import Counter
 import requests
+from bs4 import BeautifulSoup
 from django.db import models
 from django.conf import settings
 from django.utils.translation import gettext as _
@@ -25,6 +26,7 @@ from datetime import datetime, date
 from sklearn.neighbors import KNeighborsRegressor
 from .models import RaceComment
 from .forms import RaceCommentForm
+from django.views.decorators.http import require_GET
 
 
 ## Horse Racing Features Create your views here.
@@ -45,12 +47,12 @@ def racecard(request,race_id):
      current_datetime = timezone.now()
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
-     odds_path = os.path.join(settings.BASE_DIR, "racecard/data/race_odds_"+str(id)+".csv")
-     current_odds = pd.read_csv(odds_path)
-     creation_time = os.path.getctime(odds_path)
-     odds_time = time.strftime('%H:%M', time.localtime(creation_time))
-     current_race["Win"] = current_odds["win"]
-     current_race["Place"] = current_odds["place"]
+     #odds_path = os.path.join(settings.BASE_DIR, "racecard/data/race_odds_"+str(id)+".csv")
+     #current_odds = pd.read_csv(odds_path)
+     #creation_time = os.path.getctime(odds_path)
+     #odds_time = time.strftime('%H:%M', time.localtime(creation_time))
+     #current_race["Win"] = current_odds["win"]
+     #current_race["Place"] = current_odds["place"]
      curr_race_date=current_race['Racedate'].iloc[0].replace('/','-')
      dt_obj = datetime.strptime(curr_race_date, "%Y-%m-%d")
      timestamp = int(dt_obj.timestamp())+int(id)
@@ -161,7 +163,7 @@ def racecard(request,race_id):
 
         context = {
             'current_race': current_race,
-            'odds_time': odds_time,
+           # 'odds_time': odds_time,
             'total_race': total_race,
             'race_time': race_time,
             'current_datetime':current_datetime,
@@ -389,13 +391,13 @@ def racecard_vip(request):
      csv_path = os.path.join(settings.BASE_DIR, "racecard/data/current_race_"+str(id)+".csv")
      #prob_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_neu2_weight"+str(id)+".csv")
      prob_path = os.path.join(settings.BASE_DIR, "racecard/data/predict_race_ran"+str(id)+".csv")
-     odds_path = os.path.join(settings.BASE_DIR, "racecard/data/race_odds_"+str(id)+".csv")
+     #odds_path = os.path.join(settings.BASE_DIR, "racecard/data/race_odds_"+str(id)+".csv")
      current_race = pd.read_csv(csv_path)
      current_prob = pd.read_csv(prob_path)
-     current_odds = pd.read_csv(odds_path)
+     #current_odds = pd.read_csv(odds_path)
      current_race["Prob"] = current_prob['Score']*100
-     current_race["Win"] = current_odds["win"]
-     current_race["Place"] = current_odds["place"]
+     #current_race["Win"] = current_odds["win"]
+     #current_race["Place"] = current_odds["place"]
      def is_float(value):
         try:
             float(value)
@@ -760,7 +762,10 @@ def lottory_predict(request):
     labels = list(range(int(draw_string[2:]) - 10, int(draw_string[2:])))
     labels.append('下期預測')
 
-    records = Marksix_user_rec.objects.filter(Draw=next_draw)
+    qs = Marksix_hist.objects.order_by('-Date')[:1]
+    records = list(qs)  # most recent first
+  
+    
 
     context = {
         'records': records,
@@ -1305,6 +1310,102 @@ def marksix_stat(request):
         pair_labels = []
         pair_values = []
 
+    # --- Insert/update latest draw into Marksix_hist using update_marksix() parsed data ---
+    try:
+        parsed = update_marksix()
+        if parsed:
+            import re
+            # Draw identifier (use as-is, e.g. "25/119")
+            draw_no = parsed.get('draw_number') or parsed.get('current_draw')
+            # parse draw date into date object (try several formats)
+            draw_date_obj = None
+            date_str = parsed.get('draw_date') or ''
+            if date_str:
+                for fmt in ("%d %b %Y", "%d %B %Y", "%d/%m/%Y", "%d %b %Y", "%d %m %Y"):
+                    try:
+                        draw_date_obj = datetime.strptime(date_str.strip(), fmt).date()
+                        break
+                    except Exception:
+                        continue
+            # parse upcoming next-draw and its date (if available)
+            upcoming = parsed.get('upcoming', {}) or {}
+            upcoming_next = upcoming.get('next_draw')
+            upcoming_date_obj = None
+            upcoming_date_str = upcoming.get('date') or ''
+            if upcoming_date_str:
+                for fmt in ("%a, %d %b %Y", "%d %b %Y", "%d %B %Y", "%d/%m/%Y"):
+                    try:
+                        upcoming_date_obj = datetime.strptime(upcoming_date_str.strip(), fmt).date()
+                        break
+                    except Exception:
+                        continue
+             # numbers: expect list of 7 strings (6 + special)
+            nums = parsed.get('numbers') or []
+            if len(nums) >= 7:
+                 try:
+                     n1, n2, n3, n4, n5, n6, n7 = [int(x) for x in nums[:7]]
+                 except Exception:
+                     n1 = n2 = n3 = n4 = n5 = n6 = n7 = None
+            else:
+                 n1 = n2 = n3 = n4 = n5 = n6 = n7 = None
+
+            # helper to extract price for a division (search text for $... pattern)
+            def _extract_price_for_div(parsed, div_label):
+                # check divisions_summary first (note contains "$... each" or similar)
+                for item in parsed.get('divisions_summary', []):
+                    lab = (item.get('label') or '').lower()
+                    note = item.get('note') or ''
+                    if f"div {div_label}".lower() in lab or f"div{div_label}".lower() in lab or f"div {div_label}" in note.lower():
+                        m = re.search(r'\$\s?[\d,]+(?:\.\d+)?', note)
+                        if m:
+                            return m.group(0)
+                # fallback to divisions_full table prize_pool or winners cells
+                for row in parsed.get('divisions_full', []):
+                    if row.get('division', '').lower().endswith(str(div_label)):
+                        # try prize_pool first
+                        m = re.search(r'\$\s?[\d,]+(?:\.\d+)?', row.get('prize_pool',''))
+                        if m:
+                            return m.group(0)
+                        # try winners description
+                        m2 = re.search(r'\$\s?[\d,]+(?:\.\d+)?', row.get('winners',''))
+                        if m2:
+                            return m2.group(0)
+                return None
+
+            price1 = _extract_price_for_div(parsed, 1)
+            price2 = _extract_price_for_div(parsed, 2)
+            price3 = _extract_price_for_div(parsed, 3)
+ 
+             # Insert or update Marksix_hist record
+            if draw_no and (n1 is not None):
+                 try:
+                    defaults = {
+                        'Date': draw_date_obj if draw_date_obj else None,
+                        'No1': n1,
+                        'No2': n2,
+                        'No3': n3,
+                        'No4': n4,
+                        'No5': n5,
+                        'No6': n6,
+                        'No7': n7,
+                        'Price1': price1,
+                        'Price2': price2,
+                        'Price3': price3,
+                        'next_draw': upcoming_next,
+                        'next_date': upcoming_date_obj
+                        
+                    }
+
+                    obj, created = Marksix_hist.objects.update_or_create(
+                        Draw=str(draw_no),
+                        defaults=defaults
+                    )
+                    print(f"[marksix_stat] Marksix_hist {'created' if created else 'updated'} for Draw={draw_no}")
+                 except Exception as e:
+                     print(f"[marksix_stat] Failed to insert/update Marksix_hist for Draw={draw_no}: {e}")
+    except Exception as e:
+         print(f"[marksix_stat] update_marksix() failed or insertion error: {e}")
+
     context = {
         'records': records,
         'n': n,
@@ -1316,4 +1417,132 @@ def marksix_stat(request):
         'pair_values_json': json.dumps(pair_values),
     }
     return render(request, 'marksix_stat.html', context)
+
+def update_marksix():
+    """
+    Fetch Lottolyzer Mark Six summary page and extract:
+      - draw_label / draw_number / draw_date
+      - numbers list (main six + special)
+      - divisions (summary) and divisions_full (table rows with Division, Prize Pool, Winners)
+      - upcoming draw info (next draw, date, prize)
+      - current_draw hidden value
+    Returns the parsed dict (or None on failure).
+    """
+    url = "https://en.lottolyzer.com/home/hong-kong/mark-six/summary-view"
+    headers = {"User-Agent": "Mozilla/5.0 (compatible; Bot/1.0)"}
+    try:
+        resp = requests.get(url, headers=headers, timeout=15)
+        resp.raise_for_status()
+    except Exception as e:
+        print(f"[update_marksix] Failed to fetch {url}: {e}")
+        return None
+
+    soup = BeautifulSoup(resp.text, "html.parser")
+    latest = soup.select_one('.latest')
+    if not latest:
+        print("[update_marksix] .latest container not found")
+        return None
+
+    parsed = {}
+    # hidden input: current_draw
+    try:
+        parsed['current_draw'] = latest.select_one('#input_current_draw')['value']
+    except Exception:
+        parsed['current_draw'] = None
+
+    # draw label and date
+    draw_label_el = latest.select_one('#latest_draw')
+    date_el = latest.select_one('#latest_date')
+    parsed['draw_label'] = draw_label_el.get_text(strip=True) if draw_label_el else None
+    parsed['draw_date'] = date_el.get_text(strip=True) if date_el else None
+    # try extract draw_number token like "Draw 25/119" => "25/119"
+    try:
+        if parsed['draw_label']:
+            parsed['draw_number'] = parsed['draw_label'].split()[-1]
+        else:
+            parsed['draw_number'] = None
+    except Exception:
+        parsed['draw_number'] = None
+
+    # numbers: select imgs inside #latest_numbers .numbers with class ball
+    numbers = []
+    try:
+        for img in latest.select('#latest_numbers .numbers img.ball'):
+            alt = img.get('alt') or img.get('title') or ''
+            alt = alt.strip()
+            if alt:
+                numbers.append(alt)
+        # fallback: if plus image inserted, ensure special last element included (already included by img.ball)
+    except Exception:
+        numbers = []
+    parsed['numbers'] = numbers
+
+    # divisions summary: the compact divs under #latest_divisions .divisions > div
+    divisions_summary = []
+    try:
+        for div in latest.select('#latest_divisions .divisions > div'):
+            # immediate text (left) and pull-right (right)
+            try:
+                left_text = ''.join([t for t in div.find_all(text=True, recursive=False)]).strip()
+            except Exception:
+                left_text = div.get_text(" ", strip=True)
+            right_el = div.select_one('.pull-right')
+            right_text = right_el.get_text(strip=True) if right_el else ''
+            if not left_text and right_text:
+                # sometimes left_text empty; try whole text minus pull-right
+                whole = div.get_text(" ", strip=True)
+                left_text = whole.replace(right_text, '').strip()
+            divisions_summary.append({'label': left_text, 'note': right_text})
+    except Exception:
+        divisions_summary = []
+    parsed['divisions_summary'] = divisions_summary
+
+    # divisions full table
+    divisions_full = []
+    try:
+        rows = latest.select('#latest_divisions .divisions-full table tbody tr')
+        for tr in rows:
+            tds = tr.find_all('td')
+            if len(tds) >= 3:
+                division = tds[0].get_text(" ", strip=True)
+                prize_pool = tds[1].get_text(" ", strip=True)
+                winners = tds[2].get_text(" ", strip=True)
+                divisions_full.append({'division': division, 'prize_pool': prize_pool, 'winners': winners})
+    except Exception:
+        divisions_full = []
+    parsed['divisions_full'] = divisions_full
+
+    # more info link
+    try:
+        more_link = latest.select_one('#latest_divisions .more a')['href']
+        parsed['more_info'] = more_link
+    except Exception:
+        parsed['more_info'] = None
+
+    # upcoming block
+    upcoming = {}
+    try:
+        upcoming_el = latest.select_one('.upcoming .info')
+        if upcoming_el:
+            upcoming['next_draw'] = upcoming_el.select_one('.draw-data').get_text(strip=True) if upcoming_el.select_one('.draw-data') else None
+            upcoming['date'] = upcoming_el.select_one('.date-data').get_text(strip=True) if upcoming_el.select_one('.date-data') else None
+            upcoming['prize'] = upcoming_el.select_one('.prize-data').get_text(strip=True) if upcoming_el.select_one('.prize-data') else None
+    except Exception:
+        upcoming = {}
+    parsed['upcoming'] = upcoming
+
+    return parsed
+
+@require_GET
+def marksix_update_api(request):
+    """
+    API endpoint to run update_marksix() and return parsed results as JSON.
+    """
+    try:
+        parsed = update_marksix()
+        if not parsed:
+            return JsonResponse({'status': 'error', 'error': 'No data parsed from source'}, status=500)
+        return JsonResponse({'status': 'ok', 'data': parsed})
+    except Exception as e:
+        return JsonResponse({'status': 'error', 'error': str(e)}, status=500)
 

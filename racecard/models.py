@@ -75,6 +75,12 @@ class Marksix_hist(models.Model):
     No5 = models.IntegerField()
     No6 = models.IntegerField()
     No7 = models.IntegerField()
+    Price1 = models.CharField(max_length=30, null=True, default='NA')
+    Price2 = models.CharField(max_length=30, null=True,default='NA')
+    Price3 = models.CharField(max_length=30, null=True,default='NA')
+    next_draw = models.CharField(max_length=255, null=True,default="NA")
+    next_date = models.DateField(null=True)
+        
 
     def __str__(self):
         return f"{self.Draw} - {self.Date}"
