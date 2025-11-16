@@ -16,7 +16,7 @@
           <h3><b>{{ article.title }}</b></h3>
           <div class="w3-row">
               <div class="w3-col m5">
-                  <img src="{% static article.image %}" alt="Nature" style="width:100%">
+                  <img src="{{ article.image.url  }}" alt="Nature" style="width:100%">
               </div>
               <div class="w3-col m5 w3-padding">
                   <h5><span class="w3-opacity">{{ article.pub_date }}</span></h5>
@@ -48,32 +48,54 @@
     {% endif %}
   {% endwith %}
 
-    <div id="id01" class="w3-modal">
-        <div class="w3-modal-content">
-            <div class="w3-center">
-                <span onclick="closeFormModal()" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
-            </div>
-            <div class="w3-center w3-blue"><i class="fa fa-lg fa-envelope" aria-hidden="true"></i>
-              {% for article in recent_articles %}  
-                <div class='w3-text'>{{ article.title }}</div>
+   <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+        <div class="w3-center">
+            <span onclick="closeFormModal()" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="w3-center w3-blue">
+            <i class="fa fa-lg fa-envelope" aria-hidden="true"></i>
+
+            {% for article in recent_articles %}
+                <div class='w3-text w3-padding'>{{ article.title }}</div>
+
                 <form method="post" action="{% url 'send_article_email' %}" class="w3-container">
+                    {% csrf_token %}
+                    <input type="hidden" name="article_id" value="{{ article.id }}">
+
+                    <!-- Select All / None buttons -->
+                    <div class="w3-margin-bottom">
+                        <button type="button" class="w3-button w3-small w3-green" onclick="selectAllEmails()">Select All</button>
+                        <button type="button" class="w3-button w3-small w3-red" onclick="selectNoneEmails()">Select None</button>
+                    </div>
+
+                    {% for email in emails %}
+                        <input type="checkbox" class="email-target" name="recipients" value="{{ email }}" checked>
+                        {{ email }}<br>
+                    {% endfor %}
+
                     <div class="w3-section">
-                        {% csrf_token %}
-                        <input type="hidden" name="article_id" value="{{ article.id }}">
-                        {% for email in emails %}
-                        <input type="checkbox" name="recipients" value="{{ email }}" checked> {{ email }}<br>
-                        {% endfor %}
-                    <div class="w3-section">
-                        <button type="submit">Send Email</button>
+                        <button type="submit" class="w3-button w3-blue w3-round-large">Send Email</button>
                     </div>
                 </form>
             {% endfor %}
+        </div>
 
-        </div>
-        </div>
     </div>
-  </div>
+</div>
 
+<!-- JS: Select All / Select None -->
+<!-- JS: Select All / Select None -->
+<script>
+function selectAllEmails() {
+    document.querySelectorAll('.email-target').forEach(cb => cb.checked = true);
+}
+
+function selectNoneEmails() {
+    document.querySelectorAll('.email-target').forEach(cb => cb.checked = false);
+}
+</script>
 
 <script>
     // Function to handle login form submission

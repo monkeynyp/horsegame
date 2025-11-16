@@ -1,4 +1,4 @@
-{% extends "master.html" %} {% block title %} Monkey AI 賽馬預測 {% endblock %} 
+
 {% load i18n %}
 {% load static %}
 
@@ -12,6 +12,7 @@
         <!-- Header -->
         <div style="display:flex; align-items:center; gap:12px; margin-bottom:12px;">
             <img src="https://www.monkeyforecast.com/static/monkeyLogo1.jpeg" alt="Monkey Icon" style="width:56px;height:56px; border-radius:8px; object-fit:cover;">
+            
             <div>
                 <div style="font-size:20px; font-weight:700; color:#2c2c2c;">Monkey 通訊</div>
                 <div style="font-size:13px; color:#666;">AI 賽馬預測與最新消息</div>
@@ -24,13 +25,17 @@
             {% with img_url=article.image.url %}
                 {% if img_url|slice:":4" == "http" %}
                     {% with final_img=img_url %}
+                        <div style="width:100%; max-height:360px; overflow:hidden; border-radius:8px; margin-bottom:14px;">
+                            <img src="{{ final_img }}" alt="{{ article.title|default:subject }}" style="width:100%; height:auto; display:block; object-fit:cover;">
+                        </div>
+                    {% endwith %}
                 {% else %}
                     {% with final_img="https://www.monkeyforecast.com"|add:img_url %}
+                        <div style="width:100%; max-height:360px; overflow:hidden; border-radius:8px; margin-bottom:14px;">
+                            <img src="{{ final_img }}" alt="{{ article.title|default:subject }}" style="width:100%; height:auto; display:block; object-fit:cover;">
+                        </div>
+                    {% endwith %}
                 {% endif %}
-                    <div style="width:100%; max-height:360px; overflow:hidden; border-radius:8px; margin-bottom:14px;">
-                        <img src="{{ final_img }}" alt="{{ article.title|default:subject }}" style="width:100%; height:auto; display:block; object-fit:cover;">
-                    </div>
-                {% endwith %}
             {% endwith %}
         {% endif %}
 
@@ -43,6 +48,9 @@
                     {{ subject }}
                 {% endif %}
             </h1>
+
+    
+            
             <div style="font-size:13px; color:#888;">
                 {% if article %}
                     {% if article.author %} 作者：{{ article.author }} &nbsp;|&nbsp;{% endif %}
@@ -55,6 +63,13 @@
 
         <!-- Content -->
         <div style="font-size:15px; color:#333; line-height:1.6; padding: 6px 2px 18px 2px;">
+       {% with final_img="https://www.monkeyforecast.com"|add:image_url %}
+            <div style="width:100%; max-height:360px; overflow:hidden; border-radius:8px; margin-bottom:14px;">
+            <img src="{{ final_img }}" 
+                 alt="{{ article.title|default:subject }}" 
+                 style="width:100%; height:auto; display:block; object-fit:cover;">
+            </div>
+        {% endwith %}
             {% if article and article.content %}
                 {{ article.content|linebreaksbr|safe }}
             {% else %}

@@ -539,9 +539,9 @@ def newsletter(request):
     recent_articles = Article.objects.filter(language=selected_language).order_by('-pub_date')[:1]
         # Fetch articles from 3 to 13
     email_list_group = Group.objects.get(name='MailList')
-    print(email_list_group)
+   
     emails = User.objects.filter(groups=email_list_group).values_list('email', flat=True)
-    print(emails)
+  
     context = {
         'recent_articles': recent_articles,
         'emails': emails
@@ -590,6 +590,8 @@ def send_article_email(request):
             context = {
                 'subject': subject,
                 'message': article.content,
+                'image_url': article.image.url if article.image else None,
+                'article.pub_date': article.pub_date,
             }
             message = render_to_string('blog/newsletter_email.html', context)
             send_mail(subject, message, settings.EMAIL_HOST_USER, [recipient], html_message=message)
